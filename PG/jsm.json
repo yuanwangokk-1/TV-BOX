@@ -1,5 +1,5 @@
 {
-	"spider":"https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/PG.jar",
+	"spider":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/PG.jar",
 	"sites":[
 		{
 			"key": "豆瓣",
@@ -9,7 +9,7 @@
 			"searchable": 0,
 			"changeable": 1,
 			"indexs":1,
-			"ext": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/douban.json"
+			"ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/douban.json"
 		},
 		{
 			"key": "网盘配置",
@@ -18,10 +18,10 @@
 			"api": "csp_Config",
 			"searchable": 0,
 			"changeable": 0,
-			"ext":"https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/tokenm.json"
+			"ext":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/tokenm.json"
 		},
 		{"key":"Local","name":"本地","type":3,"api":"csp_Local"},
-		{"key":"PushShare","name":"我的资源分享","type":3, "api":"csp_PushShare","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60, "ext":"https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/tokenm.json$$$./lib/pushshare.txt$$$db$$$1",
+		{"key":"PushShare","name":"我的资源分享","type":3, "api":"csp_PushShare","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60, "ext":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/tokenm.json$$$./lib/pushshare.txt$$$db$$$1",
 			"style": {
 				"type": "list",
 				"ratio": 1.1
@@ -36,7 +36,7 @@
 			"quickSearch": 0,
 			"changeable": 0,
 			"ext":{
-				"json":"https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/youtube.json",
+				"json":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/youtube.json",
 				"type":"直播#新闻#剧集#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc documentary#national geographic documentary",
 				"proxy":"proxy",
 				"keywords":"wooang,排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",
@@ -47,37 +47,37 @@
 				"ratio": 1.5
 			}
 		},
-		{"key":"AliShare","name":"阿里云盘影视分享","type":3,"api":"csp_AliShare","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60, "ext":"https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/tokenm.json$$$./lib/alishare.txt$$$db$$$1",
+		{"key":"AliShare","name":"阿里云盘影视分享","type":3,"api":"csp_AliShare","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60, "ext":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/tokenm.json$$$./lib/alishare.txt$$$db$$$1",
 			"style": {
 				"type": "list",
 				"ratio": 1.1
 			}
 		},
-		{"key":"AliShareEBook","name":"阿里云盘书籍分享","type":3,"api":"csp_AliShare","searchable":0,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/tokenm.json$$$./lib/alishare.ebook.txt$$$db$$$1",
+		{"key":"AliShareEBook","name":"阿里云盘书籍分享","type":3,"api":"csp_AliShare","searchable":0,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/tokenm.json$$$./lib/alishare.ebook.txt$$$db$$$1",
 			"style": {
 				"type": "list",
 				"ratio": 1.1
 			}
 		},
-		{"key":"QuarkShare","name":"夸克云盘分享","type":3,"api":"csp_QuarkShare","searchable":0,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/tokenm.json$$$./lib/quarkshare.txt",
+		{"key":"QuarkShare","name":"夸克云盘分享","type":3,"api":"csp_QuarkShare","searchable":0,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/tokenm.json$$$./lib/quarkshare.txt",
 			"style": {
 				"type": "list",
 				"ratio": 1.1
 			}
 		},
-		{"key":"ThunderShare","name":"迅雷云盘分享","type":3,"api":"csp_ThunderShare","searchable":0,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/tokenm.json$$$./lib/thundershare.txt",
+		{"key":"ThunderShare","name":"迅雷云盘分享","type":3,"api":"csp_ThunderShare","searchable":0,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/tokenm.json$$$./lib/thundershare.txt",
 			"style": {
 				"type": "list",
 				"ratio": 1.1
 			}
 		},
-		{"key":"PikPakShare","name":"PikPak分享","type":3,"api":"csp_PikPakShare","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60, "ext":"https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/tokenm.json$$$https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/pikpakclass.json$$$./lib/pikpakclass.json.txt.gz",
+		{"key":"PikPakShare","name":"PikPak分享","type":3,"api":"csp_PikPakShare","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60, "ext":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/tokenm.json$$$https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/pikpakclass.json$$$./lib/pikpakclass.json.txt.gz",
 			"style": {
 				"type": "list",
 				"ratio": 1.1
 			}
 		},
-		{"key":"SambaShare","name":"Samba分享","type":3,"api":"csp_SambaShare","searchable":0,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/tokenm.json$$$./lib/sambashare.txt"},
+		{"key":"SambaShare","name":"Samba分享","type":3,"api":"csp_SambaShare","searchable":0,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/tokenm.json$$$./lib/sambashare.txt"},
 		{
 			"key": "MissAV",
 			"name": "🔞MissAV┃科学",
@@ -141,7 +141,7 @@
 				"type": "rect",
 				"ratio": 1.485
 			},
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/xc.jar"
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/xc.jar"
 		},
 		{
 			"key": "AvTime",
@@ -195,7 +195,7 @@
       "name": "肉視頻|XBPQ",
       "type": 3,
       "api": "csp_XBPQ",
-      "jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+      "jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
       "ext": {
         "分类url": "https://rouvx2.xyz/t/{cateId}?order=createdAt&page={catePg}",
         "直接播放": "1",
@@ -210,7 +210,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/xc.jar",
+      "jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/xc.jar",
       "style": {
         "type": "rect",
         "ratio": 1.485
@@ -225,7 +225,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "api": "csp_XBPQ",
-      "jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+      "jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
       "style": {
         "ratio": 1.7
       },
@@ -241,7 +241,7 @@
       "name": "🔞ppp|fq",
       "type": 3,
       "api": "csp_XBPQ",
-      "jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+      "jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
       "style": {
         "type": "rect",
         "ratio": 1.6
@@ -287,8 +287,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/njav.json",
-      "jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar"
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/njav.json",
+      "jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar"
     },
     {
       "key": "Zuise",
@@ -312,7 +312,7 @@
       "filterable": 1,
       "playerType": 2,
       "api": "csp_XBPQ",
-      "jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+      "jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
       "ext": {
         "语言": "中文",
         "请求头": "手机",
@@ -338,7 +338,7 @@
 			"name": "🔞Hentai┃直连",
 			"type": 3,
 			"api": "csp_XBPQ",
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"type": "rect",
 				"ratio": 1.485
@@ -412,7 +412,7 @@
 				"type": "rect",
 				"ratio": 1.485
 			},
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"ext": {
 				"数组": "class=\"col-6 col-sm-4 col-lg-3\">&&</div>",
 				"图片": "src=\"&&\"",
@@ -461,7 +461,7 @@
 			"key": "jable",
 			"name": "🔞jable┃在线",
 			"type": 3,
-			"jar": "https://2960.kstore.spachttps://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://2960.kstore.spachttps://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"playUrl": "json:http://127.0.0.1:10079/parse/?thread=0&proxy=proxy&url= ",
 			"changeable": 1,
 			"searchable": 1,
@@ -502,7 +502,7 @@
 			"changeable": 1,
 			"filterable": 0,
 			"timeout": 60,
-			"ext": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/tokenm.json$$$http://thze.cc/forum.php$$$proxy",
+			"ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/tokenm.json$$$http://thze.cc/forum.php$$$proxy",
 			"style": {
 				"type": "list",
 				"ratio": 1.1
@@ -518,7 +518,7 @@
 			"changeable": 1,
 			"filterable": 0,
 			"timeout": 60,
-			"ext": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/tokenm.json$$$null$$$proxy",
+			"ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/tokenm.json$$$null$$$proxy",
 			"style": {
 				"type": "rect",
 				"ratio": 1.485
@@ -532,7 +532,7 @@
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 1,
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"type": "rect",
 				"ratio": 1.485
@@ -591,7 +591,7 @@
 			"name": "🔞U9A9┃磁力",
 			"type": 3,
 			"api": "csp_XBPQ",
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"type": "list"
 			},
@@ -616,7 +616,7 @@
 			"filterable": 1,
 			"playerType": 2,
 			"api": "csp_XBPQ",
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"type": "rect",
 				"ratio": 1.485
@@ -658,7 +658,7 @@
 			"name": "🔞玩偶┃在线",
 			"type": 3,
 			"api": "csp_XBPQ",
-			"jar": "https://2960.kstore.spachttps://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://2960.kstore.spachttps://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"type": "rect",
 				"ratio": 1.485
@@ -681,7 +681,7 @@
 			"quickSearch": 1,
 			"filterable": 1,
 			"api": "csp_XBPQ",
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"ratio": 1.7
 			},
@@ -697,7 +697,7 @@
 			"name": "🔞糖心┃直连",
 			"type": 3,
 			"api": "csp_XBPQ",
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"ratio": 1.7
 			},
@@ -718,7 +718,7 @@
 			"name": "🔞小草┃直连",
 			"type": 3,
 			"api": "csp_XBPQ",
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"type": "list",
 				"ratio": 1.1
@@ -739,7 +739,7 @@
 			"name": "🔞天美┃直连",
 			"type": 3,
 			"api": "csp_XBPQ",
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"ratio": 1.485
 			},
@@ -758,7 +758,7 @@
 			"name": "🔞仓库┃科学",
 			"type": 3,
 			"api": "csp_XBPQ",
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"ratio": 1.485
 			},
@@ -788,7 +788,7 @@
 			"name": "🔞ppp┃科学",
 			"type": 3,
 			"api": "csp_XBPQ",
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/XBPQ.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/XBPQ.jar",
 			"style": {
 				"type": "rect",
 				"ratio": 1.485
@@ -1340,7 +1340,7 @@
 			"searchable": 0,
 			"quickSearch": 1,
 			"filterable": 1,
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/Yoursmile2.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/Yoursmile2.jar",
 			"style": {
 				"type": "rect",
 				"ratio": 1.485
@@ -1359,7 +1359,7 @@
 				"type": "rect",
 				"ratio": 1.485
 			},
-			"jar": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/Phttps://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/lib/91黑料.jar",
+			"jar": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/Phttps://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/lib/91黑料.jar",
 			"ext": {
 				"主页url": "https://kb17.oneoneno8cd345.xyz/one",
 				"首页": "400",

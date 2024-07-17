@@ -1,5 +1,5 @@
 {
-  "spider": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/kstore.space/wex.txt.jar;md5;47b6df5c84e5ed4eff811288252c2310",
+  "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/kstore.space/wex.txt.jar;md5;47b6df5c84e5ed4eff811288252c2310",
   "wallpaper": "https://images.pexels.com/photos/25695918/pexels-photo-25695918.jpeg",
   "logo": "https://images.pexels.com/photos/25695918/pexels-photo-25695918.jpeg",
   "sites": [
@@ -11,7 +11,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/kstore.space/lib/douban.json"
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/kstore.space/lib/douban.json"
     },
     {
       "key": "Doubana",
@@ -21,7 +21,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/kstore.space/lib/douban.json"
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/kstore.space/lib/douban.json"
     },
     {
       "key": "Wexconfig",
@@ -633,7 +633,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/kstore.space/lib/qie.json"
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/kstore.space/lib/qie.json"
     },
     {
       "key": "櫻花",
@@ -939,7 +939,7 @@
     {
       "name": "综合3",
       "type": 0,
-      "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/kstore.space/lib/wexiptv.txt",
+      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/kstore.space/lib/wexiptv.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
@@ -957,7 +957,7 @@
     {
       "name": "IPV4",
       "type": 0,
-      "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/kstore.space/lib/wexlive.txt",
+      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/kstore.space/lib/wexlive.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
@@ -966,7 +966,7 @@
     {
       "name": "IPV6",
       "type": 0,
-      "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/kstore.space/lib/ipv6.m3u",
+      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/kstore.space/lib/ipv6.m3u",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",

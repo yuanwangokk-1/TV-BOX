@@ -1,20 +1,20 @@
 {
   "urls": [ 
     {
-      "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/PG.json",
+      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/PG.json",
       "name": "🚀PG线路"
     },
     {
-      "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/index.json",
+      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy_dzlive/index.json",
       "name": "🚀DRPY"
     },
     {
-      "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/kstore.space/wang.json",
+      "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/kstore.space/wang.json",
       "name": "🚀KTORE"
     },
     {
    "name": "19+", 
-   "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/jsm.json"
+   "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/jsm.json"
   }
   ]
 }
