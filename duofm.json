@@ -1,0 +1,20 @@
+{
+  "urls": [ 
+    {
+      "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/PG.json",
+      "name": "🚀PG线路"
+    },
+    {
+      "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/index.json",
+      "name": "🚀DRPY"
+    },
+    {
+      "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/kstore.space/wang.json",
+      "name": "🚀KTORE"
+    },
+    {
+   "name": "19+", 
+   "url": "https://gh.cnacg.free.hr/https://raw.githubusercontent.com/asdf1319964f/TV/master/PG/jsm.json"
+  }
+  ]
+}

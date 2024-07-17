@@ -1,0 +1,38 @@
+var rule = {
+    title: '如意影视',
+    host: 'http://r5y.net/',
+    url: '/vod/type/id/fyclass/page/fypage/',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**/',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: '.ewave-swiper-nav&&a;a&&Text;a&&href;id/(\\d+)/',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: true,
+    推荐: '.vod-list-tv;ul.row&&li;*;*;*;*',
+    一级: '.vod-list&&ul&&li;a&&title;.lazyload&&data-original;.item-status&&Text;a&&href',
+    二级: {
+        title: 'h3&&Text;.info&&p&&span&&Text',
+        img: '.lazyload&&data-original',
+        desc: '.info&&p&&span:eq(-1)&&Text;.info&&p&&span:eq(2)&&Text;.info&&p&&span:eq(1)&&Text;.info&&p&&span:eq(4)&&Text;.info&&p&&span:eq(3)&&Text',
+        content: '.text&&Text',
+        tabs: '.playlist-tab&&li',
+        lists: '.ewave-playlist-content:eq(#id)&&li',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href',
+        list_url_prefix: '',
+    },
+    搜索: 'ul.row&&li;*;*;*;*',
+}
