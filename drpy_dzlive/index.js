@@ -72,7 +72,7 @@ async function main() {
         };
 
     });
-    let js_files = pathLib.readDir(pathLib.join(path_dir, js_path));
+    let js_files = pathLib.readDir(pathLib.join(path_dir, js_path)).filter(file => file && file.endsWith('.js'));
     // console.log(js_files);
     let live_files = pathLib.readDir(pathLib.join(path_dir, live_path));
     // console.log(live_files);
@@ -156,8 +156,11 @@ async function main() {
     js_files.forEach((it, index) => {
         let rname = it.replace('.js', '');
         let extras = [''];
-        if (rname.includes('我的哔哩传参')) {
-            extras = ['?type=url&params=../json/小学教育.json'];
+        if (rname.includes('我的哔哩[官]')) {
+            extras = [
+                '?type=url&params=../json/小学教育.json@哔哩教育[官]',
+                '?type=url&params=../json/哔哩大全.json@哔哩大全[官]',
+            ];
         } else if (rname.includes('采集之王')) {
             extras = [
                 '?type=url&params=../json/采集静态.json$1@采王道长[合]',
@@ -176,7 +179,7 @@ async function main() {
             extras.forEach((extra, index) => {
                 let ext_str = 'drpy_t3';
                 let _name = extras.length > 1 ? `${rname}${index}` : `${rname}`;
-                let ext_name = extra.includes('@') ? extra.split('@')[1]:_name;
+                let ext_name = extra.includes('@') ? extra.split('@')[1] : _name;
                 extra = extra.split('@')[0];
                 if (extra) {
                     try {

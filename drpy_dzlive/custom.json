@@ -7,7 +7,7 @@
       "api": "csp_Config",
       "searchable": 0,
       "changeable": 0,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json",
+      "ext": "./json/tokenm.json",
       "order_num": 9999
     },
     {
@@ -27,7 +27,7 @@
       "changeable": 1,
       "filterable": 0,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/pushshare.txt$$$db$$$1",
+      "ext": "./json/tokenm.json$$$./json/pushshare.txt$$$db$$$1",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -44,7 +44,7 @@
       "changeable": 1,
       "filterable": 0,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/alishare.txt$$$db$$$1",
+      "ext": "./json/tokenm.json$$$./json/alishare.txt$$$db$$$1",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -61,7 +61,7 @@
       "changeable": 0,
       "filterable": 0,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/alishare.ebook.txt$$$db$$$1",
+      "ext": "./json/tokenm.json$$$./json/alishare.ebook.txt$$$db$$$1",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -78,7 +78,7 @@
       "changeable": 0,
       "filterable": 0,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/quarkshare.txt",
+      "ext": "./json/tokenm.json$$$./json/quarkshare.txt",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -95,7 +95,7 @@
       "changeable": 0,
       "filterable": 0,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/thundershare.txt",
+      "ext": "./json/tokenm.json$$$./json/thundershare.txt",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -112,7 +112,7 @@
       "changeable": 1,
       "filterable": 0,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/pikpakclass.json$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/pikpakclass.json.txt.gz",
+      "ext": "./json/tokenm.json$$$./json/pikpakclass.json$$$./json/pikpakclass.json.txt.gz",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -129,7 +129,7 @@
       "changeable": 0,
       "filterable": 0,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/sambashare.txt",
+      "ext": "./json/tokenm.json$$$./json/sambashare.txt",
       "order_num": 9999
     },
     {
@@ -141,7 +141,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://wogg.link/$$$proxy$$$1$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/wogg.json",
+      "ext": "./json/tokenm.json$$$https://wogg.link/$$$proxy$$$1$$$./json/wogg.json",
       "order_num": 9999
     },
     {
@@ -153,7 +153,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://www.wo4k.net/$$$proxy$$$1$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/wogg.json",
+      "ext": "./json/tokenm.json$$$https://www.wo4k.net/$$$proxy$$$1$$$./json/wogg.json",
       "order_num": 9999
     },
     {
@@ -165,7 +165,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://wobge.run.goorm.io$$$proxy$$$1$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/wogg.json",
+      "ext": "./json/tokenm.json$$$https://wobge.run.goorm.io$$$proxy$$$1$$$./json/wogg.json",
       "order_num": 9999
     },
     {
@@ -177,7 +177,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://tv.yydsys.top/$$$proxy$$$1$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/wogg.json",
+      "ext": "./json/tokenm.json$$$https://tv.yydsys.top/$$$proxy$$$1$$$./json/wogg.json",
       "order_num": 9999
     },
     {
@@ -189,7 +189,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://www.80yy3.com/$$$proxy$$$1$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/wogg.json",
+      "ext": "./json/tokenm.json$$$https://www.80yy3.com/$$$proxy$$$1$$$./json/wogg.json",
       "order_num": 9999
     },
     {
@@ -201,7 +201,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://www.hdmoli.pro/$$$proxy$$$1$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/moli.json",
+      "ext": "./json/tokenm.json$$$https://www.hdmoli.pro/$$$proxy$$$1$$$./json/moli.json",
       "order_num": 9999
     },
     {
@@ -213,7 +213,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$proxy$$$1",
+      "ext": "./json/tokenm.json$$$proxy$$$1",
       "order_num": 9999
     },
     {
@@ -225,7 +225,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://ppxzy.ink$$$proxy$$$1",
+      "ext": "./json/tokenm.json$$$https://ppxzy.ink$$$proxy$$$1",
       "order_num": 9999
     },
     {
@@ -237,7 +237,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://xzyshd.com$$$proxy$$$1",
+      "ext": "./json/tokenm.json$$$https://xzyshd.com$$$proxy$$$1",
       "order_num": 9999
     },
     {
@@ -257,7 +257,7 @@
       "type": 3,
       "api": "csp_YunPan",
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$None$$$proxy$$$1",
+      "ext": "./json/tokenm.json$$$None$$$proxy$$$1",
       "order_num": 9999
     },
     {
@@ -266,7 +266,7 @@
       "type": 3,
       "api": "csp_YingSo",
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json",
+      "ext": "./json/tokenm.json",
       "order_num": 9999
     },
     {
@@ -275,7 +275,7 @@
       "type": 3,
       "api": "csp_HunHePan",
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json",
+      "ext": "./json/tokenm.json",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -288,7 +288,7 @@
       "type": 3,
       "api": "csp_EightEight",
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://662688.xyz$$$",
+      "ext": "./json/tokenm.json$$$https://662688.xyz$$$",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -304,7 +304,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json",
+      "ext": "./json/tokenm.json",
       "order_num": 9999
     },
     {
@@ -313,7 +313,7 @@
       "type": 3,
       "api": "csp_Panyq",
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$site$$$proxy",
+      "ext": "./json/tokenm.json$$$site$$$proxy",
       "order_num": 9999
     },
     {
@@ -322,7 +322,7 @@
       "type": 3,
       "api": "csp_MiaoSou",
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json",
+      "ext": "./json/tokenm.json",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -338,7 +338,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json",
+      "ext": "./json/tokenm.json",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -354,7 +354,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json",
+      "ext": "./json/tokenm.json",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -370,7 +370,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://dapanso.com$$$proxy$$$1",
+      "ext": "./json/tokenm.json$$$https://dapanso.com$$$proxy$$$1",
       "order_num": 9999
     },
     {
@@ -382,7 +382,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://www.pikaso.top/$$$None",
+      "ext": "./json/tokenm.json$$$https://www.pikaso.top/$$$None",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -398,7 +398,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://pan.qianfan.app$$$None$$$https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/qianfan.txt$$$1",
+      "ext": "./json/tokenm.json$$$https://pan.qianfan.app$$$None$$$./json/qianfan.txt$$$1",
       "order_num": 9999
     },
     {
@@ -410,7 +410,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$https://www.yunso.net$$$None$$$1",
+      "ext": "./json/tokenm.json$$$https://www.yunso.net$$$None$$$1",
       "style": {
         "type": "list",
         "ratio": 1.1
@@ -426,7 +426,7 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 60,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json$$$None$$$proxy$$$1",
+      "ext": "./json/tokenm.json$$$None$$$proxy$$$1",
       "order_num": 9999
     },
     {
@@ -473,7 +473,7 @@
       "api": "csp_Push",
       "changeable": 0,
       "timeout": 30,
-      "ext": "https://raw.githubusercontent.com/asdf1319964f/TV/master/drpy_dzlive/json/tokenm.json",
+      "ext": "./json/tokenm.json",
       "order_num": 9999
     },
     {
