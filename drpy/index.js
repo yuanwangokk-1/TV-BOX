@@ -16,10 +16,10 @@ function naturalSort(arr, key) {
 async function main() {
   //  let js_order = ['360影视[官]', '菜狗[官]', '奇珍异兽[官]', '优酷[官]', '腾云驾雾[官]', '百忙无果[官]', '哔哩影视[官]', '采集之王[合]', '采王道长[合]'];
    let js_order = ['🧑‍⚖豆瓣[官]', '🎁采王道长[合]', '🎁直播转点播[合]'];
-    let js_path = './drpy_js';
-    let live_path = './lives';
-    let config_path = './custom.json';
-    let js_api = './drpy_libs/drpy2.min.js';
+    let js_path = 'https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/drpy_js';
+    let live_path = 'https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/lives';
+    let config_path = 'https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/custom.json';
+    let js_api = 'https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/drpy_libs/drpy2.min.js';
     let parse_apis = [
         '777,https://jx.777jiexi.com/player/?url=,0',
         '8090g,https://www.8090g.cn/jiexi/?url=,0',
@@ -168,8 +168,8 @@ async function main() {
     let json_config = {
         'wallpaper': 'https://tuapi.eees.cc/api.php?category=fengjing&type=302',
         'homepage': 'https://github.com/hjdhnx/hipy-server',
-        "homeLogo": "./img/logo500x200-1.png",
-        "spider": "./jar/pg.jar?md5=7633f8ea346c082b7aa163be58aed023",
+        "homeLogo": "https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/img/logo500x200-1.png",
+        "spider": "https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/jar/pg.jar?md5=7633f8ea346c082b7aa163be58aed023",
         'sites': [],
         'parses': parses,
         'flags': [
@@ -210,16 +210,16 @@ async function main() {
         let rname = it.replace('.js', '');
         let extras = [''];
         if (rname.includes('我的哔哩传参')) {
-            extras = ['?type=url&params=../json/小学教育.json'];
+            extras = ['?type=url&params=.https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/json/小学教育.json'];
         } else if (rname.includes('采集之王')) {
             extras = [
-                '?type=url&params=../json/采集静态.json$1@采王道长[合]',
-                '?type=url&params=../json/采集[zy]静态.json$1@采王zy[密]',
-                '?type=url&params=../json/采集[密]静态.json@采王成人[密]',
+                '?type=url&params=.https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/json/采集静态.json$1@采王道长[合]',
+                '?type=url&params=.https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/json/采集[zy]静态.json$1@采王zy[密]',
+                '?type=url&params=.https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/json/采集[密]静态.json@采王成人[密]',
             ];
         } else if (rname.includes('直播转点播')) {
             extras = [
-                '?type=url&params=../json/live2cms.json',
+                '?type=url&params=.https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy/json/live2cms.json',
             ];
         }
 
