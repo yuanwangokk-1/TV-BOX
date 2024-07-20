@@ -1,0 +1,37 @@
+[
+  {
+    "name": "GitHub-TXT",
+    "url": "https://ghproxy.net/https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt",
+    "img": "http://www.weibomn.com/uploadfile/image/20240622/5bf3ad336af04dc36b49ecd4a909882c.jpg"
+  },
+  {
+    "name": "GitHub-M3U",
+    "url": "https://ghproxy.net/https://raw.githubusercontent.com/ssili126/tv/main/itvlist.m3u",
+    "img": "http://www.weibomn.com/uploadfile/image/20240622/5bf3ad336af04dc36b49ecd4a909882c.jpg"
+  },
+  {
+    "name": "CNTV",
+    "url": "./live_cntv.txt",
+    "img": ""
+  },
+  {
+    "name": "范冰冰-V6",
+    "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+    "img": "https://bkimg.cdn.bcebos.com/pic/a044ad345982b2b7d0a2e28059e3dcef76094b362d6a"
+  },
+  {
+    "name": "1905",
+    "url": "./live_1905.txt",
+    "img": "https://image11.m1905.cn/uploadfile/2022/0510/thumb_1_285_100_20220510030520666149.jpg"
+  },
+  {
+    "name": "测试1(随时失效)",
+    "url": "https://gitee.com/svcd2008/tv/raw/master/430.txt",
+    "img": "./lives.jpg"
+  },
+  {
+    "name": "测试2(随时失效)",
+    "url": "https://gitee.com/flying-snow-wu/tv/raw/main/itvlist.txt",
+    "img": ""
+  }
+]
