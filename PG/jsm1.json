@@ -1,0 +1,395 @@
+{
+	"spider": "./lib/XBPQ.jar",
+	"sites": [
+		{
+			"key": "色最色",
+			"name": "🔞色最色",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "https://xn--zovv42dba.com/",
+				"直接播放": "1",
+				"嗅探词": "index.m3u8#.mp4#m3u8#.m3u8#/tos/#.flv#video/tos",
+				"分类url": "https://xn--zovv42dba.com/list-read-id-{cateId}-p-{catePg}",
+				"分类": "国产精品$19#偷拍自拍$20#欧美成人$26#中文无码$23#中文字幕$22#亚洲情色$21#卡通动漫$24#成人伦理$25"
+			}
+		},
+		{
+			"key": "亚色影库",
+			"name": "🔞亚瑟影库",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "https://www.yasetube.com/",
+				"直接播放": "1",
+				"嗅探词": "index.m3u8#.mp4#m3u8#.m3u8#/tos/#.flv#video/tos",
+				"分类url": "https://www.yasetube.com/video/category/{cateId}/page/{catePg}",
+				"分类": "女厕偷拍$nvce#海角系列$hj#FC2 PPV$fc2-ppv#Mesubuta系列$me#MILF人妻无码$milf#偷拍自拍$dalu#品牌传媒$madou"
+			}
+		},
+		{
+			"key": "222cuo",
+			"name": "🔞222cuo",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "http://224cuo.com/",
+				"直接播放": "1",
+				"嗅探词": "index.m3u8#.mp4#m3u8#.m3u8#/tos/#.flv#video/tos",
+				"图片": "data-original=\"&&\"",
+				"标题": "title=\"&&\"",
+				"链接": "href=\"&&\"",
+				"分类url": "http://224cuo.com/{cateId}/list_{catePg}.html;;RC",
+				"分类": "亚洲AV$yazhouav#自拍偷拍$zipaitoupai#欧美AV$oumeiav#3D动画$3ddonghua#熟女人妻$shunvrenqi#丝袜制服$siwazhifu#主播直播$zhubozhibo#SM另类$smlinglei#亚洲性爱$yazhouxingai#偷拍自拍$toupaizipai#成人卡通$chengrenkatong#欧美性爱$oumeixingai#制服丝袜$zhifusiwa#经典三级$sanjijingdian#乱伦熟女$luanlunshunv#另类变态$lingleibiantai"
+			}
+		},
+		{
+			"key": "19麻豆",
+			"name": "🔞19麻豆",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"jar": "./lib/XBPQ.jar",
+			"ext": {
+				"站名": "19麻豆",
+				"主页url": "https://19q.cc/",
+				"分类url": "https://19q.cc/index.php/vod/type/id/{cateId}/page/{catePg}.html",
+				"分类": "麻豆视频&91制片厂&天美传媒&蜜桃传媒&皇家华人&星空传媒&精东影业&乐播传媒&成人头条&乌鸦传媒&兔子先生&杏吧原创&玩偶姐姐&mini传媒&大象传媒&开心鬼传媒&萝莉社&PsychoPorn&性世界&糖心Vlog&性视界",
+				"分类值": "1&2&3&4&5&6&7&8&9&10&20&21&22&23&24&25&29&26&27&28&30",
+				"直接播放": "1",
+				"嗅探词": "index.m3u8#.mp4#m3u8#.m3u8#/tos/#.flv#video/tos",
+				"数组": "<li>&&</li>",
+				"图片": "src=\"&&\"",
+				"标题": "alt=\"&&\"",
+				"链接": "href=\"&&\"",
+				"副标题": "<strong>&&</strong>"
+			}
+		},
+		{
+			"key": "18j.tv",
+			"name": "🔞18j.tv",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "https://18j.tv/",
+				"直接播放": "1",
+				"嗅探词": "index.m3u8#.mp4#m3u8#.m3u8#/tos/#.flv#video/tos",
+				"图片": "data-original=\"&&\"",
+				"标题": "title=\"&&\"",
+				"链接": "href=\"&&\"",
+				"分类url": "https://18j.tv/show/{cateId}/nid/1/page/{catePg}/sid/1/",
+				"分类": "国产$1#日韩$2#欧美$3#伦理$4#动漫$16"
+			}
+		},
+		{
+			"key": "爱豆传媒",
+			"name": "🔞爱豆传媒",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "https://rourou.co/",
+				"直接播放": "1",
+				"嗅探词": "index.m3u8#.mp4#m3u8#.m3u8#/tos/#.flv#video/tos",
+				"数组": "class=\"myui-vodlist__box\">&&</div>",
+				"图片": "data-original=\"&&\"",
+				"标题": "title=\"&&\"",
+				"链接": "href=\"&&\"",
+				"分类url": "https://rourou.co/index.php/vod/type/id/{cateId}/page/{carePg}.html",
+				"分类": "麻豆视频$1#中文字幕$2#日本无码$3#日本有码$4#童颜巨乳$5#校园萝莉$6#女优明星$7#角色扮演$8#制服诱惑$9#强奸乱伦$31#AI换脸$32#黑料泄密$33#主播直播$34#国产精品$35#探花视频$36#女同性恋$37#SM调教$38#人妻熟女$40"
+			}
+		},
+		{
+			"key": "php_madou",
+			"name": "🔞麻豆",
+			"type": 4,
+			"api": "https://demobe.serv00.net/madou.php",
+			"searchable": 1,
+			"quickSearch": 0,
+			"filterable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 1.33
+			}
+		},
+		{
+			"key": "唐人街",
+			"name": "💕唐人街",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "https://www.tangrenjie.one/",
+				"数组": "class=\"vodlist_thumb lazyload\"&&</div>",
+				"图片": "data-original=\"&&\"",
+				"标题": "title=\"&&\"",
+				"链接": "href=\"&&\"",
+				"简介": "class=\"content_desc context clearfix\"&&</span>",
+				"线路数组": "class=\"play_source_tab list_scroll clearfix\"&&</div>",
+				"线路标题": ">&nbsp;<b>&&</b>",
+				"分类url": "https://www.tangrenjie.one/index.php/vod/show/area/{area}/id/{cateId}/letter/{letter}/page/{catePg}/year/{year}.html",
+				"分类": "电影$1#电视剧$2#动漫$3#综艺$4"
+			}
+		},
+		{
+			"key": "黑木耳",
+			"name": "黑木耳",
+			"type": 1,
+			"api": "http://zhangqun66.serv00.net/158.php",
+			"searchable": 1,
+			"changeable": 1
+		},
+		{
+			"key": "策驰影院",
+			"name": "💕策驰影院",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "https://www.cecidy.cc/",
+				"数组": "class=\"myui-vodlist__thumb lazyload\"&&</div>",
+				"图片": "data-original=\"&&\"",
+				"标题": "title=\"&&\"",
+				"链接": "href=\"&&\"",
+				"简介": "class=\"video-des\"&&</div>",
+				"线路标题": "data-toggle=\"tab\">&&</a>",
+				"分类url": "https://www.cecidy.cc/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}/",
+				"分类": "电影$1#剧集$2#综艺$3#动漫$4#短剧$60#动作片$6#喜剧片$7#爱情片$8#科幻片$9#恐怖片$10#剧情片$11#战争片$12#奇幻片$21#悬疑片$22#犯罪片$23#惊悚片$24#纪录片$25#国产剧$13#港台剧$14"
+			}
+		},
+		{
+			"key": "动漫巴士",
+			"name": "💕动漫巴士",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "https://dm84.tv/",
+				"数组": "class=\"item\"&&</div>",
+				"图片": "data-bg=\"&&\"",
+				"标题": "title=\"&&\"",
+				"副标题": "class=\"desc\">&&</span>",
+				"链接": "href=\"&&\"",
+				"简介": "<p>剧情：&&</p>",
+				"分类url": "https://dm84.tv/show-{cateId}--{by}-{class}--{year}-{catePg}.html",
+				"分类": "国产动漫$1#日本动漫$2#欧美动漫$3#电影$4"
+			}
+		},
+		{
+			"key": "唐人街",
+			"name": "💕唐人街",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "https://www.tangrenjie.one/",
+				"数组": "class=\"vodlist_thumb lazyload\"&&</div>",
+				"图片": "data-original=\"&&\"",
+				"标题": "title=\"&&\"",
+				"链接": "href=\"&&\"",
+				"简介": "class=\"content_desc context clearfix\"&&</span>",
+				"线路数组": "class=\"play_source_tab list_scroll clearfix\"&&</div>",
+				"线路标题": ">&nbsp;<b>&&</b>",
+				"分类url": "https://www.tangrenjie.one/index.php/vod/show/area/{area}/id/{cateId}/letter/{letter}/page/{catePg}/year/{year}.html",
+				"分类": "电影$1#电视剧$2#动漫$3#综艺$4"
+			}
+		},
+		{
+			"key": "追剧网",
+			"name": "💕追剧网",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "http://www.inpian.com/",
+				"数组": "class=\"myui-vodlist__box\"&&</div>",
+				"图片": "data-original=\"&&\"",
+				"标题": "title=\"&&\"",
+				"链接": "href=\"&&\"",
+				"简介": "class=\"sketch hidden-sm hidden-xs\"&&</div>",
+				"线路数组": "class=\"item\"&&</div>",
+				"线路标题": ">云视频</a>",
+				"分类url": "http://www.inpian.com/search.php?page={catePg}&searchtype=5&order={by}&tid={cateId}&area=&year={year}&letter=&yuyan=&money=&ver=&jq=&state={letter}",
+				"分类": "国产剧$1#香港剧$2#韩国剧$3#欧美剧$4#台湾剧$5#日本剧$6#泰国剧$7"
+			}
+		},
+		{
+			"key": "ppxdm",
+			"name": "💕ppx动漫",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"ext": {
+				"主页url": "https://www.ppxdm.com/",
+				"嗅探词": "index.m3u8#.mp4#m3u8#.m3u8#/tos/#.flv#video/tos",
+				"图片": "data-original=\"&&\"",
+				"标题": "alt=\"&&\"",
+				"链接": "href=\"&&\"",
+				"线路数组": "class=\"module-tab-item tab-item\"&&</div>",
+				"线路标题": "<span>&&</span>",
+				"分类url": "https://www.ppxdm.com/v-show/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
+				"分类": "动漫电影$1#日本动漫$2#国产动漫$3#欧美动漫$4#短剧$20"
+			}
+		},
+		{
+			"key": "剧兔",
+			"name": "追剧兔子┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://www.zjtu.one/api.php/app/"
+		},
+		{
+			"key": "河狸",
+			"name": "河狸影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://www.heli888.cc/api.php/app/"
+		},
+		{
+			"key": "小马",
+			"name": "小马影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://mas.szyyds.cn/api.php/app/"
+		},
+		{
+			"key": "柠檬",
+			"name": "柠檬影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "http://mf.songshu.cyou/api.php/app/"
+		},
+		{
+			"key": "影馆",
+			"name": "影馆剧场┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://4kdyg.top/api.php/v1.vod"
+		},
+		{
+			"key": "银河",
+			"name": "银河影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "http://134.175.219.46/mogai_api.php/v1.vod"
+		},
+		{
+			"key": "龙门",
+			"name": "龙门影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "http://movie.iqinu.com/api.php/v1.vod"
+		},
+		{
+			"key": "奈飞",
+			"name": "鸭飞影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://yanetflix.me/api.php/app/"
+		},
+		{
+			"key": "剧兔",
+			"name": "追剧兔子┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://www.zjtu.one/api.php/app/"
+		},
+		{
+			"key": "河狸",
+			"name": "河狸影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://www.heli888.cc/api.php/app/"
+		},
+		{
+			"key": "皮虾",
+			"name": "皮皮虾仁┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "http://aikun.tv/api.php/app/"
+		},
+		{
+			"key": "神马",
+			"name": "神马影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://www.shenmaysk.com/api.php/app/"
+		},
+		{
+			"key": "小马",
+			"name": "小马影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://mas.szyyds.cn/api.php/app/"
+		},
+		{
+			"key": "影狗",
+			"name": "影狗剧院┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "http://app.88dyg.com/icciu_api.php/v1.vod"
+		},
+		{
+			"key": "老蟹",
+			"name": "老蟹影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "http://www.ajj001.top/api.php/app/"
+		},
+		{
+			"key": "柠檬",
+			"name": "柠檬影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "http://mf.songshu.cyou/api.php/app/"
+		},
+		{
+			"key": "星易",
+			"name": "星影剧场┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://www.xingyiying.com/api.php/v1.vod"
+		},
+		{
+			"key": "迪影",
+			"name": "爱迪影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://adys.tv/xgapp.php/v1/"
+		},
+		{
+			"key": "视站",
+			"name": "影库剧场┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://xn--p3t583cbin.top/api.php/app/"
+		},
+		{
+			"key": "影馆",
+			"name": "影馆剧场┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://4kdyg.top/api.php/v1.vod"
+		},
+		{
+			"key": "银河",
+			"name": "银河影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "http://134.175.219.46/mogai_api.php/v1.vod"
+		},
+		{
+			"key": "美剧",
+			"name": "六九美剧┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://www.69mj.com/xgapp.php/v2/"
+		},
+		{
+			"key": "大米",
+			"name": "大米星球┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://damifi.com/api.php/app/"
+		},
+		{
+			"key": "思古",
+			"name": "思古影视┃┃💠V2",
+			"type": 3,
+			"api": "csp_AppYsV2",
+			"ext": "https://siguyy.cn/api.php/app/"
+		}
+	]
+}
