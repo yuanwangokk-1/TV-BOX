@@ -840,6 +840,17 @@
 			"ext": "./drpy_js/达达龟.js"
 		},
 		{
+			"key": "hipy_js_达达猪",
+			"name": "达达猪(drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/达达猪.js"
+		},
+		{
 			"key": "hipy_js_大米动漫[漫]",
 			"name": "大米动漫[漫](drpy_t3)",
 			"type": 3,
@@ -1546,6 +1557,17 @@
 			"ext": "./drpy_js/饺子影院.js"
 		},
 		{
+			"key": "hipy_js_金金虫",
+			"name": "金金虫(drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/金金虫.js"
+		},
+		{
 			"key": "hipy_js_金牌影院",
 			"name": "金牌影院(drpy_t3)",
 			"type": 3,
@@ -1599,6 +1621,17 @@
 			"filterable": 1,
 			"order_num": 0,
 			"ext": "./drpy_js/橘子柚[盘].js"
+		},
+		{
+			"key": "hipy_js_剧巴巴",
+			"name": "剧巴巴(drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/剧巴巴.js"
 		},
 		{
 			"key": "hipy_js_剧哥哥",
@@ -2028,6 +2061,17 @@
 			"ext": "./drpy_js/蚂蚁影视.js"
 		},
 		{
+			"key": "hipy_js_漫画走廊[画密飞]",
+			"name": "漫画走廊[画密飞](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/漫画走廊[画密飞].js"
+		},
+		{
 			"key": "hipy_js_漫小肆[画]",
 			"name": "漫小肆[画](drpy_t3)",
 			"type": 3,
@@ -2226,6 +2270,17 @@
 			"filterable": 1,
 			"order_num": 0,
 			"ext": "./drpy_js/暖光影视.js"
+		},
+		{
+			"key": "hipy_js_牌牌影院",
+			"name": "牌牌影院(drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/牌牌影院.js"
 		},
 		{
 			"key": "盘友圈",
@@ -2972,6 +3027,17 @@
 			"ext": "./drpy_js/西屋影视.js"
 		},
 		{
+			"key": "hipy_js_蜥蜴影视[优]",
+			"name": "蜥蜴影视[优](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/蜥蜴影视[优].js"
+		},
+		{
 			"key": "hipy_js_喜马拉雅[听]",
 			"name": "喜马拉雅[听](drpy_t3)",
 			"type": 3,
@@ -3630,6 +3696,17 @@
 			"ext": "./drpy_js/宇航影视.js"
 		},
 		{
+			"key": "hipy_js_云电影网",
+			"name": "云电影网(drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/云电影网.js"
+		},
+		{
 			"key": "YunPan",
 			"name": "云盘资源|网盘",
 			"type": 3,
@@ -3739,6 +3816,17 @@
 			"ext": "./drpy_js/追剧兔.js"
 		},
 		{
+			"key": "hipy_js_追影TV",
+			"name": "追影TV(drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/追影TV.js"
+		},
+		{
 			"key": "hipy_js_孜然影视",
 			"name": "孜然影视(drpy_t3)",
 			"type": 3,
@@ -3827,6 +3915,17 @@
 			"ext": "./drpy_js/cally66.js"
 		},
 		{
+			"key": "hipy_js_eFuns",
+			"name": "eFuns(drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/eFuns.js"
+		},
+		{
 			"key": "hipy_js_freeok",
 			"name": "freeok(drpy_t3)",
 			"type": 3,
@@ -3847,6 +3946,17 @@
 			"filterable": 1,
 			"order_num": 0,
 			"ext": "./drpy_js/FreeOKLOL.js"
+		},
+		{
+			"key": "hipy_js_GO影视",
+			"name": "GO影视(drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/GO影视.js"
 		},
 		{
 			"key": "hipy_js_HDmoli",
@@ -4086,6 +4196,28 @@
 			"filterable": 1,
 			"order_num": 0,
 			"ext": "./drpy_js/TVB云播.js"
+		},
+		{
+			"key": "hipy_js_UAA[密]",
+			"name": "UAA[密](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/UAA[密].js"
+		},
+		{
+			"key": "hipy_js_UAA[听]",
+			"name": "UAA[听](drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/UAA[听].js"
 		},
 		{
 			"key": "hipy_js_voflix",
