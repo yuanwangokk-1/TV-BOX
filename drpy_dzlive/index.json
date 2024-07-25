@@ -1502,6 +1502,17 @@
 			"ext": "./drpy_js/即看影视.js"
 		},
 		{
+			"key": "hipy_js_极点影视",
+			"name": "极点影视(drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/极点影视.js"
+		},
+		{
 			"key": "hipy_js_极客资源[资]",
 			"name": "极客资源[资](drpy_t3)",
 			"type": 3,
@@ -2301,6 +2312,17 @@
 			"filterable": 1,
 			"order_num": 0,
 			"ext": "./drpy_js/胖虎影视.js"
+		},
+		{
+			"key": "hipy_js_泡泡影院",
+			"name": "泡泡影院(drpy_t3)",
+			"type": 3,
+			"api": "./drpy_libs/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./drpy_js/泡泡影院.js"
 		},
 		{
 			"key": "PikaSo",
