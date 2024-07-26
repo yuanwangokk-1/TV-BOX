@@ -10,5 +10,5 @@ https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BO
 
 订阅2：
 ```js
-https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/drpy_dzlive/index.json
+https://mirror.ghproxy.com/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/jsm.json
 ```
