@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="https://unpkg.com/vant@2.12/lib/index.css"/>
+    <script src="https://unpkg.com/vue@2.6/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/vant@2.12/lib/vant.min.js"></script>
+    <style>
+        html, body {
+            margin: 0 5px;
+            height: 45px;
+            overflow: scroll;
+        }
+        .tab {
+            margin: 4px 6px;
+        }
+        .van-tabs__content {
+            margin-top: 10px;
+        }
+        .van-tab__pane {
+            height: 64px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <van-tabs class="tab-box" v-model="currentTab" @click="tabClick">
+        <van-tab v-for="(item, index) in category" :key="index" :title="`${item}`"></van-tab>
+    </van-tabs>
+</div>
+<script>
+    // eval(fy_bridge_app.getInternalJs())
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                category: ['网游', '单机', '娱乐', '手游'],
+                currentTab: 0,
+            }
+        },
+        mounted() {
+            this.getData()
+        },
+        methods: {
+            getData() {
+                this.currentTab = parseInt(fy_bridge_app.getVar('tab-current')) || 0
+            },
+            tabClick(e) {
+                fy_bridge_app.putVar('tab-current', e)
+                fy_bridge_app.refreshPage(true)
+            },
+        }
+    })
+</script>
+</body>
+</html>

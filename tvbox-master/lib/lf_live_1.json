@@ -1,0 +1,21 @@
+#订阅名
+地址(支持m3u订阅、tvbox配置文件中live选项的直播地址订阅)
+
+相对路径说明
+以./开头，相对位置是本订阅文件
+以/开头，存储卡的根目录
+
+#IPTV
+1
+#MSP源
+https://mirror.ghproxy.com/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/msp.m3u
+#BESTV源
+https://mirror.ghproxy.com/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/bestv.m3u
+#SXG源
+https://mirror.ghproxy.com/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/sxg.m3u
+#范明明2
+https://fanmingming.com/txt?url=https://live.fanmingming.com/tv/m3u/ipv6.m3u
+#爱尚源
+https://ghproxy.com/https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/aishang.m3u
+#💕抖音小姐姐💕
+https://mirror.ghproxy.com/https://raw.githubusercontent.com/happybaihao/pan/main/douyinzb.txt

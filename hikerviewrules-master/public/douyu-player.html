@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+          name="viewport"
+          content="width=device-width,
+height=device-height, initial-scale=1,
+maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <title>TyrantGenesis 自制播放器</title>
+  <link rel="stylesheet" href="css/aliplayer-min.css">
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .player {
+      height: 273px;
+    }
+    .barrage-scroll {
+      height: calc(100% - 300px);
+      overflow-y: auto;
+    }
+    .barrage-item {
+      padding: 4px 12px;
+      font-size: 14px;
+    }
+    .username {
+      color: #999;
+      margin-right: 16px;
+    }
+    .content {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+<div class="box">
+  <div class="prism-player player" id="player-con"></div>
+  <div class="barrage-scroll" id="app">
+    <div class="barrage-item" v-for="item in dataList">
+      <span class="username">{{item.user}}:</span><span class="content">{{item.content}}</span>
+    </div>
+  </div>
+</div>
+
+<script src="js/aliplayer-min.js"></script>
+<script src="js/vue.min.js"></script>
+<script>
+  const getQueryVariable = variable => {
+    let query = window.location.search.substring(1)
+    let vars = query.split("&");
+    for (let i=0;i<vars.length;i++) {
+      let pair = vars[i].split("=");
+      if(pair[0] === variable) return pair[1]
+    }
+    return false
+  }
+
+  const rid = getQueryVariable('rid')
+  const source = decodeURIComponent(getQueryVariable('source'))
+
+  const player = new Aliplayer({
+      "id": "player-con",
+      "source": source,
+      "width": "100%",
+      // "height": "500px",
+      "autoplay": true,
+      "isLive": true,
+      "rePlay": false,
+      "playsinline": true,
+      "preload": true,
+      "controlBarVisibility": "hover",
+      "useH5Prism": true
+    }, function (player) {
+      console.log("The player is created");
+    }
+  );
+</script>
+<script>
+  const url = "wss://danmuproxy.douyu.com:8506/"
+  const heartbeat = "\x14\x00\x00\x00\x14\x00\x00\x00\xb1\x02\x00\x00\x74\x79\x70\x65\x40\x3d\x6d\x72\x6b\x6c\x2f\x00 "
+  const heartbeatInterval = 30000
+  // const room = "https://m.douyu.com/"+rid
+  // let reg_datas = []
+  let data_login = 'type@=loginreq/roomid@='+rid+'/'+"\0"
+
+  let data_group = 'type@=joingroup/rid@='+rid+'/gid@=-9999/'+"\0"
+
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        ws: null,
+        dataList: [],
+      }
+    },
+    mounted() {
+      let self = this
+      this.ws = new WebSocket(url)
+
+      let timeout = setInterval(_ => {
+        this.ws.send(this.message(heartbeat))
+      }, heartbeatInterval)
+
+      this.ws.onopen = (res, err) => {
+        // console.log(res, err)
+        this.ws.send(this.message(data_login))
+        this.ws.send(this.message(data_group))
+      }
+      this.ws.onmessage = (res, err) => {
+        let result, fr, str = '', text = ''
+        fr = new FileReader();
+        fr.onload = function(){
+          result = this.result; // ab是转换后的结果
+          let arr = Array.prototype.slice.call(new Uint8Array(result));
+          arr = arr.splice(12)
+          arr.forEach(item => {
+            str += String.fromCharCode(item)
+          })
+          const msg_array = str.match(/(type@=.*?)\x00/g)
+          if (msg_array)
+            msg_array.forEach(msg => {
+              msg = msg.replace(/@=/g, '":"')
+              msg = msg.replace(/\//g, '","')
+              msg = msg.substring(0, msg.length - 3)
+              msg = `{"${msg}}`
+              self.format_msg(msg)
+            })
+        }
+        fr.readAsArrayBuffer(res.data);
+      }
+    },
+    methods: {
+      format_msg(msg) {
+        msg = JSON.parse(msg.replace(/\\/g, ''))
+        console.log(msg)
+        switch (msg.type) {
+          case 'chatmsg':
+            this.dataList.push({
+              user: decodeURI(escape(msg.nn)),
+              content: decodeURI(escape(msg.txt)),
+            })
+            let ele = document.getElementById('app');
+            ele.scrollTop = ele.scrollHeight;
+            break
+                /*case 'dgb':
+                  msg_obj = this._build_gift(msg)
+                  this.emit('message', msg_obj)
+                  break
+                case 'bc_buy_deserve':
+                  msg_obj = this._build_deserve(msg)
+                  this.emit('message', msg_obj)
+                  break
+                case 'loginres':
+                  this._join_group()
+                  break*/
+        }
+      },
+      message(str) {
+        const len = str.length
+        let buffer = new ArrayBuffer(len + 12)
+        new DataView(buffer).setInt16(0,len + 8,true)
+        new DataView(buffer).setInt16(4,len + 8,true)
+        new DataView(buffer).setInt16(8, 45314 ,false)
+        let bufView = new Uint8Array(buffer,12);
+        for (let i = 0; i < len; i++) {
+          bufView[i] = str.charCodeAt(i);
+        }
+        return buffer;
+      }
+    }
+  })
+</script>
+</body>
+</html>

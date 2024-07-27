@@ -1,0 +1,116 @@
+{
+  "drives": [
+{
+      "name": "🦆托盘",
+      "server": "https://pan.mediy.cn",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🌱小雅搜",
+      "server": "http://117.92.199.241:5678/",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🌱小丫搜",
+      "server": "http://121.36.255.202:5678/",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🌱仙女搜",
+      "server": "http://123.60.83.29:5678/",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🐅环宇轩🐅",
+      "server": "https://alist.891218.xyz/",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "失眠的夜🤍小雅网盘",
+      "server": "https://alist.891218.xyz/💢小雅",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🦆alist",
+      "server": "http://sxhp.tpddns.cn:5244",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🐾小新",
+      "server": "https://pan.cdnxin.top",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🌱瑶瑶",
+      "server": "http://123.60.78.63:1000/",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🌱美云",
+      "server": "http://xiaoya.nebula-nas.space:5678/",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🙋小雅搜1",
+      "server": "http://60.204.156.46:5678",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🙋小雅搜6",
+      "server": "http://119.91.20.105:5678",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🙋网络阁群友",
+      "server": "http://124.70.179.62:5678",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🙋弱水分享",
+      "server": "http://shicheng.wang:555",
+      "search": true,
+      "searchable": true
+    },
+{
+      "name": "🙋雨昵网盘",
+      "server": "https://pan.clun.top",
+      "search": true,
+      "searchable": true
+    },
+    {
+      "name": "🙋东哥",
+      "server": "http://noiseyp.top",
+      "search": true,
+      "searchable": true
+    },
+ {
+      "name": "✨ECVE|资源小站",
+      "server": "https://pan.ecve.cn",
+      "search": true,
+      "searchable": true
+    },
+{
+            "name": "九仙阁",
+            "server": "https://drive.9t.ee",
+            "params": [
+              {
+                "path": "/189Cloud",
+                "pass": "dooglu"
+              }
+            ]
+          }
+  ]
+}

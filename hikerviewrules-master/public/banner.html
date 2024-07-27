@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>TyrantGenesis</title>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 48px;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <el-carousel :interval="4000" type="card" height="200px">
+    <el-carousel-item v-for="item in images" :key="item">
+      <img :src="item" :alt="item">
+    </el-carousel-item>
+  </el-carousel>
+</div>
+<script src="https://unpkg.com/vue@2.6/dist/vue.min.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        images: []
+      }
+    },
+    mounted() {
+      this.getFetchImages()
+    },
+    methods: {
+      getFetchImages() {
+        const html = fy_bridge_app.fetch("https://pic.tjsky.net/pixiv/pic/2021/05/24_daily/")
+        const list = fy_bridge_app.parseDomForArray(html, '.mdui-list&&.file')
+        list.forEach(item => {
+          this.images.push(fy_bridge_app.parseDomForHtml(item, 'a&&href'))
+        })
+      },
+    },
+  });
+</script>
+</body>
+</html>

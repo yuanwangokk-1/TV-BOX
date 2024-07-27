@@ -1,0 +1,33 @@
+#订阅名
+地址(支持m3u订阅、tvbox配置文件中live选项的直播地址订阅)
+
+相对路径说明
+以./开头，相对位置是本订阅文件
+以/开头，存储卡的根目录
+
+#IPTV
+1
+#百号•综合
+https://mirror.ghproxy.com/https://raw.githubusercontent.com/happybaihao/pan/main/live.txt
+#看电视呗
+http://tvbox6.com/tv.php?key=2785
+#春风
+https://wds.ecsxs.com/230864.json
+#小黑
+https://d.kstore.space/download/7395/xiaohei.txt
+#摸鱼小电视
+http://我不是.摸鱼儿.top/live.php
+#小米ipv4
+http://124.223.177.85:88/svip/直播挺快.txt
+#tg央卫
+http://xn--wnu643e.x10.mx/live.m3u
+#明日
+https://ghproxy.net/https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt
+#肥猫饭太硬
+https://xhdwc.tk/tvlive.txt
+#YanG Gather
+https://mirror.ghproxy.com/https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u
+#L大IPV6
+https://d.laigc.com/m3.m3u
+#Hong Kong
+https://epg.pw/test_channels_hong_kong.m3u

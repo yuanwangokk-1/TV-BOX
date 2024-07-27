@@ -1,0 +1,221 @@
+[
+  {
+    "title": "直播",
+    "data": [
+      {
+        "title": "国内",
+        "rules": [
+          {
+            "title": "斗鱼直播",
+            "rule": {"pageList":[],"title":"斗鱼直播","author":"TyrantGenesis","version":5,"url":"https://m.douyu.com","col_type":"movie_2","class_name":"","class_url":"","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch(\"hiker://files/rules/TyrantG/LIVE/douyu.js\"))\nbaseParse()","searchFind":"js:\neval(fetch(\"hiker://files/rules/TyrantG/LIVE/douyu.js\"))\nsearchParse()","search_url":"https://m.douyu.com/api/search/anchor?limit=10&offset=fypage@-1@*10@&sk=**;POST","group":"⑳TyrantG","detail_col_type":"movie_1","detail_find_rule":"","sdetail_col_type":"movie_1","sdetail_find_rule":"","ua":"pc","preRule":"const BASE_URL = \"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/\"\nconst LOCAL_URL = \"hiker://files/rules/TyrantG/\"\n\n/* Base Function */\nconst godWriteFile = (path) => {\n  if (Array.isArray(path))\n\tpath.forEach(item => writeFile(LOCAL_URL+item, fetch(BASE_URL+item)))\n  else\n\twriteFile(LOCAL_URL+path, fetch(BASE_URL+path))\n}\n\nconst godSaveFile = (path) => {\n  if (Array.isArray(path))\n\tpath.forEach(item => {\n\t  if (! fileExist(LOCAL_URL+item)) writeFile(LOCAL_URL+item, fetch(BASE_URL+item))\n\t})\n  else\n\tif (! fileExist(LOCAL_URL+path)) writeFile(LOCAL_URL+path, fetch(BASE_URL+path))\n  \n}\n/* Base Function */\n\ngodWriteFile([\"LIVE/douyu.js\", \"public/douyu-tabs.html\"])\ngodSaveFile([\"public/css/element-ui.css\", \"public/js/vue.min.js\", \"public/js/element-ui.js\"])","pages":"[]","icon":"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/douyu.png","titleColor":"#bdb2ff"}
+          },
+          {
+            "title": "虎牙直播",
+            "rule": {"title":"虎牙直播","icon":"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/huya.png","author":"TyrantGenesis","version":3,"url":"https://m.huya.com","col_type":"movie_3","class_name":"","class_url":"","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/LIVE/huya.js'))\nbaseParse()","searchFind":"js:\neval(fetch('hiker://files/TyrantG/LIVE/huya.js'))\nsearchParse()","search_url":"https://search.cdn.huya.com/?m=Search&do=getSearchContent&plt=m&q=**&uid=0&app=11&v=1&typ=-5&start=fypage@-1@*12@&rows=12","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"movie_1","detail_find_rule":"","sdetail_col_type":"movie_1","sdetail_find_rule":"","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nhuya_live()"}
+          },
+          {
+            "title": "企鹅电竞",
+            "rule": {"title":"企鹅电竞","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://share.egame.qq.com/cgi-bin/pgg_async_fcgi?param={\"0\":{\"param\":{\"page_num\":fypage,\"page_size\":16},\"module\":\"pgg_live_read_ifc_mt_svr\",\"method\":\"get_live_list_by_recom_h5\"}};POST","col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/LIVE/qie_egame.js'))\nbaseParse()","search_url":"https://egame.qq.com/search/live?kw=**;get;utf-8;{User-Agent@Windows}","searchFind":"js:\neval(fetch('hiker://files/TyrantG/LIVE/qie_egame.js'))\nsearchParse()","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nqie_egame_live()"}
+          },
+          {
+            "title": "企鹅体育",
+            "rule": {"title":"企鹅体育","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"hiker://empty?page=fypage&_=_","col_type":"scroll_button","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/LIVE/qie_sport.js'))\nbaseParse()","search_url":"https://live.qq.com/api/info/search?keyword=**&from=room;post","searchFind":"js:\neval(fetch('hiker://files/TyrantG/LIVE/qie_sport.js'))\nsearchParse()","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nqie_sport_live()"}
+          },
+          {
+            "title": "95秀",
+            "rule": {"title":"95秀","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://www.95.cn/index/AnchorCategory2?page=fypage&type=fyclass&screen_high=0&counts=20","col_type":"movie_2","class_name":"热门&连麦&女神&才艺&新星&手机&交友&畅聊","class_url":"9&20&1&18&11&15&16&22","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/LIVE/95_xiu.js'))\nbaseParse()","search_url":"https://www.95.cn/index/SearchAnchor2?page=fypage&screen_high=1&value=**","searchFind":"js:\neval(fetch('hiker://files/TyrantG/LIVE/95_xiu.js'))\nsearchParse()","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\n_95_xiu_live()"}
+          }
+        ]
+      },
+      {
+        "title": "海外",
+        "rules": [
+          {
+            "title": "Twitch",
+            "rule": {"title":"Twitch","author":"TyrantGenesis","version":2,"url":"https://api.twitch.tv/kraken/games/top?offset=fypage@-1@*24@&limit=24","col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch(\"hiker://files/TyrantG/LIVE/twitch.js\"))\nbaseParse()","searchFind":"js:\neval(fetch(\"hiker://files/TyrantG/LIVE/twitch.js\"))\nsecParse()","search_url":"https://api.twitch.tv/kraken/search/streams?query=**&offset=fypage@-1@*24@&limit=24","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"movie_2","detail_find_rule":"js:\neval(fetch(\"hiker://files/TyrantG/LIVE/twitch.js\"))\nsecParse()","sdetail_col_type":"","sdetail_find_rule":"","ua":"pc","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\ntwitch()"}
+          },
+          {
+            "title": "17LIVE",
+            "rule": {"title":"17LIVE","author":"TyrantGenesis","version":1,"url":"https://api-dsa.17app.co/api/v1/cells?count=fypage@*20@&cursor&paging=1&region=fyarea&tab=fyclass","col_type":"","class_name":"熱門直播&最新直播&音樂直播&電玩遊戲","class_url":"hot_opt&latest&music&gaming","area_name":"全球&台灣&香港&日本&馬來西亞&美國&新加坡","area_url":"GLOBAL&TW&HK&JP&MY&US&SG","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/LIVE/17live.js'))\nbaseParse()","searchFind":"js:\neval(fetch('hiker://files/TyrantG/LIVE/17live.js'))\nsearchParse()","search_url":"https://api-dsa.17app.co/api/v1/user/search?query=**","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"pc","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\n_17live()"}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "工具",
+    "data": [
+      {
+        "title": "明日方舟",
+        "rules": [
+          {
+            "title": "明日方舟工具箱",
+            "rule": {"title":"明日方舟工具箱","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://www.bigfun.cn/tools/aktools/","col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/TOOL/aktool.js'))\nbaseParse()","search_url":"","searchFind":"","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\naktool()"}
+          },
+          {
+            "title": "PRTS Wiki",
+            "rule": {"title":"PRTS Wiki","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"http://prts.wiki/w/%E9%A6%96%E9%A1%B5","col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/TOOL/prts.js'))\nbaseParse()","search_url":"","searchFind":"","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nprts()"}
+          }
+        ]
+      },
+      {
+        "title": "永劫无间",
+        "rules": [
+          {
+            "title": "永劫无间战绩查询",
+            "rule": {"title":"永劫无间战绩查询","author":"TyrantGenesis","url":"hiker://empty##fypage","version":0,"col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch(\"hiker://files/TyrantG/TOOL/naraka_score.js\"))\nbaseParse()","search_url":"","titleColor":"#bdb2ff","group":"⑳TyrantG","searchFind":"","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nnaraka_score()","pages":"[]"}
+          }
+        ]
+      },
+      {
+        "title": "原神",
+        "rules": [
+          {
+            "title": "原神地图工具",
+            "rule": {"title":"原神地图工具","author":"TyrantGenesis","version":"2","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://static-web.ghzs.com/cspage_pro/yuanshenMap.html#/","col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/TOOL/ys_map.js'))\nbaseParse()","search_url":"","searchFind":"","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nys_map()"}
+          }
+        ]
+      },
+      {
+        "title": "其他",
+        "rules": [
+          {
+            "title": "在线DOS游戏",
+            "rule": {"title":"在线DOS游戏","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://dos.zczc.cz","col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/TOOL/zczc.js'))\nbaseParse()","search_url":"","searchFind":"","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nzczc()"}
+          }
+        ]
+      },
+      {
+        "title": "测试",
+        "rules": [
+          {
+            "title": "AC番剧-tab测试",
+            "rule": {"title":"AC番剧-tab测试","author":"TyrantGenesis & Rx","version":"3","url":"https://www.acfun.cn/bangumilist?pageNum=fypage","col_type":"movie_3","class_name":"","class_url":"","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/TEST/acfun-bangumilist.js'))\nbaseParse()","searchFind":"js:\neval(fetch('hiker://files/TyrantG/TEST/acfun-bangumilist.js'))\nsearchParse()","search_url":"https://api-ipv6.app.acfun.cn/rest/app/search/bgm?keyword=**&requestId=&sortType=1&pCursor=fypage@-1@*1@&market=meizu&product=ACFUN_APP&sys_version=10&app_version=6.46.0.1145&boardPlatform=sdm660&sys_name=android&socName=%3A%20Qualcomm%20Snapdragon%20660&appMode=0","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"movie_1","detail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/TEST/acfun-bangumilist.js'))\nsecParse()","sdetail_col_type":"movie_1","sdetail_find_rule":"*","ua":"pc","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nacfun()"}
+          },
+          {
+            "title": "测试主页2",
+            "rule": {"title":"测试主页2","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"hiker://empty","col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch(\"hiker://files/TyrantG/TEST/new-homepage.js\"))\nhomePage()","search_url":"","searchFind":"","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nnew_homepage()"}
+          },
+          {
+            "title": "YouTube",
+            "rule": {"title":"YouTube","author":"TyrantGenesis","version":1,"url":"hiker://empty","col_type":"movie_3","class_name":"","class_url":"","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/TEST/youtube.js'))\nbaseParse()","searchFind":"","search_url":"","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"movie_1","detail_find_rule":"","sdetail_col_type":"movie_1","sdetail_find_rule":"","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nyoutube()"}
+          },
+          {
+            "title": "抖音网页版",
+            "rule": {"title":"抖音网页版","author":"TyrantGenesis","version":1,"url":"hiker://empty##fypage","col_type":"movie_3","class_name":"","class_url":"","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/VIDEO/douyin_web.js'))\nbaseParse()","searchFind":"js:\neval(fetch('hiker://files/TyrantG/VIDEO/douyin_web.js'))\nsearchParse()","search_url":"hiker://empty##**","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"movie_1","detail_find_rule":"","sdetail_col_type":"movie_1","sdetail_find_rule":"","ua":"pc","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\ndouyin_web()"}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "影视",
+    "data": [
+      {
+        "title": "免嗅",
+        "rules": [
+          {
+            "title": "EdNovas影视",
+            "rule": {"title":"EdNovas影视","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://movies.ednovas.xyz/index.php/vod/show/id/1/page/fypage.html","col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\nconst GHS = 0\neval(fetch(\"hiker://files/TyrantG/VIDEO/ednovas.js\"))\nbaseParse()","search_url":"","searchFind":"","detail_col_type":"","detail_find_rule":"js:\neval(fetch(\"hiker://files/TyrantG/VIDEO/ednovas.js\"))\nsecParse()","sdetail_col_type":"","sdetail_find_rule":"","ua":"","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nednovas()"}
+          },
+          {
+            "title": "4K影视",
+            "rule": {"pageList":[],"title":"4K影视","icon":"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/4k.png","author":"TyrantGenesis","version":1,"url":"https://www.4kvm.com/fyclass/page/fypage####fyclass","col_type":"movie_3","class_name":"电影&美剧&国产剧&韩剧&番剧&热门播放&评分榜","class_url":"movies&classify/美剧&classify/国产剧&classify/韩剧&classify/番剧&trending&ratings","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\n    let d = [];\n    const cate = MY_URL.split('####')[1]\n\n    const temp1 = _ => {\n        let list = parseDomForArray(getResCode(), '#archive-content&&.item')\n        list.forEach(item => {\n            d.push({\n                title: parseDomForHtml(item, 'h3&&Text'),\n                pic_url: parseDomForHtml(item, 'img&&src'),\n                url: parseDomForHtml(item, 'a&&href')+'#immersiveTheme#',\n                desc: parseDomForHtml(item, '.rating&&Text'),\n            })\n        })\n    }\n\n    const temp2 = _ => {\n        let list = parseDomForArray(getResCode(), '.items&&.item')\n        list.forEach(item => {\n            d.push({\n                title: parseDomForHtml(item, 'h3&&Text'),\n                pic_url: parseDomForHtml(item, 'img&&src'),\n                url: parseDomForHtml(item, 'a&&href')+'#immersiveTheme#',\n                desc: parseDomForHtml(item, '.rating&&Text'),\n            })\n        })\n    }\n\n    switch (cate) {\n        case 'movies':\n            temp1()\n            break\n        default:\n            temp2()\n    }\n\n    setResult(d);","searchFind":".search-page&&.result-item;\n.title&&Text;\na&&href.js:input+\"#immersiveTheme#\";\n.contenido&&Text;\n.contenido&&Text;\nimg&&src","search_url":"https://www.4kvm.com/xssearch?s=**&f=_all&p=fypage","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"movie_1_vertical_pic_blur","detail_find_rule":"js:\n    let d = [];\n    let header = parseDomForHtml(getResCode(), '.sheader&&Html')\n\n    d.push({\n        title: parseDomForHtml(header, 'h1&&Text'),\n        pic_url: parseDomForHtml(header, 'img&&src'),\n        url: MY_URL,\n        desc: parseDomForHtml(getResCode(), '.wp-content&&p&&Text'),\n    })\n    d.push({\n        col_type: 'line'\n    })\n\n    let list = parseDomForArray(getResCode(), '#episodes&&.se-c')\n\n    d.push({\n        title: '选集',\n        url: \"hiker://empty\",\n        col_type: 'text_1',\n    })\n    if (list.length > 0) {\n        list.forEach(item => {\n            d.push({\n                title: parseDomForHtml(item, '.title&&Text'),\n                url: \"hiker://empty\",\n                col_type: 'text_1',\n            })\n            let current_list = parseDomForArray(item, 'ul&&li')\n            if (current_list.length > 0) {\n                current_list.reverse().forEach(data => {\n                    d.push({\n                        title: parseDomForHtml(data, 'a&&Text').replace(' ', ''),\n                        url: $(parseDomForHtml(data, 'a&&href')).lazyRule(_ => {\n                            let video = parseDomForArray(request(input), '#playeroptionsul&&li')[0]\n                            let fetch = request(\"https://www.4kvm.com/wp-json/dooplayer/v1/post/\"+parseDomForHtml(video, 'li&&data-post')+\"?type=movie&source=1\")\n                            return \"http://4kjx.dev.tyrantg.com/index.m3u8?url=\"+JSON.parse(fetch).embed_url+'#isVideo=true#'\n                        }),\n                        col_type: 'text_4',\n                    })\n                })\n            } else {\n                let html = request(parseDomForHtml(item, 'a&&href'))\n                let sel_list_json = html.match(/videourls:\\[(.*?)],/)[1]\n                let sel_list = JSON.parse(sel_list_json)\n                sel_list.forEach(data => {\n                    d.push({\n                        title: \"第\"+data.name+\"集\",\n                        url: \"http://4kjx.dev.tyrantg.com/index.m3u8?url=\"+data.url+'#isVideo=true#',\n                        col_type: 'text_4',\n                    })\n                })\n            }\n        })\n    } else {\n        let video = parseDomForArray(getResCode(), '#playeroptionsul&&li')\n        video.forEach(item => {\n            d.push({\n                //title: parseDomForHtml(item, '.title&&Text'),\n                title: '在线播放',\n                url: $(\"https://www.4kvm.com/wp-json/dooplayer/v1/post/\"+parseDomForHtml(item, 'li&&data-post')+\"?type=movie&source=1\").lazyRule(_ => {\n                    let fetch = request(input)\n                    return \"http://4kjx.dev.tyrantg.com/index.m3u8?url=\"+JSON.parse(fetch).embed_url+'#isVideo=true#'\n                }),\n                col_type: 'text_2',\n            })\n        })\n\n    }\n\n    setResult(d);","sdetail_col_type":"movie_1","sdetail_find_rule":"*","ua":"pc","preRule":"","pages":"[]"}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "图片",
+    "data": [
+      {
+        "title": "图站",
+        "rules": [
+          {
+            "title": "触站",
+            "rule": {"title":"触站","author":"TyrantGenesis","version":1,"url":"hiker://empty##fypage","col_type":"movie_3","class_name":"","class_url":"","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/IMAGE/huashi6.js'))\nbaseParse()","searchFind":"js:\neval(fetch('hiker://files/TyrantG/IMAGE/huashi6.js'))\nsearchParse()","search_url":"https://rt.huashi6.com/front/works/search?index=fypage&title=**","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"movie_1","detail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/IMAGE/huashi6.js'))\nsecParse()","sdetail_col_type":"movie_1","sdetail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/IMAGE/huashi6.js'))\nsecParse()","ua":"pc","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nhuashi6()","pages":"[]"}
+          }
+        ]
+      },
+      {
+        "title": "艺术",
+        "rules": [
+          {
+            "title": "ArtStation",
+            "rule": {"title":"ArtStation","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://www.artstation.com?page=fypage&t=1","col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/IMAGE/artstation.js'))\nbaseParse()","search_url":"","searchFind":"","detail_col_type":"","detail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/IMAGE/artstation.js'))\nsecParse()","sdetail_col_type":"","sdetail_find_rule":"","ua":"","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nartStation()"}
+          }
+        ]
+      },
+      {
+        "title": "设计",
+        "rules": [
+          {
+            "title": "Dribbble",
+            "rule": {"title":"Dribbble","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://dribbble.com/shots/fyarea/fyclass?page=fypage&per_page=24","col_type":"movie_2","class_name":"All&Animation&Branding&Illustration&Mobile&Print&Product Design&Typography&Web Design","class_url":"&animation&branding&illustration&mobile&print&product-design&typography&web-design","area_name":"Popular&New and Noteworthy","area_url":"popular&recent","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"ol&&.shot-thumbnail-container;\n.accessibility-text&&Text;\nimg&&src;\n.display-name&&Text;\n.shot-thumbnail-link&&href","search_url":"","searchFind":"ol&&.shot-thumbnail-container;\n.shot-title&&Text;\n.dribbble-link&&href;\n.display-name&&Text;\n;\nimg&&src","detail_col_type":"pic_1_full","detail_find_rule":".shot-image-color-palette-container&&.full-screen-page;\n;\nimg&&src.js:input.split('?')[0];\n;\nimg&&src.js:input.split('?')[0]","sdetail_col_type":"","sdetail_find_rule":"*","ua":"","preRule":""}
+          },
+          {
+            "title": "站酷",
+            "rule": {"title":"站酷","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://www.zcool.com.cn/discover.json##fypage","col_type":"","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/IMAGE/zcool.js'))\nbaseParse()","search_url":"https://www.zcool.com.cn/search/content.json?word=**&cate=0&type=0&recommendLevel=0&time=0&hasVideo=0&city=0&college=0&sort=5&limit=20&column=4&page=fypage","searchFind":"js:\neval(fetch('hiker://files/TyrantG/IMAGE/zcool.js'))\nsearchParse()","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"pc","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nzcool()"}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GHS",
+    "data": [
+      {
+        "title": "图片站",
+        "rules": [
+          {
+            "title": "yande.re ✔",
+            "rule": {"title":"yande.re","author":"TyrantGenesis","url":"https://yande.re/post?page=fypage","version":1,"col_type":"pic_3","class_name":"","class_url":"","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/yande.re.js'))\nbaseParse()","search_url":"https://yande.re/post?page=fypage&tags=**","titleColor":"#bdb2ff","group":"⑳TyrantG","searchFind":"js:\neval(fetch('hiker://files/TyrantG/GHS/yande.re.js'))\nsearchParse()","detail_col_type":"pic_1_full","detail_find_rule":"","sdetail_col_type":"\npic_1","sdetail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/yande.re.js'))\nsecParse()","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nyande_re()"}
+          }
+        ]
+      },
+      {
+        "title": "动画站",
+        "rules": [
+          {
+            "title": "ohentai",
+            "rule": {"title":"ohentai","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://ohentai.org/alltags.php","col_type":"text_2","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/ohentai.js'))\nbaseParse()","search_url":"https://ohentai.org/search.php?k=**&p=fypage","searchFind":"js:\neval(fetch('hiker://files/TyrantG/GHS/ohentai.js'))\nsecParse()","detail_col_type":"","detail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/ohentai.js'))\nsecParse()","sdetail_col_type":"","sdetail_find_rule":"","ua":"","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nohentai()"}
+          }
+        ]
+      },
+      {
+        "title": "视频站",
+        "rules": [
+          {
+            "title": "Jable",
+            "rule": {"title":"Jable","author":"TyrantGenesis","version":1,"url":"https://jable.tv/fyAll/fypage/?from=fypage","col_type":"movie_2","class_name":"热门&最新","class_url":"hot&new-release","area_name":"主奴調教&直接開啪&中文字幕&凌辱強暴&制服誘惑&角色劇情&盜攝偷 拍&無碼解放&男友視角&多P群交&絲襪美腿&女同歡愉","area_url":"categories/bdsm&categories/sex-only&categories/chinese-subtitle&categories/rape&categories/uniform&categories/roleplay&categories/hidden-cam&categories/uncensored&categories/pov&categories/groupsex&categories/pantyhose&categories/lesbian","sort_name":"","year_name":"3P&4小時以上&Cosplay&NTR&OL&一日十回&下雨天&不倫&中出&主播&乳交&人 妻&便利店&健身房&偶像&偷 拍&催眠&兔女郎&凌辱&出軌&刑具&口交&口 爆&吊帶襪&和服&圖書館","sort_url":"","year_url":"tags/3p&tags/more-than-4-hours&tags/Cosplay&tags/ntr&tags/ol&tags/10-times-a-day&tags/rainy-day&tags/incest&tags/creampie&tags/female-anchor&tags/tit-wank&tags/wife&tags/store&tags/gym-room&tags/idol&tags/hidden-cam&tags/hypnosis&tags/bunny-girl&tags/insult&tags/affair&tags/torture&tags/blowjob&tags/cum-in-mouth&tags/stockings&tags/kimono&tags/library","find_rule":"js:\neval(fetch(\"hiker://files/TyrantG/GHS/jable.js\"))\nbaseParse()","searchFind":"js:\neval(fetch(\"hiker://files/TyrantG/GHS/jable.js\"))\nbaseParse()","search_url":"https://jable.tv/search/**/?from_videos=fypage&from_albums=fypage","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"pic_1","detail_find_rule":"js:\neval(fetch(\"hiker://files/TyrantG/GHS/jable.js\"))\nsecParse()","sdetail_col_type":"pic_1","sdetail_find_rule":"js:\neval(fetch(\"hiker://files/TyrantG/GHS/jable.js\"))\nsecParse()","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\njable()"}
+          },
+          {
+            "title": "Pornhub",
+            "rule": {"title":"pornhub","author":"TyrantGenesis","url":"https://cn.pornhub.com/video?o=fyclass&cc=fyarea&page=fypage","version":3,"col_type":"movie_2","class_name":"最热门&次数多","class_url":"ht&mv","area_name":"美国&日本&韩国&阿根廷&澳大利亚&奥地利&比利时&巴西&加拿大&法国&德国&乌克兰","area_url":"us&jp&kr&ar&au&at&be&br&ca&fr&de&ua","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":".videoList&&.videoWrapper;\n.title&&a&&Text;\n.videoThumb&&data-thumb_url;\n.time&&Text;\n.title&&a&&Attrhref","search_url":"https://cn.pornhub.com/video/search?search=**&page=fypage","titleColor":"#bdb2ff","group":"⑳TyrantG","searchFind":".videoList&&.videoWrapper;\n.title&&a&&Text;\n.title&&a&&Attrhref;\n.time&&Text;\n.title&&a&&Text;\n.videoThumb&&data-thumb_url","detail_col_type":"movie_1","detail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/pornhub.js'))\nsecParse()","sdetail_col_type":"movie_1","sdetail_find_rule":"*","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\npornhub()"}
+          },
+          {
+            "title": "SpankBang",
+            "rule": {"title":"spankbang","author":"TyrantGenesis","url":"https://spankbang.com/fyclass/fypage/","version":2,"col_type":"movie_3","class_name":"最新&热门&最受欢迎","class_url":"new_videos&trending_videos&most_popular","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/spankbang.js'))\nbaseParse()","search_url":"https://spankbang.com/s/**/fypage/","titleColor":"#bdb2ff","group":"⑳TyrantG","searchFind":"js:\neval(fetch('hiker://files/TyrantG/GHS/spankbang.js'))\nsearchParse()","detail_col_type":"movie_1","detail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/spankbang.js'))\nsecParse()","sdetail_col_type":"movie_1","sdetail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/spankbang.js'))\nsecParse()","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nspankbang()"}
+          },
+          {
+            "title": "eroticmovies.xyz",
+            "rule": {"title":"eroticmovies.xyz","author":"TyrantGenesis","version":1,"url":"https://eroticmovies.xyz/fyAll/page/fypage","col_type":"movie_2","class_name":"最新&热门","class_url":"new&top","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"tr&&td;\nh2&&a&&Text;\nimg[alt]&&src;\n;\na&&Attrhref","searchFind":"","search_url":"","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"pic_1","detail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/eroticmovies.xyz.js'))\nsecParse()","sdetail_col_type":"movie_1","sdetail_find_rule":"","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\neroticmovies_xyz()"}
+          },
+          {
+            "title": "Eporner",
+            "rule": {"title":"eporner","author":"TyrantGenesis","version":1,"url":"https://www.eporner.com/cat/fyAll/fypage/","col_type":"movie_2","class_name":"1080&4K","class_url":"hd-1080p&4k-porn","area_name":"","area_url":"","sort_name":"","year_name":"","sort_url":"","year_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/eporner.js'))\nbaseParse()","searchFind":"js:\neval(fetch('hiker://files/TyrantG/GHS/eporner.js'))\nbaseParse()","search_url":"https://www.eporner.com/search/**/fypage/","titleColor":"#bdb2ff","group":"⑳TyrantG","detail_col_type":"movie_1","detail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/eporner.js'))\nsecParse()","sdetail_col_type":"movie_1","sdetail_find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/eporner.js'))\nsecParse()","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\neporner()"}
+          },
+          {
+            "title": "7719",
+            "rule": {"title":"7719","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"http://www.7719.me/index.php/vod/type/id/fyclass/page/fypage.html","col_type":"movie_2","class_name":"日本无 码&精品国产&麻豆合集&中文字幕&亚洲情 色&制服师生&美乳巨乳&萝莉少女&人 妻熟女&明星淫梦&强 奸乱 伦&偷 拍自拍&风骚寡妇&欧美性 爱","class_url":"1&2&63&3&4&5&60&61&62&41&49&50&51&53","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/7719.js'))\nbaseParse()","search_url":"http://www.7719.me/index.php/vod/search/page/fypage/wd/**.html","searchFind":"js:\neval(fetch('hiker://files/TyrantG/GHS/7719.js'))\nbaseParse()","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"mobile","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\n_7719()"}
+          },
+          {
+            "title": "水果派",
+            "rule": {"title":"水果派","author":"TyrantGenesis","version":"1","group":"⑳TyrantG","titleColor":"#bdb2ff","url":"https://api.f03d9.info/library?limit=6&page=fypage&platfrom=0","col_type":"pic_1","class_name":"","class_url":"","area_name":"","area_url":"","year_name":"","year_url":"","sort_name":"","sort_url":"","find_rule":"js:\neval(fetch('hiker://files/TyrantG/GHS/shuiguopai.js'))\nbaseParse()","search_url":"","searchFind":"","detail_col_type":"","detail_find_rule":"","sdetail_col_type":"","sdetail_find_rule":"","ua":"pc","preRule":"eval(fetch(\"https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/God_Plan.js\"))\nshuiguopai()"}
+          }
+        ]
+      }
+    ]
+  }
+]

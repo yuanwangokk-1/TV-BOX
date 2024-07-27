@@ -1,0 +1,344 @@
+/*reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after{
+  box-sizing: border-box;
+}
+
+*::before{
+  box-sizing: border-box;
+}
+body{
+  font-family: Helvetica, sans-serif;
+  color: #333;
+}
+ol,ul{
+  list-style: none;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.noCollapse::before{
+  content: '';
+  display: table;
+}
+.noCollapse::after{
+  content: "";
+  display: table;
+}
+
+.line-clamp1{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.line-clamp2{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.line-clamp3{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+footer,
+.playlist-head .info .author {
+ font-size: 0;
+}
+
+.page-wrapper {
+  background: #f8f8f8;
+}
+
+.playlist-head {
+  position: relative;
+  display: flex;
+  padding: .8rem .266666rem .8rem .4rem;
+  overflow: hidden;
+  color: #fff;
+}
+
+.playlist-head .background-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url(//oxwijsbmc.bkt.clouddn.com/playlist/3.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(.533333rem);
+  transform: scale(1.5);
+}
+
+.playlist-head .background-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.27);
+}
+
+.playlist-head .cover {
+  width: 3.36rem;
+  height: 3.36rem;
+  position: relative;
+}
+
+.playlist-head .cover img {
+  width: 100%;
+}
+
+.playlist-head .cover .list-number {
+  height: .48rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 0.053333rem;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: .32rem;
+}
+
+.playlist-head .cover .list-number .icon-erji {
+  font-size: .426666rem;
+  order: 1;
+  margin-right: 0.053333rem;
+}
+
+.playlist-head .cover .cover-icon {
+  position: absolute;
+  top: .266666rem;
+  left: 0;
+  font-size: .32rem;
+  background-color: rgba(217, 48, 48, .8);
+  padding: 0 .213333rem;
+  border-top-right-radius: .693333rem;
+  border-bottom-right-radius: .693333rem;
+  line-height: 1.41666;
+  z-index: 1;
+}
+
+.playlist-head .info {
+  flex: 1;
+  z-index: 1;
+  margin-left: .426666rem;
+  width: 5.54666rem;
+}
+
+.playlist-head .info h2 {
+  padding-top: 1px;
+  font-size: .453333rem;
+  line-height: 1.3;
+  height: 1.2rem;
+  -webkit-box-pack: center;
+}
+
+.playlist-head .info .author {
+  display: flex;
+  align-items: center;
+  margin-top: .533333rem;
+}
+
+.playlist-head .info .author .avatar {
+  position: relative;
+  width: .8rem;
+  height: .8rem;
+  margin-right: .133333rem;
+}
+
+.playlist-head .info .author .avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.playlist-head .info .author .avatar .avatar-icon {
+  width: .32rem;
+  height: .666666rem;
+  position: absolute;
+  bottom: -.346666rem;
+  right: -.133333rem;
+  background: url(../img/usericn_2x.png);
+  background-size: cover;
+  background-position: -1.066666rem 0;
+  background-repeat: no-repeat;
+}
+
+.playlist-head .info .author p {
+  color: #d0cfcf;
+  font-size: .373333rem;
+  line-height: .373333rem;
+  padding-bottom: 0.053333rem;
+}
+
+.playlist-info {
+  font-size: .373333rem;
+  color: #666;
+}
+
+.playlist-info .tag-list {
+  padding: .266666rem .266666rem 0 .4rem;
+  display: flex;
+}
+
+.playlist-info .tag-list .tags>span {
+  font-size: .32rem;
+  position: relative;
+  padding: 0 .213333rem;
+  line-height: 1.84;
+  display: inline-block;
+  margin-right: .16rem;
+}
+
+.playlist-info .tag-list .tags>span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 1.066666rem;
+  transform: scale(.5);
+  transform-origin: 0 0;
+}
+
+.playlist-info .intro {
+  padding: .266666rem .266666rem 0 .4rem;
+  line-height: .506666rem;
+}
+
+.playlist-info .intro.active {
+  height: 1.733333rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.playlist-info .arrow {
+  font-size: .32rem;
+  text-align: right;
+  padding: 1px .293333rem .08rem 0;
+}
+
+.playlist-info .arrow .icon-arrow-up {
+  display: none;
+}
+
+.playlist-content {
+  margin-bottom: 1.44rem;
+}
+
+.playlist-content .list>h3 {
+  font-size: .32rem;
+  padding: 0.053333rem .266666rem .133333rem;
+  background: #eeeff0;
+  color: #666;
+}
+
+.playlist-content .list li a {
+  display: flex;
+}
+
+.playlist-content .list li .list-content-wrapper {
+  display: flex;
+  flex: 1;
+  padding-top: .17rem;
+  padding-bottom: .1235rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.playlist-content .list li .list-number {
+  display: flex;
+  justify-content: center;
+  width: 1.066666rem;
+  align-items: center;
+  color: #999;
+  font-size: .453333rem;
+  padding-top: .01rem;
+}
+
+.playlist-content .list li .list-text {
+  flex: 1;
+}
+
+.playlist-content .list li .list-text h3 {
+  font-size: .453333rem;
+  line-height: 1.5;
+}
+
+.playlist-content .list li .list-text p {
+  font-size: .32rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+.playlist-content .list li .icon-wrapper {
+  padding: 0 .16rem;
+  display: flex;
+  align-items: center;
+}
+
+.playlist-content .list li .icon-play {
+  width: .8rem;
+  height: .8rem;
+  fill: #aaa;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: .186666rem .8rem;
+  background: #fff;
+}
+
+footer>a {
+  background: #d43b32;
+  color: #fff;
+  font-size: .426666rem;
+  padding: .05rem 0 .25rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-radius: .906666rem;
+}
+
+footer>a::before {
+  content: "";
+  display: inline-block;
+  width: .58rem;
+  height: .66rem;
+  background: url(../img/logo.svg) no-repeat;
+  background-size: contain;
+  position: relative;
+  top: .16rem;
+  margin-right: .106666rem;
+}

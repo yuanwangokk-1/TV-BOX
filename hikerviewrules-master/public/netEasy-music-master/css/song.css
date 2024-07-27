@@ -1,0 +1,214 @@
+@keyframes circle{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.page{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	position: relative;
+}
+.page::before{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	/*background:transparent url(//i.loli.net/2017/10/08/59da11c6739ab.jpg)no-repeat center;
+	background-size: cover;*/
+	filter: blur(10px) brightness(.4);
+}
+.page::after{
+	content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: hsla(0,100%,0%,0.5);
+}
+
+section.pointer{
+	position: relative;
+
+}
+section.pointer .logo{
+	position: absolute;
+    top: 12px;
+    left: 10px;
+    display: block;
+    width: 100px;
+    height: 17px;
+}
+section.pointer .point{
+	width: 84px;
+	height: 122px;
+	position: absolute;
+	left: 45%;
+	z-index: 2;
+	transform-origin: 10% 0%;
+	transition: 1s;
+}
+section.pointer .point.rotate{
+	transform: rotate(-15deg);
+    transform-origin: 10% 0%;
+    transition: transform 1s;
+}
+
+section.disk{
+	position: relative;
+	margin-top: 63px;
+}
+section.disk .circle{
+	width: 248px;
+	height: 248px;
+	margin: 0 auto;
+	position: relative;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+.icon-wrapper{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 7px;
+}
+.icon-wrapper .iconfont{
+	width: 25px;
+	height: 25px;
+	vertical-align: -0.15em;
+	overflow: hidden;
+	fill: #fff;
+}
+section.disk .icon-pause{ display: none; }
+section.disk.playing .icon-bofang{display: none;}
+section.disk.playing .icon-pause{display: block;}
+
+
+
+section.disk .circle::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent url(https://i.loli.net/2018/01/18/5a6068986f993.png) no-repeat center;
+	background-size: cover;
+}
+section.disk .circle::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent url(https://i.loli.net/2018/01/18/5a606898095c6.png) no-repeat center;
+	background-size: cover;
+}
+section.disk .circle > img{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: -75px;
+	border-radius: 50%;
+	display: block;
+}
+section.disk.playing .circle::after,
+section.disk.playing .circle > img{
+	animation: circle 20s infinite linear;
+}
+
+/*随时随地停止*/
+section.disk.pause .circle::after,
+section.disk.pause .circle > img{
+	animation: circle 20s infinite linear;
+	animation-play-state: paused;
+}
+
+/*歌词*/
+section.lyric{
+	/*占据中间*/
+	flex-grow: 1;
+	margin-top: 20px;
+	padding: 0 35px;
+	line-height: 2;
+	text-align: center;
+	color: #fefefe;
+}
+section.lyric h1{
+	font-size: 15px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+section.lyric .word{
+	margin-top: 7px;
+	height: 72px;
+	overflow: hidden;
+}
+section.lyric .word p{
+	font-size: 13px;
+	line-height: 24px;
+	color: hsla(0,0%,100%,.6);
+}
+section.lyric .word .lines{
+	transition: transform .3s;
+}
+section.lyric .lines p.active{
+	color: #fefefe;
+	font-size: 15px;
+}
+
+
+/*链接*/
+section.links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section.links a{
+	/*display: inline-block;*/
+	width: 145px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 6px;
+	margin: 10px;
+    border: 1px solid #d33a31;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #d33a31;
+    text-align: center;
+    background: transparent;
+    letter-spacing: 5px;
+}
+section.links a.main{
+	background: #d33a31;
+	color: #fff;
+}
+
+.boomText{
+	opacity: 0;
+	display: inline-block;
+}
