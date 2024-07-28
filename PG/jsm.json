@@ -2,6 +2,16 @@
 	"spider": "./pg.jar",
 	"sites": [
 		{
+			"key": "豆瓣",
+			"name": "豆瓣",
+			"type": 3,
+			"api": "csp_Douban",
+			"searchable": 0,
+			"changeable": 1,
+			"indexs": 1,
+			"ext": "./lib/douban.json"
+		},
+		{
 			"key": "网盘配置",
 			"name": "网盘及彈幕配置",
 			"type": 3,
@@ -36,16 +46,6 @@
 				"type": "rect",
 				"ratio": 1.77
 			}
-		},
-		{
-			"key": "豆瓣",
-			"name": "豆瓣",
-			"type": 3,
-			"api": "csp_Douban",
-			"searchable": 0,
-			"changeable": 1,
-			"indexs": 1,
-			"ext": "./lib/douban.json"
 		},
 		{
 			"key": "Local",
