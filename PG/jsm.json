@@ -2,23 +2,6 @@
     "spider": "./pg.jar",
     "sites": [
         {
-            "key": "ThisAV",
-            "name": "🔞ThisAV",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "jar": "./lib/XBPQ.jar",
-            "ext": {
-                "主页url": "https://thisav.com/dm7/cn",
-                "直接播放": "1",
-                "数组": "grid-cols-2 sm\\:grid-cols-3 md\\:grid-cols-4 lg\\:grid-cols-5 xl\\:grid-cols-6 grid gap-x-3.5 gap-y-7 pb-10\">&&</div>",
-                "图片": "data-src=\"&&\"",
-                "标题": "title=\"&&\"",
-                "链接": "href=\"&&\"",
-                "分类url": "https://thisav.com/category/{cateId}/page/{catePg}",
-                "分类": "素人$amateur#无码影片$uncensored#国产 AV$madou#VR$vr#最近更新$new#新作上市$release#无修正泄露$uncensored-leak#今日热门$today-hot#本周热门$weekly-hot#本月热门$monthly-hot#Siro$siro#Luxu$luxu#Gana$gana#Prestige Premium$maan#S-Cute$scute#Ara$ara#FC2$fc2#Heyzo$heyzo#东京热$tokyohot#一本道$1pondo#Caribbeancom$caribbeancom#Caribbeancompr$caribbeancompr#10musume$10musume#Pacopacomama$pacopacomama#Gachinco$gachinco#XXX-AV$xxxav#人妻斩$marriedslash#顽皮 4610$naughty4610#顽皮 0930$naughty0930"
-            }
-        },
-        {
             "key": "豆瓣",
             "name": "豆瓣",
             "type": 3,
