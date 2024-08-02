@@ -45,7 +45,6 @@
     "pikpak_proxy_onlyapi": false,
     "pikpak_danmu": true,
     "libxl_url": "./libxl_thunder_sdk.so",
-    "youtube_proxy": "proxy",
     "pan115_cookie": "",
     "pan115_thread_limit": 0,
     "pan115_vip_thread_limit": 0,
