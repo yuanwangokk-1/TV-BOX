@@ -6,5 +6,5 @@
 TVBOX订阅链接：
 
 ```
-https://mirror.ghproxy.com/https://gcore.jsdelivr.net/gh/yuanwangokk-1/TV-BOX@main/PG/jsm.json
+https://gcore.jsdelivr.net/gh/yuanwangokk-1/TV-BOX@main/PG/jsm.json
 ```
