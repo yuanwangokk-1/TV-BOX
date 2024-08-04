@@ -6,5 +6,5 @@
 TVBOX订阅链接：
 
 ```
-https://gcore.jsdelivr.net/gh/yuanwangokk-1/TV-BOX@main/PG/jsm.json
+https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/main/PG/jsm.json
 ```
