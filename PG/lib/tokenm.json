@@ -45,6 +45,7 @@
     "pikpak_proxy": "",
     "pikpak_proxy_onlyapi": false,
     "pikpak_danmu": true,
+    "wgcf_vless_tls": false,
     "libxl_url": "./libxl_thunder_sdk.so",
     "pan115_cookie": "",
     "pan115_thread_limit": 0,

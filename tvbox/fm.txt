@@ -20,6 +20,8 @@
 
 { "url": "file://tvboxqq/戏曲音乐/api.json", "name": "戏曲音乐[本地]" },
 
+{ "url": "file://tvboxqq/短剧频道/api.json", "name": "短剧频道[本地]" },
+
 { "url": "file://tvboxqq/少儿频道/api.json", "name": "少儿频道[本地]" },
 
 { "url": "file://tvboxqq/动漫频道/api.json", "name": "动漫频道[本地]" }]}

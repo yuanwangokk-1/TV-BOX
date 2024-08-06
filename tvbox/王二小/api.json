@@ -70,6 +70,14 @@
             "changeable": 1
         },
         {
+            "key": "Wexnullname",
+            "name": "💓无名┃4K💓",
+            "type": 3,
+            "api": "csp_Wexnullname",
+            "searchable": 1,
+            "changeable": 1
+        },
+        {
             "key": "Wexwanni",
             "name": "💓玩你┃4K💓",
             "type": 3,
@@ -214,14 +222,6 @@
             "changeable": 1
         },
         {
-            "key": "Wexlibhd",
-            "name": "🎇进口┃秒播🎇",
-            "type": 3,
-            "api": "csp_Wexlibhd",
-            "searchable": 1,
-            "changeable": 1
-        },
-        {
             "key": "Diduanys",
             "name": "🎇深渊┃秒播🎇",
             "type": 3,
@@ -354,7 +354,7 @@
             "key": "Wexkoukou",
             "name": "🌺扣扣┃4K🌺",
             "type": 3,
-            "api": "csp_Wexkoukou",
+            "api": "csp_Wexkoukou2",
             "searchable": 1,
             "changeable": 1
         },
@@ -426,24 +426,8 @@
             "changeable": 1
         },
         {
-            "key": "Wexduanjuv1mp",
-            "name": "🍉短剧┃极品🍉",
-            "type": 3,
-            "api": "csp_Wexduanjuvmp",
-            "searchable": 1,
-            "changeable": 1
-        },
-        {
-            "key": "vipWexduanju",
-            "name": "🍉短剧┃精品🍉",
-            "type": 3,
-            "api": "csp_Wexvipduanju",
-            "searchable": 1,
-            "changeable": 1
-        },
-        {
             "key": "Wexduanjuvip",
-            "name": "🍉短剧┃良品🍉",
+            "name": "🍉短剧┃极品🍉",
             "type": 3,
             "api": "csp_Wexduanjuvip",
             "searchable": 1,
@@ -615,6 +599,14 @@
                 "type": "rect",
                 "ratio": 2
             }
+        },
+        {
+            "key": "Wexwwe",
+            "name": "🌐格斗┃WWE🌐",
+            "type": 3,
+            "api": "csp_Wexwwe",
+            "searchable": 1,
+            "changeable": 0
         },
         {
             "key": "看球",

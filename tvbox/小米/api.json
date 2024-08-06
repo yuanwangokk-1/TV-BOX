@@ -2,7 +2,7 @@
 
 {
     "spider": "./spider.jar",
-    "logo": "https://www.xit.edu.cn/wlaq/UploadFiles_4283/202110/2021102616050834.gif",
+    "logo": "http://www.ppxys.vip/upload/mxprocms/20240615-1/ac058e14dbf22f6f7520868d5022c65f.gif",
     "wallpaper": "http://www.mpanso.com/%E5%B0%8F%E7%B1%B3/mpansou.php",
     "sites": [
         {
@@ -13,39 +13,71 @@
             "searchable": 0
         },
         {
-            "key": "csp_Netfixtv",
-            "name": "👀至臻┃自营4K",
+            "key": "csp_zhizhen",
+            "name": "🌹至臻┃4K4K",
             "type": 3,
             "api": "csp_Duopan",
-            "playerType": 2,
             "filterable": 1,
-            "ext": "http://mpanso.com/"
+            "ext": {
+                "site_urls": [
+                    "http://mihdr.top",
+                    "http://mpanso.com"
+                ]
+            }
         },
         {
             "key": "csp_wanou",
-            "name": "🧸玩偶┃无广4K",
+            "name": "🧸玩偶┃自建4K",
             "api": "csp_Wogg",
             "type": 3,
             "searchable": 1,
             "playerType": 2,
             "timeout": 30,
             "changeable": 0,
-            "ext": "https://wogg.888484.xyz/"
+            "ext": {
+                "site_urls": [
+                    "https://wogg.xxooo.cf/",
+                    "https://www.wogg.bf/",
+                    "https://www.wogg.net/"
+                ]
+            }
+        },
+        {
+            "key": "csp_LiteApple",
+            "name": "🍎苹果┃1080P",
+            "type": 3,
+            "searchable": 1,
+            "api": "csp_LiteApple",
+            "playerType": 1,
+            "filterable": 1
+        },
+        {
+            "key": "freeok",
+            "name": "🦁freeOK┃独家",
+            "type": 3,
+            "click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();",
+            "api": "csp_FreeOK"
         },
         {
             "key": "配置",
-            "name": "⚙️配置┃中心",
+            "name": "⚙️网盘┃配置",
             "type": 3,
-            "searchable": 1,
-            "api": "csp_Config",
-            "filterable": 1,
-            "ext": ""
+            "searchable": 0,
+            "api": "csp_Config"
         },
         {
             "key": "csp_NanGua",
             "name": "🎃南瓜┃APP",
             "type": 3,
             "api": "csp_NanGua",
+            "playerType": 2,
+            "filterable": 1
+        },
+        {
+            "key": "csp_Nkdy",
+            "name": "🥛耐看┃APP",
+            "type": 3,
+            "api": "csp_Nkdy",
             "playerType": 2,
             "filterable": 1
         },
@@ -58,13 +90,6 @@
             "filterable": 1
         },
         {
-            "key": "freeok",
-            "name": "🦁free┃独家",
-            "type": 3,
-            "click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();",
-            "api": "csp_FreeOK"
-        },
-        {
             "key": "huohuo",
             "name": "💥火火┃独家",
             "type": 3,
@@ -72,12 +97,18 @@
             "api": "csp_SaoHuo"
         },
         {
-            "key": "drpy_哔哩",
-            "name": "🎵哔哩┃合集",
+            "key": "Bili",
+            "name": "哔哔┃合集",
             "type": 3,
-            "api": "./api/drpy2.min.js",
-            "playerType": 1,
-            "ext": "./js/B站.js"
+            "api": "csp_Bili",
+            "style": {
+                "type": "rect",
+                "ratio": 1.597
+            },
+            "searchable": 1,
+            "quickSearch": 0,
+            "changeable": 0,
+            "ext": "./json/bilibili.json"
         },
         {
             "key": "csp_农民",
@@ -89,7 +120,7 @@
             "key": "csp_全网",
             "name": "🥣全网┃独家",
             "type": 3,
-            "api": "csp_Quanwk"
+            "api": "csp_Xdys"
         },
         {
             "key": "csp_SP360",
@@ -149,42 +180,9 @@
             "key": "QIYIU",
             "name": "🦌奇优┃影视",
             "type": 3,
-            "jar": "./jars/QIYIU.jar",
             "changeable": 1,
-            "api": "csp_XBPQ",
-            "playerType": "1",
-            "ext": {
-                "主页url": "http://www.qiyoudy1.com",
-                "数组": "<div class=\"stui-vodlist__box\">&&</div>",
-                "图片": "data-original=\"&&\"",
-                "标题": "title=\"&&\"",
-                "链接": "href=\"&&\"",
-                "副标题": "<span class=\"pic-text text-right\">&&</span>",
-                "搜索url": "http://www.qiyoudy1.com/search.php;post;searchword={wd}",
-                "搜索模式": "1",
-                "搜索数组": "<a class=\"v-thumb stui-vodlist__thumb&&</a>",
-                "搜索图片": "data-original=\"&&\"",
-                "搜索标题": "title=\"&&\"",
-                "搜索链接": "href=\"&&\"",
-                "搜索副标题": "<span class=\"pic-text text-right\">&&</span>",
-                "搜索后缀": "/view/",
-                "线路数组": "<a data-toggle=\"tab\"&&/a>[排序:播放源2>播放源3>播放源4>播放源1]",
-                "线路标题": ">&&<",
-                "播放数组": "<ul class=\"stui-content__playlist clearfix&&</ul>",
-                "影片年代": "年份：&&</p>",
-                "影片地区": "地区：&&<span",
-                "影片类型": "类型：&&</a>",
-                "导演": "导演：&&</p>",
-                "主演": "主演：&&</p>",
-                "简介": "简介：&&</a>",
-                "播放列表": "<a&&/a>",
-                "播放标题": ">&&<",
-                "播放链接": "href=\"&&\"",
-                "播放链接前缀": "http://www.qiyoudy1.com",
-                "嗅探词": ".m3u8#.mp4#.flv#.mp3#.m4a",
-                "分类url": "http://www.qiyoudy1.com/list/{cateId}_{catePg}.html?order={by}",
-                "分类": "电影$1#电视剧$2#动漫$3#综艺$4"
-            }
+            "api": "csp_Qiyou",
+            "playerType": "1"
         },
         {
             "key": "黑狐",
@@ -235,7 +233,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 1,
-            "jar": "./jars/QIYIU.jar",
+            "jar": "./jars/小米.jar",
             "playerType": "2",
             "api": "csp_XBPQ",
             "ext": {
@@ -263,7 +261,8 @@
                 "播放数组": "vod_play_url\"&&\"vod_[替换:\\#>>\",:\"]",
                 "播放列表": ":&&,",
                 "播放标题": "\"&&$",
-                "播放链接": "http://134.122.136.84/btjson.php/?url=+$&&\"",
+                "跳转解析": "nmys$http://pan.qiaoji8.com/tvbox/neibu.php?url=#BBA$http://pan.qiaoji8.com/tvbox/gouzi.php?url=",
+                "播放链接": "解析+$&&\"",
                 "跳转播放链接": "url\"*\"&&\""
             }
         },
@@ -385,7 +384,7 @@
         {
             "name": "小米",
             "type": 1,
-            "url": "",
+            "url": "http://466.jxjx.8.ahrljk.cn:8663/api/?key=gG4Iq5xVZXc8R4jmTn&url=",
             "ext": {
                 "flag": [
                     "qq",
@@ -414,15 +413,15 @@
     ],
     "lives": [
         {
-            "name": "tvlive",
+            "name": "不再提供直播接口",
             "type": 0,
-            "url": "./lives/tvlive.txt",
+            "url": "",
             "epg": ""
         },
         {
-            "name": "嗅探",
+            "name": "请自行找资源替代",
             "type": 0,
-            "url": "./lives/嗅探.txt",
+            "url": "",
             "epg": ""
         }
     ]

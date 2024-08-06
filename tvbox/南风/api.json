@@ -103,6 +103,15 @@
             "filterable": 1
         },
         {
+            "key": "csp_Qiyou",
+            "name": "🦌奇优",
+            "type": 3,
+            "api": "csp_Qiyou",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
             "key": "csp_Ikan",
             "name": "💖爱看",
             "type": 3,
@@ -130,15 +139,6 @@
             "filterable": 1
         },
         {
-            "key": "csp_Suxun",
-            "name": "✨速迅",
-            "type": 3,
-            "api": "csp_Suxun",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
             "key": "csp_Tvyb",
             "name": "☁️TVB云播",
             "type": 3,
@@ -152,15 +152,6 @@
             "name": "🎬电影先生",
             "type": 3,
             "api": "csp_Dyxs",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
-            "key": "csp_Quanwk",
-            "name": "🥣全网看",
-            "type": 3,
-            "api": "csp_Quanwk",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
@@ -194,10 +185,10 @@
             "filterable": 1
         },
         {
-            "key": "csp_KmeiJu",
-            "name": "🌎看美剧",
+            "key": "csp_Jiaozi",
+            "name": "🥣饺子",
             "type": 3,
-            "api": "csp_KmeiJu",
+            "api": "csp_Jiaozi",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
@@ -211,6 +202,16 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 0
+        },
+        {
+            "key": "csp_Appmq",
+            "name": "🍓煤球",
+            "type": 3,
+            "api": "csp_Appmq",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1
         },
         {
             "key": "csp_DiDuan",
@@ -242,17 +243,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "AO7TcBkd8Jqf5UgA7xXA6dVlLcc="
-        },
-        {
-            "key": "csp_Cddys",
-            "name": "🍓蛋蛋",
-            "type": 3,
-            "api": "csp_Cddys",
-            "playerType": 2,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1
         },
         {
             "key": "csp_NanGua",
@@ -381,16 +371,6 @@
                 "二次跳转播放链接": "https://hhjx.hhplayer.com/api.php;post;url=+var url*\"&&\"+&t=+var t*\"&&\"+&key=+var key*\"&&\"+&act=0+&play=1",
                 "三次跳转播放链接": "\"url\"*\"&&\""
             }
-        },
-        {
-            "key": "奇优",
-            "name": "️💢奇优",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./json/奇优.json"
         },
         {
             "key": "csp_Jianpian",
@@ -578,36 +558,6 @@
             "ext": "./txt/token.txt"
         },
         {
-            "key": "csp_XYQHikerAL_蜡笔",
-            "name": "🖍︎蜡笔",
-            "type": 3,
-            "api": "csp_XYQHikerAL",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./json/蜡笔.json"
-        },
-        {
-            "key": "csp_XYQHikerAL_阿里土豆",
-            "name": "🥔阿里土豆",
-            "type": 3,
-            "api": "csp_XYQHikerAL",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./json/土豆.json"
-        },
-        {
-            "key": "csp_XYQHikerAL_六趣",
-            "name": "6️⃣六趣",
-            "type": 3,
-            "api": "csp_XYQHikerAL",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./json/六趣.json"
-        },
-        {
             "key": "csp_XYQHikerAL__影搜",
             "name": "😈影搜",
             "type": 3,
@@ -667,10 +617,10 @@
             }
         },
         {
-            "key": "csp_UpYun",
-            "name": "☁️Up云搜",
+            "key": "csp_PanTa",
+            "name": "🍄盘他",
             "type": 3,
-            "api": "csp_UpYun",
+            "api": "csp_PanTa",
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 0,
