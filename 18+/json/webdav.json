@@ -1,0 +1,10 @@
+{
+  "drives": [
+    {
+      "name": "七米藍",
+      "server": "https://al.chirmyram.com/dav",
+      "user": "alist",
+      "pass": "alist"
+    }
+  ]
+}
