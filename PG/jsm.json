@@ -16,6 +16,29 @@
 			}
 		},
 		{
+			"key": "🔞AV",
+			"name": "🔞AV",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"jar": "./lib/XBPQ.jar",
+			"style": {
+				"type": "rect",
+				"ratio": 1.5
+			},
+			"ext": {
+				"首页": "亞洲AV影片$亞洲av影片",
+				"主页url": "http://www.avhaha.com/",
+				"数组": "\"col-md-4\"&&\"col-md-4\"",
+				"图片": "src=\"&&\"",
+				"标题": "title=\"&&\"",
+				"副标题": "class=\"views\">&&</span>",
+				"链接": "href=\"&&\"",
+				"简介": "⚠️慢点撸，皮要掉了！！！",
+				"分类url": "http://www.avhaha.com/{cateId}/page/{catePg}/;;z",
+				"分类": "亞洲AV影片$category/亞洲av影片#歐美AV影片$category/歐美av影片#中文字幕AV$tag/中文字幕#日本無碼$tag/亞洲無碼"
+			}
+		},
+		{
 			"key": "豆瓣",
 			"name": "豆瓣",
 			"type": 3,
@@ -423,7 +446,7 @@
 			"changeable": 1,
 			"filterable": 1,
 			"timeout": 60,
-			"ext": "./lib/tokenm.json$$$noproxy$$$1"
+			"ext": "./lib/tokenm.json$$$https://www.hdhive.online/$$$noproxy$$$1"
 		},
 		{
 			"key": "Ppxzy",
