@@ -1,1 +1,73 @@
-H4sIAC0soWYC/+VV7W/TRhj/nP4VHkNnewQn5W1T0naKSiW+sCLabpqaKhj7HF9xbPfuXCXQSBtsoGmsq4ZAmlQNiUmDD2MbbB9o0MQ/k5f2v9hzd34BKUj7iMQpsu9+z+95f3zZtqlGkwBr89qNGQ3W5NnL0S/f1zR9tPf78OA3vSxRTniAARz/9HT0x6N1kG2kEj9iHAQ+5zGrVSptzOPIdWzGrW7vespJaACUitdzApuxFGTYpo6/JkVvQPZV4aqqoK2EONdWJJ5jPrZdTFktjVgsfY1herLRxiHXwd6lxdZaQ5fSfpZAB0cJRHq2Wk3NyGBaod0pEkPDwWD84A76bOmLlcmtp5ObB2j077PDx7eHL3YP/3wJ9UDj+z8f3nyORru3Rz8+R0cP/x4e7KHxrW/H3zxE4/3vRr/+VVRNeVDZV9EsOoVOozPoLDqHPkafZByb4xbuOkHi4qIScWD3WrFNGWCcJlihgX29V9OubLLaTKlEwjjhom2b3Vq1LGssobKm9Kr9mdKVVI90CKR+Tp3Gu08Of9jL7cSu589vstgSmzo87Oxkwynd14G4DaPigsP1jezk804AAMVbCWbcuLC8smpmsoAwEZ0wYwheWdOvRm4PISsmTktIa3jLqJoIBUSXWgKzvIgu2Y5vEFBegAaXSiXXihPmG3JfSgdRxAocMGpJBKFV3OW6WZYk4UFWvaCRThshRp2MkoqV0EbIp9jTTe2Epu/o8Hyb/SmEwrIw3Jep9MWeYX4ZsyTghivAtBfDF19NBo/fjeqLd4u4XdUEi2IYOwcbxzL8WFm7+GVrsbG6ZL5PHRrcLTqUXTD/u08B5loMsUP15edosTgg3ICYzPXqRsaQIU+jzOYUKNE0wqm39V84NTPlYlI+Xz4vLol+ure2I1feeQDKIF7HlUt4CpB4msF7MY48dRvJnObnNT0JXeyRELtQ7OIGFktEVXDhMsul/XwnosMxYZGL2dQJJRx30gshaht6wc3Wgn4iA/N8ZfSF50xudezY8JLQ4SQKYRhMNa9Cg+Qt4MDiMNCVOQktGNZHn5pzzWZFHSuiKfm3UUEBr3/QbK4vnm+sNuC902xuwA+1eX1nZ26KZKHShtxURsqzirGYTxw6QcQSCjMMopRJMU9omIUJQ31cDLXQLYpqWpsRCQ39Q5jsDMx7Karh0agjGnH09b2j+69G+08mg1d6fTpXRfX6Mf8ixnv7k38eqX+n/n/eZcAaMggAAA==
+var rule = {
+    类型: '听书',
+    title: '播客[听]',
+    host: 'https://getpodcast.xyz',
+    url: '/fyclass',
+    searchUrl: '',
+    searchable: 0,
+    quickSearch: 0,
+    headers: {
+        'User-Agent': 'PC_UA'
+    },
+    timeout: 5000,
+    class_name: '播客&人文&NEWS热点&影视与读书&教育&历史&音乐&情感&有声书',
+    class_url: '0&1&2&3&4&5&6&7&8',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: `js:
+		input = {jx:0, url:input, parse:0}
+	`,
+    limit: 6,
+    推荐: `js:
+		pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
+		var d = [];
+		var html = request(HOST);
+		var list = pdfa(html, 'body&&.pic_list:eq(0)&&li');
+		list.forEach(it => {
+			d.push({
+				title: pdfh(it, '.title&&Text'),
+				pic_url: pdfh(it, 'img&&src'),
+				url: pd(it, 'a&&href') + '|' + pdfh(it, '.title&&Text') + '|' + pdfh(it, 'img&&src')
+			});
+		})
+		setResult(d);
+	`,
+    一级: `js:
+		pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
+		var d = [];
+		var html = request(HOST);
+		var list = pdfa(html, 'body&&.pic_list:eq(list_idx)&&li'.replace("list_idx", MY_CATE));
+		list.forEach(it => {
+			d.push({
+				title: pdfh(it, '.title&&Text'),
+				pic_url: pdfh(it, 'img&&src'),
+				url: pd(it, 'a&&href') + '|' + pdfh(it, '.title&&Text') + '|' + pdfh(it, 'img&&src')
+			});
+		})
+		setResult(d);
+	`,
+    二级: `js:
+        pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
+		let purl = input.split('|')[0];
+		let title = input.split('|')[1];
+		let pic = input.split('|')[2];
+		var html = request(purl);
+		let d = [];
+		VOD = {};
+		VOD.vod_name = title;
+		VOD.vod_pic = pic;
+		if (typeof play_url === 'undefined') {
+            var play_url = ''
+        }
+        let episodes = pdfa(html, 'body&&item');
+		log('episodes =========>'+episodes);
+		let vod_play_url = episodes.map(function(it) {
+			let ititle = it.match(/<title>(.*?)<\\/title>/)[1].replace(/&lt;!\\[CDATA\\[|\\]\\]&gt;||<!\\[CDATA\\[|\\]\\]>/g, '');
+			let iurl = pdfh(it, 'enclosure&&url');
+			return ititle + '$' + iurl
+        }).join('#')
+        VOD.vod_play_from = '道长在线';
+        VOD.vod_play_url = vod_play_url
+	`,
+    搜索: '',
+}

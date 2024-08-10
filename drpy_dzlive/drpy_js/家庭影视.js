@@ -1,1 +1,22 @@
-qz2VfkB3O9fqiff5MjJa/ASdotKRYPNu8cLtwdABO3MDeyNp8SITwKEVrcmMRsD6s0DQiKXK91uXHy81Bhzh8xPZzDl/A9cOXQrBxH+Qn2Zl2eNL3Ogzx+kAqZMq7TDGW7Ndfho+4VAcQyAx6N07mJKboQujV8GdZ+bBCWGPW7EzCHN4oJNzO7+noJ7dBJGa8r39Bmxey/CdXPFkUr3eOfli19xmeZJvewBF6ZaxWUyvCguOuauRzOvDK9uGZI81BWV+bQUdVQEOxF985QAE1tBASD/MCt9QQTaFc+qYWu/uPicSjETC+IHZkFTt2AQJ9tLLhDXYoSHWrPLxWCzJvbwJKUMDxbuSE/bBavmXq+hGQlZ8IaLva9Ak2jufzw4xbraK42vr4pgf2p/Fc08oMdYjmmM0aAfg4ptYfvmNckd6J52ItpJuqycp+5TG4XHZuAYddnEfzrKXv7uhMD6UStVQS/1YFHxWHpVjHR0Q4pL7GrFfwhiMO0eVsWXtgTtjk2DuHbLt+r9kQqzrrmOUKcnhTGgdiCSBCsceoHjioTS5MxewfkKwrOwrrhviX0nbdmQpv3ne1XYHzHlBH8kQI19uuxnYxjK4Y7vsGSFNa8G+mojv7zZfrAR8x4z8ZA5JetpEi249Q6UJk9DnBbfX3A2Ku03XI3RhODtCVtMWkpkkRUcJQPBPa08iO27l2lfSOtYtbhZQKDaEhJs4pU/kXghCIco8NID/MWHguuYMqVQjZTyqlhTH8z+bp3IEaHMC0AnLMiaHsvej51SFujaUvO+olz3NZQjrkdSbMPrKWUCnIq2c3e6sGb3zbfGGCY4XJex2qPU8lWmjSXto+sBTD3+HMcwOJtDvXkbPjGjhuYpZSTnPVJAqE6W5SmU09VxBATU15YksSz0BYl2lO81jtCEMNl/QJSpvdT/o4nlU21/ftbjtOBdIv6n67tIUXCbXhaycBPka9O8BRbGtkckezm7TKPaq+owcQes9kzJtw+6Rb/u5hsVAqJVHHGHQZn4A
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '家庭影视',
+    //host: 'http://103.242.3.90:565/',
+    host: 'http://a1.qiuyu.xyz:565/',
+    url: '/index.php/vod/show/id/fyclass/page/fypage.html',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    class_parse: '.navbar-items li:gt(0):lt(7);a&&Text;a&&href;/(\\d+).html',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let kcode = JSON.parse(request(input).match(/var player_.*?=(.*?)</)[1]);
+        let kurl = kcode.url;
+        if (/\.(m3u8|mp4)/.test(kurl)) {
+            input = {jx: 0, parse: 0, url: kurl};
+        } else {
+            input = {jx: 0, parse: 1, url: kurl};
+        }
+    }),
+}

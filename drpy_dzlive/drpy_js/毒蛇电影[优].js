@@ -1,1 +1,97 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+avkuibh+eUteW9sVvkvJhdJywKICAgIGhvc3Q6ICdodHRwczovL3d3dy5kdXNoZTkuYXBwJywKICAgIHVybDogJy9zaG93L2Z5Y2xhc3MtZnlmaWx0ZXItZnlwYWdlLmh0bWwnLAogICAgZmlsdGVyX3VybDogJ3t7Zmwu57G75Z6LfX0te3tmbC7lnLDljLp9fS17e2ZsLuivreiogH19LXt7Zmwu5bm05Lu9fX0te3tmbC7mjpLluo99fScsCiAgICBzZWFyY2hVcmw6ICcvc2VhcmNoP2s9KiomcGFnZT1meXBhZ2UnLAogICAgc2VhcmNoYWJsZTogMiwKICAgIHF1aWNrU2VhcmNoOiAwLAogICAgZmlsdGVyYWJsZTogMSwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdNT0JJTEVfVUEnLAogICAgfSwKICAgIGNsYXNzX3BhcnNlOiAnI25hdi1zd2lwZXImJi5uYXYtc3dpcGVyLXNsaWRlO2EmJlRleHQ7YSYmaHJlZjsvKFxcdyspLmh0bWwnLAogICAgY2F0ZV9leGNsdWRlOiAnTmV0ZmxpeHzku4rml6Xmm7TmlrB85LiT6aKY5YiX6KGofOaOkuihjOamnCcsCiAgICB0YWJfb3JkZXI6IFsn6LaF5riFJywgJ+iTneWFiScsICfmnoHpgJ/ok53lhYknXSwKICAgIHRhYl9leGNsdWRlOiAnNEso6auY5bOw5LiN5Y2hKScsCiAgICBwbGF5X3BhcnNlOiB0cnVlLAogICAgbGF6eTogJycsCiAgICBsaW1pdDogMjAsCiAgICDmjqjojZA6ICcubW9kdWxlLW9uZS1yb3ctYm94JiYubW9kdWxlLWJveC1pbm5lciYmLm1vZHVsZS1pdGVtOy52LWl0ZW0tdGl0bGU6ZXEoLTEpJiZUZXh0Oyo7KjsqJywKICAgIGRvdWJsZTogZmFsc2UsCiAgICDkuIDnuqc6ICcubW9kdWxlLWJveC1pbm5lciYmLm1vZHVsZS1pdGVtOy52LWl0ZW0tdGl0bGU6ZXEoLTEpJiZUZXh0O2ltZyYmZGF0YS1vcmlnaW5hbDsudi1pdGVtLWJvdHRvbSYmc3BhbiYmVGV4dDthJiZocmVmJywKICAgIOS6jOe6pzogewogICAgICAgIHRpdGxlOiAnLmRldGFpbC10aXRsZSYmVGV4dDsuZGV0YWlsLXRhZ3MmJmE6ZXEoLTIpJiZUZXh0JywKICAgICAgICBpbWc6ICcuZGV0YWlsLXBpYyYmaW1nJiZkYXRhLW9yaWdpbmFsJywKICAgICAgICBkZXNjOiAnLmRldGFpbC1pbmZvLXJvdy1tYWluOmVxKC0yKSYmVGV4dDsuZGV0YWlsLXRhZ3MmJmEmJlRleHQ7LmRldGFpbC10YWdzJiZhOmVxKDEpJiZUZXh0Oy5kZXRhaWwtaW5mby1yb3ctbWFpbjplcSgxKSYmVGV4dDsuZGV0YWlsLWluZm8tcm93LW1haW4mJlRleHQnLAogICAgICAgIGNvbnRlbnQ6ICcuZGV0YWlsLWRlc2MmJlRleHQnLAogICAgICAgIHRhYnM6ICcuc291cmNlLWl0ZW0tbGFiZWwnLAogICAgICAgIGxpc3RzOiAnLmVwaXNvZGUtbGlzdDplcSgjaWQpIGEnLAogICAgfSwKICAgIOaQnOe0ojogJy5zZWFyY2gtcmVzdWx0LWxpc3QmJmE7LnRpdGxlJiZUZXh0Oyo7LnNlYXJjaC1yZXN1bHQtaXRlbS1oZWFkZXImJlRleHQ7YSYmaHJlZjsuZGVzYyYmVGV4dCcsCiAgICDlm77niYfmm7/mjaI6ICdodHRwczovL3d3dy5uY2F0MS5hcHA9Pmh0dHBzOi8vdnJlcy5taXhpbWl4aS5tZScsCiAgICDpooTlpITnkIY6ICRqcy50b1N0cmluZygoKSA9PiB7CiAgICAgICAgbGV0IGh0bWwgPSByZXF1ZXN0KHJ1bGUuaG9zdCk7CiAgICAgICAgbGV0IHNjcmlwdHMgPSBwZGZhKGh0bWwsICdzY3JpcHQnKTsKICAgICAgICBsZXQgaW1nX3NjcmlwdCA9IHNjcmlwdHMuZmluZChpdCA9PiBwZGZoKGl0LCAnc2NyaXB0JiZzcmMnKS5pbmNsdWRlcygncmR1bC5qcycpKTsKICAgICAgICBpZiAoaW1nX3NjcmlwdCkgewogICAgICAgICAgICBsZXQgaW1nX3VybCA9IGltZ19zY3JpcHQubWF0Y2goL3NyYz0iKC4qPykiLylbMV07CiAgICAgICAgICAgIC8vY29uc29sZS5sb2coaW1nX3VybCk7CiAgICAgICAgICAgIGxldCBpbWdfaHRtbCA9IHJlcXVlc3QoaW1nX3VybCk7CiAgICAgICAgICAgIGxldCBpbWdfaG9zdCA9IGltZ19odG1sLm1hdGNoKC8nKC4qPyknLylbMV07CiAgICAgICAgICAgIGxvZyhpbWdfaG9zdCk7CiAgICAgICAgICAgIHJ1bGUu5Zu+54mH5pu/5o2iID0gJ2h0dHBzOi8vd3d3LmR1c2hlOS5hcHA9PicgKyBpbWdfaG9zdDsKICAgICAgICB9CiAgICB9KSwKICAgIGZpbHRlcjogJ0g0c0lBQUFBQUFBQUErMlp6MDhiUnhUSC94ZWZPZGdHdFRpM0hscXBVcFZMZTZoVVJSRUhWNHFhMGtOL3FGV0VaTEFOeGhCc0VERng3QUlwR0V5Q2YwQ1FZOWJZL21kMlp0Zi9SV2Y5NXIwWlIrM0x0cUdScXZpQytMenZ6T3pzN050NTMxay9pc1FpZDc1NUZQa3UrVnZrVHNTNzZJbjlqY2hNWkhIaCs2VE52eXc4L0RrNWJyaW93aUpiSDZYclFWaEJaR2tHb25lVFAzMzc4TUd2T256MzA2OCsrK0x6cjBrVjY2Y3luZFdpQnRKS1ZSVkJEWUMwZk4zdFYxRURRTTNMWFpneE5hQW1sNHN5VmRLYUJ0TFNlYm55RERVQUdqUGY4dm92Y0V3QTBrNjN4WFVQTlFBYWMrWGNLMjNqbUFCMEQ3VTEwMDhEYWFzN28vSVphZ0EwWnU2cDY2emptQURVYjJ0VkZDNnhId0JwaFdQL2lOWWFnTFJtUnpnTjFBQlFjMjhPL1daYmF4cG9MbzBUZDNDSWN3RXcycWFmMnlkdERMUm1CdzF2ZlEzWERNQjZ0dDV1enp6YkFFakxETDJYTmRRQVVQT1hOMFhWMFpxR3BYdUJDbWtzcW0yeDZaZzBKZzZUeHVMNGRGUmV4VVhvTmtTbHIwUFlZblJTbHQzV1JBc2RNZytnTGE4SGsyTkFpSlpsc0tXQ3VDd0F0Sng3TlZrOXgrVUVvR3NmbkpsK0dtaFpOaTZNcG9IR2ZQWEVhQnBvdG9QWFJ0TkEydU8yY0U1UUF6Qmp0dTB4MjNZL3QzczlvbjRhNk42MzkwVzJpL2NPUU5kN2ZlWFhobmc5QUpNdWgzSmpxQjRHWlF3eVhYV1k4ZnA3c2tRUGg1am1uQ21vRGlLSGI1eGhhdEhhVlNqM090aUMyTnAyUkh0WFpQRk5NVXhQb2piMENpclZ5L2d3aU9rcWcxZHdYZGVoamNnTzBUMW5PMjRQdHpFTmRxcjdyWVpmVDVsVUp3NlY2cFcrYW8rREE5Qk5YaDRiVFlPVmFFYlRZQ1d2MFRSWXlXczBEVmFDV3YwQXdpNkN1TDV5ZTMzcmZVY09zd2p4YUh4T3g4Yi9XdkZaRTUrMTQzRVRqOXZ4bUluSDdIalV4S01VajBYSDB6d2lMUmE5ci80a3FFSDB6UWJSb0VIVU5FaE1Ob2dsRXRINzZvOXBNUDltZy9tZ3dieHBJQ3RYY2c5ZmhVRDdPREd4c0hKclJ6Z0ZzN0RFa3d2cjlXNUVNWWRYTWFOWFU3S0VMMG5jRG50cGZOSm1YZjFXUnVSdzM1MExwbkZ2UnZYNmI4eUpwakRtaERNWm5ISGhqQVJyRnJqaXpaZ2hyckJ6aG9jekowRmhvdnZURU1ZTWNlYUVNelZCUWFQcmFRaGpRTlNXWjU2UmhqQkdrRE5mbzNSZmRGZHdMZ0MzYlVBb0hMbGxBOExaaEg5clBUZ0x3VmtQMWw2ODFTaHhKb016SjlQQ09TMmNIM0RobkgxUGhUTmZsNmxsZWZOeTRoeG5RcUZPLzl3cGtQc3l3R3plYktIa0NoNVgxSmdUcVN6dWUrZFUwQUZDR1FpbWFITW5aNVVIL3ZNVWFnQ2tWZkt5akZWRlF4amo0ZlVLMXJFTWdQb2RQaGNWMm1RQVVQdGs4WUZLSzVEZ2Y4ck1ZVkd0UFc1M0FIUlVjeTVGbzRnN1B3QnRkNy92eUtlNDBocE1PZDlRYTBqbGZBeGhMTUpmV3FEYittYkFsYzIzbC9OMysxcndibVpnK3MxZytzMWdhbjFzbmxxZi83bjFtYnN0NitNNUwwVC9DYVl6QUduVkE5ZHh2Rk9xd2NRMHQyYmI5TlpBV3VaQ0ZJNU1iOE9oREJQMzZaOHhUTnpuZmEvU0ZVZTBPUUhRYlBNclhxV0pVd1V3SmZmdlAvMXpCbzJ6Qmw4bUYzNzhZVkZyR21pZTNNOHpqR0hpREpvc1AzTnZhRWNGbVA2Y01DMGowekx5SVplUmovNTVHVEZoK3ltUFVxditINVI2QUpUcXUxWFJ4Qk9MQnBwVnVhak9ONWpxQU5UdmJPaDM4dGdQZ0s2Mzl0amJQY0RyQVlRcEsreXYyOHpKaWozZk11ZHc5dGR0N215ZjdZaG0ycnlTQWJ6M3pGRXBzdlFuSytHMElEd2hBQUE9JywKICAgIOS4gOe6p2Y6IGBqczoKICAgIGxldCB1cmxzID0gWwogICAgJ2h0dHBzOi8vd3d3LmR1c2hlOS5hcHAvc2hvdy8xLS0tLS0xLTEuaHRtbCcsCiAgICAnaHR0cHM6Ly93d3cuZHVzaGU5LmFwcC9zaG93LzItLS0tLTEtMS5odG1sJywKICAgICdodHRwczovL3d3dy5kdXNoZTkuYXBwL3Nob3cvMy0tLS0tMS0xLmh0bWwnLAogICAgJ2h0dHBzOi8vd3d3LmR1c2hlOS5hcHAvc2hvdy80LS0tLS0xLTEuaHRtbCcsCiAgICAnaHR0cHM6Ly93d3cuZHVzaGU5LmFwcC9zaG93LzYtLS0tLTEtMS5odG1sJywKICAgIF07CiAgICBsZXQgZmlsdGVycyA9IHt9OwogICAgcGRmYSA9IGpzcC5wZGZhOwogICAgcGRmaCA9IGpzcC5wZGZoOwogICAgZm9yKGxldCB1cmwgb2YgdXJscyl7CiAgICBsZXQgZmNsYXNzID0gdXJsLm1hdGNoKC9zaG93XFwvKFxcZCspLS8pWzFdOwogICAgY29uc29sZS5sb2coZmNsYXNzKTsKICAgIGxldCBodG1sID0gcmVxdWVzdCh1cmwpOwogICAgbGV0IHRhYnMgPSBwZGZhKGh0bWwsICcuZmlsdGVyLXJvdycpOwogICAgbGV0IGRhdGEgPSBbXTsKICAgIGZvciAobGV0IHRhYiBvZiB0YWJzKSB7CiAgICAgICAgbGV0IHRpdGxlID0gcGRmaCh0YWIsICdzdHJvbmcmJlRleHQnKS5yZXBsYWNlKCc6JywnJyk7CiAgICAgICAgbGV0IGxpcyA9IHBkZmEodGFiLCAnYScpOwogICAgICAgIGxldCBfbWFwID0ge2tleTogdGl0bGUsIG5hbWU6IHRpdGxlfTsKICAgICAgICBsZXQgdmFsdWUgPSBbXTsKICAgICAgICBmb3IgKGxldCBsaSBvZiBsaXMpIHsKICAgICAgICAgICAgbGV0IG4gPSBwZGZoKGxpLCAnYSYmVGV4dCcpLnRyaW0oKTsKICAgICAgICAgICAgbGV0IHY9bjsKICAgICAgICAgICAgaWYoL+WFqOmDqHzlnLDljLp857G75Z6LLy50ZXN0KG4pKXsKICAgICAgICAgICAgICAgIHYgPSAnJzsKICAgICAgICAgICAgfWVsc2UgaWYoL+e7vOWQiC8udGVzdChuKSl7CiAgICAgICAgICAgICAgICB2ID0gJzEnOwogICAgICAgICAgICB9ZWxzZXsKICAgICAgICAgICAgICAgIHYgPSBwZGZoKGxpLCdhJiZocmVmJyk7CiAgICAgICAgICAgICAgICB0cnkgewogICAgICAgICAgICAgICAgICAgIHYgPSB2Lm1hdGNoKC8tKC4qPykxLTFcLmh0bWwvKVsxXS5yZXBsYWNlKC8tL2csJycpOwogICAgICAgICAgICAgICAgfWNhdGNoIChlKSB7CiAgICAgICAgICAgICAgICAgICAgdiA9IHYubWF0Y2goLy0oLio/KS0xXC5odG1sLylbMV0ucmVwbGFjZSgvLS9nLCcnKTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIHYgPSBkZWNvZGVVUklDb21wb25lbnQodik7CiAgICAgICAgICAgIH0KICAgICAgICAgICAgdmFsdWUucHVzaCh7CiAgICAgICAgICAgICAgICAnbic6IG4sICd2JzogdgogICAgICAgICAgICB9KTsKICAgICAgICB9CiAgICAgICAgX21hcFsndmFsdWUnXSA9IHZhbHVlOwogICAgICAgIGRhdGEucHVzaChfbWFwKTsKICAgIH0KICAgIGZpbHRlcnNbZmNsYXNzXSA9IGRhdGE7CiAgICB9CiAgICBWT0RTID0gW2ZpbHRlcnNdOwogICAgY29uc29sZS5sb2coZ3ppcChKU09OLnN0cmluZ2lmeShmaWx0ZXJzKSkpOwogICAgYCwKfQ==
+var rule = {
+    title: '毒蛇电影[优]',
+    host: 'https://www.dushe9.app',
+    url: '/show/fyclass-fyfilter-fypage.html',
+    filter_url: '{{fl.类型}}-{{fl.地区}}-{{fl.语言}}-{{fl.年份}}-{{fl.排序}}',
+    searchUrl: '/search?k=**&page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    class_parse: '#nav-swiper&&.nav-swiper-slide;a&&Text;a&&href;/(\\w+).html',
+    cate_exclude: 'Netflix|今日更新|专题列表|排行榜',
+    tab_order: ['超清', '蓝光', '极速蓝光'],
+    tab_exclude: '4K(高峰不卡)',
+    play_parse: true,
+    lazy: '',
+    limit: 20,
+    推荐: '.module-one-row-box&&.module-box-inner&&.module-item;.v-item-title:eq(-1)&&Text;*;*;*',
+    double: false,
+    一级: '.module-box-inner&&.module-item;.v-item-title:eq(-1)&&Text;img&&data-original;.v-item-bottom&&span&&Text;a&&href',
+    二级: {
+        title: '.detail-title&&Text;.detail-tags&&a:eq(-2)&&Text',
+        img: '.detail-pic&&img&&data-original',
+        desc: '.detail-info-row-main:eq(-2)&&Text;.detail-tags&&a&&Text;.detail-tags&&a:eq(1)&&Text;.detail-info-row-main:eq(1)&&Text;.detail-info-row-main&&Text',
+        content: '.detail-desc&&Text',
+        tabs: '.source-item-label',
+        lists: '.episode-list:eq(#id) a',
+    },
+    搜索: '.search-result-list&&a;.title&&Text;*;.search-result-item-header&&Text;a&&href;.desc&&Text',
+    图片替换: 'https://www.ncat1.app=>https://vres.miximixi.me',
+    预处理: $js.toString(() => {
+        let html = request(rule.host);
+        let scripts = pdfa(html, 'script');
+        let img_script = scripts.find(it => pdfh(it, 'script&&src').includes('rdul.js'));
+        if (img_script) {
+            let img_url = img_script.match(/src="(.*?)"/)[1];
+            //console.log(img_url);
+            let img_html = request(img_url);
+            let img_host = img_html.match(/'(.*?)'/)[1];
+            log(img_host);
+            rule.图片替换 = 'https://www.dushe9.app=>' + img_host;
+        }
+    }),
+    filter: 'H4sIAAAAAAAAA+2Zz08bRxTH/xefOdgGtTi3HlqpUpVLe6hURREHV4qa0kN/qFWEZLANxhBsEDFx7AIpGEyCf0CQY9bY/md2Ztf/RWf95r0ZR+3LtqGRqviC+LzvzOzs7Nt531k/isQid755FPku+VvkTsS76In9jchMZHHh+6TNvyw8/Dk5briowiJbH6XrQVhBZGkGoneTP3378MGvOnz3068+++Lzr0kV66cyndWiBtJKVRVBDYC0fN3tV1EDQM3LXZgxNaAml4syVdKaBtLSebnyDDUAGjPf8vovcEwA0k63xXUPNQAac+XcK23jmAB0D7U1008Daas7o/IZagA0Zu6p66zjmADUb2tVFC6xHwBphWP/iNYagLRmRzgN1ABQc28O/WZbaxpoLo0Td3CIcwEw2qaf2ydtDLRmBw1vfQ3XDMB6tt5uzzzbAEjLDL2XNdQAUPOXN0XV0ZqGpXuBCmksqm2x6Zg0Jg6TxuL4dFRexUXoNkSlr0PYYnRSlt3WRAsdMg+gLa8Hk2NAiJZlsKWCuCwAtJx7NVk9x+UEoGsfnJl+GmhZNi6MpoHGfPXEaBpotoPXRtNA2uO2cE5QAzBjtu0x23Y/t3s9on4a6N6390W2i/cOQNd7feXXhng9AJMuh3JjqB4GZQwyXXWY8fp7skQPh5jmnCmoDiKHb5xhatHaVSj3OtiC2Np2RHtXZPFNMUxPojb0CirVy/gwiOkqg1dwXdehjcgO0T1nO24PtzENdqr7rYZfT5lUJw6V6pW+ao+DA9BNXh4bTYOVaEbTYCWv0TRYyWs0DVaCWv0Awi6CuL5ye33rfUcOswjxaHxOx8b/WvFZE5+143ETj9vxmInH7HjUxKMUj0XH0zwiLRa9r/4kqEH0zQbRoEHUNEhMNoglEtH76o9pMP9mg/mgwbxpICtXcg9fhUD7ODGxsHJrRzgFs7DEkwvr9W5EMYdXMaNXU7KEL0ncDntpfNJmXf1WRuRw350LpnFvRvX6b8yJpjDmhDMZnHHhjARrFrjizZghrrBzhoczJ0FhovvTEMYMceaEMzVBQaPraQhjQNSWZ56RhjBGkDNfo3RfdFdwLgC3bUAoHLllA8LZhH9rPTgLwVkP1l681ShxJoMzJ9PCOS2cH3DhnH1PhTNfl6llefNy4hxnQqFO/9wpkPsywGzebKHkCh5X1JgTqSzue+dU0AFCGQimaHMnZ5UH/vMUagCkVfKyjFVFQxjj4fUK1rEMgPodPhcV2mQAUPtk8YFKK5Dgf8rMYVGtPW53AHRUcy5Fo4g7PwBtd7/vyKe40hpMOd9Qa0jlfAxhLMJfWqDb+mbAlc23l/N3+1rwbmZg+s1g+s1gan1snlqf/7n1mbst6+M5L0T/CaYzAGnVA9dxvFOqwcQ0t2bb9NZAWuZCFI5Mb8OhDBP36Z8xTNznfa/SFUe0OQHQbPMrXqWJUwUwJffvP/1zBo2zBl8mF378YVFrGmie3M8zjGHiDJosP3NvaEcFmP6cMC0j0zLyIZeRj/55GTFh+ymPUqv+H5R6AJTqu1XRxBOLBppVuajON5jqANTvbOh38tgPgK639tjbPcDrAYQpK+yv28zJij3fMudw9tdt7myf7Yhm2rySAbz3zFEpsvQnK+G0IDwhAAA=',
+    一级f: `js:
+    let urls = [
+    'https://www.dushe9.app/show/1-----1-1.html',
+    'https://www.dushe9.app/show/2-----1-1.html',
+    'https://www.dushe9.app/show/3-----1-1.html',
+    'https://www.dushe9.app/show/4-----1-1.html',
+    'https://www.dushe9.app/show/6-----1-1.html',
+    ];
+    let filters = {};
+    pdfa = jsp.pdfa;
+    pdfh = jsp.pdfh;
+    for(let url of urls){
+    let fclass = url.match(/show\\/(\\d+)-/)[1];
+    console.log(fclass);
+    let html = request(url);
+    let tabs = pdfa(html, '.filter-row');
+    let data = [];
+    for (let tab of tabs) {
+        let title = pdfh(tab, 'strong&&Text').replace(':','');
+        let lis = pdfa(tab, 'a');
+        let _map = {key: title, name: title};
+        let value = [];
+        for (let li of lis) {
+            let n = pdfh(li, 'a&&Text').trim();
+            let v=n;
+            if(/全部|地区|类型/.test(n)){
+                v = '';
+            }else if(/综合/.test(n)){
+                v = '1';
+            }else{
+                v = pdfh(li,'a&&href');
+                try {
+                    v = v.match(/-(.*?)1-1\.html/)[1].replace(/-/g,'');
+                }catch (e) {
+                    v = v.match(/-(.*?)-1\.html/)[1].replace(/-/g,'');
+                }
+                v = decodeURIComponent(v);
+            }
+            value.push({
+                'n': n, 'v': v
+            });
+        }
+        _map['value'] = value;
+        data.push(_map);
+    }
+    filters[fclass] = data;
+    }
+    VODS = [filters];
+    console.log(gzip(JSON.stringify(filters)));
+    `,
+}

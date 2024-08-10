@@ -1,1 +1,39 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+mXqumbt+eUtScsCiAgICDnvJbnoIE6ICdnYjIzMTInLAogICAgaG9zdDogJ2h0dHA6Ly8xMjAuMjI0LjcuOTA6ODA4JywKICAgIHVybDogJy93d3cvTGlzdC5hc3A/Y2xhc3NpZD1meWNsYXNzJnNlYXJjaHdvcmQ9JnBhZ2U9ZnlwYWdlJywKICAgIGZpbHRlcmFibGU6IDAsLy/mmK/lkKblkK/nlKjliIbnsbvnrZvpgIksCiAgICBjbGFzc19uYW1lOiAn55S15b2xJueUteinhuWJpybnu7zoibom5Yqo5ryrJumfs+S5kCcsCiAgICBjbGFzc191cmw6ICc1MDAwJjEwJjgmNiYxMicsCiAgICBzZWFyY2hVcmw6ICcvd3d3L0xpc3QuYXNwP2NsYXNzaWQ9MzAmc2VhcmNod29yZD0qKiZwYWdlPWZ5cGFnZScsCiAgICBzZWFyY2hhYmxlOiAyLAogICAgcXVpY2tTZWFyY2g6IDAsCiAgICBoZWFkZXJzOiB7CiAgICAgICAgJ1VzZXItQWdlbnQnOiAnTU9CSUxFX1VBJywKICAgIH0sCiAgICBwbGF5X3BhcnNlOiB0cnVlLAogICAgbGF6eTogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICB2YXIgaHRtbCA9ICdodHRwOi8vMTIwLjIyNC43LjkwOjgwOC9QbGF5TW92LmFzcD9DbGFzc0lkPScgKyBpbnB1dC5zcGxpdCgiLCIpWzJdICsgJyZ2aWRlbz0yJmV4ZT0wJmRvd249MCZtb3ZObz0nICsgaW5wdXQuc3BsaXQoIiwiKVszXSArICcmdmd2ZXI9dW5kZWZpbmVkJkNsaWVudElQPTEyMC4yMjQuNy45MCcKICAgICAgICB2YXIgdXJsID0gcmVxdWVzdChodG1sKS5tYXRjaCgvcHVzaFwoJyguKj8pJy8pWzFdCiAgICAgICAgaW5wdXQgPSB7CiAgICAgICAgICAgIGp4OiAwLAogICAgICAgICAgICB1cmw6IHVybCwKICAgICAgICAgICAgcGFyc2U6IDAKICAgICAgICB9OwogICAgfSksCiAgICBsaW1pdDogNiwKICAgIOaOqOiNkDogJ3VsOmVxKDQpJiZzdHJvbmc7aW1nJiZhbHQ7aW1nJiZzcmM7c3BhbjplcSgxKSYmVGV4dDthJiZocmVmJywKICAgIOS4gOe6pzogJ3VsOmVxKDUpJiZzdHJvbmc7aW1nJiZhbHQ7aW1nJiZzcmM7c3BhbjplcSgxKSYmVGV4dDthJiZocmVmJywKICAgIOS6jOe6pzogewogICAgICAgIHRpdGxlOiAidWw6ZXEoMikmJmxpOmVxKDApJiZUZXh0IiwKICAgICAgICBpbWc6ICJpbWc6ZXEoMSkmJnNyYyIsCiAgICAgICAgZGVzYzogInVsOmVxKDIpJiZsaTplcSgxKSYmVGV4dDt1bDplcSgyKSYmbGk6ZXEoMikmJlRleHQ7dWw6ZXEoMikmJmxpOmVxKDMpJiZUZXh0IiwKICAgICAgICBjb250ZW50OiAiYm9keSYmZGl2OmhhcyhwKSYmcDplcSgzKSYmVGV4dCIsCiAgICAgICAgdGFiczogIiIsCiAgICAgICAgbGlzdHM6ICdib2R5JiZhW29uY2xpY2tePSJzZW5mZSJdJywKICAgICAgICBsaXN0X3VybDogJ2EmJm9uY2xpY2snLAogICAgICAgIGxpc3RfdGV4dDogJ2EmJlRleHQnCiAgICB9LAogICAg5pCc57SiOiAnKicsCn0=
+var rule = {
+    title: '闪雷电',
+    编码: 'gb2312',
+    host: 'http://120.224.7.90:808',
+    url: '/www/List.asp?classid=fyclass&searchword=&page=fypage',
+    filterable: 0,//是否启用分类筛选,
+    class_name: '电影&电视剧&综艺&动漫&音乐',
+    class_url: '5000&10&8&6&12',
+    searchUrl: '/www/List.asp?classid=30&searchword=**&page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    play_parse: true,
+    lazy: $js.toString(() => {
+        var html = 'http://120.224.7.90:808/PlayMov.asp?ClassId=' + input.split(",")[2] + '&video=2&exe=0&down=0&movNo=' + input.split(",")[3] + '&vgver=undefined&ClientIP=120.224.7.90'
+        var url = request(html).match(/push\('(.*?)'/)[1]
+        input = {
+            jx: 0,
+            url: url,
+            parse: 0
+        };
+    }),
+    limit: 6,
+    推荐: 'ul:eq(4)&&strong;img&&alt;img&&src;span:eq(1)&&Text;a&&href',
+    一级: 'ul:eq(5)&&strong;img&&alt;img&&src;span:eq(1)&&Text;a&&href',
+    二级: {
+        title: "ul:eq(2)&&li:eq(0)&&Text",
+        img: "img:eq(1)&&src",
+        desc: "ul:eq(2)&&li:eq(1)&&Text;ul:eq(2)&&li:eq(2)&&Text;ul:eq(2)&&li:eq(3)&&Text",
+        content: "body&&div:has(p)&&p:eq(3)&&Text",
+        tabs: "",
+        lists: 'body&&a[onclick^="senfe"]',
+        list_url: 'a&&onclick',
+        list_text: 'a&&Text'
+    },
+    搜索: '*',
+}

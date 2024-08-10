@@ -1,1 +1,46 @@
-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
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: "一支穿云箭",
+    host: "http://movie.yzcyj.net",
+    url: "/index.php/vod/show/id/fyfilter.html",
+    searchUrl: "/index.php/vod/search/page/fypage/wd/**.html",
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: "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",
+    filter_url: "{{fl.类型}}{{fl.地区}}{{fl.排序}}{{fl.剧情}}{{fl.语言}}{{fl.字母}}/page/fypage{{fl.年份}}",
+    filter_def: {
+        1: {
+            类型: "1"
+        },
+        2: {
+            类型: "2"
+        },
+        3: {
+            类型: "3"
+        },
+        4: {
+            类型: "4"
+        },
+        32: {
+            类型: "32"
+        }
+    },
+    headers: {
+        "User-Agent": "MOBILE_UA"
+    },
+    timeout: 5000,
+    class_parse: ".navbar-items&&li;a&&Text;a&&href;(\\d+)",
+    cate_exclude: "电视直播",
+    tab_exclude: "排序",
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: false,
+    推荐: "*",
+
+}

@@ -1,1 +1,57 @@
-bXViYW4u6aaW5Zu+Mi7kuoznuqcuZGVzYyA9ICcuZGF0YTplcSgzKSYmVGV4dDs7Oy5kYXRhOmVxKDEpJiZUZXh0Oy5kYXRhOmVxKDIpJiZUZXh0JzsKdmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+WcqOe6v+S5i+WuticsCiAgICDmqKHmnb86ICfpppblm74yJywKICAgIC8vIGhvc3Q6J2h0dHBzOi8vd3d3Lnp4emouc2l0ZScsCiAgICBob3N0OiAnaHR0cHM6Ly93d3cuenh6amEuY29tJywKICAgIHVybDogJy92b2RzaG93L2Z5Y2xhc3NmeWZpbHRlci5odG1sJywKICAgIGZpbHRlcmFibGU6IDEsLy/mmK/lkKblkK/nlKjliIbnsbvnrZvpgIksCiAgICBmaWx0ZXJfdXJsOiAnLXt7ZmwuYXJlYX19LXt7ZmwuYnl9fS17e2ZsLmNsYXNzfX0tLS0tLWZ5cGFnZS0tLXt7ZmwueWVhcn19JywKICAgIGZpbHRlcjogJ0g0c0lBQUFBQUFBQUErMlkzMnZhVUJUSC81YzgrMkJpdFYzL2xkR0hyQVJXMW5XZzNVQ0swRmJ0ckhRMkxVWHJkSE9GVmUxUVRHa3BNNUwybjBsdXpIK3h4SHZQdVJlMmhUQjhLT3krNWZNOTk1eDc3bzl6QW5kUFVaWDFsM3ZLRzZPb3JDdWIyM3Fob0tTVUhmMnRFYUozUENEbGFzZ2Y5TzMzeG1MY1RpUlhoMEY1R01raEtLVVVVNXZkY0R4VEdZRE5yOTJ5UUJ6QVJnNU1zdDlrTmdZWXN6NTBuUzdFcElBeEIyZmVkQVl4S2FBZkpzNEI1NnRkdXZZeHpFY0JiUE54M3p2NXdXd01jTDc2eEhmQXhrREkwNytZOFR3alFOdjFSNTRuQTdRZG5RZnRHN0JSS0cxRVZub2VldDdRaGVQb1d0NkpuZlE0dmcrQzloR0VwZ0Myb044bVB5Zk14Z0Q5VGkweWZRUS9DcmgxbzRILzJJQ3RvNEF4ZXpkZXg0R1lGTkN2ZFUyNkkvQ2pnTFk3aS9zeHdGdytXWjdkaDF3b2dNMTlxdmhPaXpSaEdaelJ1L3JnenVCaU1SQTN0MmpvZVdGenAvZnV6RW00dVZwYVcySGE0bFBRTTF6UGlMckdkVTNVVmE2cm9wN21lbHJRMVJlb2g1K0N2c2IxTlZGZjVmcXFxT2U0bmhQMUxOZXpvczdYcTRyclZmbDZWWEc5S2wrdktxNVg1ZXNOUDhYamVGWGtoMEVhNTU1OSt0dGhrTlpEMExwbkFYYTN3cUY0RzJ5YldCZk04bnBydDhCTGVsTHhhbEFIaGMxM2VTT2FkU09sYU12cWV6Rzk1bDk3WWx6Zkk0Y2p2M2tHQlVNaFVTK042VU9rWENlSG44R1BRcEsrRjllRGc5NmRPeld4SVN4QWxxWXN6UVNsbVpHbEtVdFRsdVp6TE0wVldacXlOR1ZwUHNmU3pBcWxLYS9DZjMwVmNrdnEwdUZJVXVsaGgxdEFraTdtbDhmenEzMndVY0NZamFGdlF0SU0wR1orOVVmWXBTbGc5L3ZUV3dsc2hQbGwzb0EzSFFZWTg5dVYxeGxEVEFxSi9oaGRtOVF1d1k4Q3p2ZGtocU5oUGdyb0YvTys1Rm5oTnNFaE0xaldlMC9IY1czOGFWTEFsT0xlWDJMZWRPUVBSM2FadjNhWjBpKy9tWS9wT3hZQUFBPT0nLAogICAgLy8gdGFiX2V4Y2x1ZGU6ICflpLjlhYvnvZHnm5h86L+F6Zu35LqR55uYfOeZvuW6pue9keebmCcsCiAgICB0YWJfcmVtb3ZlOiBbJ+WkuOWFi+e9keebmCcsICfov4Xpm7fkupHnm5gnLCAn55m+5bqm572R55uYJ10sCiAgICAvLyDmkJzntKI6bXViYW4u6aaW5Zu+Mi7mkJzntKIxLAogICAg5pCc57SiOiAndWwuc3R1aS12b2RsaXN0JiZsaTthJiZ0aXRsZTsubGF6eWxvYWQmJmRhdGEtb3JpZ2luYWw7LnBpYy10ZXh0JiZUZXh0O2EmJmhyZWYnLAogICAgaGVhZGVyczogewogICAgICAgICdVc2VyLUFnZW50JzogJ01PQklMRV9VQScsCiAgICAgICAgLy8gJ1JlZmVyZXInOiBIT1NULAogICAgfSwKICAgIGxhenk6IGBqczoKCQl2YXIgaHRtbCA9IEpTT04ucGFyc2UocmVxdWVzdChpbnB1dCkubWF0Y2goL3IgcGxheWVyXy4qPz0oLio/KTwvKVsxXSk7CgkJdmFyIHVybCA9IGh0bWwudXJsOwoJCXZhciBmcm9tID0gaHRtbC5mcm9tOwoJCWlmIChodG1sLmVuY3J5cHQgPT0gJzEnKSB7CgkJCXVybCA9IHVuZXNjYXBlKHVybCkKCQl9IGVsc2UgaWYgKGh0bWwuZW5jcnlwdCA9PSAnMicpIHsKCQkJdXJsID0gdW5lc2NhcGUoYmFzZTY0RGVjb2RlKHVybCkpCgkJfQoJCWlmICgvbTN1OHxtcDQvLnRlc3QodXJsKSkgewoJCQlpbnB1dCA9IHVybAoJCX0gZWxzZSBpZiAoL2xpbmUzfGxpbmU0fGxpbmU1Ly50ZXN0KGZyb20pKSB7CgkJCXZhciBpZnJ3eSA9IHJlcXVlc3QodXJsLCB7CiAgICAgICAgICAgICAgICBoZWFkZXJzOiB7CgkJCQkJJ1VzZXItQWdlbnQnOiBNT0JJTEVfVUEsCgkJCQkJJ1JlZmVyZXInOiBIT1NULAoJCQkJCSdzZWMtZmV0Y2gtbW9kZSc6ICduYXZpZ2F0ZScsCgkJCQkJJ3NlYy1mZXRjaC1zaXRlJzogJ2Nyb3NzLXNpdGUnLAoJCQkJCSdzZWMtZmV0Y2gtZGVzdCc6ICdpZnJhbWUnLAoJCQkJCSd1cGdyYWRlLWluc2VjdXJlLXJlcXVlc3RzJzogMSwKICAgICAgICAgICAgICAgIH0KCQkJfSk7CgkJCWxldCByZXN1bHR2MiA9IGlmcnd5Lm1hdGNoKC92YXIgcmVzdWx0X3YyID0geyguKj8pfTsvKVsxXTsKCQkJbGV0IGRhdGEgPSBKU09OLnBhcnNlKCd7JyArIHJlc3VsdHYyICsgJ30nKS5kYXRhOwoJCQlsZXQgY29kZSA9IGRhdGEuc3BsaXQoJycpLnJldmVyc2UoKTsKCQkJbGV0IHRlbXAgPSAnJzsKCQkJZm9yIChsZXQgaSA9IDB4MDsgaSA8IGNvZGUubGVuZ3RoOyBpID0gaSArIDB4MikgewoJCQkJdGVtcCArPSBTdHJpbmcuZnJvbUNoYXJDb2RlKHBhcnNlSW50KGNvZGVbaV0gKyBjb2RlW2kgKyAweDFdLCAweDEwKSkKCQkJfQoJCQlpbnB1dCA9IHsKCQkJCWp4OiAwLAoJCQkJdXJsOiB0ZW1wLnN1YnN0cmluZygweDAsICh0ZW1wLmxlbmd0aCAtIDB4NykgLyAweDIpICsgdGVtcC5zdWJzdHJpbmcoKHRlbXAubGVuZ3RoIC0gMHg3KSAvIDB4MiArIDB4NyksCgkJCQlwYXJzZTogMAoJCQl9CgkJfSBlbHNlewoJCQlpbnB1dAoJCX0KCWAsCn0=
+muban.首图2.二级.desc = '.data:eq(3)&&Text;;;.data:eq(1)&&Text;.data:eq(2)&&Text';
+var rule = {
+    title: '在线之家',
+    模板: '首图2',
+    // host:'https://www.zxzj.site',
+    host: 'https://www.zxzja.com',
+    url: '/vodshow/fyclassfyfilter.html',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '-{{fl.area}}-{{fl.by}}-{{fl.class}}-----fypage---{{fl.year}}',
+    filter: 'H4sIAAAAAAAAA+2Y32vaUBTH/5c8+2BitV3/ldGHrARW1nWg3UCK0FbtrHQ2LUXrdHOFVe1QTGkpM5L2n0luzH+xxHvPuRe2hTB8KOy+5fM995x77o9zAndPUZX1l3vKG6OorCub23qhoKSUHf2tEaJ3PCDlasgf9O33xmLcTiRXh0F5GMkhKKUUU5vdcDxTGYDNr92yQBzARg5Mst9kNgYYsz50nS7EpIAxB2fedAYxKaAfJs4B56tduvYxzEcBbPNx3zv5wWwMcL76xHfAxkDI07+Y8TwjQNv1R54nA7QdnQftG7BRKG1EVnoeet7QhePoWt6JnfQ4vg+C9hGEpgC2oN8mPyfMxgD9Ti0yfQQ/Crh1o4H/2ICto4Axezdex4GYFNCvdU26I/CjgLY7i/sxwFw+WZ7dh1wogM19qvhOizRhGZzRu/rgzuBiMRA3t2joeWFzp/fuzEm4uVpaW2Ha4lPQM1zPiLrGdU3UVa6rop7melrQ1Reoh5+Cvsb1NVFf5fqqqOe4nhP1LNezos7Xq4rrVfl6VXG9Kl+vKq5X5esNP8XjeFXkh0Ea5559+tthkNZD0LpnAXa3wqF4G2ybWBfM8nprt8BLelLxalAHhc13eSOadSOlaMvqezG95l97YlzfI4cjv3kGBUMhUS+N6UOkXCeHn8GPQpK+F9eDg96dOzWxISxAlqYszQSlmZGlKUtTluZzLM0VWZqyNGVpPsfSzAqlKa/Cf30Vckvq0uFIUulhh1tAki7ml8fzq32wUcCYjaFvQtIM0GZ+9UfYpSlg9/vTWwlshPll3oA3HQYY89uV1xlDTAqJ/hhdm9QuwY8CzvdkhqNhPgroF/O+5FnhNsEhM1jWe0/HcW38aVLAlOLeX2LedOQPR3aZv3aZ0i+/mY/pOxYAAA==',
+    // tab_exclude: '夸克网盘|迅雷云盘|百度网盘',
+    tab_remove: ['夸克网盘', '迅雷云盘', '百度网盘'],
+    // 搜索:muban.首图2.搜索1,
+    搜索: 'ul.stui-vodlist&&li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+        // 'Referer': HOST,
+    },
+    lazy: `js:
+		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+		var url = html.url;
+		var from = html.from;
+		if (html.encrypt == '1') {
+			url = unescape(url)
+		} else if (html.encrypt == '2') {
+			url = unescape(base64Decode(url))
+		}
+		if (/m3u8|mp4/.test(url)) {
+			input = url
+		} else if (/line3|line4|line5/.test(from)) {
+			var ifrwy = request(url, {
+                headers: {
+					'User-Agent': MOBILE_UA,
+					'Referer': HOST,
+					'sec-fetch-mode': 'navigate',
+					'sec-fetch-site': 'cross-site',
+					'sec-fetch-dest': 'iframe',
+					'upgrade-insecure-requests': 1,
+                }
+			});
+			let resultv2 = ifrwy.match(/var result_v2 = {(.*?)};/)[1];
+			let data = JSON.parse('{' + resultv2 + '}').data;
+			let code = data.split('').reverse();
+			let temp = '';
+			for (let i = 0x0; i < code.length; i = i + 0x2) {
+				temp += String.fromCharCode(parseInt(code[i] + code[i + 0x1], 0x10))
+			}
+			input = {
+				jx: 0,
+				url: temp.substring(0x0, (temp.length - 0x7) / 0x2) + temp.substring((temp.length - 0x7) / 0x2 + 0x7),
+				parse: 0
+			}
+		} else{
+			input
+		}
+	`,
+}

@@ -1,1 +1,9 @@
-h36A5I5KdeB29zb3iwNWV2y7g637nkMoiC8thhxc2MSZ6RmiWSUPmNoqWHGp4tSSdMnoQmfpJiTvvJCRqgHAOq5k5ESb76dseRNmOHGLMMQWljBOHgdue6w9MR5EQPNPqYb2l2qEXkLUeoXAHBJqTHqUy6qzqYzXRqe4qXyFiW86Ap+Ln7sRLYSAheouyiyy9L5gyGaUaaD7DQkGLCuL16drk5Rbk8Jzj2xnrdnzeXueAZTaC8mq/NCPdYm1UQq53+RzmCEoN+ysDrXF9oiVFGSsSo9kZv85xxyzccm8xYVQAlj4k7plnsTC2fedfpAC4cfE0isq+2LtCN1gbiLJkV1XzF1vVdOV9kNYX0xCHZQnEznpE4A/b5wO19kSW20oKaf2YlYET8yDCG9JPuwpVA==
+var rule = {
+    模板: 'mxpro',
+    title: '星空影院',
+    host: 'https://xkyy9.com',
+    url: '/vodshow/fyclass--------fypage---.html',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    class_parse: '.navbar-items li;a&&Text;a&&href;/(\\d+).html',
+    tab_exclude: '排序',
+}

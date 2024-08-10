@@ -1,1 +1,12 @@
-T2JqZWN0LmFzc2lnbihtdWJhbi5teHByby7kuoznuqcsIHsKICAgIHRhYl90ZXh0OiAnZGl2LS1zbWFsbCYmVGV4dCcsCn0pOwp2YXIgcnVsZSA9IHsKICAgIOaooeadvzogJ214cHJvJywKICAgIHRpdGxlOiAn6am055WqW+a8q10nLAogICAgaG9zdDogJ2h0dHBzOi8vd3d3Lmx2ZmFuLmZ1bicsCiAgICB1cmw6ICd2b2RzaG93L2Z5Y2xhc3MtLS0tLS0tLWZ5cGFnZS0tLS8nLAogICAgY2xhc3NfcGFyc2U6ICcubmF2YmFyLWl0ZW1zIGxpO2EmJlRleHQ7YSYmaHJlZjsuKi8oXFxkKykvJywKICAgIHNlYXJjaFVybDogJy92b2RzZWFyY2gvKiotLS0tLS0tLS0tZnlwYWdlLS0tLycsCiAgICB0YWJfZXhjbHVkZTogJ+aOkuW6jycsCn0=
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '驴番[漫]',
+    host: 'https://www.lvfan.fun',
+    url: 'vodshow/fyclass--------fypage---/',
+    class_parse: '.navbar-items li;a&&Text;a&&href;.*/(\\d+)/',
+    searchUrl: '/vodsearch/**----------fypage---/',
+    tab_exclude: '排序',
+}

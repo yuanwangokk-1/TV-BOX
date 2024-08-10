@@ -1,1 +1,74 @@
-Ly8g5Zyw5Z2A5Y+R5biD6aG1IGh0dHBzOi8vd3d3LmRhbmRhbmp1LnZpcAovLyDmkJzntKLlronlhajpqozor4EgPiDpgJrov4dkcnB5X29jcumqjOivgeeggeaOpeWPo+i/h+mqjOivgU9LCnZhciBydWxlID0gewogICAgdGl0bGU6ICfom4vom4vliacnLAogICAgLy8gaG9zdDonaHR0cHM6Ly93d3cuZGFuZGFuanUuY2MnLAogICAgaG9zdDogJ2h0dHBzOi8vd3d3LmRhbmRhbmp1LnR2JywKICAgIC8vaG9zdEpzOiAncHJpbnQoSE9TVCk7bGV0IGh0bWw9cmVxdWVzdChIT1NULHtoZWFkZXJzOnsiVXNlci1BZ2VudCI6UENfVUF9fSk7bGV0IHNyYz1qc3AucGRmaChodG1sLCJhOmVxKDApJiZocmVmIik7cHJpbnQoc3JjKTtIT1NUPXNyYycsCiAgICB1cmw6ICcvdHlwZS9meWNsYXNzLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnL2luZGV4LnBocC9yc3MueG1sP3dkPSoqJywKICAgIOaQnOe0ojogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICBsZXQgaHRtbCA9IHJlcXVlc3QoaW5wdXQpOwogICAgICAgIGxldCBpdGVtcyA9IHBkZmEoaHRtbCwgJ3JzcyYmaXRlbScpOwogICAgICAgIC8vIGxvZyhpdGVtcyk7CiAgICAgICAgbGV0IGQgPSBbXTsKICAgICAgICBpdGVtcy5mb3JFYWNoKGl0ID0+IHsKICAgICAgICAgICAgaXQgPSBpdC5yZXBsYWNlKC90aXRsZXxsaW5rfGF1dGhvcnxwdWJkYXRlfGRlc2NyaXB0aW9uL2csICdwJyk7CiAgICAgICAgICAgIGxldCB1cmwgPSBwZGZoKGl0LCAncDplcSgxKSYmVGV4dCcpOwogICAgICAgICAgICBkLnB1c2goewogICAgICAgICAgICAgICAgdGl0bGU6IHBkZmgoaXQsICdwJiZUZXh0JyksCiAgICAgICAgICAgICAgICB1cmw6IHVybCwKICAgICAgICAgICAgICAgIGRlc2M6IHBkZmgoaXQsICdwOmVxKDMpJiZUZXh0JyksCiAgICAgICAgICAgICAgICBjb250ZW50OiBwZGZoKGl0LCAncDplcSg0KSYmVGV4dCcpLAogICAgICAgICAgICAgICAgcGljX3VybDogIiIsCiAgICAgICAgICAgIH0pOwogICAgICAgIH0pOwogICAgICAgIHNldFJlc3VsdChkKTsKICAgIH0pLAogICAgc2VhcmNoYWJsZTogMiwvL+aYr+WQpuWQr+eUqOWFqOWxgOaQnOe0oiwKICAgIHF1aWNrU2VhcmNoOiAwLC8v5piv5ZCm5ZCv55So5b+r6YCf5pCc57SiLAogICAgaGVhZGVyczogewogICAgICAgICdVc2VyLUFnZW50JzogJ01PQklMRV9VQScKICAgIH0sCiAgICB0aW1lb3V0OiA1MDAwLC8v572R56uZ55qE5YWo5bGA6K+35rGC6LaF5pe2LOm7mOiupOaYrzMwMDDmr6vnp5IKICAgIGNsYXNzX3BhcnNlOiAndWwuc3dpcGVyLXdyYXBwZXImJmxpO2EmJlRleHQ7YSYmaHJlZjsuKi8oLio/KS5odG1sJywKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBsYXp5OiBganM6CiAgICAgICAgdmFyIGh0bWwgPSBKU09OLnBhcnNlKHJlcXVlc3QoaW5wdXQpLm1hdGNoKC9yIHBsYXllcl8uKj89KC4qPyk8LylbMV0pOwogICAgICAgIHZhciB1cmwgPSBodG1sLnVybDsKICAgICAgICB2YXIgZnJvbSA9IGh0bWwuZnJvbTsKICAgICAgICBpZiAoaHRtbC5lbmNyeXB0ID09ICcxJykgewogICAgICAgICAgICB1cmwgPSB1bmVzY2FwZSh1cmwpCiAgICAgICAgfSBlbHNlIGlmIChodG1sLmVuY3J5cHQgPT0gJzInKSB7CiAgICAgICAgICAgIHVybCA9IHVuZXNjYXBlKGJhc2U2NERlY29kZSh1cmwpKQogICAgICAgIH0KICAgICAgICBpZiAoL20zdTh8bXA0Ly50ZXN0KHVybCkpIHsKICAgICAgICAgICAgaW5wdXQgPSB1cmwKICAgICAgICB9IGVsc2UgewogICAgICAgICAgICB2YXIgTWFjUGxheWVyQ29uZmlnPXt9OwogICAgICAgICAgICBldmFsKGZldGNoKEhPU1QgKyAiL3N0YXRpYy9qcy9wbGF5ZXJjb25maWcuanMiKS5yZXBsYWNlKCd2YXIgTWFjJywnTWFjJykpOwogICAgICAgICAgICB2YXIganggPSBNYWNQbGF5ZXJDb25maWcucGxheWVyX2xpc3RbZnJvbV0ucGFyc2U7CiAgICAgICAgICAgIGlmIChqeCA9PSAnJykgewogICAgICAgICAgICAgICAganggPSBNYWNQbGF5ZXJDb25maWcucGFyc2UKICAgICAgICAgICAgfTsKICAgICAgICAgICAgaWYgKGp4LnN0YXJ0c1dpdGgoIi8iKSkgewogICAgICAgICAgICAgICAganggPSBIT1NUICsgang7CiAgICAgICAgICAgIH0KICAgICAgICAgICAgaW5wdXQ9e2p4OjAsdXJsOmp4K3VybCxwYXJzZToxLAogICAgICAgICAgICAgICAgaGVhZGVyOiBKU09OLnN0cmluZ2lmeSh7CiAgICAgICAgICAgICAgICAgICAgJ3JlZmVyZXInOiBpbnB1dAogICAgICAgICAgICAgICAgfSl9CiAgICAgICAgfQogICAgYCwKICAgIGxpbWl0OiA2LAogICAg5o6o6I2QOiAnLnRhYi1jb250ZW50JiZsaTsqOyo7KjsqJywKICAgIOS4gOe6pzogJ2JvZHkmJi5ld2F2ZS12b2RsaXN0X19ib3g7aDQmJmEmJlRleHQ7Lmxhenlsb2FkJiZkYXRhLW9yaWdpbmFsOy5waWMtdGV4dCYmVGV4dDtoNCYmYSYmaHJlZicsCiAgICDkuoznuqc6IHsKICAgICAgICAidGl0bGUiOiAiLnBpY3R1cmUmJnRpdGxlOy5kYXRhLS1zcGFuOmVxKDApJiZUZXh0IiwKICAgICAgICAiaW1nIjogIi5waWN0dXJlJiZpbWcmJmRhdGEtb3JpZ2luYWwiLAogICAgICAgICJkZXNjIjogIi5waWMtdGV4dDplcSgwKSYmVGV4dDs7Oy5kYXRhLS1zcGFuOmVxKDEpJiZUZXh0Oy5kYXRhLS1zcGFuOmVxKDIpJiZUZXh0IiwKICAgICAgICAiY29udGVudCI6ICIuZGVzYy0tYSYmVGV4dCIsCiAgICAgICAgInRhYnMiOiAiLm5hdi10YWJzJiZsaSIsCiAgICAgICAgImxpc3RzIjogIi50YWItcGFuZTplcSgjaWQpJiZsaSIKICAgIH0sCn0=
+// 地址发布页 https://www.dandanju.vip
+// 搜索安全验证 > 通过drpy_ocr验证码接口过验证OK
+var rule = {
+    title: '蛋蛋剧',
+    // host:'https://www.dandanju.cc',
+    host: 'https://www.dandanju.tv',
+    //hostJs: 'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"a:eq(0)&&href");print(src);HOST=src',
+    url: '/type/fyclass.html',
+    searchUrl: '/index.php/rss.xml?wd=**',
+    搜索: $js.toString(() => {
+        let html = request(input);
+        let items = pdfa(html, 'rss&&item');
+        // log(items);
+        let d = [];
+        items.forEach(it => {
+            it = it.replace(/title|link|author|pubdate|description/g, 'p');
+            let url = pdfh(it, 'p:eq(1)&&Text');
+            d.push({
+                title: pdfh(it, 'p&&Text'),
+                url: url,
+                desc: pdfh(it, 'p:eq(3)&&Text'),
+                content: pdfh(it, 'p:eq(4)&&Text'),
+                pic_url: "",
+            });
+        });
+        setResult(d);
+    }),
+    searchable: 2,//是否启用全局搜索,
+    quickSearch: 0,//是否启用快速搜索,
+    headers: {
+        'User-Agent': 'MOBILE_UA'
+    },
+    timeout: 5000,//网站的全局请求超时,默认是3000毫秒
+    class_parse: 'ul.swiper-wrapper&&li;a&&Text;a&&href;.*/(.*?).html',
+    play_parse: true,
+    lazy: `js:
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        var from = html.from;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4/.test(url)) {
+            input = url
+        } else {
+            var MacPlayerConfig={};
+            eval(fetch(HOST + "/static/js/playerconfig.js").replace('var Mac','Mac'));
+            var jx = MacPlayerConfig.player_list[from].parse;
+            if (jx == '') {
+                jx = MacPlayerConfig.parse
+            };
+            if (jx.startsWith("/")) {
+                jx = HOST + jx;
+            }
+            input={jx:0,url:jx+url,parse:1,
+                header: JSON.stringify({
+                    'referer': input
+                })}
+        }
+    `,
+    limit: 6,
+    推荐: '.tab-content&&li;*;*;*;*',
+    一级: 'body&&.ewave-vodlist__box;h4&&a&&Text;.lazyload&&data-original;.pic-text&&Text;h4&&a&&href',
+    二级: {
+        "title": ".picture&&title;.data--span:eq(0)&&Text",
+        "img": ".picture&&img&&data-original",
+        "desc": ".pic-text:eq(0)&&Text;;;.data--span:eq(1)&&Text;.data--span:eq(2)&&Text",
+        "content": ".desc--a&&Text",
+        "tabs": ".nav-tabs&&li",
+        "lists": ".tab-pane:eq(#id)&&li"
+    },
+}

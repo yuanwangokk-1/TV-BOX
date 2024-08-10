@@ -1,1 +1,38 @@
-qz2VfkB3O9fqiff5MjJa/ASdotKRYPNu8cLtwdABO3MDeyNp8SITwKEVrcmMRsD6s0DQiKXK91uXHy81Bhzh8xPZzDl/A9cOXQrBxH+Qn2Zl2eNL3Ogzx+kAqZMq7TDGW7Ndfho+4VAcQyAx6N07mLPiR4j3pPvkoHGcajUdP16vce316gPWQB/ENJhd+wB6cEt4hqMLEW1iVoy1WMll9L0Mssn3iHLuA9bDGiKcA+NztdCXStZmM1JyetG/KNbFeoBkGC5EM+IWt2I7gKFxw74itkWMCPAREMsEAOu0E68bawtQSlns00efTtnbFnU+Mn9U1L1X//mDu3T97DFMLxSrwrux6yEHJNB12ox2h8bZG89ATyDJWIW7ojph8tq6r5ZBDlTvPFT5KAdx3u8ZB8lwNoM+8pe7BbivkpKNR6Smra99zoo3wYVfL5Y1mnbCf6aH/X5T0cBbv/TPLjF1+f++FSXa7I4RFgB5fQ2npbyjN+0MC390nvTzdNkw1IYsnnQ/dmzIEEgrEkhFfiuB8KgOOr3+xtU2ibQUgLhWp29IPoJdcW52vs1YGO0/dWqjHwTSGjLWyGPXzlzYkxgYmQtwFajmh3b0ktJUY6xP7f1DBe+HDPt5ihKDvP6FdeLnqgDi7dZeLKaj+UTfaY+BATbFnsToxo9NKiUrul6fgmoqOtKpoDuwTUTVXmz1ebt1SagRPzpuaIOlUmQV00UcZjWjqyQQTpPuktfV8LcbxGdtl6jciyPfGjYgvMGjlpOTjURD2QRdnAvDZNn5/DBB6emNNeHZ4sgjc3EKbK90wElJYJ7/abWhWwbqLND341nwdb1gO1+vcITfTvzXVT2QMS71mSTXt8G7U44o4ed0WaLxPHTJsOekehqpkwo7MQvCQo1OFM7JMqCYllr4ux8a/yqxpcdIECM/4M6gcp68ij6UvUxR4MRLMk4jRGTiQcjbMR8CjyAF4WMrbqXQ61mdx126Tq/3IlXJybRRYq833dHeo2YV1a0R2c2Koq5w3NEnpZ4TpfjSxr/IWLpz38JbQphW/9vrNndxADudcl0/YSIAFCBiKW91jLKUZbKmSm9OJ+VoA32ospsGnYU8+/M8uu0Zll1ts2bhkoLiGBefBC0RJW8SUL9xKoD1aoIjOwedk8pOhCK2tl+Lev8YV6XP3dyS6DG8hUSJc5Q8ay8j/waHS/izFz53hQRH+H161HEcSMA72nYdEnaXS/OGtxY1qftDX1vOCiEXGPRUBMapKNAslCFA0mintigHGFdDK5P3QWeFUCfAPJyEIaZ4hVSHY95BjPwYjD1ImIj6Rz49FXX2VqcJct8H+J+nvhfViACJrUV1Skj+s0VdKcU8YMVbyECA1m7z+5XvG8sJZd3jSv+wgO55zgjyHwTWHrnkz0HTWH9+DtpdCwfXPXjwDSNfog2yYDbN3MZYytE4zIlhLS4kTpuPlfiY9xJUKtYMxBbL1WW/Nhvnd7usnwNIvuTHblxI6GYR8I3fmaOpz/m0Wv/Ng7SHXaT5zbFdBLYYCvyWtc3xt49N/8TBa6atNv+zjoFo874NtSWF3E6yNhNU2CS+ud5pmlNNgKb9KdwhNGA3KYGrIl5Phfxxowv5R+oAVCwPklD90pe0ZYP+eU7QvlbK529UqW9p1ciaSGqHHgec
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '达达猪',
+    host: ' https://www.dadazhu.me',
+    url: '/vodtype/fyclass',
+    class_parse: '.navbar-items&&li;a&&Text;a&&href;.*/(.*?).html',
+    cate_exclude: '更新|热榜',
+    lazy: $js.toString(() => {
+        input = {
+            parse: 1,
+            url: input,
+            js: 'document.querySelector("#playleft iframe").contentWindow.document.querySelector("#start").click()',
+        }
+    }),
+    searchUrl: '/rss.xml?wd=**',
+    搜索: $js.toString(() => {
+        let html = post(input.split('?')[0], {body: input.split('?')[1]});
+        let items = pdfa(html, 'rss&&item');
+        // log(items);
+        let d = [];
+        items.forEach(it => {
+            it = it.replace(/title|link|author|pubdate|description/g, 'p');
+            let url = pdfh(it, 'p:eq(1)&&Text');
+            url = url.replace(/cc/g, 'me');
+            d.push({
+                title: pdfh(it, 'p&&Text'),
+                url: url,
+                desc: pdfh(it, 'p:eq(3)&&Text'),
+                content: pdfh(it, 'p:eq(2)&&Text'),
+                pic_url: "",
+            });
+        });
+        setResult(d);
+    }),
+}

@@ -1,1 +1,67 @@
-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
+var rule = {
+    类型: '影视',//影视|听书|漫画|小说
+    title: '世纪DJ音乐网[听]',
+    host: 'http://m.dj0898.com',
+    url: '/dance/lists/id/fyclass/fypage',
+    homeUrl: '/dance/lists/id/10/1',
+    searchUrl: '/index.php/dance/so/key?key=**&cid=0&p=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: $js.toString(() => {
+        let _classes = [{type_id: 1, type_name: "🎧串烧舞曲"}, {type_id: 2, type_name: "🎧外文舞曲"}, {
+            type_id: 3,
+            type_name: "🎧早场暖场"
+        }, {type_id: 4, type_name: "🎧中文舞曲"}, {type_id: 5, type_name: "🎧其他舞曲"}, {
+            type_id: 6,
+            type_name: "🎧国外电音"
+        }, {type_id: 8, type_name: "🎧慢歌连版"}, {type_id: 9, type_name: "🎧酒吧潮歌"}, {
+            type_id: 10,
+            type_name: "🎧中文串烧"
+        }, {type_id: 11, type_name: "🎧外文串烧"}, {type_id: 12, type_name: "🎧中外串烧"}, {
+            type_id: 13,
+            type_name: "🎧车载串烧"
+        }, {type_id: 14, type_name: "🎧越鼓串烧"}, {type_id: 40, type_name: "🎧3D/环绕"}, {
+            type_id: 45,
+            type_name: "🎧口水旋律"
+        }, {type_id: 46, type_name: "🎧精品收藏"}, {type_id: 47, type_name: "🎧开场舞曲"}, {
+            type_id: 48,
+            type_name: "🎧印度舞曲"
+        }, {type_id: 49, type_name: "🎧编排套曲"}, {type_id: 20, type_name: "🎧DuTch"}, {
+            type_id: 21,
+            type_name: "🎧Mash up"
+        }, {type_id: 22, type_name: "🎧ClubHouse"}, {type_id: 23, type_name: "🎧ElectroHouse"}, {
+            type_id: 24,
+            type_name: "🎧越南鼓Dj"
+        }, {type_id: 30, type_name: "🎧Funky"}, {type_id: 31, type_name: "🎧Reggae"}, {
+            type_id: 32,
+            type_name: "🎧Rnb"
+        }, {type_id: 33, type_name: "🎧Hip Hop"}, {type_id: 34, type_name: "🎧Dubstep"}, {
+            type_id: 8017,
+            type_name: "🎧Hardstyle"
+        }, {type_id: 8018, type_name: "🎧Hands Up"}];
+        input = _classes;
+    }),
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        log(input);
+        let html = request(input);
+        let src = pd(html, 'body&&audio[src*=http]&&src', input);
+        if (src) {
+            input = {parse: 0, url: src};
+        }
+    }),
+    double: false,
+    推荐: '*',
+    一级: 'ul.djddv_djList li;strong&&Text;img&&src;font:eq(5)&&Text;a:eq(1)&&href',
+    二级: '*',
+    搜索: '*',
+}

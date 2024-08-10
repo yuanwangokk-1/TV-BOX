@@ -1,1 +1,6 @@
-dmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICfph4fpm4YxJywKICAgIHRpdGxlOiAnaWt15Za1W+i1hF0nLAogICAgaG9zdDogJ2h0dHA6Ly9jYWlqaS5pa3VtLmNjOjgwOTknLAogICAgaG9tZVRpZDogJycsCn0=
+var rule = {
+    模板: '采集1',
+    title: 'iku喵[资]',
+    host: 'http://caiji.ikum.cc:8099',
+    homeTid: '',
+}

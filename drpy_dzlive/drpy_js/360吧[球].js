@@ -1,1 +1,69 @@
-Z2xvYmFsVGhpcy5nZXRWaWRlb3MgPSBmdW5jdGlvbiAobGluaywga2V5KSB7CiAgICBsZXQgaHRtbCA9IHJlcXVlc3QobGluayk7CiAgICBsZXQganNvbiA9IEpTT04ucGFyc2UoaHRtbCk7CiAgICBsZXQgZGF0YSA9IGpzb24uZGF0YTsKICAgIGRhdGEgPSBkYXRhW2tleV07CiAgICBsZXQgdmlkZW9zID0gZGF0YS5tYXAoKG4pID0+IHsKICAgICAgICBsZXQgaWQgPSBuLnVybDsKICAgICAgICBsZXQgbmFtZSA9IG4ubGVhZ3VlX25hbWVfemggKyAnICcgKyBuLmhvbWVfdGVhbV96aCArICcgVlMgJyArIG4uYXdheV90ZWFtX3poOwogICAgICAgIGxldCBwaWMgPSBuLmNvdmVyOwogICAgICAgIGxldCByZW1hcmtzID0gbi5uaWNrbmFtZTsKICAgICAgICByZXR1cm4gewogICAgICAgICAgICB2b2RfaWQ6IGlkLAogICAgICAgICAgICB2b2RfbmFtZTogbmFtZSwKICAgICAgICAgICAgdm9kX3BpYzogcGljLAogICAgICAgICAgICB2b2RfcmVtYXJrczogcmVtYXJrcywKICAgICAgICB9OwogICAgfSk7CiAgICByZXR1cm4gdmlkZW9zCn0KdmFyIHJ1bGUgPSB7CiAgICDnsbvlnos6ICflvbHop4YnLC8v5b2x6KeGfOWQrOS5pnzmvKvnlLt85bCP6K+0CiAgICB0aXRsZTogJzM2MOWQp1vnkINdJywKICAgIGhvc3Q6ICdodHRwczovL20uMzYwYmEuY28vJywKICAgIGhvbWVVcmw6ICcvYXBpL3dlYi9oNV9pbmRleCcsCiAgICB1cmw6ICcvYXBpL3dlYi9saXZlX2xpc3RzL2Z5Y2xhc3MnLAogICAgc2VhcmNoVXJsOiAnL2FwaS93ZWIvc2VhcmNoP2tleXdvcmQ9KionLAogICAgc2VhcmNoYWJsZTogMiwKICAgIHF1aWNrU2VhcmNoOiAwLAogICAgZmlsdGVyYWJsZTogMCwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdNT0JJTEVfVUEnLAogICAgfSwKICAgIHRpbWVvdXQ6IDUwMDAsCiAgICBjbGFzc19uYW1lOiAn5YWo6YOoJui2s+eQgybnr67nkIMm57u85ZCIJywKICAgIGNsYXNzX3VybDogJzEmMiYzJjk5JywKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBwYWdlY291bnQ6IHsKICAgICAgICAiMSI6IDEsCiAgICAgICAgIjIiOiAxLAogICAgICAgICIzIjogMSwKICAgICAgICAiOTkiOiAxLAogICAgfSwKICAgIGxhenk6ICRqcy50b1N0cmluZygoKSA9PiB7CiAgICAgICAgaW5wdXQgPSB7cGFyc2U6IDAsIHVybDogaW5wdXQsIGhlYWRlcjogcnVsZS5oZWFkZXJzfTsKICAgIH0pLAogICAg6aKE5aSE55CGOiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIE9iamVjdC5hc3NpZ24ocnVsZS5oZWFkZXJzLCB7CiAgICAgICAgICAgICdSZWZlcmVyJzogcnVsZS5ob3N0LAogICAgICAgICAgICAnT3JpZ2luJzogcnVsZS5ob3N0LAogICAgICAgIH0pOwogICAgfSksCiAgICDmjqjojZA6ICRqcy50b1N0cmluZygoKSA9PiB7CiAgICAgICAgVk9EUyA9IGdldFZpZGVvcyhpbnB1dCwgJ2hvdF9tYXRjaGVzJyk7CgogICAgfSksCiAgICDkuIDnuqc6ICRqcy50b1N0cmluZygoKSA9PiB7CiAgICAgICAgVk9EUyA9IFtdOwogICAgICAgIGlmIChNWV9QQUdFIDw9IDEpIHsKICAgICAgICAgICAgVk9EUyA9IGdldFZpZGVvcyhpbnB1dCwgJ2RhdGEnKTsKICAgICAgICB9CiAgICB9KSwKICAgIOS6jOe6pzogJyonLAogICAg5pCc57SiOiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIFZPRFMgPSBbXTsKICAgICAgICBpZiAoTVlfUEFHRSA8PSAxKSB7CiAgICAgICAgICAgIFZPRFMgPSBnZXRWaWRlb3MoaW5wdXQsICdiYWxsJyk7CiAgICAgICAgfQogICAgfSksCn0=
+globalThis.getVideos = function (link, key) {
+    let html = request(link);
+    let json = JSON.parse(html);
+    let data = json.data;
+    data = data[key];
+    let videos = data.map((n) => {
+        let id = n.url;
+        let name = n.league_name_zh + ' ' + n.home_team_zh + ' VS ' + n.away_team_zh;
+        let pic = n.cover;
+        let remarks = n.nickname;
+        return {
+            vod_id: id,
+            vod_name: name,
+            vod_pic: pic,
+            vod_remarks: remarks,
+        };
+    });
+    return videos
+}
+var rule = {
+    类型: '影视',//影视|听书|漫画|小说
+    title: '360吧[球]',
+    host: 'https://m.360ba.co/',
+    homeUrl: '/api/web/h5_index',
+    url: '/api/web/live_lists/fyclass',
+    searchUrl: '/api/web/search?keyword=**',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_name: '全部&足球&篮球&综合',
+    class_url: '1&2&3&99',
+    play_parse: true,
+    pagecount: {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "99": 1,
+    },
+    lazy: $js.toString(() => {
+        input = {parse: 0, url: input, header: rule.headers};
+    }),
+    预处理: $js.toString(() => {
+        Object.assign(rule.headers, {
+            'Referer': rule.host,
+            'Origin': rule.host,
+        });
+    }),
+    推荐: $js.toString(() => {
+        VODS = getVideos(input, 'hot_matches');
+
+    }),
+    一级: $js.toString(() => {
+        VODS = [];
+        if (MY_PAGE <= 1) {
+            VODS = getVideos(input, 'data');
+        }
+    }),
+    二级: '*',
+    搜索: $js.toString(() => {
+        VODS = [];
+        if (MY_PAGE <= 1) {
+            VODS = getVideos(input, 'ball');
+        }
+    }),
+}

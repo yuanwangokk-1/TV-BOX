@@ -1,1 +1,130 @@
-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
+var rule = {
+    title: '黑料不打烊[密]',
+    host: 'https://hl49.co',
+    url: '/category/fyclass/fypage.html',
+    searchUrl: '/index/search_article?word=**&page=fypage',
+    searchable: 1,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'Mozilla/5.0',
+    },
+    class_parse: '.slider-content&&a;span&&Text;a&&href;.*/(\\d+)\.html',
+    hostJs: $js.toString(() => {
+        HOST = 'https://mgj.uzrpy.com';
+        try {
+            let html = request(rule.host);
+            HOST = pdfh(html, ".box-wrap&&a&&href") || HOST;
+        } catch (e) {
+            log(`获取Host错误${e.message}`);
+        }
+    }),
+    hikerListCol: "card_pic_1",
+    hikerClassListCol: "card_pic_1",
+    lazy: typeof MY_NAME !== "undefined" ? $js.toString(() => {
+        var list = jsp.pdfa(request(input), '.dplayer');
+        input = {
+            parse: ""
+        };
+        if (list.length === '1') {
+            let url = JSON.parse(pdfh(list[0], '.dplayer&&config')).video.url;
+            input.url = url.startsWith("http") ? url : "https://hls.vdtuzv.com" + url;
+        } else {
+            var a = []
+            list.forEach((data, id) => a.push('第' + (id + 1) + '部'))
+            input.url = $(a, 1)
+                .select(list => {
+                    input = input.match(/\d+/)[0] - 1
+                    return $(JSON.parse(pdfh(list[input], '.dplayer&&config'))
+                        .video.url)
+                        .lazyRule(() => input.startsWith("http") ? input : "https://hls.vdtuzv.com" + input)
+                }, list)
+        }
+    }) : void 0,
+    play_parse: true,
+    limit: 6,
+    proxy_rule: $js.toString(() => {
+        //log(input);
+        // 测试:https://www.wakatool.com/base64img
+        if (input) {
+            let t1 = new Date().getTime();
+            let _type = input.url.split('.').slice(-1)[0];
+            let data = request(input.url, {toBase64: true});
+            //log(data);
+            let t2 = new Date().getTime();
+            log(`网络请求获取图片耗时:${t2 - t1}ms`);
+            // log(`当前线程:${java.lang.Thread.currentThread().getName()}`);
+
+            let key = CryptoJS.enc.Utf8.parse("f5d965df75336270");
+            let iv = CryptoJS.enc.Utf8.parse("97b60394abc2fbe1");
+            let encrypted = CryptoJS.AES.decrypt({
+                ciphertext: CryptoJS.enc.Base64.parse(data)
+            }, key, {
+                iv: iv,
+                mode: CryptoJS.mode.CBC,
+                padding: CryptoJS.pad.Pkcs7
+            }).toString(CryptoJS.enc.Base64);
+            // .toString(CryptoJS.enc.Utf8).toTypedArray(CryptoJS.enc.Utf8); //直接转参数3可用的字节流方法
+            let img_base64 = 'data:image/' + _type + ';base64,' + encrypted;
+            let t3 = new Date().getTime();
+            log(`已获取图片${input.url}解密耗时:${t3 - t2}ms`);
+            // // input = [200, 'text/plain', img_base64];
+            // input = [302, 'text/html', '', {Location:'https://www.baidu.com'}];
+            input = [200, 'image/' + _type, img_base64, null, 1];
+            // input = [200, 'text/plain', data];
+        }
+    }),
+    预处理: $js.toString(() => {
+        rule.cate_exclude = '';
+    }),
+    推荐: '*',
+    一级: $js.toString(() => {
+        let d = [];
+        let html = request(input);
+        let list = pdfa(html, '.video-item');
+        list.forEach(item => {
+            var pic = pdfh(item, 'img&&onload');
+            var url = pd(item, 'a&&href', MY_URL);
+            var title = pdfh(item, '.title&&Text');
+            if (title) {
+                d.push({
+                    title: title,
+                    img: pic,
+                    desc: "0",
+                    url: url
+                });
+            }
+        });
+        setResult(d);
+    }),
+    //一级: '.video-item;.title&&Text;img&&onload;;a&&href',
+    图片替换: $js.toString(() => {
+        if (/loadImg/.test(input)) {
+            input = input.split("'")[1];
+        }
+        // tim壳子专用图片解密
+        // input = input + '@Option:{"mode":"CBC","inbase64":false,"key":"f5d965df75336270","iv":"97b60394abc2fbe1"}';
+        input = getProxyUrl() + '&url=' + input;
+    }),
+    二级: "*",
+    搜索: $js.toString(() => {
+        let d = [];
+        let u = input.split("?");
+        let h = post(u[0], {
+            body: u[1]
+        });
+        let list = JSON.parse(h).data.list;
+
+        list.forEach(item => {
+            let pic = item.thumb;
+            let url = `${rule.host}/archives/${item.id}.html`
+            d.push({
+                title: item.title,
+                desc: item.created_date,
+                img: pic,
+                url: url
+            });
+        });
+        setResult(d);
+    })
+}

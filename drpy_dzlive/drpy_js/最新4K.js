@@ -1,1 +1,41 @@
-dmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICfpppblm74yJywKICAgIHRpdGxlOiAn5pyA5pawNEsnLAogICAgaG9zdDogJ2h0dHBzOi8vd3d3LjEwODAuZWUnLAogICAgdXJsOiAnL3ZvZHR5cGUvZnljbGFzcy1meXBhZ2UuaHRtbCcsCiAgICBzZWFyY2hVcmw6ICcvdm9kc2VhcmNoLyoqLS0tLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKICAgIGNhdGVfZXhjbHVkZTogJ+S4k+mimCcsCiAgICDmkJzntKI6ICd1bC5zdHVpLXZvZGxpc3RfX21lZGlhLHVsLnN0dWktdm9kbGlzdCwjc2VhcmNoTGlzdCBsaTthJiZ0aXRsZTsubGF6eWxvYWQmJmRhdGEtb3JpZ2luYWw7LnRleHQtbXV0ZWQmJlRleHQ7YSYmaHJlZjsudGV4dC1tdXRlZDplcSgtMSkmJlRleHQnLAogICAgbGF6eTogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICBsZXQgaHRtbCA9IHJlcXVlc3QoaW5wdXQpOwogICAgICAgIGh0bWwgPSBKU09OLnBhcnNlKGh0bWwubWF0Y2goL3IgcGxheWVyXy4qPz0oLio/KTwvKVsxXSk7CiAgICAgICAgbGV0IHVybCA9IGh0bWwudXJsOwogICAgICAgIC8vIGxvZygndXJsOicrdXJsKTsKICAgICAgICBsZXQgY29uZmlnID0ge307CiAgICAgICAgbGV0IGpzY29kZSA9IHJlcXVlc3QoSE9TVCArICcvc3RhdGljL2pzL3BsYXllcmNvbmZpZy5qcycpOwogICAgICAgIC8vIGxvZygnanNjb2RlOicranNjb2RlKTsKICAgICAgICBldmFsKGpzY29kZSArICdcbmNvbmZpZz1NYWNQbGF5ZXJDb25maWc7Jyk7CiAgICAgICAgbGV0IGp4ID0gY29uZmlnLnBsYXllcl9saXN0W2h0bWwuZnJvbV0ucGFyc2U7CiAgICAgICAgaWYgKGp4ID09ICcnKSB7CiAgICAgICAgICAgIGp4ID0gY29uZmlnLnBhcnNlCiAgICAgICAgfQogICAgICAgIGp4ID0gangucmVwbGFjZSgnLy8vJywgJy8vJyk7CiAgICAgICAgbG9nKCdqeDonICsgangpOwogICAgICAgIGxldCBwID0gJ3VybD0nICsgdXJsOwogICAgICAgIGxldCB2aWRlbyA9IEpTT04ucGFyc2UocmVxdWVzdChqeC5yZXBsYWNlKCc/dXJsPScsICdBUEkucGhwJyksIHsKICAgICAgICAgICAgaGVhZGVyczogewogICAgICAgICAgICAgICAgJ1JlZmVyZXInOiBIT1NUCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIGJvZHk6IHAsCiAgICAgICAgICAgIG1ldGhvZDogJ1BPU1QnCiAgICAgICAgfSkpLnVybDsKICAgICAgICBsb2codmlkZW8pOwogICAgICAgIGlmICh2aWRlbykgewogICAgICAgICAgICBpbnB1dCA9IHsKICAgICAgICAgICAgICAgIGp4OiAwLAogICAgICAgICAgICAgICAgdXJsOiB2aWRlbywKICAgICAgICAgICAgICAgIHBhcnNlOiAwCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9KSwKfQo=
+var rule = {
+    模板: '首图2',
+    title: '最新4K',
+    host: 'https://www.1080.ee',
+    url: '/vodtype/fyclass-fypage.html',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    cate_exclude: '专题',
+    搜索: 'ul.stui-vodlist__media,ul.stui-vodlist,#searchList li;a&&title;.lazyload&&data-original;.text-muted&&Text;a&&href;.text-muted:eq(-1)&&Text',
+    lazy: $js.toString(() => {
+        let html = request(input);
+        html = JSON.parse(html.match(/r player_.*?=(.*?)</)[1]);
+        let url = html.url;
+        // log('url:'+url);
+        let config = {};
+        let jscode = request(HOST + '/static/js/playerconfig.js');
+        // log('jscode:'+jscode);
+        eval(jscode + '\nconfig=MacPlayerConfig;');
+        let jx = config.player_list[html.from].parse;
+        if (jx == '') {
+            jx = config.parse
+        }
+        jx = jx.replace('///', '//');
+        log('jx:' + jx);
+        let p = 'url=' + url;
+        let video = JSON.parse(request(jx.replace('?url=', 'API.php'), {
+            headers: {
+                'Referer': HOST
+            },
+            body: p,
+            method: 'POST'
+        })).url;
+        log(video);
+        if (video) {
+            input = {
+                jx: 0,
+                url: video,
+                parse: 0
+            }
+        }
+    }),
+}

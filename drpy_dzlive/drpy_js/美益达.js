@@ -1,1 +1,37 @@
-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
+var rule = {
+    title: "美益达",
+    host: "https://myd04.com",
+    url: "/vodshow/fyclassfyfilter.html",
+    searchUrl: "/vodsearch/**----------fypage---.html",
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: "H4sIAAAAAAAAA+2ZaU9bRxSG/4u/NpUwWZtv2fd9T5UPUYXUqG0qNWmlKorEHuMAJtTBOJgtbA5gMCQhxgv8Gc9c+1/k2nPOe+ZG7Yi2NGrV++0+77ln7uzzevwkEo0c/vpJ5Lu2XyOHI6pvQXf1RPZEHt7/oc3mX+5//3Nb88WHDbknW+/KNmQfIk/3kBrPVisZUgkQG8n4ZXHMAMe82Bp9RACxhRdqs8QxAxzTHUO6fYRiBPgeKi6AvNhotdjHeQaQt7KhijnOM4DY3DOpCwHH6rmkxAiQ1ztcT7/hPAOoS66/FpvguhhAmenXXnGbyzSAvM5lb+QF5xlArCuuO19xzAD6M77qVRa5Pw1wrJabV/0cI0CZE4t+T3GZBlBm5YVXynjJ96qyxiXbEvohMVubwZgYQBkdW/VXW5xtgGPV8lRtJU8xApQ5MFhbxXgZQJnFRbXCfUuAvh0f1qNz3LcGUOZgr0qsc5kGnt5rRGmRZPKqv2gtEuYdLZLZhXq6lws3gErNp3VhlStlQDovrze30HlNQEO3BtVYhRtqAAP39qXECDDgz9ckRoC81JzOLHOeAdRz8o3kEaCeWx8kRiB1ydt1yQfyBvKqOI+BbALyuhN+T6kYryFhtGRu20vkvL40NwYsm9OUfr7tp2F/YsYbPRvVEm8nBPaw+1Orlm2XYQfvaNjHKtY8NWANg8QIMLTrsxIjwDCkKmogJWFha6CssAFrgCVGYE0aK2bAGmCrJQasLlQrXdKFDQisnM131VLFWjnMO+nC1pbWvaQ1Hy29VfRWW4+KHrX1FtFbLD36FXT/0dIPiX7I1g+KftDWD4h+wNb3i77f1veJvs/Wpb1Ru71RaW/Ubm9U2hu12xuV9vqPgQHJpfTqgDUgzJ8MCGR7QI6QcATKUVKOQjlGyjEox0k5DuUEKSegnCTlJJRTpJyCcpqU01DOkHIGyllSzkI5R8o5KOdJOQ/lAikXoFwk5SKUS6RcgnKZlMtQrpByBcpVUq5CuUbKNSjXSbkO5QYpN6DcJOUmlFuk3IJym5TbUO6QcgfKXVLuQmn5ktdA48meKnpwWBUTMlXAwamiUxv11DsJ+tLjB34CDvNiUeeTgfi3Dx4/ks1wtVvFegPxR9/8+FNboy739kRad82sjlWqRRwGBv7uOew6F13nqetc1O8/qFmYXAOILS/4pz3HDOzEyLrMo8sgOo2lw8S7zLjTiDkMo9OMd1VUoZPLNCBt6NHdk2hDEzD3su1STwK0b7Db+iFiAHnxYT2RUc+K6rcOzrYlfHtqWo3hWDUg/mRNbadgTpogPyAyepzHi+DzGFLHhP6ri8S1ENxG9o8XidPIjuR9r6fGpzkV/D81d6FJi4QmLRKatNCk/VMmbe+umbTmceSVyrW+YuCEIgnbXWHVP2UC7wUka1v0N8rge7YUNFbB92wJG3hm0u8qb6Gd93Aw3hgrqBm+uyJAL3avqcSMZAuj/Y5bUz004S3DxBlAySvbtXyMizWwEwOkR56pfphNA4iNDupR5BmQfu3RhQJ6tAmIvUzXOvk2jUDm2brKDVGMwPIC9Rn+HoGMd0HHEhjpJsjxVtIxLpNAjsy31U2OEeB7yUn9DgbPAGJLE7qc5JgB1CX9qlqGKTbwr74tdJm63zVgoU0KbVJok0KbFNqk3bVJ+3b3LkvFs7q8JNurSEGbFHgvIAVtUvA9WwrapOB7toQNvCtXm4ZHMoC623+OfvHJv6OuSxedm69uTfFnDaDQQFcEK+P8lzqe9ZIliTUAMceFk+uiyuXTXJc+rosx10WS7njuxfh/WALEykt+k3Ry0yvD5dkS1u1Nr4/to3lGCesl3c0hAkz3jn6VYb9MYE0pZTnEJohHjus05xGgh4ZiamVDL7/mTgJ/Fo/1py+rQq8UeqXQK4VeKfRKu+uV9tteKZy84eT970zepx8BmfA972MpAAA=",
+    filter_url: "-{{fl.地区}}-{{fl.排序}}-{{fl.剧情}}-{{fl.语言}}-{{fl.字母}}---fypage---{{fl.年份}}",
+    filter_def: "",
+    headers: {
+        "User-Agent": "MOBILE_UA"
+    },
+    timeout: 5000,
+    class_parse: ".swiper-wrapper&&a;a&&Text;a&&href;(\\w+).html",
+    cate_exclude: "Netflix|日更新|专题|排行榜|热搜|留言",
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: true,
+    推荐: "body&&.module:eq(1);body&&a.module-poster-item.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href",
+    一级: "body&&a.module-poster-item.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href",
+    二级: {
+        title: "h1&&Text;.module-info-tag&&Text",
+        img: ".lazyload&&data-original",
+        desc: ".module-info-item:eq(1)&&Text;.module-info-item:eq(2)&&Text;.module-info-item:eq(3)&&Text",
+        content: ".module-info-introduction-content&&Text",
+        tabs: ".module-tab-item.tab-item",
+        lists: "body&&.module-play-list:eq(#id)&&a",
+        tab_text: "body&&Text",
+        list_text: "body&&Text",
+        list_url: "a&&href"
+    },
+    搜索: "body&&.module-item;.module-card-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href;.module-info-item-content&&Text"
+}

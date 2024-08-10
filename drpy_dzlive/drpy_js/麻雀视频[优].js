@@ -1,1 +1,58 @@
-H4sIAC0soWYC/31VTW/TQBC98yssiPzRlnWLxCWRQSA4gIAeqnIpVbS1N/GmttfdHYeGqlJPSCBAIHFAghOXInFCAgm15d/081+wYzuJHUN9SOLZ92Zn37zZDKk0ZBYxwzN2rhj6AQ4RaxvWxcHhxee98/2XF18/rB0ffVq3FvL1UCjQyyFAqtquG2/BkPh+uZhSqVg3k1EFkUZ0xCQpgW4vS9zbGuGVlALsRnxDuU9F8IgrIDTlJA3T2zBKmdcb+RFVypQ02fTwIxRg+hQ8c8So9EwqGfXMlPYRil9lYqVX/XD1kvQFwpubKxmuGzCgPELOlPIg6YkJxQce6G14UNuEbqBkN4rQVsb9zZU83jYWi1iPR8BkAVuqhnRtVvW91K4eC1ivbezslvozGjCp2mW78LFWFZPX7/RZApYmP16+++DR/e7qnTJLSQQeM5Hp3t1cXCzLyoXtJjTGhp99/HXy54epv3TTT17tm2eHR+evDsyT199Oj75bVUZRZCyGnJkwNIfU9GEMoMC6bNuPsoBND4Ie6ObmaBsgM1ZEueoOecCExomNgQtClfCIvhi1jdZAERArIHnSt23H8G5VzsyTNIOJacdPucXSQmErNDaZeNKYL1gLNcpAS3m1ZVuk8On1DUgsh/iRbqLtXF1optenA0l1zaauP/W9JdPPFIi4K1mfbXuW3ibfd3y6SYbdTtEOp0gaiCz3w1SP03ffzt++n6p2/Hvv7GBfvw+USNoBBdrJp7PD435HspjKzY4+VydgajyAxwdvcsql2j1dvofKlfXkgou+nWvjVGIMDLS7huZLJKbgh7ZL5p659rNg3nGdtaX1Kd518zRImckymSqdavbiuGTMUEn8US/TqsyoBkzeZvYMIcbtJNvKmAL7fzBUVsMeriw/KYxiI9FpnApxlahWkAxFkI+OpuMqwf6Qoj8N3FTF5lrK/VoKbG4DhFddDYWBJgzvwhoMA01Y4R1VQ5Z+apaHo9uTIq6hMcqxYzFNbQ7oLw7ETxQH5pCB4IlttVota0ZupOkm4M5rFev8I29PyPtU200nn3HvNJe+y1FWIOO/mGotidDusFroEf2mx2Rc1rVqUePLCYsiaaZCO09bQew6/9Eky/08ITfOPJ7z0/dfzn5+rU5x0aooWltcJyoUzy+d6t2/hy2EiKIHAAA=
+var rule = {
+    title: '麻雀视频[优]',
+    host: 'https://mqtv.cc',
+    parse_url: 'https://player.mqtv.cc/fun/?url=',
+    url: '/libs/VodList.api.php?type=fyclass&rank=rankhot&cat=&year=&area=&page=fypage',
+    searchUrl: '/libs/VodList.api.php?search=**',
+    //detailUrl:'/libs/VodInfo.api.php?ctid=fyid',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_name: '电影&电视剧&综艺&动漫',
+    class_url: 'movie&tv&va&ct',
+    cate_exclude: '',
+    play_parse: true,
+    is_video: 'obj/tos',
+    lazy: $js.toString(() => {
+        input = {
+            parse: 1, url: rule.parse_url + input,
+            js: "$('.player-btn').click()",
+            parse_extra: '&is_pc=1&custom_regex=' + rule.is_video
+        };
+    }),
+    double: true,
+    推荐: '',
+    一级: 'json:data;title;img;remark;url;desc',
+    二级: $js.toString(() => {
+        VOD = {};
+        log(input);
+        let ctid = input.match(/.*\/(\d+)/)[1];
+        // log(ctid);
+        let detailUrl = 'https://mqtv.cc/libs/VodInfo.api.php?ctid=' + ctid;
+        log('detailUrl:' + detailUrl);
+        let html = request(detailUrl);
+        let json = JSON.parse(html);
+        // log(json);
+        VOD.vod_name = json.data.title;
+        VOD.vod_id = input;
+        VOD.vod_pic = json.data.img;
+        VOD.vod_year = json.data.year;
+        VOD.vod_area = json.data.area;
+        VOD.vod_remarks = json.data.remark;
+        VOD.vod_play_from = json.data.playinfo.map(it => it.cnsite).join('$$$');
+        let playUrls = [];
+        json.data.playinfo.forEach((it) => {
+            let plist = it.player.map(it => it.no + '$' + it.url).join('#');
+            playUrls.push(plist);
+        });
+        VOD.vod_play_url = playUrls.join('$$$');
+    }),
+    搜索: 'json:data.vod_all[0].show;title;img;remark;url;desc',
+}

@@ -1,1 +1,25 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+aXtuWFieW9semZoicsCiAgICBob3N0OiAnaHR0cHM6Ly93d3cudGltZS1jaGlja2VuLmNvbScsCiAgICB1cmw6ICcvdm9kL3Nob3cvaWQvZnljbGFzcy9wYWdlL2Z5cGFnZS5odG1sJywKICAgIHNlYXJjaFVybDogJy92b2Qvc2VhcmNoL3BhZ2UvZnlwYWdlL3dkLyoqLmh0bWwnLAogICAgc2VhcmNoYWJsZTogMiwKICAgIHF1aWNrU2VhcmNoOiAwLAogICAgZmlsdGVyYWJsZTogMCwKICAgIGNsYXNzX3BhcnNlOiAnLm5hdi1tZW51LWl0ZW1zJiZsaTthJiZUZXh0O2EmJmhyZWY7LiovKC4qPykuaHRtbCcsCiAgICBwbGF5X3BhcnNlOiB0cnVlLAogICAgbGF6eTogJycsCiAgICBsaW1pdDogNiwKICAgIOaOqOiNkDogJy5tb2R1bGUtbGlzdDsubW9kdWxlLWl0ZW1zJiYubW9kdWxlLWl0ZW07YSYmdGl0bGU7aW1nJiZkYXRhLXNyYzsubW9kdWxlLWl0ZW0tdGV4dCYmVGV4dDthJiZocmVmJywKICAgIGRvdWJsZTogdHJ1ZSwKICAgIOS4gOe6pzogJy5tb2R1bGUtaXRlbXMgLm1vZHVsZS1pdGVtO2EmJnRpdGxlO2ltZyYmZGF0YS1zcmM7Lm1vZHVsZS1pdGVtLXRleHQmJlRleHQ7YSYmaHJlZicsCiAgICDkuoznuqc6IHsKICAgICAgICB0aXRsZTogJ2gxJiZUZXh0Oy50YWctbGluayYmVGV4dCcsCiAgICAgICAgaW1nOiAnLm1vZHVsZS1pdGVtLXBpYyYmaW1nJiZkYXRhLXNyYycsCiAgICAgICAgZGVzYzogJy52aWRlby1pbmZvLWl0ZW1zOmVxKDApJiZUZXh0Oy52aWRlby1pbmZvLWl0ZW1zOmVxKDEpJiZUZXh0Oy52aWRlby1pbmZvLWl0ZW1zOmVxKDIpJiZUZXh0Oy52aWRlby1pbmZvLWl0ZW1zOmVxKDMpJiZUZXh0JywKICAgICAgICBjb250ZW50OiAnLnZvZF9jb250ZW50JiZUZXh0JywKICAgICAgICB0YWJzOiAnLm1vZHVsZS10YWItaXRlbS0tc21hbGwnLAogICAgICAgIGxpc3RzOiAnLm1vZHVsZS1wbGF5ZXItbGlzdDplcSgjaWQpJiYuc2Nyb2xsLWNvbnRlbnQmJmEnLAogICAgfSwKICAgIOaQnOe0ojogJy5tb2R1bGUtaXRlbXMgLm1vZHVsZS1zZWFyY2gtaXRlbTtoMyYmVGV4dDtpbWcmJmRhdGEtc3JjOy52aWRlby1zZXJpYWwmJlRleHQ7YSYmaHJlZicsCn0=
+var rule = {
+    title: '时光影院',
+    host: 'https://www.time-chicken.com',
+    url: '/vod/show/id/fyclass/page/fypage.html',
+    searchUrl: '/vod/search/page/fypage/wd/**.html',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    class_parse: '.nav-menu-items&&li;a&&Text;a&&href;.*/(.*?).html',
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: '.module-list;.module-items&&.module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
+    double: true,
+    一级: '.module-items .module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
+    二级: {
+        title: 'h1&&Text;.tag-link&&Text',
+        img: '.module-item-pic&&img&&data-src',
+        desc: '.video-info-items:eq(0)&&Text;.video-info-items:eq(1)&&Text;.video-info-items:eq(2)&&Text;.video-info-items:eq(3)&&Text',
+        content: '.vod_content&&Text',
+        tabs: '.module-tab-item--small',
+        lists: '.module-player-list:eq(#id)&&.scroll-content&&a',
+    },
+    搜索: '.module-items .module-search-item;h3&&Text;img&&data-src;.video-serial&&Text;a&&href',
+}

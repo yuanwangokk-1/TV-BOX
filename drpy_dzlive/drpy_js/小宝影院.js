@@ -1,1 +1,30 @@
-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
+var rule = {
+    模板: "首图",
+    title: "小宝影院",
+    host: "https://www.xiaobaovod.com",
+    url: "/vodshow/fyfilter.html",
+    searchUrl: "/vodsearch/**----------fypage---.html",
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: "H4sIAAAAAAAAA+1Z204bVxT9F0vnjTZzfJ3Jm03MT1R5iFokoiZBKjRVFUUi4WZDjKEidq04hCYGA+ViN4QEm4Gf8ZkZ/0XPXM7ZexwfilpZTdXhibWW9/ZZe/bsPRo/idHY7W+exL6f/Dl2O2a3u2xrNTYWe3Tv4STGj+89+HHS++CjEM1B7OmYz7LFvf78XsBSoFf2embdLi4HShqUSp0Vm6BkpGIX2tb8Iig6KM0Ndt4FxZCK9WzdmquAQjX4omIzlI6i0+0sh/IlIMoq/NrrFFFUHE6xcmKbByClktiudfG7vfmBmW2hpqTau9i115fQ1/HAu67o15/VW+xFB+ovcbj+QCvrD2yj2a8tBWwAhNbfrVmfTgItADKu3LLOL0WcD6T9yzX2ygy0AMiqvX8JWgCE5qy2QQuAjKvuWPVDEecDec43+xAXAHnOy4+gBQDO0sJnaYXiSi3W2RVxPpBxC2VeKVbYF6ESSyc7V3b5yC7WhBmJoQ+2rdUrHia+QmK4Xme9bkXIPgg1w/lpr2uiZhB4oBkk/dfNENfiyYDz/kV8AvgE5uPAxzFPgaeY14DXEE8NyVMD8zrwOuYzwGcwnwY+jfkU8CnMg1+K/VLwS7FfCn4p9kvBL8V+Kfil2K8GfjXsVwO/GvargV8N+9XAr4b9auBXw3418KuFZ4tzcuTszUE7SRxuJ6BvMFtemfzjooN9gO510AIg58cfDdACgO510AKAZgRoAUBzB2k+QDMCndMH6C5kx/NwF7oAl81a+4V1ylA2icNlAxoXyKqe9aunATt7nyeQi6DTsVqbgTJ1f3YGCneywApiYM98O/3DpHueu2Ox+EgWdRxfzV6nyXel2HdwX/DFwFcAkpL4mrgTGSToRuuw6S4HkKCBrQ8fWaMCUgLuKbtzwMyXsCLdMTLiFbm0yD8uWsAHN1k9f3d9Xrfqrl+t6nV27WqttPj2Ya9/E6ESR6soWkXRKlKuoqrJSlW0jST+p8vqv7N0EiNZOgl83fjSsbsXTlFM63gG15BXNaxCq/r7Jawa/+ay8NekuOQ+CFuBdnBB2IjQfBCN32j8RuP3/z5+kyMZv0l83dxnfu+dlWiXz57tQ+pnj/chNT3y8esdGBrNBTd5rh46YqOn32j8RuM3Gr/K8ZsazeNvCj3/lkuOeWgXTHgXksa/Trzvv92wnq3aBfFjQhq9sCk3nHeLvW6td7ktVJTZHUfv7P0r52xFqHDjOQsb1umW9fzQrmwIFdrXXmvx2P68yT49F+rAaPd+UkEzUeCBmShpZTFuPZ7+bmZq+qdbqcRX8Pf11OzDBwNOhwaQfIroEySbJHmdZBNETylSNEq97rIyBY/X75B8kuRyRM8oUlx0nDn1KXLjJJd1T6FrylOECj6YIk30OMmOk3yGGGli0OEp7M06O95WpOCRSWKMe47yJKspUuxsOe0DZYpsihh510iOkmxWkQL31ZAUBslNeCm4KUUKp7bOO1uRQieGQQzNKwolem54iv7ckvP2SJHC8C5E2usLXtc7ihTLJXvzjTpFxusLv64TCiPrL9jxa7URfgpxRYzBU3whjxlf4PR9+ifVeZVYmx4AAA==",
+    filter_url: "{{fl.类型}}-{{fl.地区}}-{{fl.排序}}--{{fl.语言}}----fypage---{{fl.年份}}",
+    filter_def: {
+        1: {类型: 1},
+        2: {类型: 2},
+        3: {类型: 3},
+        4: {类型: 4},
+        53: {类型: 53}
+    },
+    headers: {
+        "User-Agent": "MOBILE_UA"
+    },
+    timeout: 5000,
+    class_parse: ".nav-list&&li;a&&Text;a&&href;(\\d+)",
+    cate_exclude: "",
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: true,
+}

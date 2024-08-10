@@ -1,1 +1,76 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+S6keebmOi1hOa6kOe9kVvnm5hdJywKICAgIGhvc3Q6ICdodHRwczovL3Jlcy55dW5wYW4ud2luJywKICAgIGhvc3RKczogJycsCiAgICBoZWFkZXJzOiB7J1VzZXItQWdlbnQnOiAnTU9CSUxFX1VBJ30sCiAgICDnvJbnoIE6ICd1dGYtOCcsCiAgICB0aW1lb3V0OiA1MDAwLAogICAgdXJsOiAnLz9QYWdlSW5kZXg9ZnlwYWdlJlBhZ2VTaXplPTEyJktleXdvcmQ9JlR5cGU9ZnljbGFzcyZUYWc9JywKICAgIGZpbHRlcl91cmw6ICcnLAogICAgZGV0YWlsVXJsOiAnJywKICAgIHNlYXJjaFVybDogJy8/UGFnZUluZGV4PWZ5cGFnZSZQYWdlU2l6ZT0xMiZLZXl3b3JkPSoqJlR5cGU9JlRhZz0nLAogICAgc2VhcmNoYWJsZTogMSwKICAgIHF1aWNrU2VhcmNoOiAxLAogICAgZmlsdGVyYWJsZTogMSwKCiAgICBjbGFzc19uYW1lOiAn55S15b2xJuWJp+mbhibnu7zoibom5Yqo5ryrJywKICAgIGNsYXNzX3VybDogJ+eUteW9sSbnlLXop4bliacm57u86Im6JuWKqOa8qycsCiAgICBmaWx0ZXJfZGVmOiB7fSwKCiAgICBwcm94eV9ydWxlOiAnJywKICAgIHNuaWZmZXI6IDAsCiAgICBpc1ZpZGVvOiAnJywKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBwYXJzZV91cmw6ICcnLAogICAgbGF6eTogYAppZiAoLyhwYW4ucXVhcmsuY258d3d3LmFsaXl1bmRyaXZlLmNvbXx3d3cuYWxpcGFuLmNvbSkvLnRlc3QoaW5wdXQpKXsKbGV0IHR5cGU9ImFsaSI7CmlmIChpbnB1dC5pbmNsdWRlcygicGFuLnF1YXJrLmNuIikpewp0eXBlPSJxdWFyayI7Cn0gZWxzZSBpZiAoaW5wdXQuaW5jbHVkZXMoInd3dy5hbGl5dW5kcml2ZS5jb20iKSB8fCBpbnB1dC5pbmNsdWRlcygid3d3LmFsaXBhbi5jb20iKSl7CnR5cGU9ImFsaSI7Cn0KbGV0IGNvbmZpcm09IiI7Ci8vbGV0IGNvbmZpcm09IiZjb25maXJtPTAiOwppbnB1dCA9IGdldFByb3h5VXJsKCkucmVwbGFjZSgnanMnLHR5cGUpKycmdHlwZT1wdXNoJytjb25maXJtKycmdXJsPScrZW5jb2RlVVJJQ29tcG9uZW50KGlucHV0KTsKfWAsCgogICAgbGltaXQ6IDksCiAgICBkb3VibGU6IGZhbHNlLAovL+WIl+ihqDsodHJ1ZeWPjOWxguWIl+ihqCk75qCH6aKYO+WbvueJhzvmj4/ov7A76ZO+5o6lO+ivpuaDhSjlj6/kuI3lhpkpCiAgICDmjqjojZA6ICcqJywKLy/liJfooag75qCH6aKYO+WbvueJhzvmj4/ov7A76ZO+5o6lO+ivpuaDhSjlj6/kuI3lhpkpCiAgICDkuIDnuqc6ICcuY29sO2g1JiZUZXh0O2ltZyYmc3JjOy5jYXJkLXRleHQtLXNwYW46ZXEoLTIpJiZUZXh0O2E6ZXEoLTEpJiZocmVmJywKICAgIOS6jOe6pzogewovL+WQjeensDvnsbvlnosKICAgICAgICAidGl0bGUiOiAiaDUmJlRleHQ7LmNhcmQtdGV4dC0tc3BhbjplcSgtMikmJlRleHQiLAovL+WbvueJhwogICAgICAgICJpbWciOiAiaW1nJiZzcmMiLAovL+S4u+imgeaPj+i/sDvlubTku7075Zyw5Yy6O+a8lOWRmDvlr7zmvJQKICAgICAgICAiZGVzYyI6ICIuY2FyZC10ZXh0OmVxKDIpJiZUZXh0Ozs7OyIsCi8v566A5LuLCiAgICAgICAgImNvbnRlbnQiOiAiLmNhcmQtdGV4dDplcSgwKSYmVGV4dCIsCi8v57q/6Lev5pWw57uECiAgICAgICAgInRhYnMiOiAianM6VEFCUyA9IFsn6Zi/6YeM572R55uYJ10iLAovL+e6v+i3r+agh+mimAogICAgICAgICJ0YWJfdGV4dCI6ICIiLAovL+aSreaUvuaVsOe7hCDpgInpm4bliJfooagKLy8gImxpc3RzIjogIi5jYXJkLWZvb3RlcjplcSgjaWQpJiYuZmxvYXQtZW5kIiwKICAgICAgICBsaXN0czogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICAgICAgTElTVFMgPSBbXTsKICAgICAgICAgICAgLy9sb2coaW5wdXQpOwogICAgICAgICAgICBsZXQgbGlzdHMxID0gcGRmYShodG1sLCAnLmNhcmQtZm9vdGVyJiYuZmxvYXQtZW5kJykubWFwKGl0ID0+IHsKICAgICAgICAgICAgICAgIGxldCBfdHQgPSBwZGZoKGl0LCAnYSYmVGV4dCcpOwogICAgICAgICAgICAgICAgbGV0IF91dSA9IHBkZmgoaXQsICdhJiZvbmNsaWNrJykubWF0Y2goL29wZW5cKCcoLio/KScvKVsxXTsKICAgICAgICAgICAgICAgIHJldHVybiBfdHQgKyAnJCcgKyBfdXUKICAgICAgICAgICAgfSk7CiAgICAgICAgICAgIExJU1RTLnB1c2gobGlzdHMxKTsKICAgICAgICB9KSwKICAgIH0sCgovL+WIl+ihqDvmoIfpopg75Zu+54mHO+aPj+i/sDvpk77mjqU76K+m5oOFKOWPr+S4jeWGmSkKICAgIOaQnOe0ojogJyonLAoKICAgIGZpbHRlcjoge30KCn0=
+var rule = {
+    title: '云盘资源网[盘]',
+    host: 'https://res.yunpan.win',
+    hostJs: '',
+    headers: {'User-Agent': 'MOBILE_UA'},
+    编码: 'utf-8',
+    timeout: 5000,
+    url: '/?PageIndex=fypage&PageSize=12&Keyword=&Type=fyclass&Tag=',
+    filter_url: '',
+    detailUrl: '',
+    searchUrl: '/?PageIndex=fypage&PageSize=12&Keyword=**&Type=&Tag=',
+    searchable: 1,
+    quickSearch: 1,
+    filterable: 1,
+
+    class_name: '电影&剧集&综艺&动漫',
+    class_url: '电影&电视剧&综艺&动漫',
+    filter_def: {},
+
+    proxy_rule: '',
+    sniffer: 0,
+    isVideo: '',
+    play_parse: true,
+    parse_url: '',
+    lazy: `
+if (/(pan.quark.cn|www.aliyundrive.com|www.alipan.com)/.test(input)){
+let type="ali";
+if (input.includes("pan.quark.cn")){
+type="quark";
+} else if (input.includes("www.aliyundrive.com") || input.includes("www.alipan.com")){
+type="ali";
+}
+let confirm="";
+//let confirm="&confirm=0";
+input = getProxyUrl().replace('js',type)+'&type=push'+confirm+'&url='+encodeURIComponent(input);
+}`,
+
+    limit: 9,
+    double: false,
+//列表;(true双层列表);标题;图片;描述;链接;详情(可不写)
+    推荐: '*',
+//列表;标题;图片;描述;链接;详情(可不写)
+    一级: '.col;h5&&Text;img&&src;.card-text--span:eq(-2)&&Text;a:eq(-1)&&href',
+    二级: {
+//名称;类型
+        "title": "h5&&Text;.card-text--span:eq(-2)&&Text",
+//图片
+        "img": "img&&src",
+//主要描述;年份;地区;演员;导演
+        "desc": ".card-text:eq(2)&&Text;;;;",
+//简介
+        "content": ".card-text:eq(0)&&Text",
+//线路数组
+        "tabs": "js:TABS = ['阿里网盘']",
+//线路标题
+        "tab_text": "",
+//播放数组 选集列表
+// "lists": ".card-footer:eq(#id)&&.float-end",
+        lists: $js.toString(() => {
+            LISTS = [];
+            //log(input);
+            let lists1 = pdfa(html, '.card-footer&&.float-end').map(it => {
+                let _tt = pdfh(it, 'a&&Text');
+                let _uu = pdfh(it, 'a&&onclick').match(/open\('(.*?)'/)[1];
+                return _tt + '$' + _uu
+            });
+            LISTS.push(lists1);
+        }),
+    },
+
+//列表;标题;图片;描述;链接;详情(可不写)
+    搜索: '*',
+
+    filter: {}
+
+}

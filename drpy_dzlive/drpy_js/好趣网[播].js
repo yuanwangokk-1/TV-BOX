@@ -1,1 +1,32 @@
-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
+var rule = {
+    title: '好趣网[播]',
+    编码: 'GBK',//不填就默认utf-8
+    搜索编码: 'GBK',//不填则不编码，默认都是按utf-8.可优先于全局编码属性.比如网页源码编码是gbk,这里可以指定utf-8搜索独立编码。多数情况这个属性不填或者填写gbk应对特殊的网站搜索
+    host: 'http://tv.haoqu99.com',
+    url: '/fyclass',
+    searchUrl: '/e/sch/index.php?page=fypage&keyboard=**&sear=1',
+    searchable: 2,//是否启用全局搜索,
+    quickSearch: 0,//是否启用快速搜索,
+    headers: {
+        'User-Agent': 'MOBILE_UA'
+    },
+    timeout: 5000,//网站的全局请求超时,默认是3000毫秒
+    class_name: '央视&卫视频道&港澳台频道&国外电视台&广东&湖南&江苏&安徽&浙江&北京&辽宁&江西&山东&黑龙江&上海&云南&四川&河南&湖北&福建&重庆&河北&吉林&广西&山西&陕西&宁夏&海南&甘肃&新疆&内蒙古&天津&贵州&青海&西藏',
+    class_url: '1&2&4&5&3/guangdong&3/hunan&3/jiangsu&3/anhui&3/zhejiang&3/beijing&3/liaoning&3/jiangxi&3/shandong&3/heilongjiang&3/shanghai&3/yunnan&3/sichuan&3/henan&3/hubei&3/fujian&3/zhongqing&3/hebei&3/jilin&3/guangxi&3/shan-xi&3/shanxi&3/ningxia&3/hainan&3/gansu&3/xinjiang&3/neimenggu&3/tianjin&3/guizhou&3/qinghai&3/xizang',
+    play_parse: true,
+    // lazy:'js:input=input.replace("tv", "m")',
+    lazy: 'js:var url=jsp.pdfh(request(input),"body&&script&&Html").split("$")[1];input=url',
+    limit: 6,
+    推荐: '.p-list-sya&&li;.s&&Text;img&&src;;a&&href',
+    一级: '.bx-sya&&li;span&&Text;img&&src;;a&&href',
+    // 二级: '*',
+    二级: {
+        "title": "strong.t&&Text;.v-top&&a:eq(1)&&Text",
+        "img": ".drop-panel:eq(1)&&img&&src",
+        "desc": ";;;;",
+        "content": ".drop-panel:eq(1)&&p:eq(2)&&Text",
+        "tabs": "js:TABS=['播放源']",
+        'lists': 'js:log(TABS);let d=[];pd=jsp.pd;pdfh=jsp.pdfh;pdfa=jsp.pdfa;if(typeof play_url==="undefined"){var play_url=""}function getLists(html){let src=pdfa(html,".tab-list-syb&&li");let list=[];src.forEach(function(it){let title=pdfh(it,".s&&Text");let url="http://m.haoqu99.com/e/extend/tv.php?id="+pd(it,".tab-item&&data-player");list.push({title:title,url:url})});return{list:list,}}var data=getLists(html);var list=data.list;list=list.map(function(item){return(item.title+"$"+item.url)});log("list------------->"+list);LISTS=[list];'
+    },
+    搜索: 'div.list-box.J-medal&&li;a&&Text;;;a&&href',
+}

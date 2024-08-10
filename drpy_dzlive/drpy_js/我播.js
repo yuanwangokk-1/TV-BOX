@@ -1,1 +1,9 @@
-h36A5I5KdeB29zb3iwNWVx0m7uwstVbsPzuQmO9TORIf3EnmRlIE0CMN/WgfkcoHxmYMv4FnXPwAr0fnGtx4ycqE/n8845fjzgTRnMjeYPSF7jxdWH5dvLENZogMvORplo20Y+IfOTlaUMG9jBTH6kNf2JgIZMJLDPA9lkASL2GZOM3k/MWMidCiWPZsKQu5WHD48skiSxzyAqHJioRi1OjlXYO/KKtwoLM2Oay5h/bJ5CpYxCwRaigS4QdpPcZXIEPAXiZIxSZrCPWlDeKYMzCF4l+++vcVVrBu13QDFqDLjjl+oIRPDJWXPsew+em+fUfYI0oWBHG8RSW7MvlNsYt4DoT5r2ZeQmIRlyRnQFT6ciYKXssmYGShW9OkVhBS2ZIeQf3vskGHJsMRsiAOnzbC0nOc8lLhwsAuYxMbjHUvYexHSyOlslCx2e9l1Kyx/GYsv1wWFucSFC4ApGE/P68TAYoimHhkk3810CiU4SY=
+var rule = {
+    模板: 'mxone5',
+    title: '我播',
+    host: 'https://www.wobotv.cc/',
+    class_parse: '.nav-menu-items&&li:lt(8);a&&Text;a&&href;type/(.*?)/',
+    url: '/show/fyclass/page/fypage/',
+    searchUrl: '/search/**--/page/fypage/',
+    搜索: '.module-items .module-search-item;a&&title;img&&data-src;.video-serial&&Text;.video-serial&&href',
+}

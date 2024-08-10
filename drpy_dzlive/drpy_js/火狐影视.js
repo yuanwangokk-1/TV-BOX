@@ -1,1 +1,9 @@
-H4sIAC0soWYC/ytLLFIoKs1JVbBVqOZSAIJnKxY+m7vfSkE9t0JdByxSklmSkwoUeN64+nn3hKd7N75Y3gaVysgvLgHKZJSUFBRb6euXl5frZZTmZ5SWlOnlpZZAFZUW5QDV6Jflp+gWZ+SX62am6KZVJuckFhfrFiSmpwI5IEovoyQ3B6qjODWxKDkjFEkfWABZuW55iq6WFrImsInxBYlFxSDH6pXkF8TnJZYp5GRaJ6qphaRWlIDojKLUNGt9PS17jZiYFC1NZP1PZ+973tn+bO7SZ7smAA1wCEpNSy1KLbLF4Tl9oLZaACVM8fc+AQAA
+var rule = {
+    模板: 'mx',
+    title: '火狐影视',
+    host: 'https://www.huohutv.net',
+    url: '/vod-show-id-fyclass-page-fypage.html',
+    searchUrl: '/vod-search-page-fypage-wd-**.html',
+    class_parse: '.top_nav li;a&&Text;a&&href;/.*?(\\d*).html',
+    图片来源: '@Referer=https://www.huohutv.net/',
+}

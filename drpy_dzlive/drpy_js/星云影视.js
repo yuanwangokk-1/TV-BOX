@@ -1,1 +1,11 @@
-T2JqZWN0LmFzc2lnbihtdWJhbi7pppblm74yLuS6jOe6pywgewogICAgdGFiczogJy5zdHVpLXBhbm5lbF9faGVhZCBoMycsCn0pOwp2YXIgcnVsZSA9IHsKICAgIOaooeadvzogJ+mmluWbvjInLAogICAgdGl0bGU6ICfmmJ/kupHlvbHop4YnLAogICAgaG9zdDogJ2h0dHBzOi8vd3d3LnN6eG1kamouY29tJywKICAgIHVybDogJy92b2RzaG93L2Z5Y2xhc3MtLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKICAgIHNlYXJjaFVybDogJy92b2RzZWFyY2gvKiotLS0tLS0tLS0tZnlwYWdlLS0tLmh0bWwnLAogICAgdGFiX2V4Y2x1ZGU6ICfliafmg4XnroDku4t854yc5L2g5Zac5qyifOW9seeJh+ivhOiuunzmppzljZUnLAp9
+Object.assign(muban.首图2.二级, {
+    tabs: '.stui-pannel__head h3',
+});
+var rule = {
+    模板: '首图2',
+    title: '星云影视',
+    host: 'https://www.szxmdjj.com',
+    url: '/vodshow/fyclass--------fypage---.html',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    tab_exclude: '剧情简介|猜你喜欢|影片评论|榜单',
+}

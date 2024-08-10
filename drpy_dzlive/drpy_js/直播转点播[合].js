@@ -1,1 +1,501 @@
-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
+/**
+ * 支持本地包直播链接
+ * 传参 ?type=url&params=../json/live2cms.json
+ live2cms.json
+ 支持m3u类直播，支持线路归并。支持筛选切换显示模式
+ [
+ {
+    "name": "GitHub",
+    "url": "https://ghproxy.net/https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt"
+  },
+ {
+    "name": "CNTV",
+    "url": "./live_cntv.txt"
+  }
+ ]
+ */
+
+/**
+ * m3u直播格式转一般直播格式
+ * @param m3u
+ * @returns {string}
+ */
+function convertM3uToNormal(m3u) {
+    try {
+        const lines = m3u.split('\n');
+        let result = '';
+        let TV = '';
+        // let flag='#genre#';
+        let flag = '#m3u#';
+        let currentGroupTitle = '';
+        lines.forEach((line) => {
+            if (line.startsWith('#EXTINF:')) {
+                line = line.replace(/'/g, '"');
+                let groupTitle = '未知频道';
+                let tvg_name = '';
+                let tvg_logo = '';
+                try {
+                    groupTitle = line.match(/group-title="(.*?)"/)[1].trim();
+                } catch (e) {
+                }
+                try {
+                    tvg_name = line.match(/tvg-name="(.*?)"/)[1].trim();
+                } catch (e) {
+                }
+                try {
+                    tvg_logo = line.match(/tvg-logo="(.*?)"/)[1].trim();
+                } catch (e) {
+                }
+                TV = line.split(',').slice(-1)[0].trim();
+                if (currentGroupTitle !== groupTitle) {
+                    currentGroupTitle = groupTitle;
+                    let ret_list = [currentGroupTitle, flag];
+                    // if(tvg_name){
+                    //     ret_list.push(tvg_name);
+                    // }
+                    // if(tvg_logo){
+                    //     ret_list.push(tvg_logo);
+                    // }
+                    result += `\n${ret_list.join(",")}\n`;
+                }
+            } else if (line.startsWith('http')) {
+                const splitLine = line.split(',');
+                result += `${TV}\,${splitLine[0]}\n`;
+            }
+        });
+        // result = result.trim();
+        result = mergeChannels(result);
+        // log(result);
+        return result
+    } catch (e) {
+        log(`m3u直播转普通直播发生错误:${e.message}`);
+        return m3u
+    }
+}
+
+/**
+ * 线路归类/小棉袄算法
+ * @param arr 数组
+ * @param parse 解析式
+ * @returns {[[*]]}
+ */
+function splitArray(arr, parse) {
+    parse = parse && typeof (parse) == 'function' ? parse : '';
+    let result = [[arr[0]]];
+    for (let i = 1; i < arr.length; i++) {
+        let index = -1;
+        for (let j = 0; j < result.length; j++) {
+            if (parse && result[j].map(parse).includes(parse(arr[i]))) {
+                index = j;
+            } else if ((!parse) && result[j].includes(arr[i])) {
+                index = j;
+            }
+        }
+        if (index >= result.length - 1) {
+            result.push([]);
+            result[result.length - 1].push(arr[i]);
+        } else {
+            result[index + 1].push(arr[i]);
+        }
+    }
+    return result;
+}
+
+/**
+ * 搜索结果生成分组字典
+ * @param arr
+ * @param parse x=>x.split(',')[0]
+ * @returns {{}}
+ */
+function gen_group_dict(arr, parse) {
+    let dict = {};
+    arr.forEach((it) => {
+        let k = it.split(',')[0];
+        if (parse && typeof (parse) === 'function') {
+            k = parse(k);
+        }
+        if (!dict[k]) {
+            dict[k] = [it];
+        } else {
+            dict[k].push(it);
+        }
+    });
+    return dict
+}
+
+/**
+ * txt格式直播自动合并频道链接
+ * @param text
+ * @returns {string}
+ */
+function mergeChannels(text) {
+    const lines = text.split('\n');
+    const channelMap = new Map();
+    let currentChannel = ''; // 当前处理的频道
+
+    lines.forEach(line => {
+        // 使用正则表达式匹配频道行，假设频道行包含",#"即可识别为频道行
+        if (/,#/.test(line)) {
+            // 如果是频道名称，作为键值存储，初始化为空数组
+            currentChannel = line;
+            if (!channelMap.has(line)) {
+                channelMap.set(line, []);
+            }
+        } else if (line) { // 忽略空行
+            // 将当前行（链接）添加到当前频道数组中
+            if (currentChannel) {
+                channelMap.get(currentChannel).push(line);
+            }
+        }
+    });
+
+    // 构建结果字符串
+    let result = '';
+    channelMap.forEach((value, key) => {
+        result += key + '\n' + value.join('\n') + '\n\n';
+    });
+
+    return result.trim(); // 移除尾部的多余换行符
+}
+
+globalThis.mergeChannels = mergeChannels;
+globalThis.convertM3uToNormal = convertM3uToNormal;
+globalThis.splitArray = splitArray;
+globalThis.gen_group_dict = gen_group_dict;
+globalThis.getRandomItem = function (items) {//从列表随机取出一个元素
+    return items[Math.random() * items.length | 0];
+}
+globalThis.__ext = {data_dict: {}};
+var rule = {
+    title: '直播转点播[合]',
+    author: '道长',
+    version: '20240628 beta7',
+    update_info: `
+20240628 beta6:
+1.增加范冰冰v6源
+2.修复带图标的m3u源识别
+3.修复m3u8链接带参数转义问题
+4.合并重复的频道名称下的链接
+5.支持相对图片链接
+20240627 beta1:
+1.将原drpy项目的live2cms.js转换成hipy传参源。
+【特别说明】支持m3u和txt的直播
+`,
+    host: '',
+    homeUrl: '',
+    searchUrl: '#wd=**&pg=#TruePage##page=fypage',
+    url: 'fyclass#pg=fypage&t=fyfilter',
+    filter_url: '{{fl.show}}',
+    headers: {'User-Agent': 'MOBILE_UA'},
+    timeout: 5000, // class_name: '电影&电视剧&综艺&动漫',
+    limit: 20,
+    search_limit: 5, // 搜索限制取前5个，可以注释掉，就不限制搜索
+    searchable: 1,//是否启用全局搜索,
+    quickSearch: 0,//是否启用快速搜索,
+    filterable: 1,//是否启用分类筛选,
+    play_parse: true,
+    // params: 'http://127.0.0.1:5707/files/json/live2cms.json',
+    // 下面自定义一些源的配置
+    // def_pic: 'https://avatars.githubusercontent.com/u/97389433?s=120&v=4', //默认列表图片
+    def_pic: 'https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/static/img/lives.jpg', //默认列表图片
+    showMode: 'groups',// groups按组分类显示 all全部一条线路展示
+    groupDict: {},// 搜索分组字典
+    tips: '', //二级提示信息
+    预处理: $js.toString(() => {
+        // 初始化保存的数据
+        rule.showMode = getItem('showMode', 'groups');
+        rule.groupDict = JSON.parse(getItem('groupDict', '{}'));
+        rule.tips = `道长直播转点播js-当前版本${rule.version}`;
+
+        if (typeof (batchFetch) === 'function') {
+            // 支持批量请求直接放飞自我。搜索限制最大线程数量16
+            rule.search_limit = 16;
+            log('当前程序支持批量请求[batchFetch],搜索限制已设置为16');
+        }
+        let _url = rule.params;
+        if (_url && typeof (_url) === 'string' && /^(http|file)/.test(_url)) {
+            let html = request(_url);
+            let json = JSON.parse(html);
+
+            let _classes = [];
+            rule.filter = {};
+            rule.filter_def = {};
+            json.forEach(it => {
+                if (it.url && !/^(http|file)/.test(it.url)) {
+                    it.url = urljoin(_url, it.url);
+                }
+                if (it.img && !/^(http|file)/.test(it.img)) {
+                    it.img = urljoin(_url, it.img);
+                }
+                let _obj = {
+                    type_name: it.name,
+                    type_id: it.url,
+                    img: it.img,
+                };
+                _classes.push(_obj);
+                let json1 = [{'n': '多线路分组', 'v': 'groups'}, {'n': '单线路', 'v': 'all'}];
+                try {
+                    rule.filter[_obj.type_id] = [
+                        {'key': 'show', 'name': '播放展示', 'value': json1}
+                    ];
+                    if (json1.length > 0) {
+                        rule.filter_def[it.url] = {"show": json1[0].v};
+                    }
+                } catch (e) {
+                    rule.filter[it.url] = json1
+                }
+            });
+            __ext.data = json;
+            rule.classes = _classes;
+        }
+    }),
+    class_parse: $js.toString(() => {
+        input = rule.classes;
+    }),
+    推荐: $js.toString(() => {
+        let update_info = [{
+            vod_name: '更新日志',
+            vod_id: 'update_info',
+            vod_remarks: `版本:${rule.version}`,
+            vod_pic: 'https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/static/img/logo.png'
+        }];
+        VODS = [];
+        if (rule.classes) {
+            let randomClass = getRandomItem(rule.classes);
+            let _get_url = randomClass.type_id;
+            // let current_vod = rule.classes.find(item => item.type_id === _get_url);
+            // let _pic = current_vod ? current_vod.img : '';
+            let _pic = randomClass.img;
+            let html;
+            if (__ext.data_dict[_get_url]) {
+                html = __ext.data_dict[_get_url];
+            } else {
+                html = request(_get_url);
+                if (/#EXTM3U/.test(html)) {
+                    html = convertM3uToNormal(html);
+                } else {
+                    html = mergeChannels(html);
+                }
+                __ext.data_dict[_get_url] = html;
+            }
+            let arr = html.match(/.*?[,，]#[\s\S].*?#/g); // 可能存在中文逗号
+            try {
+                arr.forEach(it => {
+                    let vname = it.split(/[,，]/)[0];
+                    let vtab = it.match(/#(.*?)#/)[0];
+                    VODS.push({
+                        vod_name: vname,
+                        vod_id: _get_url + '$' + vname,
+                        vod_pic: _pic || rule.def_pic,
+                        vod_remarks: vtab,
+                    });
+                });
+            } catch (e) {
+                log(`直播转点播获取首页推荐发送错误:${e.message}`);
+            }
+        }
+        VODS = update_info.concat(VODS);
+    }),
+    一级: $js.toString(() => {
+        VODS = [];
+        // 一级限制页数不允许翻页
+        if (rule.classes && MY_PAGE <= 1) {
+            if (MY_FL.show) {
+                rule.showMode = MY_FL.show;
+                setItem('showMode', rule.showMode);
+            }
+            let _get_url = input.split('#')[0];
+            let current_vod = rule.classes.find(item => item.type_id === MY_CATE);
+            let _pic = current_vod ? current_vod.img : '';
+            let html;
+            if (__ext.data_dict[_get_url]) {
+                html = __ext.data_dict[_get_url];
+            } else {
+                html = request(_get_url);
+                if (/#EXTM3U/.test(html)) {
+                    html = convertM3uToNormal(html);
+                } else {
+                    html = mergeChannels(html);
+                }
+                __ext.data_dict[_get_url] = html;
+            }
+            let arr = html.match(/.*?[,，]#[\s\S].*?#/g); // 可能存在中文逗号
+            try {
+                arr.forEach(it => {
+                    let vname = it.split(/[,，]/)[0];
+                    let vtab = it.match(/#(.*?)#/)[0];
+                    VODS.push({
+                        // vod_name:it.split(',')[0],
+                        vod_name: vname,
+                        vod_id: _get_url + '$' + vname,
+                        vod_pic: _pic || rule.def_pic,
+                        vod_remarks: vtab,
+                    });
+                });
+            } catch (e) {
+                log(`直播转点播获取一级分类页发生错误:${e.message}`);
+            }
+        }
+    }),
+    二级: $js.toString(() => {
+        VOD = {};
+        if (orId === 'update_info') {
+            VOD = {
+                vod_content: rule.update_info.trim(),
+                vod_name: '更新日志',
+                type_name: '更新日志',
+                vod_pic: 'https://resource-cdn.tuxiaobei.com/video/FtWhs2mewX_7nEuE51_k6zvg6awl.png',
+                vod_remarks: `版本:${rule.version}`,
+                vod_play_from: '道长在线',
+                // vod_play_url: '嗅探播放$https://resource-cdn.tuxiaobei.com/video/10/8f/108fc9d1ac3f69d29a738cdc097c9018.mp4',
+                vod_play_url: '随机小视频$http://api.yujn.cn/api/zzxjj.php',
+            };
+        } else {
+            if (rule.classes) {
+                let _get_url = orId.split('$')[0];
+                let _tab = orId.split('$')[1];
+                if (orId.includes('#search#')) {
+                    let vod_name = _tab.replace('#search#', '');
+                    let vod_play_from = '来自搜索';
+                    vod_play_from += `:${_get_url}`;
+                    let vod_play_url = rule.groupDict[_get_url].map(x => x.replace(',', '$')).join('#');
+                    log(orId);
+                    VOD = {
+                        vod_name: '搜索:' + vod_name,
+                        type_name: "直播列表",
+                        vod_pic: rule.def_pic,
+                        // vod_content: orId,
+                        vod_content: orId.replace(getHome(orId), 'http://***'),
+                        vod_play_from: vod_play_from,
+                        vod_play_url: vod_play_url,
+                        vod_director: rule.tips,
+                        vod_remarks: rule.tips,
+                    }
+                } else {
+                    let current_vod = rule.classes.find(item => item.type_id === _get_url);
+                    let _pic = current_vod ? current_vod.img : '';
+                    let html;
+                    if (__ext.data_dict[_get_url]) {
+                        html = __ext.data_dict[_get_url];
+                    } else {
+                        html = request(_get_url);
+                        if (/#EXTM3U/.test(html)) {
+                            html = convertM3uToNormal(html);
+                        } else {
+                            html = mergeChannels(html);
+                        }
+                        __ext.data_dict[_get_url] = html;
+                    }
+                    let a = new RegExp(`.*?${_tab.replace('(','\\(').replace(')','\\)')}[,，]#[\\s\\S].*?#`);
+                    let b = html.match(a)[0];
+                    let c = html.split(b)[1];
+                    if (c.match(/.*?[,，]#[\s\S].*?#/)) {
+                        let d = c.match(/.*?[,，]#[\s\S].*?#/)[0];
+                        c = c.split(d)[0];
+                    }
+                    let arr = c.trim().split('\n');
+                    let _list = [];
+                    arr.forEach((it) => {
+                        if (it.trim()) {
+                            let t = it.trim().split(',')[0];
+                            let u = it.trim().split(',')[1];
+                            _list.push(t + '$' + u);
+                        }
+                    });
+
+                    let vod_name = __ext.data.find(x => x.url === _get_url).name;
+                    let vod_play_url;
+                    let vod_play_from;
+
+                    if (rule.showMode === 'groups') {
+                        let groups = splitArray(_list, x => x.split('$')[0]);
+                        let tabs = [];
+                        for (let i = 0; i < groups.length; i++) {
+                            if (i === 0) {
+                                tabs.push(vod_name + '@1');
+                            } else {
+                                tabs.push(`@${i + 1}`);
+                            }
+                        }
+                        vod_play_url = groups.map(it => it.join('#')).join('$$$');
+                        vod_play_from = tabs.join('$$$');
+                    } else {
+                        vod_play_url = _list.join('#');
+                        vod_play_from = vod_name;
+                    }
+                    log(orId);
+                    VOD = {
+                        vod_id: orId,
+                        vod_name: vod_name + '|' + _tab,
+                        type_name: "直播列表",
+                        vod_pic: _pic || rule.def_pic,
+                        // vod_content: orId,
+                        vod_content: orId.replace(getHome(orId), 'http://***'),
+                        vod_play_from: vod_play_from,
+                        vod_play_url: vod_play_url,
+                        vod_director: rule.tips,
+                        vod_remarks: rule.tips,
+                    };
+
+                }
+            }
+        }
+    }),
+    搜索: $js.toString(() => {
+        VODS = [];
+        if (rule.classes && MY_PAGE <= 1) {
+            let _get_url = __ext.data[0].url;
+            let current_vod = rule.classes.find(item => item.type_id === _get_url);
+            let _pic = current_vod ? current_vod.img : '';
+            let html;
+            if (__ext.data_dict[_get_url]) {
+                html = __ext.data_dict[_get_url];
+            } else {
+                html = request(_get_url);
+                if (/#EXTM3U/.test(html)) {
+                    html = convertM3uToNormal(html);
+                } else {
+                    html = mergeChannels(html);
+                }
+                __ext.data_dict[_get_url] = html;
+            }
+            let str = '';
+            Object.keys(__ext.data_dict).forEach(() => {
+                str += __ext.data_dict[_get_url];
+            });
+            let links = str.split('\n').filter(it => it.trim() && it.includes(',') && it.split(',')[1].trim().startsWith('http'));
+            links = links.map(it => it.trim());
+            let plays = Array.from(new Set(links));
+            log('搜索关键词:' + KEY);
+            log('过滤前:' + plays.length);
+            // plays = plays.filter(it => it.includes(KEY));
+            plays = plays.filter(it => new RegExp(KEY, 'i').test(it));
+            log('过滤后:' + plays.length);
+            log(plays);
+            let new_group = gen_group_dict(plays);
+            rule.groupDict = Object.assign(rule.groupDict, new_group);
+            // 搜索分组结果存至本地方便二级调用
+            setItem('groupDict', JSON.stringify(rule.groupDict));
+            // 返回的还是搜索的new_group
+            Object.keys(new_group).forEach((it) => {
+                VODS.push({
+                    'vod_name': it,
+                    'vod_id': it + '$' + KEY + '#search#',
+                    'vod_pic': _pic || rule.def_pic,
+                });
+            });
+        }
+    }),
+    lazy: $js.toString(() => {
+        if (/\.(m3u8|mp4)/.test(input)) {
+            if (input.includes('?') && typeof (playObj) == 'object' && playObj.url) {
+                input = playObj.url;
+            }
+            input = {parse: 0, url: input}
+        } else if (/yangshipin|1905\.com/.test(input)) {
+            input = {parse: 1, jx: 0, url: input, js: '', header: {'User-Agent': PC_UA}, parse_extra: '&is_pc=1'};
+        } else {
+            input
+        }
+    }),
+}

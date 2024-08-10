@@ -1,1 +1,72 @@
-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
+var rule = {
+    author: '小可乐/240528/第一版',
+    title: '胖虎影视',
+    host: 'https://www.cdnkan.top',
+    hostJs: 'let html=request(HOST,{headers:{"User-Agent":MOBILE_UA}});let src= jsp.pdfh(html,".go:eq(2)&&a&&href");HOST=src',
+    headers: {'User-Agent': 'MOBILE_UA'},
+    编码: 'utf-8',
+    timeout: 5000,
+
+    homeUrl: '/',
+    url: '/vodshow/fyfilter.html',
+    filter_url: '{{fl.cateId}}{{fl.area}}{{fl.by}}{{fl.class}}{{fl.lang}}{{fl.letter}}/page/fypage{{fl.year}}',
+    detailUrl: '',
+    searchUrl: '/phsch/page/fypage/wd/**.html',
+    searchable: 1,
+    quickSearch: 1,
+    filterable: 1,
+
+    class_name: '电影&剧集&综艺&动漫&短剧&解说&其他',
+    class_url: '1&2&3&4&7&8&9',
+    filter_def: {
+        1: {cateId: '1'},
+        2: {cateId: '2'},
+        3: {cateId: '3'},
+        4: {cateId: '4'},
+        7: {cateId: '7'},
+        8: {cateId: '8'},
+        9: {cateId: '9'}
+    },
+
+    proxy_rule: '',
+    sniffer: 0,
+    isVideo: '',
+    play_parse: true,
+    parse_url: '',
+    lazy: `js:
+var kcode = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+var kurl = kcode.url;
+if (/m3u8|mp4/.test(kurl)) {
+input = kurl
+} else {
+input= 'https://bfnb1sx.phvod.top/?url='+kurl
+}`,
+
+    limit: 9,
+    double: false,
+    推荐: '*;*;*;*;*',
+    一级: 'a:has(.icon-play);a&&title;img&&data-original;.module-item-note&&Text;a&&href',
+    二级: {
+//名称;类型
+        "title": "h1&&Text;.module-info-tag-link:eq(-1)&&Text",
+//图片
+        "img": "img.ls-is-cached&&data-original",
+//主要描述;年份;地区;演员;导演
+        "desc": ".module-info-item:eq(-2)&&Text;.module-info-tag-link:eq(0)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text",
+//简介
+        "content": ".show-desc&&Text",
+//线路数组
+        "tabs": ".tab-item",
+//线路标题
+        "tab_text": "body--small&&Text",
+//播放数组 选集列表
+        "lists": ".module-play-list:eq(#id)&&a",
+//选集标题
+        "list_text": "body&&Text",
+//选集链接
+        "list_url": "a&&href"
+    },
+    搜索: '.module-item;strong&&Text;*;*;*',
+
+    filter: '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'
+}

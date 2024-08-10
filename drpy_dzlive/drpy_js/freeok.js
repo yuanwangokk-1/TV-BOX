@@ -1,1 +1,27 @@
-dmFyIHJ1bGU9ewogICAgdGl0bGU6ICdmcmVlb2snLAogICAgaG9zdDogJ2h0dHBzOi8vd3d3LmZyZWVvay5wcm8nLAogICAgdXJsOiAnL3ZvZC1zaG93L2Z5Y2xhc3MtLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKICAgIHNlYXJjaFVybDogJy9zbzFzby8qKi0tLS0tLS0tLS1meXBhZ2UtLS0uaHRtbCcsCiAgICBzZWFyY2hhYmxlOiAyLAogICAgcXVpY2tTZWFyY2g6IDAsCiAgICBmaWx0ZXJhYmxlOiAwLAogICAgaGVhZGVyczogewogICAgJ1VzZXItQWdlbnQnOiAnTW96aWxsYS81LjAnLAogICAgfSwKICAgIGNsYXNzX3BhcnNlOiAnLm5hdmJhciYmdWwmJmxpO2EmJlRleHQ7YSYmaHJlZjsvKFxcZCspLmh0bWwnLAogICAgY2xhc3NfZXhjbHVkZTon55WZ6KiAfOmmlumhtXznvZHnm5h8JywKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBsYXp5OiAnJywKICAgIGxpbWl0OiA2LAogICAg5o6o6I2QOiAnYm9keSYmLnNjcm9sbC1ib3g7Lm1vZHVsZS1wb3N0ZXItaXRlbS5tb2R1bGUtaXRlbTsubW9kdWxlLXBvc3Rlci1pdGVtLXRpdGxlJiZUZXh0O2ltZyYmZGF0YS1vcmlnaW5hbDsubW9kdWxlLWl0ZW0tbm90ZSYmVGV4dDthJiZocmVmJywKICAgIGRvdWJsZTogdHJ1ZSwKICAgIOS4gOe6pzogJ2JvZHkmJi5tb2R1bGUtaXRlbTthJiZ0aXRsZTtpbWcmJmRhdGEtb3JpZ2luYWw7Lm1vZHVsZS1pdGVtLW5vdGUmJlRleHQ7YSYmaHJlZicsCiAgICDkuoznuqc6IHsKICAgICJ0aXRsZSI6ICJoMSYmVGV4dDsubW9kdWxlLWluZm8tdGFnJiZUZXh0IiwKICAgICJpbWciOiAiLmxhenlsb2FkJiZkYXRhLW9yaWdpbmFsIiwKICAgICJkZXNjIjogIi5tb2R1bGUtaW5mby1pdGVtOmVxKDEpJiZUZXh0Oy5tb2R1bGUtaW5mby1pdGVtOmVxKDIpJiZUZXh0Oy5tb2R1bGUtaW5mby1pdGVtOmVxKDMpJiZUZXh0IiwKICAgICJjb250ZW50IjogIi5tb2R1bGUtaW5mby1pbnRyb2R1Y3Rpb24mJlRleHQiLAogICAgInRhYnMiOiAiLm1vZHVsZS10YWItaXRlbSIsCiAgICAibGlzdHMiOiAiLm1vZHVsZS1wbGF5LWxpc3Q6ZXEoI2lkKSBhIn0sCiAgICDmkJzntKI6ICdib2R5IC5tb2R1bGUtaXRlbTsubW9kdWxlLWNhcmQtaXRlbS10aXRsZSYmVGV4dDsubGF6eWxvYWQmJmRhdGEtb3JpZ2luYWw7Lm1vZHVsZS1pdGVtLW5vdGUmJlRleHQ7YSYmaHJlZjsubW9kdWxlLWluZm8taXRlbS1jb250ZW50JiZUZXh0Jyx9
+var rule={
+    title: 'freeok',
+    host: 'https://www.freeok.pro',
+    url: '/vod-show/fyclass--------fypage---.html',
+    searchUrl: '/so1so/**----------fypage---.html',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+    'User-Agent': 'Mozilla/5.0',
+    },
+    class_parse: '.navbar&&ul&&li;a&&Text;a&&href;/(\\d+).html',
+    class_exclude:'留言|首页|网盘|',
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: 'body&&.scroll-box;.module-poster-item.module-item;.module-poster-item-title&&Text;img&&data-original;.module-item-note&&Text;a&&href',
+    double: true,
+    一级: 'body&&.module-item;a&&title;img&&data-original;.module-item-note&&Text;a&&href',
+    二级: {
+    "title": "h1&&Text;.module-info-tag&&Text",
+    "img": ".lazyload&&data-original",
+    "desc": ".module-info-item:eq(1)&&Text;.module-info-item:eq(2)&&Text;.module-info-item:eq(3)&&Text",
+    "content": ".module-info-introduction&&Text",
+    "tabs": ".module-tab-item",
+    "lists": ".module-play-list:eq(#id) a"},
+    搜索: 'body .module-item;.module-card-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href;.module-info-item-content&&Text',}

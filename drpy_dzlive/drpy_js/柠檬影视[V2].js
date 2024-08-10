@@ -1,1 +1,299 @@
-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
+var rule = {
+    title: '柠檬影视[V2]', // csp_AppYsV2
+    host: 'http://mf.songshu.cyou/api.php/app/',
+    url: 'video?tid=fyclassfyfilter&limit=20&pg=fypage',
+    filter_url: '&class={{fl.class}}&area={{fl.area}}&lang={{fl.lang}}&letter={{fl.letter}}&year={{fl.year}}&by={{fl.by}}',
+    filter: 'H4sIAAAAAAAAA+2Y3W4aRxTH34VrX+wS56N5lSoXqEK9iOuLRK0URZZsYwgQx2DLwaHgr8YY4hoMtuPCUuBldnaXt+iwZ84HUb1atVauuON3zp7ZOWeY85/Ztwk78fzHt4mX6TeJ54mfVlKvXyeWEqupX9IaVaHpZbKaf0ut/JoOn1udmbOtaaY1M2tIrC0Za6WunzdWA+jz8z0zEAP6vI2yt14xPgM0ZrHljuo4JgCN2dxVgyGOCUBxNHEGel/+k+sU8H0A6Ava52r7wvgM0PuKV/4IfQbEPP39Ic9zBuRrvON5GqC5tM/d8QnOBYDicnvT6heMA6C4ows9c4wDiFNPb/PSr+yiD4B8maK3+Tv6ACj3YUll+5g7APqmh3vep4bxGaAxK++CgoNjAlB+446//1WNepgiMT1ROgs+0yoCkG8np0rX6AOgVZyU9RrgKgJwVeve4S5VNQTybU38PzETA1SB0a4/rM9NeM609mL2JOyi1Kt0SmyieldtO3E30VlzWs3hFACo0OdVr3+FhQbgUnW9wZhKFQJNfbyjaiOcNAAt0M1H9hmgMr7vsc8AxR00vPolxgHQPI+/cJwBXvS/2GeA59KVc+nOxX3oKucc4wAobqukK6XyuFeYKZPGxC+1/UIVkyHmDXzivZ/oMNrDyPRE9s4d4rYyIBd9JbX6My96cNUOWutxF7020s/j0ABiEdhngBb2+ox9BmgRDkbqwwG7mcUyCTeAWF72GRB/GeEDEMsrMgEQBVSdDBdwBrKAb9KpV2LXDG7d4ShmAZNW8pGxhT+FPcn2pLTbbLel3WK7Jez2D2TXP4X9GdufSftTtj+V9idsfyLtj9n+WNqX2b4s7ZyvLfO1OV9b5mtzvrbM1+Z8bZmvxflaMl+L87VkvhbnZcm8LM7LknlZnJf+qf8GL5YSyYc6iETIRpT4g3apjTuVKc3JmTHFOeiozp1yaAMAxDxA3HvQiTpARB10oiQyStDdwSlLpAE+JGS9KmqQAXrfxxwfSgwI+eSaGYjbWf+PnOay+nlS+xDiyNR/ldooWYyW4fulL1KGK12tVOrwlI5YyAvZ+ka2FvKzkJ9I+Xn0QPIzXS/4zXX8gwLI9rl1LNqnBtoynUnQzeOWAaC4vbZXxJuJAf7TZ71+n/70IfBmuXEHZdosIYh+NP2MczFAPudCdY7QB0Dvq12LOx0Axe0fe7d0JweguH7fy5dcZ4/vZnMmqsPtH1qQsA4ANEZvM9jYxmiA7yAVuv3rRk+TDkH0HN2FuOfMgHyXTV1Y9AEsmu+i+S6a77fNd/mBmm9Ug436YOhn2sEpNm0DNOZOyy/jNxkD5Csf+Zf0QQ2AO8r9H/CC8mGwg/cQAzTmyamq0UYCiHNP8OqO+CgIQO+L+CQWdSdSXV2mW3wfgPQ1boRPA9XzbOz+jR8TDfC95Fjla3QvCYHuHs61aqNgGaAxa0WvisJjgOvSU5MDqksI3+N+URu5Dl0FAeLcBf5VGBYn9oVoLEQjtmis/QN1egR0uxoAAA==',
+    detailUrl: '/detail?vod_id=fyid',
+    searchUrl: '/search?text=**&pg=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,//是否启用分类筛选,
+    headers: {'User-Agent': 'okhttp/4.1.0'},
+    timeout: 5000,
+    // 分类筛选 /api.php/app/nav || /xgapp.php/v1/nav || /api.php/v1.vod/types
+    class_name: '电影&电视剧&综艺&动漫',
+    class_url: '1&2&3&4',
+    play_parse: true,
+    lazy: `js:
+        let play_Url = '';
+        if (/\\.m3u8|\\.mp4/.test(input)) {
+            input = {
+                jx: 0,
+                url: input,
+                parse: 0
+            }
+        } else if (/,/.test(input) && /url=/.test(input)) {
+            input = input.split('url=');
+            play_Url = input[0].split(',')[0];
+            input = {
+                jx: 0,
+                url: input[1],
+                playUrl: play_Url,
+                parse: 1
+            }
+        } else if (/url=|id=/.test(input)) {
+            input = {
+                jx: 0,
+                url: JSON.parse(request(input)).url,
+                parse: 0
+            }
+        } else if (/youku|iqiyi|v\\.qq\\.com|pptv|sohu|le\\.com|1905\\.com|mgtv|bilibili|ixigua/.test(input)) {
+			play_Url = /bilibili/.test(input) ? 'https://jx.xmflv.com/?url=' : 'https://jx.777jiexi.com/player/?url='; // type0的parse
+			// play_Url = /bilibili/.test(input) ? 'https://jx.xmflv.com/?url=' : 'json:http://pandown.pro/app/kkdy.php?url='; // type1的parse可加'json:'直接解析url (除了蜂蜜的'影视TV'，其它的壳皆可用)
+			input = {
+				jx: 0,
+				url: input,
+				playUrl: play_Url,
+				parse: 1,
+				header: JSON.stringify({
+					'user-agent': 'Mozilla/5.0',
+				}),
+			}
+        } else {
+            input
+        }
+    `,
+    limit: 6,
+    // 图片来源:'@Referer=https://api.douban.com/@User-Agent=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/113.0.0.0%20Safari/537.36',
+    推荐: `js:
+        let d = [];
+        let jsondata = [];
+        let videoList = [];
+        if (/v1\\.vod/.test(HOST)) {
+            if(HOST.endsWith('/')){
+                jsondata = JSON.parse(request(HOST + 'vodPhbAll'));
+            } else {
+                jsondata = JSON.parse(request(HOST + '/vodPhbAll'));
+            }
+            videoList = jsondata.data.list;
+        } else {
+            if(HOST.endsWith('/')){
+                jsondata = JSON.parse(request(HOST + 'index_video'));
+            } else {
+                jsondata = JSON.parse(request(HOST + '/index_video'));
+            }
+            videoList = /xgapp/.test(HOST) ? jsondata.data : jsondata.list;
+        }
+        // log('videoList =========> '+stringify(videoList));
+        videoList.forEach((it,idex) => {
+            let vlist = /v1\\.vod/.test(HOST) ? videoList[idex].vod_list : videoList[idex].vlist ;
+            vlist.forEach(it => {
+                d.push({
+                    url:it.vod_id,
+                    title:it.vod_name,
+                    img:it.vod_pic.startsWith('http') ? it.vod_pic : it.vod_pic.startsWith('//') ? 'https:' + it.vod_pic : it.vod_pic.startsWith('/') ? getHome(HOST) + it.vod_pic : getHome(HOST) + '/' + it.vod_pic,
+                    desc:it.vod_remarks,
+                });
+            });
+        });
+        setResult(d);
+    `,
+    一级: `js:
+        let d = [];
+        let jsondata = [];
+        let videoList = [];
+        if (/v1\\.vod/.test(HOST)) {
+            input = input.replace('video','v1.vod').replace('tid','type').replace('pg=','page=');
+            jsondata = JSON.parse(request(input));
+            videoList = jsondata.data.list;
+        } else {
+            input = HOST + '/'+ input.split('/')[4];
+            jsondata = JSON.parse(request(input));
+            videoList = jsondata.list || jsondata.data;
+        }
+        // log('videoList =========> '+stringify(videoList));
+        videoList.forEach(it => {
+            d.push({
+                url:it.vod_id,
+                title:it.vod_name,
+                img:it.vod_pic.startsWith('http') ? it.vod_pic : it.vod_pic.startsWith('//') ? 'https:' + it.vod_pic : it.vod_pic.startsWith('/') ? getHome(HOST) + it.vod_pic : getHome(HOST) + '/' + it.vod_pic,
+                desc:it.vod_remarks,
+            });
+        });
+        setResult(d);
+    `,
+    二级: `js: 
+		if (/v1\\.vod/.test(HOST)) {
+			input = HOST + '/'+ input.split('/')[3];
+		} else {
+			input = HOST + '/'+ input.split('/')[3].replace('detail','video_detail').replace('vod_id','id');
+		}
+		try {
+			let html = request(input);
+			html = JSON.parse(html);
+			let node = /xgapp/.test(HOST) ? html.data.vod_info : html.data;
+			VOD = {
+				vod_id: node.vod_id,
+				vod_name: node.vod_name,
+				vod_pic: node.vod_pic,
+				type_name: node.vod_class,
+				vod_year: node.vod_year,
+				vod_area: node.vod_area,
+				vod_remarks: node.vod_remarks,
+				vod_actor: node.vod_actor,
+				vod_director: node.vod_director,
+				vod_content: node.vod_content.strip()
+			};
+			if (typeof play_url === 'undefined') {
+				var play_url = ''
+			}
+            var name = {
+                'bfzym3u8': '暴风',
+                '1080zyk': '优质',
+                'kuaikan': '快看',
+                'lzm3u8': '量子',
+                'ffm3u8': '非凡',
+                'haiwaikan': '海外看',
+                'gsm3u8': '光速',
+                'zuidam3u8': '最大',
+                'bjm3u8': '八戒',
+                'snm3u8': '索尼',
+                'wolong': '卧龙',
+                'xlm3u8': '新浪',
+                'yhm3u8': '樱花',
+                'tkm3u8': '天空',
+                'jsm3u8': '极速',
+                'wjm3u8': '无尽',
+                'sdm3u8': '闪电',
+                'kcm3u8': '快车',
+                'jinyingm3u8': '金鹰',
+                'fsm3u8': '飞速',
+                'tpm3u8': '淘片',
+                'lem3u8': '鱼乐',
+                'dbm3u8': '百度',
+                'tomm3u8': '番茄',
+                'ukm3u8': 'U酷',
+                'ikm3u8': '爱坤',
+                'hnzym3u8': '红牛资源',
+                'hnm3u8': '红牛',
+                '68zy_m3u8': '68',
+                'kdm3u8': '酷点',
+                'bdxm3u8': '北斗星',
+                'qhm3u8': '奇虎',
+                'hhm3u8': '豪华',
+                'kbm3u8': '快播'
+            };
+            let episodes = /v1\\.vod/.test(HOST)?node.vod_play_list:node.vod_url_with_player;
+			if (episodes != '') {
+				let playMap = {};
+				let arr = [];
+				episodes.forEach(ep => {
+					let from = [];
+					if (/v1\\.vod/.test(HOST)) {
+						from = ep.player_info.from||ep.player_info.show||ep.from||ep.show;
+					} else {
+						from = ep.code||ep.name;
+					}
+					if (!playMap.hasOwnProperty(from)) {
+						playMap[from] = []
+					}
+					// let parse_api = '';
+					// if (/v1\\.vod/.test(HOST)) {
+					// 	parse_api = ep.player_info.parse != null ? ep.player_info.parse : ep.player_info.parse2;
+					// 	// parse_api = /,/.test(parse_api) ? parse_api.split(',')[1] : parse_api;
+					// } else {
+					// 	parse_api = ep.parse_api;
+					// }
+					// log('parse_api =========> '+parse_api);
+					// if (parse_api != null && !/\\.m3u8|\\.mp4/.test(ep.url)) {
+					// 	parse_api = parse_api.replaceAll('..','.') ;
+					// 	ep.url = ep.url.replaceAll('$','$'+parse_api);
+					// }
+					if (from != null) playMap[from].push(ep.url)
+				});
+				for (var key in playMap) {
+					if ('bfzym3u8' == key) {
+						arr.push({
+							flag: name[key],
+							url: playMap[key],
+							sort: 1
+						})
+					} else if ('1080zyk' == key) {
+						arr.push({
+							flag: name[key],
+							url: playMap[key],
+							sort: 2
+						})
+					} else if ('kuaikan' == key) {
+						arr.push({
+							flag: name[key],
+							url: playMap[key],
+							sort: 3
+						})
+					} else if ('lzm3u8' == key) {
+						arr.push({
+							flag: name[key],
+							url: playMap[key],
+							sort: 4
+						})
+					} else if ('ffm3u8' == key) {
+						arr.push({
+							flag: name[key],
+							url: playMap[key],
+							sort: 5
+						})
+					} else if ('snm3u8' == key) {
+						arr.push({
+							flag: name[key],
+							url: playMap[key],
+							sort: 6
+						})
+					} else if ('qhm3u8' == key) {
+						arr.push({
+							flag: name[key],
+							url: playMap[key],
+							sort: 7
+						})
+					} else {
+						arr.push({
+							flag: name[key] ? name[key] : key,
+							url: playMap[key],
+							sort: 8
+						})
+					}
+				}
+				arr.sort((a, b) => a.sort - b.sort);
+				let playFrom = [];
+				let playList = [];
+				arr.map(val => {
+					if (!/undefined/.test(val.flag)) {
+						playFrom.push(val.flag);
+						playList.push(val.url);
+					}
+				})
+				VOD.vod_play_from = playFrom.join('$$$');
+				VOD.vod_play_url = playList.join('$$$');
+			} else {
+				VOD.vod_play_from = node.vod_play_from;
+				VOD.vod_play_url = node.vod_play_url;
+			}
+		} catch (e) {
+			log("获取二级详情页发生错误:" + e.message);
+		}
+	`,
+    搜索: `js:
+		let d = [];
+		let jsondata = [];
+		let videoList = [];
+		if (/v1\\.vod/.test(HOST)) {
+			input = (HOST + '/'+ input.split('/')[3]).replace('/search','').replace('text=','wd=').replace('pg=','page=');
+			jsondata = JSON.parse(request(input));
+			videoList = jsondata.data.list;
+		} else {
+			input = HOST + '/'+ input.split('/')[3]
+			jsondata = JSON.parse(request(input));
+			videoList = jsondata.list || jsondata.data;
+		}
+		// log('videoList =========> '+stringify(videoList));
+		videoList.forEach(it => {
+			d.push({
+				url:it.vod_id,
+				title:it.vod_name,
+				img:it.vod_pic.startsWith('http') ? it.vod_pic : it.vod_pic.startsWith('//') ? 'https:' + it.vod_pic : it.vod_pic.startsWith('/') ? getHome(HOST) + it.vod_pic : getHome(HOST) + '/' + it.vod_pic,
+				desc:it.vod_remarks,
+			});
+		});
+		setResult(d);
+	`,
+}

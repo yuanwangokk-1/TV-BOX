@@ -1,1 +1,12 @@
-Ly8gaHR0cHM6Ly9hcGkub2t6eS5vcmcvYXBpLnBocC9wcm92aWRlL3ZvZC9mcm9tL29rbTN1OC9hdC94bWwKLy8gaHR0cHM6Ly9hcGkub2t6eS5vcmcvYXBpLnBocC9wcm92aWRlL3ZvZC8/YWM9bGlzdAoKdmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICfph4fpm4YxJywKICAgIHRpdGxlOiAnT0votYTmupBb6LWEXScsCiAgICBob3N0OiAnaHR0cHM6Ly9hcGkub2t6eS5vcmcnLAogICAgLy8gaG9tZVRpZDogJzEzJywKICAgIGhvbWVUaWQ6ICcnLAogICAgY2F0ZV9leGNsdWRlOiAn55S15b2xfOeUteinhuWJp3znu7zoibp85Yqo5ryrfOS9k+iCsui1m+S6i3zmlq/or7rlhYsnLAogICAgcGFyc2VfdXJsOiAnJywKfQ==
+// https://api.okzy.org/api.php/provide/vod/from/okm3u8/at/xml
+// https://api.okzy.org/api.php/provide/vod/?ac=list
+
+var rule = {
+    模板: '采集1',
+    title: 'OK资源[资]',
+    host: 'https://api.okzy.org',
+    // homeTid: '13',
+    homeTid: '',
+    cate_exclude: '电影|电视剧|综艺|动漫|体育赛事|斯诺克',
+    parse_url: '',
+}

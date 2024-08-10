@@ -1,1 +1,22 @@
-H4sIAC0soWYC/6VTz2sTQRS++1fMQXaTUDc1etqwlqU3wR807kkkPHenm2knO9uZ2YZtCBSKh6Jiz1o8VKig1lQtWNOD/0yySf8LJzuDGEQUnMs+vvfeN9987+02cMQzipGH+leQOtNPF5PXT11kTw4+jL8d20slKomkWIGB7z9UiUcG7jAhFdqRMhVuvd7r9ZwMwAlZ1xRknKp8HVJShywiTEWpiQQGHnZWQpA4Zjz31vOQghAW4xHmD/IUe9etFGKsEvOPpetNQpAd7N1smFsiLIHQ4M93kURytkIixUUi06T5gn8XaG3ivKfUebXagsjFmMQk8f4i/EbDkhB7C0Lg8dzghvEVg+IULurbgcD8mh/jRNouur/aDvyBrtnKSLjZKntdtKyxdUIl5prKQKWp7QS68/EVh/uTN6eT0xez4ZlVfH0/Gz6f7X8pXn22iu+7xd6Ty3cvL0fH1mR4XpwczT6eTC/2LL91Z83+lUvP9D+pUgp5OwUulCzJM6xRCju5i65uCEeyluQkiSuVKvJumd2cH5KkmVTbert1765TElQ43sqwkJUyVa06XRZh6lA1NyHXlJOrHUiVLWrUzd9o+kbD8pLe1RIf6LpBVasan+9OR2/VmzcES1zNHoGEZvlXNEO2rcnNphAsmj+3bDx6pntrBigODqdnRwYY/ABC/5KJfwMAAA==
+var rule = {
+    类型: '听书',
+    title: 'UAA[听]',
+    host: 'https://www.uaa.com',
+    url: '/api/audio/app/audio/search?category=fyclass&orderType=1&page=fypage&searchType=1&size=42',
+    detailUrl: '/api/audio/app/audio/intro?id=fyid',
+    searchUrl: '/api/audio/app/audio/search?category=&keyword=**&orderType=1&orderType=1&origin=&page=fypage&searchType=1&size=32&tag=',
+    searchable: 2,
+    headers: {'User-Agent': PC_UA},
+    quickSearch: 0,
+    filterable: 0,
+    class_name: '有声小说&淫词艳曲&激情骚麦&寸止训练&ASMR',
+    class_url: '有声小说&淫词艳曲&激情骚麦&寸止训练&ASMR',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = JSON.parse(request(input)).model.latestReadChapterUrl;
+        input = {parse: 0, url: input};
+    }),
+    一级: 'json:model.data;title;coverUrl;categories;id',
+    二级: '*',
+    搜索: '*',
+}

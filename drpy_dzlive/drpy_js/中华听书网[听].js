@@ -1,1 +1,42 @@
-Ly8g5pCc57Si6aqM6K+BCnZhciBydWxlID0gewogICAg57G75Z6LOiAn5ZCs5LmmJywKICAgIHRpdGxlOiAn5Lit5Y2O5ZCs5Lmm572RJywKICAgIGhvc3Q6ICdodHRwczovL3d3dy50aW5nc2h1Y24uY29tJywKICAgIHVybDogJy9saXN0L2Z5Y2xhc3MtZnlwYWdlLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnL3NlYXJjaC5waHA/cGFnZT1meXBhZ2Ujc2VhcmNod29yZD0qKiZzZWFyY2h0eXBlPTtwb3N0JywKICAgIHNlYXJjaGFibGU6IDIsCiAgICBxdWlja1NlYXJjaDogMCwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdQQ19VQScKICAgIH0sCiAgICB0aW1lb3V0OiA1MDAwLAogICAgY2xhc3NfcGFyc2U6ICcjbmV3c19uYXYmJmxpOmhhcyhhKTthJiZUZXh0O2EmJmhyZWY7LiovKFxcZCspLmh0bWwnLAogICAgcGxheV9wYXJzZTogdHJ1ZSwKICAgIC8vICBsYXp5OidqczppbnB1dD1pbnB1dC5yZXBsYWNlKCJ3d3ciLCJtIiknLAogICAgbGF6eTogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICBsZXQgdXJsID0gaW5wdXQ7CiAgICAgICAgaWYgKC9tM3U4fG1wNHxtcDN8YWNjfG00YXx3bWF8YWFjLy50ZXN0KHVybCkpIHsKICAgICAgICAgICAgaW5wdXQgPSB7CiAgICAgICAgICAgICAgICBqeDogMCwKICAgICAgICAgICAgICAgIHVybDogdXJsLAogICAgICAgICAgICAgICAgcGFyc2U6IDAKICAgICAgICAgICAgfQogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgIGlucHV0ID0gaW5wdXR1cmwKICAgICAgICB9CiAgICB9KSwKICAgIGxpbWl0OiA2LAogICAg5Zu+54mH5p2l5rqQOiAnQFJlZmVyZXI9aHR0cHM6Ly93d3cudGluZ3NodWNuLmNvbScsCiAgICDmjqjojZA6ICcubGF5b3V0X3JpZ2h0OmVxKDEpJiZsaTsqOyo7ZW0mJlRleHQ7KicsCiAgICDkuIDnuqc6ICcubGlzdEJveCYmbGk7aW1nJiZhbHQ7aW1nJiZzcmM7cDplcSgwKSYmc3BhbiYmVGV4dDthJiZocmVmJywKICAgIOS6jOe6pzogewogICAgICAgIHRpdGxlOiAnaDMmJlRleHQ7LndlYnppX3RvcCYmbGk6ZXEoNCkmJlRleHQnLAogICAgICAgIGltZzogJy5waWMmJmltZyYmc3JjJywKICAgICAgICBkZXNjOiAnLndlYnppX3RvcCYmbGk6ZXEoMSkmJnNwYW4mJlRleHQ7Ozsud2ViemlfdG9wJiZsaTplcSgzKSYmVGV4dDsud2ViemlfdG9wJiZsaTplcSgyKSYmVGV4dCcsCiAgICAgICAgY29udGVudDogJyNpZERJVi0tYSYmVGV4dCcsCiAgICAgICAgdGFiczogJy5jb250ZW50X2pydG9wOmVxKDApJiZsaScsCiAgICAgICAgbGlzdHM6ICcudmlkZW91cmw6ZXEoI2lkKSYmbGknCiAgICB9LAogICAg5pCc57SiOiAnKicsCn0=
+// 搜索验证
+var rule = {
+    类型: '听书',
+    title: '中华听书网',
+    host: 'https://www.tingshucn.com',
+    url: '/list/fyclass-fypage.html',
+    searchUrl: '/search.php?page=fypage#searchword=**&searchtype=;post',
+    searchable: 2,
+    quickSearch: 0,
+    headers: {
+        'User-Agent': 'PC_UA'
+    },
+    timeout: 5000,
+    class_parse: '#news_nav&&li:has(a);a&&Text;a&&href;.*/(\\d+).html',
+    play_parse: true,
+    //  lazy:'js:input=input.replace("www","m")',
+    lazy: $js.toString(() => {
+        let url = input;
+        if (/m3u8|mp4|mp3|acc|m4a|wma|aac/.test(url)) {
+            input = {
+                jx: 0,
+                url: url,
+                parse: 0
+            }
+        } else {
+            input = inputurl
+        }
+    }),
+    limit: 6,
+    图片来源: '@Referer=https://www.tingshucn.com',
+    推荐: '.layout_right:eq(1)&&li;*;*;em&&Text;*',
+    一级: '.listBox&&li;img&&alt;img&&src;p:eq(0)&&span&&Text;a&&href',
+    二级: {
+        title: 'h3&&Text;.webzi_top&&li:eq(4)&&Text',
+        img: '.pic&&img&&src',
+        desc: '.webzi_top&&li:eq(1)&&span&&Text;;;.webzi_top&&li:eq(3)&&Text;.webzi_top&&li:eq(2)&&Text',
+        content: '#idDIV--a&&Text',
+        tabs: '.content_jrtop:eq(0)&&li',
+        lists: '.videourl:eq(#id)&&li'
+    },
+    搜索: '*',
+}

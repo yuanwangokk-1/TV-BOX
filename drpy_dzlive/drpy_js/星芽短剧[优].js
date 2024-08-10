@@ -1,1 +1,85 @@
-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
+var rule = {
+    类型: '影视',
+    title: '星芽短剧[优]',
+    host: 'https://app.whjzjx.cn',
+    url: '/cloud/v2/theater/home_page?theater_class_id=fyclass&type=fyclass&class2_ids=0&page_num=fypage&page_size=24',
+    searchUrl: '/v3/search',
+    searchable: 2,
+    quickSearch: 0,
+    headers: {
+        'User-Agent': 'okhttp/4.10.0',
+        'Accept-Encoding': 'gzip',
+        'x-app-id': '7',
+        'authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjMxNzQ2MjgsIlVzZXJJZCI6NTA5MDg3NDEsInJlZ2lzdGVyX3RpbWUiOiIyMDI0LTA3LTA5IDIwOjUwOjIxIiwiaXNfbW9iaWxlX2JpbmQiOmZhbHNlfQ.lS-X8Mck6WCISgbp9wjysfIMAlWgThVmbEM4N54cup8',
+        'platform': '1',
+        'manufacturer': 'realme',
+        'version_name': '3.1.0.1',
+        'user_agent': 'Mozilla/5.0 (Linux; Android 9; RMX1931 Build/PQ3A.190605.05081124; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 Mobile Safari/537.36',
+        'dev_token': 'BFdbZBGOEgG7QDt01ldOQNNfhO2F-rv4QcugZoFZm5_3DlPJEo_bSBeJ6dW2X3eKzxxKKWz3xJCM_u5PppGMqRuYPxcsVg9a-jriWiIoPZvHMSLbcbxTFuasqgTivTY3GabW1yP57LQSsJNQfKoX1BKYGHducrhb0bTwvigfn3gE*',
+        'app_version': '3.1.0.1',
+        'device_platform': 'android',
+        'personalized_recommend_status': '1',
+        'device_type': 'RMX1931',
+        'device_brand': 'realme',
+        'os_version': '9',
+        'channel': 'default',
+        'raw_channel': 'default',
+        'oaid': '',
+        'msa_oaid': '',
+        'uuid': 'randomUUID_8a0324bf-03c8-4789-8ef8-12d3bcff28f5',
+        'device_id': '24250683a3bdb3f118dff25ba4b1cba1a',
+        'ab_id': '',
+        'support_h265': '1'
+    },
+    timeout: 5000,
+    class_name: '剧场&热播剧&会员专享&星选好剧&新剧&阳光剧场',
+    class_url: '1&2&8&7&3&5',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {url: input, parse: 0}
+    }),
+    double: true,
+    一级: $js.toString(() => {
+        let d = [];
+        let html = request(input);
+        let data = JSON.parse(html).data.list;
+        data.forEach(it => {
+            let id = 'https://app.whjzjx.cn/v2/theater_parent/detail?theater_parent_id=' + it.theater.id;
+            d.push({
+                url: id,
+                title: it.theater.title,
+                img: it.theater.cover_url,
+                desc: it.theater.theme,
+            })
+        })
+        setResult(d);
+    }),
+    二级: $js.toString(() => {
+        let urls = [];
+        let html = request(input);
+        let data = JSON.parse(html).data;
+        data.theaters.forEach(it => {
+            urls.push(it.num + '$' + it.son_video_url);
+        })
+        VOD = {
+            vod_name: data.title,
+            vod_pic: data.cover_url,
+            vod_play_from: '球球啦',
+            vod_play_url: urls.join('#')
+        };
+    }),
+    搜索: $js.toString(() => {
+        let html = post(input, {body: {"text": KEY}})
+        let list = JSON.parse(html).data.theater.search_data;
+        list.forEach(it => {
+            let id = 'https://app.whjzjx.cn/v2/theater_parent/detail?theater_parent_id=' + it.id;
+            d.push({
+                url: id,
+                title: it.title,
+                img: it.cover_url,
+                content: it.introduction,
+            })
+        })
+        setResult(d);
+    }),
+}

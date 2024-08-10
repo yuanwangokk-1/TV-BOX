@@ -1,1 +1,40 @@
-H4sIAC0soWYC/4VUW2sTQRR+91csVDYXMpukWh82VCl9FRFq3wphsjPJTp3sbmdmc2kbEARFvFXwUXzwwQoqWuiDtvbfNN3+DOeWZts0uoG9fPOdc775zpn0IHNYSrGz7OzccOSVHRyPP770ncL45OB8/1mhUq2at93x3rfT3593z/58zd4f745/vj3/cahDBBEUy4js6ffsxfPs5F2hovEw5kLCoRCJX632+32P4YTAyAsCy0gZlYRqexhQyDlIYAe3h+ruhaJLLYljyIJw3VB7MQIGAH0EyuV/xsCW0rVooK2UBI/XNO47NYO1CRWYGVo9D8lShfx30yi9jCHc9p2dkd0shggz7lsb1VVYCQKcCHAfRp1UCizIDNshWH1g02jOOscMrHRwJNTyw9Xm+opdtokF6eI4lUYu1WpWtnarmUDGle0p9SLYa0EG5MN1KfGjWBQ9xOIExf2o1ICu+wgPhHqGDLcbQbBRLXrleyVtXn0jb1wABW7iQUBThKcbTigcTuoJlmKDUrg99J2bm9wT8ZpgJOoUiyVn+W7OAhIlqVCzZYPrFdNzjVecTa5qjBpmvyWTFsWpbsi00NmbL+ev9yTVkzqkF6AVDxqUNMqTn5V5+utJdrSveJIAegThGFDCheumVBmjHNDDql4QFBDEjHRIBGnDk57hKz55PG1pusEnRY5e6SLTTU7mP6wDgLs2iewKidqx7gfeKi6WLiXR3nQ7SqqRmZDAdbkYUpxjIMwD0+B8qnqtdH2N23PwO3PwW3PwpVmtQRwJOaJKL8ICEsqBhQCkdIYuYItrrp1B0MVRqlKDeklVyVFVfxQXkZ6nxmzSL8VeIOgqXWZuCllMRrRiNJyprML/TzCn2fb5msVmInEymB4AexbP9j5kh58kvGB377oXfigHQZdEeiLndF+uzPgn/0VgSsWF0NFfv4qaqJMFAAA=
+var rule = {
+    类型: '影视',//影视|听书|漫画|小说
+    title: '热片网',
+    host: 'http://www.repian.cc',
+    url: '/fyclass-pagefypage.html',
+    searchUrl: '/vod-search-wd-**-pagefypage.html',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'Accept-Language': 'zh-CN',
+        'User-Agent': 'PC_UA',
+    },
+    timeout: 5000,
+    class_parse: 'ul.navbar-nav&&li:not(.dropdown);a&&Text;a&&href;cc\/(.*?)-page1\.html',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: true,
+    推荐: '.layout-box;li;*;*;*;*;*',
+    一级: '.box-video-list&&ul&&li;a&&title;a&&data-original;.note&&Text;a&&href;.subtitle&&Text',
+    二级: {
+        title: 'h1--em&&Text;ul.info&&li:eq(2)&&Text',
+        img: '.video-pic&&style',
+        desc: 'ul.info&&li:eq(10)&&Text;ul.info&&li:eq(4)&&Text;ul.info&&li:eq(6)&&Text;ul.info&&li:eq(3)&&Text;ul.info&&li:eq(5)&&Text',
+        content: '.details-content-all&&Text',
+        tabs: '.dropdown-menu:eq(-1)&&li',
+        lists: 'div.playlist&&ul:eq(#id)&&li',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href',
+        list_url_prefix: '',
+    },
+    搜索: '#content&&.details-info-min;*;*;ul.info&&li:eq(2)&&Text;*;.details-content-default&&Text',
+}

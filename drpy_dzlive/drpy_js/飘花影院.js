@@ -1,1 +1,13 @@
-qz2VfkB3O9fqiff5MjJa/AGPqh+RieRT1xCDC/uYMyxmYSfBqy6ywasp0y8aCxcZSoZd8rmoi1vsLOh9ZzQP+ITGVxkOgJp/t/bM7MUCgD9xZJGMScv13GycLwgxeSW2oBVyJEOEvRVWQtpTWoss4szSDp/zewzMdKwm231OLcRfnLgJxcHRvKF7yWEX15zYgsoAuwgQPjvO7469AMN4f5gsq903t0JL94lat9/5acPbBhGLgSDbgl4KuZxdlSauj3bHpR2uDLG8vSqbuTVhdKVUhwAQ9VEFuLOcVo75DMpcIVqvrZ5hFAKoka+UT4sTKfAbzYSSrTF4r3yaDJF74Hlwp020uwQMoqa+LVfc61BdzpMexgEYMW5qMMYXBaN65Ld4AQx8vVpHoLTpUuFZQ0LHW6n2ed5H+3kbFW5RzRNS28q1mEn4eFtMqitRzvCfVvWCNStIBp8sWUDEjBmT4o2/A7I7PxuDmWAaFEcuY0TVf9tya13sO5Sr4bT8Ax/exNG/+Krw+28ZxAWH9egzK6rbngCXKGxFjLwv9pfqHOreY2+4ABtpTqVcbbvXUub/FEl7/mp4URRqR63fJjJqQAtywZaJQikLRhvPVD70RwMy68RBpv3nDGZo7qbOsuK/lYrWXqigD3E3kfPCFypUBwb3JCQ1/DaMEvC5iMWJqhY=
+Object.assign(muban.mxone5.二级, {
+    tab_text: 'div--small&&Text',
+    lists: '.module-player-list.tab-list:eq(#id)&&.scroll-content&&a',
+});
+var rule = {
+    模板: 'mxone5',
+    title: '飘花影院',
+    host: 'https://www.6bys.com/',
+    cate_exclude: '演员',
+    url: '/index.php/vod/show/id/fyclass/page/fypage.html',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    搜索: '.module-items .module-search-item;a&&title;img&&data-src;.video-serial&&Text;.video-serial&&href',
+}

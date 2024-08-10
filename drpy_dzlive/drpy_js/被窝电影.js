@@ -1,1 +1,23 @@
-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
+muban.首图2.二级.title = '.v-thumb&&title;.data--span:eq(0)&&Text';
+muban.首图2.二级.desc = '.data:eq(3)&&Text;;;.data--span:eq(1)&&Text;.data--span:eq(2)&&Text';
+muban.首图2.二级.content = '.desc.hidden-xs--a&&Text';
+muban.首图2.二级.tabs = '.stui-pannel__head.bottom-line';
+muban.首图2.二级.tab_text = 'h3&&Text';
+var rule = {
+    title: '被窝电影',
+    模板: '首图2',
+    host: 'https://www.bei5dy.com',
+    url: '/show/fyfilter/',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.cateId}}-{{fl.area}}-{{fl.by}}-{{fl.class}}-{{fl.lang}}-{{fl.letter}}---fypage---{{fl.year}}',
+    filter: 'H4sIAAAAAAAAA+1X204TURT9l3nmYaZy/wO/wfBwKBM6UKZSOsaWQDCAtiIUjbY21FsCtCRgByUoUws/0zOlf+GZnsveA9oQI2rivHWtvfa57DNn7dNFbcoidtayp7Xxe4varJnVxrU4yZh3p7QBzSZzJsOd4yZ9u8HwA5J0zJ7QZjRdr3dX6wHNgBpmaUBEn9bbrWqn8EQKUvZ0zkndZzrQlKq0UAPNQ2vGCQk6+WN/dR0ExJpnc4Qltef0rAmSWTPhEDsk8R9t+yslJGFLmQxPxJYRmmjGuTaRn3/d9gogySWInUuYV5fT/Ea386BKOnbS4oqJQMMrTNImgfrSqkufef3rCyvdrXUrjwUrgIx19yv+14aICaDyiq5/di7zOFCLPt+iOy0RE0Bt+/MriAkgY5cbxxATQOWV9/zqoczjQK3z3QHkCaDWef4FYgLAWly8FjeUt+lSb1/mcaDy1oqsUjR/IFMVVjvZu+gUjzqFityMwvA9v/c3LlianEJhpVg/bTdLMswBPvSsSdLo0M9O2s3WDQ89psfuCK73E/Ex4GOYN4A3MK8DryPeGFM8+4n4UeBHMT8C/Ajmh4EfxvwQ8EOYHwR+EPOwXwPv14D9Gni/BuzXwPs19OWYrqOgwKDQ9WVjbAwUEksFAwEzLAsHGB9ukjDvU4d72Ti6rK/c9EbvtJhefjccoBsGMQHUrf20CzEB1A0rt+hmGcKA0R1EYQ7Q3YWYAMgPUIwDdHfRTjhAt4N+XIXbEQBcwMkslM/fekG94rXy+eXTbvlEDJGxmFQO3vY8330pIgkrswAFbKzRvLTLhXgqbQazTgz0GtZCgjWc39D4+DjoPNtejXUUoZh2UnHWK5CC+TJzYKRgH0+G4DFY0QNfVIq0dWWEw1rg0yqecubM0Bp69gPxeStDgvAf6EF9vP1X+1O/XtK/d/28X/TtXSWX2Tt980GmKhx5feT1/4/X/2uenWMP96yFDPuWPIz7s6wJB2FnhnoFIOzKMsZB5AqRK0SucKsvOeYKc+wP9u3bQp9nyA+vfvRYiGwhsoW/YgtL3wE/jAqm2hQAAA==',
+    filter_def: {
+        dianying: {cateId: 'dianying'},
+        dianshiju: {cateId: 'dianshiju'},
+        zongyi: {cateId: 'zongyi'},
+        dongman: {cateId: 'dongman'}
+    },
+    searchUrl: '/search/**----------fypage---/',
+    class_parse: '.stui-header__menu&&li;a&&Text;a&&href;.*/(\\w+)/',
+    搜索: muban.首图2.搜索2,
+}

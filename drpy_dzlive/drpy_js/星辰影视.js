@@ -1,1 +1,23 @@
-T2JqZWN0LmFzc2lnbihtdWJhbi7pppblm74yLuS6jOe6pywgewogICAgdGFiczogJy5zdHVpLXBhbm5lbF9oZCBoMycsCn0pOwoKdmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICfpppblm74yJywKICAgIHRpdGxlOiAn5pif6L6w5b2x6KeGJywKICAgIGhvc3Q6ICdodHRwczovL3d3dy5sdWFucmVuLmNjJywKICAgIHVybDogJy92b2R0eXBlL2Z5Y2xhc3MtZnlwYWdlLmh0bWwnLAogICAgY2F0ZV9leGNsdWRlOiAn5piO5piffOS9k+iCsicsCiAgICBzZWFyY2hVcmw6ICcvdm9kc2VhcmNoLyoqLS0tLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdQQ19VQScsCiAgICB9LAogICAgbGF6eTogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICBpbnB1dCA9IHsKICAgICAgICAgICAgcGFyc2U6IDEsCiAgICAgICAgICAgIHVybDogaW5wdXQsCiAgICAgICAgICAgIGhlYWRlcjogcnVsZS5oZWFkZXJzLAogICAgICAgICAgICBwYXJzZV9leHRyYTogJyZpc19wYz0xJwogICAgICAgIH0KICAgIH0pLAp9
+Object.assign(muban.首图2.二级, {
+    tabs: '.stui-pannel_hd h3',
+});
+
+var rule = {
+    模板: '首图2',
+    title: '星辰影视',
+    host: 'https://www.luanren.cc',
+    url: '/vodtype/fyclass-fypage.html',
+    cate_exclude: '明星|体育',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    headers: {
+        'User-Agent': 'PC_UA',
+    },
+    lazy: $js.toString(() => {
+        input = {
+            parse: 1,
+            url: input,
+            header: rule.headers,
+            parse_extra: '&is_pc=1'
+        }
+    }),
+}

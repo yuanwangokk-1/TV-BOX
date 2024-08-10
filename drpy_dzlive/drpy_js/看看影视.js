@@ -1,1 +1,28 @@
-h36A5I5KdeB29zb3iwNWV8or9IevRF6/xu00JzDZsgJncyYwk+pPrS6+x1NxtBqFo86laNlDvJoJDSE+CZCSSjqpKAGRg1+SpfPd15jVS65X3mNEiNpHYxvdWHEI2RRrYVmu8ZWbKfwaAjXyOcK7ea0r+ThLUAejQQsOcZK3iqjMbU0szyyE8eRxuVUXKbY6qLcFHI0CyrlpoJx48uPSKQ3h0VTvKFXl83fByo/yDJPewhy/7okAjYqAz5WIEeJO2iINB2/SBgqTCE1+SD5+MwVpK9RiL/AwFf//HSrbHInhauaZ4mH+JUr1CgAYswlvngk4E3PxF3rxKdkZ7O6D23KbbyixxpP2QFc418PxBC/DMtINPjbhMiO5nCZmAEaZufy9TU/bZx1Rj3/IiYTNuNCOOFsre0uZ30fXDIUBsANsjmQvo+YKcFDw6Jlk+LHd0HFplUiD1Ma3Sz/z5FWP8MURf9xXvZ75fchiQUM98bC3ZsC50kppVpkiUSa7leHZ6Lu5AqzLbDrkEfEDLmioRpAaSSHGNyHBjw9G6vTzJTNjf0MUmDn3pHb3dj6S0S4jBh/x177EyO5wq7oYobCZ/1iMhL8g7EVZFHFbKB8iSHRm28XvVV4OeY/0iHBDFDRd7goKpVCOtMMVbilyEQY0Epgaquj0AhlTnAHAzCGvDkZe+KD22569bUBQEqCC4T2xhO2aFZPajSj8njDJjgcGGVOXFKw9EigkF4gBEIeB51Kur44gJL3380W0MVL4PJsj/nbjTG2RSqFxUOsVDE222D2XBHfGZEAqmmjkR5qfxrgReNaOf1e09qUrkvbS7gOdIuIKYrtHCS6gRd9tblsA3Vr8BwCzJDS/0PiwRcucSez/o0yCz7bgMgQeae92DtfA27biz0N1EL7p8NtdzNgcN+wI1o7zkuR9geOBldVUiCHNO3xT/T2C2JFMJQABvoiIG2hCdvMr/i4PBfE/iwBsmM0+a6TG+1G2X3iHkiz4UpWVfe/vInaVLrPU0jL0I55b/yGKmAT50mlhpf+pW+zlWVImBXzWdYlI1bCtBA67kBXb0jemmibXVRcm41A/pQcEsoATbMe6l8Vm7Q5qYMZia/Y+g7MRMQNiRfdWgb41HScniVy1Lp5IoEhmObn0oZrD1h3YUfEh0WfWqzWP+zWz5ZGY6NGbraBfGmRROotkiHMAzHptEOp/VjsVkJHYKwsiRH1SBxNnSg76qrWnEwPOz+hPBrNmxgx9fiemQgxN+qGJYyicS55QjkGBCdoUvI2Vn/tVRqZo+0cG0dIMQbqwAOte5NRqIiEZapBS7aMubMDzGYcxnmsqNMttuEftAXAeXjXwjgGBuTGdFVGmzOY5ZA==
+var rule = {
+    title: '看看影视',
+    host: 'https://www.kkys.pro',
+    url: '/vodshow/fyclass--------fypage---/',
+    searchUrl: '/vodsearch/**----------fypage---/',
+    class_parse: '.top_nav li;a&&Text;a&&href;.*/(.*?)/',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: '.cbox_list;*;*;*;*;*',
+    double: true,
+    一级: 'ul.vodlist li;a&&title;a&&data-original;.pic_text&&Text;a&&href',
+    二级: {
+        title: 'h2&&Text;.detail_list&&ul:eq(1)&&li&&a:eq(2)&&Text',
+        img: '.vodlist_thumb&&data-original',
+        desc: '.content_detail&&li:eq(1)&&Text;.detail_list&&ul:eq(1)&&li&&a&&Text;.detail_list&&ul:eq(1)&&li&&a:eq(1)&&Text;.detail_list&&ul:eq(1)&&li:eq(2)&&Text;.detail_list&&ul:eq(1)&&li:eq(3)&&Text',
+        content: '.content_desc&&span&&Text',
+        tabs: '.play_source_tab&&a',
+        lists: '.content_playlist:eq(#id) li',
+    },
+    搜索: '*',
+}

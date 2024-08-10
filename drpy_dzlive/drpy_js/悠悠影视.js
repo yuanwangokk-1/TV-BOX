@@ -1,1 +1,12 @@
-H4sIAC0soWYC/3WQvU7DMBSF9zxFpjaJGoeVRIhHYIE5unHc2Mj5ke38FNSFgQExw4CQYEBlBImpFeJlSuAxsEMqJixLV/f6O+ce+Sg5JVghkJJlhZPXCRQo7ypRou36+mu9mtnnlq2PgiRWpFOhPU1Z4/syB84nk2M9ms6spRtZDQhb1JzYB6Okf37s7z+0YPDT1ODDFCd61l886Pv5/vq9uhyfaCmNPVWqkmEQtG2LOraoz6gOVSJc5iNXC66xoClTScs2mC8w1/GDCjKiG1MQVTkfaUlAYHrypxl6z/uPx6BITDrM69Tk3G6u+tun/u6tv3nZEWZdXIGQBkAFNAkInymSS5uzMFPOnhty5ey7Efz+kKlUkHmEvMBB3qG7W7j8ARzbaY1/AQAA
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '悠悠影视',
+    host: 'https://www.xiyuzhubao.com',
+    url: '/vodshow/fyclass/page/fypage.html',
+    searchUrl: '/vodsearch**/page/fypage.html',
+    cate_exclude: '今日更新',
+    class_parse: '.navbar-items li:gt(0):lt(9);a&&Text;a&&href;.*/(.*?).html',
+}

@@ -1,1 +1,40 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogIui3r+a8q+a8qyIsCiAgICBob3N0OiAiaHR0cHM6Ly9tLmxtbTUyLmNvbSIsCiAgICB1cmw6ICIvdm9kL3Nob3cvaWQvZnljbGFzc2Z5ZmlsdGVyLmh0bWwiLAogICAgc2VhcmNoVXJsOiAiaHR0cHM6Ly9tLmxtbTUyLmNvbS92b2Qvc2VhcmNoL3BhZ2UvZnlwYWdlL3dkLyoqLmh0bWwiLAogICAgc2VhcmNoYWJsZTogMiwKICAgIHF1aWNrU2VhcmNoOiAwLAogICAgZmlsdGVyYWJsZTogMSwKICAgIGZpbHRlcjogIkg0c0lBQUFBQUFBQUFPMlN1MDRDVVJDRzMyWHFOWHUvd0tzWWl0VnNBbEhSY0VzMmhJU29FQ3VKeHFoUllxTUZ4a0lLS0ZnTFhvWTlMbS9oSHRCMW1QcVVVODcvL1R0N2t2bTZZRU41dnd0SFVReGxTQmV6MWRjcmFGQVBUeUk4ZDhMamRyUXAxbVU4bUt3dkpqTE9CK2hwMjlReUxPYzMwK01vYk9pYkFGR2JVaHRUaTFJTFU1TlNFMU9EVWdOUnMwUm9IaUFhVUJwZzZsUHFZK3BSNm1IcVV1b1dWRHpQeE1NNzVjNmVXUXJ5cDFka2JYc1JjWDJiSnFQL2l4VHo3a1hFdUo4dGIrVFcrK25mMW9OWWI5WHlqNHAvanZ2cmo4ZFZrb2pwSGVwVWE2MG02V1NmbCtuVkVIV2FoNmVOblVYcDI5UDMrU0tidjZCUysweSt2S0tCdzBheFVVcU5jdGtvTmtxcFVSNGJ4VVlwTmNwbm85Z29wVVlGYkJRYnBkQ28zZzhTTnN1cjdRMEFBQT09IiwKICAgIGZpbHRlcl91cmw6ICJ7e2ZsLuaOkuW6j319e3tmbC7lubTku6N9fS9wYWdlL2Z5cGFnZSIsCiAgICBmaWx0ZXJfZGVmOiAiIiwKICAgIGhlYWRlcnM6IHsKICAgICAgICAiVXNlci1BZ2VudCI6ICJNT0JJTEVfVUEiCiAgICB9LAogICAgdGltZW91dDogNTAwMCwKICAgIGNsYXNzX25hbWU6ICLml6XmnKzliqjmvKsm5Zu95Lqn5Yqo5ryrJuasp+e+juWKqOa8qybml6XmnKzliqjnlLvnlLXlvbEm5Zu95Lqn5Yqo55S755S15b2xJuasp+e+juWKqOeUu+eUteW9sSIsCiAgICBjbGFzc191cmw6ICI2JjcmOCYzJjQmNSIsCiAgICBjbGFzc19wYXJzZTogIiIsCiAgICBjYXRlX2V4Y2x1ZGU6ICIiLAogICAgcGxheV9wYXJzZTogdHJ1ZSwKICAgIGxhenk6ICRqcy50b1N0cmluZygoKSA9PiB7CiAgICAgICAgaW5wdXQgPSB7cGFyc2U6IDEsIHVybDogaW5wdXQsIGpzOiAnJ307CiAgICB9KSwKICAgIGRvdWJsZTogZmFsc2UsCiAgICDmjqjojZA6ICIqIiwKICAgIOS4gOe6pzogIi52aWRlby1pbWctYm94O2g2LnRpdGxlJiZUZXh0Oy5sYXp5bG9hZCYmZGF0YS1zcmM7LmxhYmVsJiZUZXh0O2EmJmhyZWYiLAogICAg5LqM57qnOiB7CiAgICAgICAgdGl0bGU6ICIucGFnZS10aXRsZSYmVGV4dDsudGFnLWxpbmsmJlRleHQiLAogICAgICAgIGltZzogIi5tb2R1bGUtaXRlbS1waWMmJi5sYXp5bG9hZCYmc3JjIiwKICAgICAgICBkZXNjOiAiLnZpZGVvLWluZm8taXRlbXM6ZXEoMykmJlRleHQ7LnZpZGVvLWluZm8taXRlbXM6ZXEoMikmJlRleHQ7Oy52aWRlby1pbmZvLWl0ZW1zOmVxKDEpJiZUZXh0Oy52aWRlby1pbmZvLWl0ZW1zOmVxKDApJiZUZXh0IiwKICAgICAgICBjb250ZW50OiAiLnZpZGVvLWluZm8tY29udGVudCYmVGV4dCIsCiAgICAgICAgdGFiczogIi5tb2R1bGUtdGFiLWl0ZW0udGFiLWl0ZW0iLAogICAgICAgIGxpc3RzOiAiLm1vZHVsZS1wbGF5ZXItbGlzdDplcSgjaWQpIGEiLAogICAgICAgIHRhYl90ZXh0OiAiYm9keSYmVGV4dCIsCiAgICAgICAgbGlzdF90ZXh0OiAiYm9keSYmVGV4dCIsCiAgICAgICAgbGlzdF91cmw6ICJhJiZocmVmIgogICAgfSwKICAgIGRldGFpbFVybDogIiIsCiAgICDmkJzntKI6ICIqIgp9
+var rule = {
+    title: "路漫漫",
+    host: "https://m.lmm52.com",
+    url: "/vod/show/id/fyclassfyfilter.html",
+    searchUrl: "https://m.lmm52.com/vod/search/page/fypage/wd/**.html",
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: "H4sIAAAAAAAAAO2Su04CURCG32XqNXu/wKsYitVsAlHRcEs2hISoECuJxqhRYqMFxkIKKFgLXoY9Lm/hHtB1mPqUU87//Tt7kvm6YEN5vwtHUQxlSBez1dcraFAPTyI8d8LjdrQp1mU8mKwvJjLOB+hp29QyLOc30+MobOibAFGbUhtTi1ILU5NSE1ODUgNRs0RoHiAaUBpg6lPqY+pR6mHqUuoWVDzPxMM75c6eWQryp1dkbXsRcX2bJqP/ixTz7kXEuJ8tb+TW++nf1oNYb9Xyj4p/jvvrj8dVkojpHepUa60m6WSfl+nVEHWah6eNnUXp29P3+SKbv6BS+0y+vKKBw0axUUqNctkoNkqpUR4bxUYpNcpno9gopUYFbBQbpdCo3g8SNsur7Q0AAA==",
+    filter_url: "{{fl.排序}}{{fl.年代}}/page/fypage",
+    filter_def: "",
+    headers: {
+        "User-Agent": "MOBILE_UA"
+    },
+    timeout: 5000,
+    class_name: "日本动漫&国产动漫&欧美动漫&日本动画电影&国产动画电影&欧美动画电影",
+    class_url: "6&7&8&3&4&5",
+    class_parse: "",
+    cate_exclude: "",
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: false,
+    推荐: "*",
+    一级: ".video-img-box;h6.title&&Text;.lazyload&&data-src;.label&&Text;a&&href",
+    二级: {
+        title: ".page-title&&Text;.tag-link&&Text",
+        img: ".module-item-pic&&.lazyload&&src",
+        desc: ".video-info-items:eq(3)&&Text;.video-info-items:eq(2)&&Text;;.video-info-items:eq(1)&&Text;.video-info-items:eq(0)&&Text",
+        content: ".video-info-content&&Text",
+        tabs: ".module-tab-item.tab-item",
+        lists: ".module-player-list:eq(#id) a",
+        tab_text: "body&&Text",
+        list_text: "body&&Text",
+        list_url: "a&&href"
+    },
+    detailUrl: "",
+    搜索: "*"
+}

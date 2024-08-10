@@ -1,1 +1,15 @@
-H4sIAC0soWYC/32PTU7DMBCF9z1FJCSXVE0MFFgEcQs4wDQ2iSU3DvG0JaBuQUhsOECRYFNW7FClbLgMpOUWOKkREZUyG3ve++ZvApmTjSV3Tp2bjmOifH0u5x+B0y3fl+unYtDt1zIKlNyoX2/z1f3denH7/fJorVhpNE6MmOqAUjEElQpI/DRTltAcsjA+z6TB6EQxuhFoChGnF3n9TBnt9fwYR9IWjRt4rKZUMIOGErRu1jUrPouHVbEI7CHNrf1Yeiz06pSQM36FJ1YKVYI8QUKkCPjl7rG7sW3HKsQosh0kXOeEMEDwVCYikYBscIzr8G/Uv777e27r3MN2+6jdPmi3B9tHWcLuazMPDbSFIgy15aovIdAwpdD466YScu1VSjV0RzC3WsDCs35n9gPsMVIibAIAAA==
+var rule = {
+    模板: '海螺3',
+    title: '宝片视频',
+    host: 'https://ibaopian.pro',
+    searchUrl: '/vod/search/page/fypage/wd/**.html',
+    url: '/vod/show/id/fyclass/page/fypage.html',
+    二级: {
+        title: '.hl-dc-title&&Text;.hl-dc-content&&li:eq(6)&&Text',
+        img: '.hl-lazy&&data-original',
+        desc: '.hl-dc-content&&li:eq(10)&&Text;.hl-dc-content&&li:eq(4)&&Text;.hl-dc-content&&li:eq(5)&&Text;.hl-dc-content&&li:eq(2)&&Text;.hl-dc-content&&li:eq(3)&&Text',
+        content: '.hl-content-text&&Text',
+        tabs: '.hl-tabs&&a',
+        lists: '.hl-plays-list:eq(#id)&&li',
+    },
+}

@@ -1,1 +1,75 @@
-H4sIAC0soWYC/6VWW28bRRR+51es1Ghn7ca7cSRebJmkoD4UpVSqmwcURe54d+ydsLfuzFYxiSUkVC4iBSPxhBASPJBI3FqpD9DCv6mT9F9wzsxuvLY3pAJb1trnNufynW/8kKZGmgXM6BgHbxjwOnv6Yvr9Fy2DnP7189k3L8iq40z/fnp+/MnhdPLLyz9/OtTyw+mTr85/f6ZcJJcBA4/p0aPprxOt34HPLllVej8WEtS+lIloOc4w9mjo224cOrlBlgagH4zcgArhJHTInMEIH7leMJq6/raycoRTr2+gslNhQ/uYyboWPci4+0FXyVvGmpYNeCBZqs2aZRGEJuXfPZ3UvMxjg5ZxMM7LYtRjqWjljcMX2RYsbdwYskgScL595+1bWzd72zfyKLmj5CGLM2jJm2treVqq8l5EQ9XHRyevPj4hZY1OxglpNKRzioSmAn1sPw5ZRB9Kum+atE1N8x7bl/j0UzZoW9rVrjfseq0IQCXrsX03yDw2qzQJ6KiIKtOMaWlAPxy1jJU9Ycu4K1MeDS2rZnTeKtUexEOLR0kma+2ZjEmjxz0Al9LYIgm4tMjmJqntrO0u2EGNlYbNkqHjoGmoQqJDYeiQmi0C7jKr0cTQhbxRcZAvw6AJ/il7kDEhLYyzahzMxnmXDViqEFEF2fF4oUCdTeINfEuFXjXINUBiAoB5J44kYME0PSppIxSktpxKKZP7xXk04Y0hk3Y41LBmqTobxE4e2QE1jwbxRthZOYAMxqYLX6DX4/v/p5Y9EUeQ0LvdO+/ZCgSqpAWjFNmCbOahO1WB5x041AEuGNzGTtiYuc1D2F5hhzSxuEQscWkjBq7DAbW5kSOyIERJqFCCnKUXI+EuZkDAFw3tvZhHFjFNUhtrn3FN49iLM7X6M2Sffnly/niCG+TS1Au4kG076TfW23X9ztfi5R8fnT0/LpuZprZTAkWB+c5BBqYpUrddbF8R4vmRCjFbmVefPp7+9u108vUVq1WsFzn9/Pj8h6OZGxZ8+/3e9t2tUm9006rwVWmqhQrBatgI3zBOGQINqKQoofoclZUu7CKr6WdPLk/sqoyKQZXvFb+pO0tmKugxKIpOlxQeEy5orgE5Sl3BgqerVxJBY0tQNULm8SxcspO0L/Ds9bJVSY8QEK8xtxy+C8RYbAZuQ2+eP7D/NAjyPRcFd3CPLM0YI+cRKmIv8tzrsIu6JZBbNuBAIJQ8+tgMY491IK3/zC7/zjDNytrQtiIEth4L29ld1gEf9BIALN+/uEtSBnca3Awkbym6A56JvkwX4s84qhiAPYjTm9T1c5Kan+7F5SWRjYDAqAQo9DMJxKbg2642F0E2XHJA4SX2+g6VNvcqDLAddpIJ38I0rhtkBdcPfeA7XKHwKLUFZIooVQ4L1S8ObOtW914XO63O2L1kTWm/hzsCKOjH3mhpk9D3agNN5POMWVbm6c/+qOR/pk4n3509+xHEyNTjfwBIenJuzwoAAA==
+var rule = {
+    类型: '漫画',//影视|听书|漫画|小说
+    title: '包子漫画[画]',
+    host: 'https://godamh.com/',
+    url: 'fyclass/page/fypage',
+    searchUrl: '/s/**?page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_name: '全部',
+    class_url: '/manga',
+    class_parse: '.homenavtax&&a;a&&Text;a&&href;(/manga.*-.*)',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        log(input);
+        let _id = input.split('@@')[0];
+        let _url = input.split('@@')[1];
+        //let mid = _url.split('/').slice(-1)[0].split('-')[0];
+        let html1 = request(_url, {headers: {Referer: 'https://godamh.com/'}});
+        let mid = pdfh(html1, '#chapterContent&&data-ms');
+        let html = request(`https://api-get.mgsearcher.com/api/chapter/getinfo?m=${mid}&c=${_id}`, {headers: {Referer: 'https://godamh.com/'}});
+        let json = JSON.parse(html);
+        let re = '@Referer=https://godamh.com/';
+        let imgs = json.data.info.images.map(it => it.url + re);
+        //log(imgs);
+        input = {url: 'pics://' + imgs.join('&&')};
+    }),
+    double: true,
+    推荐: '.cardlist;.pb-2;*;*;*;*',
+    一级: '.cardlist&&.pb-2;.cardtitle&&Text;img&&src;;a&&href',
+    二级: {
+        重定向: $js.toString(() => {
+            log('执行重定向:' + MY_URL);
+            // let html = request(MY_URL);
+            MY_URL = pd(html, '#morechap&&a&&href', MY_URL);
+            log('二级重定向到:' + MY_URL);
+            html = request(MY_URL);
+        }),
+        title: 'h1&&Text',
+        img: 'img&&src',
+        desc: '#lastchap&&Text',
+        content: 'p.text-medium&&Text',
+        tabs: 'h2.text-medium',
+        lists: $js.toString(() => {
+            //log(input);
+            let data_id = pdfh(html, '#allchapters&&data-mid');
+            //log(data_id);
+            let html1 = request(`https://api-get.mgsearcher.com/api/manga/get?mid=${data_id}&mode=all`, {headers: {Referer: 'https://godamh.com/'}});
+            let json = JSON.parse(html1);
+            //log(json);
+            let list1 = [];
+            let url_prefix = input.replace('chapterlist', 'manga');
+            json.data.chapters.forEach(it => {
+                let _tt = it.attributes.title;
+                let _slug = it.attributes.slug;
+                let _id = it.id;
+                list1.push(_tt + '$' + _id + '@@' + url_prefix + '/' + _slug);
+            });
+            LISTS = [list1];
+        }),
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href',
+        list_url_prefix: '',
+    },
+    搜索: '*',
+}

@@ -1,1 +1,21 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+Wuh+iIquW9seinhicsCiAgICBob3N0OiAnaHR0cDovL3l1aGFuZzAwNy5jb20nLAogICAgdXJsOiAnL2luZGV4LnBocC92b2Qvc2hvdy9pZC9meWNsYXNzL3BhZ2UvZnlwYWdlLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnL2luZGV4LnBocC92b2Qvc2VhcmNoL3BhZ2UvZnlwYWdlL3dkLyoqLmh0bWwnLAogICAgY2xhc3NfcGFyc2U6ICcubmF2LW1lbnUtaXRlbXMmJmxpO2EmJlRleHQ7YSYmaHJlZjsvKFxcZCspXC5odG1sJywKICAgIGNhdGVfZXhjbHVkZTogJ+S7iuaXpeabtOaWsHzng63mppx86LWE6K6vJywKICAgIOaQnOe0ojogJy5tb2R1bGUtaXRlbXMgLm1vZHVsZS1zZWFyY2gtaXRlbTsudmlkZW8tc2VyaWFsJiZ0aXRsZTtpbWcmJmRhdGEtc3JjOy52aWRlby1zZXJpYWwmJlRleHQ7LnZpZGVvLXNlcmlhbCYmaHJlZicsCiAgICDmjqjojZA6ICcubW9kdWxlLWxpc3Q7Lm1vZHVsZS1pdGVtcyYmLm1vZHVsZS1pdGVtO2EmJnRpdGxlO2ltZyYmZGF0YS1zcmM7Lm1vZHVsZS1pdGVtLXRleHQmJlRleHQ7YSYmaHJlZicsCiAgICBkb3VibGU6IHRydWUsIC8vIOaOqOiNkOWGheWuueaYr+WQpuWPjOWxguWumuS9jQogICAgdGFiX3JlbW92ZTogWydXSi3oia8nLCAnWUsnXSwKICAgIOS4gOe6pzogJy5tb2R1bGUtaXRlbXMgLm1vZHVsZS1pdGVtO2EmJnRpdGxlO2ltZyYmZGF0YS1zcmM7Lm1vZHVsZS1pdGVtLXRleHQmJlRleHQ7YSYmaHJlZicsCiAgICDkuoznuqc6IHsKICAgICAgICAidGl0bGUiOiAiaDEmJlRleHQ7LnRhZy1saW5rJiZUZXh0IiwKICAgICAgICAiaW1nIjogIi5tb2R1bGUtaXRlbS1waWMmJmltZyYmZGF0YS1zcmMiLAogICAgICAgICJkZXNjIjogIi52aWRlby1pbmZvLWl0ZW1zOmVxKDApJiZUZXh0Oy52aWRlby1pbmZvLWl0ZW1zOmVxKDEpJiZUZXh0Oy52aWRlby1pbmZvLWl0ZW1zOmVxKDIpJiZUZXh0Oy52aWRlby1pbmZvLWl0ZW1zOmVxKDMpJiZUZXh0IiwKICAgICAgICAiY29udGVudCI6ICIudm9kX2NvbnRlbnQmJlRleHQiLAogICAgICAgICJ0YWJzIjogIi5tb2R1bGUtdGFiLWl0ZW0tLXNtYWxsIiwKICAgICAgICAibGlzdHMiOiAiLm1vZHVsZS1wbGF5ZXItbGlzdDplcSgjaWQpJiYuc2Nyb2xsLWNvbnRlbnQmJmEtLWVtIgogICAgfSwKfQ==
+var rule = {
+    title: '宇航影视',
+    host: 'http://yuhang007.com',
+    url: '/index.php/vod/show/id/fyclass/page/fypage.html',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    class_parse: '.nav-menu-items&&li;a&&Text;a&&href;/(\\d+)\.html',
+    cate_exclude: '今日更新|热榜|资讯',
+    搜索: '.module-items .module-search-item;.video-serial&&title;img&&data-src;.video-serial&&Text;.video-serial&&href',
+    推荐: '.module-list;.module-items&&.module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
+    double: true, // 推荐内容是否双层定位
+    tab_remove: ['WJ-良', 'YK'],
+    一级: '.module-items .module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
+    二级: {
+        "title": "h1&&Text;.tag-link&&Text",
+        "img": ".module-item-pic&&img&&data-src",
+        "desc": ".video-info-items:eq(0)&&Text;.video-info-items:eq(1)&&Text;.video-info-items:eq(2)&&Text;.video-info-items:eq(3)&&Text",
+        "content": ".vod_content&&Text",
+        "tabs": ".module-tab-item--small",
+        "lists": ".module-player-list:eq(#id)&&.scroll-content&&a--em"
+    },
+}

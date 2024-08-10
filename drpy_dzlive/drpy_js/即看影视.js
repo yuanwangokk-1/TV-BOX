@@ -1,1 +1,31 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+WNs+eci+W9seinhicsCiAgICBob3N0OiAnaHR0cHM6Ly93d3cuamt2LmFwcCcsCiAgICB1cmw6ICcvc2hvdy9meWNsYXNzLS0tLS0tLS1meXBhZ2UtLS0uaHRtbCcsCiAgICBzZWFyY2hVcmw6ICcvc2VhcmNoLyoqLS0tLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKICAgIGNsYXNzX3BhcnNlOiAnLm5hdl9saXN0JiZsaTthJiZ0aXRsZTthJiZocmVmOy4qLyguKj8pXC5odG1sJywKICAgIGNsYXNzX25hbWU6ICfnn63liacnLAogICAgY2xhc3NfdXJsOiAnNTMnLAogICAgY2F0ZV9leGNsdWRlOiAn5o6S5ZCNfOaYjuaYn3zkuJPpopgnLAogICAgc2VhcmNoYWJsZTogMiwKICAgIHF1aWNrU2VhcmNoOiAwLAogICAgZmlsdGVyYWJsZTogMCwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdNT0JJTEVfVUEnLAogICAgfSwKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBsYXp5OiAnJywKICAgIGxpbWl0OiA2LAogICAg5o6o6I2QOiAnLmNib3hfbGlzdDsqOyo7KjsqOyonLAogICAgZG91YmxlOiB0cnVlLAogICAg5LiA57qnOiAndWwudm9kbGlzdCYmbGk7YSYmdGl0bGU7YSYmZGF0YS1iYWNrZ3JvdW5kLWltYWdlOy50ZXh0X3JpZ2h0JiZUZXh0O2EmJmhyZWYnLAogICAg5LqM57qnOiB7CiAgICAgICAgdGl0bGU6ICdoMiYmVGV4dDsuY29udGVudF9kZXRhaWw6ZXEoMSkmJnVsJiZsaSYmYTplcSgyKSYmVGV4dCcsCiAgICAgICAgaW1nOiAnLnZvZGxpc3RfdGh1bWImJmRhdGEtYmFja2dyb3VuZC1pbWFnZScsCiAgICAgICAgZGVzYzogJzsuY29udGVudF9kZXRhaWw6ZXEoMSkmJnVsJiZsaSYmYTplcSgzKSYmVGV4dDsuY29udGVudF9kZXRhaWw6ZXEoMSkmJnVsJiZsaSYmYSYmVGV4dDs7JywKICAgICAgICBjb250ZW50OiAnLmNvbnRlbnRfZGVzYyYmc3BhbiYmVGV4dCcsCiAgICAgICAgdGFiczogJy5wbGF5X3NvdXJjZV90YWImJmEnLAogICAgICAgIGxpc3RzOiAnLmNvbnRlbnRfcGxheWxpc3Q6ZXEoI2lkKSBsaScsCiAgICB9LAogICAg5pCc57SiOiAnKicsCn0=
+var rule = {
+    title: '即看影视',
+    host: 'https://www.jkv.app',
+    url: '/show/fyclass--------fypage---.html',
+    searchUrl: '/search/**----------fypage---.html',
+    class_parse: '.nav_list&&li;a&&title;a&&href;.*/(.*?)\.html',
+    class_name: '短剧',
+    class_url: '53',
+    cate_exclude: '排名|明星|专题',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: '.cbox_list;*;*;*;*;*',
+    double: true,
+    一级: 'ul.vodlist&&li;a&&title;a&&data-background-image;.text_right&&Text;a&&href',
+    二级: {
+        title: 'h2&&Text;.content_detail:eq(1)&&ul&&li&&a:eq(2)&&Text',
+        img: '.vodlist_thumb&&data-background-image',
+        desc: ';.content_detail:eq(1)&&ul&&li&&a:eq(3)&&Text;.content_detail:eq(1)&&ul&&li&&a&&Text;;',
+        content: '.content_desc&&span&&Text',
+        tabs: '.play_source_tab&&a',
+        lists: '.content_playlist:eq(#id) li',
+    },
+    搜索: '*',
+}

@@ -1,1 +1,69 @@
-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
+var rule = {
+    title: '美剧星球',
+    host: 'https://www.kmeiju.cc',
+    url: '/Show/fyfilter.html',
+    searchUrl: '/Search/**----------fypage---.html',
+    searchable: 2,
+    quickSearch: 0,
+    "filterable": 1,
+    "filter": "H4sIAAAAAAAAA+2Xz08aQRTH/5c9e9hd/H20sWkTo5eaNGk4ePDU1lubNIYERRSoATStVqFSbQloRUGJwUXwn9mdhf+iu8z7MbbUkMhxb/P5vn0z+97Me7O7qhna9JtV7e3yJ21ac2tN5+izNqKtLL1fVvnj0rsPy70HVzzZiZe7sbIve2BokRGQU2W7lQd5nOW9vJMsgTxBspuoiVgc5EmWSzvObRPkKZLFWlZE93BJnSdPlngWg99FJL7ZVhJ1k/W7306rBrrJurvW7h62UQ9pkbBvkVmhNSArvOb/s0ITz8w8A8kfofpiZgFUf0Tq4twiyv4Q9YX5WZD9Earzs6+ez718DRakvpsB0HdHAPpuCwDZUpdu6wxtEvpuBAAlPZYS64dgA+i7sQBkWz9393bQJoHWK27xOQEYJPYH5wuA/DZ3uwen6CeBbBc3jlVBm4S+hweA/LLbIkq5lvDgcN3W7WZLOVzIgxwuUzdH8cz6Q0UPsR5SdZN1U9UN1g1V11nXFd2YIt2YUvVJ1idVfYL1CVUfZ31c1cdYH1N1jtdQ4zU4XkON1+B4DTVeg+M11HgNjtfvMuFIeEQzn9gheV0n1+LCU95TNC6dTBV1jkvsF7sFPJBKHsR5yW2nUee8iesqz2/qQRcLuljQxYIuRrrO8epqvDrHq6vx6hyvrsarc7y6Gq/O8XpD2T1DSvd8Ug/qRpNuKQoqANdmXGwUqDZ7gLbOxX2nmgAbAPntVkSqiH4SuPnGRaOBNgn0LoVr+zaL7yKB6qid7v7EdwEgm3XmXByhTQKtl7vqJC1cTwL5fSmIOtW7BL48GiKRsa1dr0egtypRHuonbjODeZBAc9TWO2vb6C1hiPUd1NNQ6ol1jtcbyjobHVadPVZLj907bqzSOcb6BKA502U3u4lzSiBb9sg9p/tRwiB3WSf7vZPGXzwAmvPHsZPDew5gkHtV5C3vzxH9JNB691muMIC+v5sAtF7VS1Md15Og2orXis0Dyuevtn2H3xsA5JcuOIkc+klAm21dORXsTQA0Zy4lDrDHAHBeas79PuWlB2SL39hN/L4BCO7/oF8NcP+bxrAak5sv2JbF3wDM6vXa+uomt5QbVvI/T/ieydO/nwN1sJ+T/j9Fna0zd+MG24QELttNJ3NFZdsDbpEnbv2EWmQPghILSmyQEhvztj8c+QN+mQHlzBUAAA==",
+  "filter_url": "{{fl.类型}}---{{fl.剧情}}-----fypage---{{fl.年份}}",
+  "filter_def": {
+    "1": {
+      "类型": "1"
+    },
+    "2": {
+      "类型": "2"
+    },
+    "3": {
+      "类型": "3"
+    },
+    "4": {
+      "类型": "4"
+    },
+    "21": {
+      "类型": "21"
+    },
+    "25": {
+      "类型": "25"
+    }
+  },
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: '.navbar-nav&&li;a&&Text;a&&href;(\\d+)',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        function getrandom(str) {
+            let string = str.substring(8, str.length);
+            let substr = atob(string);
+            return decodeURIComponent(substr.substring(8, substr.length - 8))
+        }
+
+        var src = jsp.pdfh(request(input), 'iframe&&src')
+        log(src)
+        var pconfig = jsp.pdfh(request(HOST + src), 'body&&script,0&&Html').match(/config = {[\s\S]*?}/)[0];
+        log(pconfig)
+        var config = {};
+        eval(pconfig);
+        var purl = config.url
+        log(purl)
+        input = {parse: 0, url: purl, js: 0};
+    }),
+    double: true,
+    推荐: '*',
+    一级: 'body&&.col-sm-3;h6&&a&&Text;img&&data-original;.text-truncate&&Text;a&&href',
+    二级: {
+        title: 'h1&&Text;.info.info-tags&&Text',
+        img: 'img&&data-original',
+        desc: '.excerpt-remark&&Text;.excerpt-year&&Text;.excerpt-area&&Text;.info.info-stars&&Text;.info.info-directed&&Text',
+        content: '.info-content&&Text',
+        tabs: '.swiper-wrapper a',
+        lists: '#playsx:eq(#id)&&a',
+        list_text: 'body&&Text',
+        list_url: 'a&&href'
+    },
+    搜索: '*',
+}

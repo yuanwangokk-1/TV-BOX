@@ -1,1 +1,31 @@
-h36A5I5KdeB29zb3iwNWV1EAw0AReVKkvtcVRvGmIbZzDg8fILMl0vZ8u3wxnVnVFLuge1fDnKox3Bpf+R/0y+4eQR1I+eY/1NAIxa8aqSPVXFpCZgaSAo2/Igfu1IWEqpiAEuBu7avidfRtYPMX2yKIvmek8DZYC28w/+JVhJIahHtNXzedPRAtCUOx8u1JGu6UclMgtDGb8czclHTzXO0PgrqYw7Z0Mg27+fTIaohEWxiylQrmXj+aNchLgE26OACxN2r/Ar/lXTbzqAp06BHBQsdMDjar+8ntoADC79xRBvw5haF91VvrUzsvyGwtkh5O1gHztHwVd90+LvBGsX3KfJ4C+XJevRN/8akLuT6acW2zkd1f2FYXZ0NtgB1mP/VvU+Llj5cIiWJuo784opu7mTdeBAU9OslmQeO3Kr9S0Mvt9114lpurYvS7I2TL0s+5gqZRGm5xaCvZ1hdjvXsqlfHn6C8CmXmxAXGVvzOpucATN7kKFZS97r5cILQAh6l/u6qnm40xSF27FPjDcXdj+fDFfzl6PCH+PGmR4IfKOWT1cElVmBfdkOfQPyu5kNbDs1dJDzxiHy7bLgd0LQrmAVbYEN32bN5RSxlHB3NhLdCkGa4CIPK4P5xnoP2Xq/K48KmLYaFA8bBb83STeIoHgT4MZIRzue/9myzmlu4g/jH+8sC9qeOjYRCoyrQHDFveNaJUs1Ar/eoE6NA4cAXTVyJclXMa8LmYmckP3jtAcpPQ6MF6cH87BT13LaAzRbEHQAsFSahmzJKkJc/heburyyHgV9E3LiUlC3PQvDVkzdFJLdkhxxmz8kYV6UmleTl9D+FLW3RCV0UKSVW5o6BAZgkPWr5ZbrLMV5sWzhAM3VeAXi1k0IAvEshkD34X9twQpWxDuu6MYMJfvO2LXiM4fG3cWZjv1+7dLf6AnaYi5/m+FcVIw0GktiZ61gqu9bQFyERS9Vejf1xceJaNQReaUtM8So4Dld/3lq8KuOMtr/9q2nwYX9GcpRLwhTaHpakpc831vccO3VX4WfJcukZs5wyB7IU4bVlfPgTBM+BhnTygpvr1rT4Hjexqv+p/+7KE5J0pNQtG8BNoDELUsDJYa1LxhAx/egYeEGTxojxZw6OPP9iHhiHOsW4sTHsmxBRQ/XEjduaT+hXP5k4zMq1JK0ncLtDZi4W2eelva1OhciAJAB3TKCA1xT0kUdIR8CyteaxPIvEZPNYk0v2ZadC2VBT8M9C1vcEitUkdrKJAS+iRXuTFXONUjx7BRTUjaVc/io9s+7pUObIC8EokqCITmACH2rtzc8kuVJyQONpxS6dFBuDYfVG+NNWTM0uEelczPVN+dysbPEcDTR9hUwRe7xWnnJq+35sLyGdXku7IEJWN8II3z3/ALiW581SmO5+I87T04kQa3kvC0S1mjvVKfLZFvmc+4GHgn3gN7Ws=
+var rule = {
+    模板: '自动',
+    模板修改: $js.toString(() => {
+        muban.自动.二级.tabs = '.module-tab-item.tab-item';
+        muban.自动.二级.img = '.lazyload&&src';
+        muban.自动.二级.tab_text = 'div--small&&Text';
+    }),
+    title: '奈飞中文[自动]',
+    host: 'https://www.naifei.io',
+    url: '/vodshow/id/fyclass/page/fypage.html',
+    class_parse: '.nav&&ul&&li;a&&Text;a&&href;.*/(.*?).html',
+    searchUrl: '/index.php/rss/index.xml?wd=**',
+    搜索: $js.toString(() => {
+        let html = request(input);
+        let items = pdfa(html, 'rss&&item');
+        // log(items);
+        let d = [];
+        items.forEach(it => {
+            it = it.replace(/title|link|author|pubdate|description/g, 'p');
+            let url = pdfh(it, 'p:eq(1)&&Text');
+            d.push({
+                title: pdfh(it, 'p&&Text'),
+                url: url,
+                desc: pdfh(it, 'p:eq(3)&&Text'),
+                content: pdfh(it, 'p:eq(4)&&Text'),
+                pic_url: "",
+            });
+        });
+        setResult(d);
+    }),
+}

@@ -1,1 +1,36 @@
-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
+muban.mxone5.二级.title = 'h1&&Text;.video-info-aux&&Text';
+muban.mxone5.二级.desc = '.video-info-items:eq(4)&&Text;;;.video-info-actor:eq(1)&&Text;.video-info-actor:eq(0)&&Text';
+var rule = {
+    title: '酷云影视',
+    模板: 'mxone5',
+    host: 'https://sc1080.top',
+    url: '/index.php/vod/show/id/fyfilter.html',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.cateId}}{{fl.area}}{{fl.by}}{{fl.class}}{{fl.lang}}{{fl.letter}}/page/fypage{{fl.year}}',
+    filter: 'H4sIAAAAAAAAA+2a2U4bSRSG38XXjNxNyHqXfd/3jHLhRNZMNAwjATMSipAAY8cQsA0iOI7NlrAPxmYZBpoxfhlXt/0W03aVT1f/jUQjcYNUl/7+36eqThXtc6j+GNADl37+GPgt3BO4FHjfHurqCrQEOkK/h+2PbGjJjETtz3+F2v8MN3wddRxdrkWW69j+EOhtEXQyZ/sFDTYiBQVrWqz4hojnWARrWsz+lNk36bYIRgMNL1dKORiIMxpoaYzt7cNAnFEUWpsUhTOaS/xrxRiCuXDWtFTzi2xk1W0RjOYyXLBKYBFMWpE1se9ZUZ2RZeGTZ0WC0XTzi5WDWZguZxQlNl7LrEAUzijK9Kq9RojC2TH2yBxYsybHwMIZWSLD5sA3sHBGqdtPsugupI6zpqU2NW5+XXBbBKOBJj9VhwwYiDPKy8G6NfEPK21AagiTMTlf/YGnhjOyJGIsuQkWzujUlFP29sKp4czZqZw5NYY71WBkGSxbf8PSBaMElsas/dxhS3MpvW/rX+CPgFBnOCQ9AXJFNmL4fQLML9UyseY49UBBgWi3FjPmbsHlEMhJcNHcO3DH4IjWdJBg2ZLLIRBt+NYXdAhEG/B5Ax0CUYz0gplbc8fgiNYys4IxBHJO1b/oEMiZadE706IrxmiRGYvuGBxRjMGknWUWX3GHIUprXihbybw1lHEvm6jzMJo1P5ftL7sHJUq+6E5lf9Jt4kg+Tu2hjl+c41Qt5KvLfX6PU7Zk+5sD1AMFBZK2ER0C0WHZnEeHQLSN6RIbTaPJodJ2e0wcSUcGHQJJB9Pj4Eg6Mp41cySlna1H3A6O5LT3hEOdTtrN9E4tve0z7a1a65lm+HqYYANIaiuqrbKqo6rLqoaqJqn6RVBtIKkXUL0gq+dRPS+r51A9J6tnUT0rq22otskq5kqXc6VjrnQ5VzrmSpdzpWOudDlXGuZKk3OlYa40OVcaZkOTs6FhNjQ5Gxpmwwauv/dwd3dYOnosnzYLoz6P3mU61o0owcukXAHlCilXQblKyjVQrpFyHZTrpNwA5QYpN0G5ScotUG6RchuU26TcAeUOKXdBuUvKPVDukXIflPukPADlASkPQXlIyiNQHpHyGJTHpDwB5QkpT0F5SsozUJ6R8hyU56S8AOUFKS9BeUnKK1BekfIalNekvAHlDSnaTxdBqxP5T+Bdj/TkTYwzI+k5/s4DuR7nXU+w+4Ntbw5RMQyzOCGpv37o7nJ+9AqDLB6T1K73f3SG6zN42xJoPalm7ug610d3xAtx1r/DIsnDSnShHKODZOs7zMiDhbPj9VtHdZA++i0fHaSPXsBHj1PZm/P0AoI5zVTUzBRgMzijuXyJeRo7waR2wbMBgh1e9Yko3rJPdRGqi1BdhOoiVBehugjVRaguQnURp6mLOHNCXUStb8ha6oPKnzO5cB2c8RauNqOprperxbjbIhhFGc+bw/CvcMGc39WouQt1tmDOj/NWZS8F0+VMKhtrP2C6gpHFWGXr02DhjOaS3fTeSHBGUSZmzG28weKMouzumvFkxRj33CW4FErj9ne7r4A0ckYRNwaq/SMQizNV3KviXhX3qrhXxb0q7lVxr4p7Vdyf1uK+7YSKex+Vu4/XsKxIvjoHLYJgNFBi2UrFYCDOyJKattbwdSPO6Efx6FefqqmpagJuNASjgWbnWBbuHwRziqMjLxfMnOF9x4ozmsvRrwj5uIBhRTvZ2zAXzmTLwpbXYjPao/mDyn/wppZgFCUxw+JZiMKZc2Q3WR66K8FooOywmYG+SDAnuxusnMbsNtjhVae6olBdjOpiAqqLUV2M6mJUF6O6GNXFnP4upvd/koFWT7cyAAA=',
+    filter_def: {
+        1: {cateId: '1'},
+        2: {cateId: '2'},
+        3: {cateId: '3'},
+        4: {cateId: '4'}
+    },
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    headers: {
+        'User-Agent': 'PC_UA',
+    },
+    class_parse: '.nav-menu-items&&li:lt(5);a&&Text;a&&href;/(\\d+).html',
+    lazy: `js:
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        if (html.encrypt == "1") {
+            url = unescape(url)
+        } else if (html.encrypt == "2") {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4/.test(url)) {
+            input = url
+        } else {
+            input
+        }
+    `,
+}

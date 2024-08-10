@@ -1,1 +1,11 @@
-qz2VfkB3O9fqiff5MjJa/NOxIkzNuMv7K54K23vKJOSw++yJ8kLPZGH7bSG3+EXPHtsnVBmFYEG//5tWToijkxfdHGHVqoK2oq34UXrPH4XoX01t+fZJ6skrjGglXWQ6LCr4BaZYYaeSeiEhk66XaJFMJALOYxtGcyoh/KcSqFFNBA4VCcO2qVtwBlBbwR2IYyI3sqzHUfD/2U4PVG/9i7hoSOl4rhYkb6VupTYDkHDCvWGQXC+lL6p1ZvaBDdNljxtb1jkwaO92DCydyDjtClWnW5RVR+DeoCt0AoO8SHt2lIg6Uxv5Gmupcu5GyIibEl0kSE+B1Jzi4lABZ0rQS6ibXjRwUUBiIKSywRqGOa4LbVIc9zAMnAQFmNHivUGsIDl0bL437dN1WN6TYyXOadEn/pZOOSUxvMh8Jxi1EF4=
+Object.assign(muban.首图2.二级, {
+    tabs: '.stui-pannel_hd h3',
+});
+var rule = {
+    模板: '首图2',
+    title: '看戏网',
+    host: 'https://www.tv262.com',
+    url: '/vodshow/fyclass--------fypage---.html',
+    searchUrl: 'vodsearch/**----------fypage---.html',
+    cate_exclude: '专题',
+}

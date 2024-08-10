@@ -1,1 +1,25 @@
-dmFyIHJ1bGUgPXsKICAgICAgICAgICAgdGl0bGU6ICfmppzkuIDnn63liacnLAogICAgICAgICAgICBob3N0OiAnaHR0cHM6Ly9kdWFuanV1LmNvbScsCiAgICAgICAgICAgIHVybDogJy92b2RzaG93L2Z5Y2xhc3MtLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKICAgICAgICAgICAgc2VhcmNoVXJsOiAnL3ZvZHNlYXJjaC8tLS0tLS0tLS0tLS0tLmh0bWw/d2Q9Kiomc3VibWl0PScsCiAgICAgICAgICAgIHNlYXJjaGFibGU6IDIsLy/mmK/lkKblkK/nlKjlhajlsYDmkJzntKIsCiAgICAgICAgICAgIHF1aWNrU2VhcmNoOiAwLC8v5piv5ZCm5ZCv55So5b+r6YCf5pCc57SiLAogICAgICAgICAgICBmaWx0ZXJhYmxlOiAwLC8v5piv5ZCm5ZCv55So5YiG57G7562b6YCJLAogICAgICAgICAgICBjbGFzc19wYXJzZTogJy5uYXYtbWVudS1pdGVtcyYmbGk7YSYmVGV4dDthJiZocmVmOy4qLyguKj8pLmh0bWwnLAogICAgICAgICAgICBwbGF5X3BhcnNlOiB0cnVlLAogICAgICAgICAgICBsYXp5OiAnJywKICAgICAgICAgICAgbGltaXQ6IDYsCiAgICAgICAgICAgIOaOqOiNkDogJy5tb2R1bGUtbGlzdDsubW9kdWxlLWl0ZW1zJiYubW9kdWxlLWl0ZW07YSYmdGl0bGU7aW1nJiZkYXRhLXNyYzsubW9kdWxlLWl0ZW0tdGV4dCYmVGV4dDthJiZocmVmJywKICAgICAgICAgICAgZG91YmxlOiB0cnVlLCAvLyDmjqjojZDlhoXlrrnmmK/lkKblj4zlsYLlrprkvY0KICAgICAgICAgICAg5LiA57qnOiAnLm1vZHVsZS1pdGVtcyAubW9kdWxlLWl0ZW07YSYmdGl0bGU7aW1nJiZkYXRhLXNyYzsubW9kdWxlLWl0ZW0tdGV4dCYmVGV4dDthJiZocmVmJywKICAgICAgICAgICAg5LqM57qnOiB7CiAgICAgICAgICAgICAgICAidGl0bGUiOiAiaDEmJlRleHQ7LnRhZy1saW5rJiZUZXh0IiwKICAgICAgICAgICAgICAgICJpbWciOiAiLm1vZHVsZS1pdGVtLXBpYyYmaW1nJiZkYXRhLXNyYyIsCiAgICAgICAgICAgICAgICAiZGVzYyI6ICIudmlkZW8taW5mby1pdGVtczplcSgwKSYmVGV4dDsudmlkZW8taW5mby1pdGVtczplcSgxKSYmVGV4dDsudmlkZW8taW5mby1pdGVtczplcSgyKSYmVGV4dDsudmlkZW8taW5mby1pdGVtczplcSgzKSYmVGV4dCIsCiAgICAgICAgICAgICAgICAiY29udGVudCI6ICIudm9kX2NvbnRlbnQmJlRleHQiLAogICAgICAgICAgICAgICAgInRhYnMiOiAiLm1vZHVsZS10YWItaXRlbSIsCiAgICAgICAgICAgICAgICAibGlzdHMiOiAiLm1vZHVsZS1wbGF5ZXItbGlzdDplcSgjaWQpJiYuc2Nyb2xsLWNvbnRlbnQmJmEiCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIOaQnOe0ojogJy5tb2R1bGUtaXRlbXMgLm1vZHVsZS1zZWFyY2gtaXRlbTthJiZ0aXRsZTtpbWcmJmRhdGEtc3JjOy52aWRlby1zZXJpYWwmJlRleHQ7YSYmaHJlZicsCiAgICAgICAgfQ==
+var rule ={
+            title: '榜一短剧',
+            host: 'https://duanjuu.com',
+            url: '/vodshow/fyclass--------fypage---.html',
+            searchUrl: '/vodsearch/-------------.html?wd=**&submit=',
+            searchable: 2,//是否启用全局搜索,
+            quickSearch: 0,//是否启用快速搜索,
+            filterable: 0,//是否启用分类筛选,
+            class_parse: '.nav-menu-items&&li;a&&Text;a&&href;.*/(.*?).html',
+            play_parse: true,
+            lazy: '',
+            limit: 6,
+            推荐: '.module-list;.module-items&&.module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
+            double: true, // 推荐内容是否双层定位
+            一级: '.module-items .module-item;a&&title;img&&data-src;.module-item-text&&Text;a&&href',
+            二级: {
+                "title": "h1&&Text;.tag-link&&Text",
+                "img": ".module-item-pic&&img&&data-src",
+                "desc": ".video-info-items:eq(0)&&Text;.video-info-items:eq(1)&&Text;.video-info-items:eq(2)&&Text;.video-info-items:eq(3)&&Text",
+                "content": ".vod_content&&Text",
+                "tabs": ".module-tab-item",
+                "lists": ".module-player-list:eq(#id)&&.scroll-content&&a"
+            },
+            搜索: '.module-items .module-search-item;a&&title;img&&data-src;.video-serial&&Text;a&&href',
+        }

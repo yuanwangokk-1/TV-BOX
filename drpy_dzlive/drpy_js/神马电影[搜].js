@@ -1,1 +1,11 @@
-h36A5I5KdeB29zb3iwNWVx0m7uwstVbsPzuQmO9TORKWsPcBbNgA54BAedzNiFtNjffUVMDkFoHIjJtHZriiQwB1vzJiLqE/9nip4F5hdJr4AIWcVHBk5nQVnheGoGy4YPvbZ1Ux04WzXu7vSre7/a68/81mjyAjHu6+MbjybWVQdAS9I9PK4k38VSb6oKQJ8YKtSnoG1WMFnLhTSqbNsBBfRAtZ7yJoL2PDtJdhKS6pRVIL0PRQq/woy3aSL+0xo8Vi/8y66kHBHl5YEmYb+MTlYXdTQlID1DZZWXR9AMprvR1GK/PromLTdAR2QhInwkrnBNfXiBF3lF3q6pnUBFU1ZfSWnYVdTT6XveEzuKsN61Von9UcSE61JRisRv0kVYTx6j5JJPC5CltyMMhj/Hoz2MBuwMiT67G66CyVnpzjitdTa1RvM3y0OscVm1KWZ8eQKHRODDytTcTZhBD3ityqlV/BI6Q1pTEGzKmIhWjkGQM0cDQ7nWilKkp6eCKJIuYdMs8g9DM5yafqXOSj4r9kzb6Ol+9YHMk7ttXIABs=
+var rule = {
+    模板: 'mxone5',
+    title: '神马电影[搜]',
+    host: 'https://www.375km.com',
+    url: '/vodshow/fyclass--------fypage---.html',
+    class_parse: 'ul.grid-items&&li;a&&Text;a&&href;(\\d+).html',
+    detailUrl: '/voddetail/fyid.html',
+    // searchUrl: '/vodsearch/-------------.html?wd=**',
+    searchUrl: '/index.php/ajax/suggest?mid=1&wd=**',
+    搜索: 'json:list;name;pic;en;id',
+}

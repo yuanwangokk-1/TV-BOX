@@ -1,1 +1,11 @@
-N+7eQjuVB6YRMQK3E7jVrgT0+jDpY41SabHB6GDnlUv7eJ+w3t8DtYDoDi4b5T5ntJldyMiLmzUZj4NAHHdDXQ/NHzYq6W9Avas7rpFZVTlB3y4K46HEexh5fK/JtMh7PB/yS3PH95qPust3+fI3iXJGkMI578JcO+YLvrikLnp3Mx6riDn7szIc2XMxSEPvSj31yJwB4W1ETtS92HnBdbLPBVUV2jiljma/VvsZgiHyoX3Ehh8RUkXWSydzQTQ17MuXW1HqYcGj+lcuhNVlZBE2LUCGv8L6lKejxSF4H1lb8z4JoDFoktdKNm0FmmyZSBj2gED6WlTsguS8biPIuFR+qXyrg83ue2pBDmKC5ddPfyk4/jUk55SOGO+tchEz5EuSOLfOUWMUFAErvydPkwLSPrYjDiLHwr77SrWrQ8xSK1fJtTwMtu4b1OKWjVMl
+// https://caiji.moduapi.cc/api.php/provide/vod/?ac=list
+
+var rule = {
+    模板: '采集1',
+    title: '魔都资源[资]',
+    host: 'https://caiji.moduapi.cc',
+    // homeTid: '13',
+    homeTid: '',
+    cate_exclude: '电影片|连续剧|综艺片|动漫片|电影解说|体育|演员|新闻资讯',
+    parse_url: '',
+}

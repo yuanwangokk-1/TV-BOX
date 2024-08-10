@@ -1,1 +1,7 @@
-dmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICdteG9uZTUnLAogICAgdGl0bGU6ICflpbbni5flvbHop4Zb5oWiXScsCiAgICBob3N0OiAnaHR0cHM6Ly9kcy5uYWlnb3U4OC50b3AvJywKICAgIHVybDogJy9pbmRleC5waHAvdm9kL3R5cGUvaWQvZnljbGFzcy9wYWdlL2Z5cGFnZS5odG1sJywKICAgIHNlYXJjaFVybDogJy9pbmRleC5waHAvdm9kL3NlYXJjaC9wYWdlL2Z5cGFnZS93ZC8qKi5odG1sJywKfQ==
+var rule = {
+    模板: 'mxone5',
+    title: '奶狗影视[慢]',
+    host: 'https://ds.naigou88.top/',
+    url: '/index.php/vod/type/id/fyclass/page/fypage.html',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+}

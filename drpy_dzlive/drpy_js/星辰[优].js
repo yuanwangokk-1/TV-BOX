@@ -1,1 +1,45 @@
-T2JqZWN0LmFzc2lnbihtdWJhbi7pppblm74yLuS6jOe6pywgewogICAgZGVzYzogJy5kYXRhOmVxKDApJiZUZXh0Ozs7LmRhdGEtLXNwYW46ZXEoMikmJlRleHQ7LmRhdGEtLXNwYW46ZXEoMSkmJlRleHQnLAogICAgdGFiczogJy5zdHVpLXBhbm5lbF9faGVhZCBoMycsCn0pOwp2YXIgcnVsZSA9IHsKICAgIHRpdGxlOiAn5pif6L6wW+S8mF0nLAogICAg5qih5p2/OiAn6aaW5Zu+MicsCiAgICBob3N0OiAnaHR0cDovL3d3dy54aW5nY2hlbnd1LmNvbScsCiAgICAvLyB1cmw6Jy9meWNsYXNzL2luZGV4ZnlwYWdlLmh0bWxbL2Z5Y2xhc3MvaW5kZXguaHRtbF0nLAogICAgdXJsOiAnL2Z5ZmlsdGVyL2luZGV4ZnlwYWdlLmh0bWxbL2Z5ZmlsdGVyL2luZGV4Lmh0bWxdJywKICAgIGZpbHRlcmFibGU6IDEsLy/mmK/lkKblkK/nlKjliIbnsbvnrZvpgIksCiAgICBmaWx0ZXJfdXJsOiAne3tmbC5jYXRlSWR9fScsCiAgICB0YWJfZXhjbHVkZTogJ+acrOWRqOeDremXqHzmnIDov5Hmm7TmlrAnLAogICAgZmlsdGVyOiAnSDRzSUFBQUFBQUFBQTZ0V1NzbE16S3ZNekV0WHNvcXVWc3BPclZTeVVrcE9MRW4xVEZIU1VjcEx6RTBGOHA5MnREM2Z1QnZJTDB2TUtVMEZLOHdEQ2JldWVObThBaVFNNU1DTnFkV0J5bmF0ZUxKM3p2UE9kcGlDL0x6MHF0TDhBcUE2dUpybkhSdWZOYmNpMUNSbUZnS05RRld5Zk9MVG5ic1JTckpUTTBvVDgxQ1VQR3VjOEt4aEdwSVNvRTFKcFNoS25rNmI4N1J6T1VKSlJXWVdtb0xPNVNndXlTcEZ1Q1MyTmxZSDdML2lES0EyS29RVHhCeTQxYlAzUHRtMUhPZ0FxSXIwMHZ6a2pNUThKQlhQZHF4LzJyOEJvYUlrTVMrOUpCSFpqR2RybGovZjE0ZFFrVithbTRvaVAzM3B5L2tyRWZKRm1WQWJnSDZyQlFCb08wVWFCQUlBQUE9PScsCiAgICBmaWx0ZXJfZGVmOiB7CiAgICAgICAgZGlhbnlpbmc6IHtjYXRlSWQ6ICdkaWFueWluZyd9LAogICAgICAgIGRpYW5zaGlqdToge2NhdGVJZDogJ2RpYW5zaGlqdSd9LAogICAgICAgIHpvbmd5aToge2NhdGVJZDogJ3pvbmd5aSd9LAogICAgICAgIGRvbmdtYW46IHtjYXRlSWQ6ICdkb25nbWFuJ30KICAgIH0sCiAgICBsYXp5OiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIC8vIOWxj+iUveWbvueJh29uZXJyb3Lml6DpmZDor7fmsYLpl67popgKICAgICAgICAvLyBsZXQgaW5pdF9qcyA9IGAKICAgICAgICAvLyB2YXIgaW1nVGltZXIgPSBzZXRJbnRlcnZhbChmdW5jdGlvbigpewogICAgICAgIC8vICAgICBpZih0eXBlb2YoJCkhPSd1bmRlZmluZWQnKXsKICAgICAgICAvLyAgICAgICAgIGxldCBjc3MgPSAkKCcubGF6eWxvYWRbYWx0PSLmiJDkurrmt7HlpJznpo/liKkiXScpOwogICAgICAgIC8vICAgICAgICAgaWYoY3NzLmxlbmd0aCA+IDApewogICAgICAgIC8vICAgICAgICAgICAgIGNzcy5hdHRyKCdvbmVycm9yJywndGhpcy5vbmVycm9yPW51bGwnKTsKICAgICAgICAvLyAgICAgICAgICAgICBjbGVhckludGVydmFsKGltZ1RpbWVyKTsKICAgICAgICAvLyAgICAgICAgIH0KICAgICAgICAvLyAgICAgfQogICAgICAgIC8vIH0sMjAwKTsKICAgICAgICAvLyBgOwogICAgICAgIGxldCBpbml0X2pzID0gYE9iamVjdC5kZWZpbmVQcm9wZXJ0aWVzKG5hdmlnYXRvciwge3BsYXRmb3JtOiB7Z2V0OiAoKSA9PiAnaVBob25lJ319KTtgOwogICAgICAgIGlucHV0ID0gewogICAgICAgICAgICBwYXJzZTogMSwKICAgICAgICAgICAgdXJsOiBpbnB1dCwKICAgICAgICAgICAganM6ICcnLAogICAgICAgICAgICBwYXJzZV9leHRyYTogJyZpbml0X3NjcmlwdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGJhc2U2NEVuY29kZShpbml0X2pzKSksCiAgICAgICAgfQogICAgfSksCiAgICAvLyBzZWFyY2hVcmw6Jy9zZWFyY2gucGhwP3BhZ2U9ZnlwYWdlJnNlYXJjaHdvcmQ9Kiomc2VhcmNodHlwZT0nLAogICAgc2VhcmNoVXJsOiAnL3NlYXJjaC5waHAjc2VhcmNod29yZD0qKjtwb3N0JywKICAgIGNsYXNzX3BhcnNlOiAnLnN0dWktaGVhZGVyX19tZW51IGxpOmd0KDApOmx0KDcpO2EmJlRleHQ7YSYmaHJlZjsuKi8oLio/KS8uKmh0bWwnLAp9
+Object.assign(muban.首图2.二级, {
+    desc: '.data:eq(0)&&Text;;;.data--span:eq(2)&&Text;.data--span:eq(1)&&Text',
+    tabs: '.stui-pannel__head h3',
+});
+var rule = {
+    title: '星辰[优]',
+    模板: '首图2',
+    host: 'http://www.xingchenwu.com',
+    // url:'/fyclass/indexfypage.html[/fyclass/index.html]',
+    url: '/fyfilter/indexfypage.html[/fyfilter/index.html]',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.cateId}}',
+    tab_exclude: '本周热门|最近更新',
+    filter: 'H4sIAAAAAAAAA6tWSslMzKvMzEtXsoquVspOrVSyUkpOLEn1TFHSUcpLzE0F8p92tD3fuBvIL0vMKU0FK8wDCbeueNm8AiQM5MCNqdWBynateLJ3zvPOdpiC/Lz0qtL8AqA6uJrnHRufNbci1CRmFgKNQFWyfOLTnbsRSrJTM0oT81CUPGuc8KxhGpISoE1JpShKnk6b87RzOUJJRWYWmoLO5SguySpFuCS2NlYH7L/iDKA2KoQTxBy41bP3Ptm1HOgAqIr00vzkjMQ8JBXPdqx/2r8BoaIkMS+9JBHZjGdrlj/f14dQkV+am4oiP33py/krEfJFmVAbgH6rBQBoO0UaBAIAAA==',
+    filter_def: {
+        dianying: {cateId: 'dianying'},
+        dianshiju: {cateId: 'dianshiju'},
+        zongyi: {cateId: 'zongyi'},
+        dongman: {cateId: 'dongman'}
+    },
+    lazy: $js.toString(() => {
+        // 屏蔽图片onerror无限请求问题
+        // let init_js = `
+        // var imgTimer = setInterval(function(){
+        //     if(typeof($)!='undefined'){
+        //         let css = $('.lazyload[alt="成人深夜福利"]');
+        //         if(css.length > 0){
+        //             css.attr('onerror','this.onerror=null');
+        //             clearInterval(imgTimer);
+        //         }
+        //     }
+        // },200);
+        // `;
+        let init_js = `Object.defineProperties(navigator, {platform: {get: () => 'iPhone'}});`;
+        input = {
+            parse: 1,
+            url: input,
+            js: '',
+            parse_extra: '&init_script=' + encodeURIComponent(base64Encode(init_js)),
+        }
+    }),
+    // searchUrl:'/search.php?page=fypage&searchword=**&searchtype=',
+    searchUrl: '/search.php#searchword=**;post',
+    class_parse: '.stui-header__menu li:gt(0):lt(7);a&&Text;a&&href;.*/(.*?)/.*html',
+}

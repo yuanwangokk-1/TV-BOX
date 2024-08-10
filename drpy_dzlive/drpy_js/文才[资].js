@@ -1,1 +1,20 @@
-H4sIAC0soWYC/1WT32vaUBTH3/dX+KQPKb0msYkWZNhpY+uiRo0/OkbJj5tfJua3mhShg67FsUEfxhgbe9jL2jHG2ENhtB39a9T2v1isrtjzcu89n3O+98A5p885McfXYSwbO3gSi2x6/nX65WYzlrg7Obn7fIwm1u7dnurpMPJOP5xMx+9e3F4cvVwSxXS9CCieZ7mbAHCWuh5Cm1O8dcE0HmIM2FDFKAzHE2sxAGKTN+fT6x/30Hf0CNwnWooFLMfsqyIEfVMETzkhK0KPU/W4JWelwOJkGPeii6TqHnSW6osHx88LRNcAmH78NTn9Njn9NXt/Pvv5+e5wvBq3v/jv4EDS1wXOgzviaPRIKILFlLuT+28EVguTRJ7ZylM41q4WaVti/CSP5AJjiygJ6C7JDvNM15MZr1hmOBm1eUjZMmbXCJqxt63UtggZX+ns6Xo4DHuZJGr0jYyhFBpsdagqHYSuZ0RKkQzeLQaFrbzUbJiEHA7TsNUWmTbiGhtuyxV0T64IqmsKzYLMEqrpBRpRCqzdQTkpazXIBiHbA2pIanXTF1Nb1T5h63t8hhPC4V4By1A+w4d6KAystDTAeoONYihDHKEdDS91GplBWRXTFkk+R4JW1SuAoRakW40KZEvpih5SmsPuhtUeom6DlriNFCSu0sUDyFZBjgYuqXFK1RJlks4Jz7q6RaKYLyjaRrpBMXWniNXx/E5doXPAQEK/u0F1QDjw0qTQrJecQq1FddtWk+I1oazye6DRVdtkkfIpwmmlOgO82emSNb3S9Fu1cpPrPSvVMRDI+CBj0j4h7eI8Idsg7VO2n6SNPiJJLMCjqqLGZbOP+rovQmlzOeVzQ6PHYgCijqOJ0doDwR6R1CpKraJHBF8lRCYxuifLAEHnXHe/xxnzHZq9v5j8/R2Pjtuz48n4LD67ur4dX8YXO5FYzVjMKhrH4ng8tSTR9kz/vJ59v5xdnU3HN4uFvTt5O/t0NFc4fLWY+RUVi3Pc+ceRwOgfcQ8tOfEDAAA=
+var rule = {
+    模板: '采集1',
+    title: '文才[资]',
+    host: 'https://api.zeqaht.com',
+    homeTid: '33', // 动漫
+    url: '/api.php/provide/vod/?ac=detail&pg=fypage&t=fyfilter',
+    filterable: 1,//是否启用筛选,
+    filter_url: '{{fl.cateId}}',
+    filter: 'H4sIAAAAAAAAA62Rz06DQBDG32XPHMqfQu0b+AymB6Kc1J7UxDQktgQtHNQag1qbeGqg2qR6MQqFp4FdeQuhYZllzxzn901mvm9mhETUPxihY+MS9dGhfmbsHyEBDfVTo6gzx8eWXdQX+sm5sWscltgOcisocVEgU6iotyj6KypJwN0gjReUyzUn/iz7jSoud4BPv6qlZb9aczxZE29GuQbzlzcwp8fw2nw5Hzge3+Mrj3KYT9wNid8p77L+yWPtE/xjy8WTOeUK8OlzGjrUJzPn+iF/WdF+EfaOk3yeUP/AM/s7jahPpdg7MAcCklp712uchj58TGQSrH2S3DIShMA/m+zuk5GY/zwt87cVSKrERWGkXpVGbjcNibZ/TkiX7HGuG6rW4Yw3VYk7RlOVuWRNVanCKS2/yg3w9oMu6fJ3b6gq/8uGqu0Mmv+ffU/3/AMAAA==',
+    filter_def: {
+        1: {cateId: '1'},
+        2: {cateId: '14'},
+        4: {cateId: '4'},
+        3: {cateId: '69'}
+    },
+    class_name: '电影&电视剧&综艺&动漫',
+    class_url: '1&2&3&4',
+    // 清空继承模板里的动态筛选
+    class_parse: '',
+}

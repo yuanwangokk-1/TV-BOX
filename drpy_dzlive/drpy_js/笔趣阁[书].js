@@ -1,1 +1,77 @@
-dmFyIHJ1bGUgPSB7CiAgICDnsbvlnos6ICflsI/or7QnLC8v5b2x6KeGfOWQrOS5pnzmvKvnlLt85bCP6K+0CiAgICB0aXRsZTogJ+eslOi2o+mYgVvkuaZdJywKICAgIGhvc3Q6ICdodHRwczovL3d3dy5icWthLmNjJywKICAgIHVybDogJy9qc29uP3NvcnRpZD1meWNsYXNzJnBhZ2U9ZnlwYWdlJywKICAgIGNsYXNzX25hbWU6ICfnjoTlubsm5q2m5L6gJumDveW4gibljoblj7Im572R5ri4JuenkeW5uyblpbPnlJ8m5a6M5pysJywKICAgIGNsYXNzX3VybDogJzEmMiYzJjQmNSY2JjcmMCcsCiAgICBzZWFyY2hVcmw6ICcvdXNlci9zZWFyY2guaHRtbD9xPSoqJywKICAgIHNlYXJjaGFibGU6IDIsCiAgICBxdWlja1NlYXJjaDogMCwKICAgIGZpbHRlcmFibGU6IDEsCiAgICBmaWx0ZXI6ICcnLAogICAgZmlsdGVyX3VybDogJycsCiAgICBmaWx0ZXJfZGVmOiB7fSwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdQQ19VQScsCiAgICB9LAogICAgdGltZW91dDogNTAwMCwKICAgIGNhdGVfZXhjbHVkZTogJycsCiAgICBwbGF5X3BhcnNlOiB0cnVlLAogICAgLy8g5Zu+54mH5pu/5o2iOiRqcy50b1N0cmluZygoKSA9PiB7bG9nKGlucHV0KTtpbnB1dCA9IGdldFByb3h5VXJsKCkrICcmdXJsPScraW5wdXQrJyZ0eXBlPWltZyc7fSksCiAgICBsYXp5OiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIGxldCBodG1sID0gcmVxdWVzdChpbnB1dCk7CiAgICAgICAgbGV0IHRpdGxlID0gcGRmaChodG1sLCAnLmNvbnRlbnQmJmgxJiZUZXh0Jyk7CiAgICAgICAgLy8gbGV0IGNvbnRlbnQgPSBwZGZoKGh0bWwsICcjY2hhcHRlcmNvbnRlbnQmJkh0bWwnKS5yZXBsYWNlKC88YnI+L2csICdcbicpLnJlcGxhY2UoL1xuXG4vZywgJ1xuJyk7CiAgICAgICAgbGV0IGNvbnRlbnQgPSBwZGZoKGh0bWwsICcjY2hhcHRlcmNvbnRlbnQmJkh0bWwnKS5yZXBsYWNlKC9cbi9nLCAiIikuc3BsaXQoIjxicj4iKS5maWx0ZXIodiA9PiB2KS5zbGljZSgwLCAtMikuam9pbigiXG4iKTsKICAgICAgICBsZXQgcmV0ID0gSlNPTi5zdHJpbmdpZnkoewogICAgICAgICAgICB0aXRsZSwKICAgICAgICAgICAgY29udGVudAogICAgICAgIH0pOwogICAgICAgIGlucHV0ID0ge3BhcnNlOiAwLCB1cmw6ICdub3ZlbDovLycgKyByZXQsIGpzOiAnJ307CiAgICB9KSwKICAgIGRvdWJsZTogZmFsc2UsCiAgICDmjqjojZA6ICd1bDpndCgwKSYmbGk7YSYmVGV4dDs7c3BhbjplcSgtMSkmJlRleHQ7YSYmaHJlZicsCiAgICDkuIDnuqc6ICRqcy50b1N0cmluZygoKSA9PiB7CiAgICAgICAgLy9sZXQgY29va2llID0gZ2V0SXRlbShSVUxFX0NLLCAnJyk7CiAgICAgICAgLy9sZXQgY29va2llID0gJyc7CiAgICAgICAgLy9sZXQgaHRtbCA9IHJlcXVlc3QoaW5wdXQse2hlYWRlcnM6e0Nvb2tpZTpjb29raWV9fSk7CiAgICAgICAgbGV0IGh0bWwgPSByZXF1ZXN0KGlucHV0KTsKICAgICAgICBsZXQganNvbiA9IEpTT04ucGFyc2UoaHRtbCk7CiAgICAgICAgbGV0IGQgPSBbXTsKICAgICAgICBqc29uLmZvckVhY2goaXQgPT4gewogICAgICAgICAgICBkLnB1c2goewogICAgICAgICAgICAgICAgdGl0bGU6IGl0LmFydGljbGVuYW1lLAogICAgICAgICAgICAgICAgZGVzYzogaXQuYXV0aG9yLAogICAgICAgICAgICAgICAgaW1nOiBpdC51cmxfaW1nLAogICAgICAgICAgICAgICAgdXJsOiBpdC51cmxfbGlzdCwKICAgICAgICAgICAgICAgIGNvbnRlbnQ6IGl0LmludHJvLAogICAgICAgICAgICB9KQogICAgICAgIH0pOwogICAgICAgIHNldFJlc3VsdChkKTsKICAgIH0pLAogICAg5LqM57qnOiB7CiAgICAgICAgdGl0bGU6ICdoMSYmVGV4dCcsCiAgICAgICAgaW1nOiAnLmNvdmVyJiZpbWcmJnNyYycsCiAgICAgICAgZGVzYzogJ3NwYW4ubGFzdDplcSgtMSkmJlRleHQ7c3Bhbi5sYXN0JiZUZXh0Ozs7LnNtYWxsJiZzcGFuJiZUZXh0JywKICAgICAgICBjb250ZW50OiAnLmludHJvJiZkZCYmVGV4dCcsCiAgICAgICAgdGFiczogJy5ybCcsCiAgICAgICAgbGlzdHM6ICcubGlzdG1haW4mJmRkOm5vdCgubW9yZSkmJmEnLAogICAgICAgIHRhYl90ZXh0OiAnYm9keSYmVGV4dCcsCiAgICAgICAgbGlzdF90ZXh0OiAnYm9keSYmVGV4dCcsCiAgICAgICAgbGlzdF91cmw6ICdhJiZocmVmJywKICAgICAgICBsaXN0X3VybF9wcmVmaXg6ICcnLAogICAgfSwKICAgIOaQnOe0ojogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICAvL2xldCBjb29raWUgPSBnZXRJdGVtKFJVTEVfQ0ssICcnKTsKICAgICAgICAvL2xvZygn5YKo5a2Y55qEY29va2llOicgKyBjb29raWUpOwogICAgICAgIGxldCBjb29raWUgPSAnJzsKICAgICAgICBpZiAoIWNvb2tpZSkgewogICAgICAgICAgICBsZXQge2Nvb2tpZSwgaHRtbH0gPSByZXFDb29raWUoJ2h0dHBzOi8vd3d3LmJxa2EuY2MvdXNlci9obS5odG1sP3E9JyArIEtFWSwge30sIHRydWUKICAgICAgICAgICAgKTsKICAgICAgICAgICAgbG9nKGNvb2tpZSk7CiAgICAgICAgICAgIC8vc2V0SXRlbShSVUxFX0NLLCBjb29raWUpOwogICAgICAgIH0KICAgICAgICBldmFsKHJ1bGUu5LiA57qnLnJlcGxhY2UoJ2pzOicsICcnKSk7CiAgICB9KSwKfQ==
+var rule = {
+    类型: '小说',//影视|听书|漫画|小说
+    title: '笔趣阁[书]',
+    host: 'https://www.bqka.cc',
+    url: '/json?sortid=fyclass&page=fypage',
+    class_name: '玄幻&武侠&都市&历史&网游&科幻&女生&完本',
+    class_url: '1&2&3&4&5&6&7&0',
+    searchUrl: '/user/search.html?q=**',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'PC_UA',
+    },
+    timeout: 5000,
+    cate_exclude: '',
+    play_parse: true,
+    // 图片替换:$js.toString(() => {log(input);input = getProxyUrl()+ '&url='+input+'&type=img';}),
+    lazy: $js.toString(() => {
+        let html = request(input);
+        let title = pdfh(html, '.content&&h1&&Text');
+        // let content = pdfh(html, '#chaptercontent&&Html').replace(/<br>/g, '\n').replace(/\n\n/g, '\n');
+        let content = pdfh(html, '#chaptercontent&&Html').replace(/\n/g, "").split("<br>").filter(v => v).slice(0, -2).join("\n");
+        let ret = JSON.stringify({
+            title,
+            content
+        });
+        input = {parse: 0, url: 'novel://' + ret, js: ''};
+    }),
+    double: false,
+    推荐: 'ul:gt(0)&&li;a&&Text;;span:eq(-1)&&Text;a&&href',
+    一级: $js.toString(() => {
+        //let cookie = getItem(RULE_CK, '');
+        //let cookie = '';
+        //let html = request(input,{headers:{Cookie:cookie}});
+        let html = request(input);
+        let json = JSON.parse(html);
+        let d = [];
+        json.forEach(it => {
+            d.push({
+                title: it.articlename,
+                desc: it.author,
+                img: it.url_img,
+                url: it.url_list,
+                content: it.intro,
+            })
+        });
+        setResult(d);
+    }),
+    二级: {
+        title: 'h1&&Text',
+        img: '.cover&&img&&src',
+        desc: 'span.last:eq(-1)&&Text;span.last&&Text;;;.small&&span&&Text',
+        content: '.intro&&dd&&Text',
+        tabs: '.rl',
+        lists: '.listmain&&dd:not(.more)&&a',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href',
+        list_url_prefix: '',
+    },
+    搜索: $js.toString(() => {
+        //let cookie = getItem(RULE_CK, '');
+        //log('储存的cookie:' + cookie);
+        let cookie = '';
+        if (!cookie) {
+            let {cookie, html} = reqCookie('https://www.bqka.cc/user/hm.html?q=' + KEY, {}, true
+            );
+            log(cookie);
+            //setItem(RULE_CK, cookie);
+        }
+        eval(rule.一级.replace('js:', ''));
+    }),
+}

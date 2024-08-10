@@ -1,1 +1,137 @@
-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
+globalThis.post2 = function (_url, _data) {
+    // let data = buildUrl(_url,_data).split('?')[1];
+    // return post(_url,{body:encodeURIComponent(data),headers:rule.headers});
+    return post(_url, {data: _data, headers: rule.headers});
+}
+var rule = {
+    类型: '听歌',//影视|听书|漫画|小说
+    title: 'KTV歌厅[听]',
+    // host: 'https://vpsdn.leuse.top',
+    host: 'https://api.cloudflare.com',
+    root: 'https://api.cloudflare.com/client/v4/accounts/1ecc4a947c5a518427141f4a68c86ea1/d1/database/4f1385ab-f952-404a-870a-e4cfef4bd9fd/query',
+    mktvUrl: 'http://txysong.mysoto.cc/songs/',
+    url: '/searchmv?table=fyclass&pg=fypage#fyfilter',
+    searchUrl: '/searchmv?keywords=**&pg=fypage',
+    pic: 'https://api.paugram.com/wallpaper/?source=sina&category=us',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: 'H4sIAAAAAAAAA52STU/CMBjHv0vPHATfuerFkwePhgOHSRZhmIEmhJBgBLIIBEgI0/BqAgFEwgYRDbjwZWzpvoUr2tGlXOTW/p+n7a+/Ng4iohQQZOC9jINrIQa8QBYCYlgCLiD5Q4I1hzUN5mbWXJTEqDW3Rnf+4K2wWiKRhnTPfOiRmFQTrvhq4CY7kGq7az5n7NjzF6PPESxodrxLu6sGbFdAwkcKvzxXYTm0plnqc6gMtqZZlj84FNiZcBzLeQoWFcLhc4FIWAowgoJ+xg4eDXEvuebx/BMIqwVrC56parAxxTKbfTbeozLVDhvv027VgHmVrRzQU7M6Gx/SW4/bbHxEYdLT73nFjo/p9v03VHcc7N6hQBPNkdufIa9B7ctRojfG00cKyzx+NHYjOB+/kd368dH7PX7J8a6LCizrnGuUTCK1y7mGqQUa5njX9T4sGZxopJXYbioaKw1UHfOiKzU4y3Ci8eLVHDxtsKy2UL55enZxcr5BtaHjbmb1gxM/8si9TOYDAAA=',
+    filter_url: '{{fl}}',
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer LueNrycW-6jks7xBjPqX9mjFq2A2M5Kul6Ig3D8z',
+    },
+    timeout: 5000,
+    class_name: '歌手&曲库',
+    class_url: 'singer&song',
+    一级: $js.toString(() => {
+        let d = [];
+        // let _url = input.split('#')[0];
+        let _url = rule.root;
+        let params = [];
+        let sql = '';
+        let size = 20;
+        let pg = MY_PAGE;
+        if (MY_CATE === 'singer') {
+            sql = 'select name, id from singer where 1=1';
+            if (MY_FL.region) {
+                params.push(MY_FL.region);
+                sql += ' and region_id = ?';
+                // _url += '&where=region_id&keywords=' + MY_FL.region + '&size=21';
+            } else if (MY_FL.form) {
+                params.push(MY_FL.form);
+                sql += ' and form_id = ?';
+                // _url += '&where=form_id&keywords=' + MY_FL.form + '&size=21';
+            }
+            sql += ` order by id limit ${(pg - 1) * size},${size};`;
+            let html = post2(_url, {params: params, sql: sql});
+            let json = JSON.parse(html);
+            d = json.result[0].results.map(item => {
+                let pic = rule.mktvUrl + item.id + '.jpg';
+                return {
+                    vod_id: item.name + '@@' + item.name + '@@' + pic,
+                    vod_name: item.name,
+                    vod_pic: pic,
+                    vod_remarks: '',
+                }
+            });
+        } else if (MY_CATE === 'song') {
+            sql = 'select number, name from song where 1=1';
+            if (MY_FL.lan) {
+                params.push(MY_FL.lan);
+                sql += ' and language_id = ?';
+                // _url += '&where=language_id&keywords=' + MY_FL.lan + '&size=21';
+            } else if (MY_FL.type) {
+                params.push(MY_FL.type);
+                sql += ' and type_id = ?';
+                // _url += '&where=type_id&keywords=' + MY_FL.type + '&size=21';
+            }
+            sql += ` order by number limit ${(pg - 1) * size},${size};`;
+            let html = post2(_url, {params: params, sql: sql});
+            let json = JSON.parse(html);
+            d = json.result[0].results.map(item => {
+                return {
+                    vod_id: rule.mktvUrl + item.number + '.mkv' + '@@' + item.name + '@@' + '',
+                    vod_name: item.name,
+                    vod_pic: rule.pic,
+                    vod_remarks: '',
+                }
+            });
+        }
+        VODS = d;
+    }),
+    二级: $js.toString(() => {
+        let _url = rule.root;
+        let id = orId.split('@@')[0];
+        let name = orId.split('@@')[1];
+        if (id.endsWith('.mkv')) {
+            VOD = {
+                vod_name: name,
+                vod_play_from: '道长在线',
+                vod_content: '道长在线',
+            }
+        } else {
+            VOD = {
+                vod_name: id,
+                vod_play_from: '道长在线',
+                vod_content: '道长在线',
+            }
+        }
+        if (id.endsWith('.mkv')) {
+            VOD.vod_play_url = '嗅探播放$' + id;
+        } else {
+            let params = [id];
+            let sql = 'select number,name from song where singer_names = ? order by number limit 0,999';
+            let html = post2(_url, {params: params, sql: sql});
+            let json = JSON.parse(html);
+            let data = json.result[0].results;
+
+            VOD.vod_play_url = (data.map(item => {
+                return item.name + '$' + rule.mktvUrl + item.number + '.mkv';
+            })).join('#');
+        }
+    }),
+    搜索: $js.toString(() => {
+        let _url = rule.root;
+        let wd = KEY;
+        let sql = "select number,name from song where name like '%" + wd + "%' or singer_names like '%" + wd + "%'";
+        let d = [];
+        let html = post2(_url, {sql: sql});
+        let json = JSON.parse(html);
+        d = json.result[0].results.map(item => {
+            return {
+                vod_id: rule.mktvUrl + item.number + '.mkv' + '@@' + item.name + '@@' + '',
+                vod_name: item.name,
+                vod_pic: rule.pic,
+                vod_remarks: item.singer_names,
+            }
+        });
+        VODS = d;
+    }),
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 0, url: input};
+    }),
+}

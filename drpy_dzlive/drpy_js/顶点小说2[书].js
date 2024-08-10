@@ -1,1 +1,94 @@
-H4sIAC0soWYC/81WbW8bRRD+zq842eheinNnByohhxSFyCovKUVN86FKI2t9t2dvcr677O45MY0lQIIvlBIhxKeqonyglagElaqKvvBvYjv8C2Z37+w7x4YUCYmTEt/NPDM7O/PM7PYQ1WgSYG1Vu/WaBs/48Yvhva/rmjH87dvTX58YFccZ/vH49MFXR8PjRyfPfj4avfxl/P2LI6WWJpzwAIPFn/efjr94phTL24DdMSoS0IkYB32H85jVHefg4MD2vH6CWSexXddJUeOXP4x//Bxw7Vbt7eqb1VSc0ABkjt93A8SYU/b7MWpjUEotw4i6nS2FOSQoAp+Rh/YTFDrlPdxfTb0oHGqJQJeVaD8h7t6mlNe1qpL5JOCYKlgtLwL3Rv67qcIqyjzs17Vbg3TTGHmYsnqaV/EYWwzTpbU2DrkBxleuvvfBRqO5tZZ6SQ056eIogYRdrFbTsDpkD9MNwvh6BKuWOD7kzVopp1sXuVkAcByZuWaIuqJKwy8fju4+Moo6tZss5UoWI8qEgR2inq4nga4HZAXp+nVwLn47FPsr9gXHtC+8a2VFdBHHTXzoBoknbIEEo3tPj0Z3vju9fzuFxAHqZ845TbCSBujTfl17fZfZPNrklIRt07S01Uu59AWYax3eDYCrFO8DfbhJwjjh1koBIukImNjzO6bAV2APrSjaEwmAsGtqC8aMmRuFHAozY1hOxbr+PggMy6YY4nex6dwMnXZFK5Usm8UB4WbpnRa9BF+KC2ZPxN4DZUAAXa1oS8uWvRuR0CzdDEs5P3rYYvGK8GVoszFRLOL5cPPqxzaTOSF+35wmZNJ8lYIoDXkiG+S8yoSJZk8LAIGp2odRDwfQnIb2hli2ou0ywe+BMh1YagkvSmRv+Chg6aqjOw9PvzkGbDnEB2ySrpQvNltOGQOvF4vkSflw8vtn4+cPzlF7D+Le3sntxdfMKzea62vXG9rqqqCvpRWTk+0WtihTLyadLaYRJNsRM6KFQ7ljcPPJ2uVGLlHnJFwGCwhTzEEZc7iYInabEk/XOa23uVm1jFlLwmw/og3kdkzCizvOHs+OE9Yxzypyo1cylohdoYzclbl4DzO3AK/jfbNm/b0R6bZhppTmKyV7Ym+yuiqsSOjWtY05DgczKch/DzQMtJrJwaIipG1nlA1ru7pzrpLYSZwR87+vxIT5562Fzd76v9Rh8sYwv4ZZEnDTs4qT4OT5bdm102xk14DJgJ0uKiM3yn4XXnRd/mPUzQFULowyCf1I12PByqUJLaewdLooJKcCegYDfScmVxkqCmPIg79WTiukebVXtGyKkxPUrTNuBX6ijbz+fICapcX5llc2Y5CTw+nNIT3zR8d3x09++pfn38JOEAZwBwK8h93Iw+DX/KhxoyJvfLa6b+XgjhNEbRMMZlzMaSR5WqgUZv2UHXyqewi3SShvAUx6nHE5O8r/qf0Wtt6rDEBFsnkNtLCzXqWrBtbcE3d+Cw3+Ah40CI15CwAA
+var rule = {
+    类型: '小说',//影视|听书|漫画|小说
+    title: '顶点小说2[书]',
+    host: 'https://www.ddyueshu.cc/',
+    编码: 'gb18030',
+    url: '/fyclass/#fypage',
+
+    searchUrl: '/xiaoshuodaquan/#key=',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    hikerListCol: "text_1",
+    hikerClassListCol: "text_1",
+    //class_name: '全本',
+    //class_url: '0',
+    class_parse: '.nav&&ul&&li;a&&Text;a&&href;.*/(.*?)/',
+    cate_exclude: '书架|排行',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let html = request(input);
+        let title = pdfh(html, '.bookname&&h1&&Text');
+        let content = pdfh(html, '#content&&Html').replace(/\n/g, "").split("<br>").filter(v => v).slice(0, -2).join("\n").replace(/&nbsp;/g, ' ');
+        let ret = JSON.stringify({
+            title,
+            content
+        });
+        input = {parse: 0, url: 'novel://' + ret, js: ''};
+    }),
+    double: false,
+    推荐: '#newscontent&&ul&&li;.s2&&Text;;.s5&&Text;a&&href',
+    一级: $js.toString(() => {
+        let d = [];
+        if (MY_CATE == '0') {
+            input = urljoin(rule.host, '/quanben/' + MY_PAGE);
+            let html = request(input);
+            let lis = pdfa(html, 'table.grid&&tr:gt(0)');
+            lis.forEach(it => {
+                d.push({
+                    title: pdfh(it, 'a&&Text'),
+                    desc: pdfh(it, 'a:eq(1)&&Text'),
+                    img: "",
+                    url: pd(it, 'a&&href', MY_URL),
+                });
+            });
+        } else {
+            let html = request(input.split('#')[0]);
+            let lis = pdfa(html, '.up&&ul&&li');
+            lis.forEach(it => {
+                d.push({
+                    title: pdfh(it, '.s2&&Text'),
+                    desc: pdfh(it, '.s4&&Text'),
+                    img: "",
+                    url: pd(it, 'a&&href', MY_URL),
+                });
+            });
+        }
+        setResult(d);
+    }),
+    二级: {
+        title: 'h1&&Text',
+        img: '#fmimg&&img&&src',
+        desc: '#info&&p:eq(-1)&&Text',
+        content: '#intro&&p&&Text',
+        tabs: '#list&&dt&&b',
+        lists: '#list&&dd',
+        tab_text: 'b&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href',
+        list_url_prefix: '',
+    },
+    搜索: $js.toString(() => {
+        let html = request(input.split('#')[0]);
+        let key = decodeStr(KEY, rule.编码);
+        //log(key);
+        let lis = pdfa(html, '.novellist&&ul&&li').filter(it => it.includes(key));
+        let d = [];
+        lis.forEach(it => {
+            d.push({
+                title: pdfh(it, 'a&&Text'),
+                desc: "",
+                img: "",
+                url: pd(it, 'a&&href', MY_URL),
+            })
+        });
+        setResult(d);
+    }),
+}

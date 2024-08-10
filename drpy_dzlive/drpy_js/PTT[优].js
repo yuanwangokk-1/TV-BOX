@@ -1,1 +1,86 @@
-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
+var rule = {
+    类型: '影视',//影视|听书|漫画|小说
+    title: 'PTT[优]',
+    host: 'https://ptt.red',
+    homeUrl: '/zh-cn',
+    url: '/zh-cn/p/fyclassfyfilter',
+    searchUrl: '/zh-cn/q/**?page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: 'H4sIAAAAAAAAAO2X32saQRDH/5d76JMQ74d3Z8C/pIRytD6UpimYtBCCYCIGY9qoIbWVSltIqia1UUkQf+TSf8bdPf+Luml0ZtcsBFqf9HH3M+vOznxnvNnRdG316Y72Kr6trWqk0iLv+1pI2/Bex/H6nbf+Nn5nuMG3M/VRus63xwstGbrfPauNyvv3u0+8RNx79vJFzJjyUbVMu02ZR+B8vkV7tzK34Py3c/LFl7nuTA3opx+00pgxcMGgUWO3R7KBDfyq9dANYXDxQ4v0qzMG4CPJdIaDkmxgask1bvE3yKw9IF8PIcjT9WOCPLypssIkyCvPV0wT7s7Vh34FEIpsqUIOakDgxSzbpukMEAgmqxVJbwAERXG3QFMlIFE4k2sy/wIIihzNfh72DxDSsd/05idCIJmx14J7OryW9S+I/xEFAt2112ClIkIWvoudoFeZkYdTN0YWvDionQbNa3TKEBJKetfDgY+qZrJ+TEKNsGFN9LId9xKxuw1ETZmamBoyNTDVZapjGpZpGFE9KlE9iqkrUxdTR6YOprZMbUwjMo1gKseK1x5KBT06Jv08pGK6FlPB9tv0+JecClpJ0VJrcsHmm8RWbN3b3OIXrIU0Yy59kota0QJ50UHMhe7JESpI3Pd4QUIehZ7JEQhAaIbcDVdZCjxBS70vmN7NueldLWqUkZlS0JV6d02l3l1DqXekHOF/n1eJoSwFw1yWwsKVgjWvUjBstahttagdtagdtXLdpXIXTrkR3MX/afAIOleskEbTBeSbNS9FBI+n3S7N5hGCfIwbvHDKRt/2flFEigGLt+plP148Vdv2/1I1y/riZAzRCeopYfa0Iazs/HfQyQFy1LOng+bc/Flwimdt9NmS9kl3D3V4+EF2UiGX3xECRQblAt09REg9zDrWskwWrEySfwAneSZu2xMAAA==',
+    filter_url: '{% if fyclass !="1" %}{{fl.地区}}?page=fypage{% else %}{{fl.类型}}?page=fypage{{fl.地区|safe}}{% endif %}{{fl.年份|safe}}{{fl.排序|safe}}',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: '.nav-tabs&&a;a&&Text;a&&href;(\\d+)',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let html = request(input);
+        let sdata = pdfh(html, '.container-fluid&&script&&Html');
+        // log(sdata);
+        let json = JSON.parse(sdata);
+        if (json.contentUrl) {
+            input = {parse: 0, url: json.contentUrl, js: ''};
+        }
+    }),
+    double: false,
+    推荐: '*',
+    //α大佬方案去除推荐页广告
+    一级: '#videos&&.card:not(:has(.badge-success:contains(广告)));a:eq(-1)&&Text;img&&src;.badge-success&&Text;a:eq(-1)&&href',
+    二级: $js.toString(() => {
+        let html = request(input);
+        let data = html.split('node:')[1].split('},')[0] + '}';
+        data = data.trim();
+        //   log(data);
+        let json = JSON.parse(data);
+        //   log(json);
+        VOD = {};
+
+        VOD.vod_name = json.title;
+        VOD.type_name = json.type;
+        VOD.vod_id = input;
+        VOD.vod_pic = urljoin(input, json.thumbnail);
+        VOD.vod_year = json.year;
+        VOD.vod_area = json._area;
+        VOD.vod_remarks = json.note;
+        VOD.vod_content = json.description;
+        VOD.vod_director = json.director;
+        VOD.vod_actor = json.actors;
+        let v_tabs = pdfa(html, '.nav-tabs&&li');
+        let v_tab_urls = v_tabs.map(it => pd(it, 'a&&href', input));
+        v_tabs = v_tabs.map(it => pdfh(it, 'a&&title'));
+        // log(v_tab_urls);
+        VOD.vod_play_from = v_tabs.join('$$$');
+        let lists = [];
+        let list1 = pdfa(html, '.mb-2.fullwidth&&a').map(it => pdfh(it, 'a&&Text') + '$' + pd(it, 'a&&href', input));
+        // log(list1);
+        lists.push(list1);
+        if (v_tab_urls.length > 1) {
+            let reqUrls = v_tab_urls.slice(1).map(it => {
+                return {
+                    url: it,
+                    options: {
+                        timeout: 5000,
+                        headers: rule.headers
+                    }
+                }
+            });
+            let htmls = batchFetch(reqUrls);
+            htmls.forEach((ht) => {
+                if (ht) {
+                    let list0 = pdfa(ht, '.mb-2.fullwidth&&a').map(it => pdfh(it, 'a&&Text') + '$' + pd(it, 'a&&href', input));
+                    lists.push(list0);
+                } else {
+                    lists.push([]);
+                }
+            });
+        }
+        let playUrls = lists.map(it => it.join('#'));
+        VOD.vod_play_url = playUrls.join('$$$');
+    }),
+    搜索: '*',
+}

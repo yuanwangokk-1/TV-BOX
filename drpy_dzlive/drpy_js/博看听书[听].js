@@ -1,1 +1,52 @@
-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
+var rule = {
+    类型: '听书',
+    title: '博看听书',
+    host: 'https://api.bookan.com.cn',
+    homeUrl: '/voice/book/list?instance_id=25304&page=1&category_id=1305&num=24',
+    url: '/voice/book/list?instance_id=25304&page=fypage&category_id=fyclass&num=24',
+    detailUrl: '/voice/album/units?album_id=fyid&page=1&num=200&order=1',
+    searchUrl: 'https://es.bookan.com.cn/api/v3/voice/book?instanceId=25304&keyword=**&pageNum=fypage&limitNum=20',
+    searchable: 2,
+    quickSearch: 0,
+    class_name: '少年读物&儿童文学&国学经典&文艺少年&育儿心经&心理哲学&青春励志&历史小说&故事会&音乐戏剧&相声评书',
+    class_url: '1305&1304&1320&1306&1309&1310&1307&1312&1303&1317&1319',
+    headers: {'User-Agent': 'MOBILE_UA'},
+    推荐: '*',
+    一级: 'json:data.list;name;cover;extra.author;id',
+    二级: `js:
+        let d = [];
+        VOD = {
+            vod_url: input,
+            vod_name: "",
+            vod_actor: "",
+            vod_year: "",
+            vod_director: ""
+        };
+        let playlists = [];
+        let data = JSON.parse(request(input)).data;
+        VOD.vod_name = data.list[0].id;
+        VOD.vod_actor = "▶️创建于" + data.list[0].created_at;
+        VOD.vod_year = data.list[0].created_at.split("-")[0];
+        VOD.vod_director = "▶️更新于" + data.list[0].updated_at;
+        let total = data.total;
+        playlists = data.list;
+        if (total > 200) {
+            for (let i = 2; i < total / 200 + 1; i++) {
+                let listUrl = input.split("&")[0] + "&page=" + i + "&num=200&order=1";
+                let data = JSON.parse(request(listUrl)).data;
+                playlists = playlists.concat(data.list)
+            }
+        }
+        playlists.forEach(function(it) {
+            d.push({
+                title: it.title,
+                url: it.file
+            })
+        });
+        VOD.vod_play_from = "bookan";
+        VOD.vod_play_url = d.map(function(it) {
+            return it.title + "$" + it.url
+        }).join("#");
+    `,
+    搜索: '*',
+}

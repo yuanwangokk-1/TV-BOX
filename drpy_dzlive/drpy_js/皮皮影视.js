@@ -1,1 +1,86 @@
-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
+var rule = {
+    模板: 'mxpro',
+    title: '皮皮影视',
+    host: 'https://www.pptv06.com',
+    class_parse: '.navbar-items li:gt(0):lt(8);a&&Text;a&&href;/(\\d+).html',
+    tab_exclude: '排序',
+    url: '/vodshow/fyclass--------fypage---.html',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    lazy: $js.toString(() => {
+        let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        let url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url);
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url));
+        }
+        if (/m3u8/.test(url)) {
+            input = {
+                jx: 0,
+                url: url,
+                parse: 0
+            }
+        } else {
+            let config = {};
+            eval(request(HOST + '/static/js/playerconfig.js') + '\nconfig=MacPlayerConfig;');
+            let jx = HOST + config.player_list[html.from].parse;
+            if (jx == '') {
+                jx = HOST + config.parse;
+            }
+            log(jx);
+            eval(request(jx + url, {
+                headers: {
+                    'Referer': input
+                }
+            }).match(/let config = {[\s\S]*?}/)[0]);
+            log(config.url);
+            eval(getCryptoJS());
+
+            function rc4(data, key, t) {
+                let pwd = key || 'ffsirllq';
+                let cipher = '';
+                key = [];
+                let box = [];
+                let pwd_length = pwd.length;
+                if (t == 1) {
+                    data = atob(data);
+                } else {
+                    data = encodeURIComponent(data);
+                }
+                let data_length = data.length;
+                for (let i = 0; i < 256; i++) {
+                    key[i] = pwd[i % pwd_length].charCodeAt();
+                    box[i] = i;
+                }
+                for (let j = 0, i = 0; i < 256; i++) {
+                    j = (j + box[i] + key[i]) % 256;
+                    let tmp = box[i];
+                    box[i] = box[j];
+                    box[j] = tmp;
+                }
+                for (let a = 0, j = 0, i = 0; i < data_length; i++) {
+                    a = (a + 1) % 256;
+                    j = (j + box[a]) % 256;
+                    let tmp = box[a];
+                    box[a] = box[j];
+                    box[j] = tmp;
+                    let k = box[((box[a] + box[j]) % 256)];
+                    cipher += String.fromCharCode(data[i].charCodeAt() ^ k);
+                }
+                if (t == 1) {
+                    return decodeURIComponent(cipher);
+                } else {
+                    return btoa(cipher);
+                }
+            }
+
+            let play = rc4(config.url, "202205051426239465", 1);
+            input = {
+                jx: 0,
+                url: play,
+                parse: 0
+            }
+
+        }
+    }),
+}

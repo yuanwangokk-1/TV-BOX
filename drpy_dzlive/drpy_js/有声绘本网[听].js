@@ -1,1 +1,21 @@
-dmFyIHJ1bGUgPSB7CiAgICDnsbvlnos6ICflkKzkuaYnLAogICAgdGl0bGU6ICfmnInlo7Dnu5jmnKznvZEnLAogICAgaG9zdDogJ2h0dHBzOi8vd3d3LnlvdXNoZW5naHVpYmVuLmNvbScsCiAgICB1cmw6ICcvZnljbGFzcy9meXBhZ2UnLAogICAgc2VhcmNoVXJsOiAnL3NlYXJjaC5waHA/JnE9KiomcGFnZT1meXBhZ2UnLAogICAgc2VhcmNoYWJsZTogMiwKICAgIHF1aWNrU2VhcmNoOiAwLAogICAgZmlsdGVyYWJsZTogMCwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdNT0JJTEVfVUEnCiAgICB9LAogICAgdGltZW91dDogNTAwMCwvL+e9keermeeahOWFqOWxgOivt+axgui2heaXtizpu5jorqTmmK8zMDAw5q+r56eSCiAgICBjbGFzc19wYXJzZTogJyNtZW51LW1haW4mJmxpOmd0KDApOmx0KDcpO2EmJlRleHQ7YSYmaHJlZjtjb20vKFxcdyspJywKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBsaW1pdDogNiwKICAgIOaOqOiNkDogJyonLAogICAg5LiA57qnOiAnYXJ0aWNsZS5leGNlcnB0LWM1O2EmJnRpdGxlO2ltZyYmc3JjOy5wb3N0LWxpa2UmJlRleHQ7YSYmaHJlZicsCiAgICDkuoznuqc6ICcqJywKICAgIOaQnOe0ojogJ2FydGljbGUuZXhjZXJwdC10dzsqOyo7dGltZSYmVGV4dDsqJywKfQ==
+var rule = {
+    类型: '听书',
+    title: '有声绘本网',
+    host: 'https://www.youshenghuiben.com',
+    url: '/fyclass/fypage',
+    searchUrl: '/search.php?&q=**&page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA'
+    },
+    timeout: 5000,//网站的全局请求超时,默认是3000毫秒
+    class_parse: '#menu-main&&li:gt(0):lt(7);a&&Text;a&&href;com/(\\w+)',
+    play_parse: true,
+    limit: 6,
+    推荐: '*',
+    一级: 'article.excerpt-c5;a&&title;img&&src;.post-like&&Text;a&&href',
+    二级: '*',
+    搜索: 'article.excerpt-tw;*;*;time&&Text;*',
+}

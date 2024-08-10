@@ -1,1 +1,40 @@
-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
+var rule = {
+    title: '泡泡影院',
+    host: 'https://www.glafund.com',
+    url: '/vodshow/fyfilter.html',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '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',
+    filter_url: '{{fl.按分类}}-{{fl.按地区}}--{{fl.按剧情}}-{{fl.按语言}}-{{fl.按字母}}---fypage---{{fl.按年份}}',
+    filter_def: {
+        '1': {按分类: '1'},
+        '2': {按分类: '2'},
+        '3': {按分类: '3'},
+        '4': {按分类: '4'},
+        '35': {按分类: '35'},
+        '36': {按分类: '36'}
+    },
+    headers: {'User-Agent': 'MOBILE_UA'},
+    timeout: 5000,
+    class_parse: '.swiper-wrapper&&li;a&&Text;a&&href;.*/(.*?).html',
+    cate_exclude: '动画片',
+    play_parse: true,
+    lazy: muban.mx.lazy,
+    double: false,
+    推荐: '*',
+    一级: 'body&&.ewave-vodlist__box;h4&&a&&Text;.lazyload&&data-original;.pic-text.text-right&&Text;h4&&a&&href',
+    二级: {
+        title: 'h1&&span&&Text;.ewave-content__detail&&p&&a&&Text',
+        img: '.lazyload&&data-original',
+        desc: '.pic-text.text-right&&Text;.ewave-content__detail&&p&&a:eq(5)&&Text;.ewave-content__detail&&p&&a:eq(4)&&Text;.ewave-content__detail&&p:eq(2)&&Text;.ewave-content__detail&&p:eq(3)&&Text',
+        content: '#desc&&Text',
+        tabs: '.nav.nav-tabs li',
+        lists: '.ewave-content__playlist:eq(#id) li',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href'
+    },
+    搜索: 'ul.ewave-vodlist__media&&li;h3&&a&&Text;.lazyload&&data-original;.pic-text.text-right&&Text;h3&&a&&href'
+}

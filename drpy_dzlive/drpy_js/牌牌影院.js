@@ -1,1 +1,61 @@
-H4sIAC0soWYC/51Vz28jNRS+718xatH8qHZmNumyQgkBLWIPXQF7KBEHFkWeGU/Grcfj2p5tht1ekYoWtAcuSCDEXloJcUCCS1nEP0OT8l/w7JmkmSQFLVYUj9/7/L3v2c/2EyQsUVJsDayntyxo0/Mfp9//2bOc2Q8/X5190XVuG7MiimJtPX0Ov8s/fvn725eNKyuk6llbmVJc9sKQIwK/qgriIt+qETFFUo4YyoFha/bNbzDdhg7oL0/P7Nnvr65OL+zLL8+nr36yISwYWxNLQWFex+7au/Zd+83GJzEScTbUPid8UiT1ONzZ8RctrTgaY/gIMpVTZ3keinQ63dp0VJL4cN/Ye9adJiuMEixkr1kW3ZyhxMK/P8ZMORD0w0fv7X3wYDS83xCf1F1ZKyIswZOAZzxEnGh926rieJBWJqe0SglVWNha4KDW2dAkWCFCr/Oqx2FakWQ5DU5RNeJISEhDiRLXVkpyAptxrx5Nvz6/+uoF8ERFUtl2wMuIktinRCo/KiZ9ZNtmX/sBRZ8DIEEK+YUgY8IQ7bfgXES2/TGeKD0pEzhtZPx18Xx2cba8SvNKCSQlCfYJSwvf2Jr5S/YePnJ3Pd+XShRsXPsbXt1IPtY89QL4nMQrCpegCZaxxqYCxYoUbD2WL3COxKHUMTvev/u73mat3RWtq/7OzbnEBVNQN6BxO8NknKmR2ao1nEKR1IkgprKCFuMqOC6OgxRqcY8NOZhJjhROYDPlMeFQjscCcehtG7VZRgqIzTbUuFqpT0AhR2wtrt7kduBFmejMtkniAaZd6dMX381+fWlimLNjaipQWZlHvpqo+Rq9fm3NSSJazl1NZM3Vs944kIEq9pUgbOy6njV4Z6n+KFaWPidwoz3cf/RRYM6IK/BRiaVyCeOl8gJYxDhzQ2GOERajYOfdgQt/3tuh92nnM6/fooMjDWyaNIDPax9JLddYMYtFxZU1GFhOx/GW1DQ3AkwvGdQo4tiFobfwn1iYSryZqftfTBGS+N7d93FcJDXtEm9LZPg4yHfLt8JA6TUwyBVmnaa+JYB+vlQa1l8DUQLRAaXBgeSUKNd5zJwNSB1xaASzktK2Py2E5c7prCKtaVdF1YXJ9OOkuwA2PHdXIs1TNADMEvkJUZnrmHwdbxOjbtfaIMuDgjCd7W0TZQN/c4BlQXEAR8NtZt+AjARGh+uuk1s3j0xVLp7g5XYwWbxIK4XQWyTx7Jker4Oa1+FOO3B/tfaevoYUhSndkw8npjhukPX/tNQXC3Ce/AMZHTlOkwgAAA==
+var rule = {
+    模板: '短视2',
+    title: '牌牌影院',
+    host: "https://paipaiyy.com",
+    class_name: "电影&电视剧&综艺&动漫&短剧",
+    class_url: "1&2&3&4&5",
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    searchable: 2,
+    quickSearch: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    url: '/index.php/api/vod#type=fyclassfyfilter&page=fypage',
+    detailUrl: '/voddetail/fyid.html',
+    play_parse: true,
+    limit: 6,
+    推荐: 'body&&.public-list-box;a&&title;.lazy&&data-original;.public-list-prb&&Text;a&&href',
+    二级: {
+        title: '.slide-info-title&&Text;.slide-info:eq(3)--strong&&Text',
+        img: '.detail-pic&&data-original',
+        desc: '.fraction&&Text;.slide-info-remarks:eq(1)&&Text;.slide-info-remarks:eq(2)&&Text;.slide-info:eq(2)--strong&&Text;.slide-info:eq(1)--strong&&Text',
+        content: '#height_limit&&Text',
+        tabs: '.anthology.wow.fadeInUp.animated&&.swiper-wrapper&&a',
+        tab_text: '.swiper-slide--i--span&&Text',
+        lists: '.anthology-list-box:eq(#id) li',
+    },
+    搜索: '.search-box;.thumb-txt&&Text;.lazy&&data-original;.public-list-prb&&Text;a&&href;.thumb-blurb&&Text',
+    lazy: $js.toString(() => {
+        let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        let url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/\.m3u8/.test(url)) {
+            let body = request(url);
+            let lines = body.split('\n');
+            let m3u8Url = null;
+            for (let line of lines) {
+                line = line.trim();
+                if (line.endsWith('.m3u8')) {
+                    m3u8Url = urljoin(url, line);
+                    console.log(m3u8Url);
+                    break;
+                }
+            }
+            input = {
+                jx: 0,
+                url: m3u8Url || url,
+                parse: 0
+            };
+        } else {
+            input = {
+                jx: tellIsJx(url),
+                url: url,
+                parse: 0
+            };
+        }
+    }),
+}

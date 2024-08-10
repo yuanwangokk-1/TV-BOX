@@ -1,1 +1,79 @@
-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
+var rule = {
+    类型: '小说',//影视|听书|漫画|小说
+    title: '顶点小说[书]',
+    host: 'https://www.23ddw.cc/',
+    编码: 'gb18030',
+    url: '/fyclass/#fypage',
+
+    searchUrl: '/modules/article/search.php?searchkey=**&page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    hikerListCol: "text_1",
+    hikerClassListCol: "text_1",
+    class_name: '全本',
+    class_url: '0',
+    class_parse: '.nav&&ul&&li;a&&Text;a&&href;class/(.*?)_',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let html = request(input);
+        let title = pdfh(html, '.bookname&&h1&&Text');
+        let content = pdfh(html, '#content&&Html').replace(/\n/g, "").split("<br>").filter(v => v).slice(0).join("\n").replace(/&nbsp;/g, ' ');
+        let ret = JSON.stringify({
+            title,
+            content
+        });
+        input = {parse: 0, url: 'novel://' + ret, js: ''};
+    }),
+    double: false,
+    推荐: '#newscontent&&ul&&li;.s2&&Text;;.s5&&Text;a&&href',
+    一级: $js.toString(() => {
+        let d = [];
+        if (MY_CATE == '0') {
+            input = urljoin(rule.host, '/quanben/' + MY_PAGE);
+            let html = request(input);
+            let lis = pdfa(html, 'table.grid&&tr:gt(0)');
+            lis.forEach(it => {
+                d.push({
+                    title: pdfh(it, 'a&&Text'),
+                    desc: pdfh(it, 'a:eq(1)&&Text'),
+                    img: "",
+                    url: pd(it, 'a&&href', MY_URL),
+                });
+            });
+        } else {
+            let html = request(input.split('#')[0]);
+            let lis = pdfa(html, '#newscontent&&ul&&li');
+            lis.forEach(it => {
+                d.push({
+                    title: pdfh(it, '.s2&&Text'),
+                    desc: pdfh(it, '.s5&&Text'),
+                    img: "",
+                    url: pd(it, 'a&&href', MY_URL),
+                });
+            });
+        }
+        setResult(d);
+    }),
+    二级: {
+        title: 'h1&&Text',
+        img: '#fmimg&&img&&src',
+        desc: '#info&&p:eq(-1)&&Text',
+        content: '#intro&&p&&Text',
+        tabs: '#list&&dt',
+        lists: '#list&&dd',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href',
+        list_url_prefix: '',
+    },
+    搜索: 'table.grid&&tr:gt(0);a&&Text;;.odd:eq(1)&&Text;a&&href;a:eq(1)&&Text',
+}

@@ -1,1 +1,27 @@
-dmFyIHJ1bGUgPSB7CiAgICDnsbvlnos6ICflvbHop4YnLC8v5b2x6KeGfOWQrOS5pnzmvKvnlLt85bCP6K+0CiAgICB0aXRsZTogJ+WIhuS6q+efreinhumikScsCiAgICBob3N0OiAnaHR0cDovL3d3dy5zaGFyZW5pY2UubmV0JywKICAgIHVybDogJy9meWNsYXNzP3BhZ2U9ZnlwYWdlJywKICAgIHNlYXJjaFVybDogJy92aWRlby9zZWFyY2g/a3c9KionLAogICAgc2VhcmNoYWJsZTogMSwKICAgIHF1aWNrU2VhcmNoOiAwLAogICAgZmlsdGVyYWJsZTogMCwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdQQ19VQScsCiAgICB9LAogICAgdGltZW91dDogNTAwMCwKICAgIGNsYXNzX3BhcnNlOiAnYVtocmVmKj1uZXRdOmx0KDI5KTthJiZUZXh0O2EmJmhyZWY7bmV0LyguKiknLAogICAgY2F0ZV9leGNsdWRlOiAnJywKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBsYXp5OiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIGxldCBodG1sID0gcmVxdWVzdChpbnB1dCk7CiAgICAgICAgbGV0IF91cmwgPSBwZGZoKGh0bWwsICdkaXYudmlkZW8tcGxheS1ib3gmJnZpZGVvJiZzcmMnKSArICcjLm1wNCc7CiAgICAgICAgaW5wdXQgPSB7cGFyc2U6IDAsIHVybDogX3VybCwganM6ICcnfTsKICAgIH0pLAogICAgZG91YmxlOiB0cnVlLAogICAg5o6o6I2QOiAnZGl2Lml0ZW0tYm94IHVsO2xpOyo7KjsqOyonLAogICAg5LiA57qnOiAnZGl2Lml0ZW0tYm94JiZ1bCYmbGk7YSYmdGl0bGU7aW1nJiZkYXRhLW9yaWdpbmFsOzthJiZocmVmJywKICAgIOS6jOe6pzogJyonLAogICAg5pCc57SiOiAnKicsCn0=
+var rule = {
+    类型: '影视',//影视|听书|漫画|小说
+    title: '分享短视频',
+    host: 'http://www.sharenice.net',
+    url: '/fyclass?page=fypage',
+    searchUrl: '/video/search?kw=**',
+    searchable: 1,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'PC_UA',
+    },
+    timeout: 5000,
+    class_parse: 'a[href*=net]:lt(29);a&&Text;a&&href;net/(.*)',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let html = request(input);
+        let _url = pdfh(html, 'div.video-play-box&&video&&src') + '#.mp4';
+        input = {parse: 0, url: _url, js: ''};
+    }),
+    double: true,
+    推荐: 'div.item-box ul;li;*;*;*;*',
+    一级: 'div.item-box&&ul&&li;a&&title;img&&data-original;;a&&href',
+    二级: '*',
+    搜索: '*',
+}

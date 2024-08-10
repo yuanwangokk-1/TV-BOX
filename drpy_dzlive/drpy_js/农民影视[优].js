@@ -1,1 +1,45 @@
-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
+// 发布页 https://www.nmdvd.com/
+var rule = {
+    title: '农民影视[优]',
+    tab_rename: {'默认': '线路①', '播放': '线路①', '滴滴': '线路①'}, //host:'https://www.nmddd.com',
+    host: 'https://www.nmdvd.com/',
+    hostJs: `print(HOST);let html=request(HOST,{headers:{"User-Agent":MOBILE_UA}});
+	let src = jsp.pdfh(html,"body&&a:eq(1)&&href")||jsp.pdfh(html,"body&&a:eq(1)&&Text");
+	if(!src.startsWith('http')){src='https://'+src};print("抓到主页:"+src);HOST=src`,
+    url: '/vod-list-id-fyfilter.html', // /vod-list-id-2-pg-1-order--by-time-class-0-year-2023-letter--area--lang-.html
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.cateId}}-pg-fypage-order--by-{{fl.by or "time"}}-class-0-year-{{fl.year}}-letter-{{fl.letter}}-area-{{fl.area}}-lang-',
+    filter: 'H4sIAAAAAAAAA+2Z304TQRyF32WvuZjZtjNT3sBnMFxUbCJRMQE0IYRELQgtCmqkFSz+iZaWiFICIbIIfZnulr6FW7o756CJMeFKMnf9ndOdnW9osl+WOU96ozfnvLvFWW/UGy/MFG/c9ka8ycL9Yjz39k/C9yvx/Khw72Hx4ouTcRwutvql1iCOB+nNjyRxpdU9rffKS0mTQ1Oth+UmGmWb3vJ+VFpEo9E0X4XHJ2iMbaInL6PHVTR53KfcvLSaFLho+W03KFOFfUelSvR0kypsL2wsXdqEjPc3NiiH51WYKhZwWmG9HT4P/n5aWPlLs7/xLEmTIe362xvRj72kSwZ73Vo7Oj5LrxsO9sjOVsN3p0mXDHbNDzvoksEeQK0R1XeTLhlsd9DGdclgu2o7rHwMtz6ltZ3tXXd2o63GeaPTDTbTe3NkqV60w2A7pRoOaXe+so8dJAN2t867W+cu3kq00omPNl3WznblRqe39q1X3kgXt3P6jW5noXdai6rpHwOzvcviUfi9lN5iOPBPZLZYmKKfyPFh9+TzP/5EfOFnkuziI+U+cp9ziVxyLpALymXe5jLPuUFuONfINecKueI8hzzHeRZ5lnPwSuaV4JXMK8ErmVeCVzKvAK9gXgFewbwCvIJ5BXgF8wrwCuYV4BXMK8ArmFeAVzCvAK9gXgFeAV6Zz6e8Fx8pN8gN5xq55lwhV5znkOc4zyLPcp5BnuHcR+5zLpFLzgVy5jXgNcxrwGuY14DXMK8Br2FeA17DvAa8hnkNeA3zGvAa5jXgNcxrwGuYV4NXM68Gr2ZeDV7NvBq8mnk1eDXzavBq5tXg1cyrwauZV4NXM68Gr2ZeBV7FvAq8inkVeBXzKvAq5lXgVcyrwKuYV4FXMa8Cr2JeBV7FvAq88Ud+fNyaxcMjWn0dBmt/PDyi2lG/dpgsMDMRf9U+vYIgar9JmjsTM9N48u0thMupfUyPP5gqDu46NuL5V7RB0MaP4m7QjI0sRUMV+8zAXA7aaYWzi+1jICe4Cscd7TYHToMq51zMuZhzMedizsWcizkXcy52zVwsQy7m7MbZjbMbZzfObpzdOLtxdvP/2032im+acDphpRX9/EovhsxvFf3/Lu/eGTmrclblrMpZlbMqZ1XOqq6ZVfnKvTRyeuP0xumN0xunN05vnN5cI72Z/wVNTNQhri4AAA==',
+    filter_def: {
+        1: {cateId: '1'}, 2: {cateId: '2'}, 3: {cateId: '3'}, 4: {cateId: '4'}, 26: {cateId: '26'}
+    },
+    searchUrl: '/index.php?m=vod-search&wd=**',
+    searchable: 2,//是否启用全局搜索,
+    headers: {//网站的请求头,完整支持所有的,常带ua和cookies
+        'User-Agent': 'MOBILE_UA',
+    }, // class_parse: '#topnav li:lt(4);a&&Text;a&&href;.*/(.*?).html',
+    class_name: '电影&连续剧&综艺&动漫&短剧',//静态分类名称拼接
+    class_url: '1&2&3&4&26',//静态分类标识拼接
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let init_js = `Object.defineProperties(navigator, {platform: {get: () => 'iPhone'}});`;
+        input = {
+            parse: 1,
+            url: input,
+            js: `try{location.href = document.querySelectorAll("iframe")[1].src;}catch(err) {}document.querySelector(".line").click()`,
+            parse_extra: '&init_script=' + encodeURIComponent(base64Encode(init_js)),
+        }
+    }),
+    limit: 6,
+    推荐: '.globalPicList li:has(img);a&&title;*;*;*',
+    一级: '.globalPicList li;.sTit&&Text;img&&src;.sBottom--em&&Text;a&&href',
+    二级: {
+        "title": ".title&&Text;.type-title&&Text",
+        "img": ".page-hd&&img&&src",
+        "desc": ".desc_item:eq(3)&&Text;.desc_item:eq(4)--span&&Text;;.desc_item:eq(1)--span&&Text;.desc_item:eq(2)--span&&Text",
+        "content": ".detail-con p&&Text",
+        "tabs": ".hd",
+        "lists": ".numList:eq(#id) li"
+    },
+    搜索: '.ulPicTxt.clearfix li;*;img&&data-src;.sDes:eq(1)&&Text;*',
+}

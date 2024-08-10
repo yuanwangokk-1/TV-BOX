@@ -1,1 +1,28 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+WtnOeEtuW9seinhicsCiAgICBob3N0OiAnaHR0cHM6Ly93d3cuenJ5cy50b3AnLAogICAgdXJsOiAnL2luZGV4LnBocC92b2Qvc2hvdy9pZC9meXBhZ2UvcGFnZS9meWNsYXNzLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnL2luZGV4LnBocC92b2Qvc2VhcmNoL3BhZ2UvZnlwYWdlL3dkLyoqLmh0bWwnLAogICAgc2VhcmNoYWJsZTogMiwKICAgIHF1aWNrU2VhcmNoOiAwLAogICAgZmlsdGVyYWJsZTogMCwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdNT0JJTEVfVUEnLAogICAgfSwKICAgIGNsYXNzX3BhcnNlOiAnLnRvcF9uYXYgbGk7YSYmVGV4dDthJiZocmVmOy4qLyguKj8pLmh0bWwnLAogICAgcGxheV9wYXJzZTogdHJ1ZSwKICAgIGxhenk6ICcnLAogICAgbGltaXQ6IDYsCiAgICDmjqjojZA6ICdkaXYudGl0X3VwOmVxKDEpJiZkaXYucGFubmVsO3VsLnZvZGxpc3QgbGk7KjsqOyo7KicsCiAgICBkb3VibGU6IHRydWUsCiAgICDkuIDnuqc6ICd1bC52b2RsaXN0IGxpO2EmJnRpdGxlO2EmJmRhdGEtb3JpZ2luYWw7LnBpY190ZXh0JiZUZXh0O2EmJmhyZWYnLAogICAg5LqM57qnOiB7CiAgICAgICAgdGl0bGU6ICdoMiYmVGV4dCcsCiAgICAgICAgaW1nOiAnLnZvZGxpc3RfdGh1bWImJmRhdGEtb3JpZ2luYWwnLAogICAgICAgIGRlc2M6ICcuY29udGVudF9kZXRhaWwmJmxpOmVxKDEpJiZUZXh0JywKICAgICAgICBjb250ZW50OiAnLmNvbnRlbnRfZGVzYyYmc3BhbiYmVGV4dCcsCiAgICAgICAgdGFiczogJy5wbGF5X3NvdXJjZV90YWImJmEnLAogICAgICAgIGxpc3RzOiAnLmNvbnRlbnRfcGxheWxpc3Q6ZXEoI2lkKSBsaScsCiAgICB9LAogICAg5pCc57SiOiAndWwudm9kbGlzdCYmbGk7KjsqOyo7KicsCn0=
+var rule = {
+    title: '孜然影视',
+    host: 'https://www.zrys.top',
+    url: '/index.php/vod/show/id/fypage/page/fyclass.html',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    class_parse: '.top_nav li;a&&Text;a&&href;.*/(.*?).html',
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: 'div.tit_up:eq(1)&&div.pannel;ul.vodlist li;*;*;*;*',
+    double: true,
+    一级: 'ul.vodlist li;a&&title;a&&data-original;.pic_text&&Text;a&&href',
+    二级: {
+        title: 'h2&&Text',
+        img: '.vodlist_thumb&&data-original',
+        desc: '.content_detail&&li:eq(1)&&Text',
+        content: '.content_desc&&span&&Text',
+        tabs: '.play_source_tab&&a',
+        lists: '.content_playlist:eq(#id) li',
+    },
+    搜索: 'ul.vodlist&&li;*;*;*;*',
+}

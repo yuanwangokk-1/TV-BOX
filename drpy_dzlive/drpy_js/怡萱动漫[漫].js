@@ -1,1 +1,36 @@
-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
+var rule = {
+    title: '怡萱动漫[漫]',
+    host: 'https://www.yxdm.tv',
+    // url:'/category.html?channel=17&zhonglei=fyclass&orderby=pubdate&totalresult=2999&pageno=fypage',
+    url: '/category.html?channel=17&zhonglei=fyclassfyfilter&pageno=fypage',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '&{{fl.by}}&{{fl.year}}&{{fl.area}}&{{fl.sta}}&{{fl.class}}',
+    filter: 'H4sIAAAAAAAAA+2VT28SQRjGv8ueObDYfzbh4CfwYnoxPSx0D1qsyh8jaUhQQgOk0i0qtGGLYoJgC1ULqXbJ0i+zMwvfwl1mmH1nvHBnjvt7nrzzvu9k9jlUnuwo208PlX09q2wrqbSmhJQD7YXufUzvm8j67n2/0RIZfe468DAq9maFno+9DyUXInR635ratvN3QAWvUjqTigZ4YUR/btD1sTv+yBsDvDBi8xLXBvjThDcGOLfrW0njWlIHnSPzFzq2luwcNzrY7FPq14lSsjB43aOmDQ2UsAr9rjupchUIgR1mdS0JOrwbOWN7yQ4j4cgDyvwq0fk3ECOCGIGiKogqFMOCGAai+pAXvW8gbgniFhQ3BXETihuCuAHFdUFch+KaIK5BUdiQCjekChtS4YZUYUMq3JAqbEgNNoSbI9z4Icqo/IG79nhCS6XAvZe7uFBc8t7RUW12vjjh+evE2yglC4NbGEzbeWighBlKv+lxzEAIG8Jouf1TaKCE9WBU0fUV1wMhrMLXNmoOuAqEBO/YwqUzzkAIO+JujAtD7ghC2BTdU49wUxDCDFctXOH3QAgznE+QUeIMhLDfV94OnvDcQAmb4n3frfOLIoRNwW6WTUEIq1A6c6wyV4EQZnhn4HydMxAS/GMNVOlxTRLCeqj0HNvkeiAkWFRn+vOCX9ScsArVI3Ryw1UghFUwvziWxVUghFXoDHG+iwxuVwFkww7bs4tv7udLbl4G4ROKZYP3g6s1ZJ38935w43bWGNFSL5N7ejKWjb7KxPa0tA5fC80zYIonnsX3/eN2Q/4VItNyyyWZiDIRZSLKRJSJKBNxpRPx8c4jmYUyC2UWyiyUWSizcKWzEBVvnXFdxqGMQxmHMg5lHMo4XOE4zP0DDVodpDkcAAA=',
+    filter_def: {
+        TV: {by: 'orderby=pubdate'},
+        剧场版: {by: 'orderby=pubdate'},
+        OVA: {by: 'orderby=pubdate'},
+        其他: {by: 'orderby=pubdate'}
+    },
+    searchUrl: '/search.html?keyword=**&PageNo=fypage',
+    searchable: 2,//是否启用全局搜索,
+    headers: {//网站的请求头,完整支持所有的,常带ua和cookies
+        'User-Agent': 'PC_UA',
+    },
+    class_name: 'TV&剧场版&OVA&其他',
+    class_url: 'TV&剧场版&OVA&其他',
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: '.dhnew.adj li;*;*;*;*',
+    一级: '.dhnew li;a&&title;img&&src;p:eq(-1)&&Text;a&&href',
+    二级: {
+        "title": "h1&&Text;.dhxx p:eq(4)&&Text",
+        "img": ".anime-img&&img&&src",
+        "desc": ".info1-left li:eq(1)&&Text;.dhxx p:eq(3)&&Text;.dhxx p:eq(2)&&Text;.info1-left li:eq(0)&&Text;.info1-left li:eq(2)&&Text",
+        "content": ".info2--strong&&Text",
+        "tabs": ".ol-select li",
+        "lists": ".ol-content:eq(#id) li"
+    },
+    搜索: '*;*;*;p:eq(3)&&Text;*',
+}

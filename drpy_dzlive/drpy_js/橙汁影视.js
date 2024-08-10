@@ -1,1 +1,41 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+apmeaxgeW9seinhicsCiAgICBob3N0OiAnaHR0cHM6Ly93d3cub3Jhbmdlay5jbicsCiAgICB1cmw6ICcvc2hvdy9meWNsYXNzLS0tLS0tLS1meXBhZ2UtLS0uaHRtbCcsCiAgICBzZWFyY2hVcmw6ICcnLAogICAgc2VhcmNoYWJsZTogMCwKICAgIHF1aWNrU2VhcmNoOiAwLAogICAgZmlsdGVyYWJsZTogMSwKICAgIGZpbHRlcjogJycsCiAgICBmaWx0ZXJfdXJsOiAnJywKICAgIGZpbHRlcl9kZWY6IHt9LAogICAgaGVhZGVyczogewogICAgICAgICdVc2VyLUFnZW50JzogJ01PQklMRV9VQScsCiAgICB9LAogICAgdGltZW91dDogNTAwMCwKICAgIGNsYXNzX3BhcnNlOiAnLmhsLW5hdiYmbGk7YSYmVGV4dDthJiZocmVmOy4qXC8oLio/KVwuaHRtbCcsCiAgICBjYXRlX2V4Y2x1ZGU6ICcnLAogICAgcGxheV9wYXJzZTogdHJ1ZSwKICAgIGxhenk6ICRqcy50b1N0cmluZygoKSA9PiB7CiAgICAgICAgaW5wdXQgPSB7CiAgICAgICAgICAgIHBhcnNlOiAxLAogICAgICAgICAgICB1cmw6IGlucHV0LAogICAgICAgICAgICAvLyBqczogInRyeXtsb2NhdGlvbi5ocmVmID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnaWZyYW1lJylbMF0uc3JjO31jYXRjaChlcnIpIHt9ZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLmVjLW5vJykuY2xpY2soKSIsCiAgICAgICAgfTsKICAgIH0pLAogICAgZG91YmxlOiBmYWxzZSwKICAgIOaOqOiNkDogJ2xpLmhsLWxpc3QtaXRlbTsqOyo7OyonLAogICAg5LiA57qnOiAnLmhsLXZvZC1saXN0JiZsaTthJiZ0aXRsZTsuaGwtbGF6eSYmZGF0YS1vcmlnaW5hbDs7YSYmaHJlZicsCiAgICDkuoznuqc6IHsKICAgICAgICB0aXRsZTogJy5obC1tb2ItbmFtZSYmVGV4dCcsCiAgICAgICAgaW1nOiAnLmhsLWxhenkmJmRhdGEtb3JpZ2luYWwnLAogICAgICAgIGRlc2M6ICcuaGwtdGV4dC1jb25jaCYmVGV4dCcsCiAgICAgICAgY29udGVudDogJy5obC10ZXh0LW11dGVkJiZUZXh0JywKICAgICAgICB0YWJzOiAnYm9keSYmLmhsLW5vdGljZS1ib3gmJi5obC10ZXh0LXNpdGUnLAogICAgICAgIGxpc3RzOiAnLmhsLXBsYXlzLWxpc3Q6ZXEoI2lkKSYmbGknLAogICAgICAgIHRhYl90ZXh0OiAnYm9keSYmVGV4dCcsCiAgICAgICAgbGlzdF90ZXh0OiAnYm9keSYmVGV4dCcsCiAgICAgICAgbGlzdF91cmw6ICdhJiZocmVmJwogICAgfSwKICAgIOaQnOe0ojogJ+WIl+ihqDvmoIfpopg75Zu+54mHO+aPj+i/sDvpk77mjqU76K+m5oOFJywKfQ==
+var rule = {
+    title: '橙汁影视',
+    host: 'https://www.orangek.cn',
+    url: '/show/fyclass--------fypage---.html',
+    searchUrl: '',
+    searchable: 0,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: '.hl-nav&&li;a&&Text;a&&href;.*\/(.*?)\.html',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {
+            parse: 1,
+            url: input,
+            // js: "try{location.href = document.querySelectorAll('iframe')[0].src;}catch(err) {}document.querySelector('.ec-no').click()",
+        };
+    }),
+    double: false,
+    推荐: 'li.hl-list-item;*;*;;*',
+    一级: '.hl-vod-list&&li;a&&title;.hl-lazy&&data-original;;a&&href',
+    二级: {
+        title: '.hl-mob-name&&Text',
+        img: '.hl-lazy&&data-original',
+        desc: '.hl-text-conch&&Text',
+        content: '.hl-text-muted&&Text',
+        tabs: 'body&&.hl-notice-box&&.hl-text-site',
+        lists: '.hl-plays-list:eq(#id)&&li',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href'
+    },
+    搜索: '列表;标题;图片;描述;链接;详情',
+}

@@ -1,1 +1,11 @@
-qz2VfkB3O9fqiff5MjJa/ASdotKRYPNu8cLtwdABO3MDeyNp8SITwKEVrcmMRsD6s0DQiKXK91uXHy81Bhzh8xPZzDl/A9cOXQrBxH+Qn2Zl2eNL3Ogzx+kAqZMq7TDGW7Ndfho+4VAcQyAx6N07mDuGF1lz91FSGaKchzKt2kYPL+JX4c3Ofsnzk+16Gdl29P2MGsI6qOncGIQ9x4hZBjm8wzHMThHphL9JKQp9CBFwZXJH5YL1ZbIY71VKemiQZoxWpO4oiakEqdCibIR5QvCxlUMhkwO6KX+aCpbp+KpESjqEq2fad2I4O8RKWCNT7aOH4LZ/TS6o9yTjNNPnt+nc43lD+dXFtbN8wyenThHgxUj5B7Ud+omC0YolW55Tbjj8sdkPIeap4nMvIR1TOgtifhNGmzINU+xr8HurbQ9tA+1MvanQTBf8KVW5oTzLdyHN0esbVirX1RwfRONMTQ==
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '冠建影视',
+    host: 'https://www.pandaguard.com',
+    url: '/vodshow/fyclass--------fypage---/',
+    searchUrl: '/vodsearch/**----------fypage---/',
+    class_parse: '.navbar-items li:gt(1):lt(10);a&&Text;a&&href;/(\\d+)',
+}

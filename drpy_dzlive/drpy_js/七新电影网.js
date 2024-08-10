@@ -1,1 +1,44 @@
-T2JqZWN0LmFzc2lnbihtdWJhbi7pppblm74yLuS6jOe6pywgewogICAgdGFiczogJy5zdHVpLXBhbm5lbF9oZCBoMycsCn0pOwp2YXIgcnVsZSA9IHsKICAgIHRpdGxlOiAn5LiD5paw55S15b2x572RJywKICAgIOaooeadvzogJ+mmluWbvjInLAogICAgaG9zdDogJ2h0dHA6Ly93d3cuN3hkeS5jb20nLAogICAgLy8gdXJsOicvZnljbGFzcy9pbmRleGZ5cGFnZS5odG1sWy9meWNsYXNzL2luZGV4Lmh0bWxdJywKICAgIHVybDogJy9meWZpbHRlci9pbmRleGZ5cGFnZS5odG1sWy9meWZpbHRlci9pbmRleC5odG1sXScsCiAgICBmaWx0ZXJhYmxlOiAxLC8v5piv5ZCm5ZCv55So5YiG57G7562b6YCJLAogICAgZmlsdGVyX3VybDogJ3t7ZmwuY2F0ZUlkfX0nLAogICAgdGFiX2V4Y2x1ZGU6ICfmnKzlkajng63pl6h85pyA6L+R5pu05pawJywKICAgIGZpbHRlcjogJ0g0c0lBQUFBQUFBQUE2dFdTc2xNekt2TXpFc3ZBTkpLVnRIVlN0bXBsVXBXU3NtSkphbWVLVW82U25tSnVhbEEvdE9PdHVjYmR3UDVaWWs1cGFsZ2hYa2c0ZFlWTDV0WGdJU0JIQlNqYW5XZ0tycFdQTms3NTNsbk8weFJmbDU2VldrK2lwcm5IUnVmTmJjaTFDUm1GcUliODN6NXhLYzdkeU9VWktkbWxDYm1vU2g1MWpqaFdjTTBKQ1ZBbTVKS1VSMHpiYzdUenVVSUpSV1pXYWdLWHF6YjhIVHZWSVNDck13Y05CTTZsNk00TmFzVTRkVFkybGdkY0NBVVp3RE5wVUpnUXN5Qld6MTc3NU5keTRFT2dLcElMODFQemtqTVExTHhiTWY2cC8wYkVDcEtFdlBTU3hLUnpYaTJadm56ZlgwSUZmbWx1YWtvOHRPWHZweS9FaUZmbElscXcvUDVheEdTS2FVUU9hQy9hd0VhMitwQlNRSUFBQT09JywKICAgIGZpbHRlcl9kZWY6IHsKICAgICAgICBkaWFueWluZ3BpYW46IHtjYXRlSWQ6ICdkaWFueWluZ3BpYW4nfSwKICAgICAgICBkaWFuc2hpanU6IHtjYXRlSWQ6ICdkaWFuc2hpanUnfSwKICAgICAgICB6b25neWk6IHtjYXRlSWQ6ICd6b25neWknfSwKICAgICAgICBkb25nbWFuOiB7Y2F0ZUlkOiAnZG9uZ21hbid9CiAgICB9LAogICAgbGF6eTogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICAvLyDlsY/olL3lm77niYdvbmVycm9y5peg6ZmQ6K+35rGC6Zeu6aKYCiAgICAgICAgLy8gbGV0IGluaXRfanMgPSBgCiAgICAgICAgLy8gdmFyIGltZ1RpbWVyID0gc2V0SW50ZXJ2YWwoZnVuY3Rpb24oKXsKICAgICAgICAvLyAgICAgaWYodHlwZW9mKCQpIT0ndW5kZWZpbmVkJyl7CiAgICAgICAgLy8gICAgICAgICBsZXQgY3NzID0gJCgnLmxhenlsb2FkW2FsdD0i5oiQ5Lq65rex5aSc56aP5YipIl0nKTsKICAgICAgICAvLyAgICAgICAgIGlmKGNzcy5sZW5ndGggPiAwKXsKICAgICAgICAvLyAgICAgICAgICAgICBjc3MuYXR0cignb25lcnJvcicsJ3RoaXMub25lcnJvcj1udWxsJyk7CiAgICAgICAgLy8gICAgICAgICAgICAgY2xlYXJJbnRlcnZhbChpbWdUaW1lcik7CiAgICAgICAgLy8gICAgICAgICB9CiAgICAgICAgLy8gICAgIH0KICAgICAgICAvLyB9LDIwMCk7CiAgICAgICAgLy8gYDsKICAgICAgICBsZXQgaW5pdF9qcyA9IGBPYmplY3QuZGVmaW5lUHJvcGVydGllcyhuYXZpZ2F0b3IsIHtwbGF0Zm9ybToge2dldDogKCkgPT4gJ2lQaG9uZSd9fSk7YDsKICAgICAgICBpbnB1dCA9IHsKICAgICAgICAgICAgcGFyc2U6IDEsCiAgICAgICAgICAgIHVybDogaW5wdXQsCiAgICAgICAgICAgIGpzOiAnJywKICAgICAgICAgICAgcGFyc2VfZXh0cmE6ICcmaW5pdF9zY3JpcHQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChiYXNlNjRFbmNvZGUoaW5pdF9qcykpLAogICAgICAgIH0KICAgIH0pLAogICAgLy8gc2VhcmNoVXJsOicvc2VhcmNoLnBocD9wYWdlPWZ5cGFnZSZzZWFyY2h3b3JkPSoqJnNlYXJjaHR5cGU9JywKICAgIHNlYXJjaFVybDogJy9zZWFyY2gucGhwI3NlYXJjaHdvcmQ9Kio7cG9zdCcsCiAgICBjbGFzc19wYXJzZTogJy5zdHVpLXRvdV9fbWVudSBsaTpndCgwKTpsdCg3KTthJiZUZXh0O2EmJmhyZWY7LiovKC4qPykvLipodG1sJywKfQ==
+Object.assign(muban.首图2.二级, {
+    tabs: '.stui-pannel_hd h3',
+});
+var rule = {
+    title: '七新电影网',
+    模板: '首图2',
+    host: 'http://www.7xdy.com',
+    // url:'/fyclass/indexfypage.html[/fyclass/index.html]',
+    url: '/fyfilter/indexfypage.html[/fyfilter/index.html]',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.cateId}}',
+    tab_exclude: '本周热门|最近更新',
+    filter: 'H4sIAAAAAAAAA6tWSslMzKvMzEsvANJKVtHVStmplUpWSsmJJameKUo6SnmJualA/tOOtucbdwP5ZYk5palghXkg4dYVL5tXgISBHBSjanWgKrpWPNk753lnO0xRfl56VWk+iprnHRufNbci1CRmFqIb83z5xKc7dyOUZKdmlCbmoSh51jjhWcM0JCVAm5JKUR0zbc7TzuUIJRWZWagKXqzb8HTvVISCrMwcNBM6l6M4NasU4dTY2lgdcCAUZwDNpUJgQsyBWz1775Ndy4EOgKpIL81PzkjMQ1LxbMf6p/0bECpKEvPSSxKRzXi2ZvnzfX0IFfmluako8tOXvpy/EiFflIlqw/P5axGSKaUQOaC/awEa2+pBSQIAAA==',
+    filter_def: {
+        dianyingpian: {cateId: 'dianyingpian'},
+        dianshiju: {cateId: 'dianshiju'},
+        zongyi: {cateId: 'zongyi'},
+        dongman: {cateId: 'dongman'}
+    },
+    lazy: $js.toString(() => {
+        // 屏蔽图片onerror无限请求问题
+        // let init_js = `
+        // var imgTimer = setInterval(function(){
+        //     if(typeof($)!='undefined'){
+        //         let css = $('.lazyload[alt="成人深夜福利"]');
+        //         if(css.length > 0){
+        //             css.attr('onerror','this.onerror=null');
+        //             clearInterval(imgTimer);
+        //         }
+        //     }
+        // },200);
+        // `;
+        let init_js = `Object.defineProperties(navigator, {platform: {get: () => 'iPhone'}});`;
+        input = {
+            parse: 1,
+            url: input,
+            js: '',
+            parse_extra: '&init_script=' + encodeURIComponent(base64Encode(init_js)),
+        }
+    }),
+    // searchUrl:'/search.php?page=fypage&searchword=**&searchtype=',
+    searchUrl: '/search.php#searchword=**;post',
+    class_parse: '.stui-tou__menu li:gt(0):lt(7);a&&Text;a&&href;.*/(.*?)/.*html',
+}

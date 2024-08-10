@@ -1,1 +1,13 @@
-T2JqZWN0LmFzc2lnbihtdWJhbi5teHByby7kuoznuqcsIHsKICAgIHRhYl90ZXh0OiAnZGl2LS1zbWFsbCYmVGV4dCcsCn0pOwp2YXIgcnVsZSA9IHsKICAgIOaooeadvzogJ214cHJvJywKICAgIHRpdGxlOiAn5b6A5b6A5b2x6KeGJywKICAgIGhvc3Q6ICdodHRwczovL3d3dy53d3lzLnByby8nLAogICAgY2F0ZV9leGNsdWRlOiAn5LuK5pel5pu05pawJywKICAgIHVybDogJy9zaG93L2Z5Y2xhc3MtLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKICAgIHNlYXJjaFVybDogJy9zZWFyY2gvKiotLS0tLS0tLS0tZnlwYWdlLS0tLmh0bWwnLAogICAgY2xhc3NfcGFyc2U6ICcubmF2YmFyLWl0ZW1zIGxpOmd0KDApOmx0KDgpO2EmJlRleHQ7YSYmaHJlZjsuKi8oXFxkKyknLAogICAgdGFiX2V4Y2x1ZGU6ICfmjpLluo8nLAp9
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '往往影视',
+    host: 'https://www.wwys.pro/',
+    cate_exclude: '今日更新',
+    url: '/show/fyclass--------fypage---.html',
+    searchUrl: '/search/**----------fypage---.html',
+    class_parse: '.navbar-items li:gt(0):lt(8);a&&Text;a&&href;.*/(\\d+)',
+    tab_exclude: '排序',
+}

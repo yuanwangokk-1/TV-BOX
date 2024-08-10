@@ -1,1 +1,65 @@
-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
+var rule = {
+    类型: '听书',
+    title: '酷我听书[听]',
+    host: 'http://tingshu.kuwo.cn',
+    url: '/v2/api/search/filter/albums?classifyId=fyfilter&notrace=0&source=kwplayer_ar_9.1.8.1_tvivo.apk&platform=1&kweexVersion=1.1.5&uid=2511482006&sortType=playCnt&loginUid=540339516&bksource=kwbook_ar_9.1.8.1_tvivo.apk&rn=21&categoryId=fyclass&pn=fypage',
+    searchUrl: 'http://search.kuwo.cn/r.s?client=kt&all=**&ft=album&newsearch=1&itemset=web_2013&cluster=0&pn=(fypage-1)&rn=21&rformat=json&encoding=utf8&show_copyright_off=1&vipver=MUSIC_8.0.3.0_BCS75&show_series_listen=1&version=9.1.8.1',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter_url: "{{fl.class or '44'}}",
+    filter: 'H4sIAAAAAAAAA5WV207iUBSG36XXXkBbELyet5h4YYxX43hjZpKJMUE5iDAUcBBFHGREDh4KFZQAtfRluvbefYvZAvsAk0ziTZPy9V/7X4e9OFBUZePzgfJl54eyoWzvbu3vK2vK3tbXHfqKn22oZen7963dbzuz7/befzYSMLaheUKf75D+pOvK4dqcIrPlTeueXaFPRiOc4nuXDDOoNsT3kwUNqZz6cQdGx95bnfRemFZQ3C7SE/FjDWViTLvOKUUoPiCdGIonFzQYjgpx9gm6Q+heQXrI8HpAqPN3nt1YUqsBKbjzTNopMG5I8YLhoCZyPn7C5SIyOriQYr5DQmykIN+HVNWbZJnvsDBmWKsn60FRkd9n6LKJ6n+gajKtiIzKJ2C2oJATtsJUu3m4uaaEPt7X6ggaFipb3oT1RlVF+eGtDlbRcwoLpkkFgPQlfsziVp4zMRCkl/DGLbhrQ7LDw0qVt/Lw6wgKaTItchyUI0PSIpkBixwQPSVuzRs50DrmpwodLlmQq3vjU86kbubOId+Yp8u7KYW9PfIvSygtEpXcmhVvFOMgJLUxi40mGtxyFpbPo3ZEDqrkBcdN/6Kz4kW6LzNAO0yHl+GosIP7d6RnzivMDpZrmxwga0SGSc6EYf/+yT93yZQXSBWGyesrtl+IIdh/ixcMaUKLnC6ctvkVk3JB/YclIiqOKlmZvGcwm2Ft/cNDjDJl/2aAmzVU7bOChaSbGouhizaJHSHzJ8fSjKernnONXRtKzwxL2wvoPb+uc50urw+/YXAg3f3cFXRvodiBdIblp6uSH6tIrAYn0nDjSY8m4o0LAgoj2idceqVYMNGguYr0prjD1k1QiwRWOF1WJFfgjv/B50mxrVRdRKdbCiVultW6NOoJFz82l4yrenTRzvDH/2sWi3fsojNTGhE9IpV49glpN0jPFlxb4Uu7m3Jh2a88eE6duI4UX4tKV9DOQ3JE9dLA6xF1ltPhXxyS0SNABwAA',
+    timeout: 5000,
+    class_name: '有声小说&音乐&相声评书&影视原声',
+    class_url: '2&37&5&62',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let html = request(input);
+        let url = JSON.parse(html).data.url;
+        input = {url: url, parse: 0};
+    }),
+    double: true,
+    一级: $js.toString(() => {
+        let d = [];
+        let html = request(input);
+        let data = JSON.parse(html).data.data;
+        data.forEach(it => {
+            let id = 'http://search.kuwo.cn/r.s?stype=albuminfo&user=8d378d72qw28f5f4&uid=2511552006&loginUid=540129516&loginSid=958467960&prod=kwplayer_ar_9.1.8.1&bkprod=kwbook_ar_9.1.8.1&source=kwplayer_ar_9.1.8.1_tvivo.apk&bksource=kwbook_ar_9.1.8.1_tvivo.apk&corp=kuwo&albumid=' + it.albumId + '&pn=0&rn=5000&show_copyright_off=1&vipver=MUSIC_8.2.0.0_BCS17&mobi=1&iskwbook=1';
+            d.push({
+                url: id,
+                title: it.albumName,
+                img: it.coverImg,
+                desc: it.title,
+            });
+        });
+        setResult(d);
+    }),
+    二级: $js.toString(() => {
+        let urls = [];
+        let html = request(input);
+        let data = JSON.parse(html).musiclist;
+        data.forEach(it => {
+            urls.push(it.name + '$' + 'http://mobi.kuwo.cn/mobi.s?f=web&source=kwplayerhd_ar_4.3.0.8_tianbao_T1A_qirui.apk&type=convert_url_with_sign&rid=' + it.musicrid + '&br=320kmp3');
+        });
+        VOD = {
+            vod_play_from: '球球啦',
+            vod_play_url: urls.join('#')
+        };
+    }),
+    搜索: $js.toString(() => {
+        let d = [];
+        // log(input);
+        let html = request(input);
+        let data = JSON5.parse(html).albumlist;
+        // log(data);
+        data.forEach(it => {
+            let id = 'http://search.kuwo.cn/r.s?stype=albuminfo&user=8d378d72qw28f5f4&uid=2511552006&loginUid=540129516&loginSid=958467960&prod=kwplayer_ar_9.1.8.1&bkprod=kwbook_ar_9.1.8.1&source=kwplayer_ar_9.1.8.1_tvivo.apk&bksource=kwbook_ar_9.1.8.1_tvivo.apk&corp=kuwo&albumid=' + it.DC_TARGETID + '&pn=0&rn=5000&show_copyright_off=1&vipver=MUSIC_8.2.0.0_BCS17&mobi=1&iskwbook=1';
+            d.push({
+                url: id,
+                title: it.name,
+                img: it.img,
+            });
+        });
+        setResult(d);
+    })
+}

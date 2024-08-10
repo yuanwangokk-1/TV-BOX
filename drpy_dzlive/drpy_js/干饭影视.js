@@ -1,1 +1,87 @@
-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
+// 地址发布页 https://gfysys.com
+
+var rule = {
+    title: '干饭影视',
+    host: 'https://gfvod.com',
+    //host:'https://gfysys.com',
+    //hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"li:eq(0)&&a:eq(0)&&Text");print(src);HOST=src',
+    // url:'/vodshow/fyclass--------fypage---.html',
+    url: '/vodshow/fyfilter.html',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.按分类}}---{{fl.按剧情}}-----fypage---{{fl.按年份}}',
+    filter: "H4sIAAAAAAAAA+2Wz27aQBDG38VnDmCQkuZVqhxy4NQmt1SqIiRSCrURAgdFSVNoaJpQaFLTkNAIbAgv412bt6jJ/NklB8Qdbvy+zzO7HmZ2fWSkjJ23R8a77Edjx5AVW1ilsO8bCeNgbz/7Svqw9/4w+/L4QeyEp//EpD+XY0gZuQTIwu7MGiWUTZZDfxzZHspp9XS5K8d3KGfU0y03zkNJkkZud+6oTdodWSgubpKkxU2KYndW6GIitepZU6VH4KWtPiZSQJ48dmT+DD0E7U2CSZNyAnDOzokY+ZQTQKuXWg+B17O+Bp5N6wGQF7m/ROUWPQRer/w3nJCH8LqEo0HgTxZLSNIqJTSTZob/HzOj62mlp3XdVLqp6ymlp3Q9qfSkpqfesB7/1PRtpW/r+pbSt+Zl2E3EfbmGTV+7ia650QBWabRlwyJ6T8JzyQNY2oQrDItof1HDgrB0WDaNrRo7vYaNPcvbYSePKgI3dqEoP7eosQH4BO1No3uLTlAAjqu7stymOAD2zotyOCQPgPfSegxGDu0FgMvwXJ1d014Q2PNuRe+SPABer/Ggio3AcactOeCbBYDjhkNp1QKvHv8tFK1LXIfBz9CvUR0AOEf/U3RcoWiAzcBpA5dZw4FbNlTLPnXCghtd0aAicM5qN3TovRHYcy7DPyfkAXAFSvXZxW+6EQC4sZ3vUZVuNQTO+eNKNOjmQljldpJNL74fKQ6A15s6atQQVrph7+MyDWg9AN1rP2peDFzPm+dg/I3qCcBx1ZawGhQHQF7gPQiXDikEztkoywtqNARVl76YnnNdXoC94lPg06cxwuag0D85k2t4UiykR9h0BXdF7j+lxEb8fw8AAA==",
+    filter_def: {
+        "1": {
+            "按分类": "1"
+        },
+        "2": {
+            "按分类": "2"
+        },
+        "3": {
+            "按分类": "3"
+        },
+        "4": {
+            "按分类": "4"
+        },
+        "20": {
+            "按分类": "20"
+        }
+    },
+    searchUrl: '/vodsearch/**-------------.html',
+    searchable: 2,//是否启用全局搜索,
+    headers: {
+        'User-Agent': 'PC_UA',
+    },
+    class_parse: '.ewave-header__menu&&li;a&&Text;a&&href;/(\\d+).html',
+    play_parse: true,
+    lazy: `js:
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        var from = html.from;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        }else if(/lzm3u8/.test(input)){
+    play_Url='json:https://jx.m3u8.biz/gg.php?url=';
+    input={jx:0,url:input,playUrl:play_Url,parse:1}
+} else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/m3u8|mp4/.test(url)) {
+            input = url
+        } else {
+            var jx =request(HOST + "/static/player/" + from + ".js").match(/ src="(.*?)'/)[1];
+			log(jx)
+            let con=request(jx.replace('index','ec')+ url, {headers: {'Referer': HOST}}).match(/let ConFig.*}/)[0];
+			log(con)
+			eval(con+'\\nrule.ConFig=ConFig')
+			function ec(str, uid) {
+				eval(getCryptoJS());
+				return CryptoJS.enc.Utf8.stringify(CryptoJS.AES.decrypt(str, CryptoJS.enc.Utf8.parse('2890' + uid + 'tB959C'), {
+					iv: CryptoJS.enc.Utf8.parse('2F131BE91247866E'),
+					mode: CryptoJS.mode.CBC,
+					padding: CryptoJS.pad.Pkcs7
+				}));
+			};
+			//log(rule.ConFig.url)
+			//log(rule.ConFig.config.uid)
+			let purl=ec(rule.ConFig.url, rule.ConFig.config.uid);
+			//log(purl)
+			input = {
+			   jx: 0,
+			   url: purl,
+			   parse:0,
+			}
+        }`,
+    double: false, // 推荐内容是否双层定位
+    推荐: '.tab-content&&li;*;*;;*',
+    一级: '.ewave-vodlist&&li;.lazyload&&title;.lazyload&&data-original;;a&&href',
+    二级: {
+        "title": "h1&&Text;.data--span:eq(0)&&Text",
+        "img": ".lazyload&&data-original",
+        "desc": ".data:eq(3)&&Text;;;.data--span:eq(1)&&Text;.data--span:eq(2)&&Text",
+        "content": ".desc--a&&Text",
+        "tabs": ".nav-tabs&&li",
+        "lists": ".ewave-content__playlist:eq(#id)&&li"
+    },
+    搜索: '.ewave-vodlist__media&&li;*;*;;*',
+}

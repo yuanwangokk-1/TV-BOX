@@ -1,1 +1,49 @@
-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
+var rule={
+  title: "夕云",
+  host: "https://www.xyxy.live",
+  url: "/index.php/vod/showfyfilter.html",
+  searchUrl: "/index.php/vod/search/page/fypage/wd/**.html",
+  searchable: 2,
+  quickSearch: 0,
+  filterable: 1,
+  filter: "H4sIAAAAAAAAA+2YW08bVxSF/8s8I/mMDTbOW+73+z1VHtzUalEplYBWQlGkJASCuTZRYpdLKFUxhgiwSXMppjZ/xjNj/4uOMzP77LOMKh7aPO3HWd+ec1nnnJlZ89CKK+vIVw+t77Mj1hHLmRj3dvasLmsg80OWX/+c6f8p+7lwoC2PrbdG19uyfxHr+ybmN/KoK2Du1lqjvuLlnjPc3Uu48fdKc7ti4kSKsDP2sbGXB6zv9p7UWwt1wAnd98SvjWoOcDcb2nRzYhlwj+57dtyZewc4qe9+uunlX5g4zvDopPt0AbCemPvkF/cxTCzOJjZZ9mpvAacJNysz/txgaNpzZ/xla34DsK1x8bmzuwc4rnGu5I6OQd/aFq/0ouPuuDbVm9jpvFsviZNf8tsHzPqeXG/UlgD7I7/fLgj2pL8BneUpvSfp+l/2JIwuavxBf2ZoKBZq5hDMklAzJwElgWZuPbMk1EwjYSyBZi4FdBRo5vmCjgLN3A7QSqBRK8tv/dFBK4Fm7lgoCTTqqL7tvfrg1HagL5LZsXa2R6Eq0PhSO0sVZ7rKHj/R9WGW2lkttebHoz4yg9lMLJSiitbavPtX2agIJWpjruLu1s02AokWsT7rLNaMilCiXn7bwIpQImcLRXdp06gIJar4s4JthBJV5CvO5Irz5neziFQazcam+6bYLO43qgvmmDig+c9UnOqaOf9AoifR1A6OLJT02F93jv01r/CH6E7t+4tjdkQq9VXc9+a2vNy82R2p9E7Zf+bVCm7eXFqtHrwLg047N2GzvNVcf6w3IV0fahMu1vz6qIv+zMC3sVBiBmJFKNEWe7eKFaFEi1qoOTMFLNIq24odRYHEtiJWhBJbzo6KQNJPgU8dcw6kg40PKg44/bvvG3t/sNMfXR/G+Ljy30lhByPZzGDss8BoAmmC0zjSOKc2UptThVQxaqeB2mlOe5H2cppCmuI0iTTJaQ/SHk7RK5t7ZaNXNvfKRq9s7pWNXtncKxu9srlXCr1S3CuFXinulUKvFPdKoVeKe6XQK8W9UuiV4l4p9EpxrxR6pbhXCr1S3CuFXvmCcVy2Cm55hh2X6Powx+UoHcbs8HB2MHaUyDEgx4gcB3KcyAkgJ4icBHKSyCkgp4icBnKayBkgZ4icBXKWyDkg54icB3KeyAUgF4hcBHKRyCUgl4hcBnKZyBUgV4hcBXKVyDUg14hcB3KdyA0gN4jcBHKTyC0gt4jcBnKbyB0gd4jcBXKXyD0g94jYQNjhAKIPVQKIPozdQPQh7gGiD38SiH5opIDoh00vEP2QSgPRD7fopBvn25196VTn9Pmma/N8u9M5t/CxVXgftf71SGy4z7+DXuDTuUa16lZesYLv+oaHeEGz/MyP+qxg6MGPg9n2cO53WYn0f/CHIKFn639w+x/VLFC1/xDoxfW/P9rfyybWK+xultof3CZmvwA+fHJW84D1Wgf/FwCzXwCLtUa1BFhJHJU4KnFU4qjEUYmjEkcljloSRyWOWhJHJY5KHP3ycbQ7yeKopDFJY5LGJI1JGpM0JmlM0pikMUljksYkjTEiaex/TWMpSWOSxiSNSRqTNCZpTNKYpDFJY5LGJI1JGpM09qXT2KN/ABG0rrrOOQAA",
+  filter_url: "{{fl.地区}}{{fl.类型}}{{fl.排序}}{{fl.分类}}{{fl.语言}}{{fl.字母}}{{fl.年代}}",
+  filter_def: {
+    20: {
+      分类: "/id/20"
+    },
+    39: {
+      分类: "/id/39"
+    },
+    46: {
+      分类: "/id/46"
+    },
+    47: {
+      分类: "/id/47"
+    }
+  },
+  headers: {
+    "User-Agent": "MOBILE_UA"
+  },
+  timeout: 5000,
+  class_parse: ".navbar-items&&li:gt(0):lt(8);a&&Text;a&&href;id/(\\d+).html",
+  cate_exclude: "",
+  play_parse: true,
+  lazy:$js.toString(()=>{
+    input = {parse:1,url:input,js:''};
+  }),
+  double: true,
+  推荐: "*",
+  一级: ".module-items a;a&&title;img&&data-original;.module-item-note&&Text;a&&href",
+  二级: {
+    title: "h1&&Text",
+    img: ".img&&data-original",
+    desc: "",
+    content: ".module-info-introduction-content&&p&&Text",
+    tabs: ".module-tab-item",
+    lists: ".module-play-list-content:eq(#id)&&a",
+    list_text: "body&&Text",
+    list_url: "a&&href"
+  },
+  搜索: "body .module-item;.module-card-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href;.module-info-item-content&&Text"
+}

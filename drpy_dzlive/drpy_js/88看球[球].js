@@ -1,1 +1,86 @@
-H4sIAC0soWYC/61WQW/bNhS+91cQXmFJrUXZaZt5FrIi2y4rhm2Ak5MTFLT0bNORKJmkkqaDgRY9rt0yDLvlsl3WH7ABRS79M0u9/IuRlOxYdNYCwwTYBN/7+L1Pj+89+5hwxIsE0A767hZSj6QygR5qdLuL8+8XZy8G6nPYaBlfEKBJJmQPORMp814QnJyc4G73aIYZyMBpBcHljz9dvnlx9eufNbwFJ2xGCxxFjsXauAmW0GOowr8HFWfjClTwRGGClMhoEoxOo4QIEayRCCA8muwbVM1Ehvq926VpVtDoqG/sK5uhepwTLnR+MCPHfk6TRKCEhqTZ3IMnUq8TDqOwiu8eHMR3vfXwEyAxcNGrsq2fxr4A7u+OgcmGIv7288f7uxV63qruJIWsUO/+oN2uxOQJOV1qkbyAykrGEGUFkzX+jqLttK73W9b+vu23AV1r/4m177Rtg03ZeWAb7Bide7Zh25Zly/jYPmG/6D2bc8s+srWBsKNuAOwgHSNr/boS8vS0h25PBZZZX3LKxq7roZ1P1+6EjpAbQDqEeCfAEoR0KcsL6XlrGEMFUle06k7jx6asliddfOeh1wy8QecwrJ0qTwyJgO37X6iCiMFVJq8OMoSrtl9/pk9WNW+x9vQXFnlCpet85HiD9uEmrqrKds0xX+3mCBIBZQYOHiq+92fgv8kss1UJNUEcnab/R/oNAm/VwXOvqgSaUtWL2+UuzgozY0ZEsZSmdz+8/vvVmer6O1XH//Xm2eLidz1fEiqkP+ZZkSNsFn9MUvCphDTEsc8yBtXQoem42RQ8CvFQsvogWrJevDSs18qXYx6XpGyU+VHGJKEMeEWBo0LILFWzSY26ITGLeqPS27hOngqviJYi1hwxiEh5wjCM6bG6Y5IqihR6MHPbXhVkw9PxNgJoYaBnWkOjjWA9ETdwkgzVYG1MRW9v97P+zsC5ev7z1S9vL89fLy7eOodrSJ1b8YEW1c9XX/b3+qr4BlaD6bacyFR3GYdZsapezEEN5ghcR89np4XM6qv6czxvkyKPiSSK41H/m6+xqT1Xs3pY2+vwJdSsWCRUBdn2Poxpt5C/9S+42oAwRguofpmTbHyjS8ufZnXtJU4VLjsSm+hYgaeZmmC5OypYJGnGkEuld0Nnc5AFZ4hKrKsC3UXObUd9qzQCM2KVRw+0eptaCs3d4bwQEze+Ri47sxrV787OF3/8Vv4VmIf/AK7k/BENCQAA
+var rule = {
+    title: "88看球[球]",
+    // host: 'http://www.88kq.net/',//发布页
+    // host:'http://www.88kanqiu.cc',
+    // host: "http://www.88kanqiu.live",
+    host: "http://www.88kanqiu.dog",
+    url: "/match/fyclass/live",
+    searchUrl: "",
+    searchable: 0,
+    quickSearch: 0,
+    class_parse: ".nav-pills li;a&&Text;a&&href;/match/(\\d+)/live",
+    headers: {
+        "User-Agent": "PC_UA",
+    },
+    timeout: 5000,
+    play_parse: true,
+    pagecount: {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "22": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "14": 1,
+        "15": 1,
+        "12": 1,
+        "13": 1,
+        "16": 1,
+        "28": 1,
+        "7": 1,
+        "11": 1,
+        "33": 1,
+        "27": 1,
+        "23": 1,
+        "26": 1,
+        "3": 1,
+        "21": 1,
+        "18": 1
+    },
+    lazy: $js.toString(() => {
+        if (/embed=/.test(input)) {
+            let url = input.match(/embed=(.*?)&/)[1];
+            url = base64Decode(url);
+            input = {
+                jx: 0,
+                url: url.split('#')[0],
+                parse: 0
+            }
+        } else if (/\?url=/.test(input)) {
+            input = {
+                jx: 0,
+                url: input.split('?url=')[1].split('#')[0],
+                parse: 0
+            }
+        } else {
+            input
+        }
+    }),
+    limit: 6,
+    double: false,
+    推荐: "*",
+    一级: ".list-group .group-game-item;.d-none&&Text;img&&src;.btn&&Text;a&&href",
+    二级: {
+        title: ".game-info-container&&Text;.customer-navbar-nav li&&Text",
+        img: "img&&src",
+        desc: ";;;div.team-name:eq(0)&&Text;div.team-name:eq(1)&&Text",
+        content: "div.game-time&&Text",
+        tabs: "js:TABS=['道长在线']",
+        lists: $js.toString(() => {
+            LISTS = [];
+            let html = request(input.replace('play', 'play-url'));
+            let pdata = JSON.parse(html).data;
+            pdata = pdata.slice(6);
+            pdata = pdata.slice(0, -2);
+            pdata = base64Decode(pdata);
+            // log(pdata);
+            let jo = JSON.parse(pdata).links;
+            let d = jo.map(function (it) {
+                return it.name + '$' + urlencode(it.url)
+            });
+            LISTS.push(d)
+        }),
+    },
+    搜索: "",
+};

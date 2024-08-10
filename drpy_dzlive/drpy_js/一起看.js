@@ -1,1 +1,53 @@
-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
+var rule = {
+  title:'一起看',
+  host:'http://www.cpldq.com',
+  url:'/cptype/fyclass-fypage.html',
+  searchUrl:'',
+  searchable:0,
+  quickSearch:0,
+  filterable:1,
+  filter:'',
+  filter_url:'',
+  headers:{
+      'User-Agent':'MOBILE_UA',
+  },
+  timeout:5000,
+  class_parse:'ul.top-nav&&li;a&&Text;a&&href;/(\\d+)\.html',
+  cate_exclude:'',
+  play_parse:true,
+  lazy:$js.toString(()=>{
+    input = {parse:1,url:input,js:''};
+  }),
+  double:true,
+  推荐:'.main&&.bgte1130;ul&&.sb-film-one;*;*;*;*',
+  一级:'.sb-area-index&&ul&&.qcontainer;i&&Text;.lazy&&data-original;.other&&Text;a&&href',
+  二级:{
+    title:'.name&&Text;.ct&&dd&&Text',
+    img:'.lazy&&data-original',
+    desc:'.ct&&dd:eq(1)&&Text;.ct&&dd:eq(2)&&Text;.ct&&dt:eq(2)&&Text;.ct&&dt&&Text;',
+    content:'div.ee&&Text',
+    tabs:'.playfrom--sup&&li',
+    lists:'.playlist:eq(#id)&&ul&&li',
+    lists:$js.toString(()=>{
+        //log(html);
+        LISTS = [];
+        pdfa(html,'body&&.playlist').forEach((it)=>{
+            let lis = pdfa(it,'ul&&li');
+            let lis1 = [];
+            lis.forEach((item,index)=>{
+              let tt = pdfh(item,'body&&Text');
+              //log('item:'+item);
+              let uu = pd(item,'a&&href',MY_URL);
+              if(!/дрр/.test(tt)){
+                lis1.push(tt+'$'+uu);
+              }
+            });
+            LISTS.push(lis1);
+        });
+    }),
+    tab_text:'body&&Text',
+    list_text:'body&&Text',
+    list_url:'a&&href'
+  },
+  搜索:'列表;标题;图片;描述;链接;详情',
+}

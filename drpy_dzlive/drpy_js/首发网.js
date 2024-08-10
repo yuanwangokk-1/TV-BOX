@@ -1,1 +1,39 @@
-H4sIAC0soWYC/4VTy27TQBTd8xVeIDsJid0KsbEVolZigQRi0WZFUDT13MQuE9udGdOaKhIIoYIEfajiIdEFVKJ0BwsWKBLtz5DXXzDjmbxUJMYL28fnnjn33PETRA2aEjCqxu41QywecgKuYY3P3vcPjoa/j6xyjgcx4wIOOE+Y6zg47UDUzpjtxx3NSCkRBIeEjDu1VuYTxFillSWoDXbAO0TTHIcBon5QF3RLP9tJkNQksar4poK3Y4qrpZJ+41kCVS2iELQhrS4paCsN/cdrOT7FWiHhQBVteR4SRq3596Yyv4hhaLnGblf3DwgDZa6OSS6rzoBWVtoQcUsU33+wevfenWZ9RavoQh52IE5FdreWlrStPJpmgiiTSdsiydQ0MfaQaa7DDpf3gELLs0u1QqOBbxQb8wH6iEMTdnySYph5TgjKJpKcpqBQgp5mrnF9k9k8XuM0jNqFQtGo3p7rIoySlMvx6+LlsppkjpeNTSb36HqqpaKSxXGaZzrbaLB/Pnp7KLsJIww7FXkKPJvG26Ix4pXUpa3++fVs2PsmuWKEUQQkZ5vmlB7c1EGEnbZpMup74WIyE6Hem1xo1szk9E4VEhsjjlzYKiwXFaRr89Y77VmAeV/AfIGooit0P464mLU0HgBJrnznaIP9J2y51ldW10TeD63x8+Pxu8v+yfmwd2k98qakScr5AEUycgIpsTFwFJKKHLQOjISLuze5MCTIGzHOrriTJRMC+vdX9RNMMp4/xI4zODwZ/jx1rf6rD6Mv597g89749KPX/3QxfL3nDQ4ORpc/vPHxxWD/qzf6fjZ48VKId/8CRfLlqF4EAAA=
+var rule = {
+    title: '首发网',
+    host: 'https://dumengys.com',
+    url: '/list/?fyclass-fypage.html',
+    //searchUrl:'/search.php?page=fypage&searchword=**&searchtype=',
+    searchable: 0,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: '.menu&&dd;a&&Text;a&&href;.*?(\\d+)\.html',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: true,
+    推荐: '.index-list;.row&&dl;*;*;*;*',
+    一级: '.channel-list&&.row&&dl;h3&&Text;img&&src;i&&Text;a&&href',
+    二级: {
+        title: 'h3&&Text;p.data:eq(1)&&Text',
+        img: '',
+        desc: 'p.data&&Text',
+        content: '.help&&Text',
+        tabs: $js.toString(() => {
+            TABS = ['道长在线'];
+        }),
+        lists: 'ul.detail-play-list&&li',
+        tab_text: 'body&&Text',
+        list_text: 'a&&Text',
+        list_url: 'a&&href'
+    },
+    //搜索:'列表;标题;图片;描述;链接;详情',
+}

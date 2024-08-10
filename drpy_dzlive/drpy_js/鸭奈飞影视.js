@@ -1,1 +1,37 @@
-h36A5I5KdeB29zb3iwNWV+NNWKEw0J62/I1tCaXxB7/CInNx6En4xM7oST9EbBn8zoKQ96lKEmqPYNgIR/6IuQcv6lmPJjF7r5FsYuXAoBEOR7NxwyxYr3+fcJOxeLWKqtNZ6DFl62OgFUH0VSHZc2C8P7VwojfIn8GyPI25QKzAIFJefPEeXYgZ3RYT+2AYC3KXjlWN6lEKmjVhGthiIGE/UummPNLRw4YjIMJ7wlBUG7CI2X3tXDyJOwaFY3dSM6F4xD5B7Z7di78h4dQvi8xmkDR8ZEPCoSDDJfL1PHCH8aeeujfSoGXTDmkSIZu0W9pS8sppz05ipBC1oBZJPnD8xHiAK5G9YLmAHSGSL5oZW+H7ZbxSxhRIeRuEvDlJGMyIGQ/vt1xvid36h+9+K07vGewpxnrdK1QqkljPupFnGi+w1cqXM9cfUDlC/ILAwDFS8EHfWBE1vJHNixw6kg45rWSGunmVLkhCqQqL0Z1gBZ2sEP4uRqObWVF3NkEd+PBsKV+v4aTk3eHwr2SqiR/iUBFeKrq2IJSG0m02O5kbWPJRqA4Q7++IcIO3m2S+OjDSFIhjGNh3wSG8upg6I6lpr+UcdpQQi0zW1v6J244Xw+z8xLAYJbTsDJImpJ3oC+KtOzkFDdzDGu/uJ4lwA97DplbslYOkR5DYIXVi9Gt/lGSvPVCK0NVJwbqtrGPcoo98JXZD3beJvkdIQB6Uhw+MWgA7jC8YD2v5g2m3zYjZDljlXrmFAvXWXALoiHhrbdLKTuuFYQ+uglfRlihOgOM2XAR0M+V7SKh4ft1kD1OmHgUzhnE+YP2LbifNdqmJb7Rjajx2v2woM3/2fdlZG7NvPG6/i8qX2T996v+yDnzGrAQOvr/mkBf+3BBVAlvMpUw2ywjXq/f8ET+43bqT5q+jWRmnTL/hEp4xQjOVJ0b6beQEPd/TsbLr7U+OC2lVu0brv3YXVQc/1bkNqdvqKoASllipo/YgNhHo2QkBiC10OX0caGj4xamcrE/3IY5N0NRVJwyCA0zml2yaCbV0frkKsaxggTPsRV3yEyBh2kGh6yyeWttdTyZx8b4DQLPwHf7Yy4Lmz2MUBmuihhNbarrlv5Sx+ZrUZNEtAgOpusODjtLxMP4N6il+Ljys1iIs2E9sjqUtP7uqfEwS4ywvrrQw8lwVpUNUgIKBR+rh45Z37QmzNBFDJQ6lWC3GpMXmJ7Sxzi7png1mfQxp6GTbEklGryogCOEpcMdJ8DjAHK7/hHMdSNDlOfqrCf+RaZ2uv+4cti4wVQ8UnMjY3BnPYzLDVOoLJT/hvNJZttCufcmdU283r2U4/2iPeddf0q93a1/bPS28yuSxy+H2sygP9nx+cz1aMelZWRuzWkNWvA6qfMlLyJWAW9Sq38j7QQgbDZZdCkCKcU2md6qn7eorzuuuH+NjUMPkqPpzvudFU+5/IxWfMX3QbCXGE++6uJonQ5lB0oqw+Z6genCJVwJ7rqOy4gRESKH/rrbLScAjQRScXUzH28fKfEL8xZks6wsutnS6u/KUp54pNw7hdXzFI4SfQqBqaLP1dvOkJ4d7qJLh/sZxkUnXK6LIcdp7IZneSNwrjWMpV9PifKL8Y4b+kI3+Oy2EpXO7Z5VfuFg219g=
+var rule = {
+    title: '鸭奈飞影视',
+    host: 'https://www.yanaifei.net',
+    url: '/vod/list/fypage/fyclass/0/0/0/0/0/0.html',
+    searchUrl: '/public/auto/search1.html?keyword=**&page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: 'ul.tem_head_meun&&li;a&&Text;a&&href;(\\d+)',
+    cate_exclude: '排行榜',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: true,
+    推荐: 'div.box-width;div.public-list-box;img&&alt;*;span.ft2&&Text;*',
+    一级: 'div.public-list-box;a:eq(1)&&Text;img&&data-src;a&&Text;a&&href',
+    二级: {
+        title: '.slide-info-title&&Text',
+        img: '.detail-pic&&img&&data-src',
+        desc: ';.slide-info&&span&&Text;;;',
+        content: '#height_limit&&Text',
+        tabs: '.anthology-tab&&.swiper-wrapper&&a',
+        lists: '.anthology-list-play:eq(#id)&&li',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href'
+    },
+    搜索: 'div.public-list-bj;img&&alt;*;.public-list-prb&&Text;*',
+}

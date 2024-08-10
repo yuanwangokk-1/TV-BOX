@@ -1,1 +1,22 @@
-H4sIAC0soWYC/31VV2/bVhR+z68Q9OAlS9SglgW1oKxFSrKsQYkSAhjX5KVIcYpDEm0YcBqkTZO0cZCi6MgumgYdcIPWSJvR/JiGkv0vSq3UQYPeB+Ke853Nc85FEJd951f77qF985b9x+WzhycuzjBUfQNBeMGyfEBVkQsI4hod3Rn//ujsxxunx5cuSOYukH2jk2en956HfG+e3xg//8Fn8IYIXUnXso8TvQztndJLS3U4NBJTFjCAd6jPOMuJ9xthoE4vbNCK6Mh7A8EN2FsJrs5NJRLvYF4vlCZ4aPWcq/+g6Opbt32guTRzGun+BZdzpnFuuJbHV5+O71y3Xz09+/rR8voUGj15OLr72sHmUc7ZTjk4RTcc/julMvpz/H2gU8dzKKE7uKrxsrGSL9fqqwkRGk7dJTGpwZ4J9Rl7fZ+DgIGavrHvJnWoebEOlA33xvbmDokdHMy0dG1SsK6u+lSG5VYmRtbdvo4ySdvvpA2WljgNsu7VxMyf+3yep89+O33186wBXMnJ+cDldnkmRlcTkxCSzm15HUHGr245rWHfv28ffTZ68Kd97cno8NLo2m375pdd/c2L78YPLv19+NHZ4Tenrz+Z6p2eXLcPXy7KZWqikzDS39E5ZYCwFi0CXffOD2upoAOdi28S/LxK79VgLZYXDaidF5xxwO7kHwacSEdfHdtHj+2j4/EXT+yrH4+fvhj/8u3Z4afnpXdm1r37+6zoAxoEBwez+67lUjSX2+Al6F7wpp4XhAjkzts7NBxbDnUuhSlgQeCw34nP8ZZHdRxbHE+INEklTVYrOTQPw0xLo3nKlIdyiEWVdlbMZLNdkKpupvAKlUplUo2cpBdTVR6ncmm6gbMpVa5vRTd5dnu7TDL6sKTxjFz2INYut5fZ86RBozHw1HJNDdvrCVkxWq4V+B5H0rocJBBWjLHBQKSEaBZNBjweo9XT8ajJEk1NL3qUYqFaKQSVRoWKmlwFttA4YcQ7RqStMjXUY1VRSoNyESHlDgPDIX+z3waROqVvMQUtCEwxFg2DaM8IU1YoFNi1+mLf6IVEtsjWqX4kEJdUSyViRKcpRMQ2K1gikidVA5GLQ08NZtnQHokNuYbRQ9DBMC3lQzQV2szh9F6hbmTidLorSWSEplABzZWKJdpCwwN/uj2IyHhHyQQhpTelQSXdrhvbUT3QlDAqbQwNRY2Xg+xWuZ+vxZFYydgNYpxC5KTNLSLjr4RVAlUxtFYxBQ5UGn5Bq6UkoQta0C+EqlhZ6ETwtl+g2pgpSGF8yy9sqzgUsnGi6O+wKu6R8nGiVKpgbTzF59JEplzB2wRnpdPEZq6WIbAsIeDDzaog5/BcSUDDqaHQkfFhEVKtrpYuotUQLA+aXTkSyxDRvUa+BWNQ9vfzMT9S0kIVPRfdJjPWVjgOw1S8wRp9JuhvWmWtHGuJjIep9fhithxT5S4C2BzAumTWY8aKW7lWIZCqKYVGqq4U2hgSAJ0GaGP11kwGdDR/cdAESKUqmQLNb1dJpzGTyXnfTtt+RwWaPlmOk60qQdl01jdI6CqQ59t2vl0SvjVk5eJFxrO6GM3F5OvOLNAc6czbdJinFLK25vX+7/T/q+XsAF5m4NCncioCumCI6Gan42zIDyWeSQaWBkxybW1J5CXeSIb9c3UGGoAXycUKmZHOEuGZuRMnsrO79+zXV+yHP63Pnp7T48ejy1dG11+OPv/+7PZfznf2BEzfPcdOV1fkDZHXjYQMJJhQeTqR4BnH4cE/5GBXmEMHAAA=
+// 地址发布页 https://ikyy.app/
+// 搜索验证
+muban.海螺3.二级.title = '.hl-dc-title&&Text;.hl-data-xs&&Text';
+muban.海螺3.二级.desc = '.hl-col-xs-12:eq(2)&&Text;;;.hl-col-xs-12--em:eq(3)&&Text;.hl-col-xs-12--em:eq(4)&&Text';
+var rule = {
+    title: '爱看影院',
+    模板: '海螺3',
+    // host: 'https://ikyy.tv',
+    host: 'https://ikyy.app',
+    hostJs: 'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src = jsp.pdfh(html,".go:eq(0)&&a&&href");print("爱看影院跳转地址 =====> " + src);HOST=src',//网页域名根动态抓取js代码。通过HOST=赋值
+    // url: '/v_show/fyclass--------fypage---.html',
+    url: '/v_show/fyclassfyfilter.html',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '-{{fl.area}}-{{fl.by or "time"}}-{{fl.class}}-{{fl.lang}}-{{fl.letter}}---fypage---{{fl.year}}',
+    filter: 'H4sIAAAAAAAAA+3UuUoDURQG4He5dYrciXunxn3f4oZFlEFFjaBRCBIQXBBEBVGmsLBRiIXGDcVIfBpnTN7CifPPOUdsxMridnO+/ybhzEz+DaVVw+SGWrAzqkFl7OSKiqhUcsn2J/fl8f216M/rycU1++tYqsI7ufJWrsL+oLKRQK2oVQX7uhQeY49Jt9gt6ZpdS4+yR4XrenL/Ungde530WvZa6TXsNdKr2aul875a7qt5Xy331byvlvtq3lfLfTXv619mpypJ8JgWk6lZfkyl/HUpt/nLx+SeFf3zUAxhVtq/4wxDmH3cX3CGIczKTtE9cDjmmU6cX4k4GMLMcy45w0DZw6nIgoE2eXsWmwQDZTtP7s1WmAXDtxtop9O2fNOvHS9/8Mtb2AhoJGmCNJE0Q5pJ4pA4SQukhaQV0krSBmkjaYe0k3RAOkg6IZ0kXZAukm5IN0kPpIekF9JL0gfpI+mH9JMMQAZIBiGDJEOQIZJhyDDJCGSEJAFJkIxCRknGIGMk45BxkgnIxLeXYjrDL4R3eOwWjn68EJ7zVHYe8en0vH80/Mr3QsG7PUEyN59e5X9Vftvd20WyOrO8Yld+dSqiLFO8pnj/afGaAjUF+u8LNGYK1BSoKVBToKZA/1agVaZATYGaAjUFagr0LwWa/QRmukciPRUAAA==',
+    class_parse: '.hl-menus&&a;span&&Text;a&&href;.*/(\\d+).html',
+
+    // searchUrl:'/v_search/**----------fypage---.html',
+    searchUrl: '/index.php/ajax/suggest?mid=1&wd=**&limit=50',
+    detailUrl: '/v_detail/fyid.html', //非必填,二级详情拼接链接
+    搜索: 'json:list;name;pic;;id',
+}

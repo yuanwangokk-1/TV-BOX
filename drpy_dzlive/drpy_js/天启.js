@@ -1,1 +1,46 @@
-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
+var rule = {
+    类型: '影视',
+    编码: 'gb18030',
+    title: '天启影视',
+    host: 'https://www.tqys.tv',
+    url: 'fyfilter/indexfypage.html[fyfilter/]',
+    searchUrl: '/search.asp?page=1&searchword=**&searchtype=-1',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter_url: '{{fl.tag}}/{{fl.area}}',
+    filter: 'H4sIAAAAAAAAA42Sz0rDQBCH7z6FzDkg/We1ryI9BMylag9KhVICSql2PdgKGhUDXtSNWtQeijZt8jTZTfMWbkPozFIq7m322/3Nzse21tbVghxUdlqwZzWhAuahZYIBdfPAUlV8PRLBUNXH5n7DSo/V1ba48KLAjdn5nKh6t5kD28iY4wrGKcsvWNwdynaHsgIyfiXGE8qKmMm4fq9RWjB52pcnDr23iax7F/mMsjL2899EcEPZFvYLP3DylG2DXbWrqS4D8n/5mvEz9dxlZQ9B5POMzCOPaugsebmXP58aRGmi9yXHoQbRmrx9lu5Ag6gteXxVbTVIvA14HF5qkIgbfYsnR4NlaqCw0oD6GnL6vjx+x0vaXpa2QaOKq2VOpjPm/zPK/gWc7dctzAIAAA==',
+    filter_def: {
+        1: {tag: 'dy'},
+        2: {tag: 'dsj'},
+        3: {tag: 'donm'},
+        4: {tag: 'zony'},
+    },
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_name: '电影&电视剧&动漫&综艺',
+    class_url: '1&2&3&4',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: true,
+
+    一级: '.watch&&li;img&&alt;img&&src;.hottags&&Text;a&&href',
+    二级: {
+        title: '.main-wrap&&h2&&Text;p:eq(2)&&Text',
+        img: '.main-wrap&&img&&src',
+        desc: ';.main-wrap&&p:eq(5)&&Text;.main-wrap&&p:eq(2)&&Text;.main-wrap&&p&&Text;',
+        content: '.main-wrap&&p:eq(6)&&Text',
+        tabs: '.bluehd',
+        lists: '.bluebd:eq(#id)&&li',
+        tab_text: 'span--font&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href',
+        list_url_prefix: '',
+    },
+    搜索: '.watch li;*;*;*;*',
+}

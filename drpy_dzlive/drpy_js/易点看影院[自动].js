@@ -1,1 +1,13 @@
-dmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICfoh6rliqgnLAogICAg5qih5p2/5L+u5pS5OiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIE9iamVjdC5hc3NpZ24obXViYW4u6Ieq5YqoLuS6jOe6pywgewogICAgICAgICAgICB0YWJzOiAnI3ktcGxheUxpc3QmJi50YWItaXRlbScsCiAgICAgICAgfSk7CiAgICB9KSwKICAgIHRpdGxlOiAn5piT54K555yL5b2x6ZmiW+iHquWKqF0nLAogICAgaG9zdDogJ2h0dHA6Ly93d3cuZWRrdHYuY29tJywKICAgIHVybDogJy92b2RzaG93X2Z5Y2xhc3MtLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKICAgIGNsYXNzX3BhcnNlOiAnLm5hdmJhci1pdGVtcyYmbGk7YSYmVGV4dDthJiZocmVmOy90eXBlXyguKj8pLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnL3ZvZHNlYXJjaF8qKi0tLS0tLS0tLS1meXBhZ2UtLS0uaHRtbCcsCn0=
+var rule = {
+    模板: '自动',
+    模板修改: $js.toString(() => {
+        Object.assign(muban.自动.二级, {
+            tabs: '#y-playList&&.tab-item',
+        });
+    }),
+    title: '易点看影院[自动]',
+    host: 'http://www.edktv.com',
+    url: '/vodshow_fyclass--------fypage---.html',
+    class_parse: '.navbar-items&&li;a&&Text;a&&href;/type_(.*?).html',
+    searchUrl: '/vodsearch_**----------fypage---.html',
+}

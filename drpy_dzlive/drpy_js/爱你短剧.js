@@ -1,1 +1,29 @@
-T2JqZWN0LmFzc2lnbihtdWJhbi5teG9uZTUu5LqM57qnLCB7CiAgICB0YWJfdGV4dDogJ2Rpdi0tc21hbGwmJlRleHQnLAp9KTsKdmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICdteG9uZTUnLAogICAgdGl0bGU6ICfniLHkvaDnn63liacnLAogICAgaG9zdDogJ2h0dHBzOi8vd3d3LmFpbmlkai5jb20nLAogICAgdXJsOiAnL3ZvZHNob3cvZnljbGFzcy0tLS0tLS0tZnlwYWdlLS0tLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnL3ZvZHNlYXJjaC8qKi0tLS0tLS0tLS1meXBhZ2UtLS0uaHRtbCcsCiAgICBsYXp5OiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIHZhciBodG1sID0gSlNPTi5wYXJzZShyZXF1ZXN0KGlucHV0KS5tYXRjaCgvciBwbGF5ZXJfLio/PSguKj8pPC8pWzFdKTsKICAgICAgICB2YXIgdXJsID0gaHRtbC51cmw7CiAgICAgICAgaWYgKGh0bWwuZW5jcnlwdCA9PSAnMScpIHsKICAgICAgICAgICAgdXJsID0gdW5lc2NhcGUodXJsKQogICAgICAgIH0gZWxzZSBpZiAoaHRtbC5lbmNyeXB0ID09ICcyJykgewogICAgICAgICAgICB1cmwgPSB1bmVzY2FwZShiYXNlNjREZWNvZGUodXJsKSkKICAgICAgICB9CiAgICAgICAgaWYgKC9cLm0zdTh8XC5tcDQvLnRlc3QodXJsKSkgewogICAgICAgICAgICBpbnB1dCA9IHsKICAgICAgICAgICAgICAgIGp4OiAwLAogICAgICAgICAgICAgICAgdXJsOiB1cmwsCiAgICAgICAgICAgICAgICBwYXJzZTogMAogICAgICAgICAgICB9CiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgaW5wdXQKICAgICAgICB9CiAgICB9KSwKCn0=
+Object.assign(muban.mxone5.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxone5',
+    title: '爱你短剧',
+    host: 'https://www.ainidj.com',
+    url: '/vodshow/fyclass--------fypage---.html',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    lazy: $js.toString(() => {
+        var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        var url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/\.m3u8|\.mp4/.test(url)) {
+            input = {
+                jx: 0,
+                url: url,
+                parse: 0
+            }
+        } else {
+            input
+        }
+    }),
+
+}

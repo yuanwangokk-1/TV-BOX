@@ -1,1 +1,39 @@
-qz2VfkB3O9fqiff5MjJa/NOxIkzNuMv7K54K23vKJOSw++yJ8kLPZGH7bSG3+EXPt4QIAb8pNoprEt1UZ1T/V4W/sp4A5sfUtLeuACMYWQe1KwhJN9KGVLad9F06m3DJf4UKGy2nF6D8SlobdUjU7awvOXfnlEin40lOgDwd9ssQ0VrK5HUhE9iilOtjlWo7w4zmkgcsdBKfISXgDpeh3SOB/2WKjn/SAjsVaiuc/y60i5ceuD18zUrwkfGKzRCh8/4vYegzgNHBsCJ5eJAVHy3aQvw7GVhF562x8Li+4UhbMT/QzTJeuEujJPh8vCMdKcd+sO+Jijp/l+u+kpHemYR2ojkVGrSRaHMinkCeqcqsk/+cdiKtJiM4H0jVwxIkLPJeJgZadYUYqkGgtqiOcwPb/5NsxtYOnBHGgjk1o9IU9CenI4+qjfSvh3srZ/6E4yhDKtjn5iuFDJa3w2OHe1WJyK/tjg7ctAA3t/VKDJlhXJWO5VAMCe/hOT7lMHrXcEhTRU7btRpAAU3K+Bk+5RzA0XEN1Ez+FGAbtUCo3/vtnTg9D81I19mtMc+uNgJwAs40UX8V/hE7Pk1cyrg/anWpXRFpiuINOdwYiw+AhUA0WF35Awc+0mF5Y184o0IVsaoRoyYqet3oIzFzjQ0rTO7iJfqCOooCIh48v48L/MrCJUw6WWlXb6PeoxorRHlnFB8rAkOeYOI9PKqvOCDHr/2Rbz8ofR4HCqeGEyfsMY4hZUrLssMbHqE0IdUayNTOvCfagiUZboETt/sZjYUVCtXYMQvt5hec366+1rvLJ6DaXbP6Ay1tCbD2UVGyihzdwmxqmVMcxSTzNrCZe/Kff6Y4X2mQ4T2UOE3+3WKPSMXEsZP1WXNoTqdCwdCBt5+oVxLPBf9j+cuaedXVaAajQxpvgmzqWNTS72MdJc0U05knmWd2pAkif6xIEHZWWQ3GP7YEcnuzDWiqdQyY2a8Ni6bLzGDuT4KJksqvmZnuAxsS0mV6Z9BAt6ZF+g+QRMglm2mZ1SML6qVy0DEbd7tKqw4gTu3Hy46PKiq2IULgp24CiUKncqc7VSl58aUoyZFqEcb3uNsIybNzaFkv4kwlXEb+fBaHAmW5iYGbNzT45hgXhOIUd1lGPN93xtAWVKB4h/qy/SPl5GJm4cGbeIlmOpvOSTCMxbvbGtOYgRoluEIWCT4ftUWFXEX8LRhtSnjE2luK6byHkMGfMwTObsyOeKqM/mdh5668zvyKP3QbntBz8w9FfsFtPD7xSm48t+rSkPSWVWjlD6TSwOThqi8oqGjlOkkVz8n5002oOPLYzymyUnf2HbQ5Ijhtpw4RvHPakJJE1I58RnIKmMSeUc6bUMvUjvggyKDMBCMUrWbh+qZpx0JzWkrNLjXcCE6vQ8SEgMTWXDoFMlNnmnIq7aI8rRDoVdCAzwk9AxX0CK1woNl1LOGT4UPpBm4rbFFdnjiSqp4U6LMhLx2OcFW57yiHZMDKMVxoBih2rES5seA2RNiEUFB8DxP1e3xJj7kghDMXS7q7vOZxXe24rxbxMElSf2Bb7egcAgcAUBQXzpjGxx3OtzI3vgqCDAQZwzVNv/WzAqTVKyKVZFVzZSA1juew6DJqCgbR5zHAJ4oYiXgJY07TsWYCOn6X/DRW3WmIcFvzjXDmNuR2KlOGkxUxwF0PIYbaglN1jcU+gDz5VWc0904wEkj5zbzRjskK93XbIR2Cq5OPCfJbjzTx8vOdWLk6jeJ3hU4O3oT7wmW0SYWfvQbr+yT2vWYnS/axQPaYqJAcN/nWzpcAGYCsJa4OsXsCuA==
+Object.assign(muban.首图2.二级, {
+    tabs: '.stui-pannel__head h3',
+});
+var rule = {
+    模板: '首图2',
+    title: '8号影院',
+    host: 'http://www.bahaoys.com',
+    url: "/frim/fyfilter.html",
+    filterable: 1,//是否启用分类筛选,
+    filter_url: "{{fl.按分类}}-fypage",
+    tab_exclude: '本周热门|最近更新',
+    filter: "H4sIAAAAAAAAA6tWMlSyiq5Wyk6tVLJSetbT+bSj7fnG3Uo6SnmJualoQmWJOaWpYOV5QJmnXSue7J3zvLMdJAPkmyrV6kBknndsfNbcipAxQ8gsn/h0526EjDlc5lnjhGcN0xAyFnCZp9PmPO1cjpAxNEBIdS5HscjQSKk2tjZWR8mIbE/N3vtk13KguTATjREu3LH+af8GJCkThNSa5c/39SFJIcLi2fSlL+evRJIygzrRmHQngvWZkKWvFgCFYy+16QEAAA==",
+    filter_def: {
+    1: {
+      按分类: "1"
+    },
+    2: {
+      按分类: "2"
+    },
+    3: {
+      按分类: "3"
+    },
+    4: {
+      按分类: "4"
+    }
+  },
+    searchUrl: '/search.php?page=fypage&searchword=**   &searchtype=',
+    class_parse: ".stui-tou__menu li;a&&Text;a&&href;.*/(.*?).html",
+    lazy: $js.toString(() => {
+        let init_js = `Object.defineProperties(navigator, {platform: {get: () => 'iPhone'}});`;
+        input = {
+            parse: 1,
+            url: input,
+            js: '',
+            parse_extra: '&init_script=' + encodeURIComponent(base64Encode(init_js)),
+        }
+    }),
+    搜索: '.stui-vodlist__media&&li;a&&title;.lazyload&&data-original;.text-right&&Text;a&&href',
+}

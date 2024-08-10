@@ -1,1 +1,49 @@
-dmFyIHJ1bGUgPSB7CiAgICAgICAgICAgIHRpdGxlOiAn54ix55yLaGQnLAogICAgICAgICAgICBob3N0OiAnaHR0cHM6Ly93d3cuYWlrYW5oZC52aXAnLAogICAgICAgICAgICB1cmw6ICcvdm9kc2hvdy9meWNsYXNzLS0tLS0tLS1meXBhZ2UtLS0vJywKICAgICAgICAgICAgc2VhcmNoVXJsOiAnL3Jzcy54bWw/d2Q9KionLAogICAgICAgICAgICBzZWFyY2hhYmxlOiAyLAogICAgICAgICAgICBxdWlja1NlYXJjaDogMCwKICAgICAgICAgICAgZmlsdGVyYWJsZTogMCwKICAgICAgICAgICAgZmlsdGVyOiAnJywKICAgICAgICAgICAgZmlsdGVyX3VybDogJycsCiAgICAgICAgICAgIGZpbHRlcl9kZWY6IHt9LAogICAgICAgICAgICBoZWFkZXJzOiB7CidVc2VyLUFnZW50JzogJ01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMjYuMC4wLjAgU2FmYXJpLzUzNy4zNicsCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHRpbWVvdXQ6IDUwMDAsCiAgICAgICAgICAgIGNsYXNzX3BhcnNlOiAndWwudG9wLWJhci1tZW51JiZsaTthJiZUZXh0O2EmJmhyZWY7LiovKFxcZCspLycsCiAgICAgICAgICAgIGNhdGVfZXhjbHVkZTogJ+eIseeci+WKqOa8q+WFrOWRinzkvKbnkIbliacnLAogICAgICAgICAgICBwbGF5X3BhcnNlOiB0cnVlLAogICAgICAgICAgICBsYXp5OiBganM6aW5wdXQgPSB7cGFyc2U6IDEsIHVybDogaW5wdXQsIGpzOiAnJ31gLAogICAgICAgICAgICBkb3VibGU6IHRydWUsCiAgICAgICAgICAgIOaOqOiNkDogJyonLAogICAgICAgICAgICDkuIDnuqc6ICdib2R5JiYudmlkZW8tY29udGVudC1pdGVtOy50ZXh0LW92ZXJmbG93JiZUZXh0Oy5sYXp5bG9hZCYmZGF0YS1vcmlnaW5hbDsudmlkZW8tdGl0bGUmJlRleHQ7YSYmaHJlZjsudGV4dC1tdXRlZCYmVGV4dCcsCiAgICAgICAgICAgIOS6jOe6pzogewogICAgICAgICAgICAgICAgdGl0bGU6ICdoMSYmVGV4dDsuZXdhdmUtY29sbGFwc2UtaXRlbSYmbGkmJlRleHQnLAogICAgICAgICAgICAgICAgaW1nOiAnLmxhenlsb2FkJiZkYXRhLW9yaWdpbmFsJywKICAgICAgICAgICAgICAgIGRlc2M6ICcuZXdhdmUtY29sbGFwc2UtaXRlbSYmbGk6ZXEoMSkmJlRleHQ7LnJvdzplcSgyKSYmbGk6ZXEoMSkmJlRleHQ7LnJvdzplcSgyKSYmbGkmJlRleHQ7LmRldGFpbC1pbmZvLXRleHQmJnAmJlRleHQ7LmV3YXZlLWNvbGxhcHNlLWl0ZW0mJnAmJlRleHQnLAogICAgICAgICAgICAgICAgY29udGVudDogJy5tYi0wOmVxKC0xKSYmVGV4dCcsCiAgICAgICAgICAgICAgICB0YWJzOiAnLmV3YXZlLXBsYXlsaXN0LXRhYiBhJywKICAgICAgICAgICAgICAgIGxpc3RzOiAnLmV3YXZlLXBsYXlsaXN0LWNvbnRlbnQ6ZXEoI2lkKSYmbGknLAogICAgICAgICAgICB9LAogICAgICAgICAgICAgIOaQnOe0ojogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICBsZXQgaHRtbCA9IHJlcXVlc3QoaW5wdXQpOwogICAgICAgIGxldCBpdGVtcyA9IHBkZmEoaHRtbCwgJ3JzcyYmaXRlbScpOwogICAgICAgIC8vIGxvZyhpdGVtcyk7CiAgICAgICAgbGV0IGQgPSBbXTsKICAgICAgICBpdGVtcy5mb3JFYWNoKGl0ID0+IHsKICAgICAgICAgICAgaXQgPSBpdC5yZXBsYWNlKC90aXRsZXxsaW5rfGF1dGhvcnxwdWJkYXRlfGRlc2NyaXB0aW9uL2csICdwJyk7CiAgICAgICAgICAgIGxldCB1cmwgPSBwZGZoKGl0LCAncDplcSgxKSYmVGV4dCcpOwogICAgICAgICAgICBkLnB1c2goewogICAgICAgICAgICAgICAgdGl0bGU6IHBkZmgoaXQsICdwJiZUZXh0JyksCiAgICAgICAgICAgICAgICB1cmw6IHVybCwKICAgICAgICAgICAgICAgIGRlc2M6IHBkZmgoaXQsICdwOmVxKDMpJiZUZXh0JyksCiAgICAgICAgICAgICAgICBjb250ZW50OiBwZGZoKGl0LCAncDplcSgyKSYmVGV4dCcpLAogICAgICAgICAgICAgICAgcGljX3VybDogIiIsCiAgICAgICAgICAgIH0pOwogICAgICAgIH0pOwogICAgICAgIHNldFJlc3VsdChkKTsKICAgIH0pLAogICAgICAgIH0=
+var rule = {
+            title: '爱看hd',
+            host: 'https://www.aikanhd.vip',
+            url: '/vodshow/fyclass--------fypage---/',
+            searchUrl: '/rss.xml?wd=**',
+            searchable: 2,
+            quickSearch: 0,
+            filterable: 0,
+            filter: '',
+            filter_url: '',
+            filter_def: {},
+            headers: {
+'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+            },
+            timeout: 5000,
+            class_parse: 'ul.top-bar-menu&&li;a&&Text;a&&href;.*/(\\d+)/',
+            cate_exclude: '爱看动漫公告|伦理剧',
+            play_parse: true,
+            lazy: `js:input = {parse: 1, url: input, js: ''}`,
+            double: true,
+            推荐: '*',
+            一级: 'body&&.video-content-item;.text-overflow&&Text;.lazyload&&data-original;.video-title&&Text;a&&href;.text-muted&&Text',
+            二级: {
+                title: 'h1&&Text;.ewave-collapse-item&&li&&Text',
+                img: '.lazyload&&data-original',
+                desc: '.ewave-collapse-item&&li:eq(1)&&Text;.row:eq(2)&&li:eq(1)&&Text;.row:eq(2)&&li&&Text;.detail-info-text&&p&&Text;.ewave-collapse-item&&p&&Text',
+                content: '.mb-0:eq(-1)&&Text',
+                tabs: '.ewave-playlist-tab a',
+                lists: '.ewave-playlist-content:eq(#id)&&li',
+            },
+              搜索: $js.toString(() => {
+        let html = request(input);
+        let items = pdfa(html, 'rss&&item');
+        // log(items);
+        let d = [];
+        items.forEach(it => {
+            it = it.replace(/title|link|author|pubdate|description/g, 'p');
+            let url = pdfh(it, 'p:eq(1)&&Text');
+            d.push({
+                title: pdfh(it, 'p&&Text'),
+                url: url,
+                desc: pdfh(it, 'p:eq(3)&&Text'),
+                content: pdfh(it, 'p:eq(2)&&Text'),
+                pic_url: "",
+            });
+        });
+        setResult(d);
+    }),
+        }

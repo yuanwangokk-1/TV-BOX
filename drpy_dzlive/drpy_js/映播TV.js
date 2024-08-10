@@ -1,1 +1,35 @@
-H4sIAC0soWYC/61Ty27TQBTd8xWWkJwmiu0EiY2jqKr4ASQatunYHsfTTjzuzHUcU0Wie0AVKxYsgAWwQWxYVGXBz0RpP4N55eG2CAkxXlg+c865T88Qd3hJsTN0zh448gABikOntXr3YfX22+HzVlfDGRMg0QygEGEQVFXlk3wSMR9mllFyKgnBjCVBWhdoguUrpkiIoLd9LFdgxONsZBRFGVESB6gEFpiLvp/BlO6f4LpiPBl2Oq7yGxrbhgWKVLJ9A52WJD55pvENlhIKmBtabxeSkVu732OTfxNLcBo6ZwvbAowSzEVoG6VOayQw9w4mOIeWFD99Mh4dWAcrAjLFrJSte9zr2fi6KeMCcaH67IuKFNKk4qiQb9elZIBc9xDPQb0zjtOBbmo/2PM7++17uhkjwGM8j2mZ4G0JBUX1OgrwEhuUohd16Bwdi5DkRQlq7JbT75oRarzrSIa0WhwZWcJK3cKt0erN15vXF6oASgR4topo4JtxehqN2FwVoXdqQKYT100QII9xMiE5ok1ywaNm3baQ5eXL66svKtJta+2IKPy79dUrbb2d6Hr9fciI8BIsYk9DVu6nLC6FRwBPPYoiTDcBDcH6qiNz2vgUMpHo2HUF1BTvcJS/JC0vf958Pl/++rg6/z7YiUzylElRgfIQn+712+sk/sR41GSoy3uERnMr25jlILdYZyxvfBbLdRKE5XeYgCKhaaotnvzyU4rnao0hzryoBFAitKNQI9ASlEPGKJvUdipyQ1V+D0nSVnvfDDJWeUhVxJL6ThJK/3eC+aXXI9/9LVcX769/fPrvO7X4DT7xL8hPBQAA
+var rule = {
+    title: '映播TV',
+    host: 'https://www.ingbo.tv',
+    url: '/vod/fypage/fyclass/0/0/0/0/0/0',
+    searchUrl: '/public/auto/search1.html?keyword=**&page=fypage',
+    searchable: 1,
+    quickSearch: 1,
+    filterable: 0,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'PC_UA',
+    },
+    timeout: 5000,
+    class_parse: '.swiper-wrapper&&li;a&&Text;a&&href;/vod/1/(.*?)/0/0/0/0/0/0',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: `js:input = {parse: 1, url: input, js: ''}`,
+    double: true,
+    推荐: '.list-swiper-b;.public-list-box;a&&title;img&&data-original;.public-list-prb&&Text;a&&href',
+    一级: '.public-list-box;img&&alt;img&&data-original;.public-list-prb&&Text;a&&href',
+    二级: {
+        title: '.this-desc-title&&Text;.focus-item-label-original&&Text',
+        img: '.this-pic-bj&&style',
+        desc: '主要信息;.this-desc-info&&span:eq(1)&&Text;.this-desc-info&&span:eq(2)&&Text;.this-info:eq(1)&&Text;.this-info&&Text',
+        content: '.text.occlusion&&Text',
+        tabs: '.title-tab.flex.switch-button&&a',
+        lists: '.anthology-list-play:eq(#id)&&li',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href'
+    },
+    搜索: '.public-list-box;img&&alt;img&&data-original;.public-list-prb&&Text;a&&href',
+}

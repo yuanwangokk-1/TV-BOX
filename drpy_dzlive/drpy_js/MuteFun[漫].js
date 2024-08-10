@@ -1,1 +1,6 @@
-dmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICdteHBybycsCiAgICB0aXRsZTogJ011dGVGdW5b5ryrXScsCiAgICBob3N0OiAnaHR0cHM6Ly93d3cubXV0ZWRtLmNvbS8nLAogICAgY2xhc3NfcGFyc2U6ICcubmF2YmFyLWl0ZW1zIGxpO2EmJlRleHQ7YSYmaHJlZjsvKFxcZCspLmh0bWwnLAp9
+var rule = {
+    模板: 'mxpro',
+    title: 'MuteFun[漫]',
+    host: 'https://www.mutedm.com/',
+    class_parse: '.navbar-items li;a&&Text;a&&href;/(\\d+).html',
+}

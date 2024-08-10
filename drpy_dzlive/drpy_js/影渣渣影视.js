@@ -1,1 +1,11 @@
-H4sIAC0soWYC/3VPvU7DMBDe8xSe2qTUNiNKxDOwwFapuiRO7MpOIttJGlBXJl6BATGUlQ1VQrwMBB4DJ0SiS08n3d/3fXd3FW9YYgkYI/LCV3UMBVHbSpfk8/Dwfdgv0Z2HnFmI15ZtbYjmqWgwNgqknM2uXWu+9HZB5DWgka4lQ5cTpX956h8/HGHUc6hRR1jJXO/r/bV/e3bukp/9/TTlpRk2cGsrE1Lati3pRJHfcnBOklLRCVhr6XC0KVPDy5ZmXSLdC3iyrKsgZy4h3Co5UUbEugJthv2kgCYGjYVlyiApwtz650EorX8RRPD32BC5ZllE/dUqPQuO1QwDnfCb/zPGmi4WGJ+8YvcLu8srqm0BAAA=
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '影渣渣影视',
+    host: 'https://www.yingzhazha.com/',
+    url: '/vodshow/fyclass--------fypage---.html',
+    class_parse: '.navbar-items li:gt(0):lt(8);a&&Text;a&&href;/(\\d+).html',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+}

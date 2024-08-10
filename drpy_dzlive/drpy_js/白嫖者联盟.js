@@ -1,1 +1,10 @@
-H4sIAC0soWYC/ytLLFIoKs1JVbBVqOZSAIKSzJKcVCsF9ecz9z5dPe1FQ+uLxinPZ89X1wHLPlux8Nnc/UDpl8umPZ29DyqakV9cAhTLKCkpKLbS1y8vL9crrKxKs7DQS87PhaopLcoBKtEvrCzLTynOyC/XT6tMzkksLtaFgrTKgsT0VCBDL6MkNweqqTg1sSg5IxRZK1hEX0tLV5cInYlJIL8YQYTSMnNKUosgQgYQIbAL4gsSi4pBXtbLrSzN1M1ITUxJLYqPz03NK1XIybRKL9Ew0LTKKdEw1bROVFMLSa0oAdEZRalp1voaMTEp2powi2sBCVr7ok4BAAA=
+var rule = {
+    title: '白嫖者联盟',
+    模板: '首图',
+    host: 'https://www.qyzf88.com',
+    url: '/qyvodshow/fyclass--------fypage---.html',
+    searchUrl: '/qyvodsearch/**----------fypage---.html',
+    searchable: 2,
+    filterable: 0,
+    class_parse: '.myui-header__menu li:gt(0):lt(5);a&&Text;a&&href;/(\\d+).html',
+}

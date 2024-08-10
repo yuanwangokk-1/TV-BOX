@@ -1,1 +1,28 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+aaluWFieW9seinhicsCiAgICBob3N0OiAnaHR0cHM6Ly93d3cuYmwyMTAueHl6LycsCiAgICB1cmw6ICcvZnJpbS9meWNsYXNzLWZ5cGFnZS5odG1sJywKICAgIHNlYXJjaFVybDogJy9zZWFyY2gucGhwP3BhZ2U9ZnlwYWdlJnNlYXJjaHdvcmQ9Kiomc2VhcmNodHlwZT0nLAogICAgc2VhcmNoYWJsZTogMiwKICAgIHF1aWNrU2VhcmNoOiAwLAogICAgZmlsdGVyYWJsZTogMCwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdNT0JJTEVfVUEnLAogICAgfSwKICAgIGNsYXNzX3BhcnNlOiAnLm15dWktaGVhZGVyX19tZW51IGxpLmhpZGRlbi1zbTpndCgwKTpsdCg1KTthJiZUZXh0O2EmJmhyZWY7LiovKC4qPykuaHRtbCcsCiAgICBwbGF5X3BhcnNlOiB0cnVlLAogICAgbGF6eTogJycsCiAgICBsaW1pdDogNiwKICAgIOaOqOiNkDogJ3VsLm15dWktdm9kbGlzdC5jbGVhcmZpeDtsaTsqOyo7KjsqJywKICAgIGRvdWJsZTogdHJ1ZSwKICAgIOS4gOe6pzogJy5teXVpLXZvZGxpc3QgbGk7YSYmdGl0bGU7YSYmZGF0YS1vcmlnaW5hbDsucGljLXRleHQmJlRleHQ7YSYmaHJlZicsCiAgICDkuoznuqc6IHsKICAgICAgICB0aXRsZTogJy5teXVpLWNvbnRlbnRfX2RldGFpbCAudGl0bGUmJlRleHQ7Lm15dWktY29udGVudF9fZGV0YWlsIHAgYSYmVGV4dCcsCiAgICAgICAgaW1nOiAnLm15dWktY29udGVudF9fdGh1bWIgLmxhenlsb2FkJiZkYXRhLW9yaWdpbmFsJywKICAgICAgICBkZXNjOiAnOy5teXVpLWNvbnRlbnRfX2RldGFpbCBwIGE6ZXEoMikmJlRleHQ7Lm15dWktY29udGVudF9fZGV0YWlsIHAgYTplcSgxKSYmVGV4dDsubXl1aS1jb250ZW50X19kZXRhaWwgcC0tc3BhbjplcSgxKSYmVGV4dDsubXl1aS1jb250ZW50X19kZXRhaWwgcC0tc3BhbjplcSgyKSYmVGV4dCcsCiAgICAgICAgY29udGVudDogJy5za2V0Y2gmJlRleHQnLAogICAgICAgIHRhYnM6ICcubmF2LXRhYnM6ZXEoMCkgbGknLAogICAgICAgIGxpc3RzOiAnLnN0dWktY29udGVudF9fcGxheWxpc3Q6ZXEoI2lkKSBsaScsCiAgICB9LAogICAg5pCc57SiOiAnI3NlYXJjaExpc3QgbGk7KjsqOyo7KicsCn0=
+var rule = {
+    title: '暖光影视',
+    host: 'https://www.bl210.xyz/',
+    url: '/frim/fyclass-fypage.html',
+    searchUrl: '/search.php?page=fypage&searchword=**&searchtype=',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    class_parse: '.myui-header__menu li.hidden-sm:gt(0):lt(5);a&&Text;a&&href;.*/(.*?).html',
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: 'ul.myui-vodlist.clearfix;li;*;*;*;*',
+    double: true,
+    一级: '.myui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
+    二级: {
+        title: '.myui-content__detail .title&&Text;.myui-content__detail p a&&Text',
+        img: '.myui-content__thumb .lazyload&&data-original',
+        desc: ';.myui-content__detail p a:eq(2)&&Text;.myui-content__detail p a:eq(1)&&Text;.myui-content__detail p--span:eq(1)&&Text;.myui-content__detail p--span:eq(2)&&Text',
+        content: '.sketch&&Text',
+        tabs: '.nav-tabs:eq(0) li',
+        lists: '.stui-content__playlist:eq(#id) li',
+    },
+    搜索: '#searchList li;*;*;*;*',
+}

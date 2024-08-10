@@ -1,1 +1,50 @@
-bXViYW4ubXhwcm8u5LqM57qnLnRhYnMgPSAnLm1vZHVsZS10YWItaXRlbXMtYm94JiYubW9kdWxlLXRhYi1pdGVtJzsKbXViYW4ubXhwcm8u5LqM57qnLnRhYl90ZXh0ID0gJ2Rpdi0tc21hbGwmJlRleHQnOwp2YXIgcnVsZSA9IHsKICAgIOaooeadvzogJ214cHJvJywKICAgIHRpdGxlOiAn5YWE5byf5b2x6KeGW+S8mF0nLAogICAgaG9zdDogJ2h0dHBzOi8vYnJvdm9kLmNvbScsCiAgICAvLyB1cmw6Jy9zaG93L2Z5Y2xhc3MtLS0tLS0tLWZ5cGFnZS0tLS8nLAogICAgdXJsOiAnL3Nob3cvZnljbGFzc2Z5ZmlsdGVyLycsCiAgICBmaWx0ZXJhYmxlOiAxLC8v5piv5ZCm5ZCv55So5YiG57G7562b6YCJLAogICAgZmlsdGVyX3VybDogJy17e2ZsLmFyZWF9fS17e2ZsLmJ5IG9yICJ0aW1lIn19LXt7ZmwuY2xhc3N9fS17e2ZsLmxhbmd9fS17e2ZsLmxldHRlcn19LS0tZnlwYWdlLS0te3tmbC55ZWFyfX0nLAogICAgZmlsdGVyOiAnSDRzSUFBQUFBQUFBQSsyWldVOWJSeFRIMy9zcEtqL3pjRTBnU2ZPV2ZkLzNWSGx3STZ1TlNxa0V0QktLSWdIRzFCQmlHMFFnWnFmQlFCREdaaEdGU3pGZnhqTzJ2MFhHbnJPaHRsZjNBUkxVWEo3OCt4K2Z1WE5taGpsL1hiLzY1bHY0QzRWRFo3NS9GZm81MmhrNkUzclJFbWx2RHpXRVdpTy9SQTJxL2tVZGl4ditQZEx5VzdUK3ZkYWFIRitxeHBacXNvSFE2d1pRUnlmTjkwRUZ3Rmc1c1FZRE1XQk1kNmQxMXlqRUFHak1nYVhTM2lTT2FZSEdYQnhTTzdzNHBnV0tkUmVyNDBXTVdhQXhxU2dHbWt2aWZjbnR4N2xZd0ZnbHQ2QUdseUVHUU04YnlKZjNNQVlnYWlpUDdISU5OYUJZOWcrdUFZRG1rbHNvRldkeExoWW9yMis0bXZtSWVSWW9iM3JaekJ6ekxQaFphOTJ6VWg0ZHdwZ0Zpc1VHZE04NHhpeThmbDZMMm5NVGFZdEd4TEdaTEtoQjErK3htVitzWnZxd0ZBc1lxeTVrOUhZZVlnQzA1TVdrbXRqREpiZEEwOTE0eHpFQTJzWTNheHdEb0x5eHJKNWN3VHdMTkplWmo1d0hRRFVVLytJWUFNK2xJT2RTT0pEM3RxRGNCY3l6UUhtOUtiTWFLb0c3ekV5VlpQZkxxVnk1UDRQRkVQUFJtOVZ2OWswYW5UNWsra1o4cTdTTEJ3SkFibXhMcFBWSDN0aEtQbGRaNnZLNXNUcXpXdTBhcitTbnNBQmlzUlZtUk42S0d0RDJyczl6REVCc0JjY0F4Qlp5REVBY0N4R3pJTGFRWXdCaWtkUnFqQmVwQm5LUk9xT1JObDRrUGJaVkhkdjB1VWlOVHVNSjBPb2ZoZDdJZXFQVXc2eUhwZTZ3N2dnOS9CM3A1cVBRVDdOK1d1cW5XRDhsOVpPc241UjZNK3ZOVW05aXZVbnFYRzlZMWh2bWVzT3kzakRYRzViMWhybGU4L0hBbVkxMmRFVEZocWpjbU02Lzlia2haMEU0UzhvNVVNNlJjaDZVODZSY0FPVUNLUmRCdVVqS0pWQXVrWElabE11a1hBSGxDaWxYUWJsS3lqVlFycEZ5SFpUcnBOd0E1UVlwTjBHNVNjb3RVRzZSY2h1VTI2VGNBZVVPS1hkQnVVdktQVkR1a1hJZmxQdWtQQURsQVNrUFFYbEl5aU5RSHBIeUdKVEhwRHdCNVFrcFQwRjVTc296VUo0ZE9CUS9kSXIvME9Td2NsUC9PQkQ4ajJ1ZzQ2WDVLZzVaY2wxZEdJSElUeTg3MnZrS3kvZXFCSGF2OWhlL3RrVnJUMzNld1BhcThiRHNWV3ErOG9Gc2l3VS90cVU2TmF6ZloxWDNsb3FsOE1xVWtoLzdwbGEzbEV1WG93V2YxdWMvN1p1WDlmR3lhQ3JacDFMckdMTkFjOWxOcWZnMnpzVUM3ZUhPbko1Q2V3UEE5aWF1TStnekFPaDU3L3JZVGdIUTgvYUdlTTBBL0hiV0k3Sk1YcmJJeThKNFdTMlZLdWlkSWgyOU92aXhURjdXeDlPR2pSYU1VMUZUYzVoSy9CbHNpNW1JTUFJV3ZwUmhDWXpIOFRjZXBEdGNyeVByZGJoZVI5YnJjRjJPck12aHVoeFpsOE4xbVkrQjRRa0ZodWRZR3A0VGgyUjRxbDM5NWNVdXZEUXR5SWJkT3lNYXRnR2E0ZXArcFpEQVM5b0M1UTNuOUVBVzh5endSUnpYMjJnZUFQZ0MzeWp0cE9rQ3I0UG91TlVQT0JjQWlybkxhblVhWXhib2VSUHJsWDRYbjJlQjhrWm05Q2E5MjdKQWVkdmJPcEVxdWNQR1VHRzJsR2dkTnY4MEZnalh3UUtOc2RaVDZSN0ViQXVmd1p3WVUySHNBMDI2RHFJUG1zN0lmYkFHRkZ0Wk5BdUxNUXYvMjdjVVFkTS8vazAvYUw1Qjh6Mld6YmZwa0pxdlY0UDEvT0VsbHF2TVlkTUdvREdUUytVMHpoNkFZdW5wOGdyOStHQ0JMa1NQSHpzcTZhbEtFdDk4QU5DWXMzTnFnaTVaQ3pTbXg1c0pQZW1LSDFBczBQUDIwOXgyQVNqUDR5Mk1LcGhsd3QwR2tMSHNob2dab1BXY0w1Yit4aDllQUNndk9hTVNFNWhuZ2MvUXVzcWhZUUdnTVNjR2RBYU5Cd0N2eTVyYUg2TjFxWU5vVEYvaWpZYm5HNFovTXdZK3B4dVloc0EwQktZaEZKaUdyOTQwTkF2VGNFU1h1T3FMbTdHb2g5ZUI3c01qK0NYL3E3cjhnOSsxZzZZUk5JMmdhUng5MDZqM2pOZWZBRXhrYURVOUtBQUEnLAogICAgc2VhcmNoVXJsOiAnL3NlYXJjaC8qKi0tLS0tLS0tLS1meXBhZ2UtLS0vJywKICAgIGNsYXNzX3BhcnNlOiAnLm5hdmJhci1pdGVtcyYmLnN3aXBlci1zbGlkZTthJiZ0aXRsZTthJiZocmVmOy4qLyhcXGQrKS8nLAogICAgbGF6eTogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICBsZXQgaHRtbCA9IGZldGNoKGlucHV0KTsKICAgICAgICBsZXQganNvbiA9IEpTT04ucGFyc2UoaHRtbC5tYXRjaCgvciBwbGF5ZXJfLio/PSguKj8pPC8pWzFdKTsKICAgICAgICBsZXQgdHVybDsKICAgICAgICBsZXQgdXJsID0ganNvbi51cmw7CiAgICAgICAgbGV0IGZyb20gPSBqc29uLmZyb207CiAgICAgICAgbGV0IGZ1cmwgPSBIT1NUICsgJy9zdGF0aWMvcGxheWVyLycgKyBmcm9tICsgJy5qcyc7CiAgICAgICAgaWYgKGpzb24uZW5jcnlwdCA9PSAnMScpIHsKICAgICAgICAgICAgdHVybCA9IHVuZXNjYXBlKHVybCkKICAgICAgICB9IGVsc2UgaWYgKGpzb24uZW5jcnlwdCA9PSAnMicpIHsKICAgICAgICAgICAgdHVybCA9IHVuZXNjYXBlKGJhc2U2NERlY29kZSh1cmwpKQogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgIGxldCBzdHIgPSBmZXRjaChmdXJsKTsKICAgICAgICAgICAgbGV0IGp4dXJsID0gc3RyLm1hdGNoKC9zcmM9IiguKj8pJy8pWzFdICsgdXJsOwogICAgICAgICAgICBsZXQganhzdHIgPSBmZXRjaChqeHVybCk7CiAgICAgICAgICAgIGxldCBjb25maWcgPSB7fTsKICAgICAgICAgICAgZXZhbChqeHN0ci5tYXRjaCgvY29uZmlnW1xzXFNdKj99LylbMF0pOwogICAgICAgICAgICBsZXQgZGF0YSA9IGZldGNoKCdodHRwczovL2p4LnhkeXMudmlwL3YxL2p4JywgewogICAgICAgICAgICAgICAgYm9keTogewogICAgICAgICAgICAgICAgICAgICJ1cmwiOiBjb25maWcudXJsLAogICAgICAgICAgICAgICAgICAgICJwYmdqeiI6IGNvbmZpZy5wYmdqeiwKICAgICAgICAgICAgICAgICAgICAidmtleSI6IGNvbmZpZy52a2V5CiAgICAgICAgICAgICAgICB9LCBtZXRob2Q6ICdQT1NUJwogICAgICAgICAgICB9KTsKICAgICAgICAgICAgdHVybCA9IEpTT04ucGFyc2UoZGF0YSkuamFyb2Q7CiAgICAgICAgfQogICAgICAgIGlmICh0dXJsICYmIC9tM3U4fG1wNHxtcDMvLnRlc3QodHVybCkpIHsKICAgICAgICAgICAgaW5wdXQgPSB7CiAgICAgICAgICAgICAgICBqeDogMCwKICAgICAgICAgICAgICAgIHVybDogdHVybCwKICAgICAgICAgICAgICAgIHBhcnNlOiAwCiAgICAgICAgICAgIH0KICAgICAgICB9IGVsc2UgewogICAgICAgICAgICBpbnB1dCA9IGlucHV0CiAgICAgICAgfQogICAgfSksCn0=
+muban.mxpro.二级.tabs = '.module-tab-items-box&&.module-tab-item';
+muban.mxpro.二级.tab_text = 'div--small&&Text';
+var rule = {
+    模板: 'mxpro',
+    title: '兄弟影视[优]',
+    host: 'https://brovod.com',
+    // url:'/show/fyclass--------fypage---/',
+    url: '/show/fyclassfyfilter/',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '-{{fl.area}}-{{fl.by or "time"}}-{{fl.class}}-{{fl.lang}}-{{fl.letter}}---fypage---{{fl.year}}',
+    filter: 'H4sIAAAAAAAAA+2ZWU9bRxTH3/spKj/zcE0gSfOWfd/3VHlwI6uNSqkEtBKKIgHG1BBiG0QgZqfBQBDGZhGFSzFfxjO2v0XGnrOhtlf3ARLUXJ78+x+fuXNmhjl/Xb/65lv4C4VDZ75/Ffo52hk6E3rREmlvDzWEWiO/RA2q/kUdixv+PdLyW7T+vdaaHF+qxpZqsoHQ6wZQRyfN90EFwFg5sQYDMWBMd6d11yjEAGjMgaXS3iSOaYHGXBxSO7s4pgWKdRer40WMWaAxqSgGmkvifcntx7lYwFglt6AGlyEGQM8byJf3MAYgaiiP7HINNaBY9g+uAYDmklsoFWdxLhYor2+4mvmIeRYob3rZzBzzLPhZa92zUh4dwpgFisUGdM84xiy8fl6L2nMTaYtGxLGZLKhB1++xmV+sZvqwFAsYqy5k9HYeYgC05MWkmtjDJbdA0914xzEA2sY3axwDoLyxrJ5cwTwLNJeZj5wHQDUU/+IYAM+lIOdSOJD3tqDcBcyzQHm9KbMaKoG7zEyVZPfLqVy5P4PFEPPRm9Vv9k0anT5k+kZ8q7SLBwJAbmxLpPVH3thKPldZ6vK5sTqzWu0ar+SnsABisRVmRN6KGtD2rs9zDEBsBccAxBZyDEAcCxGzILaQYwBikdRqjBepBnKROqORNl4kPbZVHdv0uUiNTuMJ0Oofhd7IeqPUw6yHpe6w7gg9/B3p5qPQT7N+WuqnWD8l9ZOsn5R6M+vNUm9ivUnqXG9Y1hvmesOy3jDXG5b1hrle8/HAmY12dETFhqjcmM6/9bkhZ0E4S8o5UM6Rch6U86RcAOUCKRdBuUjKJVAukXIZlMukXAHlCilXQblKyjVQrpFyHZTrpNwA5QYpN0G5ScotUG6RchuU26TcAeUOKXdBuUvKPVDukXIflPukPADlASkPQXlIyiNQHpHyGJTHpDwB5QkpT0F5SsozUJ4dOBQ/dIr/0OSwclP/OBD8j2ug46X5Kg5Zcl1dGIHITy872vkKy/eqBHav9he/tkVrT33ewPaq8bDsVWq+8oFsiwU/tqU6NazfZ1X3loql8MqUkh/7pla3lEuXowWf1uc/7ZuX9fGyaCrZp1LrGLNAc9lNqfg2zsUC7eHOnJ5CewPA9iauM+gzAOh57/rYTgHQ8/aGeM0A/HbWI7JMXrbIy8J4WS2VKuidIh29OvixTF7Wx9OGjRaMU1FTc5hK/Blsi5mIMAIWvpRhCYzH8TcepDtcryPrdbheR9brcF2OrMvhuhxZl8N1mY+B4QkFhudYGp4Th2R4ql395cUuvDQtyIbdOyMatgGa4ep+pZDAS9oC5Q3n9EAW8yzwRRzX22geAPgC3yjtpOkCr4PouNUPOBcAirnLanUaYxboeRPrlX4Xn2eB8kZm9Ca927JAedvbOpEqucPGUGG2lGgdNv80FgjXwQKNsdZT6R7EbAufwZwYU2HsA026DqIPms7IfbAGFFtZNAuLMQv/27cUQdM//k0/aL5B8z2WzbfpkJqvV4P1/OEllqvMYdMGoDGTS+U0zh6AYunp8gr9+GCBLkSPHzsq6alKEt98ANCYs3Nqgi5ZCzSmx5sJPemKH1As0PP209x2ASjP4y2MKphlwt0GkLHshogZoPWcL5b+xh9eACgvOaMSE5hngc/QusqhYQGgMScGdAaNBwCvy5raH6N1qYNoTF/ijYbnG4Z/MwY+pxuYhsA0BKYhFJiGr940NAvTcESXuOqLm7Goh9eB7sMj+CX/q7r8g9+1g6YRNI2gaRx906j3jNefAExkaDU9KAAA',
+    searchUrl: '/search/**----------fypage---/',
+    class_parse: '.navbar-items&&.swiper-slide;a&&title;a&&href;.*/(\\d+)/',
+    lazy: $js.toString(() => {
+        let html = fetch(input);
+        let json = JSON.parse(html.match(/r player_.*?=(.*?)</)[1]);
+        let turl;
+        let url = json.url;
+        let from = json.from;
+        let furl = HOST + '/static/player/' + from + '.js';
+        if (json.encrypt == '1') {
+            turl = unescape(url)
+        } else if (json.encrypt == '2') {
+            turl = unescape(base64Decode(url))
+        } else {
+            let str = fetch(furl);
+            let jxurl = str.match(/src="(.*?)'/)[1] + url;
+            let jxstr = fetch(jxurl);
+            let config = {};
+            eval(jxstr.match(/config[\s\S]*?}/)[0]);
+            let data = fetch('https://jx.xdys.vip/v1/jx', {
+                body: {
+                    "url": config.url,
+                    "pbgjz": config.pbgjz,
+                    "vkey": config.vkey
+                }, method: 'POST'
+            });
+            turl = JSON.parse(data).jarod;
+        }
+        if (turl && /m3u8|mp4|mp3/.test(turl)) {
+            input = {
+                jx: 0,
+                url: turl,
+                parse: 0
+            }
+        } else {
+            input = input
+        }
+    }),
+}

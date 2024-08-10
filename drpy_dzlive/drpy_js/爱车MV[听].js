@@ -1,1 +1,23 @@
-h36A5I5KdeB29zb3iwNWV0hcCmjMP7N+1sTOi07hU9IHoT6uWT1O1zQvkF2KG3hIS8g5sYS11nmxAF/b+Tn779XAEKVyv4LlUIt+mnRWj9Z08YYBINRfr0dNXTqWd7nXs2Y3RyF2gDdokMkMrsXKSjR3y6mGylqs9J2uQAcjNirKTHDKdVn/YkWJG5SH2P199O4EhClzzMDOi5RrWdaXav9jBYSYzKGQ1UWKrZZ5psbU3GP6TOSMdjfLXBLDfszLWcoPaNY2BpReif4apcEplRS9/1rB4MYwpgNu9PGoU4YoPY5RrVQ22Ig65g0QjtfeDcaM9S1ldQScU2GoridepiKgYytHuK7elISq2THY0jUyHUoJ03LjwJfeUOid+jyYfSGLJSYoQTnoeTHWioTrYDUsiq3GL7lhlA9+VAGOQb4TNebocVlJIwDNufv9plGeFv6lJotdV08BqR/bEbMbMc6Ho8mSm72MAOiybVzFiA+/Dq7+GxrqwXowpTacVW0JuDnRkCzOuuNGpzIQewc5A03pQhYyv12Em8qRR43CrsfHxvZ/TvgLeW7hJ9nGer/qi+ZdO45IJilFmd9bcZMIjtRoao4fEVeyxsSktsBzAbiEnP49JgAHFGukypi4u4VdIsBp06UgNVolhKkT/Lo6UxaIK82VevbaPhyIbLsMOuvHaBQyqL9q98f++X6kRoO090giC0BB63RthGnY3L38ajuyYiW4eP6sMMeI6R2A22ggyXlAv/8QZB6OgJeo83VOTlJqA6AJSj99qDXd/fRyGNRDkmM3256BZ+Jv5czsOKdwnWqXV9ecDclTjvKSSw2XFGsjkUF9ddT1pKrhGpFfxw+Bh+Z/ugNVSb1iDheymtI=
+var rule = {
+    title:'爱车MV[听]',
+    host:'https://www.ichemv.com',
+    homeUrl:'/mv/',
+    url:'/mv/fyclass_fypage.html',
+    searchUrl:'/search.php?key=**&pages=fypage',
+    searchable:2,
+    quickSearch:0,
+    class_parse:'.lei_fl&&li;a&&Text;a&&href;.*/(\\d+)_1.html',
+    headers:{
+        'User-Agent':'MOBILE_UA'
+    },
+    timeout:5000,
+    play_parse:true,
+    lazy:'',
+    limit:6,
+    double:false,
+    图片来源:'@Referer=https://www.ichemv.com/',
+    推荐:'*',
+    一级: '.mv_list&&li;a&&title;img&&data-src;;a&&href',
+    二级:'*',
+    搜索:'.sp_list&&li;a&&title;img&&data-src;.singer&&Text;a&&href;.hits&&Text',
+}

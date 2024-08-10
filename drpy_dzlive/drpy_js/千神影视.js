@@ -1,1 +1,71 @@
-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
+var rule = {
+    title: '千神影视',
+    host: 'https://www.9mcm.com',
+    url: '/vodshow/fyfilter.html',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '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',
+    filter_url: '{{fl.类型}}-{{fl.地区}}-{{fl.排序}}-{{fl.剧情}}-{{fl.语言}}-{{fl.字母}}---fypage---{{fl.年份}}',
+    filter_def: {
+        "1": {"类型": "1"},
+        "2": {"类型": "2"},
+        "3": {"类型": "3"},
+        "4": {"类型": "4"},
+        "24": {"类型": "24"}
+    },
+    headers: {
+        'User-Agent': 'PC_UA',
+    },
+    timeout: 10000,
+    class_parse: '.top_nav&&li:lt(7);a&&Text;a&&href;/(\\w+).html',
+    cate_exclude: 'Netflix|今日更新|专题列表|排行榜|热榜|文章',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+        let url = html.url;
+        if (html.encrypt == '1') {
+            url = unescape(url)
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url))
+        }
+        if (/\.m3u8/.test(url)) {
+            let body = request(url);
+            let lines = body.split('\n');
+            let m3u8Url = null;
+            for (let line of lines) {
+                line = line.trim();
+                if (line.endsWith('.m3u8')) {
+                    m3u8Url = urljoin(url, line);
+                    console.log(m3u8Url);
+                    break;
+                }
+            }
+            input = {
+                jx: 0,
+                url: m3u8Url || url,
+                parse: 0
+            };
+        } else {
+            input = {
+                jx: tellIsJx(url),
+                url: url,
+                parse: 0
+            };
+        }
+    }),
+    double: true,
+    limit: 20,
+    推荐: '.vodlist_item;.vodlist_thumb;*;*;*;*',
+    一级: 'ul.vodlist&&li;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
+    二级: {
+        title: 'h2&&Text;.detail_list&&ul:eq(1)&&li&&a:eq(2)&&Text',
+        img: '.lazyload&&data-original',
+        desc: 'content_detail&&li:eq(1)&&Text;.detail_list&&ul:eq(1)&&li&&a&&Text;.detail_list&&ul:eq(1)&&li&&a:eq(1)&&Text;.detail_list&&ul:eq(1)&&li:eq(2)&&Text;.detail_list&&ul:eq(1)&&li:eq(3)&&Text',
+        content: '.content_desc&&span&&Text',
+        tabs: '.play_source_tab--i&&a',
+        lists: 'ul.list_scroll:eq(#id)&&li'
+    },
+    搜索: '*',
+}

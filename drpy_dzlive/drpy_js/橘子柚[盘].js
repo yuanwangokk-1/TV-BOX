@@ -1,1 +1,44 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+apmOWtkOafmlvnm5hdJywKICAgIGhvc3Q6ICdodHRwczovL2p1eml5b3UudmlwLycsCiAgICB1cmw6ICcvdm9kc2hvdy9meWNsYXNzLS0tLS0tLS1meXBhZ2UtLS0uaHRtbCcsCiAgICAvL3VybDogJy9pbmRleC5waHAvdm9kc2hvdy9meWZpbHRlci5odG1sJywKICAgIHNlYXJjaFVybDogJ2h0dHBzOi8vanV6aXlvdS52aXAvdm9kc2VhcmNoLyoqLS0tLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKICAgIHNlYXJjaGFibGU6IDIsCiAgICBxdWlja1NlYXJjaDogMCwKICAgIGZpbHRlcmFibGU6IDAsLy/mmK/lkKblkK/nlKjliIbnsbvnrZvpgIksCgogICAgZmlsdGVyX2RlZjogewogICAgICAgIDIwOiB7Y2F0ZUlkOiAnMjEnfSwKICAgICAgICAyMToge2NhdGVJZDogJzIyJ30sCiAgICAgICAgMjM6IHtjYXRlSWQ6ICcyMyd9LAogICAgICAgIDIyOiB7Y2F0ZUlkOiAnMjQnfQogICAgfSwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdNT0JJTEVfVUEnCiAgICB9LAogICAgY2xhc3NfcGFyc2U6ICcubmF2YmFyLWl0ZW1zJiZsaTtzcGFuJiZUZXh0O2EmJmhyZWY7LiovKC4qPykuaHRtbCcsCiAgICBjYXRlX2V4Y2x1ZGU6ICfku4rml6V854Ot5qacJywKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICAvL+aOqOmAgemYv+mHjOaSreaUviAg5pSv5oyB5b2x6KeG5aOzCiAgICBsYXp5OiBganM6CiAgICB2YXIgaHRtbCA9IEpTT04ucGFyc2UocmVxdWVzdChpbnB1dCkubWF0Y2goL3IgcGxheWVyXy4qPz0oLio/KTwvKVsxXSk7CiAgICB2YXIgdXJsID0gaHRtbC51cmw7CiAgICBpZiAodXJsLmluY2x1ZGVzKCJ3d3cuYWxpcGFuLmNvbSIpIHx8IGlucHV0LmluY2x1ZGVzKCJ3d3cuYWxpeXVuZHJpdmUuY29tIikpewogICAgaW5wdXQgPSAncHVzaDovLycrdXJsLnRyaW0oKTsKICAgIH0KICBgLAogICAgbGltaXQ6IDYsCiAgICDmjqjojZA6ICcubW9kdWxlLW1haW47Lm1vZHVsZS1pdGVtcyYmLm1vZHVsZS1wb3N0ZXItaXRlbTthJiZ0aXRsZTtpbWcmJmRhdGEtb3JpZ2luYWw7Lm1vZHVsZS1pdGVtLW5vdGUmJlRleHQ7YSYmaHJlZicsCiAgICBkb3VibGU6IHRydWUsCiAgICDkuIDnuqc6ICcubW9kdWxlLWl0ZW1zJiYubW9kdWxlLXBvc3Rlci1pdGVtO2EmJnRpdGxlO2ltZyYmZGF0YS1vcmlnaW5hbDsubW9kdWxlLWl0ZW0tbm90ZSYmVGV4dDthJiZocmVmJywKICAgIOS6jOe6pzogewogICAgICAgIHRpdGxlOiAnLm1vZHVsZS1pbmZvLWhlYWRpbmcmJmgxJywKICAgICAgICBpbWc6ICcubW9kdWxlLWl0ZW0tcGljJiZpbWcmJmRhdGEtb3JpZ2luYWwnLAogICAgICAgIGRlc2M6ICc7Lm1vZHVsZS1pbmZvLWl0ZW0tY29udGVudDplcSgyKSYmVGV4dDsubW9kdWxlLWluZm8tdGFnLWxpbms6ZXEoMSkmJlRleHQ7Lm1vZHVsZS1pbmZvLWl0ZW0tY29udGVudDplcSgxKSYmVGV4dDsubW9kdWxlLWluZm8taXRlbS1jb250ZW50OmVxKDApJiZUZXh0JywKICAgICAgICBjb250ZW50OiAnLm1vZHVsZS1pbmZvLWludHJvZHVjdGlvbi1jb250ZW50JiZUZXh0JywKICAgICAgICB0YWJzOiAnLm1vZHVsZS10YWItaXRlbScsCiAgICAgICAgbGlzdHM6ICcubW9kdWxlLXBsYXktbGlzdC1jb250ZW50JiZhJywKICAgIH0sCiAgICDmkJzntKI6ICcubW9kdWxlLWl0ZW1zIC5tb2R1bGUtY2FyZC1pdGVtO2ltZyYmYWx0O2ltZyYmZGF0YS1vcmlnaW5hbDsubW9kdWxlLWl0ZW0tbm90ZSYmVGV4dDthJiZocmVmJywKfQ==
+var rule = {
+    title: '橘子柚[盘]',
+    host: 'https://juziyou.vip/',
+    url: '/vodshow/fyclass--------fypage---.html',
+    //url: '/index.php/vodshow/fyfilter.html',
+    searchUrl: 'https://juziyou.vip/vodsearch/**----------fypage---.html',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,//是否启用分类筛选,
+
+    filter_def: {
+        20: {cateId: '21'},
+        21: {cateId: '22'},
+        23: {cateId: '23'},
+        22: {cateId: '24'}
+    },
+    headers: {
+        'User-Agent': 'MOBILE_UA'
+    },
+    class_parse: '.navbar-items&&li;span&&Text;a&&href;.*/(.*?).html',
+    cate_exclude: '今日|热榜',
+    play_parse: true,
+    //推送阿里播放  支持影视壳
+    lazy: `js:
+    var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
+    var url = html.url;
+    if (url.includes("www.alipan.com") || input.includes("www.aliyundrive.com")){
+    input = 'push://'+url.trim();
+    }
+  `,
+    limit: 6,
+    推荐: '.module-main;.module-items&&.module-poster-item;a&&title;img&&data-original;.module-item-note&&Text;a&&href',
+    double: true,
+    一级: '.module-items&&.module-poster-item;a&&title;img&&data-original;.module-item-note&&Text;a&&href',
+    二级: {
+        title: '.module-info-heading&&h1',
+        img: '.module-item-pic&&img&&data-original',
+        desc: ';.module-info-item-content:eq(2)&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text',
+        content: '.module-info-introduction-content&&Text',
+        tabs: '.module-tab-item',
+        lists: '.module-play-list-content&&a',
+    },
+    搜索: '.module-items .module-card-item;img&&alt;img&&data-original;.module-item-note&&Text;a&&href',
+}

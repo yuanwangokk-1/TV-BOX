@@ -1,1 +1,136 @@
-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
+var lists = `js:
+log(TABS);
+let d = [];
+pdfh = jsp.pdfh;
+pdfa = jsp.pdfa;
+if (typeof play_url === "undefined") {
+	var play_url = ""
+}
+
+function getLists(html) {
+	let src = pdfh(html, ".wp-playlist-script&&Html");
+	src = JSON.parse(src).tracks;
+	let list1 = [];
+	let list2 = [];
+	let url1 = "";
+	let url2 = "";
+	src.forEach(function(it) {
+		let src0 = it.src0;
+		let src1 = it.src1;
+		let title = it.caption;
+		url1 = "https://v.ddys.pro" + src0;
+		url2 = "https://ddys.pro/getvddr2/video?id=" + src1 + "&type=mix";
+		let zm = "https://ddys.pro/subddr/" + it.subsrc;
+		list1.push({
+			title: title,
+			url: url1,
+			desc: zm
+		});
+		list2.push({
+			title: title,
+			url: url2,
+			desc: zm
+		})
+	});
+	return {
+		list1: list1,
+		list2: list2
+	}
+}
+var data = getLists(html);
+var list1 = data.list1;
+var list2 = data.list2;
+let nums = pdfa(html, "body&&.post-page-numbers");
+nums.forEach(function(it) {
+	let num = pdfh(it, "body&&Text");
+	log(num);
+	let nurl = input + num + "/";
+	if (num == 1) {
+		return
+	}
+	log(nurl);
+	let html = request(nurl);
+	let data = getLists(html);
+	list1 = list1.concat(data.list1);
+	list2 = list2.concat(data.list2)
+});
+list1 = list1.map(function(item) {
+	return item.title + "$" + play_url + urlencode(item.url + "|" + input + "|" + item.desc)
+});
+list2 = list2.map(function(item) {
+	return item.title + "$" + play_url + urlencode(item.url + "|" + input + "|" + item.desc)
+});
+LISTS = [list1, list2];
+`;
+
+var lazy = `js:
+let purl = input.split("|")[0];
+let referer = input.split("|")[1];
+let zm = input.split("|")[2];
+print("purl:" + purl);
+print("referer:" + referer);
+print("zm:" + zm);
+if (/getvddr/.test(purl)) {
+    let html = request(purl, {
+        headers: {
+            Referer: HOST,
+            "User-Agent": MOBILE_UA
+        }
+    });
+    print(html);
+    try {
+        input = {jx:0,url:JSON.parse(html).url,parse:0} || {}
+    } catch (e) {
+        input = purl
+    }
+} else {
+    input = {
+        jx: 0,
+        url: purl,
+        parse: 0,
+        header: JSON.stringify({
+            'user-agent': MOBILE_UA,
+            'referer': HOST
+        })
+    }
+}
+`;
+
+// 网址发布页 https://ddys.site
+// 网址发布页 https://ddys.wiki
+var rule = {
+    title: 'ddys',
+    // host:'https://ddys.wiki', 
+    // hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":MOBILE_UA}});HOST = jsp.pdfh(html,"a:eq(1)&&href")',
+    host: 'https://ddys.pro',
+    // host:'https://ddys.mov',
+    url: '/fyclass/page/fypage/',
+    searchUrl: '/?s=**&post_type=post',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    class_parse: '#primary-menu li.menu-item;a&&Text;a&&href;\.pro/(.*)',
+    cate_exclude: '站长|^其他$|关于|^电影$|^剧集$|^类型$',
+    play_parse: true,
+    // lazy:'js:let purl=input.split("|")[0];let referer=input.split("|")[1];let zm=input.split("|")[2];print("purl:"+purl);print("referer:"+referer);print("zm:"+zm);let myua="okhttp/3.15";if(/ddrkey/.test(purl)){let ret=request(purl,{Referer:referer,withHeaders:true,"User-Agent":myua});log(ret);input=purl}else{let html=request(purl,{headers:{Referer:referer,"User-Agent":myua}});print(html);try{input=JSON.parse(html).url||{}}catch(e){input=purl}}',
+    lazy: lazy,
+    limit: 6,
+    推荐: '*',
+    double: true, // 推荐内容是否双层定位
+    一级: '.post-box-list&&article;a:eq(-1)&&Text;.post-box-image&&style;a:eq(0)&&Text;a:eq(-1)&&href',
+    二级: {
+        "title": ".post-title&&Text;.cat-links&&Text",
+        "img": ".doulist-item&&img&&data-cfsrc",
+        "desc": ".published&&Text",
+        "content": ".abstract&&Text",
+        // "tabs":"js:TABS=['国内','海外(貌似不能播放)']",
+        "tabs": "js:TABS=['国内(改Exo播放器)','国内2']",
+        // "lists":"js:log(TABS);let d=[];pdfh=jsp.pdfh;pdfa=jsp.pdfa;if(typeof play_url===\"undefined\"){var play_url=\"\"}function getLists(html){let src=pdfh(html,\".wp-playlist-script&&Html\");src=JSON.parse(src).tracks;let list1=[];let list2=[];src.forEach(function(it){let src0=it.src0;let src1=it.src1;let src2=it.src2;let title=it.caption;let url1=\"https://ddys.tv/getvddr/video?id=\"+src1+\"&dim=1080P+&type=mix\";let url2=\"https://w.ddys.tv\"+src0+\"?ddrkey=\"+src2;let zm=\"https://ddys.tv/subddr/\"+it.subsrc;list1.push({title:title,url:url1,desc:zm});list2.push({title:title,url:url2,desc:zm})});return{list1:list1,list2:list2}}var data=getLists(html);var list1=data.list1;var list2=data.list2;let nums=pdfa(html,\"body&&.post-page-numbers\");nums.forEach(function(it){let num=pdfh(it,\"body&&Text\");log(num);let nurl=input+num+\"/\";if(num==1){return}log(nurl);let html=request(nurl);let data=getLists(html);list1=list1.concat(data.list1);list2=list2.concat(data.list2)});list1=list1.map(function(item){return item.title+\"$\"+play_url+urlencode(item.url+\"|\"+input+\"|\"+item.desc)});list2=list2.map(function(item){return item.title+\"$\"+play_url+urlencode(item.url+\"|\"+input+\"|\"+item.desc)});LISTS=[list1,list2];",
+        // lists:'js:log(TABS);let d=[];pdfh=jsp.pdfh;pdfa=jsp.pdfa;if(typeof play_url==="undefined"){var play_url=""}function getLists(html){let src=pdfh(html,".wp-playlist-script&&Html");src=JSON.parse(src).tracks;let list1=[];let list2=[];src.forEach(function(it){let src0=it.src0;let src1=it.src1;let src2=it.src2;let title=it.caption;let url1="https://ddys.pro/getvddr/video?id="+src1+"&dim=1080P+&type=mix";let url2="https://w.ddys.pro"+src0+"?ddrkey="+src2;let zm="https://ddys.pro/subddr/"+it.subsrc;list1.push({title:title,url:url1,desc:zm});list2.push({title:title,url:url2,desc:zm})});return{list1:list1,list2:list2}}var data=getLists(html);var list1=data.list1;var list2=data.list2;let nums=pdfa(html,"body&&.post-page-numbers");nums.forEach(function(it){let num=pdfh(it,"body&&Text");log(num);let nurl=input+num+"/";if(num==1){return}log(nurl);let html=request(nurl);let data=getLists(html);list1=list1.concat(data.list1);list2=list2.concat(data.list2)});list1=list1.map(function(item){return item.title+"$"+play_url+urlencode(item.url+"|"+input+"|"+item.desc)});list2=list2.map(function(item){return item.title+"$"+play_url+urlencode(item.url+"|"+input+"|"+item.desc)});LISTS=[list1,list2];',
+        "lists": lists
+    },
+    搜索: '#main&&article;.post-title&&Text;;.published&&Text;a&&href'
+}

@@ -1,1 +1,8 @@
-H4sIAC0soWYC/ytLLFIoKs1JVbBVqOZSAIJnKxY+m7vfSkH9ZXv7y9lthuo6YOGSzJKcVKDos3mNLxvmv9ja8mzXhGggFQuVz8gvLgFKZ5SUFBRb6etnFVdVJhZk6iXn50IVJCeWpManViTnlKaAzHk+ZevTvRufd7bXvNg/7/nutU87l9c8373nRecukNjTrhXP9qwGsSDqXixf/GL9lppne6Y8nTij5tm0DS+n7wZa/mLdepCCF8vbwNrBSqGmQI2AWq6vr1CQWFScGl9alIPsyszirMzUCrAz9QtyEiv17YEKbNXBepA1qHPVAgDhPTsZKQEAAA==
+var rule = {
+    模板: '采集1',
+    title: '极速资源[资]',
+    host: 'https://jszyapi.com',
+    cate_exclude: '电影片|连续剧|综艺片|动漫片|电影解说|演员|新闻资讯|电视剧|电影|综艺|动漫',
+    // parse_url: 'https://jisjiexi.com/play/?url='
+    parse_url: ''
+}

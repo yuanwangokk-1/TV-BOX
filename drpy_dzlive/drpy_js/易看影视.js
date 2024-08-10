@@ -1,1 +1,9 @@
-dmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICdteHBybycsCiAgICB0aXRsZTogJ+aYk+eci+W9seinhicsCiAgICBob3N0OiAnaHR0cDovL3R2Lnlremo2LmNuJywKICAgIHVybDogJy9pbmRleC5waHAvdm9kL3Nob3cvaWQvZnljbGFzcy9wYWdlL2Z5cGFnZS5odG1sJywKICAgIHRhYl9leGNsdWRlOiAn5o6S5bqPJywKICAgIHNlYXJjaFVybDogJy9pbmRleC5waHAvdm9kL3NlYXJjaC9wYWdlL2Z5cGFnZS93ZC8qKi5odG1sJywKICAgIGNsYXNzX3BhcnNlOiAnLm5hdmJhci1pdGVtcyBsaTpndCgwKTpsdCg5KTthJiZUZXh0O2EmJmhyZWY7LyhcXGQrKS5odG1sJywKfQ==
+var rule = {
+    模板: 'mxpro',
+    title: '易看影视',
+    host: 'http://tv.ykzj6.cn',
+    url: '/index.php/vod/show/id/fyclass/page/fypage.html',
+    tab_exclude: '排序',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    class_parse: '.navbar-items li:gt(0):lt(9);a&&Text;a&&href;/(\\d+).html',
+}

@@ -1,1 +1,68 @@
-H4sIAC0soWYC/51UbWsbRxD+3l9xyEV3557uZJNCkeKUNBjaxGkgrj8EJxyru5VurfXdeXdPthoLCqVvNGlVyKdSCu2H2pC+JJBCmrT/xrKcf9HZ3TvpJDk19NALN/PM7Owzz0wPMYNlFBtrxv03DHjGT1+Ofvy6YZijJ9+e/fHMdDxv9M/Ts6PPD0fDX0/++uXw9O/H40cvD7VbhQgiKIaIk+eP4TN+9OfotyEgt+F7z3QUJEq4AEQkRNrwvP39fZdHWb//jhsEXg7JGAWE1+4HFHHuUcKFn6UhEthv91PUwW4kdmkO5hixINrSIYhSb6mL+2vLyzNu1JJlrWrTXkaC7qayN4y6trUJFZhp2ErZBFnN8ruvi5u1hbjdMO4P8gtiFGLGGzmL8jG3OGa1qx0cCxOCb95674ONdX/rap4lDxRkFycZkPN2vZ6XFZEuZhtw/2sJnFoR+ED4K5WS75pk6DUAxZ6fIsZlS5Zi1DNQE1WrHwFI/kcMt5vusme5y+/aBfeBZBkfBDQLZdTos+NXnx4XAlCIlKJ+kVWwDGsrRR/3G8abO9wVyaZgJO5Ylm2sXSmxQLEwZONAYAzvZZgLi8RpJuzmDERpCDBp2I4siXdALSu6bHMOGySxAFLn0Eu5uVZzGTSjlQmRxNXq+1I0NpjgBgG2vLux13GMSsV2eUqJsCqXW+wKvOmmWj1ZfQ+clAC6brs7CYmtyt24UspRjVs8bco8pmEWiczLIemZ9nb93my1DMtKr2/e+tDliiLS7ltTfiYD5MyY8stMbIMSB4o/ObB5P+pOPjxx0sMU5ss03pLHOsYOl6od6NCBrY8Ik0wpvo0oz089/eb47OEQsMUAnTz/ZPziCAyunEMohlarGXwpmWipyVMUN/CeVVux5+SFpLmwFhlfPFAZpzd/9cXD0e/fj4bfXaAgRWTSsczTr47OfnowDZPXvHnH37q9USJHPp53nuzOhWqjklIhJOSGhCFK4i7X9zGd849RRel7TYoaffnk9XVdVFDRofJSnQzB1EV2O+CA32qVs6DkCDEPVM8QKA0HCQsXYnNdSRTz4YUvIARqSdVIEqCGJMZAwmrJLwUhAVoOs4G+XEXgayVhfyGx2ugXArSSUcH8gtNPwU4Opts436Onwx/Gz37+n8uoGOElNb9z6wZO1qsGFQpxUdZKku4qFHnJnKwOIuRhRLgkVouUWzfW79hzyUJItV3eEIS77YStoyDKE8wKP3TTjEdz+6KkD7UBiXAUZXpZOgtYrYspNLpUq/0HXOmrUll0qN7AoBTnzQ7HLH5gn7u7OBa3Mc+osEJ7upYG/wKgfS3bhwgAAA==
+var rule = {
+    类型: '小说',//影视|听书|漫画|小说
+    title: '丫丫电子书[书]',
+    host: 'http://www.shuyy8.cc/',
+    url: '/fyclass/list_update_fypage.html',
+    searchUrl: '/all/#key=**',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    hikerListCol: "text_1",
+    hikerClassListCol: "text_1",
+    class_parse: '#nav a;a&&Text;a&&href;.*/(.*?)/',
+    cate_exclude: '全部小说',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let html = request(input);
+        let title = pdfh(html, 'h1&&Text');
+        let content = pdfh(html, '#content--.readbutton&&Html').replace(/\n/g, "").split("<br>").filter(v => v).slice(0).join("\n").replace(/&nbsp;/g, ' ').split('<div')[0];
+        let ret = JSON.stringify({
+            title,
+            content
+        });
+        input = {parse: 0, url: 'novel://' + ret, js: ''};
+    }),
+    double: false,
+    推荐: '*',
+    一级: '.listconl&&ul&&li;a&&Text;;span:eq(-1)&&Text;a&&href;a:eq(1)&&Text',
+    二级: {
+        重定向: $js.toString(() => {
+            log('执行重定向:' + MY_URL);
+            // let html = request(MY_URL);
+            MY_URL = pd(html, 'a.diralinks&&href', MY_URL);
+            log('二级重定向到:' + MY_URL);
+            html = request(MY_URL);
+        }),
+        title: 'h1&&Text',
+        img: 'img&&src',
+        desc: '.lastrecord&&Text',
+        content: '.r_cons&&Text',
+        tabs: '.dirtitone&&h2',
+        lists: 'ul&&li',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href',
+        list_url_prefix: '',
+    },
+    搜索: $js.toString(() => {
+        let html = request(input.split('#')[0]);
+        let lis = pdfa(html, '.aubook2&&h4').filter(it => it.includes(KEY));
+        let d = [];
+        lis.forEach(it => {
+            d.push({
+                title: pdfh(it, 'a&&Text'),
+                desc: pdfh(it, 'h4--a&&Text'),
+                img: "",
+                url: pd(it, 'a&&href', MY_URL),
+            })
+        });
+        setResult(d);
+    }),
+}

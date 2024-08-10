@@ -1,1 +1,26 @@
-H4sIAC0soWYC/41Sz2/TMBS+81dUneS0pU2qwi6JqmlIHCqBdoCKwzRFbvLaeHPiyHbaBjSJw3ZiQIXKAQEXDrDLBIcdUCW0f2b98Wdgp2nVwgF8sP38vvf5vfe9PuYFnlAoNAsv7hTUkkRSsI3p+Xj64+3i+vPh9OzmyKhmvoAJaRuBlLGwLWswGJgyGRLMOkBMj4VrVAhtTm0jtxN9tygR0gpJXPOxxHsyjaHlN7upR7EQKMY9UIY+kIcp7WDvpJmH+yAxoRmhFVOcWt2U+LlPAOZesPQt7xaJfBjunUDarFS2ULij6mrkKQL2gQt7WbJeRlsAr+33IJKGbTw+eNB69NBt7xsZ4LSatyYElkh7t16vL1+y7N2swAa6h+6jxq6x6YlwqHt5djO7ukCz9+e3k1do+vHX9Oormo6+L959yNGWtYnf0X2o9QkMYsYlQglFiBLHlDBU1lO1OxihgEPXsUpmpbz6EktwYejRxNefTsbz8WXumr25XLwe2YYZE6+mlTD1VuuwoWMSCaHYItcqkbCHkOCeYyo5tj9d6cIS3VHJE1g+UBIS1ZyloZVyY8zFFgI/T23jWNhdkF6g3TgUZi7GYTHREmAtQfFIzWPr4IlSwKEgC4EMaTMLKpEoTmR1k6CcQVSuKuZYxGbsd4OSjqgWO8xPEdrpEx/YM45jhLJrTYGLZSejauoi1zIUbn++nE++6SRZZOtRzfujlXFIqLJzPEYpeNKNktDRPe8xnrrEv5tRu+vZ/A8mP+FYEha5QnIS9Zw/GSYXGcNqjmejT/PrL0rFTDyPRQj9Uz09s3/Jd/ob+ANUp/YDAAA=
+var rule = {
+    title:'兔小贝[儿]',
+    host:'https://www.tuxiaobei.com',
+    homeUrl:'',
+    url:'/list/mip-data?typeId=fyclass&page=fypage&callback=',
+    detailUrl:'/play/fyid',
+    searchUrl:'/search/index?key=**',
+    searchable:2,
+    headers:{
+        'User-Agent':'MOBILE_UA'
+    },
+    timeout:5000,
+    class_url:'2&3&4&25',
+    class_name:'儿歌&故事&国学&启蒙',
+    //class_name:'#page-viewport&&ul&&li;.text&&Text;a&&href;/(.*)',
+    cate_exclude:'应用',
+    推荐:'.pic-list.list-box;.items;.text&&Text;mip-img&&src;.all&&Text;a&&href',
+    double:true,
+    limit:5,
+    play_parse:true,
+    lazy:'js:fetch_params.headers["user-agent"] = IOS_UA;let html=fetch(input,fetch_params);let src = jsp.pdfh(html,"body&&#videoWrap&&video-src");input=src;',
+    // 一级:'json:data.items;name;image;collect_num;category_id+video_id',
+    一级:'json:data.items;name;image;duration_string;video_id',
+    二级:'*',
+    搜索:'.list-con&&.items;.text&&Text;mip-img&&src;.time&&Text;a&&href',
+}

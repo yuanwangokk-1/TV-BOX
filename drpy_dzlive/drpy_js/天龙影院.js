@@ -1,1 +1,67 @@
-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
+var rule = {
+    author: '小可乐/240701/第一版',
+    title: '天龙影院',
+    类型: '影视',
+    host: 'https://m.82mao.com',
+    hostJs: '',
+    headers: {'User-Agent': 'MOBILE_UA'},
+    编码: 'utf-8',
+    timeout: 5000,
+    homeUrl: '/',
+    url: '/List/fyfilter.html',
+    filter_url: '{{fl.cateId}}-{{fl.area}}-{{fl.by}}-{{fl.class}}--{{fl.letter}}---fypage---{{fl.year}}',
+    detailUrl: '',
+    searchUrl: '/Search/**----------fypage---.html',
+    searchable: 1,
+    quickSearch: 0,
+    filterable: 1,
+    class_name: '电影&剧集&综艺&动漫',
+    class_url: '17&18&20&48',
+    filter_def: {
+        17: {cateId: '17'},
+        18: {cateId: '18'},
+        20: {cateId: '20'},
+        48: {cateId: '48'}
+    },
+
+    play_parse: true,
+    parse_url: 'http://cdn.113276.xyz/cs1/?id=',
+    lazy: `js:
+var kcode = JSON.parse(request(input).match(/var player_.*?=(.*?)</)[1]);
+var kurl = kcode.url;
+if (/m3u8|mp4/.test(kurl)) {
+input = { jx: 0, parse: 0, url: kurl }
+} else {
+input = { jx: 0, parse: 1, url: rule.parse_url+kurl }
+}`,
+
+    limit: 9,
+    double: false,
+    推荐: '*',
+    一级: '.list-item;h3&&Text;img&&src;span:eq(0)&&Text;a&&href',
+    二级: {
+//名称;类型
+        title: '.bread&&Text;.info--label:eq(2)&&Text',
+//图片
+        img: '.pic&&img&&src',
+//主要描述;年份;地区;演员;导演
+        desc: '.info--label:eq(-2)&&Text;.info--label:eq(-1)&&Text;.info--label:eq(2)&&a:eq(-1)&&Text;.info--label:eq(1)&&Text;.info--label:eq(0)&&Text',
+//简介
+        content: '.detail-intro:eq(-1)&&p&&Text',
+//线路数组
+        tabs: 'li.tab-item',
+//线路标题
+        tab_text: 'font--i:eq(0)&&Text',
+//播放数组 选集列表
+        lists: '.series-list:eq(#id)&&a',
+//选集标题
+        list_text: 'body&&Text',
+//选集链接
+        list_url: 'a&&href',
+//链接处理
+        list_url_prefix: ''
+    },
+    搜索: '*',
+
+    filter: {}
+}

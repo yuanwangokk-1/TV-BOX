@@ -1,1 +1,11 @@
-H4sIAC0soWYC/22Qv07DMBDG9zyFpzYpjY1gQYn6DCywVaousRsb2YllO38QqsQDsLGwMDABr9CFl6HlNeqkQepQS+fT3X3fT7q7zR5Y7jBYK4oyVHUGJVadNhX+3b78bT/n6ClA/jnIVo51LkFTKpo4tgqknEzufGs6DzZRGjRgkKklQ4vRsv/62L//eMPA86qBI5xkvrd7e969fh//ccQr2+O5czohpG1bTIUUfVxd47xSo6w20quIKCnrsOaaNBUlllctEZSsH3PpdyEaCuaLPmHulBy9loHJ+f1ZwjA6NZKWktns1D6wVxqM7VfAJTQZmFg4piySIilceBkl0oU3UQrH2/SZG7ZOSbhc0ovon7Y5ANioltl4AQAA
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '嘀哩嘀哩',
+    host: 'http://www.dilidili23.com',
+    url: '/index.php/vod/show/id/fyclass/page/fypage.html',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    class_parse: '.navbar-items li:gt(0):lt(8);a&&Text;a&&href;/(\\d+).html',
+}

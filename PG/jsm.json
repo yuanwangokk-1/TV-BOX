@@ -16,46 +16,6 @@
 			}
 		},
 		{
-			"key": "AV",
-			"name": "AV",
-			"type": 3,
-			"api": "csp_XBPQ",
-			"jar": "./lib/XBPQ.jar",
-			"ext": {
-				"数组": "class=\"item\">&&class=\"wrap",
-				"图片": "data-original=\"&&\"",
-				"标题": "title=\"&&\"",
-				"链接": "href=\"&&\"",
-				"播放标题": ">&&</a>",
-				"播放链接": "href=\"&&\"",
-				"直接播放": "1",
-				"分类": "日本有码$2#日本无码$3#日本vr$7#中文字幕$7#國產傳媒$1#素人$5#成人短片$6",
-				"分类url": "https://18av.mov/videotype/{cateId}/page/{catePg}.html"
-			}
-		},
-		{
-			"key": "🔞AV",
-			"name": "🔞AV",
-			"type": 3,
-			"api": "csp_XBPQ",
-			"jar": "./lib/XBPQ.jar",
-			"style": {
-				"type": "rect",
-				"ratio": 1.5
-			},
-			"ext": {
-				"首页": "亞洲AV影片$亞洲av影片",
-				"主页url": "http://www.avhaha.com/",
-				"数组": "\"col-md-4\"&&\"col-md-4\"",
-				"图片": "src=\"&&\"",
-				"标题": "title=\"&&\"",
-				"副标题": "class=\"views\">&&</span>",
-				"链接": "href=\"&&\"",
-				"分类url": "http://www.avhaha.com/{cateId}/page/{catePg}/;;z",
-				"分类": "亞洲AV影片$category/亞洲av影片#歐美AV影片$category/歐美av影片#中文字幕AV$tag/中文字幕#日本無碼$tag/亞洲無碼"
-			}
-		},
-		{
 			"key": "豆瓣",
 			"name": "豆瓣",
 			"type": 3,
@@ -357,17 +317,6 @@
 			"ext": "./lib/tokenm.json$$$https://wogg.888484.xyz/$$$noproxy$$$1$$$./lib/wogg.json$$$WOGG"
 		},
 		{
-			"key": "Wo4k",
-			"name": "玩偶4K|磁力",
-			"type": 3,
-			"api": "csp_Wo4k",
-			"quickSearch": 1,
-			"changeable": 1,
-			"filterable": 1,
-			"timeout": 60,
-			"ext": "./lib/tokenm.json$$$https://www.wo4k.com/$$$proxy$$$1$$$./lib/wogg.json"
-		},
-		{
 			"key": "Wobg",
 			"name": "玩偶表哥|网盘",
 			"type": 3,
@@ -376,7 +325,7 @@
 			"changeable": 1,
 			"filterable": 1,
 			"timeout": 60,
-			"ext": "./lib/tokenm.json$$$https://wobge.run.goorm.io$$$proxy$$$1$$$./lib/wogg.json"
+			"ext": "./lib/tokenm.json$$$https://wobge.run.goorm.io$$$proxy$$$1$$$./lib/wogg.json$$$WOBG"
 		},
 		{
 			"key": "yydsys",
@@ -387,7 +336,7 @@
 			"changeable": 1,
 			"filterable": 1,
 			"timeout": 60,
-			"ext": "./lib/tokenm.json$$$https://tv.yydsys.top/$$$proxy$$$1$$$./lib/wogg.json"
+			"ext": "./lib/tokenm.json$$$https://tv.yydsys.top/$$$proxy$$$1$$$./lib/wogg.json$$$WNLG"
 		},
 		{
 			"key": "蜡笔网盘",
@@ -398,7 +347,7 @@
 			"changeable": 1,
 			"filterable": 1,
 			"timeout": 60,
-			"ext": "./lib/tokenm.json$$$https://duopan.fun/$$$noproxy$$$1$$$./lib/wogg.json"
+			"ext": "./lib/tokenm.json$$$https://duopan.fun/$$$noproxy$$$1$$$./lib/wogg.json$$$LABI"
 		},
 		{
 			"key": "Gaoqing",
@@ -1435,6 +1384,14 @@
 		}
 	],
 	"lives": [
+		{
+			"name": "zouming.ipv6",
+			"type": 0,
+			"url": "http://127.0.0.1:10079/p/0/proxy/http://ww.zouming.com/ipv6.txt",
+			"ua": "okhttp/3.15",
+			"epg": "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date={date}",
+			"logo": "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
+		},
 		{
 			"name": "live.ipv6",
 			"type": 0,

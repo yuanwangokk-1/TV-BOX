@@ -1,1 +1,12 @@
-qz2VfkB3O9fqiff5MjJa/ASdotKRYPNu8cLtwdABO3MDeyNp8SITwKEVrcmMRsD6s0DQiKXK91uXHy81Bhzh8xPZzDl/A9cOXQrBxH+Qn2Zl2eNL3Ogzx+kAqZMq7TDGW7Ndfho+4VAcQyAx6N07mAlW7fQJ1OyPHoh6N6d8fVOWOuNt6OC4A33+fTNN4LG/q/XFLtl36zoiB91RSan78yoe9aF22BQQ01lcOoaLkNU/Xo1WjNmDpUoxU636Gq2/XCZvTntOUeLK3C/STS7Lz+6dluVo0GnwUURaXL7gNR38fEglQqZY3FWrKfeeL93sbH7mvT+Uxk+l0Qy4iV2UL5HM/s8pWVCsa/NbKoHNvgid/QPZ+R+ndB22I2f49WtUmVex6ORVqKkjql+vWn5YM/OHxuUGMWjS0eyRUNQf2Y5+OY2ZrS264voFFE8dIGgntpJzleO5Z+svqdv9KqOTGfnDIkuqZU2owc5MBPJaX0jPht5t8Wkplht0wxQrLcLw/d7kCClFVHuSd1mrkQrrLg==
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '剧迷',
+    host: 'https://www.jagcys.com/',
+    url: '/vodshow/fyclass/page/fypage.html',
+    searchUrl: '/vodsearch**/page/fypage.html',
+    class_parse: '.navbar-items&&li:gt(1):lt(8);a&&Text;a&&href;/vodtype/(.*?)\.html',
+    cate_exclude: '今日更新|热榜',
+}

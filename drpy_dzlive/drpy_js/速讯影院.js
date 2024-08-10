@@ -1,1 +1,40 @@
-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
+var rule = {
+    title: "速讯影院",
+    模板: "mxpro",
+    host: "https://vip.suxun.site",
+    url: "/vodshow/fyfilter.html",
+    searchUrl: "/vodsearch/**----------fypage---.html",
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: "H4sIAAAAAAAAA+2YW08TURDHv8s+Y3J2W8rljfv9fsfwQEwTiYqJoIkhJChyKYSbgVYD0RegFcEWQZAty6fp7rbfwtPu7MwcH4wJTw37tvP7b8/OnMv8czqn6Vrt4zntWfStVqu551n7y7pWoU1Pvojy+M3k89fR0ovTEttLqcJiqohloGvzFYDXUjnrwI2tgBIhJX5gx5KkVKHirp47i0ukVJOS3LFvsqTUoOK823YW4qTogj4USyrD6ZSds/opZ8aYZNCnzBPb2iPJELwmd5dlYbAB35+68R2SQpShu5Z2rROSwmzAoxWlrDANmLs9dreX2bcoQ3vpKpdlJYelNFEUvXXLp8/yqQVaN4z/sW409r4l3wcKga/l189JgwCL/HlIGgS+VkhY9kaCZIrxja/fmOwFOLOJI9IgQO1ij2legJXcXbNKvIDNoP1j0de8gE+hfXOZy1o0hRj/zxQawgjj3pGPjIeIhzg3iBuM6zXI9RrOq4lXc15FvIrzCPEI55XEKzmn/HWev0756zx/nfLXlfx14jrngrhgXFC9gtcrqF7B6xVUl+B1CapL8LoE1SUflQU/SzjpDbbgfvzXgiPmC14HoA5JPZB6JA1AGpA0AmlE0gSkCUkzkGYkLUBakLQCaUXSBqQNSTuQdiQdQDqQdALpRNIFpAtJN5BuJD1AepD0AulF0gekD0k/kH4kA0AGkAwCGUQyBGQIyTCQYSQjQEaQjAIZRTIGZAzJOJBxJOKRvxeFslGczY+2uUUbBWN1oziJq0LikkSJZqfkD7C7m6aT2VX0p1OzM9Rq0x/s1WVFn3ny8lW0mMtEhWbc06aZl+xbOTMpndI3QjrX9lbGubljErUC2aLlD5lEp8w5Tbp3m0yig1k4/uz8TpPEeqBzkVEGZG1Ttnzn4JRJ7Fu/ru3DOJMiD9UIA0PTAkMLDE0LDK08DS10T0NjrlUyNDd7m4+Z/uGg1lH0n62MqtIBlE1V9lxVZTfNkrMpakgEhqMFhuM/lqHhUL2C1xsYkRYY0UM0ovA9jYgOO9ys1lLO7XffLtj/hSWrUVU6+J5NqSq7LHlXLEVl9yXvUqSolYFNaYFN+Y9laFOBHQV29CDtiF+Mgr0b7N2y2bvzfwDFCUaZTR4AAA==",
+    filter_url: "{{fl.类型}}--{{fl.排序}}--{{fl.语言}}-{{fl.字母}}---fypage---{{fl.年份}}",
+    filter_def: {
+        1: {
+            类型: "1"
+        },
+        2: {
+            类型: "2"
+        },
+        3: {
+            类型: "3"
+        },
+        4: {
+            类型: "4"
+        },
+        43: {
+            类型: "43"
+        }
+    },
+    headers: {
+        "User-Agent": "MOBILE_UA"
+    },
+    timeout: 10000,
+    class_parse: ".navbar-items&&li;a&&Text;a&&href;(\\d+)",
+    cate_exclude: "",
+    play_parse: true,
+    lazy: '',
+    double: false,
+    推荐: "*",
+    一级: 'body a.module-poster-item.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
+}

@@ -1,1 +1,11 @@
-T2JqZWN0LmFzc2lnbihtdWJhbi5teHByby7kuoznuqcsIHsKICAgIHRhYl90ZXh0OiAnZGl2LS1zbWFsbCYmVGV4dCcsCn0pOwp2YXIgcnVsZSA9IHsKICAgIOaooeadvzogJ214cHJvJywKICAgIHRpdGxlOiAn5Yi654ys5b2x6KeGJywKICAgIGhvc3Q6ICdodHRwczovL3lzLmN3c3MueHl6LycsCiAgICB1cmw6ICcvaW5kZXgucGhwL3ZvZC9zaG93L2lkL2Z5Y2xhc3MvcGFnZS9meXBhZ2UuaHRtbCcsCiAgICBzZWFyY2hVcmw6ICcvaW5kZXgucGhwL3ZvZC9zZWFyY2gvcGFnZS9meXBhZ2Uvd2QvKiouaHRtbCcsCiAgICBjbGFzc19wYXJzZTogJy5uYXZiYXItaXRlbXMgbGk6Z3QoMCk6bHQoOCk7YSYmVGV4dDthJiZocmVmOy8oXFxkKykuaHRtbCcsCn0=
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '刺猬影视',
+    host: 'https://ys.cwss.xyz/',
+    url: '/index.php/vod/show/id/fyclass/page/fypage.html',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    class_parse: '.navbar-items li:gt(0):lt(8);a&&Text;a&&href;/(\\d+).html',
+}

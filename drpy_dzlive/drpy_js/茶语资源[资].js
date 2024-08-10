@@ -1,1 +1,5 @@
-dmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICfph4fpm4YxJywKICAgIHRpdGxlOiAn6Iy26K+t6LWE5rqQW+i1hF0nLAogICAgaG9zdDogJ2h0dHA6Ly93d3cuY2xjYWlqaS5jb206MTAwMScsCn0=
+var rule = {
+    模板: '采集1',
+    title: '茶语资源[资]',
+    host: 'http://www.clcaiji.com:1001',
+}

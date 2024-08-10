@@ -1,1 +1,7 @@
-h36A5I5KdeB29zb3iwNWV5hJyHcdj7f1dyct+hTD1Zm4tlENfmYNijfZ7CkdPOKtLfrdnf5AwhbaZFPOWkxTouNgOTEX6KiPnSnBBo8e19N/aZqcdPNluoL1siYd/93q4Y/+ghIBoAKhUGjbFvg0Epo+gEFem/oVnzR4fAkEMT0IQ/U9bn3Qw0iTDS71G8csHsWKypKI31DtV0aMk5yr41kTAJU6g16gf0py8Q0uUPts88H2AjbRuu//dOKoHGwoTiT+z8jBKuKtwYrFZAyr1Q==
+var rule = {
+    模板: '采集1',
+    title: '飞刀资源[资]',
+    host: 'http://www.feidaozy.com',
+    cate_exclude: '电视剧|电影|综艺|动漫',
+    tab_rename: {'feidaozy': '飞刀'}
+}

@@ -1,1 +1,18 @@
-H4sIAC0soWYC/32US2+jVhTH9/kUVlRlkpAYbMCYRNMKGzD4gY3BxmYzAszT14B541G23cy0VbvpZjpSZzPd9LWoKqWLfpkm036LksSpWnXas7mcc/76n3uQ7m+se6aR1LU4dm3/eJPqml+//enn319fo/Xfrl++u357Vnt+UKviMHETYB5e1A7rDji3UgDO9aA4OgLuhbk9Rk6OjmSzSC7f12ztm4dnD04rMzb+y6jxaHT5Xqvm/81BH+ccXJ0cZFpUi1Jg1p7uF7j95uvbr36txu7329/mfq2q+u7Vi5vv3vz+9uM/3ny+bzlBnFQdJ0nC+AKG8zyvrzV/bdYNY69II1AJYMkJctgqDVD9R6u0XJCY0V4Rm1pkOLN73fuMYOleAJ+env8VVhlqtll9wHuTB0dNv7to4++lypTDYp56jHFTIRBSmk09DsYtYuMttygkEpLcm8H8RhsDKC9CLdKZJBKMVY93ukHQI5wtmyolbBe9uScMxB2h7jw/9+Fppu58U8QXvjFidWWHohaAshjq5IQ/aUNKOojMOZqBOa75WbQaRNpoBcjNnI4lMERTE1IzVIOgch41eljYGyllItE9cRKJGad3Oojapr1VtDapmcZFhpBzRcN2LJNadpRt7DItPCwoXYIkj8/HlDddSA6JoSKPzGehOlNkUejYHpKwTmcLyRSFcESwWZv0mIH4Fe3lU8eCctvsToambgkU4yFOycYEEvJEiwIdFDWWS2UFYBpzSj4BW2c2n0hcILSmKE5jYtKF2gpCAkNti7C9oNklpG5nSlNRB5PNQow8YgP5TcUarKtNBtwYI3laVK18W9okM/bmQtACnXxAtjbABPDMGixwzaYCeZSYxbTfs3w121ICg5N2CzcD2Wd4PiX8tOXbkVeIwEkjr825ZCzMEaMFlmlkk5SP532fst1xVyjFbNshO5NOT6VkjJLdPs3zKkuPWQqbMVNDZHHG4RmBcQJmxKAMbRgZnkMbWVpSKt81Fjiu870+VfCpQBUBGFH9tT2ywXod2JzLG/w0sEaesrYRZLqxR7mYr0rJlWdDta/zXJ/C+UzVSYxW5SXaxYg0Bv2uICaRMeDyXZnMKLnQHbGxVEgl3DZ4LexYgj0BwFAUrKlh8wbptPSV5RcubkBYbg+FdJ6mRX81g80oVAcKnXaYdUsbzAJ8Ptl40y6riRmYOgRfbIbksgOrFrxmg3XYalpLzuZFcbSiiQkjF0XAm/YAyy2NyEcjyuU0EPYXfdtnDcSDh3zkOxsbLGaIanY5Uh4C1G7L0bQ3jGCjcBek7+uEOxf6SHPF8gmGt0G3m/iRukuicJdAMpntwga2JtCS1rkh6vcji9AbWpDb/GqroLsVJEGFXT2VBTJFeczMJLQdBoPWmBhsJ1mzn3Sbm1DdVk816M2JqK81lEgbKokOsygpGXLBsjZF/ePpP3sAzfnz5xao37z64ebl9dXVQ3b76Rc31589Zu9+/OXm9Ysq20u//fL2+0/u0n9D5Z5WzyoaxHf404NVeXR0R1Vfy2oVT+2kgvqltsdtdTqRaV3WT2G5DE34uH760cmjE9B25UXtAy+uJ4GURK5vHx+f1J5+uAfvXbh+mCZ3KN7Pa5w9sPO+flbz4ovakydXl/f6q5Ozg6s/AQoHYzeZBgAA
+Object.assign(muban.海螺3.二级, {
+    "title": ".hl-full-box&&li:eq(0)&&Text;.hl-full-box&&li:eq(6)&&Text",
+    "desc": ".hl-full-box&&li:eq(1)&&Text;;;.hl-full-box&&li:eq(2)&&Text;.hl-full-box&&li:eq(3)&&Text"
+})
+var rule = {
+    模板: "海螺3",
+    title: "看客视频",
+    host: "https://www.kanke.cc",
+    url: "/Show/fyclassfyfilter",
+    searchUrl: "https://www.kanke.cc/Search/**----------fypage---/",
+    filterable: 1,
+    filter: "H4sIAAAAAAAAAO2W709SURjH/5f7mjYq3+Q7STGU/ImaOl+wxparbEtrNcdGIhCooG7hqFuWy/gxGVjNKQz7Zzjnwn/RvZzneQ5XncMFbWz33fl+vs+Bw7nP8+WuKreV3vlV5anvrdKraMdl9mVDsSlL3ue+Zv3a++yVr1G4pGMWytSDGQPrQvHbBB0Z8DjdrkeAUaHrcNwHx1ghfeAYBWqsiE65pxAbS+SjIwOAjRXSh943QI0VUpZUWTQNBgj0tFhBq+TAA0H7omkeDOE+IdDjwRhf+wgeCPLebfNAEj0hyFs70pI76AlB33cYYWdl/D4hyItlqhUVPSHoN6R35D4QtC+8W09lcZ8Q/gXDFY+ZqUW2WZKPmXQrj7m+n2WfKkBB0KHO49IDQZfwqyg9EOjVNo6lBwK96mlel/UfKX5agAoTMtexRJGfnZvqANE59g65eoTnEIIu7nu6ngrjxQlhurj8Hi9sNV0c6lYurg9An5wJnAgiOCNyQvqB9BPBGZAT4ATiJDIIZFDOFA4UERcQF5EhIENEhoEME3EDccv5w+mTSYAZICcX55bIGJAxIuNAxolMAJkgMglkkogHiIcIRofMjWkg00RmgMwQwdySiTULZJbIHJA5IvZb94DZTY3C47uslJCNQtrcKHwzytUATxbhQ1YW9Wpq1IapBfNgPllcWW42a4V19h6bdfnxi5c+4wgLNuVuuxJdU/erpZKWDuBEk6aKUo5VPmjRCFaQvlRh7IxmL9YB/Zf/kFokp62fYHgIQQMdD7PETxxoIegK4wfa7wMMAiHalpJXJgnFc0j/LIrnhmglXU0ZeCH9TLl3g8TrRGLr/cxiX9nnb7iVNJ02dFIt458lCCtnrZztrpzt+T9vzp14k73yDbHL3nJrf7b1aowgIdqW3zd+S+xgfl+X0R3I4evS38poK6O7KqPv2JtC2mpZq2W7oGV7rJa1WraLWtb/F39ScTxFFgAA",
+    filter_url: "-{{fl.地区}}-{{fl.排序}}-{{fl.类型}}--{{fl.字母}}---fypage---/",
+    class_parse: "body&&.hl-nav li:gt(0);a&&Text;a&&href;.*/Type/(.*?)/",
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+}

@@ -1,1 +1,39 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+eDreaSreS5i+WuticsCiAgICBob3N0OiAnaHR0cHM6Ly9yZWJvemoucHJvJywKICAgIC8vdXJsOiAnL3R5cGUvZnljbGFzcy1meXBhZ2UuaHRtbCcsCiAgICB1cmw6ICcvc2hvdy9meWZpbHRlci5odG1sJywKICAgIGZpbHRlcmFibGU6IDEsLy/mmK/lkKblkK/nlKjliIbnsbvnrZvpgIksCiAgICBmaWx0ZXJfdXJsOiAne3tmbC5jYXRlSWR9fS17e2ZsLmFyZWF9fS17e2ZsLmJ5IG9yICJ0aW1lIn19LXt7ZmwuY2xhc3N9fS17e2ZsLmxhbmd9fS17e2ZsLmxldHRlcn19LS0tZnlwYWdlLS0te3tmbC55ZWFyfX0nLAogICAgZmlsdGVyOiAnSDRzSUFBQUFBQUFBQSsxWjcwNGJSeEIvbC92TWh6dUREZVFOK2d4VlByaXAxVWFsVkFKYUNVVklKTWJVTnNRMlVXT1hRUG1qWXV3VURBWlNFbXhzWHNaN1o3OUZ6OTdkbVZseW1WNngyeXFTdi9uM205dTltZG1kM2QrY24xbU85ZWpMWjlaM2lXWHJrZlVrdnBUNDRtdHJ3cHFQZjUvd3NidVo4UzZhWW0vRHAzNkt6LzJZR0R3NzcxdEVxdHBMVnZ1MER4eHJaVUxSMldxbnRhdm9HTkxGWFpHcEtIb2FhQzk5NFNaVGlwNUJ1cklsYnBxS25nWGFmVjV3VjR2NmxUWk9ucW5nTEE3NjRxWi83VFF5bW85WUs0LzdGaFhvWEh4eDBZZ1RaL2wwbk1HdlZDQXdWZ1VDMDZOQVlESVVnRkNTV2ZmRkcyVlRJREF0Q3NDYzJYT3Y5WWVlVXdJWTkrTFVLMjdwY1JLQW4rdXZldHR2dFo4U0JLNk9BakN1L0RQYUZBaGNEZ1ZnM05tMWFOVDBPQW5BbGxzWCtVdHRrd0JzK2FQdTc3QU9FbWhiNS9hZ2UxWlhOZ1hBbDlweHAzMmdmWkZBMjNyN1Y1MmJncklwb0czZHU0Sy9hc3FtQU02NTJVM3Z3WndEQU9QS2Q3aUxGSUI4UG0vMzNyUjFQaVdnV3pXK2tJaWJPM1czTGpZYllYZnFVYVczdmE0ekpBRkVlcnp0ZmpqWGtVcUFtYTI3TjIzSTdBQ0F4KzJjMkdscGp5V0FMRnk5UnBzQ2tJV05DN1FwQU9OS1pYZjNWSStUQUZma0xZNVRBUHhzdjBlYkF1aExuZnBTTjhhOXJJdkdzUjRuQVl4YnkvdVpFbWxkQUlqSmVucjVtcGZaeGlWVkdDdjl3TjI0ODRkQnNXc01UNlN1TzAxZHR3clFkVjlPeEJmTWRiOTUxMm0yUXE1N3hJNU1LVzd3ay9DVHlFOVNQb0o4aFBJTzhnN2xiZVJ0d2p1endEdXpsSjlCZm9ieTA4aFBVejZHZkl6eVVlU2psTWQ0SFJxdmcvRTZORjRINDNWb3ZBN0c2OUI0SFl5M2YvbVFsWnFMejM5anJGVDN2TmF0cm9hdDBKMlcvN3plQnhLUWlrR2JBbENGbDBkb1V3QXFwdFFTTDB0b1JreHFpcGdsSUxXSU5nVklmUk9iQktRV1NTUVNrTjB1enBLNDIvdUE1dkNyWlpMQjNDdlJ5SCtVUHJkMDNTdTlVMU1zUGZVZmhhTyswWERydnlqTHQwK1hGakdCNTJzaXJZKy94U2MvTENUNmIzMDhZVVdHVnowUnVvU2RSZ1Z2ZmJMUC9EUFZQejJKYVlxbXVYK1lvUWwzcy92bmUzRlVKS2JZS05VTHB6UTRaY1BkRjZ6U1lHNStUb1Z3eW9hNytibmJuVk0ybkRyamxBMm4rRGpsOWxEVnd5cXd3VmJFMDZRUHdKZlRpbjliYTE4a0dQYitsVHRWajVNZzFQMGJwQzlHcDNyV1UvN3pzTW9ERUNhYWh5b2lMbnU4V3ZwMGhsaTFWS3o3Z2tMOGRxaUhBaDZyaTdHNnNENWJkZkdQVk1KbTVyOFFDcFBEQzRYSlVWN2VmaHNyV3EvMW9ra1FwdVhsTHBTSHRyemVQdXlRZmJKMU9Da0Eyc0w0dk1GOUd1QStSZnk3clROemlVaFpwejJXd05SMXVNSDdnTDJDeDhmeXFJN2xRY1ZPRFYreG1Eb2w3Yk5WOS9aRXYrb2pDVzlZby9jMmlXbU4zZHNLcG5WNmxDZEZnSE1HeFlSb1VJekRCc1dFYlZEM21oempPVXFGa3V5Y0xPYyt0bklTK29FZmQ5bTJpcFA2YTNmZVNWbmJKQWpUSGdXZnZ1d25TcVlaNGU0QXJoRmp6MjZtU1dOdkNhYUI0ejZ6c2sxVE15OVNIL1Q3SklBNUMzdmVLV1JaZ2pEUzNnL1hMWll3OWo0QTI4R2gyQUdaSXdINGtxeDFEMWUxTHhKQURJV2NPSU02bENCTUEyZlc3NzFLUzZhNm1VdFk5d0dBY2ZVdFViN1M0eVFBUDAvMjNDejRLUUhNZWRsMDE5SjZUZ25BbHF0NkJTMm1GQmpodmN5MXVOeHFjZGtidDB2V3VGMGF0MHREdDB2UjRjVVg3aVA1ZjVYWHZPMW1Hc3BJZHFVVUZhWjFodWJOejZSaEpaVWh5OSswT2lNUVg5Ry9teVBFUVJjZG56eWZ6OGtEdkkzeDJqUmVHK08xYWJ3MnhtdlRlRzJNMTZieDJoaXZUZU8xTVY1N2FoUW40Zi8ycDh6S1h5R24rZTJNSWdBQScsCiAgICBmaWx0ZXJfZGVmOiB7CiAgICAgICAgMToge2NhdGVJZDogJzEnfSwKICAgICAgICAyOiB7Y2F0ZUlkOiAnMid9LAogICAgICAgIDM6IHtjYXRlSWQ6ICczJ30sCiAgICAgICAgNDoge2NhdGVJZDogJzQnfSwKICAgICAgICA1OiB7Y2F0ZUlkOiAnNSd9CiAgICB9LAogICAgc2VhcmNoVXJsOiAnL3R5cGUvaWQtLmh0bWw/d2Q9KionLAogICAgc2VhcmNoYWJsZTogMiwvL+aYr+WQpuWQr+eUqOWFqOWxgOaQnOe0oiwKICAgIHF1aWNrU2VhcmNoOiAwLC8v5piv5ZCm5ZCv55So5b+r6YCf5pCc57SiLAogICAgaGVhZGVyczogewogICAgICAgICdVc2VyLUFnZW50JzogJ1VDX1VBJywKICAgIH0sCiAgICBjbGFzc19wYXJzZTogJy5zdHVpLWhlYWRlcl9fbWVudSBsaTpsdCg2KTthJiZUZXh0O2EmJmhyZWY7LiovKC4qPykuaHRtbCcsCiAgICBwbGF5X3BhcnNlOiB0cnVlLAogICAgdGFiX3JlbW92ZTogWyfok53lhYnkuJPkuqsxJywgJ+WkuOWFizRLJywgJ+aegemAn+acieW5v+KRoCcsICfmnoHpgJ/mnInlub/ikaEnXSwKICAgIGxhenk6ICcnLAogICAgbGltaXQ6IDYsCiAgICDmjqjojZA6ICd1bC5zdHVpLXZvZGxpc3QuY2xlYXJmaXg7bGk7YSYmdGl0bGU7Lmxhenlsb2FkJiZkYXRhLW9yaWdpbmFsOy5waWMtdGV4dCYmVGV4dDthJiZocmVmJywKICAgIGRvdWJsZTogdHJ1ZSwgLy8g5o6o6I2Q5YaF5a655piv5ZCm5Y+M5bGC5a6a5L2NCiAgICDkuIDnuqc6ICcuc3R1aS12b2RsaXN0IGxpO2EmJnRpdGxlO2EmJmRhdGEtb3JpZ2luYWw7LnBpYy10ZXh0JiZUZXh0O2EmJmhyZWYnLAogICAg5LqM57qnOiB7CiAgICAgICAgInRpdGxlIjogIi5zdHVpLWNvbnRlbnRfX2RldGFpbCAudGl0bGUmJlRleHQ7LnN0dWktY29udGVudF9fZGV0YWlsIHA6ZXEoLTIpJiZUZXh0IiwKICAgICAgICAiaW1nIjogIi5zdHVpLWNvbnRlbnRfX3RodW1iIC5sYXp5bG9hZCYmZGF0YS1vcmlnaW5hbCIsCiAgICAgICAgImRlc2MiOiAiLnN0dWktY29udGVudF9fZGV0YWlsIHA6ZXEoMCkmJlRleHQ7LnN0dWktY29udGVudF9fZGV0YWlsIHA6ZXEoMSkmJlRleHQ7LnN0dWktY29udGVudF9fZGV0YWlsIHA6ZXEoMikmJlRleHQiLAogICAgICAgICJjb250ZW50IjogIi5kZXRhaWwmJlRleHQiLAogICAgICAgICJ0YWJzIjogIi5uYXYubmF2LXRhYnMgbGkiLAogICAgICAgICJsaXN0cyI6ICIuc3R1aS1jb250ZW50X19wbGF5bGlzdDplcSgjaWQpIGxpIgogICAgfSwKICAgIOaQnOe0ojogJyonLAp9
+var rule = {
+    title: '热播之家',
+    host: 'https://rebozj.pro',
+    //url: '/type/fyclass-fypage.html',
+    url: '/show/fyfilter.html',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.cateId}}-{{fl.area}}-{{fl.by or "time"}}-{{fl.class}}-{{fl.lang}}-{{fl.letter}}---fypage---{{fl.year}}',
+    filter: 'H4sIAAAAAAAAA+1Z704bRxB/l/vMhzuDDeQN+gxVPrip1UalVAJaCUVIJMbUNsQ2UWOXQPmjYuwUDAZSEmxsXsZ7Z79Fz97dmVlymV6x2yqSv/n3m9u9mdmd3d+cn1mO9ejLZ9Z3iWXrkfUkvpT44mtrwpqPf5/wsbuZ8S6aYm/Dp36Kz/2YGDw771tEqtpLVvu0DxxrZULR2WqntavoGNLFXZGpKHoaaC994SZTip5BurIlbpqKngXafV5wV4v6lTZOnqngLA764qZ/7TQymo9YK4/7FhXoXHxx0YgTZ/l0nMGvVCAwVgUC06NAYDIUgFCSWffFG2VTIDAtCsCc2XOv9YeeUwIY9+LUK27pcRKAn+uvettvtZ8SBK6OAjCu/DPaFAhcDgVg3Nm1aNT0OAnAllsX+UttkwBs+aPu77AOEmhb5/age1ZXNgXAl9pxp32gfZFA23r7V52bgrIpoG3du4K/asqmAM652U3vwZwDAOPKd7iLFIB8Pm/33rR1PiWgWzW+kIibO3W3LjYbYXfqUaW3va4zJAFEerztfjjXkUqAma27N23I7ACAx+2c2GlpjyWALFy9RpsCkIWNC7QpAONKZXf3VI+TAFfkLY5TAPxsv0ebAuhLnfpSN8a9rIvGsR4nAYxby/uZEmldAIjJenr5mpfZxiVVGCv9wN2484dBsWsMT6SuO01dtwrQdV9OxBfMdb9512m2Qq57xI5MKW7wk/CTyE9SPoJ8hPIO8g7lbeRtwjuzwDuzlJ9Bfoby08hPUz6GfIzyUeSjlMd4HRqvg/E6NF4H43VovA7G69B4HYy3f/mQlZqLz39jrFT3vNatroat0J2W/7zeBxKQikGbAlCFl0doUwAqptQSL0toRkxqipglILWINgVIfRObBKQWSSQSkN0uzpK42/uA5vCrZZLB3CvRyH+UPrd03Su9U1MsPfUfhaO+0XDrvyjLt0+XFjGB52sirY+/xSc/LCT6b308YUWGVz0RuoSdRgVvfbLP/DPVPz2JaYqmuX+YoQl3s/vne3FUJKbYKNULpzQ4ZcPdF6zSYG5+ToVwyoa7+bnbnVM2nDrjlA2n+Djl9lDVwyqwwVbE06QPwJfTin9ba18kGPb+lTtVj5Mg1P0bpC9Gp3rWU/7zsMoDECaahyoiLnu8Wvp0hli1VKz7gkL8dqiHAh6ri7G6sD5bdfGPVMJm5r8QCpPDC4XJUV7efhsrWq/1okkQpuXlLpSHtrzePuyQfbJ1OCkA2sL4vMF9GuA+Rfy7rTNziUhZpz2WwNR1uMH7gL2Cx8fyqI7lQcVODV+xmDol7bNV9/ZEv+ojCW9Yo/c2iWmN3dsKpnV6lCdFgHMGxYRoUIzDBsWEbVD3mhzjOUqFkuycLOc+tnIS+oEfd9m2ipP6a3feSVnbJAjTHgWfvuwnSqYZ4e4ArhFjz26mSWNvCaaB4z6zsk1TMy9SH/T7JIA5C3veKWRZgjDS3g/XLZYw9j4A28Gh2AGZIwH4kqx1D1e1LxJADIWcOIM6lCBMA2fW771KS6a6mUtY9wGAcfUtUb7S4yQAP0/23Cz4KQHMedl019J6TgnAlqt6BS2mFBjhvcy1uNxqcdkbt0vWuF0at0tDt0vR4cUX7iP5f5XXvO1mGspIdqUUFaZ1hubNz6RhJZUhy9+0OiMQX9G/myPEQRcdnzyfz8kDvI3x2jReG+O1abw2xmvTeG2M16bx2hivTeO1MV57ahQn4f/2p8zKXyGn+e2MIgAA',
+    filter_def: {
+        1: {cateId: '1'},
+        2: {cateId: '2'},
+        3: {cateId: '3'},
+        4: {cateId: '4'},
+        5: {cateId: '5'}
+    },
+    searchUrl: '/type/id-.html?wd=**',
+    searchable: 2,//是否启用全局搜索,
+    quickSearch: 0,//是否启用快速搜索,
+    headers: {
+        'User-Agent': 'UC_UA',
+    },
+    class_parse: '.stui-header__menu li:lt(6);a&&Text;a&&href;.*/(.*?).html',
+    play_parse: true,
+    tab_remove: ['蓝光专享1', '夸克4K', '极速有广①', '极速有广②'],
+    lazy: '',
+    limit: 6,
+    推荐: 'ul.stui-vodlist.clearfix;li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href',
+    double: true, // 推荐内容是否双层定位
+    一级: '.stui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href',
+    二级: {
+        "title": ".stui-content__detail .title&&Text;.stui-content__detail p:eq(-2)&&Text",
+        "img": ".stui-content__thumb .lazyload&&data-original",
+        "desc": ".stui-content__detail p:eq(0)&&Text;.stui-content__detail p:eq(1)&&Text;.stui-content__detail p:eq(2)&&Text",
+        "content": ".detail&&Text",
+        "tabs": ".nav.nav-tabs li",
+        "lists": ".stui-content__playlist:eq(#id) li"
+    },
+    搜索: '*',
+}

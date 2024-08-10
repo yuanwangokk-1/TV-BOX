@@ -1,1 +1,39 @@
-dmFyIHJ1bGUgPSB7CiAgICDnsbvlnos6ICflkKzkuaYnLAogICAgdGl0bGU6ICfmnInlo7DlsI/or7TlkKcnLAogICAg57yW56CBOiAnZ2IxODAzMCcsCiAgICAvLyBob3N0OiAnaHR0cDovL20ueXN4czgudmlwJywKICAgIGhvc3Q6ICdodHRwOi8vbS55c3hzOC50b3AnLAogICAgdXJsOiAnL2Rvd25saXN0L2Z5Y2xhc3NfZnlwYWdlLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnL3NlYXJjaC5hc3A/cGFnZT1meXBhZ2Umc2VhcmNod29yZD0qKiZzZWFyY2h0eXBlPS0xJywKICAgIHNlYXJjaGFibGU6IDIsCiAgICBxdWlja1NlYXJjaDogMCwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdNT0JJTEVfVUEnCiAgICB9LAogICAgdGltZW91dDogNTAwMCwKICAgIC8vIGhvbWVVcmw6Jy9mZW5sZWkvJywKICAgIC8vIGNsYXNzX3BhcnNlOiAnLnBkLWNsYXNzOmVxKDApIGRkO2EmJlRleHQ7YSYmaHJlZjsuKi8oLio/KS5odG1sJywKICAgIGNsYXNzX25hbWU6ICfnvZHnu5znjoTlubsm5oGQ5oCW5oKs55aRJuS8oOe7n+atpuS+oCbpg73luILoqIDmg4Um5a6Y5Zy65YiR5L6mJuWOhuWPsuWGm+S6iybmjqLpmannm5flopMm6IGM5Zy65ZWG5oiYJuaYjuacnemCo+S6m+S6i+WEvybor4TkuabkuIvovb0m55u45aOw5oiP5puyJuS6uueJqeS8oOiusCblub/mkq3liacm55m+5a626K6y5Z2bJuWkluivreivu+eJqSbmnInlo7DmloflraYm5YS/56ul6K+754mpJueuoeeQhuiQpemUgCcsCiAgICBjbGFzc191cmw6ICdyNTImcjE3JnIxMiZyMTMmcjE0JnIxNSZyNDUmcjgxJnIzNiZyMyZyNyZyMTYmcjE4JnIzMiZyMzUmcjQxJnI0JnI2JywKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBsYXp5OiAnJywKICAgIGxpbWl0OiA2LAogICAgLy8gZG91YmxlOnRydWUsCiAgICDmjqjojZA6ICcubGlzdC11bCAubGlzdC1saTsubGlzdC1uYW1lJiZUZXh0Oyo7Lm1vZHVsZS1zbGlkZS1hdXRob3ImJlRleHQ7KicsCiAgICDkuIDnuqc6ICcuYm9vay1vbCYmbGk7aDQmJlRleHQ7aW1nJiZkYXRhLW9yaWdpbmFsOy5ib29rLW1ldGEmJlRleHQ7YSYmaHJlZicsCiAgICDkuoznuqc6IHsKICAgICAgICAvLyB0aXRsZTonaDImJlRleHQ7LmJvb2stY2VsbCAuYm9vay1yYW5kLWE6ZXEoMikmJlRleHQnLAogICAgICAgIHRpdGxlOiAnaDEmJlRleHQ7LmJvb2stY2VsbCAuYm9vay1yYW5kLWE6ZXEoMCkmJmEmJlRleHQnLAogICAgICAgIGltZzogJy5ib29rIGltZyYmc3JjJywKICAgICAgICAvLyBkZXNjOic7Ozs7LmJvb2stZGVzIHAmJlRleHQnLAogICAgICAgIGRlc2M6ICc7OzsuYm9vay1yYW5kLWE6ZXEoMikmJlRleHQ7LmJvb2stZGVzIHAmJlRleHQnLAogICAgICAgIGNvbnRlbnQ6ICcuYm9vay1kZXMtLXAmJlRleHQnLAogICAgICAgIHRhYnM6ICcucGxheWxpc3QtdG9wJiZoMicsCiAgICAgICAgLy8gbGlzdHM6J2pzOnBkPWpzcC5wZDtsZXQgdXJsPXBkKGh0bWwsIi5ib29rYnV0dG9uJiZhJiZocmVmIik7bG9nKHVybCk7aHRtbD1yZXF1ZXN0KHVybCk7bGV0IHY9cGQoaHRtbCwiLmJvb2tzaXRlJiZzY3JpcHQmJkh0bWwiKTt2YXIgZG9jdW1lbnQ9e307dmFyIFZpZGVvTGlzdEpzb247VmlkZW9MaXN0SnNvbj1ldmFsKHYuc3BsaXQoIlZpZGVvTGlzdEpzb249IilbMV0uc3BsaXQoIix1cmxpbmZvIilbMF0pO2xvZyh0eXBlb2YgVmlkZW9MaXN0SnNvbik7bGV0IGxpc3QxPVZpZGVvTGlzdEpzb25bMF1bMV07TElTVFM9W2xpc3QxXTtsb2coTElTVFMpOycsCiAgICAgICAgLy8g5pyJ5aOw5bCP6K+05pyJ6Ziy55uX6ZO+LOaIkeacjeS6hijkuIrpnaLnmoTliJfooajmlbDmja7mraPluLjmi7/liLDkuoYs5rKh5rOV5pKt5pS+KQogICAgICAgIC8vICBsaXN0czonI3BsYXlsaXN0OmVxKCNpZCkmJnVsJiZsaScsCiAgICAgICAgbGlzdHM6ICcjcGxheWxpc3QgdWwgbGknLAogICAgfSwKICAgIOaQnOe0ojogJyonLAp9
+var rule = {
+    类型: '听书',
+    title: '有声小说吧',
+    编码: 'gb18030',
+    // host: 'http://m.ysxs8.vip',
+    host: 'http://m.ysxs8.top',
+    url: '/downlist/fyclass_fypage.html',
+    searchUrl: '/search.asp?page=fypage&searchword=**&searchtype=-1',
+    searchable: 2,
+    quickSearch: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA'
+    },
+    timeout: 5000,
+    // homeUrl:'/fenlei/',
+    // class_parse: '.pd-class:eq(0) dd;a&&Text;a&&href;.*/(.*?).html',
+    class_name: '网络玄幻&恐怖悬疑&传统武侠&都市言情&官场刑侦&历史军事&探险盗墓&职场商战&明朝那些事儿&评书下载&相声戏曲&人物传记&广播剧&百家讲坛&外语读物&有声文学&儿童读物&管理营销',
+    class_url: 'r52&r17&r12&r13&r14&r15&r45&r81&r36&r3&r7&r16&r18&r32&r35&r41&r4&r6',
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    // double:true,
+    推荐: '.list-ul .list-li;.list-name&&Text;*;.module-slide-author&&Text;*',
+    一级: '.book-ol&&li;h4&&Text;img&&data-original;.book-meta&&Text;a&&href',
+    二级: {
+        // title:'h2&&Text;.book-cell .book-rand-a:eq(2)&&Text',
+        title: 'h1&&Text;.book-cell .book-rand-a:eq(0)&&a&&Text',
+        img: '.book img&&src',
+        // desc:';;;;.book-des p&&Text',
+        desc: ';;;.book-rand-a:eq(2)&&Text;.book-des p&&Text',
+        content: '.book-des--p&&Text',
+        tabs: '.playlist-top&&h2',
+        // lists:'js:pd=jsp.pd;let url=pd(html,".bookbutton&&a&&href");log(url);html=request(url);let v=pd(html,".booksite&&script&&Html");var document={};var VideoListJson;VideoListJson=eval(v.split("VideoListJson=")[1].split(",urlinfo")[0]);log(typeof VideoListJson);let list1=VideoListJson[0][1];LISTS=[list1];log(LISTS);',
+        // 有声小说有防盗链,我服了(上面的列表数据正常拿到了,没法播放)
+        //  lists:'#playlist:eq(#id)&&ul&&li',
+        lists: '#playlist ul li',
+    },
+    搜索: '*',
+}

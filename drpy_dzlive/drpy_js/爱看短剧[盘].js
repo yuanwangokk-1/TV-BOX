@@ -1,1 +1,29 @@
-H4sIAC0soWYC/41STWsTQRi++yuGUNy21mxy8LJLlFo9CBUPJSeR8Lo76U46++HMu9LVFARRlPqRgwehpQUPJqCigR601X/TzcZ/4ezOROIh4JyW5+Pd53lnHoIgIuWUtMjjC0SdYnyWH+07xMp/jafD59aabeuvfj74fP7jY3/y81Px7qyff3s7/XpSWZAhp8pRvBgXh/vF8Zf85fBucfD+nrVW8UEsUdEBYiId285kvdlsYN2L7L+CkLYFVxobEmZDD3brSZBcAw9bgnpxGNLI/w/tDWA8M7p0gaabeRykNCpJQXjBonmavRhBSFurq/9Y4H5ZuamhBynzdrYq3CENjXUZRyq0zEABBZ8K6ZhNl8dqSyour2/TCC0V4fad67c2b3ba6+Zfe8bIdqjYZBI3YhW0hnQXO83aHLdRVlogQBbSOFUXcKXRMEGqDXTKWuU9Pxv9fjqy5hm9u4xF2zJgXI01bMIh6yQgpPKhSKlGOTzKHLLUk3WMt1Ao1/LyCmldnavJoiRF9cRqSSoD9QRq5JLGXF1zRU/y47TaVxe4NMMnb0bT1wOVZrb+8+9PitOhAnoyjhwfENyyiOuC75dVXRV+Jj19paUz72RwWJx8MMDeHxThd5T7AgAA
+var rule = {
+    类型: '影视',//影视|听书|漫画|小说
+    title: '爱看短剧[盘]',
+    host: 'https://ys.110t.cn/',
+    homeUrl: '/api/ajax.php?act=recommend',
+    homeUrl: '/api/ajax.php?act=Daily',
+    url: '/api/ajax.php?act=fyclass',
+    searchUrl: '/api/ajax.php?act=search&name=**',
+    searchable: 1,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    hikerListCol: "text_1",
+    hikerClassListCol: "text_1",
+    timeout: 5000,
+    class_name: '全部',
+    class_url: 'yingshilist',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = "push://" + input;
+    }),
+    double: false,
+    推荐: '*',
+    一级: 'json:data;name;;addtime;url',
+    二级: '*',
+    搜索: '*',
+}

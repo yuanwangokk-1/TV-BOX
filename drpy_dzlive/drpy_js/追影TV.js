@@ -1,1 +1,26 @@
-H4sIAC0soWYC/51TzW4TMRC+8xQrIW2aUK/T0HJIxKFIHJBAXJqeKlXOerq28K4X2xuyRZV4AKj6AJy4tFckDqhS1Zfp32Nge52ySatI4Mva/ma+75sZ75SoSFUCopfR5yeRXYYbAcOoc3d5cX3xc2e3s+6vmdTG3jJjyiHGesrL5JBVvOZFlqS1rHCI00BUysZK2GDMCwqzpGQlnkqKGwiXJAN8UPvPJ4p7vYSZXIT06rFEU5eAObVJqSBatxnauQwIBaWHoRC3OmMNCm1nUJiO5X33/tWbt6/3x9sh42g9lJyDrGx5W/1+v7nyQvslUdr1YiJpHccJE0jnBZlGgo9IHO/AzLgvU3AwSnp4bW+PPuu2HQmec0u7GUhLQeo5p1EVhCByWFuNkHJzfHb37cSenZotHgmuzagR9KNxG0oMQVLxjBdEjBIFOVEf9LIjS8AN5EhXkwYKElRWE7Fg4er3l9vz0yXRpmC38zT/bCCoXZ1/9dx/hzJ/YY4+lQLNNNoYDOHj2kYXIcgDywN00F2owi2eZ4HHNXHJViuOgk4fFVytuLUSfbESfb4S3WyhLZ+pLIx9qvdW/QkZG/Qg1JCJDnFuG8ekBbqhzVH36LQfoxN+yqlto+CLP8DNyffbXz/mrfzvifs6nVuUVwaoJ0vR4N770R8wopcibQQAAA==
+var rule = {
+    title: '追影TV',
+    host: 'http://svip.zhuiying.cyou/',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    url: '/index.php/vod/type/id/fyclass/page/fypage.html',
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: 'body&&.hl-smnav li;a&&Text;a&&href;.*/(\\d+).html',
+    limit: 40,
+    play_parse: true,
+    lazy: '',
+    推荐: '.hl-vod-list;li;a&&title;a&&data-original;.remarks&&Text;a&&href;.hl-item-sub&&Text',
+    double: true,
+    一级: '.hl-vod-list&&.hl-list-item;a&&title;a&&data-original;.remarks&&Text;a&&href',
+    二级: {
+        title: '.hl-col-xs-12:eq(1)--em&&Text;.hl-col-xs-12:eq(2)&&Text',
+        img: '.hl-lazy&&data-original',
+        desc: '.hl-col-xs-12:eq(11)--em&&Text;.hl-col-xs-12:eq(5)--em&&Text;.hl-col-xs-12:eq(6)--em&&Text;.hl-col-xs-12:eq(3)--em&&Text;.hl-col-xs-12:eq(4)--em&&Text',
+        content: '.hl-content-text&&Text',
+        tabs: '.hl-tabs&&a',
+        lists: '.hl-plays-list:eq(#id)&&li',
+    },
+    搜索: '.hl-list-item;a&&title;a&&data-original;.remarks&&Text;a&&href;.hl-text-muted.hl-lc-2&&Text',
+}

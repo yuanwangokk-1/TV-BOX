@@ -1,1 +1,18 @@
-H4sIAC0soWYC/1WR3UrDMBTH732KXnVabHq/Ir6EXqmMLE2XYLaUJF07VBBv9GZDRGQgog7ReTW8EGWgexnbzbcwa6PUE8jHOb8/5yNdKCwRM2xtWAcrlrZ8fJ/fzOpW7fvxKrv+rK0XXkUVw9o5v3zNPl6yh+fs7sSECJdKR4hSUd3zkiQBhHdaTcjJPkC8bahYMA15YQ8xKKUb9iLYwoCoNjOAxFAgsl1iksee47h/VuL6UlUo2GzgFLE4WFaWnZ3m/dF8Olu8TQyQD8aL/rmOxQy0ezF1uzxgVCqAmE4W0tRn1HfKZSRf78fz6ZOW/BNYmoM7xQz2bLs4K+8AKuhyQVu0A5kPIopchVNl21t6r3BE4NCkKYbQiKCQy9JBIHgU8KTjNnla5PrVliIfON4qcDbXdqvtI6hwpX/zMxfjxWR0mA8H+fBWg0c/hzD8WOABAAA=
+var rule = {
+    模板: '自动',
+    title: '电影天堂[自动]',
+    host: 'http://www.hongbaohk.com',
+    class_parse: '.stui-header__menu li;a&&Text;a&&href;(\\d+).html',
+    url: '/rou/fyclass--------fypage---.html',
+    searchUrl: '/sou/**----------fypage---.html',
+    二级: {
+        title: '.stui-content__detail .title&&Text;.stui-content__detail p--span&&a&&Text',
+        img: '.stui-content__thumb .lazyload&&data-original',
+        desc: '.stui-content__detail p:eq(4)--strong&&Text;.stui-content__detail p--span--span--span--span&&a:eq(2)&&Text;.stui-content__detail p--span--span--span&&a:eq(1)&&Text;.stui-content__detail&&p:eq(2)--span&&Text;.stui-content__detail&&p:eq(3)--span&&Text',
+        content: '.detail&&Text',
+        tabs: '.stui-pannel__head h3',
+        tabs1: '.stui-vodlist__head h3',
+        lists: '.stui-content__playlist:eq(#id) li',
+    },
+    搜索: 'ul.stui-vodlist&&li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href;.detail&&Text',
+}

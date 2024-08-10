@@ -1,1 +1,9 @@
-dmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICfph4fpm4YxJywKICAgIHRpdGxlOiAn6buR5pyo6ICz6LWE5rqQW+i1hF0nLAogICAgaG9zdDogJ2h0dHBzOi8vd3d3LmhlaW11ZXIudHYnLAogICAgLy8gaG9tZVRpZDogJzEzJywKICAgIGhvbWVUaWQ6ICcnLAogICAgY2F0ZV9leGNsdWRlOiAnXueUteW9sSR8XueUteinhuWJpyR8Xue7vOiJuiR8XuWKqOa8qyQnLAogICAgcGFyc2VfdXJsOiAnJywKfQ==
+var rule = {
+    模板: '采集1',
+    title: '黑木耳资源[资]',
+    host: 'https://www.heimuer.tv',
+    // homeTid: '13',
+    homeTid: '',
+    cate_exclude: '^电影$|^电视剧$|^综艺$|^动漫$',
+    parse_url: '',
+}

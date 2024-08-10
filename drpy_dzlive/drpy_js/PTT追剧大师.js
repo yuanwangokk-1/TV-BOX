@@ -1,1 +1,86 @@
-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
+var rule = {
+    类型: '影视',//影视|听书|漫画|小说
+    title: 'PTT追剧大师',
+    host: 'https://ptt.red',
+    homeUrl: '/zh-cn',
+    url: '/zh-cn/p/fyclass?page=fypage',
+    searchUrl: '/zh-cn/q/**?page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: '.nav-tabs&&a;a&&Text;a&&href;(\\d+)',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let html = request(input);
+        let sdata = pdfh(html, '.container-fluid&&script&&Html');
+        // log(sdata);
+        let json = JSON.parse(sdata);
+        if (json.contentUrl) {
+            input = {parse: 0, url: json.contentUrl, js: ''};
+        }
+    }),
+    double: false,
+    推荐: '*',
+    //α大佬方案去除推荐页广告
+    一级: '#videos&&.card:not(:has(.badge-success:contains(广告)));a:eq(-1)&&Text;img&&src;.badge-success&&Text;a:eq(-1)&&href',
+    二级: $js.toString(() => {
+        let html = request(input);
+        let data = html.split('node:')[1].split('},')[0] + '}';
+        data = data.trim();
+        //   log(data);
+        let json = JSON.parse(data);
+        //   log(json);
+        VOD = {};
+
+        VOD.vod_name = json.title;
+        VOD.type_name = json.type;
+        VOD.vod_id = input;
+        VOD.vod_pic = urljoin(input, json.thumbnail);
+        VOD.vod_year = json.year;
+        VOD.vod_area = json._area;
+        VOD.vod_remarks = json.note;
+        VOD.vod_content = json.description;
+        VOD.vod_director = json.director;
+        VOD.vod_actor = json.actors;
+        let v_tabs = pdfa(html, '.nav-tabs&&li');
+        let v_tab_urls = v_tabs.map(it => pd(it, 'a&&href', input));
+        v_tabs = v_tabs.map(it => pdfh(it, 'a&&title'));
+        // log(v_tab_urls);
+        VOD.vod_play_from = v_tabs.join('$$$');
+        let lists = [];
+        let list1 = pdfa(html, '.mb-2.fullwidth&&a').map(it => pdfh(it, 'a&&Text') + '$' + pd(it, 'a&&href', input));
+        // log(list1);
+        lists.push(list1);
+        if (v_tab_urls.length > 1) {
+            let reqUrls = v_tab_urls.slice(1).map(it => {
+                return {
+                    url: it,
+                    options: {
+                        timeout: 5000,
+                        headers: rule.headers
+                    }
+                }
+            });
+            let htmls = batchFetch(reqUrls);
+            htmls.forEach((ht) => {
+                if (ht) {
+                    let list0 = pdfa(ht, '.mb-2.fullwidth&&a').map(it => pdfh(it, 'a&&Text') + '$' + pd(it, 'a&&href', input));
+                    lists.push(list0);
+                } else {
+                    lists.push([]);
+                }
+            });
+        }
+        let playUrls = lists.map(it => it.join('#'));
+        VOD.vod_play_url = playUrls.join('$$$');
+    }),
+    搜索: '*',
+}

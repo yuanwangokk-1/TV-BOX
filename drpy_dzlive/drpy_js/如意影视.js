@@ -1,1 +1,38 @@
-H4sIAC0soWYC/4VTy27TQBTd8xWWQJMHsZ20dGOrSEVigQRiUbKrZE08N8mUie3OXOdBFalCiBWPfgArFpQtEgtUib+haT+DGY9DHNKAs4h8zj3nPj2m0pG5AGffOb3j6Ac5Cgic2tWX14s3H69+fru5eFtrFdQwVaiZIWIW+L7cm3kJoF+SuRSa88cp83GWgc+Z35/FgirlZ3QA+qX4K6MVUBkPu1bDEwZTLxtmhdpSa6IJ85vNdSntmSp3LHSS8/jlYYEHTttifS4QpA3rVCGdsVZ9j2zl6xiDfuCczsu+gTKQKignZJ5aV4F0DwaQYE2Lnz1/9OTp46h7ULqUQuQjSHM9s712uyyrmEiUUanMkD2Y0DG4asIzbZfQMSE0pIS8gCma/6GEfqgnWT86YvcbywnEFCGCaSxyBqvKM0FnS2OUOVhU0FezwLl3rDxMD1HyZFCvN5z9h5VeeJLlaPZfijstu8wCbznHyuSYh7axhrVlaV5MdpVo8eHrzftz05Neoiu4QhfHYS48mU4IETxs2l9Z7a8fZ9eXF9VwQnJRBOq+iyMMPVO8SCkjhFGkbir5gCdUhB5HGLkKKeZqfVhL98t3hfuqyeVZD3dLgceTfkpIRojKaGLBUl0MZTQwxW2poBLIQMUmcs0ugJO622ncmspwO9upf6gebKd2GxsdxGmC+jxNbaiZDR5pz2zWM3dj10V7Zv6VEAOr1Zn+iVxa68R3OWv8pdI+kcmohb2UzTYSG4v/B9ivcn2tVTLKNM6nq/svv7nF+afr7581fOvpzX8DEFXpwvAEAAA=
+var rule = {
+    title: '如意影视',
+    host: 'http://r5y.net/',
+    url: '/vod/type/id/fyclass/page/fypage/',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**/',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: '.ewave-swiper-nav&&a;a&&Text;a&&href;id/(\\d+)/',
+    cate_exclude: '',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: true,
+    推荐: '.vod-list-tv;ul.row&&li;*;*;*;*',
+    一级: '.vod-list&&ul&&li;a&&title;.lazyload&&data-original;.item-status&&Text;a&&href',
+    二级: {
+        title: 'h3&&Text;.info&&p&&span&&Text',
+        img: '.lazyload&&data-original',
+        desc: '.info&&p&&span:eq(-1)&&Text;.info&&p&&span:eq(2)&&Text;.info&&p&&span:eq(1)&&Text;.info&&p&&span:eq(4)&&Text;.info&&p&&span:eq(3)&&Text',
+        content: '.text&&Text',
+        tabs: '.playlist-tab&&li',
+        lists: '.ewave-playlist-content:eq(#id)&&li',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href',
+        list_url_prefix: '',
+    },
+    搜索: 'ul.row&&li;*;*;*;*',
+}

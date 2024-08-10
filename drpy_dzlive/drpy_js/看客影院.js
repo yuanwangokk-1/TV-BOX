@@ -1,1 +1,9 @@
-YIusz8yDu42XX/8kPCrvQiUo+S3gpRsIhnRLJyJpx7juGczFK9dOfANbyoHHGcCPb4xrr4spkhfdVAr2vcBKvzR5JqTSS9AodPvEzdfu2G67rijk9UMHSGAvU49RVJ1NgvLZOy54mtiwkw2bg4HfiCjkBI7l4SZGQAfWbwKukZmZBYYqR7N12Z1J9x+A4qv4pdmPl1KJ5GWKItojJZC0WxwwGh8biK9Zu3kmWa2VWpDwfG/CULT+WcyAE6YbuxbznaZW6+hvtUAqE5nXtps0b+uF6M54z/6OcYjmP65YFgKYLjYSp1IwIU0tbnEBJpxzz/B/UamESiwE9NGjdbOa8m/rJBFmshJ9PzqnnFa92TRjIMmDCr9V/nfA1sGn93t1bWcQUvEu0otSo91aIoowyKaMI5v3/Vwjcn0XESMi86o=
+muban.海螺3.二级.title = 'h2&&Text;.hl-text-conch&&Text';
+var rule = {
+    模板: '海螺3',
+    title: '看客影院',
+    host: 'https://kanke.cc',
+    searchUrl: '/Search/**----------fypage---/',
+    url: '/Type/fyclass-fypage/',
+    class_parse: 'body&&.hl-nav li:gt(0);a&&Text;a&&href;Type/(.*?)/',
+}

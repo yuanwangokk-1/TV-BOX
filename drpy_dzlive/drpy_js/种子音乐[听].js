@@ -1,1 +1,30 @@
-h36A5I5KdeB29zb3iwNWV95GoTd41MjXSiVVZzz81TKYhaNKkZLDIOLHlYwP9PQVmmFXNnhtErg9NVP4UsHhQl3WGitdRsnClG3vtXzAJawGsmfKr7FPP44MNDCLo6j/1JS+MJN9IX1URqw0Z18wAC6MaoD7xn1z8U3MPYDrv/+ifWgMsoQV4T2S+KYj4G5I0TziDW+E3dqRzJvepD4bKmrEjSyzKXj/TWXOD0K13DS96WD5O4TsCsusUHSd2FeNwHsYZiNuUdDZTta/Vjt746zkV0RKcYjeh+rSpVj89lbklZgabORIPy/3qoowpr7ehY1sZlSm0mDmS41/28U3VHUJw4nVaW7/cMmsRQkhdwXptJAOXllXfR5nyq4q1AyQKsec+Hh3uSlmi6EJn6Al2f74r6D2zbZT66HcN8RW7b28VQkjCHmQ021UBPp3TwIp6lj4C+QdPPZ+N0APF7jtzO1dE7ew49QriBkXUAEnhVXWgTB0zqdNfmZOc/ymPuKrOQUejk7ltgh17p8FyoWQWhdiqkU6EvPBFhoXsM77WI3LheOvQyioHM6LSOu5nUm519a4Of4Y78E1wiGocWjBWrBABhzvHV40mmYsyKNG8HL3dkqyFJukZzkF0VCtd58h1zp89sWsnjCVKwu4mlcXRgQzpOv3U9jOOz7iLRA5hYHAecSlp6Av/L0Soqg07Ypt1M0FE9zdrysjAquLfgqNBIaF/x33mDcHcGi3g9zWrUE9G+OZWz8mXBOo7S+89jQj+bW4bnGXJKvq6CkxSiF0vcFaj5nf67ETiZqpoujW4wDRKvyfEmoUyNRuWBPyv8azfeOkGYp9W3lPzKh5K4sfxAR14dmChdoZGwWrbh+MKWbDt1vmYDHap5fXgMmAEyqtOfct/w5l7MyI15WZus8IBS0SBRKDYNAEo+d9TynEvRv+PzrJRcq9H5tW/8n4QA7/pRw0SwvgQlA1dFpbASBJadvcrlgCcG1/3kaI1/WAzNoswoeKU/i8/sV95gvrqNO4wkUvD7NiT7/YkkQkJWJwLsigyxD03ZxiVGwES3u5/S+iQxF+W5SIgvz7PDS01msEC+vzbLrGZgkGWhpo77X6aiCOITkQdqaU0bKUdtxqr6Rl0DT/vVqDbsVONT3mQ8UmaHjAOMxeGFX3z0nU++MJZqfFSxTTRKsRLhnXLFBjELCaMfhi61L0csGE1ECXB+KPTppfxVlnJOrhZSzUHsvrFkKeK6thIUyIOWKK6Qa+te8WSoZ6vVtRDfO9oxpytHZiYMG+lHFIk3ePqtC7v8gP3joQ7r7TRNMT74iGFXYxjES1vujBBOo1uXEH5ktbxrZHqAN5UBpj2doCLOeSY7VdxVyQWEcA1Qt7XgvGAogR/R+BBnWOuXNcAcbq0VmxgeUAFCjaNrU/iD9b5RQHZaHQSAln/fnmA87WypPoTmxzuNY=
+var rule = {
+    title: '种子音乐[听]',
+    host: 'https://www.zz123.com',
+    homeUrl: '/list/mszm.htm?page=1',
+    url: '/fyclass.htm?page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+        'referer': 'https://www.zz123.com/',
+    },
+    class_parse: '.aside-menu-list.channel&&[href*=list];a&&Text;a&&href;.(list.*).htm',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = input.replace(/play\/(\w+)\.htm/, 'ajax/?act=songinfo&id=$1&lang=');
+        log(input);
+        let mp3 = JSON.parse(request(input)).data.mp3;
+        input = {parse: 0, url: mp3, header: rule.headers};
+    }),
+    limit: 6,
+    //  图片来源:'@Referer=https://www.zz123.com/',
+    推荐: "*",
+    一级: '.mobile-list&&.mobile-list-item;.songname&&Text;.lazyload&&data-src;.authorname&&Text;a&&href',
+    二级: '*',
+    // searchUrl:'/search/?key=**&page=fypage',
+    // 搜索:'*',
+    searchUrl: '/ajax/?act=search&key=**&lang=',
+    detailUrl: '/play/fyid.html',
+    搜索: 'json:data;mname;pic;sname;id',
+}

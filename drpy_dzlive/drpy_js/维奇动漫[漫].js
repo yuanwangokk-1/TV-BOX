@@ -1,1 +1,53 @@
-h36A5I5KdeB29zb3iwNWV7BzVN4NKJPfTo0TpJW58fIO9BnYmk+t/F5+Fld5i5f0PCTy80i937zfUTx12DFH99aHazRp8js2B+l8W7/sQmVutomGhSJRU2Wiysl88XNCyTQCpRra/D4bdu9h3/6V/QqDb294zhlHZQK01XFrtiQgsPbI7mnJ/ELoNuPNTGsRahZHxEZ0fJm4c/XT7CVxgHsi8FbkLRjXq6vZOTirzsGbnYKlTj3MwbQ1lDWXnduBW+wqkR1SdaT45iYP2HibpXyFN/0nD8GCyoj0k3UTjPeE9OftQUPVryu/cW2sSG1lNryiz1p1SXBWWUJkuhJhGAwHcg6NHZODTr874y1ddyYrYG4vpZ+ALtP2vboNRAWHSPTpFov72uBQ4tYFtJIPngjSHnSMiChGDZAJDzmiWEf+FJRJTTVQ9Y9y6wps1kvS7/Tgppe3kCN8ZCjANlNTX2H1Qn3mcC99wGHy2OEBS0fq3+aU+5ASL3+PaKDh1yprDJQCs26dWrPzyrfoL8hAgHjQRMkXvwPS4u5wfU4iqVrxr1bIItXFmqXgy+dFm/Xggv9Z6Ylz4i7eAlJiXUJtVi5SQ6qUdFeqkGaRoROOFXfx8jfov9oUNflq27laYby9qiw0yM24Ym+IdUw+nvdraYiimYtbdK1LMUtmqwmRHwZcmH79mBf2xJbjuGtuOm6/kdhd08tXdUlvjYrj6TrOR52K9NC6BECZze7UeJsgJ0F0qiqFVefYV/ijHVepKwtRLNX7WPXT5NZcZC7pFfaVna6tj/jQMF74Oadu5fp5t7GvgZHDIJwwBRoEqXxROC+aaOgf9rtk902v7HV2OCQ8Wp5BKn/KhOQSzR7GeF9gGDyVAIl2DPseUwK6Nl10dR3i/VPp8XuK3+azNtR4a+g3T+FCSoGak5y3Cx4H4GO0ZKbhG1wIHMgMkGBSH/sGHnBuabUdfgUY10P029uiZ7YoBBcwjZK4eIgMhGpGSW7+lcFrOP7Sj/rVtEJpqz3TOiGTdobysUzFHyKal4/fQXKBTmQaCRalFGiyi5ohiw2OoyB+h456xACCmXbrdDXNh0MzzD9SvntCm/p8BPLTyvJKPEZ5SiW8yFdyeKznS4cH7vCqBXiQCrQ4Js/PfGPQtdhclP2DTS/cyCGcJIO79nqpy9RV1RlC+eTOD+Nlg675xxpgyReNXGj7/mF8TrN0xWW8dV5oZjMzx0j7ugFfL5Onrbl5h2PpRn1x1Rs2izqC6ty7ifo5yBdYiZMLFQAZUtAQVmtqNdyWQWa6CZ/mzJtS42Qene1uw7y/dBVcMsxYwOeg5tdWAavIvPfAsYR8rhq6J0ExIpOVIQVXGgCozTmwolvUUhBSI1UO9RQhhIgvlqvnn3jm+gOExyXycOY1CavlRBlcDfw/vtRg4zeDc6fUGk34IYuS5J61V+V5ye0XNQQ4HkJHD+5EG5/+SeUBl3LZo21uU2ajsyip56eaNaasGbnn4phTibRwDvqzRv33t+w6NIV0BPcKh2GV8fMRaLdZqKuSIUrzg734tUlaApenVprS+WTaeK3FQxwsyGhhPHAoeMdR2ALGqC9VcvRfS3PaofKvt4rXAi62HpDYfyfI4MWw4xmeozybnz2D9gaCbl7xMqSjDaU7GSI+LiyV/jHejD9VU5Qgp9nD5dv80FVZHrT/MQAupEgUDzY3xyGSPCqQ0GE/PfHY/wBCbb/aCF43t4cPiyjCnwx+9m5efu1fj4wv2WYG1vZlNC1vYSRPfnpvsGKBwNo1CS0R8a7/JMyRvpZpNCNyao5EooIW/XRK8+ySIBU1aEQ/sCt/0ExAd7S9quT7YaQIn6EwvLfDGUOsO36ZnJRsSYyVkoN+Ukm5dwvx5Dkhfc/iQ13rxKghEH1e3A996Z+XwQUv2QomiZLkAdSlma+wETrVZvyVsMYA9XZPMrqAA8PCJYB0SOWf5UFQ8C8Axjm/vKcHQdlPSNe/NbDEQ3i7PYIEkv4G7JG6qKwGmmKI3fdwP7HCW7oQ6NXjK9Imrr9Y7YS0sYGii8xFonJB9qeSyZXE/SfecPh9sukBuBS79tBIliOwmdZPM3GYkKYIGHE6CdUDwFjCRErZy/gKkpD2U5GYS9EyQDgI9NjXSvF8Zy7pESzAYt0HofrzsfVh5PqH8wl09H6xiOj5uOGyicYOfxnX2BHF+axj516SEV84/sGhfu3OzhAvalx8psQKgg7jJcqJAxUe3N6TJj+BJ3i72Y8cMydN8I6wslVz433wfpJTsaXHJvKf0lGBQhwSE1LNgJQPuAutOu1QvwC8kbvOQGHrDVdkh5rCUjcRbi4/+Di2q0ZuK1CSelZuIIoRuEdTh7SdB1dUYeYcymdw637bSOkZoYNyZv2e6y3m4TrGEcjxUCO+LQzXu65UubkXDLeb+OsqrvwAIvedL2oZCTN9q/J4PRpC4dfckLpfPRaRizo13ylFvDp4VZjj1oqKWwy005TVxsRABRqqd9ZAv9LXWXpYnC/ArTNiSUOiscjUpyaOVD/hl5AH1/ZybE/FU5DB7wA3tn3dt2c+Do2Vq3q+norlzysuIFISvUfonGPXspqRLsP8MRpfsqCHKt7+DoUZJEr1Bh35/gBuxRBhTG2GjbiIGkupT0PPOjFKj7/JfvGi49xHZpbZjgyXLFq/3TKEpUAwERKZlkwQcBH+jBOK2H1SG97sEWdSjby61R8ZcDi55SE7Ys+xF8ceaJptjYUZU+sZyvquzfBLZIms7Vn4+DK+5j4mWZF42zQmWj/IFmtj0xtGgN48J0HDi56SmeT7oAnreOkGh2X8VgxaQQ03HURjykcyJTqHdHTeCyb4UvVf1vZl/W1k+xfWAMOGNiVJT1gAa4LuYbGuCT4aKoPTnQnj60lxjrQ6lItp99iN7GfhzNyR+soWSYCSPWZ4PN8fu5zgZBxjSJpy1Qx7urLQJMII+IS9xCWrFYCAD8HBzPv5e688QfQO88IdAthfEjEUfeqzHQCbrSGJ6PAj/QMbqzhnlGOXsIjQ+Row/ILzixS0k9JHkBsL9ro=
+var rule = {
+    title: '维奇动漫[漫]',
+    host: 'https://www.uiviki.com',
+    hostJs: '',
+    headers: {'User-Agent': 'MOBILE_UA'},
+    编码: 'utf-8',
+    timeout: 5000,
+    homeUrl: '/',
+    url: '/anime-select-fyfilter.html',
+    filter_url: '{{fl.cateId}}-{{fl.area}}-{{fl.by}}-{{fl.class}}-----fypage---{{fl.year}}',
+    detailUrl: '',
+    searchUrl: '/anime-so/wd/**.html',
+    searchable: 1,
+    quickSearch: 1,
+    filterable: 1,
+    class_name: '连载动漫&国漫&日漫',
+    class_url: 'lianzai&guoman&riman',
+    filter_def: {
+        lianzai: {cateId: 'lianzai'},
+        guoman: {cateId: 'guoman'},
+        riman: {cateId: 'riman'}
+    },
+    proxy_rule: '',
+    sniffer: 0,
+    isVideo: '',
+    play_parse: true,
+    parse_url: '',
+    lazy: '',
+    limit: 9,
+    double: false,
+    推荐: '*;*;*;*;*',
+//列表;标题;图片;描述;链接;详情(可不写)
+    一级: '.vodlist li;a&&title;img&&data-echo;.vodlist-title&&Text;a&&href',
+    二级: {
+        "title": ".show_right_info:eq(0)&&li:eq(0)&&Text",
+        "img": "img&&src",
+        "desc": "",
+        "content": ".overlay-text&&Text",
+//线路数组
+        "tabs": ".tab&&.now&&li",
+//线路标题
+        "tab_text": "",
+//播放数组 选集列表
+        "lists": ".playlist:eq(#id)&&a",
+//选集标题
+        "list_text": "",
+//选集链接
+        "list_url": "a&&href"
+    },
+//列表;标题;图片;描述;链接;详情(可不写)
+    搜索: '*',
+    filter: 'H4sIAAAAAAAAA+2U207iUBSG73mMXvMEvorxomPITDOIiegkDiHhoFiRKcUonUYHJIYRD6hYQ6DF8jLdPbzFFNehJvMCXvSOb/+stddh9y9lpLwiF37KirS2nilJ33P70pq0mZeLRSkrFeStXIzBxBG9k5h/yPm9+GC9JBXiY3E4iuqj1XEMUjkLp+Gb45/N8RSBNH82SzQE1hb3HzQA0oTWF+oFaggcN/7ruVcUB0BacLsMp03UEDhn4zQybyknAMfddMTcoTgAjhseJRoC16L+9rsG1QJAmrd89BwTNQS+b9iLxmd0HwBp8W/fOkcNgWd9fRhVFjRrAK5T18TjPdUJwLXMTTG0qBYAzll5C1yNcgJwnaYrdJXqBOA4vRVYNBcEnoveCx46NBcAzlkfh4MK5QTgHmoPvnVHPQBwzks7njDlBGCtehKoE9IAuPfFnRhRHALHaaNAb1AcAGtXA3ExJg2A61zUgvMW1QnA++tb3lyn/QFwXHUq6m2KA+B5LnXRpK8LgeOeO8n+ELjOruGbNtUJwJoxFLMZaQCsvTj+Ae0W4cO79uzj5F2vgPfX0uKvgPYHwD0cvUb1KvUAwHGuFl33KQ6A+/vVDWt0HwJrzYlY0jeGwPdVW+KSekdI3uefUDvm9/kOnNMdiBvaEULiPQ3RfmHveYfyRjnLZvllP3FKXzsVdvs/p/SNaWS8Yo5dJf4rv0bb9p/py/+m7BaTep8OhEpvsbi5vZNbXZvZyGakr3vbW3IhNezUsFPDTg07NexPb9g7SurXqV+nfp36derXn96vM+V/+YAXbBURAAA='
+}

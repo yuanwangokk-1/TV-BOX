@@ -1,1 +1,56 @@
-dmFyIHJ1bGUgPSB7CiAgICDnsbvlnos6ICflvbHop4YnLC8v5b2x6KeGfOWQrOS5pnzmvKvnlLt85bCP6K+0CiAgICB0aXRsZTogJ+i0neS5kOiZjlvlhL9dJywKICAgIGhvc3Q6ICdodHRwczovL3ZkLnViZXN0a2lkLmNvbScsCiAgICB1cmw6ICcvYXBpL3YxL2J2L3ZpZGVvI3BnPWZ5cGFnZScsCiAgICBob21lVXJsOiAnL2FwaS92MS9idi92aWRlbycsCiAgICBzZWFyY2hhYmxlOiAwLAogICAgcXVpY2tTZWFyY2g6IDAsCiAgICBmaWx0ZXJhYmxlOiAwLAogICAgaGVhZGVyczogewogICAgICAgICdVc2VyLUFnZW50JzogJ0lPU19VQScsCiAgICB9LAogICAgdGltZW91dDogNTAwMCwKICAgIGNsYXNzX3BhcnNlOiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIGlucHV0ID0gSlNPTi5wYXJzZSh1bmd6aXAoJ0g0c0lBQUFBQUFBQUE0VlV5MjdhVUJEOUY2K3p3S1JBazErcHFxcFNzdWlpVlJmZFZGVWxVbkNDd1UxSXdxTnVIZ2dGUTFvd09DR05qQW53TTU0N2wxMC9vWmVpUm1UdW9PNXM2WnlaYzg3TTNCZWZqQThmMysrK2VyTmpiS2RURzh1ZmQ2L2Y3aHJieHU5R2VTRE9zNklXeEdGUlhONGJuemRXMEthNXFjUGpLQkpCQlhPK09QR2Z3bE5wSFkzakk3QkM3SG95dUNMRk56TTZIQjZ5TU12SnU0dDRWSmJ1SWFuUHFJRnBDWXJYa0o4SjN5SG9yWFZxT0xTWk1IVzR2TGN3Nm9pYmlaeTBUUm9OVTM0Vmo3MWVIRG5nYTY2WmtDZ3Z0RFhlRmpPNHY3aTY4a1JiY0RtTkhoYTJiWlhXVEJZdXFSbHVGS2Q1dkdoeVdXVVNqSVhTamFnZHNNbWFuT1BpRjFIMzR2Qnc4UkZVaUZkR2pkZ3J6NmR1SE5hd1N1Zk1KS05XQWl0anRGbEJLYTc4cnozWmRCUlVuTjFTK2M4WitmOFdGQ3dQem56WkQrZzJjWjRmU2EwT3VsUHNIRDhscFpOckYvYW9KUWQxZ21hR3ZFU0xxaFZISlNJb3lia29Pd3MxZmh1S0RXaDFxUVZteWpqK0pzNTdmQVBtZnNnMUwzY0U3UUlaTjVNVjFLOGZhU0puUVhWL09WS3FrWEcxQU5vLzVvMmhZb3U3S1F4R1ZDblhUeU90RVdzbXVIWHpEcUR0NHZlOGpMcng1SlQyZS9aZnhwcG1hWVlwK3kxc2VQQzFxYmFiU21PZnBDczRIbUkvaTcyS2xsK0dpVTlVQS9Xb3NJZWM1TzUrc0svZ3lzTDhwNk9IbGVUZUZVVTZjWEU0aHNJcTcrVWZGQTFIb2FjR0FBQT0nKSk7CiAgICB9KSwKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBsYXp5OiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIGlucHV0ID0ge3BhcnNlOiAwLCB1cmw6IGlucHV0ICsgJyMubXA0J307CiAgICB9KSwKICAgIOaOqOiNkDogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICBsZXQgcGRhdGEgPSB7YWdlOiAxLCBhcHB2ZXI6ICI2LjEuOSIsIGVndmlwX3N0YXR1czogMCwgc3ZpcF9zdGF0dXM6IDAsIHZwczogNjAsIHN1YmNhdGVJZDogNTYsIHA6IDF9OwogICAgICAgIC8vICAgbGV0IHBib2R5ID0gYnVpbGRVcmwoJycscGRhdGEpLnNwbGl0KCc/JylbMV07CiAgICAgICAgLy8gICBsZXQgaHRtbCA9IHBvc3QoaW5wdXQse2JvZHk6cGJvZHl9KTsKICAgICAgICBsZXQgaHRtbCA9IHBvc3QoaW5wdXQsIHtkYXRhOiBwZGF0YX0pOwogICAgICAgIGxldCBqc29uID0gSlNPTi5wYXJzZShodG1sKTsKICAgICAgICBsZXQgZGF0YSA9IGpzb24ucmVzdWx0Lml0ZW1zOwogICAgICAgIGxldCBkID0gW107CiAgICAgICAgZGF0YS5mb3JFYWNoKGl0ID0+IHsKICAgICAgICAgICAgZC5wdXNoKHsKICAgICAgICAgICAgICAgIHZvZF9pZDogaXQudXJsICsgJ0BAJyArIGl0LnRpdGxlICsgJ0BAJyArIGl0LmltYWdlLAogICAgICAgICAgICAgICAgdm9kX25hbWU6IGl0LnRpdGxlLAogICAgICAgICAgICAgICAgdm9kX3BpYzogaXQuaW1hZ2UsCiAgICAgICAgICAgICAgICB2b2RfcmVtYXJrczogJ/CfkYAnICsgaXQudmlld2NvdW50IHx8ICcnLAogICAgICAgICAgICB9KTsKICAgICAgICB9KTsKICAgICAgICBWT0RTID0gZDsKICAgIH0pLAogICAg5LiA57qnOiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIGxldCBwZGF0YSA9IHthZ2U6IDEsIGFwcHZlcjogIjYuMS45IiwgZWd2aXBfc3RhdHVzOiAwLCBzdmlwX3N0YXR1czogMCwgdnBzOiA2MCwgc3ViY2F0ZUlkOiBNWV9DQVRFLCBwOiBNWV9QQUdFfTsKICAgICAgICBsZXQgaHRtbCA9IHBvc3QoaW5wdXQuc3BsaXQoJyMnKVswXSwge2RhdGE6IHBkYXRhfSk7CiAgICAgICAgbGV0IGpzb24gPSBKU09OLnBhcnNlKGh0bWwpOwogICAgICAgIGxldCBkYXRhID0ganNvbi5yZXN1bHQuaXRlbXM7CiAgICAgICAgbGV0IGQgPSBbXTsKICAgICAgICBkYXRhLmZvckVhY2goaXQgPT4gewogICAgICAgICAgICBkLnB1c2goewogICAgICAgICAgICAgICAgdm9kX2lkOiBpdC51cmwgKyAnQEAnICsgaXQudGl0bGUgKyAnQEAnICsgaXQuaW1hZ2UsCiAgICAgICAgICAgICAgICB2b2RfbmFtZTogaXQudGl0bGUsCiAgICAgICAgICAgICAgICB2b2RfcGljOiBpdC5pbWFnZSwKICAgICAgICAgICAgICAgIHZvZF9yZW1hcmtzOiAn8J+RgCcgKyBpdC52aWV3Y291bnQgfHwgJycsCiAgICAgICAgICAgIH0pOwogICAgICAgIH0pOwogICAgICAgIFZPRFMgPSBkOwogICAgfSksCiAgICDkuoznuqc6ICcqJywKfQ==
+var rule = {
+    类型: '影视',//影视|听书|漫画|小说
+    title: '贝乐虎[儿]',
+    host: 'https://vd.ubestkid.com',
+    url: '/api/v1/bv/video#pg=fypage',
+    homeUrl: '/api/v1/bv/video',
+    searchable: 0,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'IOS_UA',
+    },
+    timeout: 5000,
+    class_parse: $js.toString(() => {
+        input = JSON.parse(ungzip('H4sIAAAAAAAAA4VUy27aUBD9F6+zwKRAk1+pqqpSsuiiVRfdVFUlUnCCwU1IwqNuHggFQ1owOCGNjAnwM547l10/oZeiRmTuoO5s6ZyZc87M3BefjA8f3+++erNjbKdTG8ufd6/f7hrbxu9GeSDOs6IWxGFRXN4bnzdW0Ka5qcPjKBJBBXO+OPGfwlNpHY3jI7BC7HoyuCLFNzM6HB6yMMvJu4t4VJbuIanPqIFpCYrXkJ8J3yHorXVqOLSZMHW4vLcw6oibiZy0TRoNU34Vj71eHDnga66ZkCgvtDXeFjO4v7i68kRbcDmNHha2bZXWTBYuqRluFKd5vGhyWWUSjIXSjagdsMmanOPiF1H34vBw8RFUiFdGjdgrz6duHNawSufMJKNWAitjtFlBKa78rz3ZdBRUnN1S+c8Z+f8WFCwPznzZD+g2cZ4fSa0OulPsHD8lpZNrF/aoJQd1gmaGvESLqhVHJSIoybkoOws1fhuKDWh1qQVmyjj+Js57fAPmfsg1L3cE7QIZN5MV1K8faSJnQXV/OVKqkXG1ANo/5o2hYou7KQxGVCnXTyOtEWsmuHXzDqDt4ve8jLrx5JT2e/ZfxppmaYYp+y1sePC1qbabSmOfpCs4HmI/i72Kll+GiU9UA/WosIec5O5+sK/gysL8p6OHleTeFUU6cXE4hsIq7+UfFA1HoacGAAA='));
+    }),
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 0, url: input + '#.mp4'};
+    }),
+    推荐: $js.toString(() => {
+        let pdata = {age: 1, appver: "6.1.9", egvip_status: 0, svip_status: 0, vps: 60, subcateId: 56, p: 1};
+        //   let pbody = buildUrl('',pdata).split('?')[1];
+        //   let html = post(input,{body:pbody});
+        let html = post(input, {data: pdata});
+        let json = JSON.parse(html);
+        let data = json.result.items;
+        let d = [];
+        data.forEach(it => {
+            d.push({
+                vod_id: it.url + '@@' + it.title + '@@' + it.image,
+                vod_name: it.title,
+                vod_pic: it.image,
+                vod_remarks: '👀' + it.viewcount || '',
+            });
+        });
+        VODS = d;
+    }),
+    一级: $js.toString(() => {
+        let pdata = {age: 1, appver: "6.1.9", egvip_status: 0, svip_status: 0, vps: 60, subcateId: MY_CATE, p: MY_PAGE};
+        let html = post(input.split('#')[0], {data: pdata});
+        let json = JSON.parse(html);
+        let data = json.result.items;
+        let d = [];
+        data.forEach(it => {
+            d.push({
+                vod_id: it.url + '@@' + it.title + '@@' + it.image,
+                vod_name: it.title,
+                vod_pic: it.image,
+                vod_remarks: '👀' + it.viewcount || '',
+            });
+        });
+        VODS = d;
+    }),
+    二级: '*',
+}

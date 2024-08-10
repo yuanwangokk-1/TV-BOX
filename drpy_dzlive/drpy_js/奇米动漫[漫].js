@@ -1,1 +1,30 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+Wlh+exs+WKqOa8qycsCiAgICBob3N0OiAnaHR0cDovL3d3dy5xaW1pcWltaS5uZXQnLAogICAgdXJsOiAnL3Nob3cvZnljbGFzc2Z5ZmlsdGVyLmh0bWwnLAogICAgZmlsdGVyYWJsZTogMSwvL+aYr+WQpuWQr+eUqOWIhuexu+etm+mAiSwKICAgIGZpbHRlcl91cmw6ICd7e2ZsLmFyZWF9fXt7ZmwuYnl9fXt7ZmwuY2xhc3N9fXt7ZmwubGV0dGVyfX0vcGFnZS9meXBhZ2V7e2ZsLnllYXJ9fScsCiAgICBmaWx0ZXI6ICdINHNJQUFBQUFBQUFBKzJXVzA4VFVSU0YvOHM4WTNxbWN2V04rLzEreC9CUXNHcVZTOUlXWTBOSVZMQlcwVklJVWdoUUpiRUJRaXVneEpRMjhHczZVL292bkhabWRuZFhYM2prNGJ3eDYxdnNQV2N4SjZ4bDVhMW40YmxyUVhueWRGbDU3UTRvVDVUWk9aZlBwMVFwQzY1NXQvR1l1OHhvc1hYaitZMXJic2xkOUJsdVJmdDRrbDg5S2NqR2c3SlNaYW5CcmZ6ZXFhVTZpcE1jbG1aYmNxdkp1Nk4zNVJaTG95bnhUOXAxQnFhWW1tM1IzNi9uUXBmbEZrc2p5ODhqYlQ4SkZsT2pSWkd3OXZzTUZwa2FUWW5FY29sTm1HSnFaUG1UMGRkQ1lERTFPblE4bGs5dXc2Rk56YllZUCt0L3Y1ZGJMSTJtN04xcUVWaGthZlF1NFpOY0pBanZZbW8wNVhpeklsMUxJOHRaVFArQ2Z5TlRvMFVmRXJrZHpNWFU2RVNIVy9wdUhFNWthalFsdEp0TmY0WXBwbVpiN2lLSGQyR3dXQnFMcnVKRWxzWVc2VHZSaWtVRmpTelJ1SlpLZ2NYVVZxWUxKdk42dUx4dVYrbDJhQWNYMnRmMFBXK0hNVTAvU05nYkNvTWNwdVFvZlpHL2p2Tjd3VEpMTnBYVTltOUtGajF4bkxzTmwwOHBTaVZML3NlcDhTdGxGbE5pVTFMbjJzWkYrWlNpNUNnN2JjRHQ4ckxUWGw5bE16ZjNQSzFUT0IvYjh3dGpIRVdCVVNkU0o2Y3FVcFZUZ1ZRd3FqWUFOUVJHNjVIV2MxcUh0STdUV3FTMW5OWWdyZUcwR21rMXA1aVZ5ck5TTVN1Vlo2VmlWaXJQU3NXc1ZKNlZ3S3dFejBwZ1ZvSm5KVEFyd2JNU21KWGdXUW5NU3ZDc0JHWWxlRllDc3hJOEs0RlpDWjZWd0t3RXowcGdWb2JBcjhPYzIrOTM4d3VSak9ybjN5b3ZCTW44UWpUYXM4MHBqa1lpVFVDYWlEUURhU2JTQXFTRlNDdVFWaUp0UU5xSXRBTnBKOUlCcElOSUo1Qk9JbDFBdW9oMEEra20wZ09raDBndmtGNGlmVUQ2aVBRRDZTY3lBR1NBeUNDUVFTSkRRSWFJREFNWkpqSUNaSVRJS0pCUkltTkF4b2lNQXhrbk1nRmtnc2dra0VraVUwQ21pSWhIRGNBS0NyOENNNEhTNTYrSHQ3VDBSc1hucjBmLzVhTlg5cHlaZ01Qdk1lejJpbXc2clY5c00vclM0L2VWL3QyZnIybWhJS08rMlVXdnUvQUcwMVdLMXpNdnF5cGJKS3VxcktxeXFzcXFLcXVxcktxeXFzcXFxc2lxK2xDcTZvdWxSZGxWWlZlVlhWVjJWZGxWWlZlVlhWVjJWZGxWWlZkOWtGMzExZXl6ZWRsVVpWT1ZUVlUyVmRsVVpWT1ZUVlUyVmRsVVpWTjlhRTExNVQvMjJ6RUhyaW9BQUE9PScsCiAgICBzZWFyY2hhYmxlOiAyLC8v5piv5ZCm5ZCv55So5YWo5bGA5pCc57SiLAogICAgaGVhZGVyczogey8v572R56uZ55qE6K+35rGC5aS0LOWujOaVtOaUr+aMgeaJgOacieeahCzluLjluKZ1YeWSjGNvb2tpZXMKICAgICAgICAnVXNlci1BZ2VudCc6ICdQQ19VQScsCiAgICB9LAogICAgY2xhc3NfcGFyc2U6ICcjbmF2IGxpO2EmJlRleHQ7YSYmaHJlZjsuKi8oXFx3KykuaHRtbCcsCiAgICBjYXRlX2V4Y2x1ZGU6ICfnlarnu4TkuJPpoph85pyA6L+R5pu05pawJywKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBsYXp5OiAnJywKICAgIGxpbWl0OiA2LAogICAg5o6o6I2QOiAnKjsqOyo7LnRleHQmJlRleHQ7KicsCiAgICDkuIDnuqc6ICcuaW1nLWxpc3QgbGk7YSYmdGl0bGU7aW1nJiZzcmM7aSYmVGV4dDthJiZocmVmJywKICAgIOS6jOe6pzogewogICAgICAgICJ0aXRsZSI6ICJoMSYmVGV4dDtkbC5mbi1sZWZ0OmVxKDMpJiZUZXh0IiwKICAgICAgICAiaW1nIjogIi5kZXRhaWwtcGljJiZpbWcmJnNyYyIsCiAgICAgICAgImRlc2MiOiAiZGwuZm4tbGVmdDplcSgyKSYmVGV4dDs7Oy5ueXpodXktLWR0JiZUZXh0Oy5mbi1yaWdodDplcSgwKS0tZHQmJlRleHQiLAogICAgICAgICJjb250ZW50IjogIi50anVxaW5nJiZUZXh0IiwKICAgICAgICAidGFicyI6ICIuZG93bi10aXRsZSBoMiIsCiAgICAgICAgImxpc3RzIjogIi52aWRlb19saXN0OmVxKCNpZCkgYSIKICAgIH0sCiAgICBzZWFyY2hVcmw6ICcvaW5kZXgucGhwL2FqYXgvc3VnZ2VzdD9taWQ9MSZ3ZD0qKiZsaW1pdD01MCcsCiAgICBkZXRhaWxVcmw6ICcvZGV0YWlsL2Z5aWQuaHRtbCcsIC8v6Z2e5b+F5aGrLOS6jOe6p+ivpuaDheaLvOaOpemTvuaOpQogICAg5pCc57SiOiAnanNvbjpsaXN0O25hbWU7cGljOztpZCcsCn0=
+var rule = {
+    title: '奇米动漫',
+    host: 'http://www.qimiqimi.net',
+    url: '/show/fyclassfyfilter.html',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.area}}{{fl.by}}{{fl.class}}{{fl.letter}}/page/fypage{{fl.year}}',
+    filter: 'H4sIAAAAAAAAA+2WW08TURSF/8s8Y3qmcvWN+/1+x/BQsGqVS9IWY0NIVLBW0VIIUghQJbEBQiugxJQ28Gs6U/ovnHZmdndXX3jk4bwx61vsPWcxJ6xl5a1n4blrQXnydFl57Q4oT5TZOZfPp1QpC655t/GYu8xosXXj+Y1rbsld9BluRft4kl89KcjGg7JSZanBrfzeqaU6ipMclmZbcqvJu6N35RZLoynxT9p1BqaYmm3R36/nQpflFksjy88jbT8JFlOjRZGw9vsMFpkaTYnEcolNmGJqZPmT0ddCYDE1OnQ8lk9uw6FNzbYYP+t/v5dbLI2m7N1qEVhkafQu4ZNcJAjvYmo05XizIl1LI8tZTP+CfyNTo0UfErkdzMXU6ESHW/puHE5kajQltJtNf4YppmZb7iKHd2GwWBqLruJElsYW6TvRikUFjSzRuJZKgcXUVqYLJvN6uLxuV+l2aAcX2tf0PW+HMU0/SNgbCoMcpuQofZG/jvN7wTJLNpXU9m9KFj1xnLsNl08pSiVL/sep8StlFlNiU1Ln2sZF+ZSi5Cg7bcDt8rLTXl9lMzf3PK1TOB/b8wtjHEWBUSdSJ6cqUpVTgVQwqjYANQRG65HWc1qHtI7TWqS1nNYgreG0Gmk1p5iVyrNSMSuVZ6ViVirPSsWsVJ6VwKwEz0pgVoJnJTArwbMSmJXgWQnMSvCsBGYleFYCsxI8K4FZCZ6VwKwEz0pgVobAr8Oc2+938wuRjOrn3yovBMn8QjTas80pjkYiTUCaiDQDaSbSAqSFSCuQViJtQNqItANpJ9IBpINIJ5BOIl1Auoh0A+km0gOkh0gvkF4ifUD6iPQD6ScyAGSAyCCQQSJDQIaIDAMZJjICZITIKJBRImNAxoiMAxknMgFkgsgkkEkiU0CmiIhHDcAKCr8CM4HS56+Ht7T0RsXnr0f/5aNX9pyZgMPvMez2imw6rV9sM/rS4/eV/t2fr2mhIKO+2UWvu/AG01WK1zMvqypbJKuqrKqyqsqqKquqrKqyqsqqqsiq+lCq6oulRdlVZVeVXVV2VdlVZVeVXVV2VdlVZVd9kF311eyzedlUZVOVTVU2VdlUZVOVTVU2VdlUZVN9aE115T/22zEHrioAAA==',
+    searchable: 2,//是否启用全局搜索,
+    headers: {//网站的请求头,完整支持所有的,常带ua和cookies
+        'User-Agent': 'PC_UA',
+    },
+    class_parse: '#nav li;a&&Text;a&&href;.*/(\\w+).html',
+    cate_exclude: '番组专题|最近更新',
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: '*;*;*;.text&&Text;*',
+    一级: '.img-list li;a&&title;img&&src;i&&Text;a&&href',
+    二级: {
+        "title": "h1&&Text;dl.fn-left:eq(3)&&Text",
+        "img": ".detail-pic&&img&&src",
+        "desc": "dl.fn-left:eq(2)&&Text;;;.nyzhuy--dt&&Text;.fn-right:eq(0)--dt&&Text",
+        "content": ".tjuqing&&Text",
+        "tabs": ".down-title h2",
+        "lists": ".video_list:eq(#id) a"
+    },
+    searchUrl: '/index.php/ajax/suggest?mid=1&wd=**&limit=50',
+    detailUrl: '/detail/fyid.html', //非必填,二级详情拼接链接
+    搜索: 'json:list;name;pic;;id',
+}

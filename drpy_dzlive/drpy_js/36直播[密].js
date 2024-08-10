@@ -1,1 +1,18 @@
-h36A5I5KdeB29zb3iwNWVzOFrmSHS3KbO30Ug4+c3FdMagOQzXbiHjMmbSwhTLIVoTE0RalRN9MliOOWnPoj4znCTdshiziwXW4L4Sf2DIdhy5iQH9CUPhIxWbBil2y1WdFiql1ilFK0nANqAI73vB5cXvj9jJeTHJLFARx5oQE5SXGTW0NnVLN2U0+Gi6dSKTjGCfxuwXAim019uy1PzlIIotmzZaLUrF1uplVpcfVbuQR0Hjl9Q50RVdhym/1aTKieJ8Ljq/XA183J/xTOmSXz49DLs7Ub4JheIStSanC4DD/q/1VA0W6dHAvAqAd1QkV/+ZvjhgYXYCYNx0TWnc8rMUAoZ2dPPpw4ZPLNA2W0fboBnz7F89oQqzVjABLobecpHJDz3ndfneUXXnnh6EdCBSOA4JTO8mCr1wG5bxeWg7OcGw6YOJwqMdn9Wv/LH/zk1/GM91qU9xGA2A7ucOww10nbZDa9y0Z3NLet00DzsYyv+L1ljQRVZsPV6a7ls8TXglJ+sQrGXG/J4lkhsS9I+9DPCY5nJ3zsVPrqhrxbdsrUPr4q4OG/kscudSiO3fdlhNtvbRTS57FgQq1ZUgyVPaS3TwTknaGQg8NXRvzTTzY+IEV5LJZPUrzvMD5aydbaVcsWIH492fBAZb1G5asuNq/MYcw+R5V9e9cDjfuQQgQnZ0aBzWAPyn+Clvll3yuT0JBMP5gw8kuHgnoAbTp8ffdH9vwtkpyISeF5Wmx/lDpMBzMcyW/XrbYrR/uIqQgd+bWaIjQIx7PVtSJHpCV9I3GCe8JreE+6jirCa4mxdBJVnX13Fb6oCTzhjDgCZ/ZuvHUvsY19HPIIxnyWgUR41YrbHSb5uG5XUUGHkcs=
+var rule = {
+    title: '36直播[密]',
+    host: 'http://api.hclyz.com:81',
+    homeUrl: '/mf/json.txt',
+    url: '/mf/fyclass',
+    class_name: '全部',
+    class_url: 'json.txt',
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    limit: 200,
+    play_parse: true,
+    lazy: '',
+    一级: 'json:pingtai;title;xinimg;Number;address',
+    二级: 'js:var d=[];var jo=JSON.parse(request(input)).zhubo;VOD={};for(var i=0;i<jo.length;i++){d.push({title:jo[i].title,url:jo[i].address})}VOD.vod_play_from="播放源";VOD.vod_play_url=d.map(function(it){return it.title+"$"+it.url}).join("#");setResult(d);',
+    搜索: '*',
+}

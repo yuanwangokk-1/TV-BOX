@@ -1,1 +1,53 @@
-H4sIAC0soWYC/61WW1PbRhR+51foybeqFtBMJ2Pq5KVP7UzzkDR9IDQIW2AFXxRJDkNbZhzANg42uA0wmHAPYE9JbejABMztx0S7kp76F3p2VxAbTIYw8QyDdPac73zntkcvRJVTk1GJC3K/t3Hw02U9KgU4N363htJjaGUKvarg4+1u+Otx84JglcfRRAmvZu31eR7/u4YXc6i6bJfSxsmiOVPhjZMMnq+h6ZpxtAki46Aeimnm7hEqFszyjnG6hAtV6sg8njNXX4IngmocFNDaNtrZtY/mrepGUu//+i7VwsVFc2+9le5ECR7YwX/HeWZnj52Ac5zPUQA/YXE8j9ITRn0KpStoN8X00e4yTpX9uDaDtkbNkz/ttX1cL8IBOwaIgb5B3jor2dk8iwTns6i6QFEdRpPvzO1Jpv8hNYo2FvDsDh5Lo8w+2BkHfzMfjCuemLNSaUI6UwJkVJ9BtUMzd4irr8yFcSBgbpcYLI05ktB0iDWi64oWEIShoSF/aDgkxuWY5A8lYiQHjDQYo5UVyCxePeRRPo2K28QIbexBXFyDPd8nyuEkMaYOBCGpRsGDICqyX4kogqImXshhSXiRCN8XQ8GwpIty1KUH+4dDUVHTXMoAPCrigOTqDzrugTJxP5GB2gIVe2ndfn2Kpzapg0/Au74EviDcAptaUtnTuBgjPf7oMTS3OXPkQrkyWqybuQnXnR+Ng9coXycs7KUSTr1kFFj74snjcwoMiAXa2e7q7HB1fnvZCKbEqmUajCKJmPTzDVLflAN7a44kgEbPO+0IE1bN49k9630NnY6z/jLfHEBbMQkPo0iantKwpt6j6Tn0Vx5PVaxCkb1yTn4I1DlZ859TjuUKpGQoZncobU0S1VDkJsRdQ+Ggz/cx524easVamwXAfbkAfD7j6K21VmHwVq3gcGfSBvqM2o3oy2ENmMthytteWkZnZGx5o54362WrtgUTzsrplAOPr1jlHFyDaHYTFfaBdEPCxD5yk3ZCLUm4xS1UrIECu4gYaZ5qP0/KocGH1CTAtV9WP9u2UyuN6kpUHH6qiKoG4LqalBwpETj9eD75RFNSmy4P4T6owIxRm6j423CA632mBeir3O8Rnjzxe2LfJO/+EVPueAW/Lmm6R44rSd3rZfuh8UcPyOZgbNp54p4KR5p0R6SoJrUw7/eQ1eO/oO7XdFHVtV9kPeJxP9MS8YC7lVtKXdI5BUzA+yUMVYKwQ9I5AO92e7+inLquBYroMQokPU+SeAmut7V2y4h/ePjgJ0bAQ5C8fhCOXDG/JgkXqJcDuY70pdQ2vfWyusaSUV0OcB1OleWYDPukk3QWxy4TNkd4/tTcqMOU2NlptmypGBqIpi4qa3oXjAe9LemDIofof1WKieqgRp+dWeHCiSRtd9qRRMDAUCaNqodOQ0/n0e4o7FHjpED9GQcpGKvP98d2gM/HYvdx1v447G87m7XfZODOhM8BNrBsSK3yW7xcdHQFZ38wBdr8n+HayW+DcaDtE43EBqerSYW4ApUrPUMptDWMBhH4o1J8QI8Eg8GO5jl4/OB7ACEq3e09zT0CR37Cti+aVPtAqen9YjqED6mUMMDDF5X3o+y77l/v9fjuOfLWsKFEXJfiegOwI7kdNOvf3isldS51WjrOOsviI/i4q8A6YLVuqibTvUUbtY38D9BR2mj/CgAA
+var rule = {
+    title: '次元城动漫[漫]',//规则标题,没有实际作用,但是可以作为cms类名称依据
+    编码: '',//不填就默认utf-8
+    搜索编码: '',//不填则不编码，默认都是按utf-8.可优先于全局编码属性.比如网页源码编码是gbk,这里可以指定utf-8搜索独立编码。多数情况这个属性不填或者填写gbk应对特殊的网站搜索
+    host: 'https://www.cycanime.com',//网页的域名根,包含http头如 https://www,baidu.com
+    //url: '/api.php/provide/vod?ac=detail&t=fyclass&pg=fypage&f=',//网站的分类页面链接
+    url: '/api.php/provide/vod?&ac=detail&t=fyclass&pg=fypage&f=',//网站的分类页面链接
+    ///api.php/provide/vod?&ac=detail&t=fyclass&pg=fypage
+    class_name: 'TV动画&剧场版&4K专区',//静态分类名称拼接
+    class_url: '20&21&26',//静态分类标识拼接
+    homeUrl: '/api.php/provide/vod?ac=detail',//网站的首页链接,可以是完整路径或者相对路径,用于分类获取和推荐获取 fyclass是分类标签 fypage是页数
+    searchUrl: '/api.php/provide/vod?ac=detail&wd=**&pg=fypage', //搜索链接 可以是完整路径或者相对路径,用于分类获取和推荐获取 **代表搜索词 fypage代表页数
+    detailUrl: '/api.php/provide/vod?ac=detail&ids=fyid', //非必填,二级详情拼接链接,感觉没啥卵用
+    searchable: 2,//是否启用全局搜索,
+    quickSearch: 0,//是否启用快速搜索,
+    play_parse: true,
+    parse_url: 'https://player.cycanime.com/?url=',
+    lazy: `js:
+    if(/\\.(m3u8|mp4)/.test(input)){
+                input = {parse:0,url:input}
+            }else{
+                if(rule.parse_url.startsWith('json:')){
+                    let purl = rule.parse_url.replace('json:','')+input;
+                    let html = request(purl);
+                    input = {parse:0,url:JSON.parse(html).url}
+                }else{
+                    input= rule.parse_url+input;
+                }
+            }
+            `,
+    multi: 1,
+    limit: 20,// 首页推荐显示数量
+    推荐: 'json:list;vod_name;vod_pic;vod_remarks;vod_id', // double: true, // 推荐内容是否双层定位
+    一级: 'json:list;vod_name;vod_pic;vod_remarks;vod_id',
+    /**
+     * 资源采集站，二级链接解析
+     */
+    //二级: `json:list;vod_name;vod_pic;vod_remarks;vod_id`,
+    二级: `js:
+        let html = request(input);
+        let list = JSON.parse(html).list;
+        if(list.length===1){
+           VOD = list[0];
+            VOD.vod_blurb = VOD.vod_blurb.replace(/　/g, '').replace(/<[^>]*>/g, '');
+            VOD.vod_content = VOD.vod_content.replace(/　/g, '').replace(/<[^>]*>/g, '');
+        }
+    `,
+    /**
+     * 搜索解析 过滤部分资源
+     */
+    搜索: 'json:list;vod_name;vod_pic;vod_remarks;vod_id',
+
+}

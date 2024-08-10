@@ -1,1 +1,71 @@
-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
+var rule = {
+    title: 'TVB云播',
+    //模板:'mxpro',
+    host: 'http://www.tvyb03.com',
+    url: 'vod/show/id/fyfilter.html',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.cateId}}{{fl.area}}{{fl.by}}{{fl.class}}{{fl.lang}}{{fl.letter}}/page/fypage{{fl.year}}',
+    class_name: '电影&电视剧&综艺&动漫&日韩剧&国产剧&欧美剧&港台剧',
+    class_url: '1&2&3&4&16&13&15&14',
+    filter: 'H4sIAAAAAAAAA+2Z7VIiRxSG74XfVjGDrh97B7mG1P5gN1SyFWOq1KTK2rJKRRDUCFouLgt+ZUXQiIIao0OQm5nuGe4iA92cPn3GWsbSpDYJP33O6+nutxv6ZeZdyAy9/Ppd6PvYXOhl6E10NvbVN6Gh0FT0h5j3t1NvsL017++fo5M/xbrCKQ+zRKUdr3Sw94cZmh+SeLViN4tOekVWRlUlV2TpsqqMQcVJ1Xk8oSrjqlLeZHcNVZmACl/M8oWcqpiGGihd1tqZanY89cG20qgUCc2/6hTl0iejMzNq5aLR51dOlidpuNspLJm+Tl0imb4sXSKZ7jAZSDDdNjKQYLpJpItgullkLoL1JG71mK2f6hLJYC6rF06TSCRDK3K2G74VdRhISiu+FUkG060e2/cHZLqCQZfkVjt/QroIBl32Tr01ki6CgWTpzMltEolgIImv8qWPRCIY+NLIsMQt8UWwnqS9u8U/lHSJZDBQbsVNW2QgwWDR9+fO9u+sWSfrBgzCzJH7iR4JwUCykWSZSyIRDI5EK+vtHTkSgqltKPLdTboNXQaS5ZbzG1m6ZGBgc9NpFB9amlbBn+/odCyKPt7FGlu3gn68j8rtfLI3TqdRWCLYreM8v73QFBIpg2v87l7vIRCs6X6DFZqaQiLY8Kv3VCERbMBanSokgh47JV4803sIBGvZP6E9JFKn6g+qkEjNtOafaU3r8UuNWcd6D4Ggx3LGc5mlTvQ2QGHNpZaTqTrpvL5soOqb5oCvtbx/1gcFCrrEjd3I6SKB8HGajE59q46Te1F1KwtBj1Oh6el7A3QahSVC20gVEsFhuTyiConQNlKFROgoUIVE6MD5FAKho+Bbi0DITnYe1xUCYTvnYtFp9Om8u7YbzYB2RozISK99p024C1B1mFaHcTVCqxFcNWnVxFWDVg1UNSdI1ZzA1XFaHcfVMVodw9VRWh3F1Re0+gJXqVcm9sqkXpnYK5N6ZWKvTOqVib0yqVcm9sqgXhnYK4N6ZWCvDOqVgb0yqFcG9sqgXhnYK4N65QF8aF/PqSPLN7aYlQl4ZPnOTXvnutf89Vx49q3XpFe1LYvXtlH1u7ezM+q74WKZpZKoOvPmx+lYZ16vhkKRJ2b5CP6Ssq2ySrXoIHjXmnd1odII/krp3BWqpOzkZ+XOdaZKo88Xv/uHlwBxii3esHiGdBHsETmfnd8wq0okgj0uFffL+QFScYCcHyDUBQir9t2hL9RJplJxgucvdIlkMJf3SV/8lgzlPt8GSPbw9S27+O/vp8TBZMLT6wFBoOAR6jkCY/8oFyRS9gtqASJlrualKLZ7qLcB+rhgNUgCgyTwr0sC/4tfA8GS/JcXioZxKHpCzGgvpJ3yAskQguFbbnnff8t5DKZ63nJrKV0iGXTZqvJVElYkU2Yl+C25lCVTW35l32XJdAVD90P7E5muZCCxTtn5HpEIBnMpXPqfQwkGXbb3+TV9KCmYSpW3PJWxrS3fEyStAjZe/+qFEGKjYNCxvuQurpNegv1jSUBkZf1iFEiPzPQW7yA9OesKgQZfQYOHCYMI8d+IEF/evTnyTPdmgEsxwEsrJ151D8ntKxkMtFFxskkykGAgye45Z/T9jWDqS73viyI3u+tukLdjksFAB4esQJ4DSPaIH/m8aPnfSAkGc+n/ziXAyzxW88y+JnMRDEtKV36Jx2CPju7tP8mrL8nUA4d9liqQLoKpI3vJqiS4SAYDFVZ5nkQOyZS7ddbaoe522cO3yd/yqKD7FE0PCAIF/xH/mev/UT+sBwFhEBAGAWEQEJ4rIMz/BZ2B9n47JAAA',
+    filter_def: {
+        1: { cateId: '1' },
+        2: { cateId: '2' },
+        3: { cateId: '3' },
+        4: { cateId: '4' },
+        13: { cateId: '13' },
+        14: { cateId: '14' },
+        15: { cateId: '15' },
+        16: { cateId: '16' }
+    },
+    searchUrl: '/vod/search.html?wd=**&submit=',
+    searchable: 2,//是否启用全局搜索,
+    quickSearch: 0,//是否启用快速搜索,
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1])
+        let url = html.url
+        let from = html.from
+        if (html.encrypt == '1') {
+            url = unescape(url);
+        } else if (html.encrypt == '2') {
+            url = unescape(base64Decode(url));
+        }
+        print('切片地址:' + url);
+        var jx = request(HOST + "/static/player/" + from + ".js").match(/ src="(.*?)'/)[1];
+        html = request(jx + url, {
+            headers: { 'Referer': HOST }
+        });
+        let src = pdfh(html, "#WANG&&src")
+        log(src)
+        if (src != "") {
+            html = request(src, {
+                headers: { 'Referer': jx + url }
+            });
+        }
+        try {
+            url = JSON.parse(html).url;
+        } catch (e) {
+            log(e.message)
+        }
+        if (/m3u8|mp4/.test(url)) {
+            input = url;
+        } else {
+            input
+        }
+    }),
+    limit: 6,
+    tab_exclude: '热门资讯',
+    推荐: 'ul.myui-vodlist;li;*;*;*;*',
+    double: true, // 推荐内容是否双层定位
+    一级: '.myui-vodlist__box;a&&title;.lazyload&&data-original;.tag&&Text;a&&href',
+    二级: {
+        "title": "h1&&Text;.data:eq(0) a:eq(0)&&Text",
+        "img": ".lazyload&&data-original",
+        "desc": ";.data:eq(0) a:eq(2)&&Text;.data:eq(0) a:eq(1)&&Text;.data:eq(2)&&Text;.data:eq(3)&&Text",
+        "content": ".text-collapse span&&Text",
+        "tabs": ".myui-panel__head h3",
+        "lists": ".myui-content__list:eq(#id) li"
+    },
+    搜索: 'ul.myui-vodlist__media li;*;*;*;*',
+}

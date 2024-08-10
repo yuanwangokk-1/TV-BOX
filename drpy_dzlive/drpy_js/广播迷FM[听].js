@@ -1,1 +1,42 @@
-H4sIAC0soWYC/52W72/aRhjHX5O/AnmSDSkhQArJjFCVSp3UaV1fpHkVRZGxD7jExsQ+SBhCarumTZdfpGsSrUnXdZuaSE07sv5KICj/DLbhv9idHWMb0jdDQnD3ee7x8zz3vXtc4hS/UhSBP+WvDPkQRCJgGe3sQn/2rnPx5bs7M1rteJYJDflysopYJodQgR0dXVpaCmeLXD6bliUY5mUJW/jxxzjfNf54wDLZdHQiMha5nNVrB8bHPweZr6iIrJ8ZzZQzUERACeeQJN4ocFmQypTJD7Gx0BwxZSqVjBjmOQRuC9WqA1kcuY8SYQlQ7EyFWgBliqUsMypE5TkJz1P6+lPjpKn9voanSpxYtGzzhOzWu3tNo3mu1VYJxFMZSYQqikWoasiyaTf+7t5/4aHxiR7tvvrQPqt56XiPGs0t/dOmlyYc+vyV/rHppd/2qL77pPO04aEJJ6ruzy3t9KGXRp21OyvtxpqXxhy6t6KfnnrpmJPv2Wv95baXXu9R7eikP99E3PG8uqXv/+ulTr7t1q+dh33UqVXnn0ftszfG/qn2V91r49Sk+/KZVt82Drf1nd88NuNOZYzWttE80La8TqJRJ0P9pNVpvfHiMVeKK5/bzd0+jHOcrc6GiNpQ6X9pTdt42zl87MSFSpbQXJEfPBjALiHi/R7Ezp5r6w1t82LQwrXvg2q3g3DcdPBxbW714ZhL0eeOKm08dvUW29hV2tYJrkEfjrsqf6ytnPThxNWat7EjIKwM7dFFH3ZOqkc1Nnak1Xlf11o7Xhx1VfeXI/38bR+OXX2UbexS3IcdbfVzH3aV5fG+c1xtHHffBPjI9uGEa/UBzq0Pj7vugrr2bs94/mmg8tEJU9RDvqpz2QogY96p5EplK5a6Wca+FBli6UMlh/QExFQtPyrgFD43bV3vMC+A5XAhV7ghpSxA8ylzkubwL0S0ChGAQipKo3KB/IlfpxdTw8N0XyuwFnNp3KJieLhYhPzClDnHRnrBmzhKGhbgBKCoZiLMtAqUkcksyCMGh3Tn7s3bP9yam55krHARlIBcRGw8EolYLYsXOVWdI8cZd8PasdUQaeNgzSoh47YyWxMpFY1KJMyCyJXnCpyiAhYpRYBnRO6nMsvMq2wJd9sCtk/Nq4VwQcjkAgpYLAIVBWC+UETBkJ8Kk+W8LACahhkFB0DTqsJTwSTMBEYRzGfJNyONhhFZRpwFgxXTJ/W15kxdI7yaNJ+B+/z8Mq4XiZpMh6xIoyGrXuz3U3d/DKtIwU+BmXKgQikgAxSgYMV8zf8oVQ2a7ViEEkRsAv/TN486GzVc6jC3PKIWRIhGxpJFkabJOKtAYSQtyvxCcjgZVjgByiOQl/Nmpt4JTkTJYeJakItkY/2XFW2f3jcahx7/MZoWob3afJGh6XtgGSWTSY6mczgN4qfdWDcXmq8MphXF+qlc9NKWuEsruBK8UpTSLFgMRIMWosxrH0pZYm8NBKDyZISfYC7EY7Ii4lmB00BYdsSO2MBsXlbAoFn3yYb2/oVW2yaGWCkiQH68O/i1zJJKgLwbhZhviDo8ymCCSVHOBpieA221zjLXiC6SZA32YGuMzFlPQ1xavXzQvcmbU6kZpn3xWtv6ojdqzKxlQk60aSPAkl0HjrLOi/VCh6ufloWy30wLAelyS8nQXX4TS1kcLCqLwBzysigrdrnsApv7XP0PdtGOdZAKAAA=
+var rule = {
+	title:'广播迷FM[听]',
+	host:'http://www.guangbomi.com',
+    编码:'gb18030',
+    搜索编码:'gb18030',
+	url: '/fyfilter.html?page=fypage',
+	filter_url:'{{fl.cateId}}',
+	filter:{
+		"live":[{"key":"cateId","name":"按类型","value":[{"n":"新闻综合","v":"fmlist20"},{"n":"交通","v":"fmlist58"},{"n":"音乐","v":"fmlist57"},{"n":"经济","v":"fmlist56"},{"n":"生活","v":"fmlist59"},{"n":"文艺","v":"fmlist60"},{"n":"都市","v":"fmlist61"},{"n":"故事","v":"fmlist62"},{"n":"旅游","v":"fmlist63"},{"n":"乡村","v":"fmlist64"},{"n":"娱乐","v":"fmlist65"},{"n":"戏曲","v":"fmlist66"},{"n":"体育","v":"fmlist67"},{"n":"评书相声","v":"fmlist69"},{"n":"青少科教","v":"fmlist70"},{"n":"网络台","v":"fmlist113"},{"n":"汽车","v":"fmlist134"},{"n":"其他","v":"fmlist135"}]}],
+		"tv":[{"key":"cateId","name":"按类型","value":[{"n":"卫视台","v":"tvlist200"},{"n":"省台","v":"tvlist220"},{"n":"市台","v":"tvlist221"},{"n":"区县台","v":"tvlist222"},{"n":"新闻综合","v":"tvlist201"},{"n":"财经","v":"tvlist202"},{"n":"综艺","v":"tvlist203"},{"n":"体育","v":"tvlist204"},{"n":"影视","v":"tvlist205"},{"n":"公共","v":"tvlist206"},{"n":"都市","v":"tvlist207"},{"n":"少儿","v":"tvlist208"},{"n":"科教","v":"tvlist209"},{"n":"记录","v":"tvlist211"},{"n":"动漫","v":"tvlist212"},{"n":"生活","v":"tvlist213"},{"n":"法制","v":"tvlist214"},{"n":"军事","v":"tvlist215"},{"n":"文旅","v":"tvlist216"},{"n":"农科","v":"tvlist217"},{"n":"数字电视","v":"tvlist218"}]}]
+	},
+	filter_def:{
+		live:{cateId:'fmlist20'},
+		tv:{cateId:'tvlist201'}
+	},
+	searchUrl: '/index.php?m=search&c=index&a=init&siteid=1&typeid=54&q=**&page=fypage',
+	searchable:2,
+	quickSearch:0,
+	filterable:1,
+	headers:{
+		'User-Agent': 'MOBILE_UA'
+	},
+	timeout:5000,
+    class_name:'听广播&看电视',
+    class_url:'live&tv',
+	play_parse:true,
+	lazy:'js:var purl=jsp.pdfh(request(input), ".playcode&&iframe&&src");if(/tingtingfm/.test(purl)){purl="http://www.guangbomi.com"+purl};input= {jx:0,url:purl,parse:1,header:JSON.stringify({"referer":"http://www.guangbomi.com/"})}',
+	limit:6,
+	推荐: '.ax-split-3;ul&&.ax-grid-block;*;.radio-icon&&src;.radio-icon&&alt;*',
+	double: true,
+	一级: '.ax-split-2&&li;.radio-title&&Text;;;a&&href',
+	二级: {
+		"title": "h1&&Text;.ax-breadcrumb:eq(1)&&Text",
+		"img": "",
+		"desc": ";;;;.ax-des:eq(0)&&Text",
+		"content": ".ax-ignore:eq(0)&&Text",
+		"重定向": "js:let url = jsp.pd(html,'#play&&iframe&&src');log('重定向到:'+url);html = request(url)",
+		"tabs": "js:TABS=['信号源']",
+		"lists": "div:eq(1)&&a"
+	},
+	搜索: 'body .ax-item-block;.ax-title&&Text;.ax-img&&style;.ax-color-des:eq(1)&&Text;*',
+}

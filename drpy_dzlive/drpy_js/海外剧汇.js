@@ -1,1 +1,37 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+a1t+WkluWJp+axhycsCiAgICBob3N0OiAnaHR0cHM6Ly93d3cuaHdqaC5jYycsCiAgICB1cmw6ICcvdm9kc2hvdy9meWNsYXNzLS0tLS0tLS1meXBhZ2UtLS0uaHRtbCcsCiAgICBzZWFyY2hVcmw6ICcvdm9kc2VhcmNoLyoqLS0tLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKICAgIHNlYXJjaGFibGU6IDIsCiAgICBxdWlja1NlYXJjaDogMCwKICAgIGZpbHRlcmFibGU6IDEsCiAgICBmaWx0ZXI6ICcnLAogICAgZmlsdGVyX3VybDogJycsCiAgICBmaWx0ZXJfZGVmOiB7fSwKICAgIGhlYWRlcnM6IHsKICAgICAgICAnVXNlci1BZ2VudCc6ICdNT0JJTEVfVUEnLAogICAgfSwKICAgIHRpbWVvdXQ6IDUwMDAsCiAgICBjbGFzc19wYXJzZTogJy5obC1tZW51cyBsaTthJiZzcGFuJiZUZXh0O2EmJmhyZWY7LiovKC4qPylcLmh0bWwnLAogICAgY2F0ZV9leGNsdWRlOiAn5pyA5pawfOaOkuihjCcsCiAgICBwbGF5X3BhcnNlOiB0cnVlLAogICAgbGF6eTogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICBpbnB1dCA9IHtwYXJzZTogMSwgdXJsOiBpbnB1dCwganM6ICcnfTsKICAgIH0pLAogICAgZG91YmxlOiB0cnVlLAogICAg5o6o6I2QOiAnYm9keSYmLmNvbnRhaW5lcjsqOyo7KjsqOyonLAogICAg5LiA57qnOiAnLmhsLXZvZC1saXN0JiZsaTsuaGwtaXRlbS10aXRsZSYmVGV4dDsuaGwtbGF6eSYmZGF0YS1vcmlnaW5hbDsucmVtYXJrcyYmVGV4dDthJiZocmVmJywKICAgIOS6jOe6pzogewogICAgICAgIHRpdGxlOiAnaDImJlRleHQnLAogICAgICAgIGltZzogJy5obC1sYXp5JiZkYXRhLW9yaWdpbmFsJywKICAgICAgICBkZXNjOiAnLmhsLWRjLXN1YiYmVGV4dDsuaGwtZGF0YS1tZW51JiZzcGFuJiZUZXh0JywKICAgICAgICBjb250ZW50OiAnLmhsLWNvbnRlbnQtdGV4dCYmVGV4dCcsCiAgICAgICAgdGFiczogJy5obC1wbGF5cy1mcm9tJiZhJywKICAgICAgICBsaXN0czogJy5obC1wbGF5cy1saXN0OmVxKCNpZCkmJmxpJywKICAgICAgICB0YWJfdGV4dDogJ2JvZHkmJlRleHQnLAogICAgICAgIGxpc3RfdGV4dDogJ2JvZHkmJlRleHQnLAogICAgICAgIGxpc3RfdXJsOiAnYSYmaHJlZicKICAgIH0sCiAgICDmkJzntKI6ICcuaGwtb25lLWxpc3QmJmxpOy5obC1pdGVtLXRpdGxlJiZUZXh0Oyo7KjsqJywKfQ==
+var rule = {
+    title: '海外剧汇',
+    host: 'https://www.hwjh.cc',
+    url: '/vodshow/fyclass--------fypage---.html',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,
+    filter: '',
+    filter_url: '',
+    filter_def: {},
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    timeout: 5000,
+    class_parse: '.hl-menus li;a&&span&&Text;a&&href;.*/(.*?)\.html',
+    cate_exclude: '最新|排行',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        input = {parse: 1, url: input, js: ''};
+    }),
+    double: true,
+    推荐: 'body&&.container;*;*;*;*;*',
+    一级: '.hl-vod-list&&li;.hl-item-title&&Text;.hl-lazy&&data-original;.remarks&&Text;a&&href',
+    二级: {
+        title: 'h2&&Text',
+        img: '.hl-lazy&&data-original',
+        desc: '.hl-dc-sub&&Text;.hl-data-menu&&span&&Text',
+        content: '.hl-content-text&&Text',
+        tabs: '.hl-plays-from&&a',
+        lists: '.hl-plays-list:eq(#id)&&li',
+        tab_text: 'body&&Text',
+        list_text: 'body&&Text',
+        list_url: 'a&&href'
+    },
+    搜索: '.hl-one-list&&li;.hl-item-title&&Text;*;*;*',
+}

@@ -1,1 +1,55 @@
-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
+var rule = {
+    title: '金牌影院',
+    host: 'https://www.cfkj86.com',
+    url: '/vod/show/id/fyclass/page/fypage',
+    searchUrl: '/api/mw-movie/anonymous/video/searchByWordPageable?keyword=**&pageNum=fypage&pageSize=12&type=false',
+    headers: {
+        'User-Agent': 'PC_UA',
+        'Referer': 'https://www.cfkj86.com/'
+    },
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    class_name: '电影&电视剧&综艺&动漫',
+    class_url: '1&2&3&4',
+    limit: 6,
+    double: false,
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let url_id = input.split('/')[5];
+        let jishu_id = input.split('/')[7];
+        let t = new Date().getTime();
+        eval(getCryptoJS);
+        let signkey = 'id=' + url_id + '&nid=' + jishu_id + '&key=cb808529bae6b6be45ecfab29a4889bc&t=' + t;
+        let key = CryptoJS.SHA1(CryptoJS.MD5(signkey).toString()).toString();
+        let json_data = JSON.parse(request('https://www.cfkj86.com/api/mw-movie/anonymous/video/episode/url?id=' + url_id + '&nid=' + jishu_id, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+                'deviceid': '58a80c52-138c-48fd-8edb-138fd74d12c8',
+                'sign': key,
+                't': t
+            }
+        }));
+        let url = json_data.data;
+        log(url);
+        if (url) {
+            input = {parse: 0, url: url, header: rule.headers};
+        }
+
+    }),
+    图片替换: $js.toString(() => {
+        // log(MY_URL);
+        let src = decodeURIComponent(input).split(',')[0].split(' ')[0];
+        input = urljoin(MY_URL, src) + '@Referer=https://www.cfkj86.com/';
+    }),
+    // double: false,
+    // 推荐: '*',
+    一级: '.movie-ul&&.kIDbTD;.title&&Text;.card-img&&img&&srcset;.info-tag&&Text;.kIDbTD a&&href',
+    二级: {
+        title: 'h1&&Text',
+        img: 'img&&src',
+        tabs: '.top a',
+        lists: '.kmkeNw:eq(#id)&&a',
+    },
+    搜索: '*',
+}

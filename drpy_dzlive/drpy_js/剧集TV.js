@@ -1,1 +1,27 @@
-H4sIAC0soWYC/61TwW7UMBC98xWRkNJN1CSllB6yQog/qEThuprNOhsXx0ntydIFKnFCQirVag9waC9wYHup1EocoPxOybZ/ge24KN3ugQO+JH7z3szzjD0C4YiKEeex8+aeoxZSZCR2Vn5/mF0fvd9+sbJq4KyQqNAMsZRxFI1CulPtUByFSWIZlWCKEMmseBWl44SBlIFd6biEIVE/YYY5s3xJQCTZc6Nq/iPfD4J/0EBfO1xvoN2KJi+fGTx21hospQyJaGgWMn56JQipDxdyGAV9EEFOeOUw2gXX3SZ7qL+ZIGk39KNO6D/x2sUTQNIjewmrBqZBJ+eXPyf1p7Prz7/e1ofTqy8H9bdjyy0ZjG+qoahIgzJ4PVZKy2E0p6qnm82uPjy5+jhRUd+GL3+8m1/MtNk8YFRiQDknwpo1U+rSfOi6A0AICkGHlAPrhphVeX/hNGWzv0l8cWASN/Nuzzx7YIUh5SgK1y1jsttZ827J9VKFtTHd+wUDLdKAyESz2rk2vWUV1peiD5eij5aiG3c9JgVHwtE4QJIH2o7qYVrcYSL0pb0Urgu3A62BP93ams+m9fS0xdCDMVr9GsyYtJv7dKD8QMwL7MTaB1AuO3/1nreQode8HTsuG9y392JyPP/+9T9fg/0/B+TGrPcDAAA=
+var rule = {
+    title: '剧集TV',
+    host: 'https://v.ijujitv.cc',
+    url: '/show/fyclass--------fypage---.html',
+    searchUrl: 'search/**----------fypage---.html',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    class_parse: '.nav-bar-menu li;a&&Text;a&&href;.*/(.*?).html',
+    cate_exclude: '娱乐新闻|排行榜',
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: '*',
+    一级: '.m-list-inner li;a&&title;img&&data-original;.thumb&&Text;a&&href;p&&Text',
+    二级: {
+        title: 'h1&&Text;.intro&&p:eq(0)&&Text',
+        img: '.quic&&data-original',
+        desc: '.intro&&p:eq(6)&&Text;.intro&&p:eq(2)&&Text;.intro&&p:eq(3)&&Text;.intro&&p:eq(5)&&Text;.intro&&p:eq(4)&&Text',
+        content: '.item-desc-info&&Text',
+        tabs: '.nav&&a',
+        tab_exclude: 'APP秒播',
+        lists: '.juji-list:eq(#id)&&a:not(:contains(APP秒播))',
+        list_url: 'a&&href',
+    },
+    搜索: '.m-list-inner li;a&&title;img&&data-original;.thumb&&Text;a&&href;p&&Text',
+}

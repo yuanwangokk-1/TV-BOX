@@ -1,1 +1,52 @@
-h36A5I5KdeB29zb3iwNWV1EAw0AReVKkvtcVRvGmIbZzDg8fILMl0vZ8u3wxnVnVFLuge1fDnKox3Bpf+R/0y+4eQR1I+eY/1NAIxa8aqSPVXFpCZgaSAo2/Igfu1IWEqpiAEuBu7avidfRtYPMX2yKIvmek8DZYC28w/+JVhJIahHtNXzedPRAtCUOx8u1JGu6UclMgtDGb8czclHTzXHqDYN8D/o+1dBLRd5i2B5aajKdvXog969NzF2HROnGWEXotg73z8O+U3nx7hS0psQMhPYC7ACDGpWz4wYpX6tr8D/Ss55jtz/AcOYYge/QczK1uMHRLJ28blnRHuYPL/wCi18IPH9vpcsxSRcO13toSfDS5HAKRVCc63OhkjEsEykVD4jppzfuw+0ub8trkl8Hhi3CfLXUYVQimwFBAhFbxOviy+iO72FJwVMWsLUb9Ulf6/zq8PWgFB/We8hdWlt8f3eud9VPZiFALZxpMJ/dU++kZXj4j2TL0T3wYv6MsjBTVYVeXSoCGMI6AsgEIWiwa4m3H+pkSby06/dWBqAV2ulU9KLDuAniehUhvCNmJ2UAzpt03WtT4o6VG5ZOApFDmUiceSfjeyZpX0A/QZ69rRYVNghOqEtK/ZHh5rge/GDCbUwHjgzJBNFi5AXW/1QZgB0mruwNWj7SpNGU7Y2UQ9kuajbGXDCdAQFziRBaL1J9bciPjCTS1TqSe14BPnauQytNjmagBkzYeiQpDsu/MwwsqBJtoNgZXFIfXWFlZaBDjmQfXXrCvUhFsOn8xnPf3MB4bLwe+yL9xBlJnTF/SDrGXHQ6SXxPUYEU2Nlwqkx5BHx59cciJHGLVdTMm4/dezMuSqyLbzVdwM3IITTriqS4+niEp3YgblX/WVEVKATbIQm9JEodQjxybfKKNse91IrN2d0O1BgtLzy21mlg07kG8mukvCD4pmOplPOySTvnfVMApDCURGcPqbXOCBvtb4qOMMu6ij5tBfPLF/pNO4eY9nJ2qQUbh2N3UcIQJ2isrDoUyOUZW7IEAAk+0V9J3JCV2b8/4rtnJu9lEUSP/Q6L8yaoEHw2kJ4JkXgAOKD3vEyK4BFGravnX+efKWA8dY9BC47thBAwivDK2Z02k6TZiCQT2dyfKbHeoU+W9lWdWawdKlc89WSVAQfa13DQZIPlKuOHxTSvbK7Wd1MLXHpc3Vkpwl8gFI5aJg5kYycC1SI8j8QXAD0O4mckMlgiihKmHgSUjoJisUmjosdYbV+QWiOKXxI1y7vQtwThd/x+fcJYbvTWfOvCUSg8YZwcKosvsDASJcZu+0C8kcm0CB6yiBNJP1gMSwua0FyoNlZlvvwolL4xV/J783MM8j1JZYPPOA7LiYw3mSWWbIAc=
+var rule = {
+  title: '来看点播',
+  host: 'https://lkvod.me/',
+  url: '/show/fyclass--------fypage---.html',
+  searchUrl: '/index.php/rss/index.xml?wd=**',
+  searchable: 2,
+  quickSearch: 0,
+  filterable: 0,
+  filter: '',
+  filter_url: '',
+  filter_def: {},
+  headers: {
+    'User-Agent': 'MOBILE_UA',
+  },
+  timeout: 5000,
+  class_parse: '.flex.around&&li;a&&Text;a&&href;.*/(.*?).html',
+  cate_exclude: '',
+  play_parse: true,
+  lazy: "js:\n  input = { parse: 1, url: input, js: '' };",
+  double: true,
+  推荐: '*',
+  一级: 'body&&.public-list-box;a&&title;img&&data-src;.public-list-subtitle&&Text;a&&href',
+  二级: {
+    title: 'h3&&Text;.hl-ma0&&Text',
+    img: '.mask-1&&data-src',
+    desc: '.detail-info .slide-info:eq(1)--strong&&Text;.deployment.none.cor5&&span&&Text;.deployment.none.cor5&&span:eq(2)&&Text;.detail-info .slide-info:eq(3)--strong&&Text;.detail-info .slide-info:eq(2)--strong&&Text',
+    content: '#height_limit&&Text',
+    tabs: '.anthology-tab a',
+    lists: '.anthology-list-play:eq(#id)&&li',
+    tab_text: 'body&&Text',
+    list_text: 'body&&Text',
+    list_url: 'a&&href',
+  },
+   搜索: $js.toString(() => {
+        let html = request(input);
+        let items = pdfa(html, 'rss&&item');
+        // log(items);
+        let d = [];
+        items.forEach(it => {
+            it = it.replace(/title|link|author|pubdate|description/g, 'p');
+            let url = pdfh(it, 'p:eq(1)&&Text');
+            d.push({
+                title: pdfh(it, 'p&&Text'),
+                url: url,
+                desc: pdfh(it, 'p:eq(3)&&Text'),
+                content: pdfh(it, 'p:eq(2)&&Text'),
+                pic_url: "",
+            });
+        });
+        setResult(d);
+    }),
+}

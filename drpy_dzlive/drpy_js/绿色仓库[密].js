@@ -1,1 +1,33 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+e7v+iJsuS7k+W6k1vlr4ZdJywKICAgIGhvc3RKczogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICBIT1NUID0gYmFzZTY0RGVjb2RlKCdhSFIwY0RvdkwyaHpZMnN1Ym1WMCcpOwogICAgICAgIGxldCBodG1sID0gcmVxdWVzdChIT1NUKTsKICAgICAgICBsZXQgc3RyVSA9IGh0bWwubWF0Y2goL3N0clU9IiguKj8pIi8pWzFdOwogICAgICAgIGxldCBsb2NhdGlvblUgPSBzdHJVICsgSE9TVC5yc3RyaXAoJy8nKSArICcvJnA9Lyc7CiAgICAgICAgLy9sb2cobG9jYXRpb25VKTsKICAgICAgICBsZXQgcmVzcCA9IHJlcXVlc3QobG9jYXRpb25VLCB7d2l0aEhlYWRlcnM6IHRydWUsIHJlZGlyZWN0OiBmYWxzZX0pOwogICAgICAgIEhPU1QgPSBKU09OLnBhcnNlKHJlc3ApLmxvY2F0aW9uOwogICAgfSksCiAgICB1cmw6ICcvdm9kdHlwZS9meWNsYXNzLWZ5cGFnZS5odG1sJywKICAgIHNlYXJjaFVybDogJy92b2RzZWFyY2gvLS0tLS0tLS0tLS0tLS5odG1sP3dkPSoqJywKICAgIHNlYXJjaGFibGU6IDIsCiAgICBxdWlja1NlYXJjaDogMCwKICAgIGZpbHRlcmFibGU6IDAsCiAgICBoZWFkZXJzOiB7CiAgICAgICAgJ1VzZXItQWdlbnQnOiAnTU9CSUxFX1VBJywKICAgIH0sCiAgICBjbGFzc19uYW1lOiAnJywKICAgIGNsYXNzX3VybDogJzEmMiYzJjQmNyY4JjkmMTAmMTUmMjEmMjInLAogICAgLy8gY2xhc3NfcGFyc2U6ICcuc3R1aS1oZWFkZXJfX21lbnUmJmxpO2EmJlRleHQ7YSYmaHJlZicsCiAgICBwbGF5X3BhcnNlOiB0cnVlLAogICAgbGF6eTogJycsCiAgICBsaW1pdDogNiwKICAgIOaOqOiNkDogJyonLAogICAgZG91YmxlOiB0cnVlLCAvLyDmjqjojZDlhoXlrrnmmK/lkKblj4zlsYLlrprkvY0KICAgIOS4gOe6pzogJy5zdHVpLXZvZGxpc3QmJmxpO2g0JiZUZXh0O2EmJmRhdGEtb3JpZ2luYWw7LnBpYy10ZXh0JiZUZXh0JiZUZXh0O2EmJmhyZWYnLAogICAg5LqM57qnOiAnKicsCiAgICDpooTlpITnkIY6ICRqcy50b1N0cmluZygoKSA9PiB7CiAgICAgICAgcnVsZS5jbGFzc19uYW1lID0gdW5nemlwKCdINHNJQUFBQUFBQUFBM3MyZmVuTCtTdlZuczdlKzJUWGNyVm5hNVkvMzllbjlyUnJ4Yk05cTlXZVRWLzZiTTZhWjNNNm55OW9CSElXQUtrbk85WSttOWIrZE8zMHB6dW5xa0ZrVUlVZ1dzQnFvWWErV043MmN0RkVxTkV2Vjg5NHRxTVZhc0hUenVYUG1vR2MvbVhQTis2R0tBTUFFZUhiZjQ4QUFBQT0nKQogICAgfSksCn0=
+var rule = {
+    title: '绿色仓库[密]',
+    hostJs: $js.toString(() => {
+        HOST = base64Decode('aHR0cDovL2hzY2submV0');
+        let html = request(HOST);
+        let strU = html.match(/strU="(.*?)"/)[1];
+        let locationU = strU + HOST.rstrip('/') + '/&p=/';
+        //log(locationU);
+        let resp = request(locationU, {withHeaders: true, redirect: false});
+        HOST = JSON.parse(resp).location;
+    }),
+    url: '/vodtype/fyclass-fypage.html',
+    searchUrl: '/vodsearch/-------------.html?wd=**',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'MOBILE_UA',
+    },
+    class_name: '',
+    class_url: '1&2&3&4&7&8&9&10&15&21&22',
+    // class_parse: '.stui-header__menu&&li;a&&Text;a&&href',
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: '*',
+    double: true, // 推荐内容是否双层定位
+    一级: '.stui-vodlist&&li;h4&&Text;a&&data-original;.pic-text&&Text&&Text;a&&href',
+    二级: '*',
+    预处理: $js.toString(() => {
+        rule.class_name = ungzip('H4sIAAAAAAAAA3s2fenL+SvVns7e+2TXcrVna5Y/39en9rRrxbM9q9WeTV/6bM6aZ3M6ny9oBHIWAKknO9Y+m9b+dO30pzunqkFkUIUgWsBqoYa+WN72ctFEqNEvV894tqMVasHTzuXPmoGc/mXPN+6GKAMAEeHbf48AAAA=')
+    }),
+}

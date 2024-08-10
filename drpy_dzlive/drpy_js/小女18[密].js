@@ -1,1 +1,28 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+Wwj+WlszE4W+Wvhl0nLAogICAgaG9zdDogJ2h0dHBzOi8veG5tMTh1amp4YS5idXp6JywKICAgIHVybDogJy90eXBlL2lkL2Z5Y2xhc3MvZnlwYWdlLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnL2h1bnQvKiovaC9meXBhZ2UuaHRtbCcsCiAgICBzZWFyY2hhYmxlOiAyLAogICAgcXVpY2tTZWFyY2g6IDAsCiAgICBmaWx0ZXJhYmxlOiAwLAogICAgaGVhZGVyczogewogICAgICAgICdVc2VyLUFnZW50JzogJ1BDX1VBJywKICAgIH0sCiAgICBjbGFzc19wYXJzZTogJy5pbmZvU2hvdyBhO2EmJlRleHQ7YSYmaHJlZjsuKi8oLio/KS5odG1sJywKICAgIHBsYXlfcGFyc2U6IHRydWUsCiAgICBsYXp5OiAnJywKICAgIGxpbWl0OiA2LAogICAg5o6o6I2QOiAndWwuc3R1aS12b2RsaXN0LmNsZWFyZml4O2xpO2g0JiZUZXh0O2ltZyYmc3JjOy5waWMtdGV4dCYmVGV4dDthJiZocmVmJywKICAgIGRvdWJsZTogdHJ1ZSwKICAgIOS4gOe6pzogJy5zdHVpLXZvZGxpc3QgbGk7aDQmJlRleHQ7aW1nJiZzcmM7LnBpYy10ZXh0JiZUZXh0O2EmJmhyZWYnLAogICAg5LqM57qnOiB7CiAgICAgICAgdGl0bGU6ICcuc3R1aS1jb250ZW50X19kZXRhaWwgLnRpdGxlJiZUZXh0JywKICAgICAgICBpbWc6ICdpbWcmJnNyYycsCiAgICAgICAgZGVzYzogJy5zdHVpLWNvbnRlbnRfX2RldGFpbCBwOmVxKDApJiZUZXh0JywKICAgICAgICBjb250ZW50OiAnLmRldGFpbCYmVGV4dCcsCiAgICAgICAgdGFiczogJy5zdHVpLXBhbm5lbF9oZCBoMycsCiAgICAgICAgbGlzdHM6ICcuc3R1aS1jb250ZW50X19wbGF5bGlzdDplcSgjaWQpIGxpJywKICAgIH0sCiAgICDmkJzntKI6ICcuc3R1aS12b2RsaXN0IGxpOyo7KjsqO2EmJmhyZWY7LnRleHQtbXV0ZWQ6ZXEoLTEpJiZUZXh0JywKfQ==
+var rule = {
+    title: '小女18[密]',
+    host: 'https://xnm18ujjxa.buzz',
+    url: '/type/id/fyclass/fypage.html',
+    searchUrl: '/hunt/**/h/fypage.html',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'PC_UA',
+    },
+    class_parse: '.infoShow a;a&&Text;a&&href;.*/(.*?).html',
+    play_parse: true,
+    lazy: '',
+    limit: 6,
+    推荐: 'ul.stui-vodlist.clearfix;li;h4&&Text;img&&src;.pic-text&&Text;a&&href',
+    double: true,
+    一级: '.stui-vodlist li;h4&&Text;img&&src;.pic-text&&Text;a&&href',
+    二级: {
+        title: '.stui-content__detail .title&&Text',
+        img: 'img&&src',
+        desc: '.stui-content__detail p:eq(0)&&Text',
+        content: '.detail&&Text',
+        tabs: '.stui-pannel_hd h3',
+        lists: '.stui-content__playlist:eq(#id) li',
+    },
+    搜索: '.stui-vodlist li;*;*;*;a&&href;.text-muted:eq(-1)&&Text',
+}

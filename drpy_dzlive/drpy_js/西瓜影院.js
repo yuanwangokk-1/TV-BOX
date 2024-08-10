@@ -1,1 +1,28 @@
-qz2VfkB3O9fqiff5MjJa/NOxIkzNuMv7K54K23vKJOTiFO3SByehBPSvazONySnJWeDBJaA8KT2pUrqzx6fpfeRki23GSMzxiXMZ0t+UzesI8/xrjL4ejmbMVU/dkZKfL0VD3opDjF0NXoGdAGoNeyZPXVCEDcFgbIcZ6vsTT5RPaLVvw0zAM64ZU1+/qL3hncUTbm1iJjk813SGerNFbWrYtqsk/HQ4tiABp91/hWxfyOrgujaDMd5y0JS44ZJIlJw4/HylFpGKT3FnAnGQck4HhJUcnh1gC4nreDWYe2rBfx4C72CGusf8i/o1Hm3EHIeV5A18U08sJqLSsoG+iap6iPLtwc7RRWomGlOa4HNDfyWNTwBMw7GOFfxsLqi35rwOBzF1n6MGbgsMlJteeTNHOc6Oi2kN+tiCriCxBOnK4qNoPfLphg+e94xiggXku+Ye/Xmi3v0KsWT3pedCY50AYLabK2RZ6DvD4/xNAXkv2Iepn4jpSZZGBR++jwqEeob93zZkjz83yoc9d5+KgV96HcHa4Nokq7ztAvFgeCCiQsBif8/R4GCP/IwNRjm2C7Pb6Lofde3C8sifyDnhInMzBYrwA6tlCbi66keyD72tZ/YfEy8NW9Hjpgf0gfV8EnuqWgIvcS9GFKdEVzrsImh87IkzMHzpF7MAGj8TVEstuYcHPF9XVjSytrOpHe/9ZcYZcJB/POpfzlvZE6Xvc1dbpFbmCQjE6wjjzq6ch0Rb4cm/c/ieRIUZGFmSGbFkEYMV4Ukzus/zz1iCHT74Yed4KOSHbnSMx9lQXm7CDaFUV1QorFg21/VmeGWZ8x5ZRhCxjYHIJ/PVq44qJgKNdhzG6/fLIxJAG0hUMMWESYorUpM9aPLAi0l+/Vw+AQrcQ/QE8kEZb4XZIIVTFEgg0UlGK5Rig9tYxfSSFUu+MY4lZwOxwjkFs0BMzES367V19BnDDXZ17T98EE6VBPTxOonqd/7t1DSZMtYQTHysRyPFPldthdF6KtSCdr67ynT24MoZUA1XXKjig430HxPhid2BFJwoGjLep3WSZ1iZhR3ISjDnobpvzeqM11eKSgJ4kHCl+1163NIlm17VdseDXiyMslkTDV5qCGmw55BLo6RSUGCORClYMzul/kfheqXx
+Object.assign(muban.首图2.二级, {
+    "tabs": ".nav-tabs&&li",
+});
+var rule = {
+    模板: '首图2',
+    title: '西瓜影院',
+    host: 'https://www.xigua1100.com',
+    url: '/show/fyclass--------fypage---.html',
+    searchUrl: '/index.php/rss/index.xml?wd=**',
+    搜索: $js.toString(() => {
+        let html = request(input);
+        let items = pdfa(html, 'rss&&item');
+        // log(items);
+        let d = [];
+        items.forEach(it => {
+            it = it.replace(/title|link|author|pubdate|description/g, 'p');
+            let url = pdfh(it, 'p:eq(1)&&Text');
+            d.push({
+                title: pdfh(it, 'p&&Text'),
+                url: url,
+                desc: pdfh(it, 'p:eq(3)&&Text'),
+                content: pdfh(it, 'p:eq(2)&&Text'),
+                pic_url: "",
+            });
+        });
+        setResult(d);
+    }),
+}

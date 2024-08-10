@@ -1,1 +1,11 @@
-Ly8gaHR0cHM6Ly9jb2xsZWN0LndvbG9uZ3p5dy5jb20vYXBpLnBocC9wcm92aWRlL3ZvZC8/YWM9bGlzdAoKdmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICfph4fpm4YxJywKICAgIHRpdGxlOiAn5Y2n6b6Z6LWE5rqQW+i1hF0nLAogICAgaG9zdDogJ2h0dHBzOi8vY29sbGVjdC53b2xvbmd6eXcuY29tJywKICAgIC8vIGhvbWVUaWQ6ICcxMycsCiAgICBob21lVGlkOiAnJywKICAgIGNhdGVfZXhjbHVkZTogJ+eUteW9seeJh3zov57nu63liad857u86Im654mHfOWKqOa8q+eJh3znlLXlvbHop6Por7R85L2T6IKyfOa8lOWRmHzmlrDpl7votYTorq8nLAogICAgcGFyc2VfdXJsOiAnJywKfQ==
+// https://collect.wolongzyw.com/api.php/provide/vod/?ac=list
+
+var rule = {
+    模板: '采集1',
+    title: '卧龙资源[资]',
+    host: 'https://collect.wolongzyw.com',
+    // homeTid: '13',
+    homeTid: '',
+    cate_exclude: '电影片|连续剧|综艺片|动漫片|电影解说|体育|演员|新闻资讯',
+    parse_url: '',
+}

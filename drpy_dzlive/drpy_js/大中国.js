@@ -1,1 +1,12 @@
-H4sIAC0soWYC/22Qv07DMBDG9zxFpjaJWhskBpQI8QgssCFFl9itjZw/sp00CJjYEDMMhQEJaJdKDAyoCPEybfoaOCFDkbjldJ+/76fzHUVnNNYIlOLj1EmKCFKUVLnM0Gp5u1nOBvaFZZvSEIWaVtq3+4SXw6FKQIhe79hI/YF15QZWCdKWhaD2QRep50/147cJtDzjajlcC2q09fNs9bFYT786nWWqYTOtc+VjXHJCMwTZ7h6KU9x5CimMBfOU0ArlLMdlRrBi2QRzgkfnsTC/wDmMqRmahphORJdVFGTMTv4ltE/bQTwh2PO24y07zEGqZnmUQhmBHHJNE2UL7o+1s+P6Qjv7bgC/V2k6k3QUIA87yDt0T//wQNOQVrEoSANcfd7U9y/19L2+e7vcXC/q14fmqj+lHKZGnQEAAA==
+Object.assign(muban.mxpro.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxpro',
+    title: '大中国',
+    host: 'https://video.ao14.cn/',
+    url: '/index.php/vod/show/id/fyclass/page/fypage.html',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    class_parse: '.navbar-items li:gt(0):lt(8);a&&Text;a&&href;.*/(.*?)\.html',
+    cate_exclude: '今日更新|热榜',
+}

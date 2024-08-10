@@ -1,1 +1,123 @@
-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
+// 搜索验证 -> drpy_ocr自动过搜索验证失败
+var rule = {
+    title: '烧火影视[优]',
+     host:'https://saohuo.tv',
+    //host: 'http://shapp.us',
+    //hostJs: 'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"a:eq(2)&&href");print(src);HOST=src',
+    // url:'/list/fyclass-fypage.html',
+    url: '/list/fyfilter-fypage.html',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.cateId}}',
+    filter: {
+        "1": [{
+            "key": "cateId",
+            "name": "类型",
+            "value": [{"v": "1", "n": "全部"}, {"v": "6", "n": "喜剧"}, {"v": "7", "n": "爱情"}, {
+                "v": "8",
+                "n": "恐怖"
+            }, {"v": "9", "n": "动作"}, {"v": "10", "n": "科幻"}, {"v": "11", "n": "战争"}, {
+                "v": "12",
+                "n": "犯罪"
+            }, {"v": "13", "n": "动画"}, {"v": "14", "n": "奇幻"}, {"v": "15", "n": "剧情"}, {
+                "v": "16",
+                "n": "冒险"
+            }, {"v": "17", "n": "悬疑"}, {"v": "18", "n": "惊悚"}, {"v": "19", "n": "其它"}]
+        }],
+        "2": [{
+            "key": "cateId",
+            "name": "类型",
+            "value": [{"v": "2", "n": "全部"}, {"v": "20", "n": "大陆"}, {"v": "21", "n": "TVB"}, {
+                "v": "22",
+                "n": "韩剧"
+            }, {"v": "23", "n": "美剧"}, {"v": "24", "n": "日剧"}, {"v": "25", "n": "英剧"}, {
+                "v": "26",
+                "n": "台剧"
+            }, {"v": "27", "n": "其它"}]
+        }],
+        "4": [{
+            "key": "cateId",
+            "name": "类型",
+            "value": [{"v": "4", "n": "全部"}, {"v": "38", "n": "搞笑"}, {"v": "39", "n": "恋爱"}, {
+                "v": "40",
+                "n": "热血"
+            }, {"v": "41", "n": "格斗"}, {"v": "42", "n": "美少女"}, {"v": "43", "n": "魔法"}, {
+                "v": "44",
+                "n": "机战"
+            }, {"v": "45", "n": "校园"}, {"v": "46", "n": "亲子"}, {"v": "47", "n": "童话"}, {
+                "v": "48",
+                "n": "冒险"
+            }, {"v": "49", "n": "真人"}, {"v": "50", "n": "LOLI"}, {"v": "51", "n": "其它"}]
+        }],
+        // "28":[{"key":"cateId","name":"综艺","value":[{"v":"28","n":"脱口秀"},{"v":"29","n":"真人秀"},{"v":"30","n":"选秀"},{"v":"31","n":"美食"},{"v":"32","n":"旅游"},{"v":"33","n":"汽车"},{"v":"34","n":"访谈"},{"v":"35","n":"纪实"},{"v":"36","n":"搞笑"},{"v":"37","n":"其它"}]}]
+    },
+    filter_def: {
+        1: {cateId: '1'},
+        2: {cateId: '2'},
+        4: {cateId: '4'}
+        // 28:{cateId:'28'}
+    },
+    searchUrl: '/search.php?page=fypage&searchword=**&searchtype=',
+    searchable: 0,
+    quickSearch: 0,
+    headers: {'User-Agent': 'MOBILE_UA',},
+    timeout: 5000,//网站的全局请求超时,默认是3000毫秒
+    class_name: '电影&电视剧&动漫',
+    class_url: '1&2&4',
+    play_parse: true,
+    lazy: `js:
+        pdfh = jsp.pdfh;pdfa = jsp.pdfa;pd = jsp.pd;
+        var html = pd(request(input), 'iframe&&src');
+        var apiurl = '';
+        if (/api\\.hhplayer/.test(html)) {
+            apiurl = 'https://api.hhplayer.com/api.php';
+        } else if (/hkjx\\.hhplayer/.test(html)) {
+            apiurl = 'https://hkjx.hhplayer.com/api.php';
+        } else if (/hhjx\\.hhplayer/.test(html)) {
+            apiurl = 'https://hhjx.hhplayer.com/api.php';
+        } else if (/play\\.hhplayer/.test(html)) {
+            apiurl = 'https://play.hhplayer.com/hhjx/api.php';
+        }
+        var url = '';
+        var t = '';
+        var key = '';
+        eval(pdfh(request(html), 'body&&script,0&&Html').split('var act')[0].replaceAll('var ', ''));
+        var purl = JSON.parse(request(apiurl, {
+            headers: {
+                'User-Agent': MOBILE_UA,
+                'Referer': html
+            },
+            body: 'url=' + url + '&t=' + t + '&key=' + key + '&act=0&play=1',
+            method: 'POST'
+        })).url;
+        if(!purl){
+            input = {
+            parse:1,
+            url:html
+            }
+        }
+        else if (/obj\\/tos/.test(purl)) {
+            input = {
+                jx: 0,
+                url: purl,
+                parse: 0
+            }
+        } else {
+            input = {
+                jx: 0,
+                url: /http/.test(purl) ? purl: 'https://api.hhplayer.com' + purl,
+                parse: 0
+            }
+        }
+    `,
+    推荐: '.v_list,0&&li;*;*;*;*',
+    一级: '.v_list li;a&&title;.lazyload&&data-original;.v_note&&Text;a&&href',
+    二级: {
+        "title": "h1&&Text;",
+        "img": ".m_background&&style",
+        "desc": ";;;.v_info_box&&p&&Text",
+        "content": ".p_txt.show_part&&Text",
+        "tabs": ".from_list&&li",
+        "lists": "#play_link&&li:eq(#id)&&a"
+    },
+    搜索: '*',
+}

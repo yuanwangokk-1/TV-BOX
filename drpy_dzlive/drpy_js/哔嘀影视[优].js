@@ -1,1 +1,111 @@
-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
+// 发布页 https://www.bdys.me/
+var rule = {
+    title: '哔嘀影视[优]',
+    host: 'https://www.yjys.top',
+    //hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});HOST = html.match(/可用网址：<a href=\'(.*)\'>点此进入/)[1];print("哔嘀跳转地址 =====> " + HOST)',
+    // url: '/s/all/fypage?type=fyclass',
+    //url: '/s/all/fypage?type=fyclassfyfilter',
+    //url:'/s/{{fl.lx}}/fypage?type=fyclass&{{fl.area}}&{{fl.year}}&{{fl.by}}[/s/all/fypage?type=fyclassfyfilter]'
+    url: '/s/fyfilter',
+    filter_url: '{{fl.lx}}/fypage?type={{fl.type}}&{{fl.area}}&{{fl.year}}&{{fl.by}}',
+    filter: 'H4sIAAAAAAAAA+2W31ITMRTG32WvuciCgjLDnW/heBHoQhfKVourtAwzKlBKgRYQigVUZvhTcOy0CAq0trxMk919C1OaTU6C4513e9f9ficnOV9OOmfOQMbw8zljykobw0Zi1ugzHDxtsd/eRZN8WWXfb3DCte6DHCZ3btaD8kZXZh84kTDm+3qA5M86rQMOYklnIuMmBfRyF3RhKVxlv7KdCbmwdEBWKpzN2pOuXFXZJLdNTqasuIsdwej7DfquFDK23ahcR3OfOo0VzjJx7GTiFtiQVk877UOO37qzNhYoqG7LHaeTyo7skLKGSVetIX/mbTdB8Wyl3G8hTz/shQvZspkkWDrwjBP2QxT+vh3stcMCsO3Awj9890qboV3sgGlbML96Sta+gZ3GLQlpadlfaYRlW3Bd8HmLfjrhqFvYWNwFhWe3gvJ5aApOMsMk9PI1rxVuOc6sdmVar/GNtHbEcRLyhkjx2D8KvZxwM12jgZsny/IWXtnqLey3/FpVrEymQbs0f8sCM8xjUCEpZEnxB2cJeyYOTLvbYNfHUdp1YvB2SOErye2TwirJ/RIh2BlTD+y1C7KFpy3Yw8HXc4lYKwLESuk0Kt72T7+SlTGsJhBDd08kSsHE/uqFJGl2ZzBz+1qymAVI525REgjI9ZUEoxiS/KEkkzZE/smdRDMvscOMlUdfLJLjCsmdw2PGcAIWQS/rkr7GCrqpkSKgE8xwLeJyR+JxeC7avpQE3/v5ost6/3I4ZWH5P0cO6mSt8e//OWnfTZXdGisrKGfD9CzbiKKrwcFpmZXyMJjrWuZind62/5K5p8N+22/BMK7A5lADuAL6ih58hwFcgX2rZuAKdF8N4Irom/U6aZzCAK7ALlUzcAW0l1eseitlpRAhPmg05TBChE1xr3Qae0ok1EVwbZspdPeXEilEcRGbX8jSjXIRPUWUsH5NlurK+XuKvPfbQHWJK+D50dU7dkLFKCGCh+21dmlJ7TQhwv5PWzgF+v/2qtNsPeh/snQWLJzp/d+P+h+Fb5llGbn/BnBAgwMQ9muwH0JTgyaESIMIQPOpCtk3gE80+ATCIQ0OQTiowUEIH2vwMYSaQyZ0yNQcMqFDpuaQCR0yNYdM6JCpOWRCh5DmEIIOIc0hBB1CmkMIOoQ0hxB0CGkOIegQ0hxC0CGkOYSgQ0hzCEGHkOYQgg4hzSH2Dd/EaFq+CFrYIo3igxdB969oqc5ef7B7xXMlUzErNSK99i+y3scjv7ZIclklxOxu9qLPMKNhOxq2o2E7GrajYTsatqNhOxq2o2E7GrajYft/DNvzfwAYtZwS2xYAAA==',
+    filter_def: {
+        0: {lx: 'all', type: '0'},//最新电影
+        1: {lx: 'all', type: '1'},//最新电视剧
+        2: {lx: 'donghua', type: '1'},//动漫
+        3: {lx: 'all', type: '1', area: 'area=中国大陆', by: 'order=0'},//国产剧
+        4: {lx: 'gangtaiju', type: ''},//港台剧
+        5: {lx: 'meiju', type: ''},//欧美剧
+        6: {lx: 'hanju', type: ''}//日韩剧
+
+    },
+    filterable: 1,//是否启用分类筛选,
+    class_name: '最新电影&最新电视剧&动漫&国产剧&港台剧&欧美剧&日韩剧',
+    class_url: '0&1&2&3&4&5&6',
+    searchUrl: '/search/**/fypage',
+    searchable: 2,//是否启用全局搜索,
+    quickSearch: 0,//是否启用快速搜索,
+    headers: {
+        //'User-Agent': 'MOBILE_UA',
+        'User-Agent': 'PC_UA',
+    },
+    play_parse: true,
+    lazy: $js.toString(() => {
+
+
+        // 获取 pid 并输出
+        let pid = JSON.parse(request(MY_URL).match(/var pid = (\d+);/)[1]);
+        //console.log(pid);
+
+        // 获取当前时间并输出
+        let currentTimeMillis = Date.now();
+        //console.log(currentTimeMillis);
+
+        let str4 = pid + '-' + currentTimeMillis;
+        //console.log(str4);
+        //通过对str4进行SHA-256哈希，生成前16个字节作为密钥
+
+        let md5Hash = CryptoJS.MD5(str4).toString(CryptoJS.enc.Hex);
+
+        // 确保哈希值长度为32个字符，并转换为小写
+        while (md5Hash.length < 32) {
+            md5Hash = '0' + md5Hash;
+        }
+
+        md5Hash = md5Hash.toLowerCase();
+
+//console.log(md5Hash);
+        let key = CryptoJS.enc.Utf8.parse(md5Hash.substring(0, 16));
+        let encrypted = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(str4), key, {
+            mode: CryptoJS.mode.ECB,
+            padding: CryptoJS.pad.Pkcs7
+        });
+
+
+        let encryptedHex = encrypted.ciphertext.toString(CryptoJS.enc.Hex);
+
+        let encryptedString = encryptedHex.toUpperCase();
+//console.log(encryptedString);
+
+        let lines = HOST + '/lines?t=' + currentTimeMillis + '&sg=' + encryptedString + '&pid=' + pid;
+
+        //console.log(lines);
+
+        //let lines = 'https://www.yjys.top/lines?t=1718379627499&sg=66759BAA896EC5E7B26EE88F9994F25F4CBB434C967416CDD51EB25F3EF0D77A&pid=179395';
+
+        // 发起请求并获取匹配的 URL
+        let url = JSON.parse(request(lines)).data.url3;
+        // console.log(url);
+        let splitUrl = url.indexOf(',') !== -1 ? url.split(',')[0].trim() : url.trim();
+        //console.log(splitUrl);
+        //let resp = request(splitUrl.replace('www.yjys02.com','www.yjys.top'), {withHeaders: true, redirect: false});
+        //console.log(resp);
+
+        if (splitUrl.includes('yjys')) {
+            let resp = request(splitUrl, {withHeaders: true, redirect: false});
+            splitUrl = JSON.parse(resp).location;
+            console.log(splitUrl);
+        }
+
+        input = {
+            jx: 0,
+            url: splitUrl,
+            parse: 0
+        };
+
+
+    }),
+    limit: 6,
+    double: true, // 推荐内容是否双层定位
+    推荐: '.row-cards;.card-link;*;img&&data-src;*;*',
+    一级: '.row-cards&&.card-link;h3&&Text;img&&src;p&&Text;a&&href',
+    二级: {
+        "title": ".col h2&&Text;.mt-1&&Text",
+        "img": ".col-md-auto img&&src",
+        "desc": ";;;.mb-md-2:eq(3)&&Text;.mb-md-2:eq(1)&&Text",
+        "content": "#synopsis .card-body&&Text",
+        "tabs": ".card-header:eq(2) h3",
+        "lists": "#play-list:eq(#id) a"
+    },
+    搜索: '.row-cards .row-0;.d-inline-block&&title;img&&src;.d-inline-block&&Text;a&&href',
+}

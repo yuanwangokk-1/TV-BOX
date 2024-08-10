@@ -1,1 +1,11 @@
-H4sIAC0soWYC//NPykpNLtFLLC7OTM/TyC1NSszTe7ls2tPZ+4z0nuzqeb5ruY5CNZcCEJQkJhVbKajrFZeUZuoWJOblpebEx2ekJqYoZBir63DValpzlSUWKRSV5qQq2EL1PFux8Nnc/UBdUCOB6sBGZZbkpIJEW7c/Xbfo6d6NL5a3QaUy8otLgDIZJSUFxVb6+uXl5XrZ2amVlcV6yfm5UDWlRTlAJfpl+SnFGfnl+mmVyTlA9+tCQVplQWJ6KpChl1GSmwPVUpyaWJScEYrQCObra2np6uLVB/R0fGpFck5pCsi9z+aseTpxxfPmtS+nr6h5Nqfh2bQNz2ZvAZIg/wMAHv0iPEoBAAA=
+Object.assign(muban.首图2.二级, {
+    tabs: '.stui-pannel__head h3',
+});
+var rule = {
+    模板: '首图2',
+    title: '酷客影视',
+    host: 'https://www.kkeyys.com',
+    url: '/vodshow/fyclass--------fypage---.html',
+    searchUrl: '/vodsearch/**----------fypage---.html',
+    tab_exclude: '本周热门|最新更新',
+}

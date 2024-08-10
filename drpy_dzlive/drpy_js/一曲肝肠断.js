@@ -1,1 +1,123 @@
-dmFyIHJ1bGUgPSB7CiAgICB0aXRsZTogJ+S4gOabsuiCneiCoOaWrScsCiAgICBob3N0OiAnaHR0cHM6Ly9mbHkuZGFvcmFuLnR2JywKICAgIHVybDogJy9BUElfUk9QL3NlYXJjaC9hbGJ1bS9zY3JlZW4nLAogICAgaGVhZGVyczogewogICAgICAgICdVc2VyLUFnZW50JzogJ29raHR0cC8zLjEyLjEwJywKICAgICAgICAnQ29ubmVjdGlvbic6ICdLZWVwLUFsaXZlJywKICAgICAgICAnQWNjZXB0LUVuY29kaW5nJzogJ2d6aXAnLAogICAgICAgICdtZDUnOiAnU2t2eXJXcUs5UUhUZENUMTJSaHh1bmp4K1d3TVRlOXk0S3dnZUFTRkRoYllhYlJTUHNrUjBRPT0nLAogICAgICAgICdDb250ZW50LVR5cGUnOiAnYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD1VVEYtOCcsCiAgICAgICAgJ0Nvb2tpZSc6ICdKU0VTU0lPTklEPTQxQUJBNzZFNkQ0NUE0NEQ2NDE5QjNGMjZBMDg1MUVEJwogICAgfSwKICAgIGNsYXNzX25hbWU6ICfosavliacm6buE5qKF5oiPJui2iuWJpybkuqzliacm6K+E5YmnJuabsuWJpyblnaDlrZAm56em6IWUJuays+WMl+aihuWtkCbmva7liacm57Kk5YmnJuayquWJpybkuozlpLnlvKYm5piG5puyJuays+WNl+eQtOS5pibmt67liacm5Y2V5bymJuilv+enpuaIjyblqbrliacm5LiK5YWa5qKG5a2QJueZveWtl+aIjybmsrPljZflpKfpvJPkuaYm6LaK6LCDJua7h+WJpyblpKrlurfpgZPmg4Um5rCR5peP6Z+z5LmQJuaJrOWJpyblhbbku5Ym5puy6Im65pma5LyaJuS6jOS6uuWPsCbljJfot6/mooblrZAm5b2p6LCDJuS5kOiFlCbogIHlubTlpKflraYm5ZCV5YmnJuWkqea0peaXtuiwgybmiI/mm7Im5p+z55C05oiPJuS6rOmfteWkp+m8kybnmq7lvbHmiI8m5rmY5YmnJuWbm+W5s+iwgybnkLzliacm6ZSh5YmnJuivhOS5pibnu43liacm5Lqs5Lic5aSn6byTJuW6kOWJpybor53liacm6KW/5rKz5aSn6byTJuiOhuS7meaIjyboirHpvJPmiI8m5bed5YmnJuebuOWjsCblrpvmooYm5pmL5Lit56en5q2MJumHh+iMtuaIjybokrLliacm5rGJ5YmnJumXveWJpybmmYvliacm5YyX5Lqs55C05LmmJuWxseatjOWJpyblkInliacm5q2j5a2X5oiPJui1o+WJpybpuqbnlLDkuaHpn74m5qWa5YmnJuWkp+W5s+iwgybkv53lrprogIHosIMnLAogICAgY2xhc3NfdXJsOiAneXVqdSZobXgmeXVlanUmamluZ2p1JnBpbmdqdSZxdWp1JmhuenomcWlucSZoYmJ6JmNoYW9qdSZnZGR4Jmh1anUmZWp4Jmt1bnF1JmhucXMmaHVhaWp1JmRhbnhpYW4meHF4Jnd1anUmU0RCWiZiengmaG5kZ3MmeXVlZCZkaWFuanUmdGtkcSZNWllZJnlhbmdqdSZvdGhlciZlbHNlJkVSVCZibGJ6JmNhaWRpYW8mbHEmV0smbHZqdiZ0anNkJnhxJmxpdXF4Jmp5ZGcmcHl4JnhqJnNwZCZxaW9uZ2p1JnhpanUmcGluZ3NodSZzaGFvanYmamRkZyZsdWp1Jmh1YWp1JnhoZGcmaHVhZ3gmY2h1YW5qdSZ4aWFuZyZ3YiZqenlnJmNhaWNoYXhpJnB1anYmaGombWluanUmamluanUmYmpxcyZzZ2omamlqdSZ6engmZ2omY2h1anUmZHBkJmJkbGQnLAogICAgcGxheV9wYXJzZTogdHJ1ZSwKICAgIGxhenk6ICRqcy50b1N0cmluZygoKSA9PiB7CiAgICAgICAgbGV0IGNvZGUgPSBpbnB1dC5zcGxpdCgnPycpWzFdOwogICAgICAgIGxldCBkYXRhID0gSlNPTi5zdHJpbmdpZnkoewogICAgICAgICAgICAiaXRlbSI6ICJvMyIsCiAgICAgICAgICAgICJtYXNrIjogMCwKICAgICAgICAgICAgIm5vZGVDb2RlIjogIjAwMTAwMCIsCiAgICAgICAgICAgICJwcm9qZWN0IjogImx5aHhjeCIsCiAgICAgICAgICAgICJweCI6IDIsCiAgICAgICAgICAgICJyZXNDb2RlIjogY29kZSwKICAgICAgICAgICAgInVzZXJJZCI6ICJkNGIyOTU5NWI2ZmU3NjRlMDkwNzhhMGRhZDczNTJmZiIKICAgICAgICB9KTsKICAgICAgICBsZXQgaHRtbCA9IHBvc3QoJ2h0dHBzOi8vZmx5LmRhb3Jhbi50di9BUElfUk9QL3BsYXkvZ2V0L3BsYXl1cmwnLCB7aGVhZGVyczogcnVsZS5oZWFkZXJzLCBib2R5OiBkYXRhfSk7CiAgICAgICAgbG9nKGh0bWwpCiAgICAgICAgbGV0IHVybCA9IEpTT04ucGFyc2UoaHRtbCkucGxheVVybHMuaGQ7CiAgICAgICAgaW5wdXQgPSB7dXJsOiB1cmwsIHBhcnNlOiAwfQoKICAgIH0pLAogICAg5LiA57qnOiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIGxldCBkID0gW107CiAgICAgICAgbGV0IHRpZCA9IE1ZX0NBVEUKICAgICAgICBsZXQgcGcgPSBNWV9QQUdFCiAgICAgICAgbGV0IGRhdGEgPSBKU09OLnN0cmluZ2lmeSh7CiAgICAgICAgICAgICJjdXIiOiBwZywKICAgICAgICAgICAgImZyZWUiOiAwLC8vMCDlhajpg6jvvIwxIOWFjei0ue+8jDLvvIzkvJrlkZgKICAgICAgICAgICAgIm9yZGVyYnkiOiAiaG90IiwKICAgICAgICAgICAgInBhZ2VTaXplIjogMzAwMCwKICAgICAgICAgICAgInJlc1R5cGUiOiAxLAogICAgICAgICAgICAic2VjdCI6IHRpZCwKICAgICAgICAgICAgInRhZ0lkIjogMCwKICAgICAgICAgICAgInVzZXJJZCI6ICJkNGIyOTU5NWI2ZmU3NjRlMDkwNzhhMGRhZDczNTJmZiIsCiAgICAgICAgICAgICJjaGFubmVsIjogIm9wcG8iLAogICAgICAgICAgICAiaXRlbSI6ICJ5OSIsCiAgICAgICAgICAgICJub2RlQ29kZSI6ICIwMDEwMDAiLAogICAgICAgICAgICAicHJvamVjdCI6ICJseWh4Y3giCiAgICAgICAgfSk7CiAgICAgICAgbGV0IGh0bWwgPSBwb3N0KGlucHV0LCB7aGVhZGVyczogcnVsZS5oZWFkZXJzLCBib2R5OiBkYXRhfSk7CiAgICAgICAgbG9nKGh0bWwpCiAgICAgICAgbGV0IGxpc3QgPSBKU09OLnBhcnNlKGh0bWwpLnBiLmRhdGFMaXN0OwogICAgICAgIGxpc3QuZm9yRWFjaChpdCA9PiB7CiAgICAgICAgICAgIGxldCBpZCA9ICdodHRwczovL3poZXNoaXlpdGFpb2ppYWxpYW5qaWUuY29tPycgKyBpdC5jb2RlCiAgICAgICAgICAgIGQucHVzaCh7CiAgICAgICAgICAgICAgICB1cmw6IGlkLAogICAgICAgICAgICAgICAgdGl0bGU6IGl0Lm5hbWUsCiAgICAgICAgICAgICAgICBpbWc6ICdodHRwczovL2ltZzAuYmFpZHUuY29tL2l0L3U9NDA3OTQwNTg0OCwzODA2NTA3ODEwJmZtPTI1MyZmbXQ9YXV0byZhcHA9MTM4JmY9SlBFRz93PTUwMCZoPTc1MCcsCiAgICAgICAgICAgICAgICBkZXNjOiBpdC5kZXMsCiAgICAgICAgICAgIH0pCiAgICAgICAgfSkKICAgICAgICBzZXRSZXN1bHQoZCk7CiAgICB9KSwKICAgIOS6jOe6pzogJGpzLnRvU3RyaW5nKCgpID0+IHsKICAgICAgICBsZXQgdXJscyA9IFtdOwogICAgICAgIGxldCBjb2RlID0gaW5wdXQuc3BsaXQoJz8nKVsxXTsKICAgICAgICBsZXQgZGF0YSA9IEpTT04uc3RyaW5naWZ5KHsKICAgICAgICAgICAgImFsYnVtQ29kZSI6IGNvZGUsCiAgICAgICAgICAgICJjdXIiOiAxLAogICAgICAgICAgICAicGFnZVNpemUiOiAxMDAsCiAgICAgICAgICAgICJ1c2VySWQiOiAiZDRiMjk1OTViNmZlNzY0ZTA5MDc4YTBkYWQ3MzUyZmYiLAogICAgICAgICAgICAiY2hhbm5lbCI6ICJvcHBvIiwKICAgICAgICAgICAgIml0ZW0iOiAieTkiLAogICAgICAgICAgICAibm9kZUNvZGUiOiAiMDAxMDAwIiwKICAgICAgICAgICAgInByb2plY3QiOiAibHloeGN4IgogICAgICAgIH0pOwogICAgICAgIGxldCBodG1sID0gcG9zdCgnaHR0cHM6Ly9mbHkuZGFvcmFuLnR2L0FQSV9ST1AvYWxidW0vcmVzL2xpc3QnLCB7aGVhZGVyczogcnVsZS5oZWFkZXJzLCBib2R5OiBkYXRhfSk7CiAgICAgICAgbG9nKGh0bWwpCiAgICAgICAgbGV0IGxpc3QgPSBKU09OLnBhcnNlKGh0bWwpLnBiLmRhdGFMaXN0OwogICAgICAgIGxpc3QuZm9yRWFjaChpdCA9PiB7CiAgICAgICAgICAgIHVybHMucHVzaChpdC5uYW1lICsgJyQnICsgJ2h0dHBzOi8vemhlc2hpeWl0YWlvamlhbGlhbmppZS5jb20/JyArIGl0LmNvZGUpOwogICAgICAgIH0pCiAgICAgICAgVk9EID0gewogICAgICAgICAgICB2b2RfcGljOiAnaHR0cHM6Ly9pbWcwLmJhaWR1LmNvbS9pdC91PTQwNzk0MDU4NDgsMzgwNjUwNzgxMCZmbT0yNTMmZm10PWF1dG8mYXBwPTEzOCZmPUpQRUc/dz01MDAmaD03NTAnLAogICAgICAgICAgICB2b2RfcGxheV9mcm9tOiAn55CD55CD5ZWmJywKICAgICAgICAgICAgdm9kX3BsYXlfdXJsOiB1cmxzLmpvaW4oJyMnKQogICAgICAgIH07CiAgICB9KSwKCiAgICDmkJzntKI6ICRqcy50b1N0cmluZygoKSA9PiB7CiAgICAgICAgbGV0IGQgPSBbXQogICAgICAgIGxldCBwZyA9IE1ZX1BBR0UKICAgICAgICBsZXQga2V5ID0gS0VZCiAgICAgICAgbGV0IGRhdGEgPSBKU09OLnN0cmluZ2lmeSh7CiAgICAgICAgICAgICJjdXIiOiAxLAogICAgICAgICAgICAiZnJlZSI6IDAsCiAgICAgICAgICAgICJrZXl3b3JkIjoga2V5LAogICAgICAgICAgICAibm9kZUNvZGUiOiAiMDAxMDAwIiwKICAgICAgICAgICAgIm9yZGVyYnkiOiAiaG90IiwKICAgICAgICAgICAgInBhZ2VTaXplIjogMjAwLAogICAgICAgICAgICAicHJvamVjdCI6ICJseWh4Y3giLAogICAgICAgICAgICAicHgiOiAyLAogICAgICAgICAgICAic2VjdCI6IFtdLAogICAgICAgICAgICAidXNlcklkIjogImQ0YjI5NTk1YjZmZTc2NGUwOTA3OGEwZGFkNzM1MmZmIgogICAgICAgIH0pOwogICAgICAgIGxldCBodG1sID0gcG9zdChpbnB1dCwge2hlYWRlcnM6IHJ1bGUuaGVhZGVycywgYm9keTogZGF0YX0pOwogICAgICAgIGxvZyhodG1sKQogICAgICAgIGxldCBsaXN0ID0gSlNPTi5wYXJzZShodG1sKS5wYi5kYXRhTGlzdDsKICAgICAgICBsaXN0LmZvckVhY2goaXQgPT4gewogICAgICAgICAgICBsZXQgaWQgPSAnaHR0cHM6Ly96aGVzaGl5aXRhaW9qaWFsaWFuamllLmNvbT8nICsgaXQuY29kZQogICAgICAgICAgICBkLnB1c2goewogICAgICAgICAgICAgICAgdXJsOiBpZCwKICAgICAgICAgICAgICAgIHRpdGxlOiBpdC5uYW1lLAogICAgICAgICAgICAgICAgaW1nOiAnaHR0cHM6Ly9pbWcwLmJhaWR1LmNvbS9pdC91PTQwNzk0MDU4NDgsMzgwNjUwNzgxMCZmbT0yNTMmZm10PWF1dG8mYXBwPTEzOCZmPUpQRUc/dz01MDAmaD03NTAnLAogICAgICAgICAgICAgICAgZGVzYzogaXQuZGVzLAogICAgICAgICAgICB9KQogICAgICAgIH0pCiAgICAgICAgc2V0UmVzdWx0KGQpOwogICAgfSksCiAgICBkb3VibGU6IGZhbHNlLCAvLyDmjqjojZDlhoXlrrnmmK/lkKblj4zlsYLlrpoKICAgIHNlYXJjaFVybDogJy9BUElfUk9QL3NlYXJjaC9hbGJ1bS9saXN0JywKfQ==
+var rule = {
+    title: '一曲肝肠断',
+    host: 'https://fly.daoran.tv',
+    url: '/API_ROP/search/album/screen',
+    headers: {
+        'User-Agent': 'okhttp/3.12.10',
+        'Connection': 'Keep-Alive',
+        'Accept-Encoding': 'gzip',
+        'md5': 'SkvyrWqK9QHTdCT12Rhxunjx+WwMTe9y4KwgeASFDhbYabRSPskR0Q==',
+        'Content-Type': 'application/json; charset=UTF-8',
+        'Cookie': 'JSESSIONID=41ABA76E6D45A44D6419B3F26A0851ED'
+    },
+    class_name: '豫剧&黄梅戏&越剧&京剧&评剧&曲剧&坠子&秦腔&河北梆子&潮剧&粤剧&沪剧&二夹弦&昆曲&河南琴书&淮剧&单弦&西秦戏&婺剧&上党梆子&白字戏&河南大鼓书&越调&滇剧&太康道情&民族音乐&扬剧&其他&曲艺晚会&二人台&北路梆子&彩调&乐腔&老年大学&吕剧&天津时调&戏曲&柳琴戏&京韵大鼓&皮影戏&湘剧&四平调&琼剧&锡剧&评书&绍剧&京东大鼓&庐剧&话剧&西河大鼓&莆仙戏&花鼓戏&川剧&相声&宛梆&晋中秧歌&采茶戏&蒲剧&汉剧&闽剧&晋剧&北京琴书&山歌剧&吉剧&正字戏&赣剧&麦田乡韾&楚剧&大平调&保定老调',
+    class_url: 'yuju&hmx&yueju&jingju&pingju&quju&hnzz&qinq&hbbz&chaoju&gddx&huju&ejx&kunqu&hnqs&huaiju&danxian&xqx&wuju&SDBZ&bzx&hndgs&yued&dianju&tkdq&MZYY&yangju&other&else&ERT&blbz&caidiao&lq&WK&lvjv&tjsd&xq&liuqx&jydg&pyx&xj&spd&qiongju&xiju&pingshu&shaojv&jddg&luju&huaju&xhdg&huagx&chuanju&xiang&wb&jzyg&caichaxi&pujv&hj&minju&jinju&bjqs&sgj&jiju&zzx&gj&chuju&dpd&bdld',
+    play_parse: true,
+    lazy: $js.toString(() => {
+        let code = input.split('?')[1];
+        let data = JSON.stringify({
+            "item": "o3",
+            "mask": 0,
+            "nodeCode": "001000",
+            "project": "lyhxcx",
+            "px": 2,
+            "resCode": code,
+            "userId": "d4b29595b6fe764e09078a0dad7352ff"
+        });
+        let html = post('https://fly.daoran.tv/API_ROP/play/get/playurl', {headers: rule.headers, body: data});
+        log(html)
+        let url = JSON.parse(html).playUrls.hd;
+        input = {url: url, parse: 0}
+
+    }),
+    一级: $js.toString(() => {
+        let d = [];
+        let tid = MY_CATE
+        let pg = MY_PAGE
+        let data = JSON.stringify({
+            "cur": pg,
+            "free": 0,//0 全部，1 免费，2，会员
+            "orderby": "hot",
+            "pageSize": 3000,
+            "resType": 1,
+            "sect": tid,
+            "tagId": 0,
+            "userId": "d4b29595b6fe764e09078a0dad7352ff",
+            "channel": "oppo",
+            "item": "y9",
+            "nodeCode": "001000",
+            "project": "lyhxcx"
+        });
+        let html = post(input, {headers: rule.headers, body: data});
+        log(html)
+        let list = JSON.parse(html).pb.dataList;
+        list.forEach(it => {
+            let id = 'https://zheshiyitaiojialianjie.com?' + it.code
+            d.push({
+                url: id,
+                title: it.name,
+                img: 'https://img0.baidu.com/it/u=4079405848,3806507810&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750',
+                desc: it.des,
+            })
+        })
+        setResult(d);
+    }),
+    二级: $js.toString(() => {
+        let urls = [];
+        let code = input.split('?')[1];
+        let data = JSON.stringify({
+            "albumCode": code,
+            "cur": 1,
+            "pageSize": 100,
+            "userId": "d4b29595b6fe764e09078a0dad7352ff",
+            "channel": "oppo",
+            "item": "y9",
+            "nodeCode": "001000",
+            "project": "lyhxcx"
+        });
+        let html = post('https://fly.daoran.tv/API_ROP/album/res/list', {headers: rule.headers, body: data});
+        log(html)
+        let list = JSON.parse(html).pb.dataList;
+        list.forEach(it => {
+            urls.push(it.name + '$' + 'https://zheshiyitaiojialianjie.com?' + it.code);
+        })
+        VOD = {
+            vod_pic: 'https://img0.baidu.com/it/u=4079405848,3806507810&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750',
+            vod_play_from: '球球啦',
+            vod_play_url: urls.join('#')
+        };
+    }),
+
+    搜索: $js.toString(() => {
+        let d = []
+        let pg = MY_PAGE
+        let key = KEY
+        let data = JSON.stringify({
+            "cur": 1,
+            "free": 0,
+            "keyword": key,
+            "nodeCode": "001000",
+            "orderby": "hot",
+            "pageSize": 200,
+            "project": "lyhxcx",
+            "px": 2,
+            "sect": [],
+            "userId": "d4b29595b6fe764e09078a0dad7352ff"
+        });
+        let html = post(input, {headers: rule.headers, body: data});
+        log(html)
+        let list = JSON.parse(html).pb.dataList;
+        list.forEach(it => {
+            let id = 'https://zheshiyitaiojialianjie.com?' + it.code
+            d.push({
+                url: id,
+                title: it.name,
+                img: 'https://img0.baidu.com/it/u=4079405848,3806507810&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750',
+                desc: it.des,
+            })
+        })
+        setResult(d);
+    }),
+    double: false, // 推荐内容是否双层定
+    searchUrl: '/API_ROP/search/album/list',
+}

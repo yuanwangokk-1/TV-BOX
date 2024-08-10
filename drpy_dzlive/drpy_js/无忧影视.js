@@ -1,1 +1,12 @@
-T2JqZWN0LmFzc2lnbihtdWJhbi5teG9uZTUu5LqM57qnLCB7CiAgICB0YWJfdGV4dDogJ2Rpdi0tc21hbGwmJlRleHQnLAp9KTsKdmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICdteG9uZTUnLAogICAgdGl0bGU6ICfml6Dlv6flvbHop4YnLAogICAgaG9zdDogJ2h0dHA6Ly93d3cud3l5cy5jZi8nLAogICAgdXJsOiAnL2luZGV4LnBocC92b2Qvc2hvdy9pZC9meWNsYXNzL3BhZ2UvZnlwYWdlLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnL2luZGV4LnBocC92b2Qvc2VhcmNoL3BhZ2UvZnlwYWdlL3dkLyoqLmh0bWwnLAogICAgY2F0ZV9leGNsdWRlOiAn57qq5b2V54mHfOebtOaSrScsCiAgICDmkJzntKI6ICcubW9kdWxlLWl0ZW1zIC5tb2R1bGUtc2VhcmNoLWl0ZW07YSYmdGl0bGU7aW1nJiZkYXRhLXNyYzsudmlkZW8tc2VyaWFsJiZUZXh0O2gzJiZhJiZocmVmJywKfQ==
+Object.assign(muban.mxone5.二级, {
+    tab_text: 'div--small&&Text',
+});
+var rule = {
+    模板: 'mxone5',
+    title: '无忧影视',
+    host: 'http://www.wyys.cf/',
+    url: '/index.php/vod/show/id/fyclass/page/fypage.html',
+    searchUrl: '/index.php/vod/search/page/fypage/wd/**.html',
+    cate_exclude: '纪录片|直播',
+    搜索: '.module-items .module-search-item;a&&title;img&&data-src;.video-serial&&Text;h3&&a&&href',
+}
