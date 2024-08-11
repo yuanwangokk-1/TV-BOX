@@ -20,7 +20,6 @@
 			"name": "🔞MissAV",
 			"type": 3,
 			"api": "csp_Miss",
-			"jar": "./pg.jar",
 			"searchable": 1,
 			"style": {
 				"type": "rect",
@@ -32,7 +31,6 @@
 			"name": "🔞🧲JavDb",
 			"type": 3,
 			"api": "csp_JavDb",
-			"jar": "./pg.jar",
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 1,
