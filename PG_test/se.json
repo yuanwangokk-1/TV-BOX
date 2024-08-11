@@ -1,5 +1,5 @@
 {
-  "spider": "./pg.jar",
+  "spider": "https://s3.tebi.io/mhq/tv/pg.jar",
   "wallpaper": "https://invalid.gq/IS8nrIwAOp7v1A",
   "rules": [
     {
