@@ -3,7 +3,7 @@ var rule = {
     host: 'https://www.jkv.app',
     url: '/show/fyclass--------fypage---.html',
     searchUrl: '/search/**----------fypage---.html',
-    class_parse: '.nav_list&&li;a&&title;a&&href;.*/(.*?)\.html',
+    class_parse: '.nav_list&&li;a&&Text;a&&href;.*/(.*?)\.html',
     class_name: '短剧',
     class_url: '53',
     cate_exclude: '排名|明星|专题',

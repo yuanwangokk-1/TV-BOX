@@ -1,9 +1,9 @@
 // 搜索验证 -> drpy_ocr自动过搜索验证失败
 var rule = {
     title: '烧火影视[优]',
-     host:'https://saohuo.tv',
-    //host: 'http://shapp.us',
-    //hostJs: 'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"a:eq(2)&&href");print(src);HOST=src',
+    // host:'https://shdy3.com',
+    host: 'http://shapp.us',
+    hostJs: 'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"a:eq(2)&&href");print(src);HOST=src',
     // url:'/list/fyclass-fypage.html',
     url: '/list/fyfilter-fypage.html',
     filterable: 1,//是否启用分类筛选,

@@ -246,7 +246,7 @@
             //simplify logical grouping
             while (term !== (term = term.replace(/\(i(%i)*\)/g, 'i'))) ;
             if (!term.match(/^i(%i)*/)) {
-                throw new Error('Invalid expression: ' + src + " " + term);
+              throw new Error('Invalid expression: ' + src + " " + term);
             }
         });
         parsed3.src = parsed3.src.replace(VARIABLES, this.parseVar.bind(this));

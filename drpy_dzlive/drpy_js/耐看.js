@@ -1,52 +1,26 @@
-var rule = {
-  title: '耐看',
-  host: 'https://nkvod.com',
-  url: '/show/fyclass--------fypage---.html',
-  searchUrl: '/index.php/rss/index.xml?wd=**',
-  searchable: 2,
-  quickSearch: 0,
-  filterable: 0,
-  filter: '',
-  filter_url: '',
-  filter_def: {},
-  headers: {
+var rule={
+    title: '耐看',
+    host: 'https://nkvod.com',
+    url: '/show/fyclass--------fypage---.html',
+    searchUrl: '/nk/-------------.html?wd=**',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 0,
+    headers: {
     'User-Agent': 'MOBILE_UA',
-  },
-  timeout: 5000,
-  class_parse: '.flex.around&&li;a&&Text;a&&href;.*/(.*?).html',
-  cate_exclude: '',
-  play_parse: true,
-  lazy: "js:\n  input = { parse: 1, url: input, js: '' };",
-  double: true,
-  推荐: '*',
-  一级: 'body&&.public-list-box;a&&title;img&&data-src;.public-list-subtitle&&Text;a&&href',
-  二级: {
-    title: 'h3&&Text;.hl-ma0&&Text',
-    img: '.mask-1&&data-src',
-    desc: '.detail-info .slide-info:eq(1)--strong&&Text;.deployment.none.cor5&&span&&Text;.deployment.none.cor5&&span:eq(2)&&Text;.detail-info .slide-info:eq(3)--strong&&Text;.detail-info .slide-info:eq(2)--strong&&Text',
-    content: '#height_limit&&Text',
-    tabs: '.anthology-tab a',
-    lists: '.anthology-list-play:eq(#id)&&li',
-    tab_text: 'body&&Text',
-    list_text: 'body&&Text',
-    list_url: 'a&&href',
-  },
-   搜索: $js.toString(() => {
-        let html = request(input);
-        let items = pdfa(html, 'rss&&item');
-        // log(items);
-        let d = [];
-        items.forEach(it => {
-            it = it.replace(/title|link|author|pubdate|description/g, 'p');
-            let url = pdfh(it, 'p:eq(1)&&Text');
-            d.push({
-                title: pdfh(it, 'p&&Text'),
-                url: url,
-                desc: pdfh(it, 'p:eq(3)&&Text'),
-                content: pdfh(it, 'p:eq(2)&&Text'),
-                pic_url: "",
-            });
-        });
-        setResult(d);
-    }),
-}
+    },
+    class_parse: '.navbar&&ul&&li;a&&Text;a&&href;/(\\d+).html',
+    play_parse: false,
+    lazy: '',
+    limit: 6,
+    推荐: '.module-items;a;a&&title;img&&data-original;.module-item-note&&Text;a&&href',
+    double: true,
+    一级: 'a.module-poster-item.module-item;a&&title;img&&data-original;.module-item-note&&Text;a&&href',
+    二级: {
+    "title": "h1&&Text;.module-info-tag&&Text",
+    "img": ".lazyload&&data-original",
+    "desc": ".module-info-item:eq(1)&&Text;.module-info-item:eq(2)&&Text;.module-info-item:eq(3)&&Text",
+    "content": ".module-info-introduction&&Text",
+    "tabs": ".hisSwiper&&span",
+    "lists": ".his-tab-list:eq(#id) a"},
+    搜索: 'body .module-item;.module-card-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href;.module-info-item-content&&Text',}

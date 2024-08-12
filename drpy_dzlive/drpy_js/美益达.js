@@ -1,6 +1,6 @@
 var rule = {
     title: "美益达",
-    host: "https://myd04.com",
+    host: "https://myd02.com",
     url: "/vodshow/fyclassfyfilter.html",
     searchUrl: "/vodsearch/**----------fypage---.html",
     searchable: 2,

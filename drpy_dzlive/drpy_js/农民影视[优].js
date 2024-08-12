@@ -31,7 +31,7 @@ var rule = {
         }
     }),
     limit: 6,
-    推荐: '.globalPicList li:has(img);a&&title;*;*;*',
+    推荐: '.globalPicList .resize_list;*;img&&data-src;*;*',
     一级: '.globalPicList li;.sTit&&Text;img&&src;.sBottom--em&&Text;a&&href',
     二级: {
         "title": ".title&&Text;.type-title&&Text",

@@ -1,40 +1,39 @@
 var rule = {
-	title:'4KHDR[磁]',
-	host:'https://www.4khdr.cn',
-        homeUrl: "/forum.php?mod=forumdisplay&fid=2&page=1",
-	url: '/forum.php?mod=forumdisplay&fid=2&filter=typeid&typeid=fyclass&page=fypage',
-	filter_url:'{{fl.class}}',
-	filter:{
-	},
-	searchUrl: '/search.php#searchsubmit=yes&srchtxt=**;post',
-	searchable:2,
-	quickSearch:1,
-	filterable:0,
-	headers:{
-		'User-Agent': 'PC_UA',
-         	'Cookie':'http://127.0.0.1:9978/file:///tvbox/JS/lib/4khdr.txt',
-	},
-	timeout:5000,
-	class_name: "4K电影&4K美剧&4K华语&4K动画&4K纪录片&4K日韩印&蓝光电影&蓝光美剧&蓝光华语&蓝光动画&蓝光日韩印",
-	class_url:"3&8&15&6&11&4&29&31&33&32&34",
-	play_parse:true,
-	play_json:[{
-		re:'*',
-		json:{
-			parse:0,
-			jx:0
-		}
-	}],
-	lazy:'',
-	limit:6,
-	推荐:'ul#waterfall li;a&&title;img&&src;div.auth.cl&&Text;a&&href',
-	一级:'ul#waterfall li;a&&title;img&&src;div.auth.cl&&Text;a&&href',
-	二级:{
-		title:"#thead_subject&&Text",
-		img:"img.zoom&&src",
-		desc:'td[id^="postmessage_"] font&&Text',
-		content:'td[id^="postmessage_"] font&&Text',
-		tabs:`js:
+    title: '4KHDR[磁]',
+    host: 'https://www.4khdr.cn',
+    homeUrl: "/forum.php?mod=forumdisplay&fid=2&page=1",
+    url: '/forum.php?mod=forumdisplay&fid=2&filter=typeid&typeid=fyclass&page=fypage',
+    filter_url: '{{fl.class}}',
+    filter: {},
+    searchUrl: '/search.php#searchsubmit=yes&srchtxt=**;post',
+    searchable: 2,
+    quickSearch: 1,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'PC_UA',
+        'Cookie': 'http://127.0.0.1:9978/file:///tvbox/JS/lib/4khdr.txt',
+    },
+    timeout: 5000,
+    class_name: "4K电影&4K美剧&4K华语&4K动画&4K纪录片&4K日韩印&蓝光电影&蓝光美剧&蓝光华语&蓝光动画&蓝光日韩印",
+    class_url: "3&8&15&6&11&4&29&31&33&32&34",
+    play_parse: true,
+    play_json: [{
+        re: '*',
+        json: {
+            parse: 0,
+            jx: 0
+        }
+    }],
+    lazy: '',
+    limit: 6,
+    推荐: 'ul#waterfall li;a&&title;img&&src;div.auth.cl&&Text;a&&href',
+    一级: 'ul#waterfall li;a&&title;img&&src;div.auth.cl&&Text;a&&href',
+    二级: {
+        title: "#thead_subject&&Text",
+        img: "img.zoom&&src",
+        desc: 'td[id^="postmessage_"] font&&Text',
+        content: 'td[id^="postmessage_"] font&&Text',
+        tabs: `js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 TABS=[]
 let d = pdfa(html, 'div.pcb table.t_table a');
@@ -76,7 +75,7 @@ tabsq.forEach(function(it){
 });
 log('4khdr TABS >>>>>>>>>>>>>>>>>>' + TABS);
 `,
-		lists:`js:
+        lists: `js:
 log(TABS);
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 LISTS = [];
@@ -138,8 +137,8 @@ listq.forEach(function(it){
 });
 `,
 
-	},
-	搜索:`js:
+    },
+    搜索: `js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 if (rule_fetch_params.headers.Cookie.startsWith("http")){
 	rule_fetch_params.headers.Cookie=fetch(rule_fetch_params.headers.Cookie);

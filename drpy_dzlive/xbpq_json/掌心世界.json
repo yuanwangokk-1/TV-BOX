@@ -1,0 +1,7 @@
+{
+   "key": "掌心视界",
+   "name": "掌心视界",
+   "type": 3,
+   "api": "csp_XBPQ",
+   "ext": "分类:电影$1#电视剧$2#动漫$4#综艺$3,分类url:https://www.zhangxindy.com/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/lang/{lang}/page/{catePg}/year/{year}.html;;a,线路二次截取:col-flex wrap&&</ul>,简介:道长天下第一,线路数组:<a&&/a>,播放数组:id=\"player-sidebar\">&&</ul>,播放列表:<a&&/a>,多线二次截取:col-flex wrap&&</ul>,多线数组: <li>&&</li>,多线链接:href=\"&&\",链接:href=\"&&\"[替换:/detail/>>/play/#.html>>/sid/1/nid/1.html]"
+}
