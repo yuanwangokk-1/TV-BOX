@@ -6,7 +6,7 @@
             "name": "🔞绝美视频",
             "type": 3,
             "api": "csp_XBPQ",
-            "jar": ". / lib / XBPQ.jar",
+            "jar": "./lib/XBPQ.jar",
             "style": {
                 "type": "rect",
                 "ratio": 1.5
