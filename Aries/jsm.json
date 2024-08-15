@@ -50,7 +50,6 @@
                 "搜索url":"https://www.av01.tv/tw/search/videos?search_query={wd}&page={pg}",
                 "链接": "href=\"&&\"",
                 "图片": "data-src=\"&&\"",
-                "页面代理":"127.0.0.1:10172",
                 "分类url": "https://www.av01.tv/tw/{cateId}?page={catePg}",
                 "分类": "BD有码$videos/bd-censored#BD无码$videos/bd-uncensored#有码$videos/censored#无码$videos/uncensored/#FC2$videos/bd"
             }
