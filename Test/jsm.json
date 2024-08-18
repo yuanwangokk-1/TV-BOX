@@ -6,6 +6,7 @@
             "name": "2千动漫(drpy_t3)",
             "type": 3,
             "api": "./drpy_libs/drpy2.min.js",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
