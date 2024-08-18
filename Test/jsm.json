@@ -2,6 +2,24 @@
     "spider": "./pg.jar",
     "sites": [
         {
+            "key": " AV影院",
+            "name": " AV影院",
+            "type": 3,
+            "jar": "./lib/XBPQ.jar",
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "图片": "data-src=\"&&\"",
+                "标题": "title=\"&&\"",
+                "链接": "href=\"&&\"",
+                "主页url": "https://wyaslcwgroup.cfd/",
+                "分类": "国产视频$1#主播$2#黑料$3#中文$6#国产传媒$7#制服$12#抖音$15#三级$17#AV解说$18#日本有码$8#日本无码$9#强奸乱轮$11#动漫$13#明星换脸$14#女优明星$16",
+                "分类url": "https://wyaslcwgroup.cfd/index.php/vod/type/id/{cateId}/page/{catePg}.html"
+            }
+        },
+        {
             "key": "hipy_js_2千动漫",
             "name": "2千动漫(drpy_t3)",
             "type": 3,
