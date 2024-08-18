@@ -2,6 +2,17 @@
     "spider": "./pg.jar",
     "sites": [
         {
+            "key": "hipy_js_2千动漫",
+            "name": "2千动漫(drpy_t3)",
+            "type": 3,
+            "api": "./drpy_libs/drpy2.min.js",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "order_num": 0,
+            "ext": "./drpy_js/2千动漫.js"
+        },
+        {
             "key": "av01",
             "name": "🔞AV01",
             "type": 3,
