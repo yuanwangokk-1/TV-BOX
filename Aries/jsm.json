@@ -86,25 +86,6 @@
             }
         },
         {
-            "key": "sexBJcam",
-            "name": "🔞🎥sexBJcam",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "jar": "./lib/XBPQ.jar",
-            "timeout": 120,
-            "style": {
-                "type": "rect",
-                "ratio": 1.5
-            },
-            "ext": {
-                "数组": "<article&&</article>",
-                "直接播放": "1",
-                "图片": "data-src=\"&&\"",
-                "分类url": "https://sexbjcam.com/category/{cateId}/page/{catePg}/?filter=latest",
-                "分类": "chinese-gril$chinese-gril#korean-bj$korean-bj#chaturbate$chaturbate"
-            }
-        },
-        {
             "key": "MissAV",
             "name": "🔞MissAV",
             "type": 3,
