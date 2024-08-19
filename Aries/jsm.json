@@ -2,6 +2,16 @@
     "spider": "./pg.jar",
     "sites": [
         {
+            "key": "豆瓣",
+            "name": "豆瓣",
+            "type": 3,
+            "api": "csp_Douban",
+            "searchable": 0,
+            "changeable": 1,
+            "indexs": 1,
+            "ext": "./lib/douban.json"
+        },
+        {
             "key": "绝美视频",
             "name": "🔞绝美视频",
             "type": 3,
@@ -108,14 +118,17 @@
             "ext": "./lib/tokenm.json$$$null$$$1"
         },
         {
-            "key": "豆瓣",
-            "name": "豆瓣",
+            "key": "Supjav",
+            "name": "🔞Supjav",
             "type": 3,
-            "api": "csp_Douban",
-            "searchable": 0,
-            "changeable": 1,
-            "indexs": 1,
-            "ext": "./lib/douban.json"
+            "api": "csp_Supjav",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "style": {
+                "type": "rect",
+                "ratio": 1.597
+            }
         },
         {
             "key": "Youtube",
@@ -442,6 +455,39 @@
             "ext": "./lib/tokenm.json$$$https://duopan.fun/$$$noproxy$$$1$$$./lib/wogg.json$$$LABI"
         },
         {
+            "key": "Mogg",
+            "name": "木偶哥哥|网盘",
+            "type": 3,
+            "api": "csp_Wobg",
+            "quickSearch": 1,
+            "changeable": 1,
+            "filterable": 1,
+            "timeout": 60,
+            "ext": "./lib/tokenm.json$$$http://mogg.top/$$$noproxy$$$1$$$./lib/wogg.json$$$MOGG"
+        },
+        {
+            "key": "土豆",
+            "name": "土豆|网盘",
+            "type": 3,
+            "api": "csp_Wobg",
+            "searchable": 1,
+            "filterable": 0,
+            "changeable": 1,
+            "timeout": 60,
+            "ext": "./lib/tokenm.json$$$https://tudou.lvdoui.top/$$$proxy$$$1$$$./lib/wogg.json$$$TUDOU"
+        },
+        {
+            "key": "小米网盘",
+            "name": "小米|网盘",
+            "type": 3,
+            "api": "csp_Wobg",
+            "quickSearch": 1,
+            "changeable": 1,
+            "filterable": 1,
+            "timeout": 60,
+            "ext": "./lib/tokenm.json$$$https://mihdr.top/$$$noproxy$$$1$$$./lib/wogg.json$$$XIAOMI"
+        },
+        {
             "key": "Gaoqing",
             "name": "中国高清网|网盘",
             "type": 3,
@@ -559,6 +605,7 @@
             "filterable": 1,
             "searchable": 1,
             "quickSearch": 1,
+            "searchable": 1,
             "timeout": 60,
             "ext": "./lib/tokenm.json$$$https://www.yjys01.com/$$$proxy$$$1"
         },
@@ -762,15 +809,6 @@
             "ext": "./lib/tokenm.json$$$null$$$proxy$$$1"
         },
         {
-            "key": "NanGua",
-            "name": "南瓜|弹幕",
-            "type": 3,
-            "api": "csp_NanGua",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": "null$$$1"
-        },
-        {
             "key": "新6V",
             "name": "新6V|网盘",
             "type": 3,
@@ -779,6 +817,25 @@
             "changeable": 1,
             "timeout": 60,
             "ext": "./lib/tokenm.json$$$https://www.66ss.org$$$null$$$1"
+        },
+        {
+            "key": "賤賤",
+            "name": "荐片",
+            "type": 3,
+            "api": "csp_Jianpian",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": "./lib/jianpian.json$$$1",
+            "timeout": 60
+        },
+        {
+            "key": "NanGua",
+            "name": "南瓜|弹幕",
+            "type": 3,
+            "api": "csp_NanGua",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": "null$$$1"
         },
         {
             "key": "天天",
@@ -793,16 +850,6 @@
             "type": 3,
             "api": "csp_TTian",
             "ext": "http://app.kzjtv.com$$$null$$$1"
-        },
-        {
-            "key": "賤賤",
-            "name": "荐片",
-            "type": 3,
-            "api": "csp_Jianpian",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": "./lib/jianpian.json$$$1",
-            "timeout": 60
         },
         {
             "key": "黑木耳",
@@ -1564,108 +1611,7 @@
             ]
         }
     ],
-    "parses": [
-        {
-            "name": "聚合",
-            "type": 3,
-            "url": "Demo"
-        },
-        {
-            "name": "web",
-            "type": 3,
-            "url": "Web"
-        },
-        {
-            "name": "看看",
-            "type": 0,
-            "url": "https://jx.m3u8.pw/?url=",
-            "ext": {
-                "flag": [
-                    "qq",
-                    "腾讯",
-                    "qiyi",
-                    "爱奇艺",
-                    "奇艺",
-                    "youku",
-                    "优酷",
-                    "mgtv",
-                    "芒果",
-                    "imgo",
-                    "letv",
-                    "乐视",
-                    "pptv",
-                    "PPTV",
-                    "sohu",
-                    "bilibili",
-                    "哔哩哔哩",
-                    "哔哩"
-                ],
-                "header": {
-                    "User-Agent": "okhttp/4.1.0"
-                }
-            }
-        },
-        {
-            "name": "FreeOK",
-            "type": 0,
-            "url": "https://play.86516.tk/OKPlayer/?url=",
-            "ext": {
-                "flag": [
-                    "qq",
-                    "腾讯",
-                    "qiyi",
-                    "爱奇艺",
-                    "奇艺",
-                    "youku",
-                    "优酷",
-                    "mgtv",
-                    "芒果",
-                    "imgo",
-                    "letv",
-                    "乐视",
-                    "pptv",
-                    "PPTV",
-                    "sohu",
-                    "bilibili",
-                    "哔哩哔哩",
-                    "哔哩"
-                ],
-                "header": {
-                    "User-Agent": "okhttp/4.1.0"
-                }
-            }
-        },
-        {
-            "name": "free",
-            "type": 0,
-            "url": "https://h5.freejson.xyz/player/?url=",
-            "ext": {
-                "flag": [
-                    "qq",
-                    "腾讯",
-                    "qiyi",
-                    "爱奇艺",
-                    "奇艺",
-                    "youku",
-                    "优酷",
-                    "mgtv",
-                    "芒果",
-                    "imgo",
-                    "letv",
-                    "乐视",
-                    "pptv",
-                    "PPTV",
-                    "sohu",
-                    "bilibili",
-                    "哔哩哔哩",
-                    "哔哩"
-                ],
-                "header": {
-                    "User-Agent": "okhttp/4.1.0"
-                }
-            }
-        }
-    ],
+    "parses": [],
     "flags": [
         "youku",
         "qq",
