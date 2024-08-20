@@ -12,41 +12,128 @@
             "ext": "./lib/douban.json"
         },
         {
-            "key": "✨R撸巴✨",
-            "name": "✨R撸吧✨",
+            "key": "绝美视频",
+            "name": "🔞绝美视频",
             "type": 3,
             "api": "csp_XBPQ",
             "jar": "./lib/XBPQ.jar",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
+            "style": {
+                "type": "rect",
+                "ratio": 1.5
+            },
             "ext": {
-                "数组": "img-box cover-md\"&&<p class=\"sub-title\">",
-                "标题": ">&&</a></h6>",
-                "图片": "data-src=\"&&\"",
-                "副标题": "✨多看少撸✨",
-                "链接": "href=\"&&\"",
-                "分类url": "https://www.rluba-mod.sbs/index.php/vodtype/{cateId}-{catePg}.html;;z",
-                "分类": "卡通动漫$49#无码中文$34#强奸中文$35#巨乳中文$36#乱伦中文$37#制服中文$38#人妻中文$39#调教中文$40#出轨中文$41#中文字幕$59#欧美性爱$29#性爱音乐视频-PMV$93#人兽$30#人妖$31#MomsTeachSex$95#男同$32#女同$33#Fake Taxi$83#Barzzers$87#Wow Girls$117#FamilyStrokes$116#骑兵有码$27#步兵无码$28#制服师生$50#强奸乱伦$51#人妻熟女$53#三级剧情$55#丝袜美腿$56#亚洲情色$58#麻豆视频$161#91制片厂$162#天美传媒$163#蜜桃传媒$164#皇家华人$165#星空传媒$166#精东影业$167#大象传媒$168#91茄子$169#性视界传媒$170#兔子先生$171#杏吧原创$172#香蕉传媒$174#SA国际传媒$175#EDmosaic$176#PsychoPorn$177#糖心Vlog$178#葫芦影业$179#果冻传媒$180#国产精品$10#精品三级$11#主播大秀$12#抖阴视频$13#国模私拍$14#颜射瞬间$15#女神学生$16#美熟少妇$17#娇妻素人$18#空姐模特$19#国产乱伦$20#专题$26#自慰群交$21#野合车震$22#职场同事$23#国产名人$24#网曝门事件$25#偷拍自拍$57#北京天使$119"
+                "主页url": "https://www.juemei.fun/",
+                "分类url": "https://www.juemei.fun/type/{cateId}-{catePg}.html;;z",
+                "分类": "tsuki$1#jeehyeon$13#YeonHwa$2#KYUL$3#ChoiApple$4#클로이 요가 Chloe YOGA$5#jiyoung$12#임제리 IMJERRY LOOKBOOK$7#Ajin lookbook$8#엔픽컴퍼니 Official$9#Saki Vlog$10#HAATSSOl 햇쏠 LOOKBOOK VLOGER$11#yunji$14#GGotBBang TV$15#슬렌서아 Slenn Seoah$6"
             }
         },
         {
-            "key": "✨柠檬✨",
-            "name": "✨🔞柠檬✨",
+            "key": " AV影院",
+            "name": " AV影院",
             "type": 3,
-            "api": "csp_XBPQ",
             "jar": "./lib/XBPQ.jar",
+            "api": "csp_XBPQ",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
             "ext": {
-                "数组": "<a&&</a>",
-                "标题": "<p&&</p>",
-                "图片": "<img src=\"&&\"",
+                "图片": "data-src=\"&&\"",
+                "标题": "title=\"&&\"",
                 "链接": "href=\"&&\"",
-                "分类url": "https://www.lsshaofu.xyz/index.php/vod/type/id/{cateId}/page/{catePg}.html;;z",
-                "分类": "国产精品$1#日韩精选$2#国产传媒$3#国产自拍$27#网红网爆$5#成人动漫$21#巨乳美乳$22#熟女人妻$23#主播直播$24#强奸乱伦$25#古怪少女$26#经典三级$4"
+                "主页url": "https://wyaslcwgroup.cfd/",
+                "分类": "国产视频$1#国产主播$2#网爆黑料$3#中文字幕$6#国产传媒$7#制服诱惑$12#抖阴视频$15#三级伦理$17#AV解说$18#日本有码$8#日本无码$9#强奸乱伦$11#激情动漫$13#明星换脸$14#女优明星$16#VR视角$20#韩国主播$21#萝莉少女$22",
+                "分类url": "https://wyaslcwgroup.cfd/index.php/vod/type/id/{cateId}/page/{catePg}.html"
             }
+        },
+        {
+            "key": "2k动漫",
+            "name": "2k动漫",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/XBPQ.jar",
+            "ext": {
+                "请求头": "User-Agent$MOBILE_UA",
+                "编码": "UTF-8",
+                "简介": "小林子为您剧情介绍:+剧情介绍</h3></div></div>&&</div>",
+                "分类url": "https://www.2kdm.vip/search.php?page={catePg}&searchtype=5&tid={cateId}&year={year}",
+                "分类": "国产动漫$2#日本动漫$1#欧美动漫$3#动漫电影$4"
+            }
+        },
+        {
+            "key": "18AV",
+            "name": "🔞18AV┃直连",
+            "type": 3,
+            "api": "csp_Eighteen",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "style": {
+                "type": "rect",
+                "ratio": 1.485
+            }
+        },
+        {
+            "key": " AV影院",
+            "name": " AV影院",
+            "type": 3,
+            "jar": "./lib/XBPQ.jar",
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "图片": "data-src=\"&&\"",
+                "标题": "title=\"&&\"",
+                "链接": "href=\"&&\"",
+                "主页url": "https://wyaslcwgroup.cfd/",
+                "分类": "国产视频$1#主播$2#黑料$3#中文$6#国产传媒$7#制服$12#抖音$15#三级$17#AV解说$18#日本有码$8#日本无码$9#强奸乱轮$11#动漫$13#明星换脸$14#女优明星$16",
+                "分类url": "https://wyaslcwgroup.cfd/index.php/vod/type/id/{cateId}/page/{catePg}.html"
+            }
+        },
+        {
+            "key": "av01",
+            "name": "💗┃💋AV01┃💠",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/XBPQ.jar",
+            "playerType": 2,
+            "style": {
+                "type": "rect",
+                "ratio": 1.77
+            },
+            "ext": {
+                "数组": "class=\"col-sm-6 col-md-4&&class=\"duration&&</div>",
+                "直接播放": "1",
+                "请求头": "手机",
+                "主页url": "https://www.av01.tv/tw",
+                "搜索url": "https://www.av01.tv/tw/search/videos?search_query={wd}&page={pg}",
+                "链接": "href=\"&&\"",
+                "图片": "data-src=\"&&\"",
+                "分类url": "https://www.av01.tv/tw/{cateId}?page={catePg}",
+                "分类": "BD有码$videos/bd-censored#BD无码$videos/bd-uncensored#有码$videos/censored#无码$videos/uncensored/#FC2$videos/bd"
+            }
+        },
+        {
+            "key": "MissAV",
+            "name": "🔞MissAV",
+            "type": 3,
+            "api": "csp_Miss",
+            "searchable": 1,
+            "style": {
+                "type": "rect",
+                "ratio": 1.65
+            }
+        },
+        {
+            "key": "csp_JavDb",
+            "name": "🔞🧲JavDb",
+            "type": 3,
+            "api": "csp_JavDb",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 0,
+            "ext": "./lib/tokenm.json$$$null$$$1"
         },
         {
             "key": "Supjav",
