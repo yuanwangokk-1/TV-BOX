@@ -28,6 +28,24 @@
             }
         },
         {
+            "key": " AV影院",
+            "name": " AV影院",
+            "type": 3,
+            "jar": "./lib/XBPQ.jar",
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "图片": "data-src=\"&&\"",
+                "标题": "title=\"&&\"",
+                "链接": "href=\"&&\"",
+                "主页url": "https://wyaslcwgroup.cfd/",
+                "分类": "国产视频$1#国产主播$2#网爆黑料$3#中文字幕$6#国产传媒$7#制服诱惑$12#抖阴视频$15#三级伦理$17#AV解说$18#日本有码$8#日本无码$9#强奸乱伦$11#激情动漫$13#明星换脸$14#女优明星$16#VR视角$20#韩国主播$21#萝莉少女$22",
+                "分类url": "https://wyaslcwgroup.cfd/index.php/vod/type/id/{cateId}/page/{catePg}.html"
+            }
+        },
+        {
             "key": "2k动漫",
             "name": "2k动漫",
             "type": 3,
@@ -605,7 +623,6 @@
             "filterable": 1,
             "searchable": 1,
             "quickSearch": 1,
-            "searchable": 1,
             "timeout": 60,
             "ext": "./lib/tokenm.json$$$https://www.yjys01.com/$$$proxy$$$1"
         },
