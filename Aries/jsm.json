@@ -5521,6 +5521,7 @@
                 "type": "rect",
                 "ratio": 1.5
             },
+			"proxy": "127.0.0.1:10172",
             "ext": {
                 "主页url": "https://nfsf8kj.nfsf-a2.buzz/go",
                 "搜索url": "https://nfsf8kj.nfsf-a2.buzz/go/index.php/vod/search.html?wd={wd}",
@@ -5541,6 +5542,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
+			"proxy": "127.0.0.1:10172",
             "ext": {
                 "二次截取": "<ul class=\"img-list-data&&</ul",
                 "主页url": "https://nfsf8kj.nfsf-a2.buzz/go",
@@ -5581,7 +5583,8 @@
                 "分类url": "https://www.2kdm.vip/search.php?page={catePg}&searchtype=5&tid={cateId}&year={year}",
                 "分类": "国产动漫$2#日本动漫$1#欧美动漫$3#动漫电影$4"
             }
-        }, {
+        }, 
+		{
             "key": "py_liushoushaofu",
             "name": "🤪 留守少妇(T4_py)",
             "type": 4,
@@ -5589,11 +5592,13 @@
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 0,
+			"proxy": "127.0.0.1:10172",
             "style": {
                 "type": "rect",
                 "ratio": 1.33
             }
-        }, {
+        }, 
+		{
             "key": "高清无水印",
             "name": "高清无水印",
             "type": 3,
@@ -5621,6 +5626,7 @@
                 "type": "rect",
                 "ratio": 1.5
             },
+			"proxy": "127.0.0.1:10172",
             "ext": {
                 "主页url": "https://www.juemei.fun/",
                 "分类url": "https://www.juemei.fun/type/{cateId}-{catePg}.html;;z",
@@ -5635,6 +5641,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
+			"proxy": "127.0.0.1:10172",
             "ext": {
                 "图片": "data-src=\"&&\"",
                 "标题": "title=\"&&\"",
@@ -5651,6 +5658,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
+			"proxy": "127.0.0.1:10172",
             "style": {
                 "type": "rect",
                 "ratio": 1.485
@@ -5664,6 +5672,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
+			"proxy": "127.0.0.1:10172",
             "ext": {
                 "图片": "data-src=\"&&\"",
                 "标题": "title=\"&&\"",
@@ -5683,6 +5692,7 @@
                 "type": "rect",
                 "ratio": 1.77
             },
+			"proxy": "127.0.0.1:10172",
             "ext": {
                 "数组": "class=\"col-sm-6 col-md-4&&class=\"duration&&</div>",
                 "直接播放": "1",
@@ -5700,6 +5710,7 @@
             "type": 3,
             "api": "csp_Miss",
             "searchable": 1,
+			"proxy": "127.0.0.1:10172",
             "style": {
                 "type": "rect",
                 "ratio": 1.65
@@ -5713,6 +5724,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 0,
+			"proxy": "127.0.0.1:10172",
             "ext": "./lib/tokenm.json$$$null$$$1"
         }, {
             "key": "Supjav",
@@ -5722,6 +5734,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
+			"proxy": "127.0.0.1:10172",
             "style": {
                 "type": "rect",
                 "ratio": 1.597
@@ -5741,7 +5754,7 @@
                 "type": "直播#新闻#剧集#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc documentary#national geographic documentary",
                 "keywords": "排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",
                 "codecs": "",
-                "proxy": "proxy",
+                "proxy": "127.0.0.1:10172",
                 "danmu": true
             },
             "style": {
