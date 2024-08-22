@@ -57,7 +57,7 @@
 "wgcf_vless_path":"/aries-vmess",
 "wgcf_vless_protocol":"vmess",
 "wgcf_vless_network":"ws",
-"wgcf_vless_tls":true,
+"wgcf_vless_tls":false,
 "libxl_url":"./libxl_thunder_sdk.so",
 "youtube_proxy":"proxy",
 "singbox_url":"./sing-box.gz",
