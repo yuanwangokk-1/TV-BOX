@@ -7,7 +7,7 @@
             "type": 3,
             "api": "csp_Miss",
             "searchable": 1,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "style": {
                 "type": "rect",
                 "ratio": 1.65
@@ -22,7 +22,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 0,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "ext": "./lib/tokenm.json$$$null$$$1"
         },
         {
@@ -33,7 +33,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "style": {
                 "type": "rect",
                 "ratio": 1.597
@@ -533,7 +533,7 @@
             "api": "csp_XBPQ",
             "jar": "./jar/XBPQ.jar",
             "ext": {
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "主页url": "https://www.tangrenjie.one/",
                 "数组": "class=\"vodlist_thumb lazyload\"&&</div>",
                 "图片": "data-original=\"&&\"",
@@ -677,7 +677,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": {
-                "server": "http://127.0.0.1:10079/p/0/127.0.0.1:10172/https://cherrytv.one:443",
+                "server": "http://127.0.0.1:10079/p/0/127.0.0.1:10072/https://cherrytv.one:443",
                 "username": "ghost",
                 "password": "ghost",
                 "thread": 0
@@ -863,7 +863,7 @@
             "ext": {
                 "type": "全部#直播#新闻#音乐#体育#剧集#电影#Live nrws in English#News live#日本av#18+#探花#约炮#少妇#Pornhub#三级片#滴蜡#两性知识#超级模特8K#4K#FC2#芸能人が本气で考えた!ドッキリGP#HDR#movie#music#documentary#CM喂饭#@1G-mn9xy",
                 "keywords": "排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",
-                "proxy": "127.0.0.1:10172"
+                "proxy": "127.0.0.1:10072"
             },
             "style": {
                 "type": "rect",
@@ -882,7 +882,7 @@
                 "json": "./lib/youtube.json",
                 "type": "直播#新闻#剧集#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc documentary#national geographic documentary#飢餓遊戲完整版#綜藝玩很大 全集#奔跑吧兄弟加长版full#露营#音乐#免费推荐#女团#日本整人综艺#猜歌王#",
                 "keywords": "排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",
-                "proxy": "127.0.0.1:10172",
+                "proxy": "127.0.0.1:10072",
                 "codecs": ""
             },
             "style": {
@@ -3207,7 +3207,7 @@
             "type": 3,
             "api": "csp_Doll",
             "searchable": 1,
-            "ext": "127.0.0.1:10172",
+            "ext": "127.0.0.1:10072",
             "recordable": 0,
             "style": {
                 "type": "rect",
@@ -3232,7 +3232,7 @@
                 "嗅探词": ".m3u8#.mp4#.m3u8?#freeok.mp4",
                 "分类url": "https://w15o.qoqoavideo2.xyz/vodtype/{cateId}/page/{catePg}.html",
                 "分类": "中文字幕$154#国产情色$151#日本无码$162#动漫$150#国产传媒$146#少女萝莉$164",
-                "页面代理": "127.0.0.1:10172"
+                "页面代理": "127.0.0.1:10072"
             }
         },
         {
@@ -3268,7 +3268,7 @@
             "style": {
                 "ratio": 1.7
             },
-            "ext": "127.0.0.1:10172"
+            "ext": "127.0.0.1:10072"
         },
         {
             "key": "csp_xBPQ_香蕉直播",
@@ -3504,7 +3504,7 @@
             "api": "csp_XBPQ",
             "jar": "./lib/XBPQ.jar",
             "ext": {
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "主页url": "https://rjav.tv/zh/",
                 "头部集合": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36#authority$avtop10.com#referer$https://rjav.tv/zh/",
                 "分类": "最新影片&热门影片&高清影片&日本AV&欧美AV&动漫AV&中文字幕AV&无码AV&偷拍自拍&制服诱惑&人妻熟女&巨乳美乳&制服诱惑&学生校园&SM调教&网络红人&3P群交&乱伦家庭&强奸迷奸&性爱技巧&自慰诱惑",
@@ -3740,7 +3740,7 @@
             "changeable": 1,
             "filterable": 1,
             "timeout": 60,
-            "ext": "127.0.0.1:10172"
+            "ext": "127.0.0.1:10072"
         },
         {
             "key": "JavDb",
@@ -3778,7 +3778,7 @@
             "changeable": 1,
             "filterable": 0,
             "timeout": 60,
-            "ext": "./lib/tokenm.json$$$null$$$127.0.0.1:10172",
+            "ext": "./lib/tokenm.json$$$null$$$127.0.0.1:10072",
             "style": {
                 "type": "list",
                 "ratio": 1.1
@@ -3824,7 +3824,7 @@
                 "ratio": 1.77
             },
             "ext": {
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "数组二次截取": "models\":[&&]",
                 "数组": "{&&}",
                 "图片": "previewUrlThumbBig:\"https+://static-cdn.strpst.com/+https://static-cdn.strpst.com/&&\"",
@@ -4074,7 +4074,7 @@
                 "搜索url": "https://hsex.icu/search.htm?search={wd}&sort=new",
                 "分类": "周榜$top7#月榜$top#5分钟$5min#10分钟$10min",
                 "分类url": "https://hsex.icu/{cateId}_list-{catePg}.htm;;RC",
-                "页面代理": "127.0.0.1:10172"
+                "页面代理": "127.0.0.1:10072"
             }
         },
         {
@@ -4164,7 +4164,7 @@
                 "搜索url": "https://www.av01.tv/tw/search/videos?search_query={wd}&page={pg}",
                 "链接": "href=\"&&\"",
                 "图片": "data-src=\"&&\"",
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "分类url": "https://www.av01.tv/tw/{cateId}?page={catePg}",
                 "分类": "BD有码$videos/bd-censored#BD无码$videos/bd-uncensored#有码$videos/censored#无码$videos/uncensored/#FC2$videos/bd"
             }
@@ -4438,7 +4438,7 @@
             "searchable": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "1$$$127.0.0.1:10172"
+            "ext": "1$$$127.0.0.1:10072"
         },
         {
             "key": "Wobg",
@@ -4675,7 +4675,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": {
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "热门推荐": "1",
                 "直接播放": "0",
                 "数组": "<div class=\"card mx-1\">&&</a>[替换:alt=\"watermark\">>空]",
@@ -4724,7 +4724,7 @@
             "api": "csp_XBPQ",
             "jar": "./jar/XBPQ.jar",
             "ext": {
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "主页url": "https://avtop10.com/",
                 "头部集合": "User-Agent$Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36#authority$avtop10.com#referer$https://avtop10.com/",
                 "分类": "最新影片&热门影片&高清影片&日本AV&欧美AV&动漫AV&中文字幕AV&无码AV&偷拍自拍&制服诱惑&人妻熟女&巨乳美乳&制服诱惑&学生校园&SM调教&网络红人&3P群交&乱伦家庭&强奸迷奸&性爱技巧&自慰诱惑",
@@ -4776,7 +4776,7 @@
                 "图片": "data-src=\"&&\"",
                 "标题": "alt=\"&&\"",
                 "链接": "href=\"&&\"",
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "播放数组": "javmulu-style-table text-center&&</tbody>",
                 "播放列表": "<a&&/a>",
                 "播放标题": ">&&<",
@@ -5225,7 +5225,7 @@
             "api": "csp_XBPQ",
             "jar": "./jar/XBPQ.jar",
             "ext": {
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "主页url": "https://javday.tv/",
                 "直接播放": "1",
                 "数组": "lazy loaded\"&&</a>",
@@ -5259,7 +5259,7 @@
             "name": "🔞蓝金鱼AV",
             "type": 3,
             "api": "csp_XBPQ",
-            "页面代理": "127.0.0.1:10172",
+            "页面代理": "127.0.0.1:10072",
             "jar": "./lib/XBPQ.jar",
             "ext": {
                 "主页url": "https://cezeoj.ljyav7.beauty/cn/home/web/",
@@ -5279,7 +5279,7 @@
                 "ratio": 1.5
             },
             "ext": {
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "主页url": "https://thisav.com/dm7/cn",
                 "直接播放": "1",
                 "数组": "class=\"relative aspect-w-16 aspect-h-9 rounded overflow-hidden shadow-lg\"&&</div>",
@@ -5302,7 +5302,7 @@
                 "ratio": 1.7
             },
             "ext": {
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "搜索url": "http://afthsck.cc/vodsearch/{wd}----------{pg}---.html",
                 "主页url": "http://afthsck.cc/",
                 "简介": "时间：&&<",
@@ -5321,7 +5321,7 @@
                 "ratio": 1.7
             },
             "ext": {
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "搜索url": "https://suwdak.nysk3.quest/cn/home/web/vodsearch/{wd}----------{pg}---.html",
                 "主页url": "https://suwdak.nysk3.quest/cn/home/web/",
                 "简介": "时间：&&<",
@@ -5451,7 +5451,7 @@
             },
             "ext": {
                 "直接播放": "1",
-                "页面代理": "127.0.0.1:10172",
+                "页面代理": "127.0.0.1:10072",
                 "图片": "data-src=\"&&\"",
                 "简介": "⚠️慢点撸，皮要掉了！！！",
                 "分类url": "https://www.nice106.xyz/index.php/vod/type/id/{cateId}.html",
@@ -6044,7 +6044,7 @@
                 "type": "rect",
                 "ratio": 1.5
             },
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "ext": {
                 "主页url": "https://nfsf8kj.nfsf-a2.buzz/go",
                 "搜索url": "https://nfsf8kj.nfsf-a2.buzz/go/index.php/vod/search.html?wd={wd}",
@@ -6066,7 +6066,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "ext": {
                 "二次截取": "<ul class=\"img-list-data&&</ul",
                 "主页url": "https://nfsf8kj.nfsf-a2.buzz/go",
@@ -6118,7 +6118,7 @@
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 0,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "style": {
                 "type": "rect",
                 "ratio": 1.33
@@ -6153,7 +6153,7 @@
                 "type": "rect",
                 "ratio": 1.5
             },
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "ext": {
                 "主页url": "https://www.juemei.fun/",
                 "分类url": "https://www.juemei.fun/type/{cateId}-{catePg}.html;;z",
@@ -6169,7 +6169,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "ext": {
                 "图片": "data-src=\"&&\"",
                 "标题": "title=\"&&\"",
@@ -6187,7 +6187,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "style": {
                 "type": "rect",
                 "ratio": 1.485
@@ -6202,7 +6202,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "ext": {
                 "图片": "data-src=\"&&\"",
                 "标题": "title=\"&&\"",
@@ -6223,7 +6223,7 @@
                 "type": "rect",
                 "ratio": 1.77
             },
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "ext": {
                 "数组": "class=\"col-sm-6 col-md-4&&class=\"duration&&</div>",
                 "直接播放": "1",
@@ -6242,7 +6242,7 @@
             "type": 3,
             "api": "csp_Miss",
             "searchable": 1,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "style": {
                 "type": "rect",
                 "ratio": 1.65
@@ -6257,7 +6257,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 0,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "ext": "./lib/tokenm.json$$$null$$$1"
         },
         {
@@ -6268,7 +6268,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "proxy": "127.0.0.1:10172",
+            "proxy": "127.0.0.1:10072",
             "style": {
                 "type": "rect",
                 "ratio": 1.597
@@ -6289,7 +6289,7 @@
                 "type": "直播#新闻#剧集#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc documentary#national geographic documentary",
                 "keywords": "排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",
                 "codecs": "",
-                "proxy": "127.0.0.1:10172",
+                "proxy": "127.0.0.1:10072",
                 "danmu": true
             },
             "style": {

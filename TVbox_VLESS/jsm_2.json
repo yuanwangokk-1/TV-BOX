@@ -12,19 +12,42 @@
             "ext": "./lib/douban.json"
         },
         {
+            "key": "MissAV",
+            "name": "🔞MissAV",
+            "type": 3,
+            "api": "csp_Miss",
+            "searchable": 1,
+            "proxy": "127.0.0.1:10072",
+            "style": {
+                "type": "rect",
+                "ratio": 1.65
+            }
+        },
+        {
             "key": "csp_JavDb",
-            "name": "🧲JavDb",
+            "name": "🔞🧲JavDb",
             "type": 3,
             "api": "csp_JavDb",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 0,
+            "proxy": "127.0.0.1:10072",
+            "ext": "./lib/tokenm.json$$$null$$$1"
+        },
+        {
+            "key": "Supjav",
+            "name": "🔞Supjav",
+            "type": 3,
+            "api": "csp_Supjav",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "proxy": "127.0.0.1:10072",
             "style": {
                 "type": "rect",
-                "ratio": 1.5
-            },
-            "ext": "./lib/tokenm.json$$$https://javdb.com$$$127.0.0.1:10072"
+                "ratio": 1.597
+            }
         },
         {
             "key": "Youtube",
