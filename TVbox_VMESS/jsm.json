@@ -2,6 +2,25 @@
 	"spider":"./pg.jar",
 	"sites":[
 		{
+            "key": "avge",
+            "name": "🔞|AVge|",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./jar/XBPQ.jar",
+            "ext": {
+		"proxy":"127.0.0.1:10072",
+                "数组": "class=\"col-6 col-sm-4 col-lg-3 mb-3&&</a >"",
+                "直接播放": "1",
+                "主页url": "https://avgle.to/zh/",
+                "链接": "href=\"&&\"",
+                "图片": "src=\"&&\"",
+                "页面代理": "",
+                "分类url": "https://avgle.to/zh/vtype/{cateId}/label/{cateId}/actor/{cateId}-page-{catePg}",
+                "分类": "📚 最新上市$release# 女優$index#最近更新$new#熱門影片$hot#影片分類$Categories#日本有碼$Censored#日本無碼$Uncensored#FC2-PPV$FC2-PPV#中文字幕$JAV_CH#有碼破壞$Mosaic_Remove#MGS動画$MGS#國產成人$Asian_Amateur#歐美成人$Western_Porn#寫真特級$Adult_IDOL#動畫$Anime"
+            }
+        },
+
+		{
 			"key": "豆瓣",
 			"name": "豆瓣",
 			"type": 3,
