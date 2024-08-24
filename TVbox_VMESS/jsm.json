@@ -6,7 +6,7 @@
             "name": "🔞|AVge|",
             "type": 3,
             "api": "csp_XBPQ",
-            "jar": "./jar/XBPQ.jar",
+            "jar": "./lib/XBPQ.jar",
             "ext": {
                 "proxy": "127.0.0.1:10072",
                 "数组": "class=\"col-6 col-sm-4 col-lg-3 mb-3&&</a >",
