@@ -2,6 +2,20 @@
     "spider": "./pg.jar",
     "sites": [
         {
+            "key": "农夫与少妇",
+            "name": "农夫与少妇",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/XBPQ.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "json": "./js/农夫与少妇.json",
+                "proxy": "127.0.0.1:10072"
+            }
+        },
+        {
             "key": "豆瓣",
             "name": "豆瓣",
             "type": 3,
