@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HiPy-嗨派 Swagger UI</title>
+    <link rel="icon" href="/static/img/logo.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="/web/static/swagger/swagger-ui.css">
+    <!--    <link rel="shortcut icon" href="/static/img/swagger.png">-->
+    <link rel="shortcut icon" href="/static/img/logo.png">
+    <style>
+        .hipy-center {
+            text-align: center;
+        }
+
+        .hipy-btn {
+            margin-bottom: 1rem;
+            border: 1px solid #5fdefe;
+            width: 240px;
+            height: 30px;
+            text-align: center;
+            background-color: #1379cb;
+            color: #ffffff;
+            border-radius: 50px;
+            line-height: 30px;
+        }
+
+        .hipy-btn a {
+            color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        a.hipy-config {
+            letter-spacing: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="swagger-ui">
+</div>
+<script src="/web/static/swagger/swagger-ui-bundle.js"></script>
+<script src="/web/static/jquery/jquery.min.js"></script>
+<script src="/web/static/js/grey.js"></script>
+<!-- `SwaggerUIBundle` is now available on the page -->
+<script>
+    const ui = SwaggerUIBundle({
+        url: '/openapi.json',
+        "dom_id": "#swagger-ui",
+        "layout": "BaseLayout",
+        "deepLinking": true,
+        "showExtensions": true,
+        "showCommonExtensions": true,
+        oauth2RedirectUrl: window.location.origin + '/docs/oauth2-redirect',
+        presets: [
+            SwaggerUIBundle.presets.apis,
+            SwaggerUIBundle.SwaggerUIStandalonePreset
+        ],
+    });
+    const appendButton = `
+    <div class="hipy-center">
+        <div class="btn opblock opblock-post">
+            <a class="opblock-summary-method hipy-config" href="/config/1" target="_blank">T3配置</a>
+        </div>
+        <div class="btn opblock opblock-post">
+            <a class="opblock-summary-method hipy-config" href="/config/0" target="_blank">T4配置</a>
+        </div>
+    </div>
+    `;
+    $(document).ready(function () {
+        const timer = setInterval(() => {
+            let pos = $('.description');
+            if (pos.length > 0) {
+                clearInterval(timer);
+                pos.append(appendButton);
+            }
+        }, 500);
+    });
+</script>
+</body>
+</html>

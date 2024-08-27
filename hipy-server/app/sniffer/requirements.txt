@@ -1,0 +1,3 @@
+ujson
+selenium
+webdriver-manager
