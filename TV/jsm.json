@@ -53,7 +53,7 @@
             "api": "https://www.msnii.com/api/xml.php",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -63,7 +63,7 @@
             "api": "https://www.xrbsp.com/api/xml.php",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -73,7 +73,7 @@
             "api": "https://www.msnii.com/api/xml.php",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -83,7 +83,7 @@
             "api": "http://bttcj.com/inc/sapi.php",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -93,7 +93,7 @@
             "api": "https://kkzy.me/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -103,7 +103,7 @@
             "api": "http://fhapi9.com/api.php/provide/vod/at/xml",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -113,7 +113,7 @@
             "api": "https://api.apilyzy.com/api.php/provide/vod/at/xml/",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -123,7 +123,7 @@
             "api": "https://lbapi9.com/api.php/provide/vod/at/xml/",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -133,7 +133,7 @@
             "api": "https://api.maozyapi.com/inc/api.php/provide/vod/at/xml/",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -143,7 +143,7 @@
             "api": "https://lbapi9.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -154,7 +154,7 @@
             "playUrl": "https://jiexi.ttbfp1.com/m3u8/?url=",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -164,7 +164,7 @@
             "api": "http://wmcj8.com/inc/sapi.php",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -173,7 +173,7 @@
             "type": 0,
             "api": "http://bttcj.com/inc/sapi.php",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -182,7 +182,7 @@
             "type": 0,
             "api": "https://www.msnii.com/api/xml.php",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -192,7 +192,7 @@
             "api": "http://bttcj.com/inc/sapi.php",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -201,7 +201,7 @@
             "type": 1,
             "api": "http://fhapi9.com/api.php/provide/vod/",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -210,7 +210,7 @@
             "type": 1,
             "api": "https://apittzy.com/api.php/provide/vod/",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -220,7 +220,7 @@
             "api": "http://www.feifei67.com/api.php/provide/vod/",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -229,7 +229,7 @@
             "type": 1,
             "api": "https://api.apilyzy.com/api.php/provide/vod/",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -238,7 +238,7 @@
             "type": 1,
             "api": "https://lbapi9.com/api.php/provide/vod/",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -248,7 +248,7 @@
             "api": "https://www.msnii.com/api/xml.php",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -257,7 +257,7 @@
             "type": 0,
             "api": "https://dadiapi.com/api.php",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -267,7 +267,7 @@
             "api": "https://apittzy.com/api.php/provide/vod/",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -276,7 +276,7 @@
             "type": 0,
             "api": "https://www.gdlsp.com/api/xml.php",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -286,7 +286,7 @@
             "api": "https://api.maozyapi.com/inc/apijson_vod.php",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -296,7 +296,7 @@
             "api": "https://lbapi9.com/api.php/provide/vod/",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -305,14 +305,14 @@
             "type": 0,
             "api": "http://cjmygzy.com/inc/sapi.php?ac=videolist",
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
             "key": "*环亚",
             "name": "环亚",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://wmcj8.com/inc/sapi.php?ac=videolist"
         },
         {
@@ -321,7 +321,7 @@
             "type": 0,
             "api": "https://www.msnii.com/api/xml.php",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -330,14 +330,14 @@
             "type": 0,
             "api": "https://www.kxgav.com/api/xml.php",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
             "key": "*AIvin",
             "name": "AIvin",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://lbapiby.com/api.php/provide/vod/at/xml"
         },
         {
@@ -347,7 +347,7 @@
             "api": "https://kkzy.me/api.php/provide/vod/",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -357,7 +357,7 @@
             "api": "https://api.apilyzy.com/api.php/provide/vod/",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -367,7 +367,7 @@
             "api": "https://www.kxgav.com/api/xml.php",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -376,7 +376,7 @@
             "type": 1,
             "api": "http://fhapi9.com/api.php/provide/vod/at/json",
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 1
         },
         {
@@ -385,7 +385,7 @@
             "type": 1,
             "api": "https://apittzy.com/api.php/provide/vod",
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 1
         },
         {
@@ -394,14 +394,14 @@
             "type": 0,
             "api": "https://www.xrbsp.com/api/xml.php",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
             "key": "Sm",
             "name": "Sm",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "https://api.maozyapi.com/inc/api.php"
         },
         {
@@ -410,7 +410,7 @@
             "type": 1,
             "api": "https://api.maozyapi.com/inc/apijson_vod.php",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -419,7 +419,7 @@
             "type": 0,
             "api": "http://wmcj8.com/inc/sapi.php",
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 1
         },
         {
@@ -429,7 +429,7 @@
             "api": "http://mygzycj.com/api.php?ac=list",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -440,7 +440,7 @@
             "playUrl": "https://jx.kujiexi.net/m3u8.php?url=",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -450,7 +450,7 @@
             "api": "https://www.msnii.com/api/xml.php",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -460,7 +460,7 @@
             "api": "http://fhapi9.com/api.php/provide/vod/at/xml/",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -470,7 +470,7 @@
             "api": "https://www.gdlsp.com/api/xml.php",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -480,7 +480,7 @@
             "api": "http://secj8.com/inc/sapi.php?ac=videolist",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -490,14 +490,14 @@
             "api": "http://bttcj.com/inc/sapi.php",
             "searchable": 0,
             "quickSearch": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
             "key": "*JAV名优",
             "name": "*JAV名优",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://mygzycj.com/api.php?ac=list"
         },
         {
@@ -507,7 +507,7 @@
             "api": "https://lbapi9.com/api.php/provide/vod/at/xml",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -517,14 +517,14 @@
             "api": "https://api.maozyapi.com/inc/api.php",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
             "key": "*Sm",
             "name": "*Sm",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "https://api.maozyapi.com/inc/api.php"
         },
         {
@@ -532,20 +532,20 @@
             "name": "*探探",
             "type": 0,
             "api": "https://apittzy.com/api.php/provide/vod/at/xml",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "playUrl": "https://jiexi.ttbfp1.com/m3u8/?url="
         },
         {
             "key": "*乐播",
             "name": "*乐播",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "https://lbapi9.com/api.php/provide/vod/at/xml"
         },
         {
             "key": "*白嫖",
             "name": "*白嫖",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "type": 0,
             "api": "https://www.kxgav.com/api/xml.php"
         },
@@ -556,7 +556,7 @@
             "api": "http://sdszyapi.com/home/cjapi/asbb/mc10/vod/xml",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -565,7 +565,7 @@
             "type": 1,
             "api": "https://apittzy.com/api.php/provide/vod/",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -574,7 +574,7 @@
             "type": 0,
             "api": "http://cjmygzy.com/inc/sapi.php?ac=videolist",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -582,7 +582,7 @@
             "name": "*环亚资源",
             "type": 0,
             "api": "http://wmcj8.com/inc/sapi.php",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 0,
             "quickSearch": 0
         },
@@ -591,7 +591,7 @@
             "name": "*色色资源",
             "type": 0,
             "api": "http://secj8.com/inc/sapi.php?ac=videolist",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 0,
             "quickSearch": 0
         },
@@ -599,7 +599,7 @@
             "key": "*JAV名优",
             "name": "*JAV名优",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://mygzycj.com/api.php?ac=list"
         },
         {
@@ -607,7 +607,7 @@
             "name": "*美少女资源",
             "type": 0,
             "api": "https://www.msnii.com/api/xml.php",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 0,
             "quickSearch": 0
         },
@@ -615,14 +615,14 @@
             "key": "*狼少年",
             "name": "*狼少年",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://cjmygzy.com/inc/sapi.php?ac=videolist"
         },
         {
             "key": "*博天堂",
             "name": "*博天堂",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://bttcj.com/inc/sapi.php",
             "searchable": 0,
             "quickSearch": 0
@@ -631,7 +631,7 @@
             "key": "bttcj",
             "name": "*博天堂",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://bttcj.com/inc/sapi.php",
             "playUrl": "https://jx.kujiexi.net/m3u8.php?url=",
             "searchable": 1,
@@ -643,7 +643,7 @@
             "name": "*天堂福利",
             "type": 0,
             "api": "http://bttcj.com/inc/sapi.php",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 0
@@ -652,7 +652,7 @@
             "key": "*CK资源",
             "name": "*CK资源",
             "type": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://www.feifei67.com/api.php/provide/vod/",
             "searchable": 0,
             "quickSearch": 0
@@ -661,7 +661,7 @@
             "key": "*番号资源",
             "name": "*番号资源",
             "type": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://fhapi9.com/api.php/provide/vod/",
             "searchable": 0,
             "quickSearch": 0
@@ -671,7 +671,7 @@
             "name": "*9号资源",
             "type": 0,
             "api": "http://fhapi9.com/api.php/provide/vod/at/xml/",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 0
@@ -681,7 +681,7 @@
             "name": "*色猫资源",
             "type": 1,
             "api": "https://api.maozyapi.com/inc/apijson_vod.php",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 0,
             "quickSearch": 0
         },
@@ -691,7 +691,7 @@
             "type": 0,
             "api": "http://www.caiji25.com/home/cjapi/p0as/mc10/vod/xml",
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 1,
             "filterable": 0
         },
@@ -701,7 +701,7 @@
             "type": 0,
             "api": "http://www.caiji25.com/home/cjapi/p0as/mc10/vod/xml",
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 1,
             "filterable": 1
         },
@@ -710,7 +710,7 @@
             "name": "成人25",
             "type": 1,
             "api": "http://99zy.pw/api.php/provide/vod/",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 1,
             "searchable": 1,
             "filterable": 1
@@ -722,7 +722,7 @@
             "api": "http://91md.me/api.php/provide/vod/",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -730,7 +730,7 @@
             "name": "💞99资源💞",
             "type": 1,
             "api": "http://99zy.pw/api.php/provide/vod/",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 0,
             "quickSearch": 0
         },
@@ -740,7 +740,7 @@
             "type": 0,
             "api": "http://dadiapi.com/api.php",
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 1,
             "filterable": 1
         },
@@ -751,7 +751,7 @@
             "api": "http://sdszyapi.com/home/cjapi/asbb/mc10/vod/xml",
             "quickSearch": 1,
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 1
         },
         {
@@ -760,7 +760,7 @@
             "type": 0,
             "api": "http://sdszyapi.com/home/cjapi/asbb/mc10/vod/xml",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -769,7 +769,7 @@
             "type": 0,
             "api": "http://www.caiji25.com/home/cjapi/p0as/mc10/vod/xml",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -778,7 +778,7 @@
             "type": 0,
             "api": "http://sdszyapi.com/home/cjapi/asbb/mc10/vod/xml",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -787,7 +787,7 @@
             "type": 0,
             "api": "http://sdszyapi.com/home/cjapi/asbb/mc10/vod/xml",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -796,7 +796,7 @@
             "type": 0,
             "api": "http://sdszyapi.com/home/cjapi/asbb/mc10/vod/xml",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -805,7 +805,7 @@
             "type": 0,
             "api": "http://www.caiji25.com/home/cjapi/p0as/mc10/vod/xml",
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 1
         },
         {
@@ -814,20 +814,20 @@
             "type": 0,
             "api": "http://www.caiji25.com/home/cjapi/p0as/mc10/vod/xml",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
             "key": "*番号",
             "name": "*番号",
             "type": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://fhapi9.com/api.php/provide/vod/"
         },
         {
             "key": "*美少女",
             "name": "*美少女",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "type": 0,
             "api": "https://www.msnii.com/api/xml.php",
             "searchable": 1,
@@ -837,7 +837,7 @@
         {
             "key": "*乐播资源",
             "name": "*乐播资源",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "type": 1,
             "api": "https://lbapi9.com/api.php/provide/vod/",
             "searchable": 0,
@@ -848,7 +848,7 @@
             "name": "*老鸭资源",
             "type": 1,
             "api": "https://api.apilyzy.com/api.php/provide/vod/",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 0,
             "quickSearch": 0
         },
@@ -858,7 +858,7 @@
             "type": 0,
             "api": "http://www.caiji25.com/home/cjapi/p0as/mc/vod/xml",
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 1,
             "filterable": 0
         },
@@ -866,7 +866,7 @@
             "key": "cr32",
             "name": "*咪咪资源站",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://www.caiji25.com/home/cjapi/p0as/zp/vod/xml",
             "playUrl": "https://jx.kujiexi.net/m3u8.php?url=",
             "searchable": 1,
@@ -877,7 +877,7 @@
             "key": "*99",
             "name": "*99",
             "type": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://99zy.pw/api.php/provide/vod/"
         },
         {
@@ -886,7 +886,7 @@
             "type": 1,
             "api": "http://99zy.pw/api.php/provide/vod/",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -896,7 +896,7 @@
             "api": "https://api.apilyzy.com/api.php/provide/vod/at/xml",
             "searchable": 1,
             "quickSearch": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "filterable": 0
         },
         {
@@ -905,7 +905,7 @@
             "type": 1,
             "api": "https://api.apilyzy.com/api.php/provide/vod/?ac=list",
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 1,
             "filterable": 0
         },
@@ -913,7 +913,7 @@
             "key": "*Sm",
             "name": "*Sm",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "https://api.maozyapi.com/inc/api.php"
         },
         {
@@ -921,7 +921,7 @@
             "name": "*饮水机",
             "type": 0,
             "api": "https://www.xrbsp.com/api/xml.php",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
@@ -931,7 +931,7 @@
             "name": "黄AV资源(已修复)",
             "type": 0,
             "api": "https://www.pgxdy.com/api/xml.php",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
@@ -942,7 +942,7 @@
             "type": 0,
             "api": "http://jcspcj8.com/api?ac=list",
             "searchable": 1,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 1,
             "filterable": 0
         },
@@ -950,7 +950,7 @@
             "key": "gdlsE",
             "name": "香奶儿资源",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "https://www.gdlsp.com/api/xml.php",
             "searchable": 1,
             "quickSearch": 1,
@@ -961,7 +961,7 @@
             "name": "*热巴资源",
             "type": 1,
             "api": "http://reba.aishunxs.com/api.php/provide/vod/",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 0,
             "quickSearch": 0
         },
@@ -969,7 +969,7 @@
             "key": "*白嫖",
             "name": "*白嫖",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "https://www.kxgav.com/api/xml.php"
         },
         {
@@ -977,7 +977,7 @@
             "name": "*白嫖资源",
             "type": 0,
             "api": "https://www.kxgav.com/api/xml.php",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 0,
             "quickSearch": 0
         },
@@ -985,7 +985,7 @@
             "key": "*黄AV",
             "name": "*黄AV",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "https://www.pgxdy.com/api/xml.php"
         },
         {
@@ -994,7 +994,7 @@
             "type": 0,
             "api": "https://www.xrbsp.com/api/xml.php",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -1002,7 +1002,7 @@
             "name": "成人66",
             "type": 0,
             "api": "https://www.xrbsp.com/api/xml.php",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 1,
             "searchable": 1,
             "filterable": 1
@@ -1011,7 +1011,7 @@
             "key": "zp116",
             "name": "*泡芙资源",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "http://zmcj88.com/api?ac=list",
             "searchable": 1,
             "quickSearch": 1,
@@ -1022,7 +1022,7 @@
             "name": "*饮水机",
             "type": 0,
             "api": "https://www.xrbsp.com/api/xml.php",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
@@ -1030,7 +1030,7 @@
         {
             "key": "*香奶儿",
             "name": "*香奶儿",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "type": 0,
             "api": "https://www.gdlsp.com/api/xml.php"
         },
@@ -1040,7 +1040,7 @@
             "type": 0,
             "api": "https://www.gdlsp.com/api/xml.php",
             "searchable": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "quickSearch": 0
         },
         {
@@ -1048,7 +1048,7 @@
             "name": "*KK写真资源",
             "type": 1,
             "api": "https://kkzy.me/api.php/provide/vod/",
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "searchable": 0,
             "quickSearch": 0
         },
@@ -1056,7 +1056,7 @@
             "key": "maozyapi",
             "name": "*色猫",
             "type": 0,
-            "jar": "./lib/spider.jar",
+            "jar": "./lib/XBPQ.jar",
             "api": "https://api.maozyapi.com/inc/api.php/provide/vod/at/xml/",
             "playUrl": "https://jx.kujiexi.net/m3u8.php?url=",
             "searchable": 1,
