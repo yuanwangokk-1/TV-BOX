@@ -2,6 +2,17 @@
     "spider": "./pg.jar",
     "sites": [
         {
+            "key": "农夫与少妇",
+            "name": "农夫与少妇",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/XBPQ.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "./js/农夫与少妇.json"
+        },
+        {
             "key": "豆瓣",
             "name": "豆瓣",
             "type": 3,
@@ -484,8 +495,8 @@
             "api": "csp_Bdys01",
             "type": 3,
             "filterable": 1,
-            "quickSearch": 1,
             "searchable": 1,
+            "quickSearch": 1,
             "timeout": 60,
             "ext": "./lib/tokenm.json$$$https://www.yjys01.com/$$$proxy$$$1"
         },
@@ -495,7 +506,7 @@
             "type": 3,
             "api": "csp_TGYunPanLocal",
             "timeout": 60,
-            "ext": "./lib/tokenm.json$$$https://t.me/$$$hao115,guaguale115,dianyingshare,XiangxiuNB,yunpanpan,kuakeyun,zaihuayun,Quark_Movies,alyp_4K_Movies,vip115hot,yunpanshare,ucwangpan,Quark_Share_Channel,Aliyundrive_Share_Channel,shareAliyun,ikiviyyp,wanwansubchat,wangpanziyuan2021,alyp_1,quanziyuanshe$$$127.0.0.1:10072$$$1"
+            "ext": "./lib/tokenm.json$$$https://t.me/$$$hao115,guaguale115,dianyingshare,XiangxiuNB,yunpanpan,kuakeyun,zaihuayun,Quark_Movies,alyp_4K_Movies,vip115hot,yunpanshare,ucwangpan,Quark_Share_Channel,Aliyundrive_Share_Channel,shareAliyun,ikiviyyp,wanwansubchat,wangpanziyuan2021,alyp_1,quanziyuanshe$$$proxy$$$1"
         },
         {
             "key": "YunPan",
