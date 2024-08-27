@@ -8,7 +8,7 @@
             "api": "csp_J91",
             "searchable": 1,
             "filterable": 1,
-            "jar": "./lib/XBPQ.jar"
+            "jar": "./lib/spider.jar"
         },
         {
             "key": "Cg51",
@@ -16,7 +16,7 @@
             "type": 3,
             "api": "csp_Cg51",
             "searchable": 1,
-            "jar": "./lib/XBPQ.jar",
+            "jar": "./lib/spider.jar",
             "filterable": 1
         },
         {
@@ -25,7 +25,7 @@
             "type": 3,
             "api": "csp_MiMei",
             "searchable": 1,
-            "jar": "./lib/XBPQ.jar",
+            "jar": "./lib/spider.jar",
             "filterable": 1
         },
         {
