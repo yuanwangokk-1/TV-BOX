@@ -52,7 +52,7 @@
 "wgcf_geoip_url":"./geoip.dat.gz",
 "wgcf_json_url":"./wgcf.json",
 "wgcf_vless_id":"ba55ef37-c33c-4a8f-aafa-2abc85312863",
-"wgcf_vless_optname":"47.242.169.69:52721",
+"wgcf_vless_optname":"visa.com:8443",
 "wgcf_vless_worker":"socks5.skvless.us.kg",
 "wgcf_vless_path":"/aries?ed=2560",
 "wgcf_vless_protocol":"vless",
