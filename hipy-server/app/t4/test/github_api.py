@@ -11,7 +11,7 @@ import ujson
 HOST = "api.github.com"
 basicUrl = "https://" + HOST
 # proxy = "https://gh-proxy.com/"
-proxy = "https://yuanwangokk@proton.me/"
+proxy = ""
 
 
 def getContents(repo, path, token):
