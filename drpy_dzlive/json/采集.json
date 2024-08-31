@@ -1,0 +1,65 @@
+[
+  {
+    "name": "豪华资源",
+    "url": "https://hhzyapi.com",
+    "parse_url": "",
+    "cate_exclude": "电影片|连续剧|综艺片|动漫片|电影解说|体育|演员|新闻资讯"
+  },
+  {
+    "name": "速播资源",
+    "url": "https://subocaiji.com",
+    "parse_url": "",
+    "cate_exclude": "电影片|连续剧|综艺片|动漫片|电影解说|体育|演员|新闻资讯"
+  },
+  {
+    "name": "红牛资源",
+    "url": "https://www.hongniuzy2.com",
+    "parse_url": "",
+    "cate_exclude": "电影片|连续剧|综艺片|动漫片|电影解说|体育|演员|新闻资讯"
+  },
+  {
+    "name": "新浪资源",
+    "url": "https://api.xinlangapi.com",
+    "parse_url": "",
+    "api": "/xinlangapi.php/provide/vod/from/xlm3u8/",
+    "cate_exclude": "电影片|连续剧|综艺片|动漫片|电影解说|体育|演员|新闻资讯"
+  },
+  {
+    "name": "飞刀资源",
+    "url": "http://www.feidaozy.com",
+    "parse_url": "",
+    "cate_exclude": "^电影$|^电视剧$|^综艺$|^动漫$"
+  },
+  {
+    "name": "黑木耳资源",
+    "url": "https://www.heimuer.tv",
+    "parse_url": "",
+    "cate_exclude": "^电影$|^电视剧$|^综艺$|^动漫$"
+  },
+  {
+    "name": "iku喵",
+    "url": "http://caiji.ikum.cc:8099",
+    "parse_url": "",
+    "cate_exclude": ""
+  },
+  {
+    "name": "暴风资源",
+    "url": "https://bfzyapi.com",
+    "parse_url": "",
+    "searchable": 0,
+    "cate_exclude": "电影片|连续剧|综艺片|动漫片|电影解说|体育|演员|新闻资讯"
+  },
+  {
+    "name": "量子资源",
+    "url": "https://cj.lziapi.com",
+    "parse_url": "",
+    "searchable": 0,
+    "cate_exclude": "电影片|连续剧|综艺片|动漫片|电影解说|体育|演员|新闻资讯"
+  },
+  {
+    "name": "非凡资源",
+    "url": "http://cj.ffzyapi.com",
+    "parse_url": "",
+    "cate_exclude": "电影片|连续剧|综艺片|动漫片|电影解说|体育|演员|新闻资讯"
+  }
+]

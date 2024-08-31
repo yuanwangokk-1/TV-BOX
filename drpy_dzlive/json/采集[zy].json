@@ -1,0 +1,289 @@
+[
+    {
+        "name": "华为吧",
+        "url": "https://huawei8.live",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "闪电☆资源",
+        "url": "https://sdzyapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "光速.云播",
+        "url": "https://api.guangsuapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "卧龙.云播",
+        "url": "https://collect.wolongzyw.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "U酷资源",
+        "url": "https://api.ukuapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "紅牛資源",
+        "url": "http://hongniuzy2.com",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/api.php/provide/vod/from/hnm3u8/"
+    },
+    {
+        "name": "天空资源",
+        "url": "https://m3u8.tiankongapi.com",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/api.php/provide/vod/from/tkm3u8/"
+    },
+    {
+        "name": "金鹰资源",
+        "url": "https://jyzyapi.com",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/provide/vod/"
+    },
+    {
+        "name": "百度|点播",
+        "url": "https://api.apibdzy.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "量子资源",
+        "url": "http://cj.lziapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "奥斯卡资源",
+        "url": "https://aosikazy.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "快车资源",
+        "url": "https://caiji.kczyapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "速博资源",
+        "url": "https://subocaiji.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "无尽资源",
+        "url": "https://api.wujinapi.me",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "新浪.云播",
+        "url": "http://api.xinlangapi.com",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/xinlangapi.php/provide/vod/"
+    },
+    {
+        "name": "非凡资源",
+        "url": "http://cj.ffzyapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "索尼|点播",
+        "url": "https://suoniapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "天空.云播",
+        "url": "https://api.tiankongapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "快看资源",
+        "url": "https://kuaikan-api.com",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/api.php/provide/vod/from/kuaikanyun/"
+    },
+    {
+        "name": "玉兔资源",
+        "url": "https://apiyutu.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "火狐|点播",
+        "url": "https://hhzyapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "黑木耳|点播",
+        "url": "https://www.heimuer.tv",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "华为吧",
+        "url": "https://hw8.live",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "魔都|点播",
+        "url": "https://caiji.moduapi.cc",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "最大|点播",
+        "url": "http://zuidazy.me",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "快看|点播",
+        "url": "https://www.kuaikan-api.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "1080资源库(切)",
+        "url": "https://api.1080zyku.com",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/inc/api_mac10.php/"
+    },
+    {
+        "name": "飞速|点播",
+        "url": "https://www.feisuzyapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "飘零|点播",
+        "url": "https://p2100.net",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "八戒资源",
+        "url": "http://cj.bajiecaiji.com",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/inc/apijson_vod.php/"
+    },
+    {
+        "name": "易看资源",
+        "url": "https://api.yikanapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "360┃秒播┃采集",
+        "url": "https://360zy.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "天翼|点播",
+        "url": "https://www.911ysw.top",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/tianyi.php/provide/vod/"
+    },
+    {
+        "name": "CK☆资源",
+        "url": "https://ckzy.me",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "极速┃资源",
+        "url": "https://jszyapi.com",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/api.php/provide/vod/at/json/"
+    },
+    {
+        "name": "爱坤资源",
+        "url": "https://ikunzyapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "无尽|点播",
+        "url": "https://api.wujinapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "虎牙资源",
+        "url": "https://www.huyaapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "官网|点播",
+        "url": "http://gwcms.cttv.vip",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "丫丫|点播",
+        "url": "https://cj.yayazy.net",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "42资源",
+        "url": "https://www.42.la",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "白嫖",
+        "url": "https://www.kxgav.com",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/api/json.php/"
+    },
+    {
+        "name": "红牛",
+        "url": "https://www.hongniuzy2.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "暴风资源",
+        "url": "https://bfzyapi.com",
+        "parse_url": "",
+        "cate_exclude": ""
+    },
+    {
+        "name": "雪人",
+        "url": "https://www.xrbsp.com",
+        "parse_url": "",
+        "cate_exclude": "",
+        "api": "/api/json.php/"
+    },
+    {
+        "name": "牛牛|点播",
+        "url": "https://api.niuniuzy.me",
+        "parse_url": "",
+        "cate_exclude": ""
+    }
+]
