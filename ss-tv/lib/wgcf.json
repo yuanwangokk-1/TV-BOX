@@ -1,0 +1,450 @@
+{
+	"log": {
+		"loglevel": "warn"
+	},
+	"dns": {
+		"disableFallbackIfMatch": true,
+		"hosts": {},
+		"queryStrategy": "UseIPv4",
+		"servers": [
+			{
+				"address": "tcp://1.1.1.1",
+				"concurrency": true
+			},
+			{
+				"address": "tcp+local://223.5.5.5:53",
+				"concurrency": true,
+				"domains": [
+					"full:cdn-all.xn--b6gac.eu.org"
+				],
+				"skipFallback": true
+			}
+		]
+	},
+	"outbounds": [
+		{
+			"settings": {
+				"secretKey": "KEY",
+				"mtu": 1400,
+				"peers": [
+					{
+						"publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+						"endpoint" : "engage.cloudflareclient.com:2408",
+						"keepAlive": 30
+					}
+				],
+				"address": [
+					"172.16.0.2/32",
+					"2606:4700:110:893c:845c:536b:5565:8106/128"
+				],
+				"kernelMode": false,
+				"worker":16
+			},
+			"protocol": "wireguard",
+			"streamSettings": {
+				"network": "tcp"
+			},
+			"tag":"directwarp"
+		},
+		{
+			"settings": {
+				"secretKey": "KEY",
+				"mtu": 1280,
+				"peers": [
+					{
+						"publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+						"endpoint" : "engage.cloudflareclient.com:2408",
+						"keepAlive": 30
+					}
+				],
+				"address": [
+					"172.16.0.2/32",
+					"2606:4700:110:893c:845c:536b:5565:8106/128"
+				],
+				"kernelMode": false,
+				"worker":30
+			},
+			"protocol": "wireguard",
+			"streamSettings": {
+				"network": "tcp"
+			},
+			"tag":"warpoverwarp",
+			"proxySettings": {
+				"tag": "directwarp",
+				"transportLayer": true
+			}
+		},
+		{
+			"protocol": "shadowsocks",
+			"tag":"ss;ssr;shadowsocks",
+			"proxySettings": {
+				"tag": "directwarp",
+				"transportLayer": true
+			},
+			"settings": {
+				"vnext": [
+					{
+						"address": "cdn-all.xn--b6gac.eu.org",
+						"port": 443,
+						"users": [
+							{
+								"id": "SSPASSWROD",
+								"encryption": "none",
+								"level":0
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"security": "tls",
+				"tlsSettings": {
+					"serverName": "SSCFWORKERNAME",
+					"allowInsecure": true
+				},
+				"wsSettings": {
+					"headers": {
+						"Host": "SSCFWORKERNAME"
+					},
+					"path": "/?ed=2048"
+				}
+			},
+			"tag":"sscf"
+		},
+		{
+			"protocol": "trojan",
+			"tag":"trojan",
+			"proxySettings": {
+				"tag": "directwarp",
+				"transportLayer": true
+			},
+			"settings": {
+				"vnext": [
+					{
+						"address": "cdn-all.xn--b6gac.eu.org",
+						"port": 443,
+						"users": [
+							{
+								"id": "TROJANPASSWROD",
+								"encryption": "none",
+								"level":0
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"security": "tls",
+				"tlsSettings": {
+					"serverName": "TROJANCFWORKERNAME",
+					"allowInsecure": true
+				},
+				"wsSettings": {
+					"headers": {
+						"Host": "TROJANCFWORKERNAME"
+					},
+					"path": "/?ed=2048"
+				}
+			},
+			"tag":"trojancf"
+		},
+		{
+			"protocol": "vmess",
+			"settings": {
+				"vnext": [
+					{
+						"address": "cdn-all.xn--b6gac.eu.org",
+						"port": 443,
+						"users": [
+							{
+								"id": "VMESSID",
+								"encryption": "none",
+								"level":0
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"security": "tls",
+				"tlsSettings": {
+					"serverName": "VMESSCFWORKERNAME",
+					"allowInsecure": true
+				},
+				"wsSettings": {
+					"headers": {
+						"Host": "VMESSCFWORKERNAME"
+					},
+					"path": "/?ed=2048"
+				}
+			},
+			"tag":"vmess",
+			"proxySettings": {
+				"tag": "directwarp",
+				"transportLayer": true
+			}
+		},
+		{
+			"protocol": "vless",
+			"settings": {
+				"vnext": [
+					{
+						"address": "cdn-all.xn--b6gac.eu.org",
+						"port": 443,
+						"users": [
+							{
+								"id": "VLESSID",
+								"encryption": "none",
+								"level":0
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"security": "tls",
+				"tlsSettings": {
+					"serverName": "VLESSCFWORKERNAME",
+					"allowInsecure": true
+				},
+				"wsSettings": {
+					"headers": {
+						"Host": "VLESSCFWORKERNAME"
+					},
+					"path": "/?ed=2048"
+				}
+			},
+			"tag":"vlesscf;warpoverwarp;vlesscfoverwarp",
+			"proxySettings": {
+				"tag": "directwarp",
+				"transportLayer": true
+			}
+		},
+		{
+			"protocol": "freedom",
+			"tag": "direct"
+		}
+	]
+	,
+	"inbounds":[ /*73的用途是：完全不需要部署和自建，只要开俩warp账号就可以访问所有海外资源，但速度慢。
+71的用途是：看wogg，看youtube以及所有不限制中国ip但被gfw屏蔽的网站
+72的用途是：自建或部署cfvless，不经过warp直连过去，用于高速访问被屏资源且不会被当作中国IP
+74的用途是：cfvless裸奔不稳定的情况下底层讨一个warp提高稳定性，但速度降低，用于稳定访问被屏资源且不会被当作中国IP*/
+		{
+			"listen": "0.0.0.0",
+			"port": 10070,
+			"protocol": "http",
+			"settings": {
+				"allowTransparent": true
+			},
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			},
+			"tag": "http"
+		},
+		{
+			"port": 10071,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"socks5",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		},
+		{
+			"port": 2000,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"shadowsocks",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		},
+		{
+			"port": 2001,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"trojan",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		},
+		{
+			"port": 2002,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"vmess",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		},
+		{
+			"port": 10072,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"socks5overvless",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		},
+		{
+			"port": 10073,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"socks5overwarpoverwarp",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		},
+		{
+			"port": 10074,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"socks5overvlessoverwarp",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		}
+	],
+	"routing": {
+		"domainStrategy": "AsIs",
+		"rules": [
+			{
+				"type": "field",
+				"ip": [
+					"127.0.0.1"
+				],
+				"outboundTag": "direct"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"http;https;socks4;socks5"
+				],
+				"outboundTag": "directwarp"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"http;https;socks4;socks5"
+				],
+				"outboundTag": "shadowsocks"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"http;https;socks4;socks5"
+				],
+				"outboundTag": "trojancf"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"http;https;socks4;socks5"
+				],
+				"outboundTag": "vmess"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"socks5overvless"
+				],
+				"outboundTag": "vlesscf"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"http;https;socks4;socks5"
+				],
+				"outboundTag": "vlesscf"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"socks5overwarpoverwarp"
+				],
+				"outboundTag": "warpoverwarp"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"socks5overvlessoverwarp"
+				],
+				"outboundTag": "vlesscfoverwarp"
+			}
+		]
+	}
+}
