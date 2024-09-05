@@ -2,18 +2,6 @@
     "spider": "./pg.jar",
     "sites": [
         {
-            "key": "hipy_js_avtoday",
-            "name": "avtoday",
-            "type": 3,
-            "api": "./lib/drpy2.min.js",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "order_num": 0,
-            "ext": "./lib/avtoday.js",
-            "proxy": "127.0.0.1:10072"
-        },
-        {
             "key": "Youtube1",
             "name": "Youtube1",
             "type": 3,
