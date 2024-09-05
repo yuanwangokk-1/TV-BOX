@@ -4,7 +4,7 @@ var rule ={
             url: '/catalog/fyclass?page=fypage',
             searchUrl: 'https://avtoday.io/search?s=**',
             //class_parse: '.nav a;script&&Text;a&&href;.*/(.*?).html',
-  class_name:'无码&制服&丝袜&萝莉&多人&动长腿',
+  type_name:'无码&制服&丝袜&萝莉&多人&动长腿',
   class_url:'无码&制服&丝袜&4萝莉&多人&长腿',
   
                       searchable: 2,

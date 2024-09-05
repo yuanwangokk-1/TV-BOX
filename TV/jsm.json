@@ -2,7 +2,7 @@
     "spider": "./pg.jar",
     "sites": [{
             "key": "hipy_js_avtoday",
-            "name": "avtoday(drpy_t3)",
+            "name": "avtoday",
             "type": 3,
             "api": "./lib/drpy2.min.js",
             "searchable": 1,
