@@ -10,8 +10,8 @@
             "filterable": 1,
             "order_num": 0,
             "ext": {
-                "json": "./lib/avtoday.js"
-                "proxy": "127.0.0.1:10072",
+                "json": "./lib/avtoday.js",
+                "proxy": "127.0.0.1:10072"
             }
         }, {
             "key": "Youtube1",
