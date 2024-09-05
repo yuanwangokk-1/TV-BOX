@@ -1,24 +1,17 @@
 {
     "spider": "./pg.jar",
     "sites": [
-	        {
-            "key": "av",
-            "name": "av",
-            "type": 3,
-            "api": "csp_av",
-            "searchable": 1,
-            "changeable": 1,
-            "style": {
-                "type": "rect",
-                "ratio": 1.433
-            },
-            "ext": {
-                "json": "./lib/av.json",
-                "proxy": "127.0.0.1:10072",
-                "cookie": ""
-            }
-        },
-
+		{
+			"key": "hipy_js_avtoday",
+			"name": "avtoday(drpy_t3)",
+			"type": 3,
+			"api": "./lib/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./lib/avtoday.js"
+		},
         {
             "key": "Youtube1",
             "name": "Youtube1",
