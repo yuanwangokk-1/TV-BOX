@@ -1,8 +1,4 @@
-本地包版本:20240725-1
-作者:道长
-QQ群:824179147
-PC:zyplayer 与 Mobile:easybox 通用
-easybox 支持网盘源播放，如阿里土豆。zyplayer暂不支持
+
 
 zyplayer导入教程:
 1.drpy_dzlive整个文件夹丢到zy服务目录的根目录，注意不是安装目录(写源工具-运行-服务)
