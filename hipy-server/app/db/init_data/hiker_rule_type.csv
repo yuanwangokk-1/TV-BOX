@@ -1,3 +1,0 @@
-id,created_time,creator_id,modified_time,modifier_id,is_deleted,name,count_num,active
-1,2023-12-04 19:55:50,1,2023-12-09 16:55:14,1,0,影视,2,True
-2,2023-12-05 22:52:36,1,2023-12-09 16:55:12,1,0,电影2,3,True

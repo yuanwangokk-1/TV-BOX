@@ -1,7 +1,0 @@
-id,created_time,creator_id,modified_time,modifier_id,is_deleted,username,nickname,sex,phone,email,hashed_password,avatar,status,is_active,is_superuser
-2,2022-11-22 00:48:34,0,2022-11-22 00:55:57.000000,1,0,opt,opt,0,12345678911,opt@beginner2020.top,$2b$12$EbJD0X5U0LwAvf5EVvYxZO20Jyv2xLKU1quekOyX3SwhdVepz1RFu,,0,True,False
-3,2022-11-22 00:50:26,0,2023-12-09 16:47:45.000000,1,0,user,,0,12345678912,user@beginner2020.top,$2b$12$Wov4niPCoLOeBcRNgGDNhekSZBgB/GAhYs25CLHfJG.me1KbFP0am,,0,True,False
-4,2023-12-02 15:36:42,1,2023-12-16 13:16:49.000000,4,0,hjdhnx,道长,2,13154671296,434857005@qq.com,$2b$12$X3LQ2VXThey.YB/WGlwYq.35CKOeKkBgmA6TTR91q/VYe6hGDAWRO,images/avatar/f84e9577-9047-470e-bcde-16173ca1811c.jpg,0,True,False
-5,2024-01-02 21:35:02,0,2024-01-02 21:38:43.000000,0,0,admin1,超级管理员1,0,12345678910,admin1@beginner2020.top,$2b$12$s1WlihU/PaMhW0T2H360Me8IswCyKtep8p.kQcV3z9QVdS7natYL.,,0,True,False
-6,2024-01-02 21:41:41,0,2024-01-02 22:29:54.000000,0,0,admin2,超级管理员2,0,12345678910,admin2@beginner2020.top,$2b$12$1JuTbUoZ4KkgNzCG1h6/9OzOLQ2NOU9g.fdPy5OHtrhFUBvBa31bO,,0,True,False
-1,2022-11-13 02:58:19,0,2024-03-17 09:41:24.829004,1,0,admin,超级管理员,0,12345678910,admin@beginner2020.top,$2b$12$nlyWZAzu4C9cgbHV/FE1X.nwBKiGemATgCxikPQEQVznMqBCrDw/e,images/avatar/cad832e9-e7e5-4b4c-a898-0a64ca9ea2f4.png,0,True,True

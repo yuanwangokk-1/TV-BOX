@@ -1,2 +1,0 @@
-id,created_time,creator_id,modified_time,modifier_id,is_deleted,name,type_id,dev_id,value,url,state,auth,auth_date_time,time_over,b64_value,home_url,pic_url,is_json,is_redirect,is_tap,can_discuss,is_json_list,data_type,version,author,note,good_num,bad_num,reply_num,is_safe,is_good,is_white,not_safe_note,last_active
-1,2023-12-04 20:00:34,1,2023-12-09 16:54:53,1,0,道德经,1,1,"""{\""name\"":\""道德经\""}""",hiker://empty#,1,,2023-12-04 20:00:34,False,,,,True,False,False,True,False,home_rule_url,1,道长,,1,1,1,True,True,True,,2023-12-04 20:00:34
