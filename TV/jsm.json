@@ -2,6 +2,30 @@
   "spider": "./pg.jar",
   "sites": [
     {
+      "key": "Miss",
+      "name": "Miss",
+      "type": 3,
+      "api": "csp_Miss",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60
+    },
+    {
+      "key": "Supjav",
+      "name": "🔞Supjav",
+      "type": 3,
+      "api": "csp_Supjav",
+      "jar": "./lib/xc.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      }
+    },
+    {
       "key": "豆瓣",
       "name": "豆瓣",
       "type": 3,
