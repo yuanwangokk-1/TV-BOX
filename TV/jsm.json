@@ -9,17 +9,21 @@
       "quickSearch": 1,
       "changeable": 1,
       "filterable": 1,
-      "timeout": 60
+      "timeout": 60,
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
     },
     {
       "key": "Supjav",
-      "name": "🔞Supjav",
+      "name": "Supjav",
       "type": 3,
       "api": "csp_Supjav",
       "jar": "./lib/xc.jar",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
+      "timeout": 60,
       "style": {
         "type": "rect",
         "ratio": 1.597
