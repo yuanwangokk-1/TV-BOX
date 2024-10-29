@@ -95,7 +95,7 @@
             "name": "🔞JAVRS",
             "type": 3,
             "api": "csp_XBPQ",
-            "jar": "./lib/XBPQ.jar",
+            "jar": "./lib/xyqxbpq.jar",
             "style": {
                 "type": "rect",
                 "ratio": 1.5
@@ -112,6 +112,7 @@
             "name": "Miss",
             "type": 3,
             "api": "csp_Miss",
+            "jar": "./lib/xyqxbpq.jar",
             "quickSearch": 1,
             "changeable": 1,
             "filterable": 1,
@@ -126,7 +127,7 @@
             "name": "Supjav",
             "type": 3,
             "api": "csp_Supjav",
-            "jar": "./lib/xc.jar",
+            "jar": "./lib/xyqxbpq.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
