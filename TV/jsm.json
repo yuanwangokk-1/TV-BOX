@@ -13,6 +13,28 @@
             "ext": "./json/纽约影院.json"
         },
         {
+            "key": "✨榴莲视频①✨",
+            "name": "✨榴莲视频①✨",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/xyqxbpq.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "./json/榴莲视频①.json"
+        },
+        {
+            "key": "✨榴莲视频②✨",
+            "name": "✨榴莲视频②✨",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/xyqxbpq.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "./json/榴莲视频②.json"
+        },
+        {
             "key": "榴莲视频①",
             "name": "🪷榴莲①┃视频",
             "type": 3,
