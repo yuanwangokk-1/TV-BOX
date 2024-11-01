@@ -1,0 +1,18 @@
+{
+    "请求头": "User-Agent$MOBILE_UA",
+    "编码": "UTF-8",
+    "线路数组": "<li>&&</li>",
+    "线路标题": "tab\">&&</a >",
+    "播放数组": "<ul class=\"clearfix fade&&</ul>",
+    "播放列表": "<a&&a>",
+    "播放链接": "href=\"&&\"",
+    "播放标题": "html\">&&</",
+    "简介": "details-content-all collapse\">&&</span>",
+    "分类url": "https://m.wuji100.com/{cateId}/index_{class}_{area}_{year}_{letter}_{by}_{catePg}.html",
+    "分类": "电影$dianying#电视剧$dianshiju#综艺$zongyi#动漫$dongman",
+    "类型": "动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#战争片$zhanzhengpian#剧情片$juqingpian#纪录片$jilupian#动画片$donghuapian||国产剧$guocanju#香港剧$xianggangju#欧美剧$oumeiju#日本剧$ribenju#海外剧$haiwaiju#台湾剧$taIwanju#韩国剧$hanguoju#泰国剧$taiguoju#奇幻片$qihuanpian#犯罪片$fanzuipian#悬疑片$xuanyipian||空||空",
+    "剧情": "惊悚$jingsong#悬疑$xuanyi#魔幻$mohuan#言情$yanqing#罪案$zuian1#冒险$maoxian#灾难$zainan#古装$guzhuang#青春$qingchun#歌舞$gewu#励志$lizhi#文艺$wenyi#生活$shenghuo#动画$donghua#伦理$lunli#原声$yuansheng#历史$lishi#谍战$diezhan#穿越$chuanyue#军旅$junlv#家庭$jiating#预告$yugao#益智$yizhi#偶像$ouxiang#犯罪$fanzui#搞笑$gaoxiao#热血$rexue#经典$jingdian#童话$tonghua#刑侦$xingzhen#推理$tuili#音乐$yinle#校园$xiaoyuan#神话$shenhua#都市$dushi#职场$zhichang#美食$meishi#旅游$lvyou#科幻$kehuan#恐怖$kongbu#喜剧$xiju#战争$zhanzheng#剧情$juqing#记录$jilu#爱情$aiqing#奇幻$qihuan#动作$dongzuo#预告$yugao#明星$mingxing#武侠$wuxia#其它$qita#时尚$shishang#少女$shaonv#竞技$jingji#商战$shangzhan#游戏$youxi||农村$nongcun#喜剧$xiju#偶像$ouxiang#古装$guzhuang#武侠$wuxia#神话$shenhua#穿越$chuanyue#刑侦$xingzhen#商战$shangzhan#战争$zhanzheng#军旅$junlv#谍战$diezhan#年代$niandai#职场$zhichang||真人$zhenrenxiu#脱口$tuokouxiu#选秀$xuanxiu#情感$qinggan#访谈$fangtan#美食$meishi#旅游$lvyou#财经$caijing#军事$junshi#职场$zhichang#音乐$yinle#时尚$shishang#娱乐$yule#体育$tiyu#生活$shenghuo#社会$shehui||冒险$maoxian#热血$rexue#搞笑$gaoxiao#少女$shaonv#恋爱$lianai#魔幻$mohuan#推理$tuili#神魔$shenmo#竞技$jingji#游戏$youxi#益智$yizhi#机战$jizhan#宠物$chongwu#格斗$gedou",
+    "地区": "空||空||大陆$dalu#香港$xianggang#台湾$taiwan#美国$meiguo#韩国$hanguo#日本$riben#泰国$taiguo#新加$xinjiapo#马来$malaixiya#印度$yindu#英国$yingguo#法国$faguo#加拿$jianada#西班$xibanya#俄罗$eluosi#其它$qita||大陆$dalu#香港$xianggang#台湾$taiwan#美国$meiguo#韩国$hanguo#日本$riben#泰国$taiguo#新加$xinjiapo#马来$malaixiya#印度$yindu#英国$yingguo#法国$faguo#加拿$jianada#西班$xibanya#俄罗$eluosi#其它$qita",
+    "排序": "按时间&按人气&按评分",
+    "排序值": "addtime&hits&gold"
+}
