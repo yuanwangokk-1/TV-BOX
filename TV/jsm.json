@@ -462,7 +462,7 @@
       "name": "爱你短剧--乐哥出品",
       "type": 3,
       "api": "csp_XBPQ",
-      "jar": "./lib/xyqxbpq.jar",
+      "jar": "./lib/XBPQ.jar",
       "ext": {
         "请求头": "User-Agent$MOBILE_UA",
         "编码": "UTF-8",
@@ -493,7 +493,7 @@
       "name": "金陵撸铁汉--乐哥出品",
       "type": 3,
       "api": "csp_XBPQ",
-      "jar": "./lib/xyqxbpq.jar",
+      "jar": "./lib/XBPQ.jar",
       "ext": {
         "主页url": "https://jud.jllth9.motorcycles/cn/home/web/",
         "直接播放": "1",
