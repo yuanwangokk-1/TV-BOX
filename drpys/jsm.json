@@ -2,6 +2,17 @@
 	"spider": "./pg.jar",
 	"sites": [
 		{
+			"key": "hipy_js_两个BT",
+			"name": "两个BT(drpy_t3)",
+			"type": 3,
+			"api": "./lib/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./js/两个BT.js"
+		},
+		{
 			"key": "苹果🍎",
 			"name": "🍎苹果",
 			"type": 3,
