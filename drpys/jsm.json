@@ -2,30 +2,6 @@
 	"spider": "./pg.jar",
 	"sites": [
 		{
-			"key": "4K-AV",
-			"name": "4K-AV",
-			"type": 3,
-			"api": "csp_XBPQ",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"jar": "./lib/xyqxbpq.jar",
-			"ext": "./js/4K-AV.js"
-		},
-		{
-			"key": "01看球[球]",
-			"name": "01看球[球]",
-			"type": 3,
-			"api": "csp_XBPQ",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"order_num": 0,
-			"jar": "./lib/xyqxbpq.jar",
-			"ext": "./js/01看球[球].js"
-		},
-		{
 			"key": "苹果🍎",
 			"name": "🍎苹果",
 			"type": 3,
