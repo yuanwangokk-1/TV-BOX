@@ -3,7 +3,7 @@
 	"sites": [
 		{
 			"key": "hipy_js_两个BT",
-			"name": "两个BT(drpy_t3)",
+			"name": "两个BT",
 			"type": 3,
 			"api": "./lib/drpy2.min.js",
 			"searchable": 1,
