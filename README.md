@@ -4,6 +4,5 @@
 TV-BOX 在线订阅地址：
 
 ```
-https://mirror.ghproxy.com/raw.githubusercontent.com/yuanwangokk-1/TV-BOX/refs/heads/main/TV/jsm.json
-
+https://mirror.ghproxy.com/raw.githubusercontent.com/yuanwangokk-1/TV-BOX/
 ```
