@@ -2,53 +2,296 @@
 	"spider": "./pg.jar",
 	"sites": [
 		{
-            "key": "低端影视",
-            "name": "低端｜影视",
-            "type": 3,
-            "jar": "./jar/xyqxbpq.jar",
-            "api": "csp_Ddys",
-            "searchable": 1,
-            "changeable": 0,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-         {
-            "key": "素白白",
-            "name": "👑素白白👑",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "jar": "./jar/xyqxbpq.jar",
-            "ext": {
-                "站名": "素白白影视",
-                "主页url": "https://www.subaibai.com",
-                "图片代理": "0",
-                "头部集合": "User-Agent$Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36#authority$www.subaibai.com#Referer$https://www.subaibai.com/#Origin$https://www.subaibai.com/",
-                "分类": "国产剧&电影&电视剧&热门电影&高分电影&动漫电影&欧美剧&韩剧&动漫剧",
-                "分类值": "domestic-drama&new-movie&tv-drama&hot-month&high-movie&cartoon-movie&american-drama&korean-drama&anime-drama",
-                "分类url": "https://www.subaibai.com/{cateId}/page/{catePg};;aks2",
-                "二次截取": "<div class=\"bt_img mi_ne_kd mrb\">&&<div class=\"clear\">",
-                "数组": "<li>&&</a>[替换:data-original=\">>图https://images.weserv.nl/?url=#https://www.subaibaiys.com>>https://www.subaibai.com]",
-                "图片": "图&&\"",
-                "副标题": "class=\"jidi\"><span>&&</span>",
-                "搜索模式": "1",
-                "搜索url": "https://www.subaibai.com/?s={wd}",
-                "影片年代": "年份：&&</li>",
-                "影片地区": "地区：&&</li>",
-                "影片类型": "类型：&&</li>",
-                "导演": "导演：&&</li>",
-                "主演": "主演：&&</li>",
-                "简介": "yp_context\">&&</p>",
-                "线路数组": "mi_paly_box\">&&</div>",
-                "线路标题": "ypxingq_t\">&&<span>[替换:在线播放>>素白专线]",
-                "播放数组": "<div class=\"paly_list_btn\">&&</div>[替换:https://www.subaibaiys.com>>https://www.subaibai.com]",
-                "播放列表": "<a&&/a>",
-                "播放标题": ">&&<",
-                "播放链接": "href=\"&&\"",
-                "嗅探词": "wangchuanxin.top#.mp4?#.m3u8#.mp4#.flv#.mp3#.m4a",
-                "过滤词": "data.m3u8.in#51.la#cnzz.com#baidu.com#bilibili.com",
-                "播放请求头": "User-Agent$Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36#authority$wangchuanxin.top#Origin$https://www.subaibai.com/"
-            }
-        },
+			"key": "苹果🍎",
+			"name": "🍎苹果",
+			"type": 3,
+			"api": "csp_LiteApple",
+			"searchable": 1,
+			"quickSearch": 1,
+			"changeable": 1,
+			"jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1720763657384/fan.txt;md5;026629a5c54494dc8ae9bd38d0a1a1f6"
+		},
+		{
+			"key": "厂长影院",
+			"name": "厂长┃影院",
+			"type": 3,
+			"jar": "./lib/XBPQ.jar",
+			"api": "csp_XBPQ",
+			"searchable": 1,
+			"changeable": 1,
+			"ext": {
+				"站名": "厂长资源",
+				"主页url": "https://www.czzy77.com/",
+				"分类url": "https://www.czzy77.com/{cateId}/{class}/{area}/page/{catePg};;m0",
+				"分类": "全部&豆瓣电影Top250&高分影视&最新电影&电影&国产剧&电视剧&动画&日剧&韩剧&美剧&海外剧&俄罗斯电影&加拿大电影&华语电影&印度电影&日本电影&欧美电影&韩国电影&纪录片",
+				"分类值": "movie_bt&dbtop250&gaofenyingshi&zuixindianying&movie_bt_series/dyy&movie_bt_series/guochanju&movie_bt_series/dianshiju&movie_bt_series/dohua&movie_bt_series/rj&movie_bt_series/hj&movie_bt_series/mj&movie_bt_series/hwj&movie_bt_series/eluosidianying&movie_bt_series/jianadadianying&movie_bt_series/huayudianying&movie_bt_series/yindudianying&movie_bt_series/ribendianying&movie_bt_series/meiguodianying&movie_bt_series/hanguodianying&movie_bt/movie_bt_tags/jlpp",
+				"简介": "<div class=\"yp_context\">&&</div>",
+				"导演": "导演：&&</li>",
+				"主演": "主演：&&</li>",
+				"影片年代": "年份：&&</li>",
+				"影片地区": "地区：&&</li>",
+				"影片类型": "类型：&&</li>",
+				"数组": "<li>&&</li>",
+				"图片": "data-original=\"&&\"",
+				"标题": "alt=\"&&\"",
+				"链接": "href=\"&&\"",
+				"副标题": "jidi\">&&</div>+furk\">&&</div>+rating\">&&</div>",
+				"线路数组": "<div class=\"mi_paly_box\">&&</div>",
+				"线路标题": "<span>&&</span>[替换:在线观看>>极速]",
+				"播放数组": "<div class=\"paly_list_btn\">&&</div>",
+				"播放列表": "<a&&/a>",
+				"播放标题": ">&&<[替换:立即播放>>空]",
+				"播放链接": "href=\"&&\"",
+				"筛选": {
+					"movie_bt": [
+						{
+							"key": "area",
+							"name": "分类",
+							"value": [
+								{
+									"v": "",
+									"n": "全部分类"
+								},
+								{
+									"v": "movie_bt_series/dyy",
+									"n": "电影"
+								},
+								{
+									"v": "movie_bt_series/dianshiju",
+									"n": "电视剧"
+								},
+								{
+									"v": "movie_bt_series/dohua",
+									"n": "动画"
+								},
+								{
+									"v": "movie_bt_series/guochanju",
+									"n": "国产剧"
+								},
+								{
+									"v": "movie_bt_series/mj",
+									"n": "美剧"
+								},
+								{
+									"v": "movie_bt_series/rj",
+									"n": "日剧"
+								},
+								{
+									"v": "movie_bt_series/hj",
+									"n": "韩剧"
+								},
+								{
+									"v": "movie_bt_series/hwj",
+									"n": "海外剧（其他）"
+								},
+								{
+									"v": "movie_bt_series/huayudianying",
+									"n": "华语电影"
+								},
+								{
+									"v": "movie_bt_series/meiguodianying",
+									"n": "欧美电影"
+								},
+								{
+									"v": "movie_bt_series/ribendianying",
+									"n": "日本电影"
+								},
+								{
+									"v": "movie_bt_series/hanguodianying",
+									"n": "韩国电影"
+								},
+								{
+									"v": "movie_bt_series/yindudianying",
+									"n": "印度电影"
+								},
+								{
+									"v": "movie_bt_series/eluosidianying",
+									"n": "俄罗斯电影"
+								},
+								{
+									"v": "movie_bt_series/jianadadianying",
+									"n": "加拿大电影"
+								},
+								{
+									"v": "movie_bt_series/huiyuanzhuanqu",
+									"n": "会员专区"
+								}
+							]
+						},
+						{
+							"key": "class",
+							"name": "类型",
+							"value": [
+								{
+									"n": "全部类型",
+									"v": ""
+								},
+								{
+									"n": "传记",
+									"v": "movie_bt_tags/chuanji"
+								},
+								{
+									"n": "儿童",
+									"v": "movie_bt_tags/etet"
+								},
+								{
+									"n": "冒险",
+									"v": "movie_bt_tags/maoxian"
+								},
+								{
+									"n": "剧情",
+									"v": "movie_bt_tags/juqing"
+								},
+								{
+									"n": "动作",
+									"v": "movie_bt_tags/dozuo"
+								},
+								{
+									"n": "动漫",
+									"v": "movie_bt_tags/doman"
+								},
+								{
+									"n": "动画",
+									"v": "movie_bt_tags/dhh"
+								},
+								{
+									"n": "历史",
+									"v": "movie_bt_tags/lishi"
+								},
+								{
+									"n": "古装",
+									"v": "movie_bt_tags/guzhuang"
+								},
+								{
+									"n": "喜剧",
+									"v": "movie_bt_tags/xiju"
+								},
+								{
+									"n": "奇幻",
+									"v": "movie_bt_tags/qihuan"
+								},
+								{
+									"n": "家庭",
+									"v": "movie_bt_tags/jiating"
+								},
+								{
+									"n": "恐怖",
+									"v": "movie_bt_tags/kubu"
+								},
+								{
+									"n": "悬疑",
+									"v": "movie_bt_tags/xuanyi"
+								},
+								{
+									"n": "情色",
+									"v": "movie_bt_tags/qingse"
+								},
+								{
+									"n": "惊悚",
+									"v": "movie_bt_tags/kingsong"
+								},
+								{
+									"n": "战争",
+									"v": "movie_bt_tags/zhanzhen"
+								},
+								{
+									"n": "歌舞",
+									"v": "movie_bt_tags/gw"
+								},
+								{
+									"n": "武侠",
+									"v": "movie_bt_tags/wuxia"
+								},
+								{
+									"n": "灾难",
+									"v": "movie_bt_tags/zainan"
+								},
+								{
+									"n": "爱情",
+									"v": "movie_bt_tags/aiqing"
+								},
+								{
+									"n": "犯罪",
+									"v": "movie_bt_tags/fanzui"
+								},
+								{
+									"n": "短片",
+									"v": "movie_bt_tags/dp"
+								},
+								{
+									"n": "科幻",
+									"v": "movie_bt_tags/kh"
+								},
+								{
+									"n": "纪录片",
+									"v": "movie_bt_tags/jlpp"
+								},
+								{
+									"n": "西部",
+									"v": "movie_bt_tags/xb"
+								},
+								{
+									"n": "运动",
+									"v": "movie_bt_tags/yd"
+								},
+								{
+									"n": "音乐",
+									"v": "movie_bt_tags/yy"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"key": "低端影视",
+			"name": "低端｜影视",
+			"type": 3,
+			"jar": "./jar/xyqxbpq.jar",
+			"api": "csp_Ddys",
+			"searchable": 1,
+			"changeable": 0,
+			"quickSearch": 1,
+			"filterable": 1
+		},
+		{
+			"key": "素白白",
+			"name": "👑素白白👑",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"jar": "./jar/xyqxbpq.jar",
+			"ext": {
+				"站名": "素白白影视",
+				"主页url": "https://www.subaibai.com",
+				"图片代理": "0",
+				"头部集合": "User-Agent$Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36#authority$www.subaibai.com#Referer$https://www.subaibai.com/#Origin$https://www.subaibai.com/",
+				"分类": "国产剧&电影&电视剧&热门电影&高分电影&动漫电影&欧美剧&韩剧&动漫剧",
+				"分类值": "domestic-drama&new-movie&tv-drama&hot-month&high-movie&cartoon-movie&american-drama&korean-drama&anime-drama",
+				"分类url": "https://www.subaibai.com/{cateId}/page/{catePg};;aks2",
+				"二次截取": "<div class=\"bt_img mi_ne_kd mrb\">&&<div class=\"clear\">",
+				"数组": "<li>&&</a>[替换:data-original=\">>图https://images.weserv.nl/?url=#https://www.subaibaiys.com>>https://www.subaibai.com]",
+				"图片": "图&&\"",
+				"副标题": "class=\"jidi\"><span>&&</span>",
+				"搜索模式": "1",
+				"搜索url": "https://www.subaibai.com/?s={wd}",
+				"影片年代": "年份：&&</li>",
+				"影片地区": "地区：&&</li>",
+				"影片类型": "类型：&&</li>",
+				"导演": "导演：&&</li>",
+				"主演": "主演：&&</li>",
+				"简介": "yp_context\">&&</p>",
+				"线路数组": "mi_paly_box\">&&</div>",
+				"线路标题": "ypxingq_t\">&&<span>[替换:在线播放>>素白专线]",
+				"播放数组": "<div class=\"paly_list_btn\">&&</div>[替换:https://www.subaibaiys.com>>https://www.subaibai.com]",
+				"播放列表": "<a&&/a>",
+				"播放标题": ">&&<",
+				"播放链接": "href=\"&&\"",
+				"嗅探词": "wangchuanxin.top#.mp4?#.m3u8#.mp4#.flv#.mp3#.m4a",
+				"过滤词": "data.m3u8.in#51.la#cnzz.com#baidu.com#bilibili.com",
+				"播放请求头": "User-Agent$Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36#authority$wangchuanxin.top#Origin$https://www.subaibai.com/"
+			}
+		},
 		{
 			"key": "Aries不承担任何风险-新希望影院",
 			"name": "🙏希望┃影院",
