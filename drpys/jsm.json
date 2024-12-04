@@ -11,7 +11,7 @@
 			"filterable": 1,
 			"order_num": 0,
 			"jar": "./lib/xyqxbpq.jar",
-			"ext": "./js/4K-AV"
+			"ext": "./js/4K-AV.js"
 		},
 		{
 			"key": "01看球[球]",
@@ -23,7 +23,7 @@
 			"filterable": 1,
 			"order_num": 0,
 			"jar": "./lib/xyqxbpq.jar",
-			"ext": "./js/01看球[球]"
+			"ext": "./js/01看球[球].js"
 		},
 		{
 			"key": "苹果🍎",
