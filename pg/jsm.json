@@ -30,48 +30,6 @@
 			}
 		},
 		{
-			"key": "JavBus",
-			"name": "JavBus",
-			"type": 3,
-			"api": "csp_JavBus",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"timeout": 60,
-			"style": {
-				"type": "rect",
-				"ratio": 1.597
-			}
-		},
-		{
-			"key": "javDb",
-			"name": "javDb",
-			"type": 3,
-			"api": "csp_javDb",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"timeout": 60,
-			"style": {
-				"type": "rect",
-				"ratio": 1.597
-			}
-		},
-		{
-			"key": "Kugou",
-			"name": "Kugou",
-			"type": 3,
-			"api": "csp_Kugou",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"timeout": 60,
-			"style": {
-				"type": "rect",
-				"ratio": 1.597
-			}
-		},
-		{
 			"key": "豆瓣",
 			"name": "豆瓣",
 			"type": 3,
