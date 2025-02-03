@@ -6,6 +6,7 @@
 			"name": "🔴lav",
 			"type": 3,
 			"api": "./lib/py_lav.py",
+			"jar": "./lib/xyqxbpq.jar",
 			"style": {
 				"type": "rect",
 				"ratio": 1.5
@@ -16,6 +17,7 @@
 			"name": "推特",
 			"type": 3,
 			"api": "./lib/py_推特.py",
+			"jar": "./lib/xyqxbpq.jar",
 			"style": {
 				"type": "rect",
 				"ratio": 1.5
