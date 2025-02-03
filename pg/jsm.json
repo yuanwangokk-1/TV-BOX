@@ -2,16 +2,6 @@
 	"spider": "./pg.jar",
 	"sites": [
 		{
-			"key": "py_黑料",
-			"name": "黑料",
-			"type": 3,
-			"api": "./lib/py_黑料.py",
-			"style": {
-				"type": "rect",
-				"ratio": 1.5
-			}
-		},
-		{
 			"key": "py_lav",
 			"name": "🔴lav",
 			"type": 3,
