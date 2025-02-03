@@ -2,6 +2,26 @@
 	"spider": "./pg.jar",
 	"sites": [
 		{
+			"key": "py_lav",
+			"name": "🔴lav",
+			"type": 3,
+			"api": "./lib/py_lav.py",
+			"style": {
+				"type": "rect",
+				"ratio": 1.5
+			}
+		},
+		{
+			"key": "py_推特",
+			"name": "推特",
+			"type": 3,
+			"api": "./lib/py_推特.py",
+			"style": {
+				"type": "rect",
+				"ratio": 1.5
+			}
+		},
+		{
 			"key": "流氓兔",
 			"name": "🐇流氓┃兔兔",
 			"type": 3,
