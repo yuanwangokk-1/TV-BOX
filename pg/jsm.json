@@ -1,5 +1,5 @@
 {
-  "spider": "./pg.jar",
+  "spider": "./lib/pg.jar",
   "sites": [
     {
       "key": "py_lav",
