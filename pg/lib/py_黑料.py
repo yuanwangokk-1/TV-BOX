@@ -9,7 +9,7 @@ from base.spider import Spider
 import random
 
 sys.path.append('..')
-xurl = "https://heiliaowang-44.buzz"
+xurl = "https://18hlw.com/"
 headerx = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36',
 
