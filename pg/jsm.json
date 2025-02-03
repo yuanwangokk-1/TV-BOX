@@ -247,18 +247,6 @@
 			}
 		},
 		{
-			"key": "drpy_js_磁力熊",
-			"name": "磁力熊[js]|索引",
-			"type": 3,
-			"api": "./lib/drpy2.min.js",
-			"ext": "./js/cilixiongp.js",
-			"playerType": 1,
-			"searchable": 0,
-			"quickSearch": 0,
-			"changeable": 1,
-			"indexs": 1
-		},
-		{
 			"key": "bili",
 			"name": "B站 | Bili[jar]",
 			"type": 3,
@@ -424,41 +412,6 @@
 			"quickSearch": 1
 		},
 		{
-			"key": "drpy_js_人人影视",
-			"name": "人人影视[js]|搜",
-			"type": 3,
-			"api": "./lib/drpy2.min.js",
-			"ext": "./js/yyets.js",
-			"quickSearch": 1,
-			"changeable": 1,
-			"timeout": 60,
-			"style": {
-				"type": "list",
-				"ratio": 1.1
-			}
-		},
-		{
-			"key": "drpy_js_MP4US",
-			"name": "MP4电影[js]|磁",
-			"type": 3,
-			"api": "./lib/drpy2.min.js",
-			"ext": "./js/mp4us.js",
-			"quickSearch": 1,
-			"changeable": 1,
-			"timeout": 60
-		},
-		{
-			"key": "drpy_js_88ball",
-			"name": "88看球[js]",
-			"type": 3,
-			"api": "./lib/drpy2.min.js",
-			"ext": "./js/88ball.js",
-			"quickSearch": 0,
-			"searchable": 0,
-			"changeable": 0,
-			"timeout": 30
-		},
-		{
 			"key": "4KHDR",
 			"name": "4KHDR|网盘",
 			"type": 3,
@@ -480,16 +433,6 @@
 			"api": "csp_JustLive",
 			"searchable": 1,
 			"changeable": 0
-		},
-		{
-			"key": "drpy_js_酷吧",
-			"name": "酷吧[js]|磁",
-			"type": 3,
-			"api": "./lib/drpy2.min.js",
-			"ext": "./js/kuba.js",
-			"quickSearch": 1,
-			"changeable": 1,
-			"timeout": 60
 		},
 		{
 			"key": "BLSGod",
@@ -734,16 +677,6 @@
 			"searchable": 0,
 			"changeable": 1,
 			"ext": "https://www.duanjutv.icu"
-		},
-		{
-			"key": "drpy_js_Alist",
-			"name": "网盘 | Alist[js]",
-			"type": 3,
-			"api": "./lib/alist.min.js",
-			"searchable": 1,
-			"filterable": 1,
-			"changeable": 1,
-			"ext": "./js/alist.json"
 		},
 		{
 			"key": "MV_vod",
