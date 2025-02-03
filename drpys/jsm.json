@@ -13,7 +13,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.kmxibanyayu.com/",
+				"主页url": "https://www.kmxibanyayu.com/",
 				"数组": "lazyload\"&&</li>",
 				"标题": "title=\"&&\"",
 				"图片": "data-original=\"&&\"",
@@ -27,8 +27,8 @@
 				"线路标题": ">&&</a>",
 				"简介": "简介：</span>&&</span><a",
 				"跳转播放链接": "urlDecode(var player_*\"url\":\"&&\")",
-				"搜索url": "http://www.kmxibanyayu.com/vso/{wd}----------{pg}---.html",
-				"分类url": "http://www.kmxibanyayu.com/vs/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
+				"搜索url": "https://www.kmxibanyayu.com/vso/{wd}----------{pg}---.html",
+				"分类url": "https://www.kmxibanyayu.com/vs/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
 				"分类": "电影$dianying#电视剧$dianshiju#综艺$zongyi#动漫$dongman#短剧$duanju#电影解说$dianyingjieshuo",
 				"类型": "动作片$dongzuopian#喜剧片$xijupian#科幻片$kehuanpian#恐怖片$kongbupian#爱情片$aiqingpian#剧情片$juqingpian#战争片$zhanzhengpian#悬疑片$xuanyipian#惊悚片$jingsongpian#犯罪片$fanzuipian#奇幻片$qihuanpian#动画片$donghuapian#纪录片$jilupian#邵氏电影$shaoshidianying#预告片$yugaopian#家庭片$jiatingpian#古装片$guzhuangpian#历史片$lishipian#4K电影$4kdianying||国产剧$guochanju#港剧$gangju#台剧$taiju#日剧$riju#韩剧$hanju#泰剧$tju#美剧$meiju#海外剧$haiwaiju||大陆综艺$daluzongyi#港台综艺$gangtaizongyi#日韩综艺$rihanzongyi#欧美综艺$oumeizongyi||国产动漫$guochandongman#港台动漫$gangtaidongman#日韩动漫$rihandongman#欧美动漫$oumeidongman#海外动漫$haiwaidongman||空||空",
 				"剧情": "喜剧&爱情&恐怖&动作&科幻&剧情&战争&警匪&犯罪&动画&奇幻&武侠&冒险&枪战&悬疑&惊悚&经典&青春&文艺&微电影&古装&历史&运动&农村&儿童&网络电影||古装&战争&青春偶像&喜剧&家庭&犯罪&动作&奇幻&剧情&历史&经典&乡村&情景&商战&网剧&短剧&其他||选秀&情感&访谈&播报&旅游&音乐&美食&纪实&曲艺&生活&游戏互动&财经&求职||情感&科幻&热血&推理&搞笑&冒险&萝莉&校园&动作&机战&运动&战争&少年&少女&社会&原创&亲子&益智&励志&其他||空||喜剧&爱情&恐怖&动作&科幻&剧情&战争&警匪&犯罪&动画&奇幻&武侠&冒险&枪战&悬疑&惊悚&经典&青春&文艺&微电影&古装&历史&运动&农村&儿童&网络电影",
@@ -338,7 +338,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.njjinwu.com/",
+				"主页url": "https://www.njjinwu.com/",
 				"数组": "lazyload\"&&</a>",
 				"标题": "title=\"&&\"",
 				"图片": "data-original=\"&&\"",
@@ -358,7 +358,7 @@
 				"线路标题": "alt=\"&&\"",
 				"搜索模式": "1",
 				"搜索url": "/vodsearch/{wd}----------{pg}---.html",
-				"分类url": "http://xtk.njjinwu.com/vodshow/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
+				"分类url": "https://xtk.njjinwu.com/vodshow/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
 				"分类": "电影$dianying#电视剧$dianshiju#综艺$zongyi#动漫$dongman#午夜剧场$lunlipian#网红短剧$duanju#动画片$donghuapian#邵氏电影$shaoshidianying",
 				"筛选": "1",
 				"类型": "动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#犯罪片$fanzuipian#战争片$zhanzhengpian||国产剧$guocanju#港剧$gangju#台湾剧$taiwanju#韩剧$hanju#日剧$riju#泰剧$taiju#欧美剧$oumeiju#海外剧$haiwaiju||大陆综艺$daluzongyi#日韩综艺$rihanzongyi#港台综艺$gangtaizongyi#欧美综艺$oumeizongyi||国产动漫$guochandongman#日本动漫$ribendongman#欧美动漫$oumeidongman#海外动漫$haiwaidongman||空||空||空||空"
@@ -389,8 +389,8 @@
 				"线路数组": "\\#playlist&&</li>",
 				"线路标题": "tab\"&&</a>",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"主页url": "http://v.hpdjt999.com/",
-				"分类url": "http://v.hpdjt999.com/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
+				"主页url": "https://v.hpdjt999.com/",
+				"分类url": "https://v.hpdjt999.com/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
 				"分类": "电影$dianying#电视剧$dianshiju#综艺$zongyi#动漫$dongman#短剧$duanju",
 				"类型": "动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#战争片$zhanzhengpian#奇幻片$qihuanpian#犯罪片$fanzuipian#悬疑片$xuanyipian#纪录片$jilupian#伦理片$lunlipian#动画片$donghuapian#老电影$laodianying||国产剧$guochanju#香港剧$xianggangju#台湾剧$diwanju#日本剧$ribenju#韩国剧$hanguoju#泰国剧$taiguoju#欧美剧$oumeiju#欧美剧$oumeiju#海外剧$haiwaiju||大陆综艺$daluzongyi#港台综艺$gangtaizongyi#日韩综<艺$rihanzongyi#欧美综艺$oumeizongyi||国产动漫$guochandongman#港台动漫$gangtaidongman#日韩动漫$rihandongman#欧美动漫$oumeidongman#海外动漫$haiwaidongman||空"
 			}
@@ -488,7 +488,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://m.yqfrzx.cn/",
+				"主页url": "https://m.yqfrzx.cn/",
 				"二次截取": "hl-vod-list clearfix\"&&</ul>",
 				"数组": "hl-item-thumb hl-lazy\"&&</a>",
 				"标题": "title=\"&&\"",
@@ -502,7 +502,7 @@
 				"线路数组": "hl-tabs-btn hl-slide-swiper&&</a>",
 				"线路标题": "alt=\"&&\"",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"分类url": "http://m.yqfrzx.cn/vod/{cateId}-{area}-------{catePg}---{year}.html",
+				"分类url": "https://m.yqfrzx.cn/vod/{cateId}-{area}-------{catePg}---{year}.html",
 				"分类": "电影$1#电视剧$2#综艺$3#动漫$4",
 				"类型": "动作片$7#喜剧片$8#爱情片$9#科幻片$10#恐怖片$11#剧情片$12#犯罪片$29#战争片$13||国产剧$14#港剧$15#台湾剧$16#韩剧$17#日剧$18#泰剧$31#欧美剧$19#海外剧$20||大陆综艺$21#日韩综艺$22#港台综艺$23#欧美综艺$24||国产动漫$25#日本动漫$26#欧美动漫$27#海外动漫$28"
 			}
@@ -531,8 +531,8 @@
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
 				"简介": "简介：</em>&&</li>",
 				"分类": "电影$dianying#连续剧$lianxuju#综艺$zongyi#动漫$dongman#短剧$duanju",
-				"搜索url": "http://www.freeys.cc/vodsearch/{wd}----------{pg}---/",
-				"分类url": "http://www.freeys.cc/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}/"
+				"搜索url": "https://www.freeys.cc/vodsearch/{wd}----------{pg}---/",
+				"分类url": "https://www.freeys.cc/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}/"
 			}
 		},
 		{
@@ -776,10 +776,10 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.1000007.com/",
+				"主页url": "https://www.1000007.com/",
 				"首页": "120",
 				"起始页": "1",
-				"分类url": "http://www.1000007.com/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html;;mrcd0",
+				"分类url": "https://www.1000007.com/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html;;mrcd0",
 				"分类": "电影&剧集&综艺&动漫&纪录片",
 				"类型": "短视频$36#动作片$6#喜剧片$7#爱情片$8#科幻片$9#恐怖片$10#战争片$12||日剧$26#海外剧$27#国产剧$13#港台剧$14#韩剧$15#美剧$16||空||空||空",
 				"分类值": "1&2&3&4&28",
@@ -807,7 +807,7 @@
 				"跳转播放数组": "",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
 				"搜索请求头": "User-Agent$MOBILE_UA",
-				"搜索url": "http://www.1000007.com/vodsearch/{wd}----------{pg}---.html",
+				"搜索url": "https://www.1000007.com/vodsearch/{wd}----------{pg}---.html",
 				"搜索模式": "1",
 				"搜索数组": "lazyload\"&&</a>",
 				"搜索标题": "title=\"&&\"",
@@ -1003,7 +1003,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.hnylcdz.cn/",
+				"主页url": "https://www.hnylcdz.cn/",
 				"二次截取": "myui-vodlist clearfix\"&&</ul>",
 				"数组": "lazyload\"&&</li>",
 				"标题": "title=\"&&\"",
@@ -1017,7 +1017,7 @@
 				"线路数组": "\\#playlist&&a>",
 				"线路标题": "tab\"&&</",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"分类url": "http://www.hnylcdz.cn/show/{cateId}-{area}-------{catePg}---{year}.html",
+				"分类url": "https://www.hnylcdz.cn/show/{cateId}-{area}-------{catePg}---{year}.html",
 				"分类": "电影$1#电视剧$2#综艺$3#动漫$4#伦理片$30",
 				"类型": "动作片$7#喜剧片$8#爱情片$9#科幻片$10#恐怖片$11#剧情片$12#犯罪片$29#战争片$13||国产剧$14#港剧$15#台湾剧$16#韩剧$17#日剧$18#泰剧$31#欧美剧$19#海外剧$20||大陆综艺$21#日韩综艺$22#港台综艺$23#欧美综艺$24||国产动漫$25#日本动漫$26#欧美动漫$27#海外动漫$28||空"
 			}
@@ -1126,7 +1126,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://ks-ydk.com/",
+				"主页url": "https://ks-ydk.com/",
 				"二次截取": "stui-vodlist clearfix&&</ul>",
 				"数组": "lazyload\"&&</a>",
 				"标题": "title=\"&&\"",
@@ -1140,7 +1140,7 @@
 				"播放标题": ">&&</a>",
 				"播放链接": "href=\"&&\"",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"分类url": "http://ks-ydk.com/show/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
+				"分类url": "https://ks-ydk.com/show/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
 				"分类": "电影$1#电视剧$2#综艺$3#动漫$4#午夜剧场$36#网红短剧$30",
 				"类型": "动作片$7#喜剧片$8#爱情片$9#科幻片$10#恐怖片$11#剧情片$12#犯罪片$29#战争片$13||国产剧$14#港剧$15#台湾剧$16#韩剧$17#日剧$18#泰剧$31#欧美剧$19#海外剧$20||大陆综艺$21#日韩综艺$22#港台综艺$23#欧美综艺$24||国产动漫$25#日本动漫$26#欧美动漫$27#海外动漫$28||空||空"
 			}
@@ -1157,7 +1157,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.cgwall.cn/",
+				"主页url": "https://www.cgwall.cn/",
 				"数组": "vodlist_item num&&</a>",
 				"标题": "title=\"&&\"",
 				"图片": "data-original=\"&&\"",
@@ -1171,7 +1171,7 @@
 				"播放标题": ">&&</",
 				"播放链接": "href=\"&&\"",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"分类url": "http://www.cgwall.cn/show/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
+				"分类url": "https://www.cgwall.cn/show/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
 				"分类": "电影$1#电视剧$2#动漫$4#短剧$3#伦理片$30#微视频$36",
 				"筛选": "1",
 				"类型": "动作片$7#喜剧片$8#爱情片$9#科幻片$10#恐怖片$11#剧情片$12#犯罪片$29#战争片$13||国产剧$14#港剧$15#台湾剧$16#韩剧$17#日剧$18#泰剧$31#欧美剧$19#海外剧$20||国产动漫$25#日本动漫$26#欧美动漫$27#海外动漫$28||重生民国$21#现代言情$22#反转爽文$23||空||空"
@@ -1473,8 +1473,8 @@
 				"线路数组": "<h3&&h3>",
 				"线路标题": "\">&&</",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"主页url": "http://www.sdm0377.com/",
-				"分类url": "http://www.sdm0377.com/show/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
+				"主页url": "https://www.sdm0377.com/",
+				"分类url": "https://www.sdm0377.com/show/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
 				"分类": "电影$Movie#电视剧$TV#综艺$ZY#动漫$ACG#短剧$DJ",
 				"类型": "动作片$dongzuody#喜剧片$xijudy#科幻片$kehuandy#恐怖片$kongbudy#爱情片$aiqingdy#剧情片$juqingdy#战争片$zhanzhengdy#记录片$jiludy#预告片$yugaody||国产剧$guochantv#欧美剧$oumeitv#香港剧$xianggangtv#韩国剧$hanguotv#台湾剧$taiwantv#日本剧$ribentv#泰国剧$taiguotv#海外剧$haiwaitv||空||空||空"
 			}
@@ -1491,7 +1491,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.cdjyhm.com/list/1.html",
+				"主页url": "https://www.cdjyhm.com/list/1.html",
 				"简介": "style=\"display: none;\">&&</span>",
 				"数组": "lazyload\"&&</a>",
 				"标题": "title=\"&&\"",
@@ -1505,7 +1505,7 @@
 				"线路数组": "href=\"\\#playlist&&</li>[排序:抖音云>百度云>字节云]",
 				"线路标题": "\">&&</a>",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"分类url": "http://www.cdjyhm.com/show/{cateId}-{area}-{by}------{catePg}---{year}.html",
+				"分类url": "https://www.cdjyhm.com/show/{cateId}-{area}-{by}------{catePg}---{year}.html",
 				"分类": "电影$1#电视剧$2#综艺$3#动漫$4",
 				"类型": "动作片$6#喜剧片$7#爱情片$8#科幻片$9#恐怖片$10#剧情片$11#战争片$12||国产剧$13#香港剧$14#韩国剧$15#欧美剧$16||空||空"
 			}
@@ -1554,7 +1554,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://ty1010.com/",
+				"主页url": "https://ty1010.com/",
 				"数组": "class=\"public-list-exp\"&&</a>",
 				"标题": "alt=\"&&封面图\"",
 				"图片": "data-src=\"&&\"",
@@ -1569,7 +1569,7 @@
 				"播放标题": "\">&&</",
 				"播放链接": "href=\"&&\"",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"分类url": "http://ty1010.com/index.php/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/lang/{lang}/page/{catePg}/year/{year}.html",
+				"分类url": "https://ty1010.com/index.php/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/lang/{lang}/page/{catePg}/year/{year}.html",
 				"分类": "电影$2#电视剧$1#综艺$4#动漫$3#体育赛事$5#网红短剧$41"
 			}
 		},
@@ -1714,7 +1714,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://lymyx.com/",
+				"主页url": "https://lymyx.com/",
 				"二次截取": "<ul class=\"*stui-vodlist clearfix\"&&</ul>",
 				"数组": "lazyload\"&&</a>",
 				"标题": "title=\"&&\"",
@@ -1728,7 +1728,7 @@
 				"线路数组": "<h3&&h3>",
 				"线路标题": ">&&</",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"分类url": "http://lymyx.com/show/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
+				"分类url": "https://lymyx.com/show/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
 				"分类": "电影$1#电视剧$2#综艺$3#动漫$4#伦理片$30#网红短剧$40"
 			}
 		},
@@ -1800,7 +1800,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.360shipu.com/",
+				"主页url": "https://www.360shipu.com/",
 				"数组": "lazyload\"&&</a>",
 				"标题": "title=\"&&\"",
 				"图片": "data-original=\"&&\"",
@@ -1813,7 +1813,7 @@
 				"线路数组": "<h3 class=*title\">&&h3>",
 				"线路标题": ">&&</",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"分类url": "http://www.360shipu.com/show/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
+				"分类url": "https://www.360shipu.com/show/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
 				"分类": "电影$1#电视剧$2#综艺$3#动漫$4#伦理片$30#电影解说$39",
 				"类型": "动作片$7#喜剧片$8#爱情片$9#科幻片$10#恐怖片$11#剧情片$12#战争片$13#犯罪片$29||国产剧$14#港剧$15#台湾剧$16#韩剧$17#日剧$18#泰剧$31#欧美剧$19#海外剧$20#短剧$43||大陆综艺$21#日韩综艺$22#港台综艺$23#欧美综艺$24||国产动漫$25#日本动漫$26#欧美动漫$27#海外动漫$28||空||空"
 			}
@@ -2060,7 +2060,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.duanjutv.cc",
+				"主页url": "https://www.duanjutv.cc",
 				"数组": "shadow\"&&</a>",
 				"链接": "href=\"&&\"",
 				"图片": "<img src=\"&&\"",
@@ -2073,8 +2073,8 @@
 				"播放链接": "href='&&'",
 				"播放标题": ">&&</a>",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"搜索url": "http://www.duanjutv.cc/vodsearch/{wd}----------{pg}---.html",
-				"分类url": "http://www.duanjutv.cc/vodtype/{cateId}-{catePg}.html",
+				"搜索url": "https://www.duanjutv.cc/vodsearch/{wd}----------{pg}---.html",
+				"分类url": "https://www.duanjutv.cc/vodtype/{cateId}-{catePg}.html",
 				"分类": "抖音短剧$20#快手短剧$21#视频号短剧$22#热播短剧$23"
 			}
 		},
@@ -2090,7 +2090,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.dy9394.top/",
+				"主页url": "https://www.dy9394.top/",
 				"二次截取": "module-items\"&&id=\"page[替换:module-footer>>module-item]",
 				"数组": "module-item-pic&&module-item\"",
 				"标题": "title=\"&&\"",
@@ -2105,7 +2105,7 @@
 				"线路数组": "class=\"module-tab-item tab-item&&</div>",
 				"线路标题": "<span>&&</span>",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"分类url": "http://www.dy9394.top/index.php/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/lang/{lang}/letter/{letter}/page/{catePg}/year/{year}.html",
+				"分类url": "https://www.dy9394.top/index.php/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/lang/{lang}/letter/{letter}/page/{catePg}/year/{year}.html",
 				"分类": "电影片库$1#电视剧片库$2#动漫片库$3#综艺片库$4#男人运动片库$32",
 				"类型": "动作片$6#喜剧片$7#爱情片$8#科幻片$9#惊恐片$10#战争片$11#悬疑片$20#剧情片$12#纪录片$21#伦理片$22#预告片$36||国产剧$13#港台剧$16#热短剧$23#日韩剧$14#欧美剧$15#泰马剧$24||国产动漫$25#日韩动漫$26#动漫电影$27#其他动漫$28||国产综艺$29#欧美综艺$30#日韩综艺$31||精品日韩$33#精品国产$34#欧美激情$35#网曝吃瓜$37"
 			}
@@ -2153,8 +2153,8 @@
 				"线路数组": "class=\"hl-tabs-btn&&a>",
 				"线路标题": "alt=\"&&\"",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"主页url": "http://www.scycjc.com/",
-				"分类url": "http://www.scycjc.com/dtype/{cateId}-{catePg}.html",
+				"主页url": "https://www.scycjc.com/",
+				"分类url": "https://www.scycjc.com/dtype/{cateId}-{catePg}.html",
 				"分类": "电影$1#电视剧$2#综艺$3#动漫$4",
 				"类型": "动作片$6#喜剧片$7#爱情片$8#科幻片$9#恐怖片$10#剧情片$11#战争片$12#动漫电影$21#电影片$22||国产剧$13#港台剧$14#韩剧$15#美剧$16#日剧$19#泰剧$20||空||空"
 			}
@@ -2243,8 +2243,8 @@
 				"线路数组": "class=\"stui-vodlist__head\"&&span>",
 				"线路标题": "\">&&</",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"主页url": "http://114bate.com/",
-				"分类url": "http://114bate.com/show/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
+				"主页url": "https://114bate.com/",
+				"分类url": "https://114bate.com/show/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
 				"分类": "电影$1#电视剧$2#综艺$3#动漫$4#电影解说$38#伦理片$30",
 				"类型": "动作片$7#喜剧片$8#爱情片$9#科幻片$10#恐怖片$11#剧情片$12#犯罪片$29#战争片$13||国产剧$14#港剧$15#台湾剧$16#韩剧$17#日剧$18#泰剧$31#欧美剧$19#海外剧$20||大陆综艺$21#日韩综艺$22#港台综艺$23#欧美综艺$24||国产动漫$25#日本动漫$26#欧美动漫$27#海外动漫$28||空||空"
 			}
@@ -2370,14 +2370,14 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页": "http://www.dmand5.com",
+				"主页": "https://www.dmand5.com",
 				"播放数组": "class=\"arconix-toggle-content fn-clear&&</ul>",
 				"播放列表": "<a&&a>",
 				"播放链接": "href=\"&&\"",
 				"播放标题": ">&&</",
 				"线路数组": "class=\"arconix-toggle-title&&</span>",
 				"线路标题": ">&&</font>",
-				"分类url": "http://www.dmand5.com/vod-list-id-{cateId}-pg-{catePg}-order--by--class-{class}-year-{year}-letter-{letter}-area--lang-.html",
+				"分类url": "https://www.dmand5.com/vod-list-id-{cateId}-pg-{catePg}-order--by--class-{class}-year-{year}-letter-{letter}-area--lang-.html",
 				"分类": "新番连载$1#热门国漫$4#完结日漫$3#剧场动漫$16",
 				"剧情": "冒险$1#热血$2#奇幻$3#恋爱$4#校园$5#后宫$6#搞笑$7#青春$8#百合$9#科幻$14#推理$13#魔法$12#神魔$11#治愈$10#竞技$59#悬疑$60#战争$62#萝莉$63#魔幻$64#战斗$65#歌舞$98#历史$99#励志$108#偶像$118#职场$121冒险$50#热血$51#武侠$52#奇幻$53#玄幻$54#竞技$55#魔幻$56#科幻$57#恋爱$58#历史$73#战斗$74#搞笑$75#神魔$76#战争$97#古风$111#少女$112#萝莉$113#治愈$114#日常$115#歌舞$116#偶像$120#职场$123#仙侠$125冒险$36#热血$37#奇幻$38#恋爱$39#校园$40#后宫$41#搞笑$42#治愈$43#神魔$44#魔法$45#百合$46#推理$47#科幻$48#竞技$49#悬疑$66#战争$68#萝莉$69#魔幻$70#战斗$71#青春$72#历史$100#歌舞$101#恐怖$104#职场$107#励志$109#偶像$119||冒险$77#热血$78#奇幻$79#恋爱$80#校园$81#后宫$82#搞笑$83#青春$84#百合$85#治愈$86#神魔$87#魔法$88#推理$89#科幻$90#竞技$91#悬疑$92#战争$93#萝莉$94#魔幻$95#战斗$96#历史$102#歌舞$103#恐怖$105#职场$106#励志$110#偶像$117#职场$124"
 			}
@@ -2577,14 +2577,14 @@
 			"jar": "./lib/xyqxbpq.jar",
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
-				"防走丢": "http://www.qiyoudy1.com/",
+				"防走丢": "https://www.qiyoudy1.com/",
 				"播放数组": "stui-content__playlist clearfix&&</ul>",
 				"播放列表": "<a&&a>",
 				"播放链接": "href=\"&&\"",
 				"播放标题": "title=\"&&\"",
 				"线路数组": "<li id=\"tab&&</li>",
 				"线路标题": ">&&</a >",
-				"分类url": "http://www.taoju3.com/list/{cateId}_{catePg}.html?order={by}",
+				"分类url": "https://www.taoju3.com/list/{cateId}_{catePg}.html?order={by}",
 				"分类": "电影$1#电视剧$2#动漫$3#综艺$4#伦理$6",
 				"排序": "按时间$time#按人气$hit"
 			}
@@ -2626,14 +2626,14 @@
 			"jar": "./lib/xyqxbpq.jar",
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
-				"防走丢": "http://www.qiyoudy1.com/",
+				"防走丢": "https://www.qiyoudy1.com/",
 				"播放数组": "stui-content__playlist clearfix&&</ul>",
 				"播放列表": "<a&&a>",
 				"播放链接": "href=\"&&\"",
 				"播放标题": "title=\"&&\"",
 				"线路数组": "<li id=\"tab&&</li>",
 				"线路标题": ">&&</a>",
-				"分类url": "http://www.taoju3.com/list/{cateId}_{catePg}.html?order={by}",
+				"分类url": "https://www.taoju3.com/list/{cateId}_{catePg}.html?order={by}",
 				"分类": "电影$1#电视剧$2#动漫$3#综艺$4#伦理$6",
 				"排序": "按时间$time#按人气$hit"
 			}
@@ -2933,13 +2933,13 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "gb2312",
-				"主页url": "http://m.aogetu.com/wuyejuchang/",
+				"主页url": "https://m.aogetu.com/wuyejuchang/",
 				"播放数组": "plau-ul-list&&</ul>",
 				"播放列表": "<a&&a>",
 				"播放链接": "href='&&'",
 				"播放标题": "blank\">&&<",
 				"嗅探词": "index.m3u8?",
-				"分类url": "http://m.aogetu.com/{cateId}/{class}/index{catePg}.html[http://m.aogetu.com/{cateId}/{class}/]",
+				"分类url": "https://m.aogetu.com/{cateId}/{class}/index{catePg}.html[https://m.aogetu.com/{cateId}/{class}/]",
 				"分类": "电影$dianying#电视剧$dianshiju#午夜剧场$wuyejuchang#综艺娱乐$zongyiyule#动漫动画$dongmandonghua#精品套图$taotu#音乐MV$yuleMV",
 				"剧情": "动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#战争片$zhanzhengpian#纪录片$jilupian#VIP$fuli#动画$dhdy国产剧$guochanju#欧美剧$oumeiju#香港剧$hongkongju#韩国剧$hanguoju#台湾剧$taiwanju#日本剧$ribengju#泰国剧$taiguoju#海外剧$haiwaiju#微短剧$duanju伦理片$lunli#写真$xiezhen#主播$zhubo大陆综艺$daluzongyi#香港综艺$hongkongzongyi#台湾综艺$taiwanzongyi#日韩综艺$rihanzongyi#欧美综艺$oumeizongyi#其他综艺$qitazongyi日本动漫$ribendongman#国产动漫$guochandonghua#欧美动漫$oumeidongman#韩国动漫$hanguodongman#其他动漫$qitadongman空大陆$yanchanghui#港台$MV#日韩$KTV#欧美$bangjiangli"
 			}
@@ -3016,7 +3016,7 @@
 			"filterable": 1,
 			"api": "./lib/影腾.js",
 			"ext": {
-				"host": "http://cmsytv.lyyytv.cn/api.php/app/",
+				"host": "https://cmsytv.lyyytv.cn/api.php/app/",
 				"*": [
 					"http://1.94.22.110:1122/myyt.php?url=",
 					"https://xcoo.vip/xiaojun/xiaojunjiexi.php?url="
@@ -3123,13 +3123,13 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "gb2312",
-				"主页url": "http://m.aogetu.com/wuyejuchang/",
+				"主页url": "https://m.aogetu.com/wuyejuchang/",
 				"播放数组": "plau-ul-list&&</ul>",
 				"播放列表": "<a&&a>",
 				"播放链接": "href='&&'",
 				"播放标题": "blank\">&&<",
 				"嗅探词": "index.m3u8?",
-				"分类url": "http://m.aogetu.com/{cateId}/{class}/index{catePg}.html[http://m.aogetu.com/{cateId}/{class}/]",
+				"分类url": "https://m.aogetu.com/{cateId}/{class}/index{catePg}.html[https://m.aogetu.com/{cateId}/{class}/]",
 				"分类": "Aries不承担任何风险爱看电影$dianying#电视剧$dianshiju#👙脱衣舞$wuyejuchang#👙小媳妇光腚$taotu#综艺娱乐$zongyiyule#动漫动画$dongmandonghua#音乐MV$yuleMV",
 				"剧情": "动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#剧情片$juqingpian#战争片$zhanzhengpian#纪录片$jilupian#VIP$fuli#动画$dhdy国产剧$guochanju#欧美剧$oumeiju#香港剧$hongkongju#韩国剧$hanguoju#台湾剧$taiwanju#日本剧$ribengju#泰国剧$taiguoju#海外剧$haiwaiju#微短剧$duanju伦理片$lunli#写真$xiezhen#主播$zhubo大陆综艺$daluzongyi#香港综艺$hongkongzongyi#台湾综艺$taiwanzongyi#日韩综艺$rihanzongyi#欧美综艺$oumeizongyi#其他综艺$qitazongyi日本动漫$ribendongman#国产动漫$guochandonghua#欧美动漫$oumeidongman#韩国动漫$hanguodongman#其他动漫$qitadongman空大陆$yanchanghui#港台$MV#日韩$KTV#欧美$bangjiangli"
 			}
@@ -3276,8 +3276,8 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"防走丢": "http://www.98wap.com",
-				"主页": "http://www.9kdy.com/",
+				"防走丢": "https://www.98wap.com",
+				"主页": "https://www.9kdy.com/",
 				"数组": "lazyload\"&&</a>",
 				"标题": "title=\"&&\"",
 				"图片": "data-original=\"&&\"",
@@ -3290,8 +3290,8 @@
 				"线路数组": "<h3&&h3>",
 				"线路标题": "\">&&</",
 				"简介": "sketch\">&&</span>",
-				"搜索url": "http://www.9kdy.com/search.php?page={pg}&searchword={wd}&searchtype=",
-				"分类url": "http://www.9kdy.com/{cateId}/index{catePg}.html[http://www.9kdy.com/{cateId}/index.html]",
+				"搜索url": "https://www.9kdy.com/search.php?page={pg}&searchword={wd}&searchtype=",
+				"分类url": "https://www.9kdy.com/{cateId}/index{catePg}.html[https://www.9kdy.com/{cateId}/index.html]",
 				"分类": "电影$dianyingpian#电视剧$dianshiju#综艺$zongyi#动漫$dongman",
 				"类型": "动作片$dongzuopian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#战争片$zhanzhengpian#喜剧片$xijupian#纪录片$jilupian#剧情片$juqingpian||国产剧$guocanju#港台剧$gangtaiju#欧美剧$oumeiju#日韩剧$rihanju#短剧$duanju||空||空"
 			}
@@ -3359,7 +3359,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.sijiaokeji.com/",
+				"主页url": "https://www.sijiaokeji.com/",
 				"数组": "loading\"&&</li>",
 				"标题": "title=\"&&\"",
 				"图片": "data-original=\"&&\"",
@@ -3374,8 +3374,8 @@
 				"跳转播放链接": "var zanpiancms_player*\"url\":\"&&\"",
 				"简介": "class=\"details-content-all collapse\">&&</span>",
 				"搜索模式": "1",
-				"搜索url": "http://www.sijiaokeji.com/search/?wd={wd}",
-				"分类url": "http://www.sijiaokeji.com/{cateId}/index_{class}_{area}_{year}__{by}_{catePg}.html",
+				"搜索url": "https://www.sijiaokeji.com/search/?wd={wd}",
+				"分类url": "https://www.sijiaokeji.com/{cateId}/index_{class}_{area}_{year}__{by}_{catePg}.html",
 				"分类": "电影$dianying#电视剧$dianshiju#综艺$zongyi#动漫$dongman",
 				"类型": "动作片$dongzuopian#喜剧片$xijupian#爱情片$aiqingpian#科幻片$kehuanpian#恐怖片$kongbupian#战争片$zhanzhengpian#剧情片$juqingpian||国产剧$guocanju#香港剧$xianggangju#欧美剧$oumeiju#日本剧$ribenju#海外剧$haiwaiju#台湾剧$taiwanju#韩国剧$hanguoju#泰国剧$taiguoju||空||空",
 				"剧情": "悬疑$xuanyi#魔幻$mohuan#言情$yanqing#罪案$zuian1#冒险$maoxian#灾难$zainan#古装$guzhuang#青春$qingchun#歌舞$gewu#励志$lizhi#文艺$wenyi#生活$shenghuo#动画$donghua||农村$nongcun#喜剧$xiju#偶像$ouxiang#古装$guzhuang#武侠$wuxia#神话$shenhua#穿越$chuanyue#刑侦$xingzhen#商战$shangzhan#战争$zhanzheng#军旅$junlv#谍战$diezhan#年代$niandai#职场$zhichang||真人$zhenrenxiu#脱口$tuokouxiu#选秀$xuanxiu#情感$qinggan#访谈$fangtan#美食$meishi#旅游$lvyou#财经$caijing#军事$junshi#职场$zhichang#音乐$yinle#时尚$shishang#娱乐$yule#体育$tiyu#生活$shenghuo#社会$shehui||冒险$maoxian#热血$rexue#搞笑$gaoxiao#少女$shaonv#恋爱$lianai#魔幻$mohuan#推理$tuili#神魔$shenmo#竞技$jingji#游戏$youxi#益智$yizhi#机战$jizhan#宠物$chongwu#格斗$gedou"
@@ -3491,7 +3491,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://ty1010.com/",
+				"主页url": "https://ty1010.com/",
 				"数组": "class=\"public-list-exp\"&&</a>",
 				"标题": "alt=\"&&封面图\"",
 				"图片": "data-src=\"&&\"",
@@ -3506,7 +3506,7 @@
 				"播放标题": "\">&&</",
 				"播放链接": "href=\"&&\"",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
-				"分类url": "http://ty1010.com/index.php/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/lang/{lang}/page/{catePg}/year/{year}.html",
+				"分类url": "https://ty1010.com/index.php/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/lang/{lang}/page/{catePg}/year/{year}.html",
 				"分类": "电影$2#电视剧$1#综艺$4#动漫$3#体育赛事$5#网红短剧$41"
 			}
 		},
@@ -3783,7 +3783,7 @@
 			"ext": {
 				"请求头": "User-Agent$MOBILE_UA",
 				"编码": "UTF-8",
-				"主页url": "http://www.sijiaokeji.com/",
+				"主页url": "https://www.sijiaokeji.com/",
 				"数组": "loading\"&&</li>",
 				"标题": "title=\"&&\"",
 				"图片": "data-original=\"&&\"",
@@ -3797,8 +3797,8 @@
 				"线路标题": ">&&</",
 				"跳转播放链接": "var player_*\"url\":\"&&\"",
 				"搜索模式": "1",
-				"搜索url": "http://www.sijiaokeji.com/search/?wd={wd}",
-				"分类url": "http://www.sijiaokeji.com/{cateId}/index_{class}_{area}_{year}__{by}_{catePg}.html",
+				"搜索url": "https://www.sijiaokeji.com/search/?wd={wd}",
+				"分类url": "https://www.sijiaokeji.com/{cateId}/index_{class}_{area}_{year}__{by}_{catePg}.html",
 				"分类": "电影$dianying#电视剧$dianshiju#综艺$zongyi#动漫$dongman#伦理$aiqingpian"
 			}
 		},
@@ -3961,6 +3961,6 @@
 		"mgtv",
 		"wasu"
 	],
-	"wallpaper": "http://饭太硬.top/深色壁纸/api.php",
-	"disabled_wallpaper": "http://www.kf666888.cn/api/tvbox/img"
+	"wallpaper": "https://饭太硬.top/深色壁纸/api.php",
+	"disabled_wallpaper": "https://www.kf666888.cn/api/tvbox/img"
 }
