@@ -1,11 +1,11 @@
 /**
  pathLib: {
-  join: [Function: join],
-  dirname: [Function: dirname],
-  readDir: [Function (anonymous)],
-  readFile: [Function (anonymous)],
-  stat: [Function (anonymous)]
-}
+ join: [Function: join],
+ dirname: [Function: dirname],
+ readDir: [Function (anonymous)],
+ readFile: [Function (anonymous)],
+ stat: [Function (anonymous)]
+ }
  path
  path_dir
  **/
