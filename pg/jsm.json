@@ -388,14 +388,6 @@
       "ext": "./lib/tokenm.json$$$./lib/sambashare.txt"
     },
     {
-      "key": "直播转点播",
-      "name": "🐼️┃电视┃直播",
-      "type": 3,
-      "searchable": 0,
-      "api": "./lib/live2vod.js",
-      "ext": "./lib/feimaolive.json"
-    },
-    {
       "key": "FirstAid",
       "name": "🚑 急救知识 ",
       "type": 3,
@@ -407,18 +399,6 @@
         "type": "rect",
         "ratio": 3.8
       }
-    },
-    {
-      "key": "drpy_js_磁力熊",
-      "name": "磁力熊[js]|索引",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "ext": "./js/cilixiongp.js",
-      "playerType": 1,
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 1,
-      "indexs": 1
     },
     {
       "key": "bili",
@@ -573,6 +553,17 @@
       "filterable": 1,
       "timeout": 60,
       "ext": "./lib/tokenm.json$$$https://mihdr.top/$$$noproxy$$$1$$$./lib/wogg.json$$$ZHIZHEN"
+    },
+    {
+      "key": "Guazi",
+      "name": "瓜子|App",
+      "type": 3,
+      "api": "csp_Guazi",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "ext": ""
     },
     {
       "key": "Moli",
@@ -1396,6 +1387,14 @@
       "searchable": 0,
       "changeable": 0,
       "ext": "https://fm.t4tv.hz.cz/json/market.json"
+    },
+    {
+      "key": "直播转点播",
+      "name": "🐼️┃电视┃直播",
+      "type": 3,
+      "searchable": 0,
+      "api": "./lib/live2vod.js",
+      "ext": "./lib/feimaolive.json"
     }
   ],
   "lives": [
@@ -1551,6 +1550,14 @@
       "name": "肥羊YY轮播",
       "type": 0,
       "url": "http://127.0.0.1:10079/c/3600/null/http://127.0.0.1:35456/yylunbo.m3u",
+      "ua": "okhttp/3.15",
+      "epg": "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "YTB直播",
+      "type": 0,
+      "url": "./lib/ytblive.m3u",
       "ua": "okhttp/3.15",
       "epg": "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
