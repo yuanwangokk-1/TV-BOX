@@ -1,4 +1,4 @@
-{ "urls": [{ "url": "https://github.com/yuanwangokk-1/TV-BOX/tree/main/tvbox/pg/jsm.json", "name": "PG[本地]" },
+{ "urls": [{ "url": "https://github.com/yuanwangokk-1/TV-BOX/tree/main/tvbox/pg/jsm.json", "name": "pg[本地]" },
 
 { "urls": [{ "url": "https://github.com/yuanwangokk-1/TV-BOX/tree/main/tvbox/饭太硬/api.json", "name": "饭太硬[本地]" },
 
