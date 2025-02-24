@@ -1,5 +1,5 @@
 let $olSongs = $("ol#songs")
-let $songImg =$("ol#song-img") 
+let $songImg = $("ol#song-img")
 let $list = $(".hotlist .list")
 // 热歌榜
 let $song = $("#olSongs")
@@ -9,12 +9,12 @@ let $song = $("#olSongs")
 var query = new AV.Query('Song');
 var cql = 'select * from Song where hotsong != true';   // CQL  查询
 AV.Query.doCloudQuery(cql).then(function (data) {
-	let results = data.results;
-	// loading加载成功干掉
-	$("#songs-loading").remove()
-	for (var i = 0; i < results.length; i++) {
-		let song = results[i].attributes
-		let li = `
+    let results = data.results;
+    // loading加载成功干掉
+    $("#songs-loading").remove()
+    for (var i = 0; i < results.length; i++) {
+        let song = results[i].attributes
+        let li = `
 			<li>
 				<a class="playButton" href="./song.html?id=${results[i].id}">
 					<h3>${song.name}</h3>
@@ -33,20 +33,20 @@ AV.Query.doCloudQuery(cql).then(function (data) {
 				</a>
 			</li>
 		`
-		$olSongs.append(li)
-	}
+        $olSongs.append(li)
+    }
 }, function (error) {
-	alert("获取歌曲失败")
+    alert("获取歌曲失败")
 });
 
 // 填充推荐歌单数据
 var queryS = new AV.Query('Playlist')
 queryS.find().then(function (result) {
-	console.log(result)
-	$("#songs-loading").remove()
-	for (var i = 0; i < result.length; i++) {
-		let songImg = result[i].attributes
-		let liImg = `
+    console.log(result)
+    $("#songs-loading").remove()
+    for (var i = 0; i < result.length; i++) {
+        let songImg = result[i].attributes
+        let liImg = `
 			<li>
 				<a href="./playlist.html?id=${result[i].id}">
 					<div class="cover">
@@ -56,10 +56,10 @@ queryS.find().then(function (result) {
 				</a>
 			</li>
 		`
-		$songImg.append(liImg)
-	}
+        $songImg.append(liImg)
+    }
 }, function (error) {
-	alert("获取歌曲失败")
+    alert("获取歌曲失败")
 });
 
 
@@ -67,14 +67,14 @@ queryS.find().then(function (result) {
 var hotQuery = new AV.Query('Song');
 var cqh = 'select * from Song where hotsong = true';
 AV.Query.doCloudQuery(cqh).then(function (data) {
-	$("#songs-loading").remove()
+    $("#songs-loading").remove()
     let results = data.results;
-    for(var i = 0;i<results.length;i++){
+    for (var i = 0; i < results.length; i++) {
         let song = results[i].attributes
         if (i < 9) {
-        	let Li = `
+            let Li = `
 	            <li class="clearfix">
-	            	<div class="num hotnum">0${[i+1]}</div>
+	            	<div class="num hotnum">0${[i + 1]}</div>
 					<a class="playButton" href="./song.html?id=${results[i].id}">
 						<h3>${song.name}</h3>
 						<p>
@@ -91,11 +91,11 @@ AV.Query.doCloudQuery(cqh).then(function (data) {
 					</a>
 				</li>
 	        `
-	        $song.append(Li)
-        }else {
-        	let Li = `
+            $song.append(Li)
+        } else {
+            let Li = `
 	            <li class="clearfix">
-	            	<div class="num">${[i+1]}</div>
+	            	<div class="num">${[i + 1]}</div>
 					<a class="playButton" href="./song.html?id=${results[i].id}">
 						<h3>${song.name}</h3>
 						<p>
@@ -112,7 +112,7 @@ AV.Query.doCloudQuery(cqh).then(function (data) {
 					</a>
 				</li>
 	        `
-	        $song.append(Li)
+            $song.append(Li)
         }
     }
 }, function (error) {
@@ -122,68 +122,69 @@ AV.Query.doCloudQuery(cqh).then(function (data) {
 //搜索
 // 设置定时器
 let timer = null
-$("input.search-input").on('input',function(e){
-	//函数节流
-	if (timer) {window.clearTimeout(timer)}
-	timer = setTimeout(function(){
-		let $input = $(e.currentTarget)
-		let value = $input.val().trim()  // 防止输入空格
-		// 如果输入空字符串,直接返回
-		if (value === '') {return}
-		// 查询字符串,or 组合查询
-		var queryName = new AV.Query('Song');
-		queryName.contains('name', value);
-		var querySinger = new AV.Query('Song')
-		querySinger.contains('singer', value);
-		var query = AV.Query.or(queryName,querySinger)
-		//显示查找结果
-		query.find().then(function (results) {
-			$("#searchResult").empty()
-			//搜索没有结果
-			if (results.length === 0) {
-				let li = `
+$("input.search-input").on('input', function (e) {
+    //函数节流
+    if (timer) {
+        window.clearTimeout(timer)
+    }
+    timer = setTimeout(function () {
+        let $input = $(e.currentTarget)
+        let value = $input.val().trim()  // 防止输入空格
+        // 如果输入空字符串,直接返回
+        if (value === '') {
+            return
+        }
+        // 查询字符串,or 组合查询
+        var queryName = new AV.Query('Song');
+        queryName.contains('name', value);
+        var querySinger = new AV.Query('Song')
+        querySinger.contains('singer', value);
+        var query = AV.Query.or(queryName, querySinger)
+        //显示查找结果
+        query.find().then(function (results) {
+            $("#searchResult").empty()
+            //搜索没有结果
+            if (results.length === 0) {
+                let li = `
 						<li>
 							<a href="#">
 								搜索 "没有结果"
 							</a>
 						</li>
 		    		`
-		    	$('#searchResult').append(li)
-			}else{
-				//有结果
-				for (var i = 0; i < results.length; i++) {
-		    		let song = results[i].attributes
-		    		let li = `
+                $('#searchResult').append(li)
+            } else {
+                //有结果
+                for (var i = 0; i < results.length; i++) {
+                    let song = results[i].attributes
+                    let li = `
 						<li data-id="${results[i].id}">
 							<a href="song.html?id=${results[i].id}">
 								搜索 "${song.name} - ${song.singer}"
 							</a>
 						</li>
 		    		`
-		    		$('#searchResult').append(li)
-		    	}
-			}	
-		});
-	},400)
+                    $('#searchResult').append(li)
+                }
+            }
+        });
+    }, 400)
 })
 
 var query = new AV.Query('Song');
 query.find().then(function (results) {
-	for (var i = 0; i < results.length; i++) {
-		let song = results[i].attributes
-		let li = `
+    for (var i = 0; i < results.length; i++) {
+        let song = results[i].attributes
+        let li = `
 			<li class="item">
     			<a href="./song.html?id=${results[i].id}">${song.name}</a>
     		</li>
 		`
-		$list.append(li)
-	}
+        $list.append(li)
+    }
 }, function (error) {
-	alert("获取歌曲失败")
+    alert("获取歌曲失败")
 });
-
-
-
 
 
 //最新音乐加载

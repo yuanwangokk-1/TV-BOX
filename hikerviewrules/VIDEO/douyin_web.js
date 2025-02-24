@@ -5,11 +5,11 @@ const baseParse = _ => {
     let d = [], category, html
     let home_cookie = request(douyin_cookie)
     const empty = "hiker://empty"
-    html = fetch("https://www.douyin.com", {headers:{"User-Agent": PC_UA, "cookie": home_cookie}, withHeaders: true})
+    html = fetch("https://www.douyin.com", {headers: {"User-Agent": PC_UA, "cookie": home_cookie}, withHeaders: true})
     html = JSON.parse(html)
 
     // 首页cookie
-    if (! home_cookie || ! home_cookie.match(/__ac_nonce/) || html.body.match(/<body><\/body>/)) {
+    if (!home_cookie || !home_cookie.match(/__ac_nonce/) || html.body.match(/<body><\/body>/)) {
         let cookie = html.headers["set-cookie"].join(';')
 
         writeFile(douyin_cookie, cookie.match(/__ac_nonce=(.*?);/)[0])
@@ -24,7 +24,7 @@ const baseParse = _ => {
                 let current_cookie = request(douyin_cookie).match(/__ac_nonce=(.*?);/)[0]
                 showLoading('自动验证中')
                 let slide_cookie = fetch("http://student.tyrantg.com:8199/slide.php", {timeout: 30000})
-                if(slide_cookie) writeFile(douyin_cookie, current_cookie+slide_cookie)
+                if (slide_cookie) writeFile(douyin_cookie, current_cookie + slide_cookie)
                 hideLoading()
                 refreshPage(true)
                 return 'toast://验证成功'
@@ -40,10 +40,26 @@ const baseParse = _ => {
             channels = JSON.parse(local_channels)
         } else {
             let defaultChannels = [
-                {title: '橄榄（联盟记者）', sec_uid: 'MS4wLjABAAAAx9uv2rkiSVYxg3-4kygWEpsR0XWPnajnaKsuq3XGxMc', avatar_url: 'https://p11.douyinpic.com/img/tos-cn-i-0813/ce41336f7815445db7345c78b4f0da1e~c5_100x100.jpeg?from=2956013662'},
-                {title: '法老_Pharaoh', sec_uid: 'MS4wLjABAAAAENcAhhKYCY80DmEdGk9gH2jlG42xW_5kRh33ynV8Ii4', avatar_url: 'https://p3.douyinpic.com/img/tos-cn-i-0813/833a09e8f9b14bcf87ee5a9c5435b825~c5_1080x1080.jpeg?from=116350172'},
-                {title: '马思唯马思唯', sec_uid: 'MS4wLjABAAAA508qPG3qA_ogo6wjQ9QTIEW_n_NBemKv8ujnHDxt-4OjNI0vC_rqs8x7I0EOoywP', avatar_url: 'https://p3.douyinpic.com/img/tos-cn-avt-0015/cd07db037361174d855251b2854d8b49~c5_1080x1080.jpeg?from=116350172'},
-                {title: '乃万NINEONE', sec_uid: 'MS4wLjABAAAAPqhPtBXeQ1E3eow8onFHRaZsfKXZnb9gLii-8QvhiJ4', avatar_url: 'https://p9.douyinpic.com/aweme/1080x1080/31afc0003a07472f77daf.jpeg?from=116350172'},
+                {
+                    title: '橄榄（联盟记者）',
+                    sec_uid: 'MS4wLjABAAAAx9uv2rkiSVYxg3-4kygWEpsR0XWPnajnaKsuq3XGxMc',
+                    avatar_url: 'https://p11.douyinpic.com/img/tos-cn-i-0813/ce41336f7815445db7345c78b4f0da1e~c5_100x100.jpeg?from=2956013662'
+                },
+                {
+                    title: '法老_Pharaoh',
+                    sec_uid: 'MS4wLjABAAAAENcAhhKYCY80DmEdGk9gH2jlG42xW_5kRh33ynV8Ii4',
+                    avatar_url: 'https://p3.douyinpic.com/img/tos-cn-i-0813/833a09e8f9b14bcf87ee5a9c5435b825~c5_1080x1080.jpeg?from=116350172'
+                },
+                {
+                    title: '马思唯马思唯',
+                    sec_uid: 'MS4wLjABAAAA508qPG3qA_ogo6wjQ9QTIEW_n_NBemKv8ujnHDxt-4OjNI0vC_rqs8x7I0EOoywP',
+                    avatar_url: 'https://p3.douyinpic.com/img/tos-cn-avt-0015/cd07db037361174d855251b2854d8b49~c5_1080x1080.jpeg?from=116350172'
+                },
+                {
+                    title: '乃万NINEONE',
+                    sec_uid: 'MS4wLjABAAAAPqhPtBXeQ1E3eow8onFHRaZsfKXZnb9gLii-8QvhiJ4',
+                    avatar_url: 'https://p9.douyinpic.com/aweme/1080x1080/31afc0003a07472f77daf.jpeg?from=116350172'
+                },
             ]
             writeFile(channels_path, JSON.stringify(defaultChannels))
             channels = defaultChannels
@@ -188,7 +204,7 @@ const baseParse = _ => {
                             // let home_cookie = getVar("tyrantgenesis.douyin_web.home_cookie")
                             const base64_title = "data:image/jpeg;base64,"
                             const login_url = "https://sso.douyin.com/get_qrcode/?service=https%3A%2F%2Fwww.douyin.com&need_logo=false&aid=6383"
-                            let data_json = fetch(login_url, {headers:{"User-Agent": PC_UA}, withHeaders: true})
+                            let data_json = fetch(login_url, {headers: {"User-Agent": PC_UA}, withHeaders: true})
                             let data = JSON.parse(data_json)
                             let info = JSON.parse(data.body)
                             // let first_cookie = home_cookie.split(';').shift()
@@ -200,7 +216,7 @@ const baseParse = _ => {
                                     col_type: 'long_text',
                                 })
                                 d.push({
-                                    pic_url: base64_title+info.data.qrcode,
+                                    pic_url: base64_title + info.data.qrcode,
                                     url: "hiker://empty",
                                     col_type: 'pic_1_full',
                                 })
@@ -243,11 +259,11 @@ const baseParse = _ => {
                         {title: '音乐', id: '300209'},
                     ]
                     d.push({
-                        col_type:"blank_block"
+                        col_type: "blank_block"
                     })
                     category.forEach(cate => {
                         d.push({
-                            title: cate_select === cate.id ? '‘‘’’<strong><font color="red">'+cate.title+'</font></strong>' : cate.title,
+                            title: cate_select === cate.id ? '‘‘’’<strong><font color="red">' + cate.title + '</font></strong>' : cate.title,
                             url: $("hiker://empty").lazyRule(params => {
                                 putVar("tyrantgenesis.douyin_web.cate_select", params.id)
                                 refreshPage(false)
@@ -262,11 +278,11 @@ const baseParse = _ => {
 
                 // let not_sign_url = "https://www.douyin.com/aweme/v1/web/channel/feed/?device_platform=webapp&aid=6383&channel=channel_pc_web&tag_id="+cate_select+"&count=20&version_code=160100&version_name=16.1.0"
 
-                let sign_url = fetch("http://douyin_signature.dev.tyrantg.com?type=feed&params="+cate_select)
+                let sign_url = fetch("http://douyin_signature.dev.tyrantg.com?type=feed&params=" + cate_select)
                 // let true_url = not_sign_url + "&_signature="+sign
                 let data_json = fetch(sign_url, {
                     headers: {
-                        "referer" : "https://www.douyin.com/",
+                        "referer": "https://www.douyin.com/",
                         "cookie": home_cookie,
                         "Accept": 'application/json, text/plain, */*',
                         "User-Agent": PC_UA,
@@ -274,7 +290,7 @@ const baseParse = _ => {
                     }
                 })
 
-                if (! data_json || data_json === 'Need Verifying') {
+                if (!data_json || data_json === 'Need Verifying') {
                     d.push({
                         title: 'signature 获取失败，待修复',
                         col_type: "long_text",
@@ -288,7 +304,7 @@ const baseParse = _ => {
                                     title: item.desc,
                                     pic_url: item.video.cover.url_list[0],
                                     desc: item.author.nickname,
-                                    url: $("https://www.douyin.com/video/"+item.aweme_id+"##fypage").rule(item => {
+                                    url: $("https://www.douyin.com/video/" + item.aweme_id + "##fypage").rule(item => {
                                         eval(fetch('hiker://files/TyrantG/VIDEO/douyin_web.js'))
                                         videoParse(item)
                                     }, item),
@@ -306,9 +322,9 @@ const baseParse = _ => {
             case "2": {
                 if (current_page === '1') {
                     d.push({
-                        col_type:"blank_block"
+                        col_type: "blank_block"
                     })
-                    html = fetch("https://www.douyin.com/live", {headers:{"User-Agent": PC_UA}})
+                    html = fetch("https://www.douyin.com/live", {headers: {"User-Agent": PC_UA}})
                     let cate_1st_list = parseDomForArray(html, '._1ccdf9ef5e1baec8470ed46e874b49fd-scss&&.ece80b1afae1c9f97b41337a7ccdfaa3-scss')
                     d.push({
                         title: live_1st_cate === '' ? '‘‘’’<strong><font color="red">热门直播</font></strong>' : '热门直播',
@@ -325,7 +341,7 @@ const baseParse = _ => {
                         let title = parseDomForHtml(cate, 'h2&&Text')
                         if (title !== '热门直播') {
                             d.push({
-                                title: live_1st_cate === cate_id.toString() ? '‘‘’’<strong><font color="red">'+title+'</font></strong>' : title,
+                                title: live_1st_cate === cate_id.toString() ? '‘‘’’<strong><font color="red">' + title + '</font></strong>' : title,
                                 url: $("hiker://empty").lazyRule(params => {
                                     putVar("tyrantgenesis.douyin_web.live_1st_cate", params.cate_id.toString())
                                     putVar("tyrantgenesis.douyin_web.live_2nd_cate", "")
@@ -339,10 +355,10 @@ const baseParse = _ => {
                         }
                     })
                     d.push({
-                        col_type:"blank_block"
+                        col_type: "blank_block"
                     })
                     if (live_1st_cate !== '') {
-                        html = fetch("https://live.douyin.com/category/"+live_1st_cate, {headers:{"User-Agent": PC_UA}})
+                        html = fetch("https://live.douyin.com/category/" + live_1st_cate, {headers: {"User-Agent": PC_UA}})
                         let cate_2nd_list = parseDomForArray(html, '._51b435273dea21a09f82e973bb87baf1-scss&&a')
                         d.push({
                             title: live_2nd_cate === '' ? '‘‘’’<strong><font color="red">全部</font></strong>' : '全部',
@@ -359,7 +375,7 @@ const baseParse = _ => {
                             if (cate_group.length > 1) {
                                 let cate_id = cate_group[1]
                                 d.push({
-                                    title: live_2nd_cate === cate_id.toString() ? '‘‘’’<strong><font color="red">'+title+'</font></strong>' : title,
+                                    title: live_2nd_cate === cate_id.toString() ? '‘‘’’<strong><font color="red">' + title + '</font></strong>' : title,
                                     url: $("hiker://empty").lazyRule(params => {
                                         putVar("tyrantgenesis.douyin_web.live_2nd_cate", params.cate_id.toString())
                                         refreshPage(false)
@@ -383,12 +399,12 @@ const baseParse = _ => {
                     partition = live_1st_cate
                 }
 
-                let not_sign_url = "https://live.douyin.com/webcast/web/partition/detail/room/?aid=6383&live_id=1&device_platform=web&language=zh-CN&count="+count+"&offset="+offset+"&partition="+partition+"&partition_type=1"
-                let sign = fetch("http://douyin_signature.dev.tyrantg.com/old_index.php?url="+encodeURIComponent(not_sign_url))
-                let true_url = not_sign_url + "&_signature="+sign
+                let not_sign_url = "https://live.douyin.com/webcast/web/partition/detail/room/?aid=6383&live_id=1&device_platform=web&language=zh-CN&count=" + count + "&offset=" + offset + "&partition=" + partition + "&partition_type=1"
+                let sign = fetch("http://douyin_signature.dev.tyrantg.com/old_index.php?url=" + encodeURIComponent(not_sign_url))
+                let true_url = not_sign_url + "&_signature=" + sign
                 let data_json = fetch(true_url, {
                     headers: {
-                        "referer" : "https://live.douyin.com",
+                        "referer": "https://live.douyin.com",
                         "cookie": home_cookie,
                         "Accept": 'application/json, text/plain, */*',
                         "User-Agent": PC_UA,
@@ -443,7 +459,7 @@ const baseParse = _ => {
                     })
 
                     d.push({
-                        col_type:"blank_block"
+                        col_type: "blank_block"
                     })
 
                     /*let web_url = "https://www.douyin.com/user/"+sec_uid
@@ -452,12 +468,12 @@ const baseParse = _ => {
                     max_cursor = ''
                 }
 
-                let not_sign_url = "https://www.douyin.com/aweme/v1/web/aweme/post/?device_platform=webapp&aid=6383&channel=channel_pc_web&sec_user_id="+sec_uid+"&max_cursor="+max_cursor+"&count=10&publish_video_strategy_type=2&version_code=160100&version_name=16.1.0"
-                let sign = fetch("http://douyin_signature.dev.tyrantg.com?url="+encodeURIComponent(not_sign_url))
-                let true_url = not_sign_url + "&_signature="+sign
+                let not_sign_url = "https://www.douyin.com/aweme/v1/web/aweme/post/?device_platform=webapp&aid=6383&channel=channel_pc_web&sec_user_id=" + sec_uid + "&max_cursor=" + max_cursor + "&count=10&publish_video_strategy_type=2&version_code=160100&version_name=16.1.0"
+                let sign = fetch("http://douyin_signature.dev.tyrantg.com?url=" + encodeURIComponent(not_sign_url))
+                let true_url = not_sign_url + "&_signature=" + sign
                 let data_json = fetch(true_url, {
                     headers: {
-                        "referer" : "https://www.douyin.com/",
+                        "referer": "https://www.douyin.com/",
                         "cookie": home_cookie,
                         "Accept": 'application/json, text/plain, */*',
                         "User-Agent": PC_UA,
@@ -524,7 +540,7 @@ const baseParse = _ => {
                     })
 
                     d.push({
-                        col_type:"blank_block"
+                        col_type: "blank_block"
                     })
 
                     /*let web_url = "https://www.douyin.com/user/"+sec_uid
@@ -533,12 +549,12 @@ const baseParse = _ => {
                     max_cursor = ''
                 }
 
-                let not_sign_url = "https://www.douyin.com/aweme/v1/web/aweme/post/?device_platform=webapp&aid=6383&channel=channel_pc_web&sec_user_id="+sec_uid+"&max_cursor="+max_cursor+"&count=10&publish_video_strategy_type=2&version_code=160100&version_name=16.1.0"
-                let sign = fetch("http://douyin_signature.dev.tyrantg.com?url="+encodeURIComponent(not_sign_url))
-                let true_url = not_sign_url + "&_signature="+sign
+                let not_sign_url = "https://www.douyin.com/aweme/v1/web/aweme/post/?device_platform=webapp&aid=6383&channel=channel_pc_web&sec_user_id=" + sec_uid + "&max_cursor=" + max_cursor + "&count=10&publish_video_strategy_type=2&version_code=160100&version_name=16.1.0"
+                let sign = fetch("http://douyin_signature.dev.tyrantg.com?url=" + encodeURIComponent(not_sign_url))
+                let true_url = not_sign_url + "&_signature=" + sign
                 let data_json = fetch(true_url, {
                     headers: {
-                        "referer" : "https://www.douyin.com/",
+                        "referer": "https://www.douyin.com/",
                         "cookie": home_cookie,
                         "Accept": 'application/json, text/plain, */*',
                         "User-Agent": PC_UA,
@@ -582,7 +598,7 @@ const searchParse = _ => {
     let input = MY_URL.split('##')[1].toString()
 
     d.push({
-        title: "搜索视频-关键词："+input,
+        title: "搜索视频-关键词：" + input,
         url: $("hiker://empty##fypage").rule(params => {
             const douyin_cookie = "hiker://files/TyrantG/cookie/douyin.txt"
             let home_cookie = request(douyin_cookie)
@@ -592,12 +608,12 @@ const searchParse = _ => {
             let page = 20
             let offset = (current_page - 1) * page
             // let not_sign_url = "https://www.douyin.com/aweme/v1/web/search/item/?device_platform=webapp&aid=6383&channel=channel_pc_web&search_channel=aweme_video_web&sort_type=0&publish_time=0&keyword="+encodeURIComponent(params.input)+"&search_source=normal_search&query_correct_type=1&is_filter_search=0&offset="+offset+"&count="+page+"&version_code=160100&version_name=16.1.0"
-            let not_sign_url = "https://www.douyin.com/aweme/v1/web/search/item/?device_platform=webapp&aid=6383&channel=channel_pc_web&search_channel=aweme_video_web&sort_type=0&publish_time=0&keyword="+encodeURIComponent(params.input)+"&search_source=normal_search&query_correct_type=1&is_filter_search=0&offset="+offset+"&count="+page+"&version_code=160100&version_name=16.1.0&cookie_enabled=true&screen_width=1920&screen_height=1080&browser_language=zh-CN&browser_platform=Win32&browser_name=Mozilla&browser_version=5.0+(Windows+NT+10.0%3B+Win64%3B+x64)+AppleWebKit%2F537.36+(KHTML,+like+Gecko)+Chrome%2F91.0.4472.114+Safari%2F537.36&browser_online=true"
-            let sign = fetch("http://douyin_signature.dev.tyrantg.com?url="+encodeURIComponent(not_sign_url))
-            let true_url = not_sign_url + "&_signature="+sign
+            let not_sign_url = "https://www.douyin.com/aweme/v1/web/search/item/?device_platform=webapp&aid=6383&channel=channel_pc_web&search_channel=aweme_video_web&sort_type=0&publish_time=0&keyword=" + encodeURIComponent(params.input) + "&search_source=normal_search&query_correct_type=1&is_filter_search=0&offset=" + offset + "&count=" + page + "&version_code=160100&version_name=16.1.0&cookie_enabled=true&screen_width=1920&screen_height=1080&browser_language=zh-CN&browser_platform=Win32&browser_name=Mozilla&browser_version=5.0+(Windows+NT+10.0%3B+Win64%3B+x64)+AppleWebKit%2F537.36+(KHTML,+like+Gecko)+Chrome%2F91.0.4472.114+Safari%2F537.36&browser_online=true"
+            let sign = fetch("http://douyin_signature.dev.tyrantg.com?url=" + encodeURIComponent(not_sign_url))
+            let true_url = not_sign_url + "&_signature=" + sign
             let data_json = fetch(true_url, {
                 headers: {
-                    "referer" : "https://www.douyin.com/search/"+encodeURIComponent(params.input)+"?source=normal_search&aid=3e8899ee-879c-4f85-b666-1009462412c4&enter_from=main_page",
+                    "referer": "https://www.douyin.com/search/" + encodeURIComponent(params.input) + "?source=normal_search&aid=3e8899ee-879c-4f85-b666-1009462412c4&enter_from=main_page",
                     "cookie": home_cookie,
                 }
             })
@@ -615,7 +631,7 @@ const searchParse = _ => {
                             title: aweme.desc,
                             pic_url: aweme.video.cover.url_list[0],
                             desc: aweme.author.nickname,
-                            url: $("https://www.douyin.com/video/"+item.aweme_id+"##fypage").rule(aweme => {
+                            url: $("https://www.douyin.com/video/" + item.aweme_id + "##fypage").rule(aweme => {
                                 eval(fetch('hiker://files/TyrantG/VIDEO/douyin_web.js'))
                                 videoParse(aweme)
                             }, aweme),
@@ -637,7 +653,7 @@ const searchParse = _ => {
         }),
     })
     d.push({
-        title: "搜索用户-关键词："+input,
+        title: "搜索用户-关键词：" + input,
         url: $("hiker://empty##fypage").rule(params => {
             const douyin_cookie = "hiker://files/TyrantG/cookie/douyin.txt"
             let home_cookie = request(douyin_cookie)
@@ -646,13 +662,13 @@ const searchParse = _ => {
             let current_page = parseInt(MY_URL.split('##')[1])
             let page = 30
             let offset = (current_page - 1) * page
-            let not_sign_url = "https://www.douyin.com/aweme/v1/web/discover/search/?device_platform=webapp&aid=6383&channel=channel_pc_web&search_channel=aweme_user_web&keyword="+encodeURIComponent(params.input)+"&search_source=normal_search&query_correct_type=1&is_filter_search=0&offset="+offset+"&count="+page+"&version_code=160100&version_name=16.1.0"
-            let sign = fetch("http://douyin_signature.dev.tyrantg.com?url="+encodeURIComponent(not_sign_url))
-            let true_url = not_sign_url + "&_signature="+sign
+            let not_sign_url = "https://www.douyin.com/aweme/v1/web/discover/search/?device_platform=webapp&aid=6383&channel=channel_pc_web&search_channel=aweme_user_web&keyword=" + encodeURIComponent(params.input) + "&search_source=normal_search&query_correct_type=1&is_filter_search=0&offset=" + offset + "&count=" + page + "&version_code=160100&version_name=16.1.0"
+            let sign = fetch("http://douyin_signature.dev.tyrantg.com?url=" + encodeURIComponent(not_sign_url))
+            let true_url = not_sign_url + "&_signature=" + sign
 
             let data_json = fetch(true_url, {
                 headers: {
-                    "referer" : "https://www.douyin.com/",
+                    "referer": "https://www.douyin.com/",
                     "cookie": home_cookie,
                 }
             })
@@ -670,7 +686,7 @@ const searchParse = _ => {
                             title: userinfo.nickname,
                             pic_url: userinfo.avatar_thumb.url_list[0],
                             desc: userinfo.signature,
-                            url: $("https://www.douyin.com/user/"+userinfo.sec_uid+'##fypage').rule(userinfo => {
+                            url: $("https://www.douyin.com/user/" + userinfo.sec_uid + '##fypage').rule(userinfo => {
                                 eval(fetch('hiker://files/TyrantG/VIDEO/douyin_web.js'))
                                 userParse(userinfo)
                             }, userinfo),
@@ -804,12 +820,12 @@ const userParse = userinfo => {
         })
     }
 
-    let not_sign_url = "https://www.douyin.com/aweme/v1/web/aweme/post/?device_platform=webapp&aid=6383&channel=channel_pc_web&sec_user_id="+uid+"&max_cursor="+max_cursor+"&count=10&publish_video_strategy_type=2&version_code=160100&version_name=16.1.0"
-    let sign = fetch("http://douyin_signature.dev.tyrantg.com?url="+encodeURIComponent(not_sign_url))
-    let true_url = not_sign_url + "&_signature="+sign
+    let not_sign_url = "https://www.douyin.com/aweme/v1/web/aweme/post/?device_platform=webapp&aid=6383&channel=channel_pc_web&sec_user_id=" + uid + "&max_cursor=" + max_cursor + "&count=10&publish_video_strategy_type=2&version_code=160100&version_name=16.1.0"
+    let sign = fetch("http://douyin_signature.dev.tyrantg.com?url=" + encodeURIComponent(not_sign_url))
+    let true_url = not_sign_url + "&_signature=" + sign
     data_json = fetch(true_url, {
         headers: {
-            "referer" : "https://www.douyin.com/",
+            "referer": "https://www.douyin.com/",
             "cookie": home_cookie,
         }
     })
@@ -831,7 +847,7 @@ const userParse = userinfo => {
                     title: item.desc,
                     pic_url: item.video.cover.url_list[0],
                     // desc: '',
-                    url: $("https://www.douyin.com/video/"+item.aweme_id+"##fypage").rule(aweme => {
+                    url: $("https://www.douyin.com/video/" + item.aweme_id + "##fypage").rule(aweme => {
                         eval(fetch('hiker://files/TyrantG/VIDEO/douyin_web.js'))
                         videoParse(aweme)
                     }, item),
@@ -859,7 +875,7 @@ const videoParse = aweme => {
             title: aweme.author.nickname,
             pic_url: aweme.author.avatar_thumb.url_list[0],
             desc: aweme.author.signature,
-            url: $("https://www.douyin.com/user/"+aweme.author.sec_uid+'##fypage').rule(userinfo => {
+            url: $("https://www.douyin.com/user/" + aweme.author.sec_uid + '##fypage').rule(userinfo => {
                 eval(fetch('hiker://files/TyrantG/VIDEO/douyin_web.js'))
                 userParse(userinfo)
             }, aweme.author),
@@ -913,16 +929,16 @@ const videoParse = aweme => {
         if (aweme.video.play_addr) {
             aweme.video.play_addr.url_list.forEach((url, index) => {
                 d.push({
-                    title: "线路"+(parseInt(index)+1).toString(),
-                    url: url+"#isVideo=true#",
+                    title: "线路" + (parseInt(index) + 1).toString(),
+                    url: url + "#isVideo=true#",
                     col_type: "text_4"
                 })
             })
         } else if (aweme.video.play_addr_lowbr) {
             aweme.video.play_addr_lowbr.url_list.forEach((url, index) => {
                 d.push({
-                    title: "线路"+(index+1),
-                    url: url+"#isVideo=true#",
+                    title: "线路" + (index + 1),
+                    url: url + "#isVideo=true#",
                     col_type: "text_4"
                 })
             })
@@ -959,13 +975,13 @@ const videoParse = aweme => {
     let cursor = (current_page - 1) * count
 
     if (video_other_button === '1') {
-        let not_sign_url = "https://www.douyin.com/aweme/v1/web/aweme/related/?device_platform=webapp&aid=6383&channel=channel_pc_web&aweme_id="+aweme.aweme_id+"&count="+count+"&version_code=160100&version_name=16.1.0"
-        let sign = fetch("http://douyin_signature.dev.tyrantg.com?url="+encodeURIComponent(not_sign_url))
-        let true_url = not_sign_url + "&_signature="+sign
+        let not_sign_url = "https://www.douyin.com/aweme/v1/web/aweme/related/?device_platform=webapp&aid=6383&channel=channel_pc_web&aweme_id=" + aweme.aweme_id + "&count=" + count + "&version_code=160100&version_name=16.1.0"
+        let sign = fetch("http://douyin_signature.dev.tyrantg.com?url=" + encodeURIComponent(not_sign_url))
+        let true_url = not_sign_url + "&_signature=" + sign
 
         let data_json = fetch(true_url, {
             headers: {
-                "referer" : "https://www.douyin.com/video/"+aweme.aweme_id+"?previous_page=main_page",
+                "referer": "https://www.douyin.com/video/" + aweme.aweme_id + "?previous_page=main_page",
                 "cookie": home_cookie,
             }
         })
@@ -985,7 +1001,7 @@ const videoParse = aweme => {
                         title: item.desc,
                         pic_url: item.video.cover.url_list[0],
                         // desc: '',
-                        url: $("https://www.douyin.com/video/"+item.aweme_id+"##fypage").rule(aweme => {
+                        url: $("https://www.douyin.com/video/" + item.aweme_id + "##fypage").rule(aweme => {
                             eval(fetch('hiker://files/TyrantG/VIDEO/douyin_web.js'))
                             videoParse(aweme)
                         }, item),
@@ -995,13 +1011,13 @@ const videoParse = aweme => {
             }
         }
     } else if (video_other_button === '2') {
-        let not_sign_url = "https://www.douyin.com/aweme/v1/web/comment/list/?device_platform=webapp&aid=6383&channel=channel_pc_web&aweme_id="+aweme.aweme_id+"&cursor="+cursor+"&count="+count+"&version_code=160100&version_name=16.1.0"
-        let sign = fetch("http://douyin_signature.dev.tyrantg.com?url="+encodeURIComponent(not_sign_url))
-        let true_url = not_sign_url + "&_signature="+sign
+        let not_sign_url = "https://www.douyin.com/aweme/v1/web/comment/list/?device_platform=webapp&aid=6383&channel=channel_pc_web&aweme_id=" + aweme.aweme_id + "&cursor=" + cursor + "&count=" + count + "&version_code=160100&version_name=16.1.0"
+        let sign = fetch("http://douyin_signature.dev.tyrantg.com?url=" + encodeURIComponent(not_sign_url))
+        let true_url = not_sign_url + "&_signature=" + sign
 
         let data_json = fetch(true_url, {
             headers: {
-                "referer" : "https://www.douyin.com/video/"+aweme.aweme_id+"?previous_page=main_page",
+                "referer": "https://www.douyin.com/video/" + aweme.aweme_id + "?previous_page=main_page",
                 "cookie": home_cookie,
             }
         })
@@ -1034,10 +1050,10 @@ const saveCookie = sessionid => {
     let home_cookie = request(douyin_cookie)
     // let home_cookie = getVar("tyrantgenesis.douyin_web.home_cookie")
     let first_cookie = home_cookie.split(';')[0]
-    let new_cookie = 'sessionid='+sessionid
+    let new_cookie = 'sessionid=' + sessionid
 
 
-    writeFile(douyin_cookie, first_cookie+';'+new_cookie)
+    writeFile(douyin_cookie, first_cookie + ';' + new_cookie)
     // putVar("tyrantgenesis.douyin_web.home_cookie", first_cookie+';'+new_cookie)
 
     refreshPage(true)

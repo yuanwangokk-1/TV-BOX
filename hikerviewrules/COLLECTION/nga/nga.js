@@ -31,7 +31,7 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
     },
     request: (api, method, data) => {
         const userinfo = nga.getUserinfo()
-        const cookie = userinfo ? 'ngaPassportUid='+userinfo.ngaPassportUid+'; ngaPassportCid='+userinfo.ngaPassportCid+';' : ''
+        const cookie = userinfo ? 'ngaPassportUid=' + userinfo.ngaPassportUid + '; ngaPassportCid=' + userinfo.ngaPassportCid + ';' : ''
         let json_res
 
         if (method === 'GET') {
@@ -68,7 +68,8 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
             }
 
             return res
-        } catch (e) {}
+        } catch (e) {
+        }
 
         return {}
     },
@@ -114,13 +115,13 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
     loginPage: () => {
         setPageTitle('NGA登录')
         const frm = 'login'
-        const __checkCodeId = frm+(Math.random()+'').slice(2)
-        const __PAGEID = 'P'+(Math.random()+'').slice(2)
+        const __checkCodeId = frm + (Math.random() + '').slice(2)
+        const __PAGEID = 'P' + (Math.random() + '').slice(2)
 
         nga.d.push({
             col_type: 'pic_1_full',
             url: nga.empty,
-            pic_url: 'https://nga.178.com/login_check_code.php?id='+__checkCodeId+'&from='+frm+'@Referer=https://nga.178.com/nuke/account_copy.html?login'
+            pic_url: 'https://nga.178.com/login_check_code.php?id=' + __checkCodeId + '&from=' + frm + '@Referer=https://nga.178.com/nuke/account_copy.html?login'
         })
         nga.d.push({
             desc: '请输入用户名',
@@ -179,7 +180,10 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
                 try {
                     const data = response.data
                     if (data.length === 4) {
-                        writeFile(nga.files.userinfoFilePath, JSON.stringify({ngaPassportUid: data[1], ngaPassportCid: data[2]}))
+                        writeFile(nga.files.userinfoFilePath, JSON.stringify({
+                            ngaPassportUid: data[1],
+                            ngaPassportCid: data[2]
+                        }))
                         back(true)
                         return 'toast://登录成功'
                     } else {
@@ -224,7 +228,7 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
             const user_detail = userInfo.data[0]
 
             nga.d.push({
-                title: '['+user_detail.group+'] '+user_detail.username,
+                title: '[' + user_detail.group + '] ' + user_detail.username,
                 pic_url: user_detail.avatar || nga.defaultIconPath,
                 url: $(nga.empty).rule(() => {
                     const nga = $.require('hiker://page/nga')
@@ -246,7 +250,7 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
             nga.d.push({
                 title: '收藏帖子',
                 pic_url: 'https://iconfont.tyrantg.com/like.svg',
-                url: $(nga.empty+'##fypage#noHistory#').rule(() => {
+                url: $(nga.empty + '##fypage#noHistory#').rule(() => {
                     const nga = $.require('hiker://page/nga')
                     nga.favorParse()
                     setResult(nga.d);
@@ -303,7 +307,7 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
                 group.forums.forEach((forum) => {
                     nga.d.push({
                         title: forum.name,
-                        url: $(nga.empty+'##fypage').rule((fid) => {
+                        url: $(nga.empty + '##fypage').rule((fid) => {
                             const nga = $.require('hiker://page/nga')
                             nga.forumParse(fid)
                             setResult(nga.d);
@@ -348,11 +352,11 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
         setPageTitle('收藏帖子')
         const page = MY_PAGE
 
-        const res = nga.get(nga.api.FavorAll+'&page='+page)
+        const res = nga.get(nga.api.FavorAll + '&page=' + page)
 
         if (res.result) {
             res.result.data.forEach(item => {
-                const url = $(nga.empty+'##fypage#noHistory#').rule((tid, title) => {
+                const url = $(nga.empty + '##fypage#noHistory#').rule((tid, title) => {
                     const nga = $.require('hiker://page/nga')
                     nga.readParse(tid, title)
                     setResult(nga.d);
@@ -387,7 +391,7 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
 
         if (res.result) {
             res.result.data.forEach(item => {
-                const url = $(nga.empty+'##fypage').rule((tid, title) => {
+                const url = $(nga.empty + '##fypage').rule((tid, title) => {
                     const nga = $.require('hiker://page/nga')
                     nga.readParse(tid, title)
                     setResult(nga.d);
@@ -402,8 +406,8 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
                     item.attachs.forEach((item, index) => {
                         if (index < 3) {
                             nga.d.push({
-                                url: attachPrefix+item.attachurl,
-                                pic_url: attachPrefix+item.attachurl,
+                                url: attachPrefix + item.attachurl,
+                                pic_url: attachPrefix + item.attachurl,
                                 col_type: 'pic_3'
                             })
                         }
@@ -458,7 +462,7 @@ l2V8zGh1j7ojZbt62hVjy6byK1E/2XYo97ZtL4KDW7F5jJMvSDRFR7901UR8hCdf\n\
                 const content = item.content
                     .replace(/\[url](.*?)\[\/url]/g, '[url=$1][/url]')
                     .replace(/\[h](.*?)\[\/h]/g, '[url=$1][/url]')
-                    .replace(/\[img]\.\/(.*?)\[\/img]/g, '[img='+nga.attachmentsCDNUrl+'$1][/img]')
+                    .replace(/\[img]\.\/(.*?)\[\/img]/g, '[img=' + nga.attachmentsCDNUrl + '$1][/img]')
 
                 const convert = bbcode2Html.parser(content)
 

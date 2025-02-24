@@ -3,8 +3,8 @@ var APP_ID = 'eNuy1gIwgY9cI6KeKsGfw3Mr-gzGzoHsz';
 var APP_KEY = 'DX4tkQ07mmA8cQHGujuTa6aT';
 
 AV.init({
-  appId: APP_ID,
-  appKey: APP_KEY
+    appId: APP_ID,
+    appKey: APP_KEY
 });
 
 

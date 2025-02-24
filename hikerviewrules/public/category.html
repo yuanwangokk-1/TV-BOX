@@ -1,128 +1,133 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="" xmlns="">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Title</title>
-<!--  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
-  <link rel="stylesheet" href="https://unpkg.com/vant@2.12/lib/index.css"/>
-  <script src="https://unpkg.com/vue@2.6/dist/vue.min.js"></script>
-  <script src="https://unpkg.com/vant@2.12/lib/vant.min.js"></script>
-<!--  <script src="js/element-ui.js"></script>-->
-  <style>
-    html, body {
-      margin: 0 5px;
-      height: 118px;
-      overflow: scroll;
-    }
-    .tab {
-      margin: 4px 6px;
-    }
-    .van-tabs__content {
-      margin-top: 10px;
-    }
-    /*.el-tab-pane {
-      height: 56px;
-      overflow-y: auto;
-    }*/
-    .van-tab__pane {
-      height: 64px;
-      overflow-y: auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Title</title>
+    <!--  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+    <link href="https://unpkg.com/vant@2.12/lib/index.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/vue@2.6/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/vant@2.12/lib/vant.min.js"></script>
+    <!--  <script src="js/element-ui.js"></script>-->
+    <style>
+        html, body {
+            margin: 0 5px;
+            height: 118px;
+            overflow: scroll;
+        }
+
+        .tab {
+            margin: 4px 6px;
+        }
+
+        .van-tabs__content {
+            margin-top: 10px;
+        }
+
+        /*.el-tab-pane {
+          height: 56px;
+          overflow-y: auto;
+        }*/
+        .van-tab__pane {
+            height: 64px;
+            overflow-y: auto;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-  <!--<el-tabs type="border-card" v-model="currentTab" @tab-click="tabClick">
-    <el-tab-pane v-for="(item, index) in category" :key="index" :label="item.name" :name="index">
-      <el-tag class="tab" v-for="(tab, key) in item.list" :key="key" size="mini" :type="tab.choose ? `danger` : ''" @click="chooseTab(index, key, tab.choose)">{{tab.name}}</el-tag>
-    </el-tab-pane>
-  </el-tabs>-->
-  <van-tabs class="tab-box" v-model="currentTab" @click="tabClick">
-    <van-tab v-for="(item, index) in category" :key="index" :title="`${item.name}：${chooseLabel[index]}`">
-      <van-tag class="tab" v-for="(tab, key) in item.list" :key="key" type="danger" size="large" :plain="! tab.choose" @click="chooseTab(index, key, tab.choose)" >{{tab.name}}</van-tag>
-    </van-tab>
-  </van-tabs>
+    <!--<el-tabs type="border-card" v-model="currentTab" @tab-click="tabClick">
+      <el-tab-pane v-for="(item, index) in category" :key="index" :label="item.name" :name="index">
+        <el-tag class="tab" v-for="(tab, key) in item.list" :key="key" size="mini" :type="tab.choose ? `danger` : ''" @click="chooseTab(index, key, tab.choose)">{{tab.name}}</el-tag>
+      </el-tab-pane>
+    </el-tabs>-->
+    <van-tabs @click="tabClick" class="tab-box" v-model="currentTab">
+        <van-tab :key="index" :title="`${item.name}：${chooseLabel[index]}`" v-for="(item, index) in category">
+            <van-tag :key="key" :plain="! tab.choose" @click="chooseTab(index, key, tab.choose)" class="tab" size="large"
+                     type="danger" v-for="(tab, key) in item.list">{{tab.name}}
+            </van-tag>
+        </van-tab>
+    </van-tabs>
 </div>
 <script>
-  // eval(fy_bridge_app.getInternalJs())
-  new Vue({
-    el: '#app',
-    data() {
-      return {
-        category: [],
-        choose: [],
-        chooseLabel: [],
-        baseUrl: '',
-        currentTab: 0,
-      }
-    },
-    mounted() {
-      this.getData()
-      this.initData()
-    },
-    methods: {
-      getQueryVariable(variable) {
-        let query = window.location.search.substring(1)
-        let vars = query.split("&");
-        for (let i=0;i<vars.length;i++) {
-          let pair = vars[i].split("=");
-          if(pair[0] === variable) return pair[1]
-        }
-        return false
-      },
-      getData() {
-        this.category = JSON.parse(fy_bridge_app.getVar('tab-panel'))
-        this.baseUrl = fy_bridge_app.getVar('tab-base_url')
-        this.currentTab = parseInt(fy_bridge_app.getVar('tab-current')) || 0
-
-        let choose = this.getQueryVariable('filters')
-        if (choose) this.choose = choose.split(',').map(_ => parseInt(_))
-      },
-      initData() {
-        this.category.forEach((cate, index) => {
-          cate.list.forEach((item, key) => {
-            if (this.choose.length > 0) {
-              if (this.choose.indexOf(parseInt(item.id)) > -1) {
-                this.chooseLabel[index] = item.name
-                item.choose = true
-              } else {
-                item.choose = false
-              }
-            } else {
-              this.chooseLabel[index] = cate.list[0].name
-              item.choose = key === 0
+    // eval(fy_bridge_app.getInternalJs())
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                category: [],
+                choose: [],
+                chooseLabel: [],
+                baseUrl: '',
+                currentTab: 0,
             }
-          })
-        })
-        this.$forceUpdate()
-      },
-      tabClick(e) {
-        // fy_bridge_app.putVar('tab-current', e.name)
-        fy_bridge_app.putVar('tab-current', e)
-      },
-      chooseTab(index, key, status) {
-        // if (! status) {
-          this.choose = []
-          this.category[index].list.forEach((item, current_index) => {
-            item.choose = current_index === key
-          })
-          this.category.forEach((cate, index) => {
-            cate.list.forEach((item, key) => {
-              if (item.choose) {
-                this.chooseLabel[index] = item.name
-                this.choose.push(parseInt(item.id))
-              }
-            })
-          })
-          this.$forceUpdate()
+        },
+        mounted() {
+            this.getData()
+            this.initData()
+        },
+        methods: {
+            getQueryVariable(variable) {
+                let query = window.location.search.substring(1)
+                let vars = query.split("&");
+                for (let i = 0; i < vars.length; i++) {
+                    let pair = vars[i].split("=");
+                    if (pair[0] === variable) return pair[1]
+                }
+                return false
+            },
+            getData() {
+                this.category = JSON.parse(fy_bridge_app.getVar('tab-panel'))
+                this.baseUrl = fy_bridge_app.getVar('tab-base_url')
+                this.currentTab = parseInt(fy_bridge_app.getVar('tab-current')) || 0
 
-          fy_bridge_app.putVar('tab-url', 'https://www.acfun.cn/bangumilist?filters='+this.choose.join(','))
-          fy_bridge_app.refreshPage(true)
-        // }
-      },
-    }
-  })
+                let choose = this.getQueryVariable('filters')
+                if (choose) this.choose = choose.split(',').map(_ => parseInt(_))
+            },
+            initData() {
+                this.category.forEach((cate, index) => {
+                    cate.list.forEach((item, key) => {
+                        if (this.choose.length > 0) {
+                            if (this.choose.indexOf(parseInt(item.id)) > -1) {
+                                this.chooseLabel[index] = item.name
+                                item.choose = true
+                            } else {
+                                item.choose = false
+                            }
+                        } else {
+                            this.chooseLabel[index] = cate.list[0].name
+                            item.choose = key === 0
+                        }
+                    })
+                })
+                this.$forceUpdate()
+            },
+            tabClick(e) {
+                // fy_bridge_app.putVar('tab-current', e.name)
+                fy_bridge_app.putVar('tab-current', e)
+            },
+            chooseTab(index, key, status) {
+                // if (! status) {
+                this.choose = []
+                this.category[index].list.forEach((item, current_index) => {
+                    item.choose = current_index === key
+                })
+                this.category.forEach((cate, index) => {
+                    cate.list.forEach((item, key) => {
+                        if (item.choose) {
+                            this.chooseLabel[index] = item.name
+                            this.choose.push(parseInt(item.id))
+                        }
+                    })
+                })
+                this.$forceUpdate()
+
+                fy_bridge_app.putVar('tab-url', 'https://www.acfun.cn/bangumilist?filters=' + this.choose.join(','))
+                fy_bridge_app.refreshPage(true)
+                // }
+            },
+        }
+    })
 </script>
 </body>
 </html>

@@ -1,8 +1,8 @@
-Object.assign(muban.mxone5.二级,{
+Object.assign(muban.mxone5.二级, {
     //tabs: '.module-tab-item',
     lists: '.module-row-one:eq(#id)&&a.module-row-text',
-    list_text:'h4&&Text',
-    list_url:'a&&data-clipboard-text',
+    list_text: 'h4&&Text',
+    list_url: 'a&&data-clipboard-text',
 });
 var rule = {
     title: '玩偶哥哥[盘]',

@@ -15,10 +15,10 @@ const baseParse = _ => {
     let cate_2nd = getVar("tyrantgenesis.zcool.cate_2nd_select", "0")
     let cate_sort = getVar("tyrantgenesis.zcool.cate_sort", "0")
 
-    const api_url = MY_URL.split('##')[0] + "?cate="+cate_1st+"&sub_cate="+cate_2nd+"&has_video=0&city=0&college=0&"+sort[cate_sort].url+"&ps=20&p="+page
+    const api_url = MY_URL.split('##')[0] + "?cate=" + cate_1st + "&sub_cate=" + cate_2nd + "&has_video=0&city=0&college=0&" + sort[cate_sort].url + "&ps=20&p=" + page
 
     // 一级分类
-    const category_json = fetch(cate_url, {headers:{"User-Agent": PC_UA}})
+    const category_json = fetch(cate_url, {headers: {"User-Agent": PC_UA}})
     const category = JSON.parse(category_json).datas
 
     if (parseInt(page) === 1) {
@@ -26,7 +26,7 @@ const baseParse = _ => {
         // 一级分类
         category.forEach(cate => {
             d.push({
-                title: cate_1st === cate.id.toString() ? '‘‘’’<strong><font color="red">'+cate.name+'</font></strong>' : cate.name,
+                title: cate_1st === cate.id.toString() ? '‘‘’’<strong><font color="red">' + cate.name + '</font></strong>' : cate.name,
                 url: $(empty).lazyRule(params => {
                     putVar("tyrantgenesis.zcool.cate_1st_select", params.cate_id.toString())
                     putVar("tyrantgenesis.zcool.cate_2nd_select", "0")
@@ -55,7 +55,7 @@ const baseParse = _ => {
         })
         sub_category.forEach(cate => {
             d.push({
-                title: cate_2nd === cate.id.toString() ? '‘‘’’<strong><font color="red">'+cate.name+'</font></strong>' : cate.name,
+                title: cate_2nd === cate.id.toString() ? '‘‘’’<strong><font color="red">' + cate.name + '</font></strong>' : cate.name,
                 url: $(empty).lazyRule(params => {
                     putVar("tyrantgenesis.zcool.cate_2nd_select", params.cate_id.toString())
                     refreshPage(true)
@@ -73,7 +73,7 @@ const baseParse = _ => {
         // 三级分类
         sort.forEach((item, index) => {
             d.push({
-                title: cate_sort === index.toString() ? '‘‘’’<strong><font color="red">'+item.title+'</font></strong>' : item.title,
+                title: cate_sort === index.toString() ? '‘‘’’<strong><font color="red">' + item.title + '</font></strong>' : item.title,
                 url: $(empty).lazyRule(params => {
                     putVar("tyrantgenesis.zcool.cate_sort", params.cate_id.toString())
                     refreshPage(true)
@@ -89,7 +89,7 @@ const baseParse = _ => {
         })
     }
 
-    const list_json = fetch(api_url, {headers:{"User-Agent": PC_UA}})
+    const list_json = fetch(api_url, {headers: {"User-Agent": PC_UA}})
     const list = JSON.parse(list_json).datas
 
     list.forEach(item => {
@@ -99,7 +99,7 @@ const baseParse = _ => {
                 title: obj.title,
                 desc: obj.creatorObj.username,
                 pic_url: obj.cover,
-                url: $("https://www.zcool.com.cn/work/"+obj.idStr+".html").rule(_ => {
+                url: $("https://www.zcool.com.cn/work/" + obj.idStr + ".html").rule(_ => {
                     eval(fetch('hiker://files/TyrantG/IMAGE/zcool.js'))
                     secParse(MY_URL)
                 }),
@@ -113,7 +113,7 @@ const baseParse = _ => {
 
 const secParse = MY_URL => {
     let d = [];
-    const pageContent = fetch(MY_URL, {headers:{"User-Agent": PC_UA}})
+    const pageContent = fetch(MY_URL, {headers: {"User-Agent": PC_UA}})
     const html = parseDomForHtml(pageContent, '.workShowBox&&Html');
 
     d.push({
@@ -135,7 +135,7 @@ const searchParse = _ => {
                 title: obj.title,
                 desc: obj.creatorObj.username,
                 pic_url: obj.cover,
-                url: $("https://www.zcool.com.cn/work/"+obj.idStr+".html").rule(_ => {
+                url: $("https://www.zcool.com.cn/work/" + obj.idStr + ".html").rule(_ => {
                     eval(fetch('hiker://files/TyrantG/IMAGE/zcool.js'))
                     secParse(MY_URL)
                 }),

@@ -30,17 +30,17 @@ const picacg = {
     images: [],
     episodes: [],
     headers: {
-        "accept":            "application/vnd.picacomic.com.v1+json",
-        "app-channel":       "2",
-        "time":              (new Date().getTime()/1000).toFixed(0),
-        "app-version":       "2.2.1.2.3.3",
-        "app-uuid":          "defaultUuid",
-        "app-platform":      "android",
+        "accept": "application/vnd.picacomic.com.v1+json",
+        "app-channel": "2",
+        "time": (new Date().getTime() / 1000).toFixed(0),
+        "app-version": "2.2.1.2.3.3",
+        "app-uuid": "defaultUuid",
+        "app-platform": "android",
         "app-build-version": "44",
-        "Content-Type":      "application/json; charset=UTF-8",
-        "User-Agent":        "okhttp/3.8.1",
-        "image-quality":     "original",
-        "Host":              "picaapi.picacomic.com",
+        "Content-Type": "application/json; charset=UTF-8",
+        "User-Agent": "okhttp/3.8.1",
+        "image-quality": "original",
+        "Host": "picaapi.picacomic.com",
     },
     encrypt: (url, ts, method) => {
         eval(getCryptoJS())
@@ -63,7 +63,11 @@ const picacg = {
             refreshPage(false)
         }
 
-        responseJson = method === 'GET' ? fetch(request_url, {headers: headers}) : fetch(request_url, {headers: headers, method: method, body: data})
+        responseJson = method === 'GET' ? fetch(request_url, {headers: headers}) : fetch(request_url, {
+            headers: headers,
+            method: method,
+            body: data
+        })
 
         const response = JSON.parse(responseJson)
 
@@ -80,7 +84,7 @@ const picacg = {
                 toast('账号异常,请重新登录')
                 refreshPage(true)
             }
-            if (! email || ! password) {
+            if (!email || !password) {
                 writeFile(picacg.picacg_path, '')
                 toast('账号异常,请重新登录')
                 refreshPage(true)
@@ -90,9 +94,9 @@ const picacg = {
                     password: password,
                 })
                 if (autoLoginResponse.code === 400) {
-                    return 'toast://'+ (autoLoginResponse.detail || autoLoginResponse.message)
+                    return 'toast://' + (autoLoginResponse.detail || autoLoginResponse.message)
                 } else {
-                    const setting = email + '\n' + password + '\n' +autoLoginResponse.data.token
+                    const setting = email + '\n' + password + '\n' + autoLoginResponse.data.token
                     writeFile(picacg.picacg_path, setting)
                     refreshPage(true)
                 }
@@ -103,7 +107,7 @@ const picacg = {
     get: path => picacg.httpRequest(path, 'GET', ''),
     post: (path, data) => picacg.httpRequest(path, 'POST', data),
     baseParse: () => {
-        if (! fileExist(picacg.picacg_path) || ! fetch(picacg.picacg_path)) {
+        if (!fileExist(picacg.picacg_path) || !fetch(picacg.picacg_path)) {
             picacg.d.push({
                 title: '登录哔咔',
                 url: $(picacg.empty).rule(() => {
@@ -135,7 +139,7 @@ const picacg = {
                 const userInfo = picacg.get('users/profile').data.user
 
                 picacg.d.push({
-                    title: '用户『'+userInfo.name+'』 # 个人中心',
+                    title: '用户『' + userInfo.name + '』 # 个人中心',
                     pic_url: 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg',
                     url: $(picacg.empty).rule(() => {
                         const picacg = $.require('hiker://page/picacg')
@@ -144,10 +148,11 @@ const picacg = {
                     }),
                     col_type: 'avatar',
                 })
-            } catch (e) {}
+            } catch (e) {
+            }
 
             picacg.d.push({
-                url: $(picacg.empty+"#fullTheme#$$fypage").rule(() => {
+                url: $(picacg.empty + "#fullTheme#$$fypage").rule(() => {
                     const picacg = $.require('hiker://page/picacg')
                     picacg.getSearch()
                     setResult(picacg.d)
@@ -157,7 +162,7 @@ const picacg = {
             })
             picacg.d.push({
                 title: '排行榜',
-                url: $(picacg.empty+"#fullTheme#").rule(() => {
+                url: $(picacg.empty + "#fullTheme#").rule(() => {
                     const picacg = $.require('hiker://page/picacg')
                     picacg.getRanking()
                     setResult(picacg.d)
@@ -166,7 +171,7 @@ const picacg = {
             })
             picacg.d.push({
                 title: '随机本子',
-                url: $(picacg.empty+"#fullTheme#$$fypage").rule(() => {
+                url: $(picacg.empty + "#fullTheme#$$fypage").rule(() => {
                     const picacg = $.require('hiker://page/picacg')
                     picacg.getRandom()
                     setResult(picacg.d)
@@ -175,7 +180,7 @@ const picacg = {
             })
             picacg.d.push({
                 title: '我的收藏',
-                url: $(picacg.empty+"#fullTheme#$$fypage").rule(() => {
+                url: $(picacg.empty + "#fullTheme#$$fypage").rule(() => {
                     const picacg = $.require('hiker://page/picacg')
                     picacg.getFavourite()
                     setResult(picacg.d)
@@ -220,9 +225,9 @@ const picacg = {
                     password: getItem('password', ''),
                 })
                 if (response.code === 400) {
-                    return 'toast://'+ (response.detail || response.message)
+                    return 'toast://' + (response.detail || response.message)
                 } else {
-                    const setting = getItem('email', '') + '\n' + getItem('password', '') + '\n' +response.data.token
+                    const setting = getItem('email', '') + '\n' + getItem('password', '') + '\n' + response.data.token
                     writeFile(picacg.picacg_path, setting)
                     toast('登录成功')
                     back(true)
@@ -242,9 +247,9 @@ const picacg = {
             password: picacg.share_account.passwd,
         })
         if (response.code === 400 || response.code === 401) {
-            return 'toast://'+ (response.detail || response.message)
+            return 'toast://' + (response.detail || response.message)
         } else {
-            const setting = getItem('email', '') + '\n' + getItem('password', '') + '\n' +response.data.token
+            const setting = getItem('email', '') + '\n' + getItem('password', '') + '\n' + response.data.token
             writeFile(picacg.picacg_path, setting)
             refreshPage(false)
             return "toast://登录成功"
@@ -300,13 +305,13 @@ const picacg = {
                 })
 
                 if (response.code === 400) {
-                    return 'toast://'+ (response.detail || response.message)
+                    return 'toast://' + (response.detail || response.message)
                 } else {
                     const loginResponse = picacg.post('auth/sign-in', {
                         email: getItem('email', ''),
                         password: getItem('password', ''),
                     })
-                    const setting = getItem('email', '') + '\n' + getItem('password', '') + '\n' +loginResponse.data.token
+                    const setting = getItem('email', '') + '\n' + getItem('password', '') + '\n' + loginResponse.data.token
                     writeFile(picacg.picacg_path, setting)
                     toast('注册成功，已自动登录')
                     back(true)
@@ -343,7 +348,7 @@ const picacg = {
                 extra: {
                     defaultValue: picacg.data.searchValue,
                     onChange: $.toString(() => {
-                        if (getItem('searchValue', '') && ! input) {
+                        if (getItem('searchValue', '') && !input) {
                             clearItem('searchValue')
                             clearItem('searchHistoryShowStatus')
                             refreshPage(false)
@@ -353,7 +358,7 @@ const picacg = {
                 }
             })
 
-            if (! picacg.data.searchValue) {
+            if (!picacg.data.searchValue) {
                 if (fileExist(picacg.searchHistory) && fetch(picacg.searchHistory)) {
                     const searchHistory = fetch(picacg.searchHistory).split('||').filter(item => item)
                     picacg.d.push({
@@ -441,7 +446,7 @@ const picacg = {
     getSearchResult: (page, value) => {
         const searchValue = value ? value : picacg.data.searchValue
         if (searchValue) {
-            const response = picacg.post('comics/advanced-search?page='+page, {
+            const response = picacg.post('comics/advanced-search?page=' + page, {
                 keyword: searchValue,
                 sort: picacg.data.sort,
             })
@@ -449,8 +454,8 @@ const picacg = {
                 picacg.d.push({
                     title: comic.title,
                     desc: comic.author,
-                    pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl+'/static/'+comic.thumb.path,
-                    url: $(picacg.empty+'#immersiveTheme##noHistory#$$fypage').rule((id) => {
+                    pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl + '/static/' + comic.thumb.path,
+                    url: $(picacg.empty + '#immersiveTheme##noHistory#$$fypage').rule((id) => {
                         const picacg = $.require('hiker://page/picacg')
                         picacg.getInfo(id)
                         setResult(picacg.d);
@@ -500,7 +505,7 @@ const picacg = {
         })
         tabs.forEach(item => {
             picacg.d.push({
-                title: picacg.data.rankTT === item.id ? '‘‘’’<strong><font color="#ff1493">'+item.title+'</font></strong>' : item.title,
+                title: picacg.data.rankTT === item.id ? '‘‘’’<strong><font color="#ff1493">' + item.title + '</font></strong>' : item.title,
                 url: $(picacg.empty).lazyRule((item) => {
                     setItem('rankTT', item.id)
                     refreshPage(false)
@@ -512,14 +517,14 @@ const picacg = {
         picacg.d.push({
             col_type: 'line_blank'
         })
-        const response = picacg.get('comics/leaderboard?tt='+picacg.data.rankTT+'&ct=VC')
+        const response = picacg.get('comics/leaderboard?tt=' + picacg.data.rankTT + '&ct=VC')
 
         response.data.comics.forEach(comic => {
             picacg.d.push({
                 title: comic.title,
                 desc: comic.author,
-                pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl+'/static/'+comic.thumb.path,
-                url: $(picacg.empty+'#immersiveTheme##noHistory#$$fypage').rule((id) => {
+                pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl + '/static/' + comic.thumb.path,
+                url: $(picacg.empty + '#immersiveTheme##noHistory#$$fypage').rule((id) => {
                     const picacg = $.require('hiker://page/picacg')
                     picacg.getInfo(id)
                     setResult(picacg.d);
@@ -543,13 +548,13 @@ const picacg = {
                 col_type: 'line_blank'
             })
         }
-        const response = picacg.get('comics/random?page='+page)
+        const response = picacg.get('comics/random?page=' + page)
         response.data.comics.forEach(comic => {
             picacg.d.push({
                 title: comic.title,
                 desc: comic.author,
-                pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl+'/static/'+comic.thumb.path,
-                url: $(picacg.empty+'#immersiveTheme##noHistory#$$fypage').rule((id) => {
+                pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl + '/static/' + comic.thumb.path,
+                url: $(picacg.empty + '#immersiveTheme##noHistory#$$fypage').rule((id) => {
                     const picacg = $.require('hiker://page/picacg')
                     picacg.getInfo(id)
                     setResult(picacg.d);
@@ -573,13 +578,13 @@ const picacg = {
                 col_type: 'line_blank'
             })
         }
-        const response = picacg.get('users/favourite?s=dd&page='+page)
+        const response = picacg.get('users/favourite?s=dd&page=' + page)
         response.data.comics.docs.forEach(comic => {
             picacg.d.push({
                 title: comic.title,
                 desc: comic.author,
-                pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl+'/static/'+comic.thumb.path,
-                url: $(picacg.empty+'#immersiveTheme##noHistory#$$fypage').rule((id) => {
+                pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl + '/static/' + comic.thumb.path,
+                url: $(picacg.empty + '#immersiveTheme##noHistory#$$fypage').rule((id) => {
                     const picacg = $.require('hiker://page/picacg')
                     picacg.getInfo(id)
                     setResult(picacg.d);
@@ -593,7 +598,7 @@ const picacg = {
         if (response.code === 200) {
             const no_image = ['大家都在看', '那年今天', '官方都在看'];
             response.data.categories.forEach((cate, index) => {
-                let pic = no_image.includes(cate.title) ? 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg' : /*cate.thumb.fileServer*/(picacg.cdnUrl+'/static/'+cate.thumb.path)
+                let pic = no_image.includes(cate.title) ? 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg' : /*cate.thumb.fileServer*/(picacg.cdnUrl + '/static/' + cate.thumb.path)
                 let desc = no_image.includes(cate.title) ? '0' : '5'
                 // let desc = '3'
                 if (!cate.isWeb) {
@@ -601,7 +606,7 @@ const picacg = {
                         title: cate.title,
                         desc: desc,
                         pic_url: pic,
-                        url: $(picacg.empty+'#noHistory#$$fypage').rule((title) => {
+                        url: $(picacg.empty + '#noHistory#$$fypage').rule((title) => {
                             const picacg = $.require('hiker://page/picacg')
                             picacg.getComics(title)
                             setResult(picacg.d);
@@ -618,14 +623,14 @@ const picacg = {
         }))
         const page = MY_URL.split('$$')[1]
         if (parseInt(page) === 1) picacg.makeSort()
-        const response = picacg.get('comics?c='+encodeURIComponent(title)+'&page='+page+'&s='+picacg.data.sort)
+        const response = picacg.get('comics?c=' + encodeURIComponent(title) + '&page=' + page + '&s=' + picacg.data.sort)
         if (response.code === 200) {
             response.data.comics.docs.forEach((comic, index) => {
                 picacg.d.push({
                     title: comic.title,
                     desc: comic.author,
-                    pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl+'/static/'+comic.thumb.path,
-                    url: $(picacg.empty+'#immersiveTheme##noHistory#$$fypage').rule((id) => {
+                    pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl + '/static/' + comic.thumb.path,
+                    url: $(picacg.empty + '#immersiveTheme##noHistory#$$fypage').rule((id) => {
                         const picacg = $.require('hiker://page/picacg')
                         picacg.getInfo(id)
                         setResult(picacg.d);
@@ -636,7 +641,7 @@ const picacg = {
         }
     },
     getEpisodesPicture: (id, page) => {
-        const episodesRes = picacg.get('comics/'+id+'/eps?page='+page)
+        const episodesRes = picacg.get('comics/' + id + '/eps?page=' + page)
         if (episodesRes.code === 200 && episodesRes.data.eps.docs.length > 0) {
             episodesRes.data.eps.docs.forEach((ep, index) => {
                 picacg.episodes.push({
@@ -644,7 +649,7 @@ const picacg = {
                     url: ep.order,
                 })
             })
-            page = page+1
+            page = page + 1
             picacg.getEpisodesPicture(id, page)
         }
     },
@@ -656,8 +661,8 @@ const picacg = {
         const page = MY_URL.split('$$')[1]
 
         if (parseInt(page) === 1) {
-            const response = picacg.get('comics/'+id)
-            if (! response.data) {
+            const response = picacg.get('comics/' + id)
+            if (!response.data) {
                 toast('漫画信息错误')
                 back(false)
             }
@@ -669,10 +674,10 @@ const picacg = {
             picacg.d.push({
                 title: info.title,
                 desc:
-                    '✨ 分类：'+info.categories.join(' ')+'\n'+
-                    '❤️ 喜欢：'+info.likesCount+'    🌐 浏览：'+info.viewsCount+'\n'+
-                    '🎯 详情：'+info.description,
-                pic_url: /*info.thumb.fileServer*/picacg.cdnUrl+'/static/'+info.thumb.path,
+                    '✨ 分类：' + info.categories.join(' ') + '\n' +
+                    '❤️ 喜欢：' + info.likesCount + '    🌐 浏览：' + info.viewsCount + '\n' +
+                    '🎯 详情：' + info.description,
+                pic_url: /*info.thumb.fileServer*/picacg.cdnUrl + '/static/' + info.thumb.path,
                 url: $(picacg.empty).rule((description, image) => {
                     const picacg = $.require('hiker://page/picacg')
                     setPageTitle('本子详情')
@@ -686,7 +691,7 @@ const picacg = {
                         col_type: 'long_text'
                     })
                     setResult(picacg.d)
-                }, info.description, /*info.thumb.fileServer*/picacg.cdnUrl+'/static/'+info.thumb.path),
+                }, info.description, /*info.thumb.fileServer*/picacg.cdnUrl + '/static/' + info.thumb.path),
                 col_type: 'movie_1_vertical_pic_blur'
             })
 
@@ -696,9 +701,9 @@ const picacg = {
 
             try {
                 picacg.d.push({
-                    title: '作者：'+info.author,
+                    title: '作者：' + info.author,
                     pic_url: 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg',
-                    url: $(picacg.empty+"#fullTheme##noHistory#$$fypage").rule((author) => {
+                    url: $(picacg.empty + "#fullTheme##noHistory#$$fypage").rule((author) => {
                         addListener('onClose', $.toString(() => {
                             clearItem('sort')
                             clearItem('searchValue')
@@ -708,7 +713,7 @@ const picacg = {
                         picacg.setSearchHistory(author)
                         if (parseInt(page) === 1) {
                             picacg.d.push({
-                                title: '标签搜索：‘‘’’<strong><font color="#ff1493">'+author+'</font></strong>',
+                                title: '标签搜索：‘‘’’<strong><font color="#ff1493">' + author + '</font></strong>',
                                 url: picacg.empty,
                                 col_type: 'text_center_1',
                                 extra: {
@@ -723,9 +728,9 @@ const picacg = {
                     col_type: 'icon_2_round'
                 })
                 picacg.d.push({
-                    title: '上传：'+info._creator.name,
-                    pic_url: info._creator.avatar ? /*info._creator.avatar.fileServer*/(picacg.cdnUrl+'/static/'+info._creator.avatar.path) : 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg',
-                    url: $(picacg.empty+"#fullTheme##noHistory#$$fypage").rule((name) => {
+                    title: '上传：' + info._creator.name,
+                    pic_url: info._creator.avatar ? /*info._creator.avatar.fileServer*/(picacg.cdnUrl + '/static/' + info._creator.avatar.path) : 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg',
+                    url: $(picacg.empty + "#fullTheme##noHistory#$$fypage").rule((name) => {
                         addListener('onClose', $.toString(() => {
                             clearItem('sort')
                             clearItem('searchValue')
@@ -735,7 +740,7 @@ const picacg = {
                         picacg.setSearchHistory(name)
                         if (parseInt(page) === 1) {
                             picacg.d.push({
-                                title: '标签搜索：‘‘’’<strong><font color="#ff1493">'+name+'</font></strong>',
+                                title: '标签搜索：‘‘’’<strong><font color="#ff1493">' + name + '</font></strong>',
                                 url: picacg.empty,
                                 col_type: 'text_center_1',
                                 extra: {
@@ -754,7 +759,7 @@ const picacg = {
                     info.tags.forEach(tag => {
                         picacg.d.push({
                             title: tag,
-                            url: $(picacg.empty+"#fullTheme##noHistory#$$fypage").rule((tag) => {
+                            url: $(picacg.empty + "#fullTheme##noHistory#$$fypage").rule((tag) => {
                                 addListener('onClose', $.toString(() => {
                                     clearItem('sort')
                                     clearItem('searchValue')
@@ -764,7 +769,7 @@ const picacg = {
                                 picacg.setSearchHistory(tag)
                                 if (parseInt(page) === 1) {
                                     picacg.d.push({
-                                        title: '标签搜索：‘‘’’<strong><font color="#ff1493">'+tag+'</font></strong>',
+                                        title: '标签搜索：‘‘’’<strong><font color="#ff1493">' + tag + '</font></strong>',
                                         url: picacg.empty,
                                         col_type: 'text_center_1',
                                         extra: {
@@ -784,7 +789,8 @@ const picacg = {
                         col_type: 'line'
                     })
                 }
-            } catch (e) {}
+            } catch (e) {
+            }
 
             // 递归获取选集
             picacg.getEpisodesPicture(id, 1)
@@ -793,8 +799,8 @@ const picacg = {
                 title: info.isFavourite ? '‘‘’’<strong><font color="red">取消收藏</font></strong>' : '‘‘’’<strong><font color="#00bfff">收藏</font></strong>',
                 url: $(picacg.empty).lazyRule((id, isFavourite) => {
                     const picacg = $.require('hiker://page/picacg')
-                    picacg.post('comics/'+id+'/favourite', {})
-                    toast(isFavourite?'取消收藏':'收藏成功')
+                    picacg.post('comics/' + id + '/favourite', {})
+                    toast(isFavourite ? '取消收藏' : '收藏成功')
                     refreshPage(false)
                     return picacg.empty
                 }, id, info.isFavourite),
@@ -805,8 +811,8 @@ const picacg = {
                 title: info.isLiked ? '‘‘’’<strong><font color="red">取消点赞</font></strong>' : '‘‘’’<strong><font color="#00bfff">点赞</font></strong>',
                 url: $(picacg.empty).lazyRule((id, isLiked) => {
                     const picacg = $.require('hiker://page/picacg')
-                    picacg.post('comics/'+id+'/like', {})
-                    toast(isLiked?'取消点赞':'点赞成功')
+                    picacg.post('comics/' + id + '/like', {})
+                    toast(isLiked ? '取消点赞' : '点赞成功')
                     refreshPage(false)
                     return picacg.empty
                 }, id, info.isLiked),
@@ -818,16 +824,16 @@ const picacg = {
                 url: "hiker://page/download.view#noHistory##noRecordHistory##noRefresh#?rule=本地资源管理",
                 extra: {
                     chapterList: picacg.episodes,
-                    info:{
+                    info: {
                         bookName: info.title,
                         ruleName: MY_RULE.title,
-                        bookTopPic: /*info.thumb.fileServer*/picacg.cdnUrl+'/static/'+info.thumb.path,
+                        bookTopPic: /*info.thumb.fileServer*/picacg.cdnUrl + '/static/' + info.thumb.path,
                         parseCode: $.toString((id, ruleName) => {
-                            const picacg = $.require('hiker://page/picacg?rule='+ruleName)
+                            const picacg = $.require('hiker://page/picacg?rule=' + ruleName)
                             return picacg.getPicture(id, input)
                         }, id, MY_RULE.title)
                     },
-                    defaultView:"1"
+                    defaultView: "1"
                 },
                 col_type: 'text_3',
             })
@@ -845,7 +851,7 @@ const picacg = {
 
             tabs.forEach(tab => {
                 picacg.d.push({
-                    title: picacg.data.infoTab === tab.id ? '‘‘’’<strong><font color="#ff1493">'+tab.title+'</font></strong>' : tab.title,
+                    title: picacg.data.infoTab === tab.id ? '‘‘’’<strong><font color="#ff1493">' + tab.title + '</font></strong>' : tab.title,
                     url: $(picacg.empty).lazyRule((tab) => {
                         setItem('infoTab', tab.id)
                         refreshPage(false)
@@ -881,13 +887,13 @@ const picacg = {
                     })
                     break
                 case '2':
-                    const recommendationResponse = picacg.get('comics/'+id+'/recommendation')
+                    const recommendationResponse = picacg.get('comics/' + id + '/recommendation')
                     recommendationResponse.data.comics.forEach(comic => {
                         picacg.d.push({
                             title: comic.title,
                             desc: comic.author,
-                            pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl+'/static/'+comic.thumb.path,
-                            url: $(picacg.empty+'#immersiveTheme##noHistory#$$fypage').rule((id) => {
+                            pic_url: /*comic.thumb.fileServer*/picacg.cdnUrl + '/static/' + comic.thumb.path,
+                            url: $(picacg.empty + '#immersiveTheme##noHistory#$$fypage').rule((id) => {
                                 const picacg = $.require('hiker://page/picacg')
                                 picacg.getInfo(id)
                                 setResult(picacg.d);
@@ -914,10 +920,10 @@ const picacg = {
                         url: $(picacg.empty).lazyRule((id) => {
                             const picacg = $.require('hiker://page/picacg')
                             const comment = getItem('comment', '')
-                            if (! comment) {
+                            if (!comment) {
                                 return 'toast://请填写评论'
                             } else {
-                                const sendCommentResponse = picacg.post('comics/'+id+'/comments', {
+                                const sendCommentResponse = picacg.post('comics/' + id + '/comments', {
                                     content: comment
                                 })
 
@@ -926,7 +932,7 @@ const picacg = {
                                     refreshPage(true)
                                     return 'toast://评论成功'
                                 } else {
-                                    return 'toast://'+(sendCommentResponse.message || sendCommentResponse.detail)
+                                    return 'toast://' + (sendCommentResponse.message || sendCommentResponse.detail)
                                 }
                             }
                         }, id),
@@ -939,26 +945,26 @@ const picacg = {
 
         try {
             if (picacg.data.infoTab === '3') {
-                const commentsResponse = picacg.get('comics/'+id+'/comments?page='+page)
+                const commentsResponse = picacg.get('comics/' + id + '/comments?page=' + page)
                 commentsResponse.data.comments.docs.forEach(comment => {
                     let user = comment._user
                     if (user) {
                         picacg.d.push({
                             title: user.name,
-                            pic_url: user.avatar ?/* user.avatar.fileServer*/(picacg.cdnUrl+'/static/'+user.avatar.path) : 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg',
+                            pic_url: user.avatar ?/* user.avatar.fileServer*/(picacg.cdnUrl + '/static/' + user.avatar.path) : 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg',
                             url: picacg.empty,
                             col_type: 'avatar'
                         })
                     }
                     picacg.d.push({
-                        title: comment.content+'<br />'+ '❤️ 喜欢：'+comment.likesCount+'&nbsp;&nbsp;&nbsp;&nbsp;🌐 回复：'+comment.commentsCount,
+                        title: comment.content + '<br />' + '❤️ 喜欢：' + comment.likesCount + '&nbsp;&nbsp;&nbsp;&nbsp;🌐 回复：' + comment.commentsCount,
                         col_type: 'rich_text'
                     })
                     picacg.d.push({
                         title: comment.isLiked ? '取消点赞' : '点赞',
                         url: $(picacg.empty).lazyRule((id) => {
                             const picacg = $.require('hiker://page/picacg')
-                            picacg.post('comments/'+id+'/like', {})
+                            picacg.post('comments/' + id + '/like', {})
                             refreshPage(false)
                             return 'toast://提交成功'
                         }, comment._id),
@@ -966,30 +972,30 @@ const picacg = {
                     })
                     picacg.d.push({
                         title: '看回复',
-                        url: $(picacg.empty+'$$fypage').rule((id) => {
+                        url: $(picacg.empty + '$$fypage').rule((id) => {
                             const page = MY_URL.split('$$')[1]
                             const picacg = $.require('hiker://page/picacg')
-                            const response = picacg.get('comments/'+id+'/childrens?page='+page)
+                            const response = picacg.get('comments/' + id + '/childrens?page=' + page)
 
                             response.data.comments.docs.forEach(comment => {
                                 let user = comment._user
                                 if (user) {
                                     picacg.d.push({
                                         title: user.name,
-                                        pic_url: user.avatar ? (/*user.avatar.fileServer*/picacg.cdnUrl+'/static/'+user.avatar.path) : 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg',
+                                        pic_url: user.avatar ? (/*user.avatar.fileServer*/picacg.cdnUrl + '/static/' + user.avatar.path) : 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg',
                                         url: picacg.empty,
                                         col_type: 'avatar'
                                     })
                                 }
                                 picacg.d.push({
-                                    title: comment.content+'<br />'+ '❤️ 喜欢：'+comment.likesCount,
+                                    title: comment.content + '<br />' + '❤️ 喜欢：' + comment.likesCount,
                                     col_type: 'rich_text'
                                 })
                                 picacg.d.push({
                                     title: comment.isLiked ? '取消点赞' : '点赞',
                                     url: $(picacg.empty).lazyRule((id) => {
                                         const picacg = $.require('hiker://page/picacg')
-                                        picacg.post('comments/'+id+'/like', {})
+                                        picacg.post('comments/' + id + '/like', {})
                                         refreshPage(false)
                                         return 'toast://提交成功'
                                     }, comment._id),
@@ -1028,10 +1034,10 @@ const picacg = {
                                 url: $(picacg.empty).lazyRule((id) => {
                                     const picacg = $.require('hiker://page/picacg')
                                     const comment = getItem('comment', '')
-                                    if (! comment) {
+                                    if (!comment) {
                                         return 'toast://请填写评论'
                                     } else {
-                                        const sendCommentResponse = picacg.post('comments/'+id, {
+                                        const sendCommentResponse = picacg.post('comments/' + id, {
                                             content: comment
                                         })
 
@@ -1039,7 +1045,7 @@ const picacg = {
                                             back(false)
                                             return 'toast://评论成功'
                                         } else {
-                                            return 'toast://'+(sendCommentResponse.message || sendCommentResponse.detail)
+                                            return 'toast://' + (sendCommentResponse.message || sendCommentResponse.detail)
                                         }
                                     }
                                 }, id),
@@ -1063,23 +1069,24 @@ const picacg = {
                     })
                 })
             }
-        } catch (e) {}
+        } catch (e) {
+        }
 
     },
     getRecursionPicture: (id, order, page) => {
-        const response = picacg.get('comics/'+id+'/order/'+order+'/pages?page='+page)
+        const response = picacg.get('comics/' + id + '/order/' + order + '/pages?page=' + page)
         if (response.code === 200 && response.data.pages.docs.length > 0) {
             response.data.pages.docs.forEach((page, index) => {
-                picacg.images.push(/*page.media.fileServer*/picacg.cdnUrl+'/static/'+page.media.path)
+                picacg.images.push(/*page.media.fileServer*/picacg.cdnUrl + '/static/' + page.media.path)
             })
-            page = page+1
+            page = page + 1
             picacg.getRecursionPicture(id, order, page)
         }
     },
     getPicture: (id, order) => {
         // 递归获取内容
         picacg.getRecursionPicture(id, order, 1)
-        return 'pics://'+picacg.images.join('&&')
+        return 'pics://' + picacg.images.join('&&')
     },
     makeSort: () => {
         const tabs = [
@@ -1092,7 +1099,7 @@ const picacg = {
 
         tabs.forEach(item => {
             picacg.d.push({
-                title: picacg.data.sort === item.id ? '‘‘’’<strong><font color="#ff1493">'+item.title+'</font></strong>' : item.title,
+                title: picacg.data.sort === item.id ? '‘‘’’<strong><font color="#ff1493">' + item.title + '</font></strong>' : item.title,
                 url: $(picacg.empty).lazyRule((item) => {
                     setItem('sort', item.id)
                     refreshPage(false)
@@ -1115,37 +1122,37 @@ const picacg = {
                 if (response.code === 200) {
                     return 'toast://签到成功'
                 } else {
-                    return 'toast://'+ (response.message || response.detail)
+                    return 'toast://' + (response.message || response.detail)
                 }
             }),
             col_type: 'text_center_1'
         })
         picacg.d.push({
             title: '我的评论',
-            url: $(picacg.empty+'$$fypage').rule(() => {
+            url: $(picacg.empty + '$$fypage').rule(() => {
                 const page = MY_URL.split('$$')[1]
                 const picacg = $.require('hiker://page/picacg')
-                const response = picacg.get('users/my-comments?page='+page)
+                const response = picacg.get('users/my-comments?page=' + page)
 
                 response.data.comments.docs.forEach(comment => {
                     let user = comment._user
                     if (user) {
                         picacg.d.push({
                             title: user.name,
-                            pic_url: user.avatar ? (/*user.avatar.fileServer*/picacg.cdnUrl+'/static/'+user.avatar.path) : 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg',
+                            pic_url: user.avatar ? (/*user.avatar.fileServer*/picacg.cdnUrl + '/static/' + user.avatar.path) : 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/images/pica.jpg',
                             url: picacg.empty,
                             col_type: 'avatar'
                         })
                     }
                     picacg.d.push({
-                        title: comment.content+'<br />'+ '❤️ 喜欢：'+comment.likesCount,
+                        title: comment.content + '<br />' + '❤️ 喜欢：' + comment.likesCount,
                         col_type: 'rich_text'
                     })
                     picacg.d.push({
                         title: comment.isLiked ? '取消点赞' : '点赞',
                         url: $(picacg.empty).lazyRule((id) => {
                             const picacg = $.require('hiker://page/picacg')
-                            picacg.post('comments/'+id+'/like', {})
+                            picacg.post('comments/' + id + '/like', {})
                             refreshPage(false)
                             return 'toast://提交成功'
                         }, comment._id),
@@ -1156,7 +1163,7 @@ const picacg = {
                     })
                     picacg.d.push({
                         title: '查看漫画',
-                        url: $(picacg.empty+'#immersiveTheme##noHistory#$$fypage').rule((id) => {
+                        url: $(picacg.empty + '#immersiveTheme##noHistory#$$fypage').rule((id) => {
                             const picacg = $.require('hiker://page/picacg')
                             picacg.getInfo(id)
                             setResult(picacg.d);

@@ -53,7 +53,7 @@ const gcores = {
     pluginInit: () => {
         let attention, collection, config
 
-        if (! fileExist(gcores.plugins.attention)) {
+        if (!fileExist(gcores.plugins.attention)) {
             attention = 'Holy_Darklight$$$6264a202-d796-4a12-9ac4-ec05c4cb4560.jpg$$$145110\n梦非昨$$$9a9ec3fb-c31c-423b-b1cf-e742f81e926e.jpg$$$34311'
             writeFile(gcores.plugins.attention, attention)
         }
@@ -61,7 +61,7 @@ const gcores = {
             collection = 'Steam周销量排行榜:《消逝的光芒2：人与仁之战》登顶|2022年2月第一周$$$a52a0188-c5b6-445a-a129-4212d4dd7a4e.gif$$$147163$$$articles\n'
             writeFile(gcores.plugins.collection, collection)
         }*/
-        if (! fileExist(gcores.plugins.config)) {
+        if (!fileExist(gcores.plugins.config)) {
             config = JSON.stringify(gcores.defaultConfig)
             writeFile(gcores.plugins.config, config)
         }
@@ -84,12 +84,12 @@ const gcores = {
         if (parseInt(page) === 1) {
             gcores.dom.push({
                 url: 'file:///storage/emulated/0/Android/data/com.example.hikerview/files/Documents/TyrantG/public/gcores_banners.html',
-                col_type:"x5_webview_single",
+                col_type: "x5_webview_single",
                 extra: {ua: MOBILE_UA}
             })
 
             gcores.dom.push({
-                url: $(gcores.empty+"#fullTheme##noHistory#$$fypage").rule(() => {
+                url: $(gcores.empty + "#fullTheme##noHistory#$$fypage").rule(() => {
                     eval(fetch('https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/COLLECTION/gcores.js'))
                     gcores.searchParse()
                 }),
@@ -159,7 +159,7 @@ const gcores = {
                 },*/
                 {
                     title: '游戏',
-                    url: $(gcores.empty+'#noHistory#$$fypage').rule(() => {
+                    url: $(gcores.empty + '#noHistory#$$fypage').rule(() => {
                         eval(fetch('https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/COLLECTION/gcores.js'))
                         gcores.gamesParse()
                     }),
@@ -189,7 +189,7 @@ const gcores = {
 
             gcores.dom.push(
                 {
-                    title: gcores.homeSelected === 'attention' ? '‘‘’’<strong><font color="#ff1493">'+attentionField+'</font></strong>' : attentionField,
+                    title: gcores.homeSelected === 'attention' ? '‘‘’’<strong><font color="#ff1493">' + attentionField + '</font></strong>' : attentionField,
                     url: $(gcores.empty).lazyRule(params => {
                         setItem('homeSelected', 'attention')
                         setItem('userFold', params.fold === 'unfold' && params.homeSelected === 'attention' ? 'fold' : 'unfold')
@@ -235,7 +235,7 @@ const gcores = {
 
             tabs.forEach(tab => {
                 gcores.dom.push({
-                    title: gcores.homeAuthorTab === tab.type ? '‘‘’’<strong><font color="#00bfff">'+tab.title+'</font></strong>' : tab.title,
+                    title: gcores.homeAuthorTab === tab.type ? '‘‘’’<strong><font color="#00bfff">' + tab.title + '</font></strong>' : tab.title,
                     url: $(gcores.empty).lazyRule(params => {
                         setItem("homeAuthorTab", params.type)
                         refreshPage(false)
@@ -290,7 +290,7 @@ const gcores = {
                             filename: gcores.plugins.attention
                         })
                     } else {
-                        userUrl = $('https://www.gcores.com/users/'+sub[2]+'/content#noHistory#$$fypage').rule(params => {
+                        userUrl = $('https://www.gcores.com/users/' + sub[2] + '/content#noHistory#$$fypage').rule(params => {
                             eval(fetch('https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/COLLECTION/gcores.js'))
                             gcores.authorDescParse(params.id, MY_URL)
                         }, {
@@ -299,9 +299,9 @@ const gcores = {
                     }
 
                     gcores.dom.push({
-                        title: titlePrefix+sub[0],
+                        title: titlePrefix + sub[0],
                         url: userUrl,
-                        pic_url: gcores.imageUrl+sub[1],
+                        pic_url: gcores.imageUrl + sub[1],
                         col_type: 'icon_round_small_4'
                     })
                 })
@@ -310,7 +310,7 @@ const gcores = {
 
         if (attention.length > 0) {
             const currentUser = attention[gcores.userSelected].split('$$$')
-            const author_url = "https://www.gcores.com/gapi/v1/users/"+currentUser[2]+"/"+gcores.homeAuthorTab+"?page[limit]=8&page[offset]="+(page-1)*8+gcores.userTypeUrlParamsMaps[gcores.homeAuthorTab]
+            const author_url = "https://www.gcores.com/gapi/v1/users/" + currentUser[2] + "/" + gcores.homeAuthorTab + "?page[limit]=8&page[offset]=" + (page - 1) * 8 + gcores.userTypeUrlParamsMaps[gcores.homeAuthorTab]
             const author_api_data = fetch(author_url, {headers: gcores.headers})
             const author_data = JSON.parse(author_api_data)
 
@@ -318,7 +318,7 @@ const gcores = {
                 gcores.dom.push({
                     title: item.attributes.title,
                     desc: item.attributes.desc || item.attributes.description,
-                    pic_url: gcores.imageUrl+(item.attributes.thumb || item.attributes.cover)+'@Referer='+gcores.headers.referer,
+                    pic_url: gcores.imageUrl + (item.attributes.thumb || item.attributes.cover) + '@Referer=' + gcores.headers.referer,
                     url: gcores.subUrlBuild(item.id, gcores.homeAuthorTab),
                     col_type: 'pic_1'
                 })
@@ -342,42 +342,42 @@ const gcores = {
             case 'articles':
             case 'originals':
             case 'news':
-                return $("https://www.gcores.com/articles/"+id+"#immersiveTheme##noHistory#").rule(params => {
+                return $("https://www.gcores.com/articles/" + id + "#immersiveTheme##noHistory#").rule(params => {
                     eval(fetch('https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/COLLECTION/gcores.js'))
                     gcores.articlesDescParse(params.id, MY_URL)
                 }, {
                     id: id
                 })
             case 'videos':
-                return $("https://www.gcores.com/videos/"+id+"#immersiveTheme##noHistory#").rule(params => {
+                return $("https://www.gcores.com/videos/" + id + "#immersiveTheme##noHistory#").rule(params => {
                     eval(fetch('https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/COLLECTION/gcores.js'))
                     gcores.videosDescParse(params.id, MY_URL)
                 }, {
                     id: id
                 })
             case 'radios':
-                return $("https://www.gcores.com/radios/"+id+"#immersiveTheme##noHistory#").rule(params => {
+                return $("https://www.gcores.com/radios/" + id + "#immersiveTheme##noHistory#").rule(params => {
                     eval(fetch('https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/COLLECTION/gcores.js'))
                     gcores.audiosDescParse(params.id, MY_URL)
                 }, {
                     id: id
                 })
             case 'albums':
-                return $("https://www.gcores.com/albums/"+id+"#immersiveTheme##noHistory#$$fypage").rule(params => {
+                return $("https://www.gcores.com/albums/" + id + "#immersiveTheme##noHistory#$$fypage").rule(params => {
                     eval(fetch('https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/COLLECTION/gcores.js'))
                     gcores.albumsDescParse(params.id, MY_URL)
                 }, {
                     id: id
                 })
             case 'games':
-                return $("https://www.gcores.com/games/"+id+"#immersiveTheme##noHistory#").rule(params => {
+                return $("https://www.gcores.com/games/" + id + "#immersiveTheme##noHistory#").rule(params => {
                     eval(fetch('https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/COLLECTION/gcores.js'))
                     gcores.gamesDescParse(params.id, MY_URL)
                 }, {
                     id: id
                 })
             case 'collections':
-                return $("https://www.gcores.com/collections/"+id+"#immersiveTheme##noHistory#$$fypage").rule(params => {
+                return $("https://www.gcores.com/collections/" + id + "#immersiveTheme##noHistory#$$fypage").rule(params => {
                     eval(fetch('https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/COLLECTION/gcores.js'))
                     gcores.collectionsDescParse(params.id, MY_URL)
                 }, {
@@ -399,7 +399,7 @@ const gcores = {
     },
     baseAdapter: selected => {
         const page = MY_URL.split('$$')[1]
-        const url = gcores.urlParamsBuild(MY_URL, {limit: 12, offset: 12 * (page-1)})
+        const url = gcores.urlParamsBuild(MY_URL, {limit: 12, offset: 12 * (page - 1)})
         const apiData = fetch(url, {headers: gcores.headers})
         let data
 
@@ -434,7 +434,7 @@ const gcores = {
             gcores.dom.push({
                 title: item.attributes.title,
                 desc: item.attributes.desc,
-                pic_url: gcores.imageUrl+item.attributes.thumb+'@Referer='+gcores.headers.referer,
+                pic_url: gcores.imageUrl + item.attributes.thumb + '@Referer=' + gcores.headers.referer,
                 url: gcores.subUrlBuild(item.id, 'videos'),
                 col_type: 'movie_2'
             })
@@ -445,18 +445,18 @@ const gcores = {
             gcores.dom.push({
                 title: item.attributes.title,
                 desc: item.attributes.desc,
-                pic_url: gcores.imageUrl+item.attributes.thumb+'@Referer='+gcores.headers.referer,
+                pic_url: gcores.imageUrl + item.attributes.thumb + '@Referer=' + gcores.headers.referer,
                 url: gcores.subUrlBuild(item.id, 'radios'),
                 col_type: 'movie_2'
             })
         })
     },
     articlesParse: data => {
-       data.forEach(item => {
+        data.forEach(item => {
             gcores.dom.push({
                 title: item.attributes.title,
                 desc: item.attributes.desc,
-                pic_url: gcores.imageUrl+item.attributes.thumb+'@Referer='+gcores.headers.referer,
+                pic_url: gcores.imageUrl + item.attributes.thumb + '@Referer=' + gcores.headers.referer,
                 url: gcores.subUrlBuild(item.id, 'articles'),
                 col_type: 'pic_1'
             })
@@ -467,7 +467,7 @@ const gcores = {
             gcores.dom.push({
                 title: item.attributes.title,
                 desc: item.attributes.description,
-                pic_url: gcores.imageUrl+item.attributes.cover+'@Referer='+gcores.headers.referer,
+                pic_url: gcores.imageUrl + item.attributes.cover + '@Referer=' + gcores.headers.referer,
                 url: gcores.subUrlBuild(item.id, 'albums'),
                 col_type: 'movie_3_marquee'
             })
@@ -480,7 +480,7 @@ const gcores = {
         }))
         const page = MY_URL.split('$$')[1]
         let platform = ''
-        if (gcores.gamePlatform) platform = '&filter[platform]='+gcores.gamePlatform
+        if (gcores.gamePlatform) platform = '&filter[platform]=' + gcores.gamePlatform
 
         if (parseInt(page) === 1) {
             const platformTabs = [
@@ -500,7 +500,7 @@ const gcores = {
 
             platformTabs.forEach(tab => {
                 gcores.dom.push({
-                    title: gcores.gamePlatform === tab.id ? '‘‘’’<strong><font color="#ff1493">'+tab.title+'</font></strong>' : tab.title,
+                    title: gcores.gamePlatform === tab.id ? '‘‘’’<strong><font color="#ff1493">' + tab.title + '</font></strong>' : tab.title,
                     url: $(gcores.empty).lazyRule(params => {
                         setItem("gamePlatform", params.platform)
                         refreshPage(true)
@@ -516,7 +516,7 @@ const gcores = {
             })
             sortTabs.forEach(tab => {
                 gcores.dom.push({
-                    title: gcores.gameSort === tab.id ? '‘‘’’<strong><font color="#ff1493">'+tab.title+'</font></strong>' : tab.title,
+                    title: gcores.gameSort === tab.id ? '‘‘’’<strong><font color="#ff1493">' + tab.title + '</font></strong>' : tab.title,
                     url: $(gcores.empty).lazyRule(params => {
                         setItem("gameSort", params.sort)
                         refreshPage(true)
@@ -531,14 +531,14 @@ const gcores = {
                 col_type: 'blank_block',
             })
         }
-        const url = "https://www.gcores.com/gapi/v1//games/search?page[limit]=8&page[offset]="+(page-1)*8+"&sort="+gcores.gameSort+"&include=game-stores&filter[revised]=true&filter[onsale]=true"+platform
+        const url = "https://www.gcores.com/gapi/v1//games/search?page[limit]=8&page[offset]=" + (page - 1) * 8 + "&sort=" + gcores.gameSort + "&include=game-stores&filter[revised]=true&filter[onsale]=true" + platform
         const json = fetch(url, {headers: gcores.headers})
         const result = JSON.parse(json)
         result.data.forEach(item => {
             gcores.dom.push({
                 title: item.attributes.title,
                 desc: item.attributes.description,
-                pic_url: gcores.imageUrl+item.attributes.cover+'@Referer='+gcores.headers.referer,
+                pic_url: gcores.imageUrl + item.attributes.cover + '@Referer=' + gcores.headers.referer,
                 url: gcores.subUrlBuild(item.id, 'games'),
                 col_type: 'movie_1_left_pic'
             })
@@ -551,7 +551,7 @@ const gcores = {
             gcores.dom.push({
                 title: item.attributes.title,
                 desc: item.attributes.description,
-                pic_url: gcores.imageUrl+item.attributes.cover+'@Referer='+gcores.headers.referer,
+                pic_url: gcores.imageUrl + item.attributes.cover + '@Referer=' + gcores.headers.referer,
                 url: gcores.subUrlBuild(item.id, 'collections'),
                 col_type: 'movie_3'
             })
@@ -584,7 +584,7 @@ const gcores = {
                 extra: {
                     defaultValue: gcores.searchValue,
                     onChange: $.toString(() => {
-                        if (getItem('searchValue', '') && ! input) {
+                        if (getItem('searchValue', '') && !input) {
                             clearItem('searchValue')
                             clearItem('searchTab')
                             clearItem('searchOrderBy')
@@ -596,7 +596,7 @@ const gcores = {
                 }
             })
 
-            if (! gcores.searchValue) {
+            if (!gcores.searchValue) {
                 if (fileExist(gcores.plugins.searchHistory) && fetch(gcores.plugins.searchHistory)) {
                     const searchHistory = fetch(gcores.plugins.searchHistory).split('||').filter(item => item)
                     gcores.dom.push({
@@ -690,7 +690,7 @@ const gcores = {
 
                 tabs.forEach(tab => {
                     gcores.dom.push({
-                        title: gcores.searchTab === tab.type ? '‘‘’’<strong><font color="#ff1493">'+tab.title+'</font></strong>' : tab.title,
+                        title: gcores.searchTab === tab.type ? '‘‘’’<strong><font color="#ff1493">' + tab.title + '</font></strong>' : tab.title,
                         url: $(gcores.empty).lazyRule(params => {
                             setItem("searchTab", params.type)
                             refreshPage(true)
@@ -706,7 +706,7 @@ const gcores = {
                 })
                 orders.forEach(order => {
                     gcores.dom.push({
-                        title: gcores.searchOrderBy === order.type ? '‘‘’’<strong><font color="#ff1493">'+order.title+'</font></strong>' : order.title,
+                        title: gcores.searchOrderBy === order.type ? '‘‘’’<strong><font color="#ff1493">' + order.title + '</font></strong>' : order.title,
                         url: $(gcores.empty).lazyRule(params => {
                             setItem("searchOrderBy", params.type)
                             refreshPage(true)
@@ -724,7 +724,7 @@ const gcores = {
         }
 
         if (gcores.searchValue) {
-            const url = "https://www.gcores.com/gapi/v1/search?page[limit]=12&page[offset]="+(page-1)*12+"&type="+gcores.searchTab+"&query="+encodeURIComponent(gcores.searchValue)+"&order-by="+gcores.searchOrderBy
+            const url = "https://www.gcores.com/gapi/v1/search?page[limit]=12&page[offset]=" + (page - 1) * 12 + "&type=" + gcores.searchTab + "&query=" + encodeURIComponent(gcores.searchValue) + "&order-by=" + gcores.searchOrderBy
             const json = fetch(url, {headers: gcores.headers})
             const result = JSON.parse(json)
 
@@ -732,7 +732,7 @@ const gcores = {
                 gcores.dom.push({
                     title: item.attributes.title,
                     desc: item.attributes.desc || item.attributes.description,
-                    pic_url: gcores.imageUrl+(item.attributes.thumb || item.attributes.cover)+'@Referer='+gcores.headers.referer,
+                    pic_url: gcores.imageUrl + (item.attributes.thumb || item.attributes.cover) + '@Referer=' + gcores.headers.referer,
                     url: gcores.subUrlBuild(item.id, gcores.searchTab),
                     col_type: 'pic_1'
                 })
@@ -762,7 +762,7 @@ const gcores = {
     },
     urlParamsBuild: (url, params) => {
         for (let i in params) {
-            url = url.replace('$'+i, params[i])
+            url = url.replace('$' + i, params[i])
         }
         return url.replace(/\$\$.*/, '')
     },
@@ -770,21 +770,21 @@ const gcores = {
         switch (block.type) {
             case 'blockquote':
             default:
-                return '<p>'+block.text+'</p><br />'
+                return '<p>' + block.text + '</p><br />'
             case 'header-one':
-                return '<h1>'+block.text+'</h1>'
+                return '<h1>' + block.text + '</h1>'
             case 'header-two':
-                return '<h2>'+block.text+'</h2>'
+                return '<h2>' + block.text + '</h2>'
             case 'header-three':
-                return '<h3>'+block.text+'</h3>'
+                return '<h3>' + block.text + '</h3>'
             case 'header-four':
-                return '<h4>'+block.text+'</h4>'
+                return '<h4>' + block.text + '</h4>'
             case 'header-five':
-                return '<h5>'+block.text+'</h5>'
+                return '<h5>' + block.text + '</h5>'
             case 'header-six':
-                return '<h6>'+block.text+'</h6>'
+                return '<h6>' + block.text + '</h6>'
             case 'unordered-list-item':
-                return '<li>'+block.text+'</li>'
+                return '<li>' + block.text + '</li>'
             case 'atomic':
                 let images = ''
                 block.entityRanges.forEach(item => {
@@ -797,28 +797,28 @@ const gcores = {
         let images = ''
         const media = entityMap[key]
         if (media.type === 'IMAGE')
-            images += '<img src="'+gcores.imageUrl+media.data.path+'" alt="'+key+'" />'
+            images += '<img src="' + gcores.imageUrl + media.data.path + '" alt="' + key + '" />'
         else if (media.type === 'EMBED') {
-            if (media.data.content.includes('bilibili')) media.data.content = "https:"+decodeURIComponent(media.data.content).replace(/\\"/g, '"').match(/src="(.*?)"/)[1]
+            if (media.data.content.includes('bilibili')) media.data.content = "https:" + decodeURIComponent(media.data.content).replace(/\\"/g, '"').match(/src="(.*?)"/)[1]
             gcores.playlist.push({
-                title: '媒体'+(gcores.playlist.length+1),
-                url: "web://"+media.data.content
+                title: '媒体' + (gcores.playlist.length + 1),
+                url: "web://" + media.data.content
             })
         } else if (media.type === 'GALLERY') {
             media.data.images.forEach(image => {
-                images += '<img src="'+gcores.imageUrl+image.path+'" alt="'+image.id+'" />'
+                images += '<img src="' + gcores.imageUrl + image.path + '" alt="' + image.id + '" />'
             })
         }
 
         return images
     },
     articlesDescParse: (id, url) => {
-        const api_url = "https://www.gcores.com/gapi/v1/articles/"+id+"?include=category,user,user.role,tags,entities,entries,similarities.user,similarities.djs,similarities.category,collections,operational-events.giveaways.winners,operational-events.public-candidates&preview=1"
+        const api_url = "https://www.gcores.com/gapi/v1/articles/" + id + "?include=category,user,user.role,tags,entities,entries,similarities.user,similarities.djs,similarities.category,collections,operational-events.giveaways.winners,operational-events.public-candidates&preview=1"
         const apiData = fetch(api_url, {headers: gcores.headers})
         const data = JSON.parse(apiData)
         let contentAndMedia = {blocks: [], entityMap: []}
 
-        eval('contentAndMedia = '+data.data.attributes.content)
+        eval('contentAndMedia = ' + data.data.attributes.content)
         // dom结构被转义报错
         // const contentAndMedia = JSON.parse(data.data.attributes.content.replace(/\\"/g, '"'))
 
@@ -835,8 +835,8 @@ const gcores = {
         gcores.dom.push(
             {
                 title: data.data.attributes.title,
-                url: url+'#noHistory#',
-                pic_url: gcores.imageUrl+data.data.attributes.thumb,
+                url: url + '#noHistory#',
+                pic_url: gcores.imageUrl + data.data.attributes.thumb,
                 desc: data.data.attributes.desc,
                 col_type: 'movie_1_vertical_pic_blur'
             },
@@ -859,7 +859,7 @@ const gcores = {
             gcores.playlist.forEach(item => {
                 gcores.dom.push({
                     title: item.title,
-                    url: item.url+'#noHistory#',
+                    url: item.url + '#noHistory#',
                     col_type: 'text_2',
                     // extra: {blockRules: ['.png','.jpg','.svg']}
                 })
@@ -876,12 +876,12 @@ const gcores = {
         setResult(gcores.dom);
     },
     videosDescParse: (id, url) => {
-        const api_url = "https://www.gcores.com/gapi/v1/videos/"+id+"?include=category,user,media,djs,user.role,tags,entities,entries,similarities.user,similarities.djs,similarities.category,collections,operational-events.giveaways.winners,operational-events.public-candidates"
+        const api_url = "https://www.gcores.com/gapi/v1/videos/" + id + "?include=category,user,media,djs,user.role,tags,entities,entries,similarities.user,similarities.djs,similarities.category,collections,operational-events.giveaways.winners,operational-events.public-candidates"
         const apiData = fetch(api_url, {headers: gcores.headers})
         const data = JSON.parse(apiData)
         let contentAndMedia = {blocks: [], entityMap: []}
 
-        eval('contentAndMedia = '+data.data.attributes.content)
+        eval('contentAndMedia = ' + data.data.attributes.content)
         // dom结构被转义报错
         // const contentAndMedia = JSON.parse(data.data.attributes.content.replace(/\\"/g, '"'))
 
@@ -898,8 +898,8 @@ const gcores = {
         gcores.dom.push(
             {
                 title: data.data.attributes.title,
-                url: url+'#noHistory#',
-                pic_url: gcores.imageUrl+data.data.attributes.thumb,
+                url: url + '#noHistory#',
+                pic_url: gcores.imageUrl + data.data.attributes.thumb,
                 desc: data.data.attributes.desc,
                 col_type: 'movie_1_vertical_pic_blur'
             },
@@ -916,18 +916,18 @@ const gcores = {
                     gcores.dom.push({
                         title: '正片观看',
                         url: $(item.attributes['original-src']).lazyRule(() => {
-                            return pdfh(fetch(input), 'video&&data-url')+'#noHistory#'
+                            return pdfh(fetch(input), 'video&&data-url') + '#noHistory#'
                         }),
                         col_type: 'text_center_1',
                         extra: {
                             lineVisible: false
                         },
                     })
-                }else{
+                } else {
                     gcores.dom.push({
                         title: '正片观看',
                         url: $(item.attributes.playlist).lazyRule(() => {
-                            return JSON.parse(fetch(input)).m3u8+'#noHistory#'
+                            return JSON.parse(fetch(input)).m3u8 + '#noHistory#'
                         }),
                         col_type: 'text_center_1',
                         extra: {
@@ -971,12 +971,12 @@ const gcores = {
         setResult(gcores.dom);
     },
     audiosDescParse: (id, url) => {
-        const api_url = "https://www.gcores.com/gapi/v1/radios/"+id+"?include=category,user,media,djs,albums.album-bundles,user.role,tags,entities,entries,similarities.user,similarities.djs,similarities.category,collections,operational-events.giveaways.winners,operational-events.public-candidates"
+        const api_url = "https://www.gcores.com/gapi/v1/radios/" + id + "?include=category,user,media,djs,albums.album-bundles,user.role,tags,entities,entries,similarities.user,similarities.djs,similarities.category,collections,operational-events.giveaways.winners,operational-events.public-candidates"
         const apiData = fetch(api_url, {headers: gcores.headers})
         const data = JSON.parse(apiData)
         let contentAndMedia = {blocks: [], entityMap: []}
 
-        eval('contentAndMedia = '+data.data.attributes.content)
+        eval('contentAndMedia = ' + data.data.attributes.content)
         // dom结构被转义报错
         // const contentAndMedia = JSON.parse(data.data.attributes.content.replace(/\\"/g, '"'))
 
@@ -993,8 +993,8 @@ const gcores = {
         gcores.dom.push(
             {
                 title: data.data.attributes.title,
-                url: url+'#noHistory#',
-                pic_url: gcores.imageUrl+data.data.attributes.thumb,
+                url: url + '#noHistory#',
+                pic_url: gcores.imageUrl + data.data.attributes.thumb,
                 desc: data.data.attributes.desc,
                 col_type: 'movie_1_vertical_pic_blur'
             },
@@ -1009,7 +1009,7 @@ const gcores = {
             if (item.type === 'medias') {
                 gcores.dom.push({
                     title: '电台播放',
-                    url: (item.attributes.audio.includes('http') ? item.attributes.audio : gcores.audioUrl+item.attributes.audio)+'#noHistory#',
+                    url: (item.attributes.audio.includes('http') ? item.attributes.audio : gcores.audioUrl + item.attributes.audio) + '#noHistory#',
                     col_type: 'text_center_1',
                     extra: {
                         lineVisible: false
@@ -1053,7 +1053,7 @@ const gcores = {
     albumsDescParse: (id, url) => {
         const page = url.split('$$')[1]
         if (parseInt(page) === 1) {
-            const api_url = "https://www.gcores.com/gapi/v1/albums/"+id+"?include=sale-options,shop-item,album-bundles.sale-options,wallpapers"
+            const api_url = "https://www.gcores.com/gapi/v1/albums/" + id + "?include=sale-options,shop-item,album-bundles.sale-options,wallpapers"
             const apiData = fetch(api_url, {headers: gcores.headers})
             const data = JSON.parse(apiData)
 
@@ -1061,8 +1061,8 @@ const gcores = {
             gcores.dom.push(
                 {
                     title: data.data.attributes.title,
-                    url: url+'#noHistory#',
-                    pic_url: gcores.imageUrl+data.data.attributes.cover,
+                    url: url + '#noHistory#',
+                    pic_url: gcores.imageUrl + data.data.attributes.cover,
                     desc: data.data.attributes.description,
                     col_type: 'movie_1_vertical_pic_blur'
                 },
@@ -1072,7 +1072,7 @@ const gcores = {
             )
         }
 
-        const published_radios_url = "https://www.gcores.com/gapi/v1/albums/"+id+"/published-radios?page[limit]=16&page[offset]="+(page-1)*16+"&include=media,category,albums"
+        const published_radios_url = "https://www.gcores.com/gapi/v1/albums/" + id + "/published-radios?page[limit]=16&page[offset]=" + (page - 1) * 16 + "&include=media,category,albums"
         const published_radios_api_data = fetch(published_radios_url, {headers: gcores.headers})
         const published_radios_data = JSON.parse(published_radios_api_data)
 
@@ -1082,8 +1082,8 @@ const gcores = {
                     if (item.relationships.media.data.id === ra.id) {
                         gcores.dom.push({
                             title: item.attributes.title,
-                            pic_url: gcores.imageUrl+item.attributes.thumb,
-                            url: item.attributes['is-free'] ? (ra.attributes.audio.includes('http') ? ra.attributes.audio : gcores.audioUrl+ra.attributes.audio)+'#noHistory#' : 'toast://该资源为付费资源',
+                            pic_url: gcores.imageUrl + item.attributes.thumb,
+                            url: item.attributes['is-free'] ? (ra.attributes.audio.includes('http') ? ra.attributes.audio : gcores.audioUrl + ra.attributes.audio) + '#noHistory#' : 'toast://该资源为付费资源',
                             desc: item.attributes.desc,
                             col_type: 'movie_1_left_pic'
                         })
@@ -1095,7 +1095,7 @@ const gcores = {
         setResult(gcores.dom);
     },
     gamesDescParse: (id, url) => {
-        const api_url = "https://www.gcores.com/gapi/v1/games/"+id+"?include=game-stores,tags,involvements.entity.user"
+        const api_url = "https://www.gcores.com/gapi/v1/games/" + id + "?include=game-stores,tags,involvements.entity.user"
         const apiData = fetch(api_url, {headers: gcores.headers})
         const data = JSON.parse(apiData)
 
@@ -1103,21 +1103,20 @@ const gcores = {
         gcores.dom.push(
             {
                 title: data.data.attributes.title,
-                url: url+'#noHistory#',
-                pic_url: gcores.imageUrl+data.data.attributes.cover,
+                url: url + '#noHistory#',
+                pic_url: gcores.imageUrl + data.data.attributes.cover,
                 desc: data.data.attributes.description,
                 col_type: 'movie_1_vertical_pic_blur'
             },
             {
                 col_type: 'line_blank'
             },
-
         )
 
         if (data.data.attributes.screenshots) {
             gcores.dom.push({
                 title: '游戏预览',
-                url: url+'#noHistory#',
+                url: url + '#noHistory#',
                 col_type: 'text_center_1',
                 extra: {
                     lineVisible: false
@@ -1125,8 +1124,8 @@ const gcores = {
             })
             data.data.attributes.screenshots.forEach(item => {
                 gcores.dom.push({
-                    pic_url: gcores.imageUrl+item,
-                    url: gcores.imageUrl+item+'#noHistory#',
+                    pic_url: gcores.imageUrl + item,
+                    url: gcores.imageUrl + item + '#noHistory#',
                     col_type: 'pic_2',
                 })
             })
@@ -1143,7 +1142,7 @@ const gcores = {
             gcores.dom.push(
                 {
                     title: '发行平台与价格',
-                    url: url+'#noHistory#',
+                    url: url + '#noHistory#',
                     col_type: 'text_center_1',
                     extra: {
                         lineVisible: false
@@ -1153,20 +1152,20 @@ const gcores = {
             data.included.forEach(item => {
                 if (item.type === 'game-stores' && stores.includes(item.id)) {
                     let info
-                    eval('info = '+item.attributes['price-info'])
+                    eval('info = ' + item.attributes['price-info'])
 
                     if (info) {
                         gcores.dom.push(
                             {
                                 title: item.attributes['platform-name'],
-                                pic_url: 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/icons/'+item.attributes.platform+'.svg',
-                                url: 'toast://'+item.attributes['platform-name']+'平台',
+                                pic_url: 'https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/assets/icons/' + item.attributes.platform + '.svg',
+                                url: 'toast://' + item.attributes['platform-name'] + '平台',
                                 col_type: 'avatar'
                             },
                             {
-                                title: '<p>原价：￥'+(info.details[0].regular.amount / 100).toFixed(2)+'</p>'+
-                                    (info.details[0].discount !== undefined ? ('<p>现价：￥'+(info.details[0].discount.amount / 100).toFixed(2)+'</p>') : '')+
-                                    '<p>地区：'+info.details[0].area_name+'</p>'+
+                                title: '<p>原价：￥' + (info.details[0].regular.amount / 100).toFixed(2) + '</p>' +
+                                    (info.details[0].discount !== undefined ? ('<p>现价：￥' + (info.details[0].discount.amount / 100).toFixed(2) + '</p>') : '') +
+                                    '<p>地区：' + info.details[0].area_name + '</p>' +
                                     (info.details[0].support_chinese ? '<p>中文</p>' : ''),
                                 col_type: 'rich_text'
                             },
@@ -1209,7 +1208,7 @@ const gcores = {
         }
 
         if (parseInt(page) === 1) {
-            const api_url = "https://www.gcores.com/gapi/v1/collections/"+id
+            const api_url = "https://www.gcores.com/gapi/v1/collections/" + id
             const apiData = fetch(api_url, {headers: gcores.headers})
             const data = JSON.parse(apiData)
 
@@ -1217,8 +1216,8 @@ const gcores = {
             gcores.dom.push(
                 {
                     title: data.data.attributes.title,
-                    url: url+'#noHistory#',
-                    pic_url: gcores.imageUrl+data.data.attributes.cover,
+                    url: url + '#noHistory#',
+                    pic_url: gcores.imageUrl + data.data.attributes.cover,
                     desc: data.data.attributes.description,
                     col_type: 'movie_1_vertical_pic_blur'
                 },
@@ -1247,7 +1246,7 @@ const gcores = {
 
             tabs.forEach(tab => {
                 gcores.dom.push({
-                    title: gcores.collectTab === tab.type ? '‘‘’’<strong><font color="#ff1493">'+tab.title+'</font></strong>' : tab.title,
+                    title: gcores.collectTab === tab.type ? '‘‘’’<strong><font color="#ff1493">' + tab.title + '</font></strong>' : tab.title,
                     url: $(gcores.empty).lazyRule(params => {
                         setItem("collectTab", params.type)
                         refreshPage(true)
@@ -1264,7 +1263,7 @@ const gcores = {
             })
         }
 
-        const content_url = "https://www.gcores.com/gapi/v1/collections/"+id+"/"+idMap[gcores.collectTab]+"?page[limit]=12&page[offset]="+(page-1)*12+map[gcores.collectTab]
+        const content_url = "https://www.gcores.com/gapi/v1/collections/" + id + "/" + idMap[gcores.collectTab] + "?page[limit]=12&page[offset]=" + (page - 1) * 12 + map[gcores.collectTab]
         const content_json = fetch(content_url, {headers: gcores.headers})
         const result = JSON.parse(content_json)
 
@@ -1272,7 +1271,7 @@ const gcores = {
             gcores.dom.push({
                 title: item.attributes.title,
                 desc: item.attributes.desc || item.attributes.description,
-                pic_url: gcores.imageUrl+(item.attributes.thumb || item.attributes.cover),
+                pic_url: gcores.imageUrl + (item.attributes.thumb || item.attributes.cover),
                 url: gcores.subUrlBuild(item.id, item.type),
                 col_type: 'movie_2'
             })
@@ -1291,20 +1290,20 @@ const gcores = {
             let has_attention = false
 
             attention.forEach((item, index) => {
-                if (item.includes(id)) has_attention = index+1
+                if (item.includes(id)) has_attention = index + 1
             })
 
-            const api_url = "https://www.gcores.com/gapi/v1/users/"+id
+            const api_url = "https://www.gcores.com/gapi/v1/users/" + id
             const apiData = fetch(api_url, {headers: gcores.headers})
             const data = JSON.parse(apiData)
 
-            setPageTitle(data.data.attributes.nickname+(has_attention ? '『已关注』' : '『未关注』'))
+            setPageTitle(data.data.attributes.nickname + (has_attention ? '『已关注』' : '『未关注』'))
             gcores.dom.push(
                 {
-                    title: data.data.attributes.nickname+(has_attention ? '『取消关注』' : '『点击关注』'),
+                    title: data.data.attributes.nickname + (has_attention ? '『取消关注』' : '『点击关注』'),
                     url: $(gcores.empty).lazyRule(params => {
                         if (params.has_attention) {
-                            params.attention.splice(params.has_attention-1, 1)
+                            params.attention.splice(params.has_attention - 1, 1)
                             writeFile(params.filename, params.attention.join('\n'))
                             refreshPage(false)
                             return 'toast://取消关注'
@@ -1318,9 +1317,9 @@ const gcores = {
                         attention: attention,
                         has_attention: has_attention,
                         filename: gcores.plugins.attention,
-                        userData: data.data.attributes.nickname+'$$$'+data.data.attributes.thumb+'$$$'+id,
+                        userData: data.data.attributes.nickname + '$$$' + data.data.attributes.thumb + '$$$' + id,
                     }),
-                    pic_url: gcores.imageUrl+data.data.attributes.thumb,
+                    pic_url: gcores.imageUrl + data.data.attributes.thumb,
                     col_type: 'avatar'
                 }
             )
@@ -1334,7 +1333,7 @@ const gcores = {
 
             tabs.forEach(tab => {
                 gcores.dom.push({
-                    title: gcores.authorTab === tab.type ? '‘‘’’<strong><font color="#ff1493">'+tab.title+'</font></strong>' : tab.title,
+                    title: gcores.authorTab === tab.type ? '‘‘’’<strong><font color="#ff1493">' + tab.title + '</font></strong>' : tab.title,
                     url: $(gcores.empty).lazyRule(params => {
                         setItem("authorTab", params.type)
                         refreshPage(false)
@@ -1347,7 +1346,7 @@ const gcores = {
             })
         }
 
-        const author_url = "https://www.gcores.com/gapi/v1/users/"+id+"/"+gcores.authorTab+"?page[limit]=8&page[offset]="+(page-1)*8+gcores.userTypeUrlParamsMaps[gcores.authorTab]
+        const author_url = "https://www.gcores.com/gapi/v1/users/" + id + "/" + gcores.authorTab + "?page[limit]=8&page[offset]=" + (page - 1) * 8 + gcores.userTypeUrlParamsMaps[gcores.authorTab]
         const author_api_data = fetch(author_url, {headers: gcores.headers})
         const author_data = JSON.parse(author_api_data)
 
@@ -1355,7 +1354,7 @@ const gcores = {
             gcores.dom.push({
                 title: item.attributes.title,
                 desc: item.attributes.desc || item.attributes.description,
-                pic_url: gcores.imageUrl+(item.attributes.thumb || item.attributes.cover)+'@Referer='+gcores.headers.referer,
+                pic_url: gcores.imageUrl + (item.attributes.thumb || item.attributes.cover) + '@Referer=' + gcores.headers.referer,
                 url: gcores.subUrlBuild(item.id, gcores.authorTab),
                 col_type: 'pic_1'
             })
@@ -1385,8 +1384,8 @@ const gcores = {
             if (resource.type === 'users' && userId.includes(resource.id)) {
                 gcores.dom.push({
                     title: resource.attributes.nickname,
-                    pic_url: gcores.imageUrl+resource.attributes.thumb,
-                    url: $('https://www.gcores.com/users/'+resource.id+'/content#noHistory#$$fypage').rule(params => {
+                    pic_url: gcores.imageUrl + resource.attributes.thumb,
+                    url: $('https://www.gcores.com/users/' + resource.id + '/content#noHistory#$$fypage').rule(params => {
                         eval(fetch('https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/COLLECTION/gcores.js'))
                         gcores.authorDescParse(params.id, MY_URL)
                     }, {

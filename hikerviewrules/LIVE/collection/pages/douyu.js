@@ -11,7 +11,7 @@ const douyu = {
                 title: item.roomName,
                 desc: item.nickname,
                 pic_url: item.roomSrc,
-                url: $("https://www.douyu.com/"+item.rid).lazyRule((nickname) => {
+                url: $("https://www.douyu.com/" + item.rid).lazyRule((nickname) => {
                     return $.require('hiker://page/douyu').secParse(input, nickname)
                 }, item.nickname),
                 col_type: 'movie_2'
@@ -36,7 +36,7 @@ const douyu = {
 
         firstCategory.forEach(Category => {
             d.push({
-                title: douyu.douyuFirstCate === Category.shortName ? '‘‘’’<b><span style="color: #FF0000">'+Category.cate1Name+'</span></b>' : Category.cate1Name,
+                title: douyu.douyuFirstCate === Category.shortName ? '‘‘’’<b><span style="color: #FF0000">' + Category.cate1Name + '</span></b>' : Category.cate1Name,
                 url: $(douyu.empty).lazyRule((shortName) => {
                     setItem('TyrantGenesis.streamLab.FirstCate', shortName)
                     clearItem('TyrantGenesis.streamLab.SecondCate')
@@ -58,7 +58,7 @@ const douyu = {
             baseRecommendCategory.forEach((item, index) => {
                 let cate2Url = item.cate2Url.slice(2)
                 d.push({
-                    title: (douyuSecondCate === cate2Url) ? '‘‘’’<b><span style="color: #FF0000">'+item.cate2Name+'</span></b>' : item.cate2Name,
+                    title: (douyuSecondCate === cate2Url) ? '‘‘’’<b><span style="color: #FF0000">' + item.cate2Name + '</span></b>' : item.cate2Name,
                     url: $(douyu.empty).lazyRule((cate2Url) => {
                         setItem('TyrantGenesis.streamLab.SecondCate', cate2Url)
                         refreshPage(true)
@@ -78,7 +78,7 @@ const douyu = {
             douyuSecondCateList.forEach((item, index) => {
                 let cate2Url = item.shortName
                 d.push({
-                    title: (douyuSecondCate === cate2Url) ? '‘‘’’<b><span style="color: #FF0000">'+item.cname2+'</span></b>' : item.cname2,
+                    title: (douyuSecondCate === cate2Url) ? '‘‘’’<b><span style="color: #FF0000">' + item.cname2 + '</span></b>' : item.cname2,
                     url: $(douyu.empty).lazyRule((cate2Url) => {
                         setItem('TyrantGenesis.streamLab.SecondCate', cate2Url)
                         refreshPage(true)
@@ -98,12 +98,16 @@ const douyu = {
         const html = fetch(input, {headers: {'User-Agent': PC_UA}})
 
         const rid = html.match(/rid":(.*?),"vipId/)[1]
-        const tt = Date.parse(new Date()).toString().substr(0,10)
+        const tt = Date.parse(new Date()).toString().substr(0, 10)
         const did = "10000000000000000000000000001501"
 
         let param_body = douyu.getSign(html, rid, did, tt)
 
-        const stream_json = fetch('https://m.douyu.com/api/room/ratestream', {headers:{'content-type':'application/x-www-form-urlencoded'}, body: param_body, method:'POST'})
+        const stream_json = fetch('https://m.douyu.com/api/room/ratestream', {
+            headers: {'content-type': 'application/x-www-form-urlencoded'},
+            body: param_body,
+            method: 'POST'
+        })
         const stream = JSON.parse(stream_json).data
 
         // log(stream.url)
@@ -123,7 +127,7 @@ const douyu = {
         func_sign = func_sign.replace('CryptoJS.MD5(cb).toString()', '"' + rb + '"')
         eval(func_sign)
 
-        return sign(rid, did, tt) + "&ver=219032101&rate=-1&rid="+rid
+        return sign(rid, did, tt) + "&ver=219032101&rate=-1&rid=" + rid
     }
 }
 

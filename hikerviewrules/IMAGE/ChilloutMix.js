@@ -1,7 +1,7 @@
 js:
-addListener('onRefresh', $.toString(()=>{
-    putMyVar('ChilloutMix.TG.cursor', '0')
-}))
+    addListener('onRefresh', $.toString(() => {
+        putMyVar('ChilloutMix.TG.cursor', '0')
+    }))
 const d = []
 const empty = 'hiker://empty'
 const categoryIndex = getMyVar('ChilloutMix.TG.categoryIndex', 'all')
@@ -16,15 +16,15 @@ if (page === 1) {
         {id: '<lora:japaneseDollLikeness_v10', title: '日本风'},
         {id: '<lora:taiwanDollLikeness_v10', title: '台湾风'},
     ]
-    
+
     categories.forEach(category => {
         d.push({
-            title: categoryIndex === category.id ? '‘‘’’<strong><font color="#5FCC97">'+category.title+'</font></strong>' : category.title,
+            title: categoryIndex === category.id ? '‘‘’’<strong><font color="#5FCC97">' + category.title + '</font></strong>' : category.title,
             url: $(empty).lazyRule((id) => {
-              putMyVar("ChilloutMix.TG.categoryIndex", id)
-              putMyVar("ChilloutMix.TG.cursor", '0')
-              refreshPage(true)
-              return "hiker://empty"
+                putMyVar("ChilloutMix.TG.categoryIndex", id)
+                putMyVar("ChilloutMix.TG.cursor", '0')
+                refreshPage(true)
+                return "hiker://empty"
             }, category.id),
             col_type: 'scroll_button',
         })
@@ -34,8 +34,8 @@ if (page === 1) {
     })
 }
 
-const input = {0:{json:{style:categoryIndex,template_name:"chilloutmix",cursor:parseInt(cursor)}}}
-const url = "https://chilloutai.com/api/trpc/task.allpic?batch=1&input="+encodeURIComponent(JSON.stringify(input))
+const input = {0: {json: {style: categoryIndex, template_name: "chilloutmix", cursor: parseInt(cursor)}}}
+const url = "https://chilloutai.com/api/trpc/task.allpic?batch=1&input=" + encodeURIComponent(JSON.stringify(input))
 
 try {
     const result = JSON.parse(fetch(url))
@@ -51,7 +51,8 @@ try {
             col_type: 'pic_2_card',
         })
     })
-} catch(e) {}
+} catch (e) {
+}
 
 
 setResult(d)

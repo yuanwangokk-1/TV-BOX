@@ -1,10 +1,10 @@
 js:
-addListener("onRefresh", $.toString(() => {
-    clearVar('cate');
-    clearVar('content');
-    clearVar('password');
-    clearVar('time_limit');
-}))
+    addListener("onRefresh", $.toString(() => {
+        clearVar('cate');
+        clearVar('content');
+        clearVar('password');
+        clearVar('time_limit');
+    }))
 let d = [];
 const cate = getItem('cate', '1')
 d.push({
@@ -41,20 +41,20 @@ if (cate === '1') {
                 path = res[0].split('/').pop()
             }
 
-            const json = request("https://pasteme.tyrantg.com/api/getContent/"+path+'@'+password)
+            const json = request("https://pasteme.tyrantg.com/api/getContent/" + path + '@' + password)
             const result = JSON.parse(json)
 
             if (result.return_code !== 0) {
                 log(result)
                 refreshPage(true)
-                return "toast://"+result.message
+                return "toast://" + result.message
             }
 
             result.data = decodeURIComponent(result.data)
             if (result.data.startsWith('海阔视界'))
                 return result.data
             else
-                return "copy://"+result.data
+                return "copy://" + result.data
         })
     })
 } else if (cate === '2') {
@@ -101,11 +101,11 @@ if (cate === '1') {
         col_type: 'text_center_1',
         url: $().lazyRule(_ => {
             const obj2strUrl = (obj) => {
-                let str="";
+                let str = "";
                 for (let key in obj) {
-                    str += key+'='+encodeURIComponent(obj[key])+'&'
+                    str += key + '=' + encodeURIComponent(obj[key]) + '&'
                 }
-                str = str.substring(0, str.length-1);
+                str = str.substring(0, str.length - 1);
                 return str;
             }
             const param_body = {}
@@ -126,18 +126,21 @@ if (cate === '1') {
 
             if (time_limit !== '') param_body.time_limit = time_limit
 
-            const json = request("https://pasteme.tyrantg.com/api/create", {body: obj2strUrl(param_body), method:'POST'})
+            const json = request("https://pasteme.tyrantg.com/api/create", {
+                body: obj2strUrl(param_body),
+                method: 'POST'
+            })
             const res = JSON.parse(json)
 
             if (res.return_code !== 0) {
                 log(res)
                 refreshPage(true)
-                return "toast://"+res.message
+                return "toast://" + res.message
             }
 
-            let result = "https://pasteme.tyrantg.com/"+res.data.path
+            let result = "https://pasteme.tyrantg.com/" + res.data.path
 
-            if (res.data.password) result += ' '+res.data.password
+            if (res.data.password) result += ' ' + res.data.password
 
             copy(result)
             refreshPage(true)

@@ -20,11 +20,26 @@ const baseParse = _ => {
         channels = local_channels || []
     } else {
         const defaultChannels = [
-            {title: 'J. Cole', channelId: 'UCnc6db-y3IU7CkT_yeVXdVg', uploadsId: 'UUnc6db-y3IU7CkT_yeVXdVg', icon: 'https://yt3.ggpht.com/ytc/AAUvwniDYxWC2x4VZF7ecutGEaLpssNmrptdeuVFJI999g=s88-c-k-c0x00ffffff-no-rj-mo'},
-            {title: 'Lofi Girl', channelId: 'UCSJ4gkVC6NrvII8umztf0Ow', uploadsId: 'UUSJ4gkVC6NrvII8umztf0Ow', icon: 'https://yt3.ggpht.com/ytc/AAUvwnhGIymQGp3jRMECbTCBSRAUqi8sKbATpWowQG44CA=s88-c-k-c0x00ffffff-no-rj'},
-            {title: 'HatsuneMiku', channelId: 'UCJwGWV914kBlV4dKRn7AEFA', uploadsId: 'UUJwGWV914kBlV4dKRn7AEFA', icon: 'https://yt3.ggpht.com/ytc/AAUvwnjlsiW6yKsmkrfqn2foSm-ONTTWLeK_G70PF6TXBg=s800-c-k-c0x00ffffff-no-rj-mo'}
+            {
+                title: 'J. Cole',
+                channelId: 'UCnc6db-y3IU7CkT_yeVXdVg',
+                uploadsId: 'UUnc6db-y3IU7CkT_yeVXdVg',
+                icon: 'https://yt3.ggpht.com/ytc/AAUvwniDYxWC2x4VZF7ecutGEaLpssNmrptdeuVFJI999g=s88-c-k-c0x00ffffff-no-rj-mo'
+            },
+            {
+                title: 'Lofi Girl',
+                channelId: 'UCSJ4gkVC6NrvII8umztf0Ow',
+                uploadsId: 'UUSJ4gkVC6NrvII8umztf0Ow',
+                icon: 'https://yt3.ggpht.com/ytc/AAUvwnhGIymQGp3jRMECbTCBSRAUqi8sKbATpWowQG44CA=s88-c-k-c0x00ffffff-no-rj'
+            },
+            {
+                title: 'HatsuneMiku',
+                channelId: 'UCJwGWV914kBlV4dKRn7AEFA',
+                uploadsId: 'UUJwGWV914kBlV4dKRn7AEFA',
+                icon: 'https://yt3.ggpht.com/ytc/AAUvwnjlsiW6yKsmkrfqn2foSm-ONTTWLeK_G70PF6TXBg=s800-c-k-c0x00ffffff-no-rj-mo'
+            }
         ]
-        script = `const local_channels = `+ JSON.stringify(defaultChannels)
+        script = `const local_channels = ` + JSON.stringify(defaultChannels)
         writeFile(channels_path, script)
         channels = defaultChannels
     }
@@ -36,8 +51,9 @@ const baseParse = _ => {
     const search_select = getVar("tyrantgenesis.youtube.search_select", "video") // channel
     const search_show = getVar("tyrantgenesis.youtube.search_show", "1")
 
-    let button_1_title = '',  button_2_title = '', channel_prefix_status = false, channel_prefix = '', button_1_status = '', button_2_status = ''
-    switch(channel_show) {
+    let button_1_title = '', button_2_title = '', channel_prefix_status = false, channel_prefix = '',
+        button_1_status = '', button_2_status = ''
+    switch (channel_show) {
         case '0': {
             button_1_title = '关注频道'
             button_2_title = '取消关注'
@@ -97,7 +113,7 @@ const baseParse = _ => {
         }) */
 
         d.push({
-            url: "input.trim() ? $('hiker://empty').rule(params => {eval(fetch('hiker://files/TyrantG/TEST/youtube.js'));searchParse(params);}, {input: input.trim(), search_select: '"+search_select+"'}) : 'toast://请输入搜索内容'",
+            url: "input.trim() ? $('hiker://empty').rule(params => {eval(fetch('hiker://files/TyrantG/TEST/youtube.js'));searchParse(params);}, {input: input.trim(), search_select: '" + search_select + "'}) : 'toast://请输入搜索内容'",
             col_type: "input"
         });
     }
@@ -166,7 +182,7 @@ const baseParse = _ => {
     if (channel_show !== '0') {
         channels.forEach((item, index) => {
             d.push({
-                title: (parseInt(channel_select) === index || channel_prefix_status) ? channel_prefix+item.title : item.title,
+                title: (parseInt(channel_select) === index || channel_prefix_status) ? channel_prefix + item.title : item.title,
                 pic_url: item.icon,
                 url: $("").lazyRule(params => {
                     const channels_path = "hiker://files/rules/js/TyrantGenesis_YouTube频道.js"
@@ -175,7 +191,7 @@ const baseParse = _ => {
                         putVar("tyrantgenesis.youtube.page_token", "")
                     } else if (params.channel_show === '2') {
                         params.channels.splice(params.index, 1)
-                        let script = `const local_channels = `+JSON.stringify(params.channels)
+                        let script = `const local_channels = ` + JSON.stringify(params.channels)
                         writeFile(channels_path, script)
                         putVar("tyrantgenesis.youtube.channel_select", "0")
                         putVar("tyrantgenesis.youtube.page_token", "")
@@ -183,7 +199,7 @@ const baseParse = _ => {
                         let current = params.channels[params.index]
                         params.channels.splice(params.index, 1)
                         params.channels.unshift(current)
-                        let script = `const local_channels = `+JSON.stringify(params.channels)
+                        let script = `const local_channels = ` + JSON.stringify(params.channels)
                         writeFile(channels_path, script)
                         putVar("tyrantgenesis.youtube.channel_select", "0")
                         putVar("tyrantgenesis.youtube.page_token", "")
@@ -200,7 +216,7 @@ const baseParse = _ => {
             })
         })
         d.push({
-            col_type:"blank_block"
+            col_type: "blank_block"
         })
     }
 
@@ -248,7 +264,7 @@ const baseParse = _ => {
                 let thumbnails = item.snippet.thumbnails
                 let pic_url = thumbnails[Object.keys(thumbnails)[Object.keys(thumbnails).length - 1]].url
                 let video_id = item.snippet.resourceId.videoId
-                let video_url = "https://www.googleapis.com/youtube/v3/videos?key="+key+"&part=snippet&part=snippet&id="+video_id
+                let video_url = "https://www.googleapis.com/youtube/v3/videos?key=" + key + "&part=snippet&part=snippet&id=" + video_id
                 d.push({
                     title: item.snippet.title,
                     pic_url: pic_url,
@@ -301,10 +317,10 @@ const secParse = params => {
 
     let thumbnails = snippet.thumbnails
     let pic_url = thumbnails[Object.keys(thumbnails)[Object.keys(thumbnails).length - 1]].url
-    let ori_url = "https://m.youtube.com/watch?v="+params.video_id
+    let ori_url = "https://m.youtube.com/watch?v=" + params.video_id
 
     // 频道
-    const channel_url = "https://www.googleapis.com/youtube/v3/channels?key="+key+"&part=snippet,contentDetails&id="+params.channel_id
+    const channel_url = "https://www.googleapis.com/youtube/v3/channels?key=" + key + "&part=snippet,contentDetails&id=" + params.channel_id
     const channel_desc = JSON.parse(fetch(channel_url)).items[0]
     // const channel_desc = JSON.parse(fetch(channel_url))
 
@@ -315,7 +331,7 @@ const secParse = params => {
     d.push({
         title: channel_desc.snippet.title,
         pic_url: channel_pic_url,
-        url: "https://m.youtube.com/channel/"+params.channel_id,
+        url: "https://m.youtube.com/channel/" + params.channel_id,
         col_type: "icon_2_round"
     })
 
@@ -339,7 +355,7 @@ const secParse = params => {
                     uploadsId: params.channel_upload_id,
                     icon: params.channel_pic_url,
                 })
-                script = `const local_channels = `+JSON.stringify(params.channels)
+                script = `const local_channels = ` + JSON.stringify(params.channels)
                 writeFile(channels_path, script)
                 refreshPage(false)
                 return 'toast://关注成功'
@@ -378,7 +394,7 @@ const secParse = params => {
         headers: {
             "User-Agent": PC_UA,
         },
-        body: 'ajax=1&q_auto=1&url='+ori_url,
+        body: 'ajax=1&q_auto=1&url=' + ori_url,
         method: 'POST'
     })
 
@@ -398,7 +414,7 @@ const secParse = params => {
                     headers: {
                         "User-Agent": PC_UA,
                     },
-                    body: 'type=youtube&ftype=mp4&ajax=1&v_id='+params.v_id+'&fquality='+params.fquality+'&_id='+params._id,
+                    body: 'type=youtube&ftype=mp4&ajax=1&v_id=' + params.v_id + '&fquality=' + params.fquality + '&_id=' + params._id,
                     method: 'POST'
                 })
 
@@ -406,7 +422,7 @@ const secParse = params => {
 
                 const url_res = html.match(/<a href="(.*?)"/)
 
-                return url_res ? url_res[1]+"#isVideo=true#" : "toast://该清晰度解析失败，请使用更低清晰度"
+                return url_res ? url_res[1] + "#isVideo=true#" : "toast://该清晰度解析失败，请使用更低清晰度"
             }, {
                 v_id: params.video_id,
                 fquality: quality,
@@ -471,7 +487,7 @@ const searchParse = params => {
     const type = params.search_select
     const max_results = getVar("tyrantgenesis.youtube.max_results", "50")
     const search_page_token = getVar("tyrantgenesis.youtube.search_page_token", "")
-    const url = "https://www.googleapis.com/youtube/v3/search?key="+key+"&part=snippet,id&maxResults="+max_results+"&type="+type+"&q="+search+"&pageToken="+search_page_token
+    const url = "https://www.googleapis.com/youtube/v3/search?key=" + key + "&part=snippet,id&maxResults=" + max_results + "&type=" + type + "&q=" + search + "&pageToken=" + search_page_token
 
     const search_json = fetch(url)
     const search_item = JSON.parse(search_json)
@@ -497,7 +513,7 @@ const searchParse = params => {
             let thumbnails = item.snippet.thumbnails
             let pic_url = thumbnails[Object.keys(thumbnails)[Object.keys(thumbnails).length - 1]].url
             let video_id = item.id.videoId
-            let video_url = "https://www.googleapis.com/youtube/v3/videos?key="+key+"&part=snippet&part=snippet&id="+video_id
+            let video_url = "https://www.googleapis.com/youtube/v3/videos?key=" + key + "&part=snippet&part=snippet&id=" + video_id
             d.push({
                 title: item.snippet.title,
                 pic_url: pic_url,

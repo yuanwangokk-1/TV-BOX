@@ -16,14 +16,15 @@ const wan = {
                     title: title,
                     desc: pdfh(item, '.post-list-duration&&Text'),
                     pic_url: img,
-                    url: $(pdfh(item, 'a&&href')+'#immersiveTheme#').rule((title, img) => {
+                    url: $(pdfh(item, 'a&&href') + '#immersiveTheme#').rule((title, img) => {
                         const wan = $.require('hiker://page/wan')
                         wan.videoParse(title, img)
                         setResult(wan.d)
                     }, title, img),
                     col_type: 'movie_2',
                 })
-            }catch(e){}
+            } catch (e) {
+            }
         })
     },
     videoParse: (title, img) => {
@@ -41,7 +42,8 @@ const wan = {
             eval(script)
             try {
                 iframe_src = iframe_context.match(/src="(.*?)"/)[1]
-            }catch(e){}
+            } catch (e) {
+            }
 
             if (iframe_src) {
                 url = pdfh(fetch(iframe_src), 'meta[property="og:video:url"]&&content')
@@ -52,7 +54,8 @@ const wan = {
             eval(script)
             try {
                 url = context.match(/video.src='(.*?)';/)[1]
-            }catch(e){}
+            } catch (e) {
+            }
         }
 
         wan.d.push({

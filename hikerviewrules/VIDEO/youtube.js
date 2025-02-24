@@ -29,11 +29,11 @@ const youtube = {
     pluginsInit: () => {
         const channels = fetch(youtube.plugins.channels)
         const key = fetch(youtube.plugins.keyPath)
-        if (! channels) {
-            const defaultChannels = youtube.defaultChannels.map(channel => channel.title+'$$$'+channel.channelId+'$$$'+channel.icon).join('\n')
+        if (!channels) {
+            const defaultChannels = youtube.defaultChannels.map(channel => channel.title + '$$$' + channel.channelId + '$$$' + channel.icon).join('\n')
             writeFile(youtube.plugins.channels, defaultChannels)
         }
-        if (! key) {
+        if (!key) {
             writeFile(youtube.plugins.keyPath, youtube.defaultKey)
         }
     },

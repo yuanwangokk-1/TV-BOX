@@ -14,11 +14,11 @@ const Iconfont = {
                         Iconfont.userParse(id)
                         setResult(Iconfont.d)
                     }, item.User.id),
-                    pic_url: 'https:'+item.User.avatar+'@Referer=https://www.iconfont.cn/',
+                    pic_url: 'https:' + item.User.avatar + '@Referer=https://www.iconfont.cn/',
                     col_type: 'avatar',
                 },
                 {
-                    title: '图标集：'+item.name,
+                    title: '图标集：' + item.name,
                     url: $(Iconfont.empty).rule((id) => {
                         const Iconfont = $.require('hiker://page/Iconfont')
                         Iconfont.collectionParse(id)
@@ -31,7 +31,7 @@ const Iconfont = {
                 }
             )
             item.icons.forEach(icon => {
-                let svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string='+encodeURIComponent(icon.show_svg)
+                let svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string=' + encodeURIComponent(icon.show_svg)
                 Iconfont.d.push({
                     title: icon.name,
                     url: $(Iconfont.empty).rule((name, show_svg) => {
@@ -49,14 +49,14 @@ const Iconfont = {
         })
     },
     userParse: (uid) => {
-        const url = 'https://www.iconfont.cn/api/user/collections.json?uid='+uid+'&type=icon'
+        const url = 'https://www.iconfont.cn/api/user/collections.json?uid=' + uid + '&type=icon'
         const json = JSON.parse(fetch(url))
         const list = json.data.collections
 
         list.forEach(item => {
             if (item.has_secret === 0) {
                 Iconfont.d.push({
-                    title: '图标集：'+item.name,
+                    title: '图标集：' + item.name,
                     url: $(Iconfont.empty).rule((id) => {
                         const Iconfont = $.require('hiker://page/Iconfont')
                         Iconfont.collectionParse(id)
@@ -68,7 +68,7 @@ const Iconfont = {
                     },
                 })
                 item.icons.forEach(icon => {
-                    let svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string='+encodeURIComponent(icon.show_svg)
+                    let svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string=' + encodeURIComponent(icon.show_svg)
                     Iconfont.d.push({
                         title: icon.name,
                         url: $(Iconfont.empty).rule((name, show_svg) => {
@@ -87,33 +87,33 @@ const Iconfont = {
         })
     },
     iconParse: (name, svg_url) => {
-        let true_svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string='+encodeURIComponent(svg_url)
+        let true_svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string=' + encodeURIComponent(svg_url)
         Iconfont.d.push(
             {
-                url: 'copy://'+true_svg_url,
+                url: 'copy://' + true_svg_url,
                 pic_url: true_svg_url,
                 col_type: 'pic_1_full',
             },
             {
                 title: '复制图标',
-                url: 'copy://'+true_svg_url,
+                url: 'copy://' + true_svg_url,
                 col_type: 'text_center_1',
             },
             {
                 title: '复制SVG',
-                url: 'copy://'+svg_url,
+                url: 'copy://' + svg_url,
                 col_type: 'text_center_1',
             },
             {
                 title: '收藏图标',
                 url: $(true_svg_url).lazyRule((name, svg_url) => {
                     const Iconfont = $.require('hiker://page/Iconfont')
-                    let attention = name+'$$$'+svg_url
+                    let attention = name + '$$$' + svg_url
 
-                    if (! fileExist(Iconfont.files.likes)) {
+                    if (!fileExist(Iconfont.files.likes)) {
                         writeFile(Iconfont.files.likes, attention)
                     } else {
-                        writeFile(Iconfont.files.likes, fetch(Iconfont.files.likes)+"\n"+attention)
+                        writeFile(Iconfont.files.likes, fetch(Iconfont.files.likes) + "\n" + attention)
                     }
                     refreshPage(false)
                     return "toast://收藏成功"
@@ -123,12 +123,12 @@ const Iconfont = {
         )
     },
     collectionParse: (id) => {
-        const url = 'https://www.iconfont.cn/api/collection/detail.json?id='+id
+        const url = 'https://www.iconfont.cn/api/collection/detail.json?id=' + id
         const json = JSON.parse(fetch(url))
         const list = json.data.icons
 
         list.forEach(icon => {
-            let svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string='+encodeURIComponent(icon.show_svg)
+            let svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string=' + encodeURIComponent(icon.show_svg)
             Iconfont.d.push({
                 title: icon.name,
                 url: $(Iconfont.empty).rule((name, show_svg) => {
@@ -147,7 +147,7 @@ const Iconfont = {
         if (parseInt(MY_PAGE) === 1) {
             Iconfont.d.push(
                 {
-                    url: $(Iconfont.empty+"#fullTheme#$$fypage").rule(() => {
+                    url: $(Iconfont.empty + "#fullTheme#$$fypage").rule(() => {
                         const Iconfont = $.require('hiker://page/Iconfont')
                         Iconfont.iconSearchParse()
                         setResult(Iconfont.d)
@@ -157,7 +157,7 @@ const Iconfont = {
                     col_type: "icon_4",
                 },
                 {
-                    url: $(Iconfont.empty+"#fullTheme#$$fypage").rule(() => {
+                    url: $(Iconfont.empty + "#fullTheme#$$fypage").rule(() => {
                         const Iconfont = $.require('hiker://page/Iconfont')
                         Iconfont.collectionSearchParse()
                         setResult(Iconfont.d)
@@ -225,7 +225,7 @@ const Iconfont = {
             })
         }
 
-        const url = 'https://www.iconfont.cn/api/collections.json?type=3&sort=time&limit=8&page='+page+'&keyword='+getItem('searchValue', '')
+        const url = 'https://www.iconfont.cn/api/collections.json?type=3&sort=time&limit=8&page=' + page + '&keyword=' + getItem('searchValue', '')
         const json = JSON.parse(fetch(url))
         Iconfont.collectionListParse(json.data.lists)
         setResult(Iconfont.d)
@@ -278,7 +278,7 @@ const Iconfont = {
             const list = json.data.icons
 
             list.forEach(icon => {
-                let svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string='+encodeURIComponent(icon.show_svg)
+                let svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string=' + encodeURIComponent(icon.show_svg)
                 Iconfont.d.push({
                     title: icon.name,
                     url: $(Iconfont.empty).rule((name, show_svg) => {
@@ -298,7 +298,7 @@ const Iconfont = {
         list.forEach((icon, index) => {
             if (icon) {
                 let [name, svg] = icon.split('$$$')
-                let svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string='+encodeURIComponent(svg)
+                let svg_url = 'https://iconfont.tyrantg.com/api/illustrate.svg?svg_string=' + encodeURIComponent(svg)
 
                 Iconfont.d.push({
                     title: name,

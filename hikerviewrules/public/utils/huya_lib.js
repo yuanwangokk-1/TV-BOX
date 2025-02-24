@@ -495,7 +495,8 @@ Taf.DataHelp = {
         var r = e.join("");
         try {
             r = decodeURIComponent(escape(r))
-        } catch (n) { }
+        } catch (n) {
+        }
         return r
     }
     ,
@@ -582,7 +583,8 @@ Taf.DataHelp = {
         var i = e;
         try {
             i = unescape(encodeURIComponent(i))
-        } catch (r) { }
+        } catch (r) {
+        }
         i.length > 255 ? (this.writeTo(t, Taf.DataHelp.EN_STRING4),
             this.buf.writeUInt32(i.length)) : (this.writeTo(t, Taf.DataHelp.EN_STRING1),
             this.buf.writeUInt8(i.length)),
@@ -3538,7 +3540,7 @@ HUYA.MuteRoomUserRsp.prototype.readFrom = function (t) {
         this.sMsg = t.readString(1, !1, this.sMsg)
 }
 ,
-HUYA.SendItemSubBroadcastPacket = function() {
+HUYA.SendItemSubBroadcastPacket = function () {
     this.iItemType = 0;
     this.strPayId = "";
     this.iItemCount = 0;
@@ -3575,19 +3577,19 @@ HUYA.SendItemSubBroadcastPacket = function() {
     this.iPidColorType = 0
 }
 ;
-HUYA.SendItemSubBroadcastPacket.prototype._clone = function() {
+HUYA.SendItemSubBroadcastPacket.prototype._clone = function () {
     return new HUYA.SendItemSubBroadcastPacket
 }
 ;
-HUYA.SendItemSubBroadcastPacket.prototype._write = function(t, e, i) {
+HUYA.SendItemSubBroadcastPacket.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.SendItemSubBroadcastPacket.prototype._read = function(t, e, i) {
+HUYA.SendItemSubBroadcastPacket.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.SendItemSubBroadcastPacket.prototype.writeTo = function(t) {
+HUYA.SendItemSubBroadcastPacket.prototype.writeTo = function (t) {
     t.writeInt32(0, this.iItemType);
     t.writeString(1, this.strPayId);
     t.writeInt32(2, this.iItemCount);
@@ -3624,7 +3626,7 @@ HUYA.SendItemSubBroadcastPacket.prototype.writeTo = function(t) {
     t.writeInt32(33, this.iPidColorType)
 }
 ;
-HUYA.SendItemSubBroadcastPacket.prototype.readFrom = function(t) {
+HUYA.SendItemSubBroadcastPacket.prototype.readFrom = function (t) {
     this.iItemType = t.readInt32(0, false, this.iItemType);
     this.strPayId = t.readString(1, false, this.strPayId);
     this.iItemCount = t.readInt32(2, false, this.iItemCount);
@@ -3660,88 +3662,88 @@ HUYA.SendItemSubBroadcastPacket.prototype.readFrom = function(t) {
     this.iComboStatus = t.readInt32(32, false, this.iComboStatus);
     this.iPidColorType = t.readInt32(33, false, this.iPidColorType)
 }
-HUYA.UserIdentityInfo = function() {
+HUYA.UserIdentityInfo = function () {
     this.vDecorationPrefix = new Taf.Vector(new HUYA.DecorationInfo);
     this.vDecorationSuffix = new Taf.Vector(new HUYA.DecorationInfo)
 }
 ;
-HUYA.UserIdentityInfo.prototype._clone = function() {
+HUYA.UserIdentityInfo.prototype._clone = function () {
     return new HUYA.UserIdentityInfo
 }
 ;
-HUYA.UserIdentityInfo.prototype._write = function(t, e, i) {
+HUYA.UserIdentityInfo.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.UserIdentityInfo.prototype._read = function(t, e, i) {
+HUYA.UserIdentityInfo.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.UserIdentityInfo.prototype.writeTo = function(t) {
+HUYA.UserIdentityInfo.prototype.writeTo = function (t) {
     t.writeVector(0, this.vDecorationPrefix);
     t.writeVector(1, this.vDecorationSuffix)
 }
 ;
-HUYA.UserIdentityInfo.prototype.readFrom = function(t) {
+HUYA.UserIdentityInfo.prototype.readFrom = function (t) {
     this.vDecorationPrefix = t.readVector(0, false, this.vDecorationPrefix);
     this.vDecorationSuffix = t.readVector(1, false, this.vDecorationSuffix)
 }
 ;
-HUYA.StreamerNode = function() {
+HUYA.StreamerNode = function () {
     this.iGiftLevel = 0;
     this.iStreamerLevel = 0;
     this.iMaterialType = 0
 }
 ;
-HUYA.StreamerNode.prototype._clone = function() {
+HUYA.StreamerNode.prototype._clone = function () {
     return new HUYA.StreamerNode
 }
 ;
-HUYA.StreamerNode.prototype._write = function(t, e, i) {
+HUYA.StreamerNode.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.StreamerNode.prototype._read = function(t, e, i) {
+HUYA.StreamerNode.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.StreamerNode.prototype.writeTo = function(t) {
+HUYA.StreamerNode.prototype.writeTo = function (t) {
     t.writeInt16(0, this.iGiftLevel);
     t.writeInt16(1, this.iStreamerLevel);
     t.writeInt16(2, this.iMaterialType)
 }
 ;
-HUYA.StreamerNode.prototype.readFrom = function(t) {
+HUYA.StreamerNode.prototype.readFrom = function (t) {
     this.iGiftLevel = t.readInt16(0, false, this.iGiftLevel);
     this.iStreamerLevel = t.readInt16(1, false, this.iStreamerLevel);
     this.iMaterialType = t.readInt16(2, false, this.iMaterialType)
 }
 ;
-HUYA.ItemEffectInfo = function() {
+HUYA.ItemEffectInfo = function () {
     this.iPriceLevel = 0;
     this.iStreamDuration = 0;
     this.iShowType = 0
 }
 ;
-HUYA.ItemEffectInfo.prototype._clone = function() {
+HUYA.ItemEffectInfo.prototype._clone = function () {
     return new HUYA.ItemEffectInfo
 }
 ;
-HUYA.ItemEffectInfo.prototype._write = function(t, e, i) {
+HUYA.ItemEffectInfo.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.ItemEffectInfo.prototype._read = function(t, e, i) {
+HUYA.ItemEffectInfo.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.ItemEffectInfo.prototype.writeTo = function(t) {
+HUYA.ItemEffectInfo.prototype.writeTo = function (t) {
     t.writeInt32(0, this.iPriceLevel);
     t.writeInt32(1, this.iStreamDuration);
     t.writeInt32(2, this.iShowType)
 }
 ;
-HUYA.ItemEffectInfo.prototype.readFrom = function(t) {
+HUYA.ItemEffectInfo.prototype.readFrom = function (t) {
     this.iPriceLevel = t.readInt32(0, false, this.iPriceLevel);
     this.iStreamDuration = t.readInt32(1, false, this.iStreamDuration);
     this.iShowType = t.readInt32(2, false, this.iShowType)
@@ -4977,7 +4979,7 @@ HUYA.BatchGetCdnTokenRsp.prototype.readFrom = function (t) {
     this.vCdnAntiCodes = t.readVector(0, !1, this.vCdnAntiCodes)
 }
 ,
-HUYA.NobleBase = function() {
+HUYA.NobleBase = function () {
     this.lUid = 0;
     this.sNickName = "";
     this.iLevel = 0;
@@ -5004,19 +5006,19 @@ HUYA.NobleBase = function() {
     this.lRoomId = 0
 }
 ;
-HUYA.NobleBase.prototype._clone = function() {
+HUYA.NobleBase.prototype._clone = function () {
     return new HUYA.NobleBase
 }
 ;
-HUYA.NobleBase.prototype._write = function(t, e, i) {
+HUYA.NobleBase.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.NobleBase.prototype._read = function(t, e, i) {
+HUYA.NobleBase.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.NobleBase.prototype.writeTo = function(t) {
+HUYA.NobleBase.prototype.writeTo = function (t) {
     t.writeInt64(0, this.lUid);
     t.writeString(1, this.sNickName);
     t.writeInt32(2, this.iLevel);
@@ -5043,7 +5045,7 @@ HUYA.NobleBase.prototype.writeTo = function(t) {
     t.writeInt64(23, this.lRoomId)
 }
 ;
-HUYA.NobleBase.prototype.readFrom = function(t) {
+HUYA.NobleBase.prototype.readFrom = function (t) {
     this.lUid = t.readInt64(0, false, this.lUid);
     this.sNickName = t.readString(1, false, this.sNickName);
     this.iLevel = t.readInt32(2, false, this.iLevel);
@@ -5070,29 +5072,29 @@ HUYA.NobleBase.prototype.readFrom = function(t) {
     this.lRoomId = t.readInt64(23, false, this.lRoomId)
 }
 ;
-HUYA.NobleLevelInfo = function() {
+HUYA.NobleLevelInfo = function () {
     this.iNobleLevel = 0;
     this.iAttrType = 0
 }
 ;
-HUYA.NobleLevelInfo.prototype._clone = function() {
+HUYA.NobleLevelInfo.prototype._clone = function () {
     return new HUYA.NobleLevelInfo
 }
 ;
-HUYA.NobleLevelInfo.prototype._write = function(t, e, i) {
+HUYA.NobleLevelInfo.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.NobleLevelInfo.prototype._read = function(t, e, i) {
+HUYA.NobleLevelInfo.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.NobleLevelInfo.prototype.writeTo = function(t) {
+HUYA.NobleLevelInfo.prototype.writeTo = function (t) {
     t.writeInt32(0, this.iNobleLevel);
     t.writeInt32(1, this.iAttrType)
 }
 ;
-HUYA.NobleLevelInfo.prototype.readFrom = function(t) {
+HUYA.NobleLevelInfo.prototype.readFrom = function (t) {
     this.iNobleLevel = t.readInt32(0, false, this.iNobleLevel);
     this.iAttrType = t.readInt32(1, false, this.iAttrType)
 }
@@ -6140,7 +6142,7 @@ HUYA.MetricSet.prototype.readFrom = function (t) {
         this.vMetric = t.readVector(1, !0, this.vMetric)
 }
 ,
-HUYA.SendMessageReq = function() {
+HUYA.SendMessageReq = function () {
     this.tUserId = new HUYA.UserId,
         this.lTid = 0,
         this.lSid = 0,
@@ -6153,19 +6155,19 @@ HUYA.SendMessageReq = function() {
         this.vTagInfo = new Taf.Vector(new HUYA.MessageTagInfo)
 }
 ,
-HUYA.SendMessageReq.prototype._clone = function() {
+HUYA.SendMessageReq.prototype._clone = function () {
     return new HUYA.SendMessageReq
 }
 ,
-HUYA.SendMessageReq.prototype._write = function(t, e, i) {
+HUYA.SendMessageReq.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ,
-HUYA.SendMessageReq.prototype._read = function(t, e, i) {
+HUYA.SendMessageReq.prototype._read = function (t, e, i) {
     return t.readStruct(e, !0, i)
 }
 ,
-HUYA.SendMessageReq.prototype.writeTo = function(t) {
+HUYA.SendMessageReq.prototype.writeTo = function (t) {
     t.writeStruct(0, this.tUserId),
         t.writeInt64(1, this.lTid),
         t.writeInt64(2, this.lSid),
@@ -6178,7 +6180,7 @@ HUYA.SendMessageReq.prototype.writeTo = function(t) {
         t.writeVector(9, this.vTagInfo)
 }
 ,
-HUYA.SendMessageReq.prototype.readFrom = function(t) {
+HUYA.SendMessageReq.prototype.readFrom = function (t) {
     this.tUserId = t.readStruct(0, !1, this.tUserId),
         this.lTid = t.readInt64(1, !1, this.lTid),
         this.lSid = t.readInt64(2, !1, this.lSid),
@@ -6190,195 +6192,195 @@ HUYA.SendMessageReq.prototype.readFrom = function(t) {
         this.lPid = t.readInt64(8, !1, this.lPid),
         this.vTagInfo = t.readVector(9, !1, this.vTagInfo)
 },
-HUYA.MessageTagInfo = function() {
+HUYA.MessageTagInfo = function () {
     this.iAppId = 0,
         this.sTag = ""
 }
 ,
-HUYA.MessageTagInfo.prototype._clone = function() {
+HUYA.MessageTagInfo.prototype._clone = function () {
     return new HUYA.MessageTagInfo
 }
 ,
-HUYA.MessageTagInfo.prototype._write = function(t, e, i) {
+HUYA.MessageTagInfo.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ,
-HUYA.MessageTagInfo.prototype._read = function(t, e, i) {
+HUYA.MessageTagInfo.prototype._read = function (t, e, i) {
     return t.readStruct(e, !0, i)
 }
 ,
-HUYA.MessageTagInfo.prototype.writeTo = function(t) {
+HUYA.MessageTagInfo.prototype.writeTo = function (t) {
     t.writeInt32(0, this.iAppId),
         t.writeString(1, this.sTag)
 }
 ,
-HUYA.MessageTagInfo.prototype.readFrom = function(t) {
+HUYA.MessageTagInfo.prototype.readFrom = function (t) {
     this.iAppId = t.readInt32(0, !1, this.iAppId),
         this.sTag = t.readString(1, !1, this.sTag)
 }
 ,
-HUYA.SendMessageRsp = function() {
+HUYA.SendMessageRsp = function () {
     this.iStatus = 0;
     this.tNotice = new HUYA.MessageNotice;
     this.sToast = ""
 }
 ;
-HUYA.SendMessageRsp.prototype._clone = function() {
+HUYA.SendMessageRsp.prototype._clone = function () {
     return new HUYA.SendMessageRsp
 }
 ;
-HUYA.SendMessageRsp.prototype._write = function(t, e, i) {
+HUYA.SendMessageRsp.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.SendMessageRsp.prototype._read = function(t, e, i) {
+HUYA.SendMessageRsp.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.SendMessageRsp.prototype.writeTo = function(t) {
+HUYA.SendMessageRsp.prototype.writeTo = function (t) {
     t.writeInt32(0, this.iStatus);
     t.writeStruct(1, this.tNotice);
     t.writeString(2, this.sToast)
 }
 ;
-HUYA.SendMessageRsp.prototype.readFrom = function(t) {
+HUYA.SendMessageRsp.prototype.readFrom = function (t) {
     this.iStatus = t.readInt32(0, false, this.iStatus);
     this.tNotice = t.readStruct(1, false, this.tNotice);
     this.sToast = t.readString(2, false, this.sToast)
 }
 ;
-HUYA.WSRegisterGroupReq = function() {
+HUYA.WSRegisterGroupReq = function () {
     this.vGroupId = new Taf.Vector(new Taf.STRING),
         this.sToken = ""
 }
     ,
-    HUYA.WSRegisterGroupReq.prototype._clone = function() {
+    HUYA.WSRegisterGroupReq.prototype._clone = function () {
         return new i.WSRegisterGroupReq
     }
     ,
-    HUYA.WSRegisterGroupReq.prototype._write = function(t, e, i) {
+    HUYA.WSRegisterGroupReq.prototype._write = function (t, e, i) {
         t.writeStruct(e, i)
     }
     ,
-    HUYA.WSRegisterGroupReq.prototype._read = function(t, e, i) {
+    HUYA.WSRegisterGroupReq.prototype._read = function (t, e, i) {
         return t.readStruct(e, !0, i)
     }
     ,
-    HUYA.WSRegisterGroupReq.prototype.writeTo = function(t) {
+    HUYA.WSRegisterGroupReq.prototype.writeTo = function (t) {
         t.writeVector(0, this.vGroupId),
             t.writeString(1, this.sToken)
     }
     ,
-    HUYA.WSRegisterGroupReq.prototype.readFrom = function(t) {
+    HUYA.WSRegisterGroupReq.prototype.readFrom = function (t) {
         this.vGroupId = t.readVector(0, !1, this.vGroupId),
             this.sToken = t.readString(1, !1, this.sToken)
     },
-    HUYA.WSExitP2PAck = function() {
+    HUYA.WSExitP2PAck = function () {
         this.vGroupId = new Taf.Vector(new Taf.STRING)
     }
 ;
-HUYA.WSExitP2PAck.prototype._clone = function() {
+HUYA.WSExitP2PAck.prototype._clone = function () {
     return new HUYA.WSExitP2PAck
 }
 ;
-HUYA.WSExitP2PAck.prototype._write = function(t, e, i) {
+HUYA.WSExitP2PAck.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.WSExitP2PAck.prototype._read = function(t, e, i) {
+HUYA.WSExitP2PAck.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.WSExitP2PAck.prototype.writeTo = function(t) {
+HUYA.WSExitP2PAck.prototype.writeTo = function (t) {
     t.writeVector(0, this.vGroupId)
 }
 ;
-HUYA.WSExitP2PAck.prototype.readFrom = function(t) {
+HUYA.WSExitP2PAck.prototype.readFrom = function (t) {
     this.vGroupId = t.readVector(0, false, this.vGroupId)
 }
 ;
-HUYA.WSEnterP2PAck = function() {
+HUYA.WSEnterP2PAck = function () {
     this.vGroupId = new Taf.Vector(new Taf.STRING)
 }
 ;
-HUYA.WSEnterP2PAck.prototype._clone = function() {
+HUYA.WSEnterP2PAck.prototype._clone = function () {
     return new HUYA.WSEnterP2PAck
 }
 ;
-HUYA.WSEnterP2PAck.prototype._write = function(t, e, i) {
+HUYA.WSEnterP2PAck.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.WSEnterP2PAck.prototype._read = function(t, e, i) {
+HUYA.WSEnterP2PAck.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.WSEnterP2PAck.prototype.writeTo = function(t) {
+HUYA.WSEnterP2PAck.prototype.writeTo = function (t) {
     t.writeVector(0, this.vGroupId)
 }
 ;
-HUYA.WSEnterP2PAck.prototype.readFrom = function(t) {
+HUYA.WSEnterP2PAck.prototype.readFrom = function (t) {
     this.vGroupId = t.readVector(0, false, this.vGroupId)
 }
 ;
-HUYA.WSPushMessage_V2 = function() {
+HUYA.WSPushMessage_V2 = function () {
     this.sGroupId = "";
     this.vMsgItem = new Taf.Vector(new HUYA.WSMsgItem)
 }
 ;
-HUYA.WSPushMessage_V2.prototype._clone = function() {
+HUYA.WSPushMessage_V2.prototype._clone = function () {
     return new HUYA.WSPushMessage_V2
 }
 ;
-HUYA.WSPushMessage_V2.prototype._write = function(t, e, i) {
+HUYA.WSPushMessage_V2.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.WSPushMessage_V2.prototype._read = function(t, e, i) {
+HUYA.WSPushMessage_V2.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.WSPushMessage_V2.prototype.writeTo = function(t) {
+HUYA.WSPushMessage_V2.prototype.writeTo = function (t) {
     t.writeString(0, this.sGroupId);
     t.writeVector(1, this.vMsgItem)
 }
 ;
-HUYA.WSPushMessage_V2.prototype.readFrom = function(t) {
+HUYA.WSPushMessage_V2.prototype.readFrom = function (t) {
     this.sGroupId = t.readString(0, false, this.sGroupId);
     this.vMsgItem = t.readVector(1, false, this.vMsgItem)
 }
 ;
-HUYA.WSMsgItem = function() {
+HUYA.WSMsgItem = function () {
     this.iUri = 0;
     this.sMsg = new Taf.BinBuffer;
     this.lMsgId = 0
 }
 ;
-HUYA.WSMsgItem.prototype._clone = function() {
+HUYA.WSMsgItem.prototype._clone = function () {
     return new HUYA.WSMsgItem
 }
 ;
-HUYA.WSMsgItem.prototype._write = function(t, e, i) {
+HUYA.WSMsgItem.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.WSMsgItem.prototype._read = function(t, e, i) {
+HUYA.WSMsgItem.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.WSMsgItem.prototype.writeTo = function(t) {
+HUYA.WSMsgItem.prototype.writeTo = function (t) {
     t.writeInt64(0, this.iUri);
     t.writeBytes(1, this.sMsg);
     t.writeInt64(2, this.lMsgId)
 }
 ;
-HUYA.WSMsgItem.prototype.readFrom = function(t) {
+HUYA.WSMsgItem.prototype.readFrom = function (t) {
     this.iUri = t.readInt64(0, false, this.iUri);
     this.sMsg = t.readBytes(1, false, this.sMsg);
     this.lMsgId = t.readInt64(2, false, this.lMsgId)
 }
 ;
-HUYA.VipEnterBanner = function() {
+HUYA.VipEnterBanner = function () {
     this.lUid = 0;
     this.sNickName = "";
     this.lPid = 0;
@@ -6395,19 +6397,19 @@ HUYA.VipEnterBanner = function() {
     this.tACInfo = new HUYA.ACEnterBanner
 }
 ;
-HUYA.VipEnterBanner.prototype._clone = function() {
+HUYA.VipEnterBanner.prototype._clone = function () {
     return new HUYA.VipEnterBanner
 }
 ;
-HUYA.VipEnterBanner.prototype._write = function(t, e, i) {
+HUYA.VipEnterBanner.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.VipEnterBanner.prototype._read = function(t, e, i) {
+HUYA.VipEnterBanner.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.VipEnterBanner.prototype.writeTo = function(t) {
+HUYA.VipEnterBanner.prototype.writeTo = function (t) {
     t.writeInt64(0, this.lUid);
     t.writeString(1, this.sNickName);
     t.writeInt64(2, this.lPid);
@@ -6424,7 +6426,7 @@ HUYA.VipEnterBanner.prototype.writeTo = function(t) {
     t.writeStruct(13, this.tACInfo)
 }
 ;
-HUYA.VipEnterBanner.prototype.readFrom = function(t) {
+HUYA.VipEnterBanner.prototype.readFrom = function (t) {
     this.lUid = t.readInt64(0, false, this.lUid);
     this.sNickName = t.readString(1, false, this.sNickName);
     this.lPid = t.readInt64(2, false, this.lPid);
@@ -6441,34 +6443,34 @@ HUYA.VipEnterBanner.prototype.readFrom = function(t) {
     this.tACInfo = t.readStruct(13, false, this.tACInfo)
 }
 ;
-HUYA.WeekRankInfo = function() {
+HUYA.WeekRankInfo = function () {
     this.lUid = 0;
     this.iRank = 0
 }
 ;
-HUYA.WeekRankInfo.prototype._clone = function() {
+HUYA.WeekRankInfo.prototype._clone = function () {
     return new HUYA.WeekRankInfo
 }
 ;
-HUYA.WeekRankInfo.prototype._write = function(t, e, i) {
+HUYA.WeekRankInfo.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.WeekRankInfo.prototype._read = function(t, e, i) {
+HUYA.WeekRankInfo.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.WeekRankInfo.prototype.writeTo = function(t) {
+HUYA.WeekRankInfo.prototype.writeTo = function (t) {
     t.writeInt64(0, this.lUid);
     t.writeInt32(1, this.iRank)
 }
 ;
-HUYA.WeekRankInfo.prototype.readFrom = function(t) {
+HUYA.WeekRankInfo.prototype.readFrom = function (t) {
     this.lUid = t.readInt64(0, false, this.lUid);
     this.iRank = t.readInt32(1, false, this.iRank)
 }
 ;
-HUYA.DecorationInfoRsp = function() {
+HUYA.DecorationInfoRsp = function () {
     this.vDecorationPrefix = new Taf.Vector(new HUYA.DecorationInfo);
     this.vDecorationSuffix = new Taf.Vector(new HUYA.DecorationInfo);
     this.tFormat = new HUYA.ContentFormat;
@@ -6480,19 +6482,19 @@ HUYA.DecorationInfoRsp = function() {
     this.vBulletSuffix = new Taf.Vector(new HUYA.DecorationInfo)
 }
 ;
-HUYA.DecorationInfoRsp.prototype._clone = function() {
+HUYA.DecorationInfoRsp.prototype._clone = function () {
     return new HUYA.DecorationInfoRsp
 }
 ;
-HUYA.DecorationInfoRsp.prototype._write = function(t, e, i) {
+HUYA.DecorationInfoRsp.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.DecorationInfoRsp.prototype._read = function(t, e, i) {
+HUYA.DecorationInfoRsp.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.DecorationInfoRsp.prototype.writeTo = function(t) {
+HUYA.DecorationInfoRsp.prototype.writeTo = function (t) {
     t.writeVector(0, this.vDecorationPrefix);
     t.writeVector(1, this.vDecorationSuffix);
     t.writeStruct(2, this.tFormat);
@@ -6504,7 +6506,7 @@ HUYA.DecorationInfoRsp.prototype.writeTo = function(t) {
     t.writeVector(8, this.vBulletSuffix)
 }
 ;
-HUYA.DecorationInfoRsp.prototype.readFrom = function(t) {
+HUYA.DecorationInfoRsp.prototype.readFrom = function (t) {
     this.vDecorationPrefix = t.readVector(0, false, this.vDecorationPrefix);
     this.vDecorationSuffix = t.readVector(1, false, this.vDecorationSuffix);
     this.tFormat = t.readStruct(2, false, this.tFormat);
@@ -6516,103 +6518,103 @@ HUYA.DecorationInfoRsp.prototype.readFrom = function(t) {
     this.vBulletSuffix = t.readVector(8, false, this.vBulletSuffix)
 }
 ;
-HUYA.ACEnterBanner = function() {
+HUYA.ACEnterBanner = function () {
     this.iWeekHeartStirRank = 0;
     this.iWeekHeartBlockRank = 0;
     this.iMasterRank = 0;
     this.iACWeekRank = 0
 }
 ;
-HUYA.ACEnterBanner.prototype._clone = function() {
+HUYA.ACEnterBanner.prototype._clone = function () {
     return new HUYA.ACEnterBanner
 }
 ;
-HUYA.ACEnterBanner.prototype._write = function(t, e, i) {
+HUYA.ACEnterBanner.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.ACEnterBanner.prototype._read = function(t, e, i) {
+HUYA.ACEnterBanner.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.ACEnterBanner.prototype.writeTo = function(t) {
+HUYA.ACEnterBanner.prototype.writeTo = function (t) {
     t.writeInt32(0, this.iWeekHeartStirRank);
     t.writeInt32(1, this.iWeekHeartBlockRank);
     t.writeInt32(2, this.iMasterRank);
     t.writeInt32(3, this.iACWeekRank)
 }
 ;
-HUYA.ACEnterBanner.prototype.readFrom = function(t) {
+HUYA.ACEnterBanner.prototype.readFrom = function (t) {
     this.iWeekHeartStirRank = t.readInt32(0, false, this.iWeekHeartStirRank);
     this.iWeekHeartBlockRank = t.readInt32(1, false, this.iWeekHeartBlockRank);
     this.iMasterRank = t.readInt32(2, false, this.iMasterRank);
     this.iACWeekRank = t.readInt32(3, false, this.iACWeekRank)
 }
 ;
-HUYA.ChannelPair = function() {
+HUYA.ChannelPair = function () {
     this.lTid = 0;
     this.lSid = 0;
     this.lPid = 0
 }
 ;
-HUYA.ChannelPair.prototype._clone = function() {
+HUYA.ChannelPair.prototype._clone = function () {
     return new HUYA.ChannelPair
 }
 ;
-HUYA.ChannelPair.prototype._write = function(t, e, i) {
+HUYA.ChannelPair.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.ChannelPair.prototype._read = function(t, e, i) {
+HUYA.ChannelPair.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.ChannelPair.prototype.writeTo = function(t) {
+HUYA.ChannelPair.prototype.writeTo = function (t) {
     t.writeInt64(0, this.lTid);
     t.writeInt64(1, this.lSid);
     t.writeInt64(2, this.lPid)
 }
 ;
-HUYA.ChannelPair.prototype.readFrom = function(t) {
+HUYA.ChannelPair.prototype.readFrom = function (t) {
     this.lTid = t.readInt64(0, false, this.lTid);
     this.lSid = t.readInt64(1, false, this.lSid);
     this.lPid = t.readInt64(2, false, this.lPid)
 }
 ;
-HUYA.EnterChannelReq = function() {
+HUYA.EnterChannelReq = function () {
     this.tUserId = new HUYA.UserId;
     this.lTid = 0;
     this.lSid = 0;
     this.iChannelType = 0
 }
 ;
-HUYA.EnterChannelReq.prototype._clone = function() {
+HUYA.EnterChannelReq.prototype._clone = function () {
     return new HUYA.EnterChannelReq
 }
 ;
-HUYA.EnterChannelReq.prototype._write = function(t, e, i) {
+HUYA.EnterChannelReq.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.EnterChannelReq.prototype._read = function(t, e, i) {
+HUYA.EnterChannelReq.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.EnterChannelReq.prototype.writeTo = function(t) {
+HUYA.EnterChannelReq.prototype.writeTo = function (t) {
     t.writeStruct(1, this.tUserId);
     t.writeInt64(2, this.lTid);
     t.writeInt64(3, this.lSid);
     t.writeInt32(4, this.iChannelType)
 }
 ;
-HUYA.EnterChannelReq.prototype.readFrom = function(t) {
+HUYA.EnterChannelReq.prototype.readFrom = function (t) {
     this.tUserId = t.readStruct(1, false, this.tUserId);
     this.lTid = t.readInt64(2, false, this.lTid);
     this.lSid = t.readInt64(3, false, this.lSid);
     this.iChannelType = t.readInt32(4, false, this.iChannelType)
 }
 ;
-HUYA.VipCardReq = function() {
+HUYA.VipCardReq = function () {
     this.tUserId = new HUYA.UserId;
     this.lTid = 0;
     this.lSid = 0;
@@ -6620,19 +6622,19 @@ HUYA.VipCardReq = function() {
     this.lUid = 0
 }
 ;
-HUYA.VipCardReq.prototype._clone = function() {
+HUYA.VipCardReq.prototype._clone = function () {
     return new HUYA.VipCardReq
 }
 ;
-HUYA.VipCardReq.prototype._write = function(t, e, i) {
+HUYA.VipCardReq.prototype._write = function (t, e, i) {
     t.writeStruct(e, i)
 }
 ;
-HUYA.VipCardReq.prototype._read = function(t, e, i) {
+HUYA.VipCardReq.prototype._read = function (t, e, i) {
     return t.readStruct(e, true, i)
 }
 ;
-HUYA.VipCardReq.prototype.writeTo = function(t) {
+HUYA.VipCardReq.prototype.writeTo = function (t) {
     t.writeStruct(0, this.tUserId);
     t.writeInt64(1, this.lTid);
     t.writeInt64(2, this.lSid);
@@ -6640,7 +6642,7 @@ HUYA.VipCardReq.prototype.writeTo = function(t) {
     t.writeInt64(4, this.lUid)
 }
 ;
-HUYA.VipCardReq.prototype.readFrom = function(t) {
+HUYA.VipCardReq.prototype.readFrom = function (t) {
     this.tUserId = t.readStruct(0, false, this.tUserId);
     this.lTid = t.readInt64(1, false, this.lTid);
     this.lSid = t.readInt64(2, false, this.lSid);
@@ -6648,46 +6650,46 @@ HUYA.VipCardReq.prototype.readFrom = function(t) {
     this.lUid = t.readInt64(4, false, this.lUid)
 }
 ;
-HUYA.VideoGatewayProxy2VGPingReq = function() {
+HUYA.VideoGatewayProxy2VGPingReq = function () {
     this.lLocalTime = 0
 }
-HUYA.VideoGatewayProxy2VGPingReq.prototype._clone = function() {
+HUYA.VideoGatewayProxy2VGPingReq.prototype._clone = function () {
     return new HUYA.VideoGatewayProxy2VGPingReq
 }
-HUYA.VideoGatewayProxy2VGPingReq.prototype._write = function(e, t, i) {
+HUYA.VideoGatewayProxy2VGPingReq.prototype._write = function (e, t, i) {
     e.writeStruct(t, i)
 }
-HUYA.VideoGatewayProxy2VGPingReq.prototype._read = function(e, t, i) {
+HUYA.VideoGatewayProxy2VGPingReq.prototype._read = function (e, t, i) {
     return e.readStruct(t, !0, i)
 }
-HUYA.VideoGatewayProxy2VGPingReq.prototype.writeTo = function(e) {
+HUYA.VideoGatewayProxy2VGPingReq.prototype.writeTo = function (e) {
     e.writeInt64(0, this.lLocalTime)
 }
-HUYA.VideoGatewayProxy2VGPingReq.prototype.readFrom = function(e) {
+HUYA.VideoGatewayProxy2VGPingReq.prototype.readFrom = function (e) {
     this.lLocalTime = e.readInt64(0, !1, this.lLocalTime)
 }
-HUYA.VideoGatewayProxy2VGPingReq.prototype.readFrom = function(e) {
+HUYA.VideoGatewayProxy2VGPingReq.prototype.readFrom = function (e) {
     this.lLocalTime = e.readInt64(0, !1, this.lLocalTime)
 }
-HUYA.VideoGatewayProxy2VGPingRsp = function() {
+HUYA.VideoGatewayProxy2VGPingRsp = function () {
     this.lLocalTime = 0
 }
-HUYA.VideoGatewayProxy2VGPingRsp.prototype._clone = function() {
+HUYA.VideoGatewayProxy2VGPingRsp.prototype._clone = function () {
     return new HUYA.VideoGatewayProxy2VGPingRsp
 }
-HUYA.VideoGatewayProxy2VGPingRsp.prototype._write = function(e, t, i) {
+HUYA.VideoGatewayProxy2VGPingRsp.prototype._write = function (e, t, i) {
     e.writeStruct(t, i)
 }
-HUYA.VideoGatewayProxy2VGPingRsp.prototype._read = function(e, t, i) {
+HUYA.VideoGatewayProxy2VGPingRsp.prototype._read = function (e, t, i) {
     return e.readStruct(t, !0, i)
 }
-HUYA.VideoGatewayProxy2VGPingRsp.prototype.writeTo = function(e) {
+HUYA.VideoGatewayProxy2VGPingRsp.prototype.writeTo = function (e) {
     e.writeInt64(0, this.lLocalTime)
 }
-HUYA.VideoGatewayProxy2VGPingRsp.prototype.readFrom = function(e) {
+HUYA.VideoGatewayProxy2VGPingRsp.prototype.readFrom = function (e) {
     this.lLocalTime = e.readInt64(0, !1, this.lLocalTime)
 }
-HUYA.GetSequenceReq = function() {
+HUYA.GetSequenceReq = function () {
     this.tId = new HUYA.UserId,
         this.iSeqNum = 0,
         this.iFromType = 0,
@@ -6695,19 +6697,19 @@ HUYA.GetSequenceReq = function() {
         this.sSgin = ""
 }
     ,
-    HUYA.GetSequenceReq.prototype._clone = function() {
+    HUYA.GetSequenceReq.prototype._clone = function () {
         return new HUYA.GetSequenceReq
     }
     ,
-    HUYA.GetSequenceReq.prototype._write = function(t, e, i) {
+    HUYA.GetSequenceReq.prototype._write = function (t, e, i) {
         t.writeStruct(e, i)
     }
     ,
-    HUYA.GetSequenceReq.prototype._read = function(t, e, i) {
+    HUYA.GetSequenceReq.prototype._read = function (t, e, i) {
         return t.readStruct(e, !0, i)
     }
     ,
-    HUYA.GetSequenceReq.prototype.writeTo = function(t) {
+    HUYA.GetSequenceReq.prototype.writeTo = function (t) {
         t.writeStruct(0, this.tId),
             t.writeInt32(1, this.iSeqNum),
             t.writeInt32(2, this.iFromType),
@@ -6715,7 +6717,7 @@ HUYA.GetSequenceReq = function() {
             t.writeString(4, this.sSgin)
     }
     ,
-    HUYA.GetSequenceReq.prototype.readFrom = function(t) {
+    HUYA.GetSequenceReq.prototype.readFrom = function (t) {
         this.tId = t.readStruct(0, !1, this.tId),
             this.iSeqNum = t.readInt32(1, !1, this.iSeqNum),
             this.iFromType = t.readInt32(2, !1, this.iFromType),
@@ -6723,33 +6725,33 @@ HUYA.GetSequenceReq = function() {
             this.sSgin = t.readString(4, !1, this.sSgin)
     }
     ,
-    HUYA.GetSequenceRsp = function() {
+    HUYA.GetSequenceRsp = function () {
         this.iRetCode = 0,
             this.sSeq = ""
     }
     ,
-    HUYA.GetSequenceRsp.prototype._clone = function() {
+    HUYA.GetSequenceRsp.prototype._clone = function () {
         return new HUYA.GetSequenceRsp
     }
     ,
-    HUYA.GetSequenceRsp.prototype._write = function(t, e, i) {
+    HUYA.GetSequenceRsp.prototype._write = function (t, e, i) {
         t.writeStruct(e, i)
     }
     ,
-    HUYA.GetSequenceRsp.prototype._read = function(t, e, i) {
+    HUYA.GetSequenceRsp.prototype._read = function (t, e, i) {
         return t.readStruct(e, !0, i)
     }
     ,
-    HUYA.GetSequenceRsp.prototype.writeTo = function(t) {
+    HUYA.GetSequenceRsp.prototype.writeTo = function (t) {
         t.writeInt32(0, this.iRetCode),
             t.writeString(1, this.sSeq)
     }
     ,
-    HUYA.GetSequenceRsp.prototype.readFrom = function(t) {
+    HUYA.GetSequenceRsp.prototype.readFrom = function (t) {
         this.iRetCode = t.readInt32(0, !1, this.iRetCode),
             this.sSeq = t.readString(1, !1, this.sSeq)
     }
-HUYA.ConsumeGiftRsp = function() {
+HUYA.ConsumeGiftRsp = function () {
     this.iPayRespCode = 0,
         this.iItemType = 0,
         this.iItemCount = 0,
@@ -6766,19 +6768,19 @@ HUYA.ConsumeGiftRsp = function() {
         this.iItemGroup = 0
 }
     ,
-    HUYA.ConsumeGiftRsp.prototype._clone = function() {
+    HUYA.ConsumeGiftRsp.prototype._clone = function () {
         return new HUYA.ConsumeGiftRsp
     }
     ,
-    HUYA.ConsumeGiftRsp.prototype._write = function(t, e, i) {
+    HUYA.ConsumeGiftRsp.prototype._write = function (t, e, i) {
         t.writeStruct(e, i)
     }
     ,
-    HUYA.ConsumeGiftRsp.prototype._read = function(t, e, i) {
+    HUYA.ConsumeGiftRsp.prototype._read = function (t, e, i) {
         return t.readStruct(e, !0, i)
     }
     ,
-    HUYA.ConsumeGiftRsp.prototype.writeTo = function(t) {
+    HUYA.ConsumeGiftRsp.prototype.writeTo = function (t) {
         t.writeInt32(0, this.iPayRespCode),
             t.writeInt32(1, this.iItemType),
             t.writeInt32(2, this.iItemCount),
@@ -6795,7 +6797,7 @@ HUYA.ConsumeGiftRsp = function() {
             t.writeInt32(13, this.iItemGroup)
     }
     ,
-    HUYA.ConsumeGiftRsp.prototype.readFrom = function(t) {
+    HUYA.ConsumeGiftRsp.prototype.readFrom = function (t) {
         this.iPayRespCode = t.readInt32(0, !1, this.iPayRespCode),
             this.iItemType = t.readInt32(1, !1, this.iItemType),
             this.iItemCount = t.readInt32(2, !1, this.iItemCount),
@@ -6812,7 +6814,7 @@ HUYA.ConsumeGiftRsp = function() {
             this.iItemGroup = t.readInt32(13, !1, this.iItemGroup)
     }
     ,
-    HUYA.ConsumeGiftSafeReq = function() {
+    HUYA.ConsumeGiftSafeReq = function () {
         this.tId = new i.UserId,
             this.lRoomId = 0,
             this.iShowFreeitemInfo = 0,
@@ -6834,19 +6836,19 @@ HUYA.ConsumeGiftRsp = function() {
             this.iMultiSend = 0
     }
     ,
-    HUYA.ConsumeGiftSafeReq.prototype._clone = function() {
+    HUYA.ConsumeGiftSafeReq.prototype._clone = function () {
         return new i.ConsumeGiftSafeReq
     }
     ,
-    HUYA.ConsumeGiftSafeReq.prototype._write = function(t, e, i) {
+    HUYA.ConsumeGiftSafeReq.prototype._write = function (t, e, i) {
         t.writeStruct(e, i)
     }
     ,
-    HUYA.ConsumeGiftSafeReq.prototype._read = function(t, e, i) {
+    HUYA.ConsumeGiftSafeReq.prototype._read = function (t, e, i) {
         return t.readStruct(e, !0, i)
     }
     ,
-    HUYA.ConsumeGiftSafeReq.prototype.writeTo = function(t) {
+    HUYA.ConsumeGiftSafeReq.prototype.writeTo = function (t) {
         t.writeStruct(0, this.tId),
             t.writeInt64(1, this.lRoomId),
             t.writeInt32(2, this.iShowFreeitemInfo),
@@ -6868,7 +6870,7 @@ HUYA.ConsumeGiftRsp = function() {
             t.writeInt32(18, this.iMultiSend)
     }
     ,
-    HUYA.ConsumeGiftSafeReq.prototype.readFrom = function(t) {
+    HUYA.ConsumeGiftSafeReq.prototype.readFrom = function (t) {
         this.tId = t.readStruct(0, !1, this.tId),
             this.lRoomId = t.readInt64(1, !1, this.lRoomId),
             this.iShowFreeitemInfo = t.readInt32(2, !1, this.iShowFreeitemInfo),
@@ -6890,7 +6892,7 @@ HUYA.ConsumeGiftRsp = function() {
             this.iMultiSend = t.readInt32(18, !1, this.iMultiSend)
     }
     ,
-    HUYA.ConsumeGiftSafeRsp = function() {
+    HUYA.ConsumeGiftSafeRsp = function () {
         this.iPayRespCode = 0,
             this.iItemType = 0,
             this.iItemCount = 0,
@@ -6907,19 +6909,19 @@ HUYA.ConsumeGiftRsp = function() {
             this.iItemGroup = 0
     }
     ,
-    HUYA.ConsumeGiftSafeRsp.prototype._clone = function() {
+    HUYA.ConsumeGiftSafeRsp.prototype._clone = function () {
         return new HUYA.ConsumeGiftSafeRsp
     }
     ,
-    HUYA.ConsumeGiftSafeRsp.prototype._write = function(t, e, i) {
+    HUYA.ConsumeGiftSafeRsp.prototype._write = function (t, e, i) {
         t.writeStruct(e, i)
     }
     ,
-    HUYA.ConsumeGiftSafeRsp.prototype._read = function(t, e, i) {
+    HUYA.ConsumeGiftSafeRsp.prototype._read = function (t, e, i) {
         return t.readStruct(e, !0, i)
     }
     ,
-    HUYA.ConsumeGiftSafeRsp.prototype.writeTo = function(t) {
+    HUYA.ConsumeGiftSafeRsp.prototype.writeTo = function (t) {
         t.writeInt32(0, this.iPayRespCode),
             t.writeInt32(1, this.iItemType),
             t.writeInt32(2, this.iItemCount),
@@ -6936,7 +6938,7 @@ HUYA.ConsumeGiftRsp = function() {
             t.writeInt32(13, this.iItemGroup)
     }
     ,
-    HUYA.ConsumeGiftSafeRsp.prototype.readFrom = function(t) {
+    HUYA.ConsumeGiftSafeRsp.prototype.readFrom = function (t) {
         this.iPayRespCode = t.readInt32(0, !1, this.iPayRespCode),
             this.iItemType = t.readInt32(1, !1, this.iItemType),
             this.iItemCount = t.readInt32(2, !1, this.iItemCount),
@@ -6952,7 +6954,7 @@ HUYA.ConsumeGiftRsp = function() {
             this.iPayTotal = t.readInt32(12, !1, this.iPayTotal),
             this.iItemGroup = t.readInt32(13, !1, this.iItemGroup)
     }
-HUYA.ConsumeGiftReq = function() {
+HUYA.ConsumeGiftReq = function () {
     this.tId = new HUYA.UserId,
         this.lSid = 0,
         this.lSubSid = 0,
@@ -6968,7 +6970,7 @@ HUYA.ConsumeGiftReq = function() {
         this.iTemplateType = 0,
         this.sPassport = "",
         this.iEventType = 0,
-        this.mapParam = new Taf.Map(new Taf.STRING,new Taf.STRING),
+        this.mapParam = new Taf.Map(new Taf.STRING, new Taf.STRING),
         this.sSenderNick = "",
         this.sPresenterNick = "",
         this.sSign = "",
@@ -6976,19 +6978,19 @@ HUYA.ConsumeGiftReq = function() {
         this.iMergeDeliver = 0
 }
     ,
-    HUYA.ConsumeGiftReq.prototype._clone = function() {
+    HUYA.ConsumeGiftReq.prototype._clone = function () {
         return new HUYA.ConsumeGiftReq
     }
     ,
-    HUYA.ConsumeGiftReq.prototype._write = function(t, e, i) {
+    HUYA.ConsumeGiftReq.prototype._write = function (t, e, i) {
         t.writeStruct(e, i)
     }
     ,
-    HUYA.ConsumeGiftReq.prototype._read = function(t, e, i) {
+    HUYA.ConsumeGiftReq.prototype._read = function (t, e, i) {
         return t.readStruct(e, !0, i)
     }
     ,
-    HUYA.ConsumeGiftReq.prototype.writeTo = function(t) {
+    HUYA.ConsumeGiftReq.prototype.writeTo = function (t) {
         t.writeStruct(0, this.tId),
             t.writeInt64(1, this.lSid),
             t.writeInt64(2, this.lSubSid),
@@ -7012,7 +7014,7 @@ HUYA.ConsumeGiftReq = function() {
             t.writeInt32(20, this.iMergeDeliver)
     }
     ,
-    HUYA.ConsumeGiftReq.prototype.readFrom = function(t) {
+    HUYA.ConsumeGiftReq.prototype.readFrom = function (t) {
         this.tId = t.readStruct(0, !1, this.tId),
             this.lSid = t.readInt64(1, !1, this.lSid),
             this.lSubSid = t.readInt64(2, !1, this.lSubSid),
@@ -7089,7 +7091,7 @@ class List {
                 return false
             }
         }
-        this._list.push({ name: name, time: time })
+        this._list.push({name: name, time: time})
         if (this._list.length >= this._max_count) {
             this._list = this._list.splice(1)
         }

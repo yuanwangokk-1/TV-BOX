@@ -1,5 +1,5 @@
 js:
-eval(getCryptoJS())
+    eval(getCryptoJS())
 const baseParse = _ => {
     let d = [];
     let tasks = []
@@ -286,7 +286,10 @@ const getFind = (page) => {
 }
 
 const picUrlDecode = (pic_url, id) => {
-    const base64PicUrl = CryptoJS.AES.decrypt(fetch(pic_url), CryptoJS.enc.Utf8.parse("46cc793c53dc451b"), {mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7}).toString(CryptoJS.enc.Utf8)
+    const base64PicUrl = CryptoJS.AES.decrypt(fetch(pic_url), CryptoJS.enc.Utf8.parse("46cc793c53dc451b"), {
+        mode: CryptoJS.mode.ECB,
+        padding: CryptoJS.pad.Pkcs7
+    }).toString(CryptoJS.enc.Utf8)
     updateItem({
         pic_url: base64PicUrl,
         extra: {

@@ -33,11 +33,11 @@ const baseParse = _ => {
                 fst_rule_list.push(each.rule)
             })
         })
-        writeFile("hiker://files/TyrantG/Temporary/"+rule.title+".json", JSON.stringify(fst_rule_list));
+        writeFile("hiker://files/TyrantG/Temporary/" + rule.title + ".json", JSON.stringify(fst_rule_list));
 
         d.push({
             title: rule.title,
-            url: "rule://"+base64Encode(collection_password+"hiker://files/TyrantG/Temporary/"+rule.title+".json").replace(/\n/g, ''),
+            url: "rule://" + base64Encode(collection_password + "hiker://files/TyrantG/Temporary/" + rule.title + ".json").replace(/\n/g, ''),
             col_type: 'text_center_1'
         });
 
@@ -46,16 +46,16 @@ const baseParse = _ => {
             item.rules.forEach(each => {
                 snd_rule_list.push(each.rule)
             })
-            writeFile("hiker://files/TyrantG/Temporary/"+rule.title+"/"+item.title+".json", JSON.stringify(snd_rule_list));
+            writeFile("hiker://files/TyrantG/Temporary/" + rule.title + "/" + item.title + ".json", JSON.stringify(snd_rule_list));
             d.push({
                 title: item.title,
-                url: "rule://"+base64Encode(collection_password+"hiker://files/TyrantG/Temporary/"+rule.title+"/"+item.title+".json").replace(/\n/g, ''),
+                url: "rule://" + base64Encode(collection_password + "hiker://files/TyrantG/Temporary/" + rule.title + "/" + item.title + ".json").replace(/\n/g, ''),
                 col_type: 'text_2'
             });
             item.rules.forEach(each => {
                 d.push({
                     title: each.title,
-                    url: "rule://"+base64Encode(rule_password+JSON.stringify(each.rule)).replace(/\n/g, ''),
+                    url: "rule://" + base64Encode(rule_password + JSON.stringify(each.rule)).replace(/\n/g, ''),
                     col_type: 'flex_button'
                 })
             })
@@ -84,8 +84,8 @@ const homePage = _ => {
 
     d.push({
         desc: '100% && float',
-        url: 'file:///storage/emulated/0/Android/data/com.example.hikerview/files/Documents/TyrantG/public/Home.html?time='+(new Date()).getTime(),
-        col_type:"x5_webview_single"
+        url: 'file:///storage/emulated/0/Android/data/com.example.hikerview/files/Documents/TyrantG/public/Home.html?time=' + (new Date()).getTime(),
+        col_type: "x5_webview_single"
     })
 
     setResult(d);

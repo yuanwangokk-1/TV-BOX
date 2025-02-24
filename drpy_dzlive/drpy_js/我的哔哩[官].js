@@ -1,33 +1,33 @@
 /**
  * 已知问题：
-    * [推荐]页面：'雷电模拟器'播放部份影片会出错，'播放器'改成'ijk' & '解码方式'改成'软解'，即可正常播放
+ * [推荐]页面：'雷电模拟器'播放部份影片会出错，'播放器'改成'ijk' & '解码方式'改成'软解'，即可正常播放
  * 影视TV 超連結跳轉支持
  * 影视TV 弹幕支持
-    * https://t.me/fongmi_offical/
-    * https://github.com/FongMi/Release/tree/main/apk
+ * https://t.me/fongmi_offical/
+ * https://github.com/FongMi/Release/tree/main/apk
  * 皮皮虾DMBox 弹幕支持
-    * 设置 > 窗口预览 > 开启
-    * https://t.me/pipixiawerun
-    * vod_area:'bilidanmu'
+ * 设置 > 窗口预览 > 开启
+ * https://t.me/pipixiawerun
+ * vod_area:'bilidanmu'
  * Cookie设置
-    * Cookie获取方法 https://ghproxy.net/https://raw.githubusercontent.com/UndCover/PyramidStore/main/list.md
+ * Cookie获取方法 https://ghproxy.net/https://raw.githubusercontent.com/UndCover/PyramidStore/main/list.md
  * Cookie设置方法1: DR-PY 后台管理界面
-    * CMS后台管理 > 设置中心 > 环境变量 > {"bili_cookie":"XXXXXXX","vmid":"XXXXXX"} > 保存
+ * CMS后台管理 > 设置中心 > 环境变量 > {"bili_cookie":"XXXXXXX","vmid":"XXXXXX"} > 保存
  * Cookie设置方法2: 手动替换Cookie
-    * 底下代码 headers的
-    * "Cookie":"$bili_cookie"
-    * 手动替换为
-    * "Cookie":"将获取的Cookie黏贴在这"
-    * 客户端长期Cookie设置教程:
-    * 抓包哔哩手机端搜索access_key,取任意链接里的access_key和appkey在drpy环境变量中增加同名的环境变量即可
-    * 此时哔哩.js这个解析可用于此源的解析线路用
+ * 底下代码 headers的
+ * "Cookie":"$bili_cookie"
+ * 手动替换为
+ * "Cookie":"将获取的Cookie黏贴在这"
+ * 客户端长期Cookie设置教程:
+ * 抓包哔哩手机端搜索access_key,取任意链接里的access_key和appkey在drpy环境变量中增加同名的环境变量即可
+ * 此时哔哩.js这个解析可用于此源的解析线路用
  */
 var rule = {
-    title:'我的哔哩[官]',
-    host:'https://api.bilibili.com',
-    homeUrl:'/x/web-interface/ranking/v2?rid=0&type=origin',
-    url:'/x/web-interface/search/type?search_type=video&keyword=fyclass&page=fypage',
-    class_parse:`js:
+    title: '我的哔哩[官]',
+    host: 'https://api.bilibili.com',
+    homeUrl: '/x/web-interface/ranking/v2?rid=0&type=origin',
+    url: '/x/web-interface/search/type?search_type=video&keyword=fyclass&page=fypage',
+    class_parse: `js:
     let html=request('{{host}}/files/json/小学教育.json');
     let json = dealJson(html);
     input=json.classes;
@@ -35,20 +35,20 @@ var rule = {
     // log(input);
     `,
     filterable: 1,
-    detailUrl:'/x/web-interface/view/detail?aid=fyid',
-    searchUrl:'/x/web-interface/search/type?search_type=video&keyword=**&page=fypage',
-    searchable:2,
-    quickSearch:0,
-    headers:{
-        "User-Agent":"PC_UA",
+    detailUrl: '/x/web-interface/view/detail?aid=fyid',
+    searchUrl: '/x/web-interface/search/type?search_type=video&keyword=**&page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    headers: {
+        "User-Agent": "PC_UA",
         "Referer": "https://www.bilibili.com",
         "Cookie": "buvid3=666"
     },
-    timeout:5000,
-    limit:8,
-    play_parse:true,
-    double:false,
-    lazy:`js:
+    timeout: 5000,
+    limit: 8,
+    play_parse: true,
+    double: false,
+    lazy: `js:
         let ids = input.split('_');
         let dan = 'https://api.bilibili.com/x/v1/dm/list.so?oid=' + ids[1];
         let result = {};
@@ -87,7 +87,7 @@ var rule = {
         result.danmaku = dan;
         input = result
     `,
-    推荐:`js:
+    推荐: `js:
         function stripHtmlTag(src) {
             return src.replace(/<\\/?[^>]+(>|$)/g, '').replace(/&.{1,5};/g, '').replace(/\\s{2,}/g, ' ');
         }
@@ -173,7 +173,7 @@ var rule = {
         });
         VODS = videos
     `,
-    一级:`js:
+    一级: `js:
         if (cateObj.tid.endsWith('_clicklink')) {
             cateObj.tid = cateObj.tid.split('_')[0];
             input = HOST + '/x/web-interface/search/type?search_type=video&keyword=' + cateObj.tid + '&page=' + MY_PAGE;
@@ -287,7 +287,7 @@ var rule = {
         });
         VODS = videos
     `,
-    二级:`js:
+    二级: `js:
         function stripHtmlTag(src) {
             return src.replace(/<\\/?[^>]+(>|$)/g, '').replace(/&.{1,5};/g, '').replace(/\\s{2,}/g, ' ');
         }
@@ -369,7 +369,7 @@ var rule = {
         vod.vod_play_url = Object.values(treeMap).join("$$$");
         VOD = vod;
     `,
-    搜索:`js:
+    搜索: `js:
         let html = request(input);
         function stripHtmlTag(src) {
             return src.replace(/<\\/?[^>]+(>|$)/g, '').replace(/&.{1,5};/g, '').replace(/\\s{2,}/g, ' ');

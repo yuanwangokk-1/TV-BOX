@@ -6,7 +6,7 @@ const one = {
     },
     baseParse: () => {
         const [url, page] = MY_URL.split('##')
-        one.list(pdfa(fetch(url+'/?page='+page), '.gallery-list&&a'))
+        one.list(pdfa(fetch(url + '/?page=' + page), '.gallery-list&&a'))
         setResult(one.d)
     },
     searchParse: () => {
@@ -20,7 +20,7 @@ const one = {
             let pic_url = pdfh(item, 'img&&src')
             one.d.push({
                 title: title,
-                url: $(url+'#immersiveTheme#').rule((title, url, pic_url) => {
+                url: $(url + '#immersiveTheme#').rule((title, url, pic_url) => {
                     const one = $.require('hiker://page/one')
                     one.detail(title, url, pic_url)
                     setResult(one.d)
@@ -50,7 +50,7 @@ const one = {
             let url = pd(tag, 'a&&href')
             one.d.push({
                 title: pdfh(tag, 'a&&Text'),
-                url: $(url+'?page=fypage').rule((title) => {
+                url: $(url + '?page=fypage').rule((title) => {
                     const one = $.require('hiker://page/one')
                     one.tag(title)
                     setResult(one.d)
@@ -86,7 +86,8 @@ const one = {
         setPageTitle(title)
         try {
             one.list(pdfa(getResCode(), '.gallery-list&&a'))
-        } catch(e) {}
+        } catch (e) {
+        }
     },
     getPics: (url) => {
         const img_list = []
@@ -95,7 +96,7 @@ const one = {
         match.forEach(img => {
             img_list.push(img.replace(/\\"src\\":\\"(.*?)\\"/, "$1"))
         })
-        return 'pics://'+img_list.join('&&')
+        return 'pics://' + img_list.join('&&')
     },
 }
 

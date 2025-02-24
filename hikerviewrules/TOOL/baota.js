@@ -11,10 +11,10 @@ const bt = {
     },
     fetch: (url, data) => {
         const api_sk = 'PnGw5A1WV6ySHCr4YufMu2OOUu5a8TxA'
-        data.request_time =  (new Date().getTime()/1000).toFixed(0)
-        data.request_token =  md5(data.request_time+ md5(api_sk))
+        data.request_time = (new Date().getTime() / 1000).toFixed(0)
+        data.request_token = md5(data.request_time + md5(api_sk))
 
-        const responseJson = post('http://124.223.179.189:8888/'+url, {body: data})
+        const responseJson = post('http://124.223.179.189:8888/' + url, {body: data})
 
         try {
             const response = JSON.parse(responseJson)
@@ -70,7 +70,7 @@ const bt = {
         if (tabs.length > 0) {
             tabs.forEach((tab, index) => {
                 bt.d.push({
-                    title: bt.data.currentTab === index.toString() ? '‘‘’’<strong><font color="#ff1493">'+tab[0]+'</font></strong>' : tab[0],
+                    title: bt.data.currentTab === index.toString() ? '‘‘’’<strong><font color="#ff1493">' + tab[0] + '</font></strong>' : tab[0],
                     url: $(bt.empty).lazyRule((index) => {
                         setItem('bt.currentTab', index.toString())
                         refreshPage(false)
@@ -94,7 +94,7 @@ const bt = {
 
         ['排序', '删除'].forEach((item, index) => {
             bt.d.push({
-                title: bt.data.settingToolTab === index.toString() ? '‘‘’’<strong><font color="#ff1493">'+item+'</font></strong>' : item,
+                title: bt.data.settingToolTab === index.toString() ? '‘‘’’<strong><font color="#ff1493">' + item + '</font></strong>' : item,
                 url: $(bt.empty).lazyRule((index) => {
                     setItem('bt.settingToolTab', index.toString())
                     refreshPage(false)
@@ -106,7 +106,7 @@ const bt = {
 
         tabs.forEach((tab, index) => {
             bt.d.push({
-                title: bt.data.settingToolSelectedServer === index.toString() ? '‘‘’’<strong><font color="#ff1493">'+tab[0]+'</font></strong>' : tab[0],
+                title: bt.data.settingToolSelectedServer === index.toString() ? '‘‘’’<strong><font color="#ff1493">' + tab[0] + '</font></strong>' : tab[0],
                 url: $(bt.empty).lazyRule((index) => {
                     setItem('bt.settingToolSelectedServer', index.toString())
                     refreshPage(false)

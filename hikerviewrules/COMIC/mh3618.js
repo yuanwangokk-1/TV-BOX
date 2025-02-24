@@ -14,7 +14,7 @@ const baseParse = _ => {
                     d.push({
                         title: pdfh(item, 'a&&Text'),
                         col_type: 'text_1',
-                        url: $(pd(item, 'a&&href')+'#readTheme#').rule(() => {
+                        url: $(pd(item, 'a&&href') + '#readTheme#').rule(() => {
                             const d = []
                             d.push({
                                 title: pdfh(getResCode(), '#contxt&&Text'),
@@ -41,7 +41,7 @@ const baseParse = _ => {
                         img_list.push(pdfh(img, 'img&&src'))
                     })
                 })
-                return 'pics://'+img_list.join('&&')
+                return 'pics://' + img_list.join('&&')
             })
         }
         d.push({

@@ -1,8 +1,8 @@
 const getQueryVariable = (host, variable) => {
     let vars = host.split("&");
-    for (let i=0;i<vars.length;i++) {
+    for (let i = 0; i < vars.length; i++) {
         let pair = vars[i].split("=");
-        if(pair[0] === variable) return pair[1]
+        if (pair[0] === variable) return pair[1]
     }
     return false
 }
@@ -17,7 +17,7 @@ const baseParse = _ => {
     d.push({
         desc: '48',
         url: 'file:///storage/emulated/0/Android/data/com.example.hikerview/files/Documents/TyrantG/public/huya-tabs.html',
-        col_type:"x5_webview_single"
+        col_type: "x5_webview_single"
     })
 
     list.forEach((cate, index) => {
@@ -27,8 +27,8 @@ const baseParse = _ => {
 
             let videoDom = cate.vItems.value
             cate_id = videoDom[0].iGameId
-            current_cate = "g/"+cate_id
-            let group_url = "https://m.huya.com/"+current_cate+'?p=fypage&id='+cate_id
+            current_cate = "g/" + cate_id
+            let group_url = "https://m.huya.com/" + current_cate + '?p=fypage&id=' + cate_id
 
             d.push({
                 title: group,
@@ -44,7 +44,7 @@ const baseParse = _ => {
                     title: item.sTitle,
                     desc: item.sNickName,
                     pic_url: item.sCoverUrl,
-                    url: $("https://m.huya.com"+item.sAction).lazyRule( _ => {
+                    url: $("https://m.huya.com" + item.sAction).lazyRule(_ => {
                         eval(fetch('hiker://files/TyrantG/LIVE/huya.js'))
                         return secParse()
                     }),
@@ -54,7 +54,8 @@ const baseParse = _ => {
             d.push({
                 col_type: 'line_blank'
             })
-        } catch (e) {}
+        } catch (e) {
+        }
     })
 
     setResult(d);
@@ -62,7 +63,7 @@ const baseParse = _ => {
 
 const secParse = params => {
     let rid = input.split('/').pop()
-    let html = fetch(input, {headers:{"User-Agent": MOBILE_UA}})
+    let html = fetch(input, {headers: {"User-Agent": MOBILE_UA}})
 
     const userinfoJson = fetch('https://udblgn.huya.com/web/anonymousLogin', {
         method: 'POST',
@@ -100,41 +101,41 @@ const secParse = params => {
     // if (parseInt(iGameId) === 2135) {
     //     return fetch("https://hiker.dev.tyrantg.com/huya/live_parser.php?id="+rid)
     // } else {
-        streamInfo.forEach(info => {
+    streamInfo.forEach(info => {
 
-            let rand = generateRandomNumber()
-            let sStreamName = info.sStreamName
-            let sFlvUrl = info.sFlvUrl
-            let sFlvUrlSuffix = info.sFlvUrlSuffix
-            let sFlvAntiCode = info.sFlvAntiCode
-            let sHlsUrl = info.sHlsUrl
-            let sHlsUrlSuffix = info.sHlsUrlSuffix
-            let sHlsAntiCode = info.sHlsAntiCode
+        let rand = generateRandomNumber()
+        let sStreamName = info.sStreamName
+        let sFlvUrl = info.sFlvUrl
+        let sFlvUrlSuffix = info.sFlvUrlSuffix
+        let sFlvAntiCode = info.sFlvAntiCode
+        let sHlsUrl = info.sHlsUrl
+        let sHlsUrlSuffix = info.sHlsUrlSuffix
+        let sHlsAntiCode = info.sHlsAntiCode
 
-            // if (info.sCdnType === 'TX') {
+        // if (info.sCdnType === 'TX') {
 
-                let flv_anti_code = process_anticode(sFlvAntiCode, sStreamName, uid, rand)
-                // let hls_anti_code = process_anticode(sHlsAntiCode, sStreamName, uid, rand)
+        let flv_anti_code = process_anticode(sFlvAntiCode, sStreamName, uid, rand)
+        // let hls_anti_code = process_anticode(sHlsAntiCode, sStreamName, uid, rand)
 
-                // let hls_url = sHlsUrl + '/' + sStreamName + '.' + sHlsUrlSuffix + '?' + hls_anti_code
-                // live_url = info.sFlvUrl + '/' + info.sStreamName + '.' + info.sFlvUrlSuffix + '?' + info.sFlvAntiCode
-                live_url.push(sFlvUrl.replace('http', 'https') + '/' + sStreamName + '.' + sFlvUrlSuffix + '?' + flv_anti_code)
-            // }
+        // let hls_url = sHlsUrl + '/' + sStreamName + '.' + sHlsUrlSuffix + '?' + hls_anti_code
+        // live_url = info.sFlvUrl + '/' + info.sStreamName + '.' + info.sFlvUrlSuffix + '?' + info.sFlvAntiCode
+        live_url.push(sFlvUrl.replace('http', 'https') + '/' + sStreamName + '.' + sFlvUrlSuffix + '?' + flv_anti_code)
+        // }
 
-            // live_url.push(flv_url)
-            // live_url.push(hls_url)
-        })
+        // live_url.push(flv_url)
+        // live_url.push(hls_url)
+    })
     // }
 
     return live_url[0]
 }
 
-const categoryParse = index =>{
+const categoryParse = index => {
     let d = [];
     let id = getQueryVariable(MY_URL, 'id')
     let page = getQueryVariable(MY_URL, 'page')
-    const url = index === 0 ? "https://m.huya.com/cache.php?m=Live&do=ajaxGetProfileLive&page="+page+"&pageSize=120" : "https://m.huya.com/cache.php?m=Game&do=ajaxGetGameLive&gameId="+id+"&page="+page+"&pageSize=120"
-    const html = fetch(url, {headers:{"User-Agent":MOBILE_UA}});
+    const url = index === 0 ? "https://m.huya.com/cache.php?m=Live&do=ajaxGetProfileLive&page=" + page + "&pageSize=120" : "https://m.huya.com/cache.php?m=Game&do=ajaxGetGameLive&gameId=" + id + "&page=" + page + "&pageSize=120"
+    const html = fetch(url, {headers: {"User-Agent": MOBILE_UA}});
     const list = JSON.parse(html).gameList ? JSON.parse(html).gameList : JSON.parse(html).profileList
 
     list.forEach(item => {
@@ -142,7 +143,7 @@ const categoryParse = index =>{
             title: item.introduction,
             desc: item.nick,
             pic_url: item.screenshot,
-            url: $("https://m.huya.com/"+item.profileRoom).lazyRule(_ => {
+            url: $("https://m.huya.com/" + item.profileRoom).lazyRule(_ => {
                 eval(fetch('hiker://files/TyrantG/LIVE/huya.js'))
                 return secParse()
             }),
@@ -164,7 +165,7 @@ const searchParse = () => {
             title: item.game_roomName,
             desc: item.game_nick,
             pic_url: item.game_screenshot,
-            url: $("https://m.huya.com/"+item.room_id).lazyRule(_ => {
+            url: $("https://m.huya.com/" + item.room_id).lazyRule(_ => {
                 eval(fetch('hiker://files/TyrantG/LIVE/huya.js'))
                 return secParse()
             }),
@@ -183,28 +184,37 @@ const cateGroupParse = _ => {
 
     const tabCurrent = parseInt(getVar('tab-current') || 0)
     switch (tabCurrent) {
-        case 0: cate = JSON.parse(fetch("https://live.cdn.huya.com/liveconfig/game/bussLive?bussType=1")).data;break;
-        case 1: cate = JSON.parse(fetch("https://live.cdn.huya.com/liveconfig/game/bussLive?bussType=2")).data;break;
-        case 2: cate = JSON.parse(fetch("https://live.cdn.huya.com/liveconfig/game/bussLive?bussType=8")).data;break;
-        case 3: cate = JSON.parse(fetch("https://live.cdn.huya.com/liveconfig/game/bussLive?bussType=3")).data;break;
-        default: cate = /*json.gameList*/[]
+        case 0:
+            cate = JSON.parse(fetch("https://live.cdn.huya.com/liveconfig/game/bussLive?bussType=1")).data;
+            break;
+        case 1:
+            cate = JSON.parse(fetch("https://live.cdn.huya.com/liveconfig/game/bussLive?bussType=2")).data;
+            break;
+        case 2:
+            cate = JSON.parse(fetch("https://live.cdn.huya.com/liveconfig/game/bussLive?bussType=8")).data;
+            break;
+        case 3:
+            cate = JSON.parse(fetch("https://live.cdn.huya.com/liveconfig/game/bussLive?bussType=3")).data;
+            break;
+        default:
+            cate = /*json.gameList*/[]
     }
 
     d.push({
         desc: '45',
         url: 'file:///storage/emulated/0/Android/data/com.example.hikerview/files/Documents/TyrantG/public/huya-category.html',
-        col_type:"x5_webview_single"
+        col_type: "x5_webview_single"
     })
 
     cate.forEach(cate2 => {
         d.push({
-            title:cate2.gameFullName,
-            pic_url:"https://huyaimg.msstatic.com/cdnimage/game/"+cate2.gid+"-MS.jpg",
-            url: $("https://m.huya.com/g/"+cate2.gid+'?p=fypage&id='+cate2.gid).rule(_ => {
+            title: cate2.gameFullName,
+            pic_url: "https://huyaimg.msstatic.com/cdnimage/game/" + cate2.gid + "-MS.jpg",
+            url: $("https://m.huya.com/g/" + cate2.gid + '?p=fypage&id=' + cate2.gid).rule(_ => {
                 eval(fetch('hiker://files/TyrantG/LIVE/huya.js'))
                 categoryParse()
             }),
-            col_type:"icon_round_4"
+            col_type: "icon_round_4"
         });
     });
     setResult(d);
@@ -237,7 +247,7 @@ const getRealUrl = (live_url) => {
     let t = '0'
     let h = [p, t, s, f, ll].join('_')
     let m = md5(h)
-    return (i+"?wsSecret="+m+"&wsTime="+ll+"&u="+t+"&seqid="+f+"&"+c_tmp2.pop()).replace('hls', 'flv').replace('m3u8', 'flv')
+    return (i + "?wsSecret=" + m + "&wsTime=" + ll + "&u=" + t + "&seqid=" + f + "&" + c_tmp2.pop()).replace('hls', 'flv').replace('m3u8', 'flv')
 }
 
 const process_anticode = (anticode, stream_name, uid, rand) => {
@@ -255,7 +265,7 @@ const process_anticode = (anticode, stream_name, uid, rand) => {
     antiMap['uid'] = uid;
     antiMap['uuid'] = get_uuid(now, rand);
 
-    let result = md5(seqid+'|'+ctype+'|'+t)
+    let result = md5(seqid + '|' + ctype + '|' + t)
     let fm = base64Decode(decodeURIComponent(antiMap.fm))
 
     fm = fm.replace('$0', uid).replace('$1', stream_name).replace('$2', result).replace('$3', wsTime)

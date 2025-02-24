@@ -1,5 +1,5 @@
 js:
-const douyin_cookie = "hiker://files/TyrantG/cookie/douyin.txt"
+    const douyin_cookie = "hiker://files/TyrantG/cookie/douyin.txt"
 // const slide_cookie = "hiker://files/TyrantG/cookie/douyin_slide.txt"
 
 const baseParse = _ => {
@@ -7,11 +7,11 @@ const baseParse = _ => {
     let home_cookie = request(douyin_cookie)
     // let slide_d_cookie = request(slide_cookie)
     const empty = "hiker://empty"
-    html = fetch("https://www.douyin.com", {headers:{"User-Agent": PC_UA, "cookie": home_cookie}, withHeaders: true})
+    html = fetch("https://www.douyin.com", {headers: {"User-Agent": PC_UA, "cookie": home_cookie}, withHeaders: true})
     html = JSON.parse(html)
 
     // 首页cookie
-    if (! home_cookie || ! home_cookie.match(/__ac_nonce/) || html.body.match(/<body><\/body>/)) {
+    if (!home_cookie || !home_cookie.match(/__ac_nonce/) || html.body.match(/<body><\/body>/)) {
         let cookie = html.headers["set-cookie"].join(';')
 
         writeFile(douyin_cookie, cookie.match(/__ac_nonce=(.*?);/)[0])
@@ -26,7 +26,7 @@ const baseParse = _ => {
                 let current_cookie = request(douyin_cookie).match(/__ac_nonce=(.*?);/)[0]
                 showLoading('自动验证中')
                 let slide_cookie = fetch("http://student.tyrantg.com:8199/slide.php", {timeout: 30000})
-                if(slide_cookie) writeFile(douyin_cookie, current_cookie+slide_cookie)
+                if (slide_cookie) writeFile(douyin_cookie, current_cookie + slide_cookie)
                 hideLoading()
                 refreshPage(true)
                 return 'toast://验证成功'
@@ -53,7 +53,7 @@ const baseParse = _ => {
             ]
             category.forEach(cate => {
                 d.push({
-                    title: cate_select === cate.id ? '‘‘’’<strong><font color="red">'+cate.title+'</font></strong>' : cate.title,
+                    title: cate_select === cate.id ? '‘‘’’<strong><font color="red">' + cate.title + '</font></strong>' : cate.title,
                     url: $(empty).lazyRule(params => {
                         putVar("tyrantgenesis.simple_douyin_web.cate_select", params.id)
                         refreshPage(false)
@@ -68,11 +68,11 @@ const baseParse = _ => {
 
         // let not_sign_url = "https://www.douyin.com/aweme/v1/web/channel/feed/?device_platform=webapp&aid=6383&channel=channel_pc_web&tag_id="+cate_select+"&count=20&version_code=160100&version_name=16.1.0"
 
-        let sign_url = fetch("http://douyin_signature.dev.tyrantg.com?type=feed&params="+cate_select)
+        let sign_url = fetch("http://douyin_signature.dev.tyrantg.com?type=feed&params=" + cate_select)
         // let true_url = not_sign_url + "&_signature="+sign
         let data_json = fetch(sign_url, {
             headers: {
-                "referer" : "https://www.douyin.com/",
+                "referer": "https://www.douyin.com/",
                 "cookie": home_cookie,
                 "Accept": 'application/json, text/plain, */*',
                 "User-Agent": PC_UA,
@@ -80,7 +80,7 @@ const baseParse = _ => {
             }
         })
 
-        if (! data_json || data_json === 'Need Verifying') {
+        if (!data_json || data_json === 'Need Verifying') {
             d.push({
                 title: 'signature 获取失败，待修复',
                 col_type: "long_text",

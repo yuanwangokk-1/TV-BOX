@@ -24,7 +24,7 @@ const streamLab = {
             })
             streamLab.streamNameList.forEach((stream, index) => {
                 streamLab.d.push({
-                    title: streamLab.streamKey === stream.key ? '‘‘’’<b><span style="color: #FF0000">'+stream.title+'</span></b>' : stream.title,
+                    title: streamLab.streamKey === stream.key ? '‘‘’’<b><span style="color: #FF0000">' + stream.title + '</span></b>' : stream.title,
                     url: $(streamLab.empty).lazyRule((key) => {
                         setItem('TyrantGenesis.streamLab.streamKey', key)
                         refreshPage(true)
@@ -43,16 +43,14 @@ const streamLab = {
     },
     categoryLoad: () => {
         switch (streamLab.streamKey) {
-            case 'douyu':
-            {
+            case 'douyu': {
                 $.require('hiker://page/douyu').categoryLoad(streamLab.d)
             }
         }
     },
     baseParseLoad: (page) => {
         switch (streamLab.streamKey) {
-            case 'douyu':
-            {
+            case 'douyu': {
                 $.require('hiker://page/douyu').baseParseLoad(streamLab.d, page)
             }
         }

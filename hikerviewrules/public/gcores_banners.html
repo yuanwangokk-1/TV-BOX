@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Banners</title>
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" rel="stylesheet">
     <style>
         html, body {
             margin: 0;
@@ -12,24 +12,29 @@
             width: 100%;
             height: 240px;
             overflow: hidden;
-            -webkit-tap-highlight-color:rgba(0,0,0,0);
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
-        a:focus, input:focus, p:focus, div:focus{
-            -webkit-tap-highlight-color:rgba(0,0,0,0);
-            -webkit-user-modify:read-write-plaintext-only;
+
+        a:focus, input:focus, p:focus, div:focus {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-user-modify: read-write-plaintext-only;
         }
+
         #app {
             width: 100%;
             height: 240px;
         }
+
         .carousel {
             padding: 12px 12px 0 12px;
             width: calc(100% - 24px);
             height: 228px;
         }
+
         .carousel .el-carousel__container {
             height: 198px;
         }
+
         .carousel .el-carousel__container .image {
             width: 100%;
             height: 198px;
@@ -38,9 +43,9 @@
 </head>
 <body>
 <div id="app">
-    <el-carousel class="carousel" indicator-position="outside" trigger="click" arrow="always">
-        <el-carousel-item v-for="(item, index) in imageList" :key="index">
-            <el-image class="image" :src="item.src" fit="cover" @click="imageClickHandle(index)"></el-image>
+    <el-carousel arrow="always" class="carousel" indicator-position="outside" trigger="click">
+        <el-carousel-item :key="index" v-for="(item, index) in imageList">
+            <el-image :src="item.src" @click="imageClickHandle(index)" class="image" fit="cover"></el-image>
         </el-carousel-item>
     </el-carousel>
 </div>
@@ -58,7 +63,7 @@
         },
         created() {
             const saveTime = localStorage.getItem('time') || 0
-            if (new Date().getTime() - parseInt(saveTime) > 1000*60*60*2)
+            if (new Date().getTime() - parseInt(saveTime) > 1000 * 60 * 60 * 2)
                 this.initData()
             else
                 this.initImageList()
@@ -79,7 +84,7 @@
                         let image = fba.parseDomForHtml(item, 'img&&src')
                         list.push({
                             src: image,
-                            url: 'https://www.gcores.com'+href,
+                            url: 'https://www.gcores.com' + href,
                             type: type,
                             id: id,
                         })
@@ -95,8 +100,12 @@
             imageClickHandle(index) {
                 const bannerItem = this.imageList[index]
                 switch (bannerItem.type) {
-                    case 'albums': bannerItem.url += '#immersiveTheme##noHistory#$$fypage';break
-                    default: bannerItem.url += '#immersiveTheme##noHistory#';break
+                    case 'albums':
+                        bannerItem.url += '#immersiveTheme##noHistory#$$fypage';
+                        break
+                    default:
+                        bannerItem.url += '#immersiveTheme##noHistory#';
+                        break
                 }
 
                 let findRule = 'js:' + $$$.toString(bannerItem => {

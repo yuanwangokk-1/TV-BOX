@@ -68,51 +68,51 @@ const baseParse = _ => {
         roleId = fetch(role_path)
 
         if (cate_select === '1') {
-            let listData = "https://gamedb.gamersky.com/yjwujian/record/getRecentRecords?roleId="+roleId+"&pageIndex="+current_page+"&pageSize=20"
+            let listData = "https://gamedb.gamersky.com/yjwujian/record/getRecentRecords?roleId=" + roleId + "&pageIndex=" + current_page + "&pageSize=20"
             let res_json = fetch(listData)
             let res = JSON.parse(res_json)
             if (res.code === 0) {
                 res.data.list.forEach(item => {
                     d.push({
-                        title: "‘‘’’<strong>#&nbsp;<font color=\"red\">"+item.rank+"</font></strong>",
+                        title: "‘‘’’<strong>#&nbsp;<font color=\"red\">" + item.rank + "</font></strong>",
                         url: "hiker://empty",
                         col_type: 'text_4',
                     })
                     d.push({
                         title: item.battleMode,
-                        pic_url: "https:"+item.battleModeImage+"@Referer=https://www.gamersky.com/",
+                        pic_url: "https:" + item.battleModeImage + "@Referer=https://www.gamersky.com/",
                         url: "hiker://empty",
                         col_type: 'icon_4',
                     })
                     d.push({
                         title: item.hero,
-                        pic_url: "https:"+item.heroImage+"@Referer=https://www.gamersky.com/",
+                        pic_url: "https:" + item.heroImage + "@Referer=https://www.gamersky.com/",
                         url: "hiker://empty",
                         col_type: 'icon_4',
                     })
                     d.push({
                         title: item.grade,
-                        pic_url: "https:"+item.gradeImageUrl+"@Referer=https://www.gamersky.com/",
+                        pic_url: "https:" + item.gradeImageUrl + "@Referer=https://www.gamersky.com/",
                         url: "hiker://empty",
                         col_type: 'icon_4',
                     })
                     d.push({
-                        title: "‘‘’’<strong>分数：&nbsp;<font color=\"red\">"+item.gradeScore+"</font></strong>",
+                        title: "‘‘’’<strong>分数：&nbsp;<font color=\"red\">" + item.gradeScore + "</font></strong>",
                         url: "hiker://empty",
                         col_type: 'text_2',
                     })
                     d.push({
-                        title: "‘‘’’<strong>击杀：&nbsp;<font color=\"red\">"+item.killTimes+"</font></strong>",
+                        title: "‘‘’’<strong>击杀：&nbsp;<font color=\"red\">" + item.killTimes + "</font></strong>",
                         url: "hiker://empty",
                         col_type: 'text_2',
                     })
                     d.push({
-                        title: "‘‘’’<strong>伤害：&nbsp;<font color=\"red\">"+item.damage+"</font></strong>",
+                        title: "‘‘’’<strong>伤害：&nbsp;<font color=\"red\">" + item.damage + "</font></strong>",
                         url: "hiker://empty",
                         col_type: 'text_2',
                     })
                     d.push({
-                        title: "‘‘’’<strong>评分：&nbsp;<font color=\"red\">"+item.performScore+"</font></strong>",
+                        title: "‘‘’’<strong>评分：&nbsp;<font color=\"red\">" + item.performScore + "</font></strong>",
                         url: "hiker://empty",
                         col_type: 'text_2',
                     })
@@ -289,7 +289,7 @@ const baseParse = _ => {
             }
         } else if (cate_select === '3') {
             if (current_page === '1') {
-                let url = "https://gamedb.gamersky.com/yjwujian/hero/getHeroData?roleId="+roleId
+                let url = "https://gamedb.gamersky.com/yjwujian/hero/getHeroData?roleId=" + roleId
                 let res_json = fetch(url)
                 let res = JSON.parse(res_json)
                 let heroBest = res.data.heroBest
@@ -302,13 +302,13 @@ const baseParse = _ => {
                 })
                 d.push({
                     title: heroBest.hero,
-                    desc: "使用率："+heroBest.useRate+"%",
-                    pic_url: "https:"+heroBest.backImage+"@Referer=https://www.gamersky.com/",
-                    url: "https:"+heroBest.backImage+"@Referer=https://www.gamersky.com/",
+                    desc: "使用率：" + heroBest.useRate + "%",
+                    pic_url: "https:" + heroBest.backImage + "@Referer=https://www.gamersky.com/",
+                    url: "https:" + heroBest.backImage + "@Referer=https://www.gamersky.com/",
                     col_type: 'movie_1_left_pic'
                 })
                 d.push({
-                    title: "胜场：" +  heroBest.winRate,
+                    title: "胜场：" + heroBest.winRate,
                     url: "hiker://empty",
                     col_type: 'text_2',
                 })
@@ -338,9 +338,9 @@ const baseParse = _ => {
                 heroList.forEach(hero => {
                     d.push({
                         title: hero.hero,
-                        desc: "使用率："+hero.useRate+"%",
-                        pic_url: "https:"+hero.backImage+"@Referer=https://www.gamersky.com/",
-                        url: "https:"+hero.backImage+"@Referer=https://www.gamersky.com/",
+                        desc: "使用率：" + hero.useRate + "%",
+                        pic_url: "https:" + hero.backImage + "@Referer=https://www.gamersky.com/",
+                        url: "https:" + hero.backImage + "@Referer=https://www.gamersky.com/",
                         col_type: 'movie_1_left_pic'
                     })
                     d.push({
@@ -383,7 +383,7 @@ const baseParse = _ => {
 
 const setRoleId = params => {
     const role_path = "hiker://files/rules/js/TyrantGenesis_永劫无间用户绑定.js"
-    let res_json = fetch("https://gamedb.gamersky.com/yjwujian/search/getSearchResult?serverId=163&roleName="+params.input)
+    let res_json = fetch("https://gamedb.gamersky.com/yjwujian/search/getSearchResult?serverId=163&roleName=" + params.input)
     // let data = fetch(role_path)
     let res = JSON.parse(res_json)
     if (res.code === 0) {
@@ -393,7 +393,7 @@ const setRoleId = params => {
         return 'hiker://empty'
     } else {
         refreshPage(false)
-        return 'toast://'+res.message
+        return 'toast://' + res.message
     }
 }
 
@@ -401,13 +401,13 @@ const resultFormat = result => {
     let secondTime = parseInt(result);// 秒
     let minuteTime = 0;// 分
     let hourTime = 0;// 小时
-    if(secondTime > 60) {//如果秒数大于60，将秒数转换成整数
+    if (secondTime > 60) {//如果秒数大于60，将秒数转换成整数
         //获取分钟，除以60取整数，得到整数分钟
         minuteTime = parseInt(secondTime / 60);
         //获取秒数，秒数取佘，得到整数秒数
         secondTime = parseInt(secondTime % 60);
         //如果分钟大于60，将分钟转换成小时
-        if(minuteTime > 60) {
+        if (minuteTime > 60) {
             //获取小时，获取分钟除以60，得到整数小时
             hourTime = parseInt(minuteTime / 60);
             //获取小时后取佘的分，获取分钟除以60取佘的分
@@ -416,10 +416,10 @@ const resultFormat = result => {
     }
     let time = "" + parseInt(secondTime) + "秒";
 
-    if(minuteTime > 0) {
+    if (minuteTime > 0) {
         time = "" + parseInt(minuteTime) + "分" + time;
     }
-    if(hourTime > 0) {
+    if (hourTime > 0) {
         time = "" + parseInt(hourTime) + "小时" + time;
     }
     return time;

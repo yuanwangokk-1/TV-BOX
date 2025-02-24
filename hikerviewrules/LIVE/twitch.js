@@ -1,15 +1,15 @@
 const baseParse = _ => {
     let d = [];
     const url = MY_URL
-    const header = {'Accept': 'application/vnd.twitchtv.v5+json', 'Client-ID' : '7i8imjlwj0oqyiu3rutgfayf17op3w'}
+    const header = {'Accept': 'application/vnd.twitchtv.v5+json', 'Client-ID': '7i8imjlwj0oqyiu3rutgfayf17op3w'}
     const data_json = fetch(url, {headers: header})
     const list = JSON.parse(data_json).top
     list.forEach(item => {
         d.push({
             title: item.game.name,
-            desc: item.viewers+'人观看',
+            desc: item.viewers + '人观看',
             pic_url: item.game.box.medium,
-            url: "https://api.twitch.tv/kraken/streams/?game="+encodeURIComponent(item.game.name)+"&offset=fypage@-1@*24@&limit=24",
+            url: "https://api.twitch.tv/kraken/streams/?game=" + encodeURIComponent(item.game.name) + "&offset=fypage@-1@*24@&limit=24",
         })
     })
 
@@ -18,7 +18,11 @@ const baseParse = _ => {
 
 const secParse = _ => {
     let d = [];
-    const header = {'Accept': 'application/vnd.twitchtv.v5+json', 'Client-ID' : '7i8imjlwj0oqyiu3rutgfayf17op3w', 'User-Agent': PC_UA}
+    const header = {
+        'Accept': 'application/vnd.twitchtv.v5+json',
+        'Client-ID': '7i8imjlwj0oqyiu3rutgfayf17op3w',
+        'User-Agent': PC_UA
+    }
     const data_json = fetch(MY_URL, {headers: header})
 
     const list = JSON.parse(data_json).streams
@@ -59,11 +63,15 @@ const secParse = _ => {
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.214 Safari/537.36'
                 }
 
-                const data_json = fetch('https://gql.twitch.tv/gql', {headers: headers, method:'POST', body: JSON.stringify(data)})
+                const data_json = fetch('https://gql.twitch.tv/gql', {
+                    headers: headers,
+                    method: 'POST',
+                    body: JSON.stringify(data)
+                })
                 const value = JSON.parse(data_json).data.streamPlaybackAccessToken.value
                 const signature = JSON.parse(data_json).data.streamPlaybackAccessToken.signature
 
-                const stream_url = 'https://usher.ttvnw.net/api/channel/hls/'+rid+'.m3u8' +
+                const stream_url = 'https://usher.ttvnw.net/api/channel/hls/' + rid + '.m3u8' +
                     '?client_id=' + client_id +
                     '&token=' + encodeURIComponent(value) +
                     '&sig=' + signature +
@@ -73,7 +81,7 @@ const secParse = _ => {
                 const playlist = fetch(stream_url)
 
                 const lines = playlist.split('\n');
-                
+
                 if (lines.length < 5) {
                     return "toast://当前主播没有在直播"
                 } else {
@@ -112,13 +120,13 @@ const m3u8Parse = (url, id) => {
     const position = []
     oriM3U8Content.forEach((item, index) => {
         if (item.indexOf('#EXTINF:2.002,Amazon') != -1) {
-            position.push(index+1)
+            position.push(index + 1)
         }
         if (position.indexOf(index) == -1) {
             newM3U8Content.push(item)
         }
     })
 
-    writeFile("hiker://files/cache/TyrantG/twitch_temp_"+id+".m3u8", newM3U8Content.join('\n'))
-    return "file:///storage/emulated/0/Android/data/com.example.hikerview/files/Documents/cache/TyrantG/twitch_temp_"+id+".m3u8"
+    writeFile("hiker://files/cache/TyrantG/twitch_temp_" + id + ".m3u8", newM3U8Content.join('\n'))
+    return "file:///storage/emulated/0/Android/data/com.example.hikerview/files/Documents/cache/TyrantG/twitch_temp_" + id + ".m3u8"
 }

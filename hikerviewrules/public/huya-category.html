@@ -2,9 +2,9 @@
 <html lang="en" xmlns="" xmlns="">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title></title>
-    <link rel="stylesheet" href="https://unpkg.com/vant@2.12/lib/index.css"/>
+    <link href="https://unpkg.com/vant@2.12/lib/index.css" rel="stylesheet"/>
     <script src="https://unpkg.com/vue@2.6/dist/vue.min.js"></script>
     <script src="https://unpkg.com/vant@2.12/lib/vant.min.js"></script>
     <style>
@@ -13,12 +13,15 @@
             height: 45px;
             overflow: scroll;
         }
+
         .tab {
             margin: 4px 6px;
         }
+
         .van-tabs__content {
             margin-top: 10px;
         }
+
         .van-tab__pane {
             height: 64px;
             overflow-y: auto;
@@ -27,8 +30,8 @@
 </head>
 <body>
 <div id="app">
-    <van-tabs class="tab-box" v-model="currentTab" @click="tabClick">
-        <van-tab v-for="(item, index) in category" :key="index" :title="`${item}`"></van-tab>
+    <van-tabs @click="tabClick" class="tab-box" v-model="currentTab">
+        <van-tab :key="index" :title="`${item}`" v-for="(item, index) in category"></van-tab>
     </van-tabs>
 </div>
 <script>

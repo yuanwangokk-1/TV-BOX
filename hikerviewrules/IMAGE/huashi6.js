@@ -13,11 +13,11 @@ const baseParse = _ => {
         },
         {
             title: '新作',
-            url: "https://rt.huashi6.com/front/works/sharelist?index="+page,
+            url: "https://rt.huashi6.com/front/works/sharelist?index=" + page,
         },
         {
             title: '热门',
-            url: "https://rt.huashi6.com/front/works/hotlist?index="+page,
+            url: "https://rt.huashi6.com/front/works/hotlist?index=" + page,
         },
         /*{
             title: '标签',
@@ -29,7 +29,7 @@ const baseParse = _ => {
         },
         {
             title: '推荐画师',
-            url: "https://rt.huashi6.com/front/painter/list?index="+page+"&size=12",
+            url: "https://rt.huashi6.com/front/painter/list?index=" + page + "&size=12",
         },
     ]
     let channels
@@ -44,7 +44,11 @@ const baseParse = _ => {
         channels = JSON.parse(local_channels)
     } else {
         let defaultChannels = [
-            {name: 'wlop', uid: '7168', avatar: 'https://img2.huashi6.com/images/resource/2015/06/24/51h068746p0.jpg?imageView2/1/q/100/interlace/1/w/160/h/160'},
+            {
+                name: 'wlop',
+                uid: '7168',
+                avatar: 'https://img2.huashi6.com/images/resource/2015/06/24/51h068746p0.jpg?imageView2/1/q/100/interlace/1/w/160/h/160'
+            },
         ]
         writeFile(channels_path, JSON.stringify(defaultChannels))
         channels = defaultChannels
@@ -53,7 +57,7 @@ const baseParse = _ => {
     if (parseInt(page) === 1) {
         cateArray.forEach((item, index) => {
             d.push({
-                title: parseInt(cate) === index ? '‘‘’’<strong><font color="red">'+item.title+'</font></strong>' : item.title,
+                title: parseInt(cate) === index ? '‘‘’’<strong><font color="red">' + item.title + '</font></strong>' : item.title,
                 url: $(empty).lazyRule(params => {
                     setItem("cate_select", params.index.toString())
                     refreshPage(true)
@@ -122,9 +126,15 @@ const baseParse = _ => {
                 if (button_show !== '2') {
                     let prefix = ''
                     switch (button_show) {
-                        case '1': prefix = '';break
-                        case '3': prefix = '🔝';break
-                        case '4': prefix = '❌';break
+                        case '1':
+                            prefix = '';
+                            break
+                        case '3':
+                            prefix = '🔝';
+                            break
+                        case '4':
+                            prefix = '❌';
+                            break
                     }
                     if (parseInt(page) === 1) {
                         channels.forEach((channel, index) => {
@@ -164,9 +174,9 @@ const baseParse = _ => {
                 }
 
                 let uid = channels[channel_select].uid
-                let url = "https://rt.huashi6.com/front/works/painter?painterId="+uid+"&index="+page
+                let url = "https://rt.huashi6.com/front/works/painter?painterId=" + uid + "&index=" + page
 
-                let html = fetch(url, {headers:{"User-Agent": PC_UA}})
+                let html = fetch(url, {headers: {"User-Agent": PC_UA}})
 
                 // let list = parseDomForArray(html, '.px-container&&.c-px-waterfall-item')
                 let list = JSON.parse(html).data.datas
@@ -183,9 +193,9 @@ const baseParse = _ => {
                 list.forEach(item => {
                     d.push({
                         title: item.title,
-                        pic_url: "https://img2.huashi6.com/"+item.coverImage.originalPath+'@Referer='+base_url,
-                        url: "https://www.huashi6.com/draw/"+item.id,
-                        desc: item.likeNum+'次喜欢',
+                        pic_url: "https://img2.huashi6.com/" + item.coverImage.originalPath + '@Referer=' + base_url,
+                        url: "https://www.huashi6.com/draw/" + item.id,
+                        desc: item.likeNum + '次喜欢',
                         col_type: 'movie_2'
                     })
                 })
@@ -194,15 +204,15 @@ const baseParse = _ => {
         }
         case '1':
         case '2': {
-            let html = fetch(cateArray[parseInt(cate)].url, {headers:{"User-Agent": PC_UA}})
+            let html = fetch(cateArray[parseInt(cate)].url, {headers: {"User-Agent": PC_UA}})
 
             let list = JSON.parse(html).data.datas
             list.forEach(item => {
                 d.push({
                     title: item.title,
-                    pic_url: "https://img2.huashi6.com/"+item.coverImage.originalPath+'@Referer='+base_url,
-                    url: "https://www.huashi6.com/draw/"+item.id,
-                    desc: item.likeNum+'次喜欢',
+                    pic_url: "https://img2.huashi6.com/" + item.coverImage.originalPath + '@Referer=' + base_url,
+                    url: "https://www.huashi6.com/draw/" + item.id,
+                    desc: item.likeNum + '次喜欢',
                     col_type: 'movie_2'
                 })
             })
@@ -236,19 +246,21 @@ const baseParse = _ => {
                 })
             }*/
             if (parseInt(page) === 1) {
-                let list_json = fetch(cateArray[parseInt(cate)].url, {headers:{
-                    "User-Agent": PC_UA,
-                    // "body": "index=0&size=50",
-                    // "method": "POST"
-                }})
+                let list_json = fetch(cateArray[parseInt(cate)].url, {
+                    headers: {
+                        "User-Agent": PC_UA,
+                        // "body": "index=0&size=50",
+                        // "method": "POST"
+                    }
+                })
 
                 let list = JSON.parse(list_json).data.works.datas
 
                 list.forEach(item => {
                     d.push({
                         title: item.title,
-                        pic_url: "https://img2.huashi6.com/"+item.coverImage.path+'@Referer='+base_url,
-                        url: "https://www.huashi6.com/draw/"+item.id,
+                        pic_url: "https://img2.huashi6.com/" + item.coverImage.path + '@Referer=' + base_url,
+                        url: "https://www.huashi6.com/draw/" + item.id,
                         desc: item.description,
                         col_type: 'movie_2'
                     })
@@ -258,7 +270,7 @@ const baseParse = _ => {
             break
         }
         case '4': {
-            let list_json = fetch(cateArray[parseInt(cate)].url, {headers:{"User-Agent": PC_UA}})
+            let list_json = fetch(cateArray[parseInt(cate)].url, {headers: {"User-Agent": PC_UA}})
 
             let list = JSON.parse(list_json).data.datas
 
@@ -266,12 +278,12 @@ const baseParse = _ => {
                 let userObj = {
                     name: item.name,
                     uid: item.id,
-                    avatar: item.coverImageUrl ? "https://img2.huashi6.com/"+item.coverImageUrl : "https://res2.huashi6.com/static/hst/pc/imgs/default_avatar.d59d546.png"
+                    avatar: item.coverImageUrl ? "https://img2.huashi6.com/" + item.coverImageUrl : "https://res2.huashi6.com/static/hst/pc/imgs/default_avatar.d59d546.png"
                 }
                 d.push({
                     title: userObj.name,
-                    pic_url: userObj.avatar+'@Referer='+base_url,
-                    url: $("https://www.huashi6.com/painter/"+item.id+"?p=fypage##fypage").rule(userObj => {
+                    pic_url: userObj.avatar + '@Referer=' + base_url,
+                    url: $("https://www.huashi6.com/painter/" + item.id + "?p=fypage##fypage").rule(userObj => {
                         eval(fetch('hiker://files/TyrantG/IMAGE/huashi6.js'))
                         userParse(userObj)
                     }, userObj),
@@ -292,12 +304,12 @@ const secParse = _ => {
     let channel_select = getItem("channel_select", "0")
     let channels = JSON.parse(fetch(channels_path))
 
-    let html = fetch(MY_URL, {headers:{"User-Agent": PC_UA}})
+    let html = fetch(MY_URL, {headers: {"User-Agent": PC_UA}})
     let userinfo = parseDomForArray(html, '.detail-painter-info&&a')[0]
 
     let url = parseDomForHtml(userinfo, 'a&&href')
     let url_arr = url.split('/')
-    let uid = url_arr[url_arr.length-1]
+    let uid = url_arr[url_arr.length - 1]
 
     let title = parseDomForHtml(userinfo, 'a&&title')
     let avatar = parseDomForHtml(userinfo, 'img&&src')
@@ -310,8 +322,8 @@ const secParse = _ => {
 
     d.push({
         title: title,
-        pic_url: avatar+'@Referer='+base_url,
-        url: $(url+"?p=fypage##fypage").rule(userObj => {
+        pic_url: avatar + '@Referer=' + base_url,
+        url: $(url + "?p=fypage##fypage").rule(userObj => {
             eval(fetch('hiker://files/TyrantG/IMAGE/huashi6.js'))
             userParse(userObj)
         }, userObj),
@@ -354,18 +366,18 @@ const secParse = _ => {
         col_type: 'blank_block'
     })
 
-    let list = fetch("https://rt.huashi6.com/front/works/detail?id="+MY_URL.split('/').pop())
+    let list = fetch("https://rt.huashi6.com/front/works/detail?id=" + MY_URL.split('/').pop())
     const data = JSON.parse(list).data
     setPageTitle(data.title)
     let images = data.images
 
     images.forEach(item => {
-         d.push({
-             pic_url: "https://img2.huashi6.com/"+item.originalPath+'@Referer='+base_url,
-             url: "https://img2.huashi6.com/"+item.originalPath+'@Referer='+base_url,
-             col_type: 'pic_1_full'
-         })
-     })
+        d.push({
+            pic_url: "https://img2.huashi6.com/" + item.originalPath + '@Referer=' + base_url,
+            url: "https://img2.huashi6.com/" + item.originalPath + '@Referer=' + base_url,
+            col_type: 'pic_1_full'
+        })
+    })
 
     setResult(d);
 }
@@ -419,9 +431,9 @@ const userParse = userObj => {
         })
     }
 
-    let api_url = "https://rt.huashi6.com/front/works/painter?painterId="+userObj.uid+"&index="+page
+    let api_url = "https://rt.huashi6.com/front/works/painter?painterId=" + userObj.uid + "&index=" + page
 
-    let html = fetch(api_url, {headers:{"User-Agent": PC_UA}})
+    let html = fetch(api_url, {headers: {"User-Agent": PC_UA}})
 
     // let list = parseDomForArray(html, '.px-container&&.c-px-waterfall-item')
     let list = JSON.parse(html).data.datas
@@ -429,12 +441,12 @@ const userParse = userObj => {
     list.forEach(item => {
         d.push({
             title: item.title,
-            pic_url: "https://img2.huashi6.com/"+item.coverImage.originalPath+'@Referer='+base_url,
-            url: $("https://www.huashi6.com/draw/"+item.id).rule(_ => {
+            pic_url: "https://img2.huashi6.com/" + item.coverImage.originalPath + '@Referer=' + base_url,
+            url: $("https://www.huashi6.com/draw/" + item.id).rule(_ => {
                 eval(fetch('hiker://files/TyrantG/IMAGE/huashi6.js'))
                 secParse()
             }),
-            desc: item.likeNum+'次喜欢',
+            desc: item.likeNum + '次喜欢',
             col_type: 'movie_2'
         })
     })
@@ -449,8 +461,8 @@ const searchParse = _ => {
     list.forEach(item => {
         d.push({
             title: item.title,
-            pic_url: "https://img2.huashi6.com/"+item.coverImage.path+'@Referer='+base_url,
-            url: "https://www.huashi6.com/draw/"+item.id,
+            pic_url: "https://img2.huashi6.com/" + item.coverImage.path + '@Referer=' + base_url,
+            url: "https://www.huashi6.com/draw/" + item.id,
             desc: item.description,
             col_type: 'movie_2'
         })

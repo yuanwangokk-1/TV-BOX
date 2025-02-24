@@ -6,7 +6,7 @@ const baseParse = _ => {
 
     let init_cate = []
 
-    for (let i = 0; i < 5; i ++) {
+    for (let i = 0; i < 5; i++) {
         init_cate.push("0")
     }
 
@@ -14,7 +14,7 @@ const baseParse = _ => {
     const cate_temp_json = getVar("tg.xl.category", JSON.stringify(init_cate))
     let cate_temp = JSON.parse(cate_temp_json)
 
-    if (! current_url) {
+    if (!current_url) {
         const ori_html = fetch(MY_URL, {headers: {"User-Agent": PC_UA}})
         let top_temp = pdfa(ori_html, '.nav&&ul&&li')
         const true_url = parseDom(top_temp[1], 'a&&href')
@@ -22,7 +22,7 @@ const baseParse = _ => {
         current_url = true_url
     }
 
-    current_url = current_url.replace(/\d\.html/, current_page+'.html')
+    current_url = current_url.replace(/\d\.html/, current_page + '.html')
 
     const html = fetch(current_url, {headers: {"User-Agent": PC_UA}})
     let top_cate = pdfa(html, '.nav&&ul&&li')
@@ -33,7 +33,7 @@ const baseParse = _ => {
 
     if (parseInt(current_page) === 1) {
         d.push({
-            title: fold === '1' ?  '““””<b><span style="color: #FF0000">∨</span></b>': '““””<b><span style="color: #1aad19">∧</span></b>',
+            title: fold === '1' ? '““””<b><span style="color: #FF0000">∨</span></b>' : '““””<b><span style="color: #1aad19">∧</span></b>',
             url: $("hiker://empty").lazyRule((fold) => {
                 putVar("tg.xl.fold", fold === '1' ? '0' : '1');
                 refreshPage(false);
@@ -46,7 +46,7 @@ const baseParse = _ => {
             let title = pdfh(item, 'a&&Text')
             let url = parseDom(item, 'a&&href')
             d.push({
-                title: cate_temp[0] === index.toString() ?  '““””<b><span style="color: #FF0000">'+title+'</span></b>': title,
+                title: cate_temp[0] === index.toString() ? '““””<b><span style="color: #FF0000">' + title + '</span></b>' : title,
                 url: $(url).lazyRule(params => {
                     let new_cate = []
                     params.cate_temp.forEach(item => new_cate.push('0'))
@@ -63,7 +63,7 @@ const baseParse = _ => {
             })
         })
         d.push({
-            col_type:"blank_block"
+            col_type: "blank_block"
         })
 
         if (fold === '1') {
@@ -73,9 +73,9 @@ const baseParse = _ => {
                     let title = pdfh(item, 'a&&Text')
                     let url = parseDom(item, 'a&&href')
                     d.push({
-                        title: key.toString() === cate_temp[index+1]? '““””<b><span style="color: #FF0000">'+title+'</span></b>' : title,
+                        title: key.toString() === cate_temp[index + 1] ? '““””<b><span style="color: #FF0000">' + title + '</span></b>' : title,
                         url: $(url).lazyRule((params) => {
-                            params.cate_temp[params.index+1] = params.key.toString()
+                            params.cate_temp[params.index + 1] = params.key.toString()
                             putVar("tg.xl.category", JSON.stringify(params.cate_temp))
                             putVar("tg.xl.true_url", input)
                             refreshPage(true)
@@ -89,7 +89,7 @@ const baseParse = _ => {
                     })
                 })
                 d.push({
-                    col_type:"blank_block"
+                    col_type: "blank_block"
                 })
             })
         }
@@ -101,8 +101,8 @@ const baseParse = _ => {
         d.push({
             title: pdfh(item, 'h3&&a&&Text'),
             desc: pdfh(item, '.bottom&&Text'),
-            pic_url: pdfh(item, 'img&&src')+"@Referer=",
-            url: parseDom(item, 'h3&&a&&href')+'#immersiveTheme#',
+            pic_url: pdfh(item, 'img&&src') + "@Referer=",
+            url: parseDom(item, 'h3&&a&&href') + '#immersiveTheme#',
             col_type: 'movie_3_marquee',
         })
     })
@@ -120,7 +120,7 @@ const secParse = _ => {
         {
             title: pdfh(video_info, 'h1&&Text'),
             desc: pdfh(video_info, '.movie-introduce&&Text'),
-            pic_url: pdfh(video_info, 'img&&src')+"@Referer=http://www.xiletv.com/",
+            pic_url: pdfh(video_info, 'img&&src') + "@Referer=http://www.xiletv.com/",
             url: MY_URL,
             col_type: 'movie_1_vertical_pic_blur'
         },

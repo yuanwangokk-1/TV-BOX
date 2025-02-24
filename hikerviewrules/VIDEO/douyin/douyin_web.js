@@ -46,8 +46,8 @@ const douyin = {
         let data_json = fetch(url, {
             method: e.method,
             headers: {
-                "referer" : "https://www.douyin.com/",
-                "origin" : "https://www.douyin.com",
+                "referer": "https://www.douyin.com/",
+                "origin": "https://www.douyin.com",
                 "cookie": cookie_content,
                 "Accept": 'application/json, text/plain, */*',
                 "User-Agent": douyin.ua,
@@ -65,12 +65,17 @@ const douyin = {
                 channels = JSON.parse(local_channels)
             } else {
                 let defaultChannels = [
-                    {title: '长期洗涤Longwashing', sec_uid: 'MS4wLjABAAAAG6rxkrEV5bnuXAL1K8uiY8dZKkFBLszhYw1nm5_ohIQ', avatar_url: 'https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_f8826b2fe246913f696a2ca94a832e23~c5_300x300.jpeg?from=2956013662'}
+                    {
+                        title: '长期洗涤Longwashing',
+                        sec_uid: 'MS4wLjABAAAAG6rxkrEV5bnuXAL1K8uiY8dZKkFBLszhYw1nm5_ohIQ',
+                        avatar_url: 'https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_f8826b2fe246913f696a2ca94a832e23~c5_300x300.jpeg?from=2956013662'
+                    }
                 ]
                 writeFile(douyin.files.channels, JSON.stringify(defaultChannels))
                 channels = defaultChannels
             }
-        } catch (e){}
+        } catch (e) {
+        }
 
         return channels
     },
@@ -86,7 +91,7 @@ const douyin = {
 
             if (page === 1) {
                 douyin.d.push({
-                    url: $(douyin.empty+"#fullTheme#$$fypage").rule(() => {
+                    url: $(douyin.empty + "#fullTheme#$$fypage").rule(() => {
                         const douyin = $.require('hiker://page/douyin')
 
                         setResult(douyin.d)
@@ -111,7 +116,7 @@ const douyin = {
                         }, index.toString())
                     }
                     douyin.d.push({
-                        title: douyin.data.tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">'+item.title+'</font></strong>' : item.title,
+                        title: douyin.data.tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">' + item.title + '</font></strong>' : item.title,
                         url: url,
                         col_type: 'scroll_button',
                     })
@@ -126,7 +131,7 @@ const douyin = {
                     if (page === 1) {
                         douyin.variable.feedTab.forEach((tab, index) => {
                             douyin.d.push({
-                                title: douyin.data.feed_tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">'+tab.title+'</font></strong>' : tab.title,
+                                title: douyin.data.feed_tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">' + tab.title + '</font></strong>' : tab.title,
                                 url: $(douyin.empty).lazyRule((index) => {
                                     putMyVar('tg.dy_web.class.feed_tab_selected', index)
                                     refreshPage(false)
@@ -142,8 +147,8 @@ const douyin = {
                     if (page === 1) {
                         let html = fetch(douyin.data.live_url, {
                             headers: {
-                                "referer" : "https://www.douyin.com/",
-                                "origin" : "https://www.douyin.com",
+                                "referer": "https://www.douyin.com/",
+                                "origin": "https://www.douyin.com",
                                 "cookie": cookie_content,
                                 "Accept": 'application/json, text/plain, */*',
                                 "User-Agent": douyin.ua,
@@ -157,7 +162,7 @@ const douyin = {
                             let title = pdfh(tab, 'a&&Text')
                             let tab_url = douyin.variable.live + pdfh(tab, 'a&&href')
                             douyin.d.push({
-                                title: douyin.data.live_1st_tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">'+title+'</font></strong>' : title,
+                                title: douyin.data.live_1st_tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">' + title + '</font></strong>' : title,
                                 url: $(douyin.empty).lazyRule((index, tab_url) => {
                                     putMyVar('tg.dy_web.class.live_1st_tab_selected', index)
                                     putMyVar('tg.dy_web.class.live_2nd_tab_selected', '0')
@@ -175,7 +180,7 @@ const douyin = {
                             let title = pdfh(tab, 'a&&Text')
                             let tab_url = douyin.variable.live + pdfh(tab, 'a&&href')
                             douyin.d.push({
-                                title: douyin.data.live_2nd_tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">'+title+'</font></strong>' : title,
+                                title: douyin.data.live_2nd_tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">' + title + '</font></strong>' : title,
                                 url: $(douyin.empty).lazyRule((index, tab_url) => {
                                     putMyVar('tg.dy_web.class.live_2nd_tab_selected', index)
                                     putMyVar('tg.dy_web.url.live_url', tab_url)
@@ -244,12 +249,12 @@ const douyin = {
                         })
 
                         douyin.d.push({
-                            col_type:"blank_block"
+                            col_type: "blank_block"
                         })
 
-                        let html = fetch(douyin.variable.host+'/user/'+sec_uid, {
+                        let html = fetch(douyin.variable.host + '/user/' + sec_uid, {
                             headers: {
-                                "referer" : "https://www.douyin.com/",
+                                "referer": "https://www.douyin.com/",
                                 "cookie": cookie_content,
                                 "Accept": 'application/json, text/plain, */*',
                                 "User-Agent": douyin.ua,
@@ -257,14 +262,15 @@ const douyin = {
                         })
                         try {
                             putMyVar("tg.dy_web.page.max_cursor", html.match(/%22maxCursor%22%3A(.*?)%2C%22logPb/)[1])
-                        }catch(e){}
+                        } catch (e) {
+                        }
                     }
                     douyin.userPostList(sec_uid, page, douyin.data.max_cursor)
                     break
                 case 3:
-                    let html = fetch(douyin.variable.host+'/user/self', {
+                    let html = fetch(douyin.variable.host + '/user/self', {
                         headers: {
-                            "referer" : "https://www.douyin.com/",
+                            "referer": "https://www.douyin.com/",
                             "cookie": cookie_content,
                             "Accept": 'application/json, text/plain, */*',
                             "User-Agent": douyin.ua,
@@ -275,7 +281,8 @@ const douyin = {
                         let user_id = html.match(/user_id%22%3A%22(.*?)%22%2C%22/)[1]
                         let sec_user_id = html.match(/secUid%22%3A%22(.*?)%22%2C%22shortId/)[1]
                         douyin.followingList(user_id, sec_user_id, page)
-                    }catch(e){}
+                    } catch (e) {
+                    }
             }
 
         } else {
@@ -352,8 +359,8 @@ const douyin = {
         if (page === 1) {
             let html = fetch(douyin.data.live_url, {
                 headers: {
-                    "referer" : douyin.data.live_url,
-                    "origin" : douyin.data.live_url,
+                    "referer": douyin.data.live_url,
+                    "origin": douyin.data.live_url,
                     // "cookie": cookie_content,
                     "Accept": 'application/json, text/plain, */*',
                     "User-Agent": douyin.ua,
@@ -367,7 +374,7 @@ const douyin = {
                 let title = pdfh(tab, 'a&&Text')
                 let tab_url = douyin.variable.live + pdfh(tab, 'a&&href')
                 douyin.d.push({
-                    title: douyin.data.live_1st_tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">'+title+'</font></strong>' : title,
+                    title: douyin.data.live_1st_tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">' + title + '</font></strong>' : title,
                     url: $(douyin.empty).lazyRule((index, tab_url) => {
                         putMyVar('tg.dy_web.class.live_1st_tab_selected', index)
                         putMyVar('tg.dy_web.class.live_2nd_tab_selected', '0')
@@ -385,7 +392,7 @@ const douyin = {
                 let title = pdfh(tab, 'a&&Text')
                 let tab_url = douyin.variable.live + pdfh(tab, 'a&&href')
                 douyin.d.push({
-                    title: douyin.data.live_2nd_tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">'+title+'</font></strong>' : title,
+                    title: douyin.data.live_2nd_tab_selected === index.toString() ? '‘‘’’<strong><font color="#5FCC97">' + title + '</font></strong>' : title,
                     url: $(douyin.empty).lazyRule((index, tab_url) => {
                         putMyVar('tg.dy_web.class.live_2nd_tab_selected', index)
                         putMyVar('tg.dy_web.url.live_url', tab_url)
@@ -476,7 +483,7 @@ const douyin = {
 
         let data_json = douyin.request(e)
 
-        if (! data_json) {
+        if (!data_json) {
             douyin.d.push({
                 title: 'cookie失效，请到设置里清除cookie并重新登录',
                 col_type: "long_text",
@@ -490,7 +497,7 @@ const douyin = {
                             title: item.desc,
                             pic_url: item.video.cover.url_list[0],
                             desc: item.author.nickname,
-                            url: item.video.play_addr.url_list[0] + "#isVideo=true#;{Cookie@"+cookie_content.replace(/;/g, '；；')+"}",
+                            url: item.video.play_addr.url_list[0] + "#isVideo=true#;{Cookie@" + cookie_content.replace(/;/g, '；；') + "}",
                             col_type: 'movie_2',
                         })
                     }
@@ -515,7 +522,7 @@ const douyin = {
                 "partition_type": type,
                 "req_from": 2,
                 "count": 48,
-                "offset": (page-1)*48,
+                "offset": (page - 1) * 48,
                 "cookie_enabled": true,
                 "screen_width": 1920,
                 "screen_height": 1080,
@@ -526,7 +533,7 @@ const douyin = {
 
         let data_json = douyin.request(e)
 
-        if (! data_json) {
+        if (!data_json) {
             douyin.d.push({
                 title: 'cookie失效，请到设置里清除cookie并重新登录',
                 col_type: "long_text",
@@ -558,33 +565,33 @@ const douyin = {
                 "withCredentials": true
             },
             "params": {
-                "device_platform":"webapp",
-                "aid":6383,
-                "channel":"channel_pc_web",
-                "search_channel":"aweme_video_web",
-                "publish_video_strategy_type":"2",
-                "sec_user_id":uid,
+                "device_platform": "webapp",
+                "aid": 6383,
+                "channel": "channel_pc_web",
+                "search_channel": "aweme_video_web",
+                "publish_video_strategy_type": "2",
+                "sec_user_id": uid,
                 // "max_cursor":max_cursor,
-                "search_source":"normal_search",
-                "query_correct_type":"1",
-                "is_filter_search":"0",
-                "count":10,
-                "version_code":"160100",
-                "version_name":"16.1.0",
-                "cookie_enabled":true,
-                "screen_width":1280,
-                "screen_height":720,
-                "browser_language":"zh-CN",
-                "browser_platform":"Win32",
-                "browser_name":"Mozilla",
-                "browser_version":"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
-                "browser_online":true
+                "search_source": "normal_search",
+                "query_correct_type": "1",
+                "is_filter_search": "0",
+                "count": 10,
+                "version_code": "160100",
+                "version_name": "16.1.0",
+                "cookie_enabled": true,
+                "screen_width": 1280,
+                "screen_height": 720,
+                "browser_language": "zh-CN",
+                "browser_platform": "Win32",
+                "browser_name": "Mozilla",
+                "browser_version": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36",
+                "browser_online": true
             },
         }
 
         let data_json = douyin.request(e)
 
-        if (! data_json) {
+        if (!data_json) {
             douyin.d.push({
                 title: 'cookie失效，请到设置里清除cookie并重新登录',
                 col_type: "long_text",
@@ -622,7 +629,7 @@ const douyin = {
                 "user_id": user_id,
                 "sec_user_id": sec_user_id,
                 "count": 1000,
-                "offset": (page-1)*1000,
+                "offset": (page - 1) * 1000,
                 "min_time": 0,
                 "max_time": 0,
                 "source_type": 4,
@@ -643,7 +650,7 @@ const douyin = {
 
         let data_json = douyin.request(e)
 
-        if (! data_json) {
+        if (!data_json) {
             douyin.d.push({
                 title: 'cookie失效，请到设置里清除cookie并重新登录',
                 col_type: "long_text",

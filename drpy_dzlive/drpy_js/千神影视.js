@@ -39,7 +39,7 @@ var rule = {
         input = {parse: 1, url: input, js: ''};
     }),
     double: true,
-    limit:20,
+    limit: 20,
     推荐: '.vodlist_item;.vodlist_thumb;*;*;*;*',
     一级: 'ul.vodlist&&li;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
     二级: {
