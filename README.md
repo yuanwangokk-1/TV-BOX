@@ -4,5 +4,5 @@
 TV-BOX 在线订阅地址：
 
 ```
-https://ghfast.top/https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/refs/heads/main/pg/jsm.json
+https://raw.githubusercontent.com/yuanwangokk-1/TV-BOX/refs/heads/main/pg/jsm.json
 ```

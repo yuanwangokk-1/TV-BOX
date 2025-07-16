@@ -698,7 +698,6 @@
       "filterable": 1,
       "searchable": 1,
       "quickSearch": 1,
-      "searchable": 1,
       "timeout": 60,
       "ext": "./lib/tokenm.json$$$https://www.xlys01.com/$$$noproxy$$$1"
     },
