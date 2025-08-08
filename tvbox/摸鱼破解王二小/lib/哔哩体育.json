@@ -1,0 +1,55 @@
+{
+  "classes": [
+{"type_name": "UFC","type_id": "UFC"},
+{"type_name": "田径","type_id": "田径"},
+{"type_name": "赛艇","type_id": "赛艇"},
+{"type_name": "拳击","type_id": "拳击"},
+{"type_name": "皮划艇","type_id": "皮划艇赛事"},
+{"type_name": "自行车","type_id": "自行车赛事"},
+{"type_name": "击剑","type_id": "击剑"},
+{"type_name": "体操","type_id": "体操"},
+{"type_name": "举重","type_id": "举重"},
+{"type_name": "柔道","type_id": "柔道"},
+{"type_name": "藤球","type_id": "藤球"},
+{"type_name": "摔跤","type_id": "摔跤"},
+{"type_name": "水上项目","type_id": "水上项目"},
+{"type_name": "现代五项","type_id": "现代五项"},
+{"type_name": "马术","type_id": "马术"},
+{"type_name": "跆拳道","type_id": "跆拳道"},
+{"type_name": "射击","type_id": "射击"},
+{"type_name": "射箭","type_id": "射箭"},
+{"type_name": "铁人三项","type_id": "铁人三项"},
+{"type_name": "帆船帆板","type_id": "帆船帆板"}
+  ],
+ "cookie": "http://127.0.0.1:9978/file/TVBox/Bilibili/cookie.txt",
+  
+  "filter": {
+   
+    "击剑": [
+{"key": "tid","name": "分类","value": [
+{"n": "全部","v": "0"},
+{"n": "花剑","v": "花剑"},
+{"n": "重剑","v": "重剑"},
+{"n": "佩剑","v": "佩剑"}
+          ]},
+{"key": "duration","name": "时长","value": [
+{"n": "全部","v": "0"},
+{"n": "60分钟以上","v": "4"},
+{"n": "30~60分钟","v": "3"},
+{"n": "10~30分钟","v": "2"},
+{"n": "10分钟以下","v": "1"}]}],
+
+ "篮球": [
+{"key": "tid","name": "分类","value": [
+{"n": "全部","v": "0"},
+{"n": "篮球比赛","v": "篮球比赛"},
+{"n": "篮球教学","v": "篮球教学"},
+{"n": "篮球特技","v": "篮球特技"},
+{"n": "最佳进球","v": "篮球最佳进球"}]},
+{"key": "duration","name": "时长","value": [
+{"n": "全部","v": "0"},
+{"n": "60分钟以上","v": "4"},
+{"n": "30~60分钟","v": "3"},
+{"n": "10~30分钟","v": "2"},
+{"n": "10分钟以下","v": "1"}]}]
+  }}

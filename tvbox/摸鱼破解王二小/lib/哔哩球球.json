@@ -1,0 +1,106 @@
+{
+  "classes": [
+{"type_name": "足球","type_id": "足球"},
+{"type_name": "手球","type_id": "手球"},
+{"type_name": "篮球","type_id": "篮球"},
+{"type_name": "排球","type_id": "排球"},
+{"type_name": "羽毛球","type_id": "羽毛球"},
+{"type_name": "网球","type_id": "网球"},
+{"type_name": "高尔夫球","type_id": "高尔夫球"},
+{"type_name": "冰球","type_id": "冰球"},
+{"type_name": "沙滩排球","type_id": "沙滩排球"},
+{"type_name": "棒球","type_id": "棒球"},
+{"type_name": "垒球","type_id": "垒球"},
+{"type_name": "藤球","type_id": "藤球"},
+{"type_name": "毽球","type_id": "毽球"},
+{"type_name": "乒乓球","type_id": "乒乓球"},
+{"type_name": "台球","type_id": "台球"},
+{"type_name": "鞠蹴","type_id": "鞠蹴"},
+{"type_name": "板球","type_id": "板球"},
+{"type_name": "壁球","type_id": "壁球"},
+{"type_name": "砂壶","type_id": "砂壶"},
+{"type_name": "冰壶","type_id": "冰壶"},
+{"type_name": "克郎球","type_id": "克郎球"},
+{"type_name": "橄榄球","type_id": "橄榄球"},
+{"type_name": "曲棍球","type_id": "曲棍球"},
+{"type_name": "水球","type_id": "水球"},
+{"type_name": "马球","type_id": "马球"},
+{"type_name": "保龄球","type_id": "保龄球"},
+{"type_name": "健身球","type_id": "健身球"},
+{"type_name": "门球","type_id": "门球"},
+{"type_name": "弹球","type_id": "弹球"}
+  ],
+  
+  "cookie": "http://127.0.0.1:9978/file/TVBox/Bilibili/cookie.txt",
+   //"cookie":"_uuid=5E4B2B98-1014A-84D8-FA33-EC210C5BEC10DA82367infoc; buvid3=E9D0A426-85E9-E6C7-C75E-206A3E1BEB4D81910infoc; b_nut=1666168082; buvid4=4FC87B9C-3540-2275-688C-8612D3EA719B81910-022101916-ZLe640jXRAMHySuaCe9aUw==; rpdid=|(k|u)YYm)uY0J'uYYYuY)uuu; i-wanna-go-back=-1; fingerprint=9c214a6da0197a48e576ccf22e9f0ac7; buvid_fp_plain=undefined; nostalgia_conf=-1; DedeUserID=3493076028885079; DedeUserID__ckMd5=60a8757a1f4d6ae9; buvid_fp=9c214a6da0197a48e576ccf22e9f0ac7; CURRENT_QUALITY=80; b_ut=5; PVID=2; bp_video_offset_3493076028885079=undefined; bsource=search_google; SESSDATA=42b8ada6,1683277266,4bd05*b2; bili_jct=2dbe39aea02b41324395630a24d4775f; sid=89gnel66; innersign=0; b_lsid=9EF63922_1844D55A286; CURRENT_FNVAL=4048",
+  
+  "filter":{
+  "乒乓球": [
+{"key": "tid","name": "分类","value": [
+{"n": "全部","v": "0"},
+{"n": "乒乓球比赛","v": "乒乓球比赛"},
+{"n": "乒乓球教学","v": "乒乓球教学"},
+{"n": "乒乓球特技","v": "乒乓球特技"}
+     ]},
+{"key": "duration","name": "时长","value": [
+{"n": "全部","v": "0"},
+{"n": "60分钟以上","v": "4"},
+{"n": "30~60分钟","v": "3"},
+{"n": "10~30分钟","v": "2"},
+{"n": "10分钟以下","v": "1"}]}
+    ],
+  
+   
+    "足球": [
+{"key": "tid","name": "分类","value": [
+{"n": "全部","v": "0"},
+{"n": "足球比赛","v": "足球比赛"},
+{"n": "足球教学","v": "足球教学"},
+{"n": "足球特技","v": "足球特技"},
+{"n": "最佳进球","v": "足球最佳进球"}]},
+{"key": "duration","name": "时长","value": [
+{"n": "全部","v": "0"},
+{"n": "60分钟以上","v": "4"},
+{"n": "30~60分钟","v": "3"},
+{"n": "10~30分钟","v": "2"},
+{"n": "10分钟以下","v": "1"}]}
+    ],
+
+ "篮球": [
+{"key": "tid","name": "分类","value": [
+{"n": "全部","v": "0"},
+{"n": "篮球比赛","v": "篮球比赛"},
+{"n": "篮球教学","v": "篮球教学"},
+{"n": "篮球特技","v": "篮球特技"},
+{"n": "最佳进球","v": "篮球最佳进球"}]},
+{"key": "duration","name": "时长","value": [
+{"n": "全部","v": "0"},
+{"n": "60分钟以上","v": "4"},
+{"n": "30~60分钟","v": "3"},
+{"n": "10~30分钟","v": "2"},
+{"n": "10分钟以下","v": "1"}]}
+    ],
+
+ "羽毛球": [
+{"key": "tid","name": "分类","value": [
+{"n": "全部","v": "0"},
+{"n": "羽毛球比赛","v": "羽毛球比赛"},
+{"n": "羽毛球教学","v": "羽毛球教学"},
+{"n": "羽毛球特技","v": "羽毛球特技"},
+{"n": "高远球","v": "羽毛球高远球教学"},
+{"n": "杀球","v": "羽毛球杀球教学"},
+{"n": "劈吊","v": "羽毛球劈吊教学"},
+{"n": "反手","v": "羽毛球反手教学"},
+{"n": "吊球","v": "羽毛球吊球教学"},
+{"n": "勾对角","v": "羽毛球勾对角教学"},
+{"n": "步伐","v": "羽毛球步伐教学"},
+{"n": "最佳TOP10","v": "羽毛球最佳TOP10"}]},
+{"key": "duration","name": "时长","value": [
+{"n": "全部","v": "0"},
+{"n": "60分钟以上","v": "4"},
+{"n": "30~60分钟","v": "3"},
+{"n": "10~30分钟","v": "2"},
+{"n": "10分钟以下","v": "1"}]}
+    ]
+  }
+}

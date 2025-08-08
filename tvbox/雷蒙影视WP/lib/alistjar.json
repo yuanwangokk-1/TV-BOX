@@ -1,0 +1,9 @@
+{"drives":[
+{"name":"小雅1","search":true,"searchable":true,"server":"http://220.172.60.115:5678/"},
+{"name":"小雅2","search":true,"searchable":true,"server":"http://119.164.196.238:5000/"},
+{"name":"小雅3","search":true,"searchable":true,"server":"http://106.54.204.122:5678/"},
+{"name":"小雅4","search":true,"searchable":true,"server":"http://39.69.205.102:4567/"},
+{"name":"小雅5","search":true,"searchable":true,"server":"http://61.171.117.162:8003/"}
+],
+"danmu":true
+}
