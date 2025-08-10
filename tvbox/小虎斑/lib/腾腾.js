@@ -25,10 +25,10 @@ globalThis.vod1 = function (ids) {
             }
         },
         headers: {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36',
-    'Content-Type': 'application/json',
-    'origin': 'https://v.qq.com',
-    'referer': 'https://v.qq.com/'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36',
+            'Content-Type': 'application/json',
+            'origin': 'https://v.qq.com',
+            'referer': 'https://v.qq.com/'
         },
         'method': 'POST'
     }, true);
@@ -42,7 +42,7 @@ var rule = {
     detailUrl: 'https://node.video.%71%71.com/x/api/float_vinfo2?cid=fyid',
     searchUrl: '/x/search/?q=**&stag=fypage',
     searchUrl: 'https://pbaccess.video.%71%71.com/trpc.videosearch.smartboxServer.HttpRountRecall/Smartbox?query=**&appID=3172&appKey=lGhFIPeD3HsO9xEp&pageNum=(fypage-1)&pageSize=10',
-    searchUrl:'**',
+    searchUrl: '**',
     searchable: 2,
     filterable: 1,
     multi: 1,
@@ -706,35 +706,35 @@ var rule = {
             log(bata)
             if (bata.url.includes("http")) {
                 input = {
-           header: {
-                    'User-Agent': ""
-                   },
+                    header: {
+                        'User-Agent': ""
+                    },
                     parse: 0,
                     url: bata.url,
                     jx: 0,
-                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
                 };
-            }else {
-                
+            } else {
+
                 input = {
-           header: {
-                    'User-Agent': ""
-                   },
+                    header: {
+                        'User-Agent': ""
+                    },
                     parse: 0,
                     url: input.split("?")[0],
                     jx: 1,
-                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
                 };
             }
         } catch {
             input = {
-           header: {
+                header: {
                     'User-Agent': ""
-                   },
+                },
                 parse: 0,
                 url: input.split("?")[0],
                 jx: 1,
-                danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
             };
         }
     }),
@@ -772,11 +772,11 @@ var rule = {
         if (/get_playsource/.test(input)) {
             eval(html);
             let indexList = QZOutputJson.PlaylistItem.indexList;
-            indexList.forEach(function(it) {
+            indexList.forEach(function (it) {
                 let dataUrl = "https://s.video.qq.com/get_playsource?id=" + sourceId + "&plat=2&type=4&data_type=3&range=" + it + "&video_type=10&plname=qq&otype=json";
                 eval(fetch(dataUrl, fetch_params));
                 let vdata = QZOutputJson.PlaylistItem.videoPlayList;
-                vdata.forEach(function(item) {
+                vdata.forEach(function (item) {
                     d.push({
                         title: item.title,
                         pic_url: item.pic,
@@ -801,11 +801,11 @@ var rule = {
                 for (let i = 0; i < video_lists.length; i += 30) {
                     video_list.push(video_lists.slice(i, i + 30))
                 }
-                video_list.forEach(function(it, idex) {
+                video_list.forEach(function (it, idex) {
                     let o_url = "https://union.video.qq.com/fcgi-bin/data?otype=json&tid=1804&appid=20001238&appkey=6c03bbe9658448a4&union_platform=1&idlist=" + it.join(",");
                     let o_html = fetch(o_url, fetch_params);
                     eval(o_html);
-                    QZOutputJson.results.forEach(function(it1) {
+                    QZOutputJson.results.forEach(function (it1) {
                         it1 = it1.fields;
                         let url = "https://v.qq.com/x/cover/" + cid + "/" + it1.vid + ".html";
                         d.push({
@@ -819,17 +819,17 @@ var rule = {
                 })
             }
         }
-        let yg = d.filter(function(it) {
+        let yg = d.filter(function (it) {
             return it.type && it.type !== "正片"
         });
-        let zp = d.filter(function(it) {
+        let zp = d.filter(function (it) {
             return !(it.type && it.type !== "正片")
         });
         VOD.vod_play_from = yg.length < 1 ? "qq" : "qq$$$qq 预告及花絮";
-        VOD.vod_play_url = yg.length < 1 ? d.map(function(it) {
+        VOD.vod_play_url = yg.length < 1 ? d.map(function (it) {
             return it.title + "$" + it.url
-        }).join("#") : [zp, yg].map(function(it) {
-            return it.map(function(its) {
+        }).join("#") : [zp, yg].map(function (it) {
+            return it.map(function (its) {
                 return its.title + "$" + its.url
             }).join("#")
         }).join("$$$");
@@ -842,7 +842,7 @@ var rule = {
         let html = request(input);
         let baseList = pdfa(html, "body&&.result_item_v");
         log(baseList.length);
-        baseList.forEach(function(it) {
+        baseList.forEach(function (it) {
             let longText = pdfh(it, ".result_title&&a&&Text");
             let shortText = pdfh(it, ".type&&Text");
             let fromTag = pdfh(it, ".result_source&&Text");
@@ -888,47 +888,47 @@ var rule = {
         }
         setResult(d);
     }),
-       搜索: $js.toString(() => {
+    搜索: $js.toString(() => {
         let d = [];
         let mame = (input.split("/")[3]);
         let html = vod1(input.split("/")[3]);
         let json = JSON.parse(html);
-        
-        let list =json.data.normalList.itemList;
-        console.log(json); 
+
+        let list = json.data.normalList.itemList;
+        console.log(json);
         log(list[0].videoInfo.title);
-        list.forEach(function(it) {
-            try{
-            if(it.doc.id.length>11){
-               d.push({
-                title: it.videoInfo.title,
-                img: it.videoInfo.imgUrl,
-                url: it.doc.id,
-               // content: "",
-                //desc: "data.rec"
-            }); 
-            }
-            }catch{
+        list.forEach(function (it) {
+            try {
+                if (it.doc.id.length > 11) {
+                    d.push({
+                        title: it.videoInfo.title,
+                        img: it.videoInfo.imgUrl,
+                        url: it.doc.id,
+                        // content: "",
+                        //desc: "data.rec"
+                    });
+                }
+            } catch {
 
             }
-     
+
         });
-         let list2 =json.data.areaBoxList[0].itemList;
-          list2.forEach(function(it) {
-            try{
-            if(it.doc.id.length>11 && it.videoInfo.title.match(mame) ){
-               d.push({
-                title: it.videoInfo.title,
-                img: it.videoInfo.imgUrl,
-                url: it.doc.id,
-               // content: "",
-                //desc: "data.rec"
-            }); 
-            }
-            }catch{
+        let list2 = json.data.areaBoxList[0].itemList;
+        list2.forEach(function (it) {
+            try {
+                if (it.doc.id.length > 11 && it.videoInfo.title.match(mame)) {
+                    d.push({
+                        title: it.videoInfo.title,
+                        img: it.videoInfo.imgUrl,
+                        url: it.doc.id,
+                        // content: "",
+                        //desc: "data.rec"
+                    });
+                }
+            } catch {
 
             }
-    
+
         });
         setResult(d);
     })

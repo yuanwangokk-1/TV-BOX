@@ -15,7 +15,6 @@
       "filterable": 0,
       "ext": "./lib/douban.json"
     },
-  
     {
       "key": "Wexconfig",
       "name": "扫码配置┃en",
@@ -33,7 +32,6 @@
       "jar": "https://ym.wya6.cn/tz/hbdm.php;md5;c81a387e366163b9467d82f5c7fb95b2",
       "api": "csp_Huban"
     },
- 
     {
       "key": "wyzz",
       "name": "至臻┃4K免扫┃JX",
@@ -50,7 +48,6 @@
       "jar": "https://ym.wya6.cn/tz/wypj.php;md5;771fdc862c1ee37e6d13c0b7fb840e78",
       "ext": "YUhSMGNEb3ZMM2R3TG5kNVlUWXVZMjl0TDJGd2FTNXdhSEEvYzJsMFpUMTNlWE5rSXlNamQzbHpaQT09"
     },
- 
     {
       "key": "玩偶2",
       "name": "玩偶┃4K┃en",
@@ -311,7 +308,6 @@
       "searchable": 1,
       "changeable": 0
     },
- 
     {
       "key": "Drama",
       "name": "Drama｜APP",
@@ -322,7 +318,6 @@
       "changeable": 0,
       "ext": "caHR0cDovLzE1NC44Ni4xOC4xMTo4MzAxfEQyS1JFV1JJQlZOQVVKSllUS0xZRFpCUUJHRTBQUT09fE9DMUEwNkUxOTdFRjEwQ0YzRjYwNThDQTdBODAzQjVFfDIxfGR5dHQ="
     },
- 
     {
       "key": "七七",
       "name": "七七｜影视",
@@ -385,8 +380,6 @@
       "filterable": 1,
       "playerType": 2
     },
- 
- 
     {
       "key": "push_agent",
       "name": "手机｜推送",
@@ -396,9 +389,7 @@
       "filterable": 0,
       "changeable": 0
     }
-  
   ],
-
   "rules": [
     {
       "name": "农民",

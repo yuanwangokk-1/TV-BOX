@@ -483,13 +483,13 @@ var rule = {
             } else {
                 var key = "";
 
-                playht.match(/var (\w+)="(.*?)";/g).forEach(function(list) {
+                playht.match(/var (\w+)="(.*?)";/g).forEach(function (list) {
                     key += list.match(/"(.*?)"/)[1];
                 });
                 const bodys = JSON.parse(
                     playht
-                    .match(/post\(.*?,(.*?),\n/)[1]
-                    .replace(/"keyyy"\s*:\s*''.*?''/, '"keyyy" : "' + key + '"')
+                        .match(/post\(.*?,(.*?),\n/)[1]
+                        .replace(/"keyyy"\s*:\s*''.*?''/, '"keyyy" : "' + key + '"')
                 );
                 var data = JSON.parse(
                     post(posturl, {

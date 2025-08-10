@@ -1353,35 +1353,35 @@ var rule = {
             log(bata)
             if (bata.url.includes("http")) {
                 input = {
-           header: {
-                    'User-Agent': ""
-                   },
-    
+                    header: {
+                        'User-Agent': ""
+                    },
+
                     parse: 0,
                     url: bata.url,
                     jx: 0,
-                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
                 };
-            }else {
+            } else {
                 input = {
-           header: {
-                    'User-Agent': ""
-                   },
+                    header: {
+                        'User-Agent': ""
+                    },
                     parse: 0,
                     url: input.split("?")[0],
                     jx: 1,
-                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
                 };
             }
         } catch {
             input = {
-           header: {
+                header: {
                     'User-Agent': ""
-                   },
+                },
                 parse: 0,
                 url: input.split("?")[0],
                 jx: 1,
-                danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
             };
         }
     }),

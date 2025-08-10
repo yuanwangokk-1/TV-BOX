@@ -938,7 +938,7 @@ var rule = {
         fetch_params.body = body;
         let html = post(url, fetch_params);
         let data = JSON.parse(html);
-        VODS = data.list.map(function(it) {
+        VODS = data.list.map(function (it) {
             it.vod_pic = urljoin2(input.split("/i")[0], it.vod_pic);
             return it
         });

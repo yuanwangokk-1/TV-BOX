@@ -678,34 +678,34 @@ var rule = {
             log(bata)
             if (bata.url.includes("http")) {
                 input = {
-           header: {
-                    'User-Agent': ""
-                   },
+                    header: {
+                        'User-Agent': ""
+                    },
                     parse: 0,
                     url: bata.url,
                     jx: 0,
-                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
                 };
             } else {
                 input = {
-           header: {
-                    'User-Agent': ''
-                   },
+                    header: {
+                        'User-Agent': ''
+                    },
                     parse: 0,
                     url: input.split("?")[0],
                     jx: 1,
-                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
                 };
             }
         } catch {
             input = {
-           header: {
+                header: {
                     'User-Agent': ''
-                   },
+                },
                 parse: 0,
                 url: input.split("?")[0],
                 jx: 1,
-                danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
             };
         }
     }),
@@ -797,7 +797,7 @@ var rule = {
                 if (i > 1) {
                     json = JSON.parse(fetch(input.replace("page=1", "page=" + i), {}))
                 }
-                json.data.list.forEach(function(data) {
+                json.data.list.forEach(function (data) {
                     let url = "https://www.mgtv.com" + data.url;
                     if (data.isIntact == "1") {
                         d.push({
@@ -813,7 +813,7 @@ var rule = {
             print(input + "暂无片源")
         }
         VOD.vod_play_from = "mgtv";
-        VOD.vod_play_url = d.map(function(it) {
+        VOD.vod_play_url = d.map(function (it) {
             return it.title + "$" + it.url
         }).join("#");
         setResult(d);
@@ -825,7 +825,7 @@ var rule = {
         let d = [];
         let html = request(input);
         let json = JSON.parse(html);
-        json.data.contents.forEach(function(data) {
+        json.data.contents.forEach(function (data) {
             if (data.type && data.type == 'media') {
                 let item = data.data[0];
                 let desc = item.desc.join(',');

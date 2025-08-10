@@ -4,19 +4,19 @@
 // 3个set-Cookie
 
 var rule = {
-	title:'Anime1动畫',
-	host:'https://anime1.me',
-	url: '/fyclass',
-	detailUrl:'/?cat=fyid',
-	searchUrl: '/page/fypage?s=**',
-	searchable:2,
-	quickSearch:0,
-	headers:{'User-Agent': 'PC_UA'},
-	timeout:5000,
-    class_name:'連載中&2025&2024&2023&2022&2021&2020&2019&2018&更早',
-    class_url:'連載中&2025&2024&2023&2022&2021&2020&2019&2018&2017',
-	play_parse:true,
-	lazy:`js:
+    title: 'Anime1动畫',
+    host: 'https://anime1.me',
+    url: '/fyclass',
+    detailUrl: '/?cat=fyid',
+    searchUrl: '/page/fypage?s=**',
+    searchable: 2,
+    quickSearch: 0,
+    headers: {'User-Agent': 'PC_UA'},
+    timeout: 5000,
+    class_name: '連載中&2025&2024&2023&2022&2021&2020&2019&2018&更早',
+    class_url: '連載中&2025&2024&2023&2022&2021&2020&2019&2018&2017',
+    play_parse: true,
+    lazy: `js:
 		var apiurl = 'https://v.anime1.me/api';
 		var html = request(apiurl, {
 			headers: {
@@ -54,8 +54,8 @@ var rule = {
 			}),
 		}
 	`,
-	limit:6,
-	推荐: `js:
+    limit: 6,
+    推荐: `js:
 		var d = [];
 		function stripHtmlTag(src) {
 			return src.replace(/<\\/?[^>]+(>|$)/g, '').replace(/&.{1,5};/g, '').replace(/\\s{2,}/g, ' ');
@@ -76,7 +76,7 @@ var rule = {
 		});
 		setResult(d);
 	`,
-	一级: `js:
+    一级: `js:
 		var d = [];
 		function stripHtmlTag(src) {
 			return src.replace(/<\\/?[^>]+(>|$)/g, '').replace(/&.{1,5};/g, '').replace(/\\s{2,}/g, ' ');
@@ -99,7 +99,7 @@ var rule = {
 		});
 		setResult(d);
 	`,
-	二级: `js:
+    二级: `js:
 		pdfh = jsp.pdfh; pdfa = jsp.pdfa; pd = jsp.pd;
 		var html = request(input);
 		var timestamp = new Date().getTime();
@@ -143,7 +143,7 @@ var rule = {
 		VOD.vod_play_from = '在线播放';
 		VOD.vod_play_url = vod_tab_list.join("$$$");
 	`,
-	搜索: `js:
+    搜索: `js:
 		var d = [];
 		function stripHtmlTag(src) {
 			return src.replace(/<\\/?[^>]+(>|$)/g, '').replace(/&.{1,5};/g, '').replace(/\\s{2,}/g, ' ');

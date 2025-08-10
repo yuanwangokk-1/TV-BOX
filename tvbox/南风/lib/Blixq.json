@@ -1,6 +1,6 @@
 {
   "class": [
-   {
+    {
       "type_name": "京剧",
       "type_id": "京剧超清"
     },
@@ -16,11 +16,11 @@
       "type_name": "眉户",
       "type_id": "眉户超清"
     },
-        {
+    {
       "type_name": "吕剧",
       "type_id": "吕剧超清"
     },
-        {
+    {
       "type_name": "楚剧",
       "type_id": "楚剧超清"
     },
@@ -28,7 +28,6 @@
       "type_name": "歌仔戏",
       "type_id": "歌仔戏超清"
     },
-    
     {
       "type_name": "黄梅戏",
       "type_id": "黄梅戏超清"
@@ -44,11 +43,11 @@
     {
       "type_name": "花鼓戏",
       "type_id": "花鼓戏超清"
-    },    
+    },
     {
       "type_name": "布袋戏",
       "type_id": "布袋戏合集超清"
-    },    
+    },
     {
       "type_name": "沪剧",
       "type_id": "沪剧超清"
@@ -65,28 +64,27 @@
       "type_name": "超清潮剧",
       "type_id": "超清潮剧超清"
     },
-
     {
       "type_name": "百花潮剧院",
       "type_id": "百花潮剧院超清"
     },
-        {
+    {
       "type_name": "香港潮剧",
       "type_id": "香港潮剧超清"
     },
-        {
+    {
       "type_name": "潮剧院",
       "type_id": "潮剧院超清"
     },
-       {
+    {
       "type_name": "潮剧团",
       "type_id": "潮剧团超清"
     },
-        {
+    {
       "type_name": "潮剧全剧",
       "type_id": "潮剧全剧超清"
-    }, 
-     {
+    },
+    {
       "type_name": "潮剧选段",
       "type_id": "潮剧选段超清"
     },
@@ -94,20 +92,18 @@
       "type_name": "名家潮剧",
       "type_id": "名家潮剧超清"
     },
-  
     {
       "type_name": "潮汕小品",
       "type_id": "潮汕小品超清"
     },
-        {
+    {
       "type_name": "潮汕讲古",
       "type_id": "潮汕讲古超清"
-    },       
-     {
+    },
+    {
       "type_name": "绍兴莲花落",
       "type_id": "绍兴莲花落超清"
     },
-
     {
       "type_name": "河北梆子",
       "type_id": "河北梆子超清"
@@ -232,7 +228,6 @@
       "type_name": "春晚小品",
       "type_id": "春晚小品"
     },
-
     {
       "type_name": "赵本山",
       "type_id": "赵本山"
@@ -290,7 +285,6 @@
       "type_id": "喜剧综艺"
     }
   ],
-
   "filter": {
     "小品": [
       {
@@ -320,7 +314,7 @@
         ]
       }
     ],
-     "相声小品": [
+    "相声小品": [
       {
         "key": "tid",
         "name": "分类",

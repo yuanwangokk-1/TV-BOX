@@ -2174,7 +2174,7 @@ var rule = {
             if (session !== getItem("yk_session_" + MY_CATE, "{}")) {
                 setItem("yk_session_" + MY_CATE, session)
             }
-            lists.forEach(function(it) {
+            lists.forEach(function (it) {
                 let vid;
                 if (it.videoLink.includes("id_")) {
                     vid = it.videoLink.split("id_")[1].split(".html")[0]
@@ -2255,7 +2255,7 @@ var rule = {
         }
 
         play_url = play_url.replace("&play_url=", "&type=json&play_url=");
-        video_lists.forEach(function(it) {
+        video_lists.forEach(function (it) {
             let url = "https://v.youku.com/v_show/id_" + it.videoId + ".html";
             if (it.thumbUrl) {
                 d.push({
@@ -2272,9 +2272,9 @@ var rule = {
             }
         });
         VOD.vod_play_from = name;
-        VOD.vod_play_url = d.map(function(it) {
-                return it.title + "$" + it.url
-            })
+        VOD.vod_play_url = d.map(function (it) {
+            return it.title + "$" + it.url
+        })
             .join("#");
     }),
 
@@ -2282,7 +2282,7 @@ var rule = {
         var d = [];
         let html = request(input);
         let json = JSON.parse(html);
-        json.pageComponentList.forEach(function(it) {
+        json.pageComponentList.forEach(function (it) {
             if (it.hasOwnProperty("commonData")) {
                 it = it.commonData;
                 d.push({

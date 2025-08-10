@@ -26,36 +26,36 @@ var rule = {
     double: false,
     // 推荐: '*',
     一级: $js.toString(() => {
-    let cid = MY_CATE || '108';
-    let pg = MY_PAGE || 1;
-    let url = `https://api.kuleu.com/${cid}`;
-    let khtml = fetch(url, {headers: rule.headers});
-    let kjson = JSON.parse(khtml);
-    VODS = [];
-    kjson.data.forEach(it => {
-        VODS.push({
-            vod_name: it.name,
-            vod_pic: `https://tse3-mm.cn.bing.net/th/id/OIP-C.rlQOYtsriwWKHwofGufJ_AHaQd?w=157&h=350&c=7&r=0&o=7&dpr=3.7&pid=1.7&rm=3`,
-            vod_remarks: it.addtime,
-            vod_id: `push://${it.viewlink}`
+        let cid = MY_CATE || '108';
+        let pg = MY_PAGE || 1;
+        let url = `https://api.kuleu.com/${cid}`;
+        let khtml = fetch(url, {headers: rule.headers});
+        let kjson = JSON.parse(khtml);
+        VODS = [];
+        kjson.data.forEach(it => {
+            VODS.push({
+                vod_name: it.name,
+                vod_pic: `https://tse3-mm.cn.bing.net/th/id/OIP-C.rlQOYtsriwWKHwofGufJ_AHaQd?w=157&h=350&c=7&r=0&o=7&dpr=3.7&pid=1.7&rm=3`,
+                vod_remarks: it.addtime,
+                vod_id: `push://${it.viewlink}`
+            });
         });
-    });
-}),
+    }),
     二级: '*',
-    搜索:$js.toString(() => {
-    let url = `https://api.kuleu.com/api/bddj?text=${KEY}`;
-    let khtml = fetch(url);
-    let kjson = JSON.parse(khtml);
-    VODS = [];
-    kjson.data.forEach(it => {
-        VODS.push({
-            vod_name: it.name,
-            vod_pic: it.pPic,
-            vod_remarks: it.addtime,
-            vod_id: `push://${it.viewlink}`
+    搜索: $js.toString(() => {
+        let url = `https://api.kuleu.com/api/bddj?text=${KEY}`;
+        let khtml = fetch(url);
+        let kjson = JSON.parse(khtml);
+        VODS = [];
+        kjson.data.forEach(it => {
+            VODS.push({
+                vod_name: it.name,
+                vod_pic: it.pPic,
+                vod_remarks: it.addtime,
+                vod_id: `push://${it.viewlink}`
+            })
         })
-    })
-}),
+    }),
     cate_exclude: '首页|留言|APP|下载|资讯|新闻|动态',
     tab_exclude: '猜你|喜欢|下载|剧情|榜|评论',
     类型: '影视',

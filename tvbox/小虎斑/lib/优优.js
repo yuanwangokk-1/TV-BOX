@@ -2131,34 +2131,34 @@ var rule = {
             log(bata)
             if (bata.url.includes("http")) {
                 input = {
-           header: {
-                    'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
-                   },
+                    header: {
+                        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+                    },
                     parse: 0,
                     url: bata.url,
                     jx: 0,
-                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
                 };
-            }else {
+            } else {
                 input = {
-           header: {
-                  'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
-                   },
+                    header: {
+                        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+                    },
                     parse: 0,
                     url: input.split("?")[0],
                     jx: 1,
-                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                    danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
                 };
             }
         } catch {
             input = {
-           header: {
-                'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
-                   },
+                header: {
+                    'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+                },
                 parse: 0,
                 url: input.split("?")[0],
                 jx: 1,
-                danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url='+input.split("?")[0]
+                danmaku: 'http://127.0.0.1:9978/proxy?do=danmu&url=' + input.split("?")[0]
             };
         }
     }),
@@ -2185,7 +2185,7 @@ var rule = {
             if (session !== getItem("yk_session_" + MY_CATE, "{}")) {
                 setItem("yk_session_" + MY_CATE, session)
             }
-            lists.forEach(function(it) {
+            lists.forEach(function (it) {
                 let vid;
                 if (it.videoLink.includes("id_")) {
                     vid = it.videoLink.split("id_")[1].split(".html")[0]
@@ -2266,7 +2266,7 @@ var rule = {
         }
 
         play_url = play_url.replace("&play_url=", "&type=json&play_url=");
-        video_lists.forEach(function(it) {
+        video_lists.forEach(function (it) {
             let url = "https://v.youku.com/v_show/id_" + it.videoId + ".html";
             if (it.thumbUrl) {
                 d.push({
@@ -2283,7 +2283,7 @@ var rule = {
             }
         });
         VOD.vod_play_from = name;
-        VOD.vod_play_url = d.map(function(it) {
+        VOD.vod_play_url = d.map(function (it) {
             return it.title + "$" + it.url
         })
             .join("#");
@@ -2293,7 +2293,7 @@ var rule = {
         var d = [];
         let html = request(input);
         let json = JSON.parse(html);
-        json.pageComponentList.forEach(function(it) {
+        json.pageComponentList.forEach(function (it) {
             if (it.hasOwnProperty("commonData")) {
                 it = it.commonData;
                 d.push({
