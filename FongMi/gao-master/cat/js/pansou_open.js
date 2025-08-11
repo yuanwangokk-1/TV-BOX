@@ -1,6 +1,6 @@
-import { load, _ } from 'assets://js/lib/cat.js';
-import { log } from './lib/utils.js';
-import { initAli, detailContent, playContent } from './lib/ali.js';
+import {_, load} from 'assets://js/lib/cat.js';
+import {log} from './lib/utils.js';
+import {detailContent, initAli, playContent} from './lib/ali.js';
 
 let siteKey = 'pansou';
 let siteType = 0;
@@ -41,7 +41,8 @@ async function home(filter) {
     return '{}';
 }
 
-async function homeVod() {}
+async function homeVod() {
+}
 
 async function category(tid, pg, filter, extend) {
     return '{}';

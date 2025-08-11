@@ -1,5 +1,4 @@
-js:
-    const douyin_cookie = "hiker://files/TyrantG/cookie/douyin.txt"
+const douyin_cookie = "hiker://files/TyrantG/cookie/douyin.txt"
 const slide_cookie = "hiker://files/TyrantG/cookie/douyin_slide.txt"
 
 const baseParse = _ => {

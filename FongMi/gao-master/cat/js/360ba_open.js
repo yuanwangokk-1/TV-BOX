@@ -1,4 +1,4 @@
-import { Crypto, load, _ } from './lib/cat.js';
+import {_} from './lib/cat.js';
 
 let siteUrl = 'https://m.360ba.co/';
 let siteKey = '';
@@ -31,20 +31,20 @@ async function home(filter) {
     let classes = [{
         type_id: '1',
         type_name: '全部',
-    },{
+    }, {
         type_id: '2',
         type_name: '足球',
-    },{
+    }, {
         type_id: '3',
         type_name: '篮球',
-    },{
+    }, {
         type_id: '99',
         type_name: '综合',
     }];
     //let filterObj = genFilterObj();
     return JSON.stringify({
         class: classes,
-       // filters: filterObj
+        // filters: filterObj
     });
 }
 
@@ -68,10 +68,10 @@ async function detail(id) {
             vod_content: '该资源由LeoSpring采集分享，公众号【蚂蚁科技杂谈】',
         };
         const list = [video];
-        const result = { list };
+        const result = {list};
         return JSON.stringify(result);
     } catch (e) {
-       //console.log('err', e);
+        //console.log('err', e);
     }
     return null;
 }
@@ -79,7 +79,7 @@ async function detail(id) {
 async function search(wd, quick, pg) {
     let url = siteUrl + 'api/web/search?keyword=' + wd;
     const data = JSON.parse(await request(url))['data']['ball'];
-    
+
     let videos = _.map(data, (n) => {
         let id = n['url'];
         let name = n['league_name_zh'] + ' ' + n['home_team_zh'] + ' VS ' + n['away_team_zh'];
@@ -107,7 +107,7 @@ async function play(flag, id, flags) {
 
 async function getVideos(url) {
     const data = JSON.parse(await request(url))['data']['data'];
-    
+
     let videos = _.map(data, (n) => {
         let id = n['url'];
         let name = n['league_name_zh'] + ' ' + n['home_team_zh'] + ' VS ' + n['away_team_zh'];

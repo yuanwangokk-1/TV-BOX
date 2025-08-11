@@ -1,4 +1,4 @@
-import { Crypto, _, load } from './lib/cat.js';
+import {_, load} from './lib/cat.js';
 
 let key = 'baozimh';
 let url = 'https://cn.baozimh.com';
@@ -30,7 +30,7 @@ async function home(filter) {
     var html = await request(url + '/classify');
     const $ = load(html);
 
-    let filterObj = { c1: [] };
+    let filterObj = {c1: []};
 
     for (const nav of $('div.classify div.nav')) {
         const as = $(nav).find('a.item');
@@ -69,7 +69,7 @@ async function home(filter) {
     }
 
     return {
-        class: [{ type_name: 'all', type_id: 'c1' }],
+        class: [{type_name: 'all', type_id: 'c1'}],
         filters: filterObj,
     };
 }
@@ -133,7 +133,8 @@ async function play(flag, id, flags) {
         return {
             content: content,
         };
-    } catch (e) {}
+    } catch (e) {
+    }
     return {
         content: [],
     };

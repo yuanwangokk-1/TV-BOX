@@ -1,10 +1,9 @@
-js:
-    addListener("onRefresh", $.toString(() => {
-        clearVar('cate');
-        clearVar('content');
-        clearVar('password');
-        clearVar('time_limit');
-    }))
+addListener("onRefresh", $.toString(() => {
+    clearVar('cate');
+    clearVar('content');
+    clearVar('password');
+    clearVar('time_limit');
+}))
 let d = [];
 const cate = getItem('cate', '1')
 d.push({

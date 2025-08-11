@@ -35,7 +35,7 @@ var rule = {
                     mode: CryptoJS.mode.CBC,
                     padding: CryptoJS.pad.Pkcs7
                 }));
-            };
+            }
             //log(rule.ConFig.url)
             //log(rule.ConFig.config.uid)
             let purl = ec(rule.ConFig.url, rule.ConFig.config.uid);

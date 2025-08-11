@@ -1,5 +1,4 @@
-js:
-    let d = []
+let d = []
 const empty = "hiker://empty"
 
 const makeScroll = (url, cate_level) => {

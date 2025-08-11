@@ -1,4 +1,4 @@
-import { Crypto, load, _, jinja2 } from './lib/cat.js';
+import {_, load} from './lib/cat.js';
 
 let key = 'mimiju';
 let url = 'https://mimiju.com';
@@ -25,20 +25,30 @@ async function init(cfg) {
 }
 
 async function home(filter) {
-    let classes = [{"type_id":20,"type_name":"短剧"}, {"type_id":21,"type_name":"电视剧"}];
+    let classes = [{"type_id": 20, "type_name": "短剧"}, {"type_id": 21, "type_name": "电视剧"}];
     let filterObj = {
-        "20": [{"key":"by","name":"排序","value":[{"n":"时间","v":"time"},{"n":"人气","v":"hits"},{"n":"评分","v":"score"}]}],
-        "21": [{"key":"by","name":"排序","value":[{"n":"时间","v":"time"},{"n":"人气","v":"hits"},{"n":"评分","v":"score"}]}]};
+        "20": [{
+            "key": "by",
+            "name": "排序",
+            "value": [{"n": "时间", "v": "time"}, {"n": "人气", "v": "hits"}, {"n": "评分", "v": "score"}]
+        }],
+        "21": [{
+            "key": "by",
+            "name": "排序",
+            "value": [{"n": "时间", "v": "time"}, {"n": "人气", "v": "hits"}, {"n": "评分", "v": "score"}]
+        }]
+    };
     return JSON.stringify({
         class: classes,
         filters: filterObj,
     });
 }
 
-async function homeVod() {}
+async function homeVod() {
+}
 
 async function category(tid, pg, filter, extend) {
-    if (pg <= 0 || typeof(pg) == 'undefined') pg = 1;
+    if (pg <= 0 || typeof (pg) == 'undefined') pg = 1;
     const link = url + '/vodshow/' + tid + '--' + (extend.by || 'time') + '---' + '---' + pg + '---' + '.html';//https://mimiju.com/vodshow/20--hits---------.html
     const html = await request(link);
     const $ = load(html);
@@ -50,7 +60,8 @@ async function category(tid, pg, filter, extend) {
             vod_id: it.attribs.href.replace(/.*?\/voddetail\/(.*).html/g, '$1'),
             vod_name: it.attribs.title,
             vod_pic: url + it.attribs['data-original'],
-            vod_remarks: remarks || '',};
+            vod_remarks: remarks || '',
+        };
     });
     const hasMore = $('ul.hl-page-wrap > li > a >span:contains(下一页)').length > 0;
     const pgCount = hasMore ? parseInt(pg) + 1 : parseInt(pg);
@@ -85,7 +96,7 @@ async function detail(id) {
         _.each(list, (it) => {
             var title = it.children[0].data;
             var playUrl = it.attribs.href.replace(/\/vodplay\/(.*).html/g, '$1');
-            
+
             if (!playMap.hasOwnProperty(from)) {
                 playMap[from] = [];
             }

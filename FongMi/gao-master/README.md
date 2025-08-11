@@ -6,36 +6,37 @@ FongMi影视、TVBox、猫影视配置文件。所有资源均来自于各路大
 
 本仓库内容中涉及的第三方硬件、软件等，与本仓库内容没有任何直接或间接的关系。本仓库内容仅对部署和使用过程进行客观描述，不代表支持使用任何第三方硬件、软件。使用任何第三方硬件、软件，所造成的一切后果由使用的个人或组织承担，与本仓库内容无关。
 
-所有直接或间接使用本仓库内容的个人和组织，应 24 小时内完成学习和研究，并及时删除本仓库内容。如对本仓库内容的功能有需求，应自行开发相关功能。所有基于本仓库内容的源代码，进行的任何修改，为其他个人或组织的自发行为，与本仓库内容没有任何直接或间接的关系，所造成的一切后果亦与本仓库内容和本仓库管理者无关。
-
+所有直接或间接使用本仓库内容的个人和组织，应 24
+小时内完成学习和研究，并及时删除本仓库内容。如对本仓库内容的功能有需求，应自行开发相关功能。所有基于本仓库内容的源代码，进行的任何修改，为其他个人或组织的自发行为，与本仓库内容没有任何直接或间接的关系，所造成的一切后果亦与本仓库内容和本仓库管理者无关。
 
 1. tvbox配置：
 
-（1）0707.json  Fengmi影视多线配置接口,仅适用于Fengmi影视；
+（1）0707.json Fengmi影视多线配置接口,仅适用于Fengmi影视；
 
-（2）0821.json  在饭太硬配置的基础上添加了若干优质点播源、直播线路和解析；
+（2）0821.json 在饭太硬配置的基础上添加了若干优质点播源、直播线路和解析；
 
-（3）0825.json  jar包来源于Panda Groove的jar，PG网盘的用法请看https://github.com/gaotianliuyun/gao/blob/gaotianliuyun-patch-1/README.md ；
+（3）0825.json jar包来源于Panda Groove的jar，PG网盘的用法请看https:
+//github.com/gaotianliuyun/gao/blob/gaotianliuyun-patch-1/README.md ；
 
-（4）0826.json  完全来源于饭太硬的jar包和配置；
+（4）0826.json 完全来源于饭太硬的jar包和配置；
 
-（5）0827.json  jar包和配置来源于fongmi；
+（5）0827.json jar包和配置来源于fongmi；
 
-（6）js.json  jar包来源于Panda Groove的go包，资源来源于道长drpy(js)仓库；
+（6）js.json jar包来源于Panda Groove的go包，资源来源于道长drpy(js)仓库；
 
-（7）XYQ.json  XYQ源，jar包和配置来源于香雅情；
+（7）XYQ.json XYQ源，jar包和配置来源于香雅情；
 
-（8）/cat/js/config_open.json  cat源，资源暂停更新，如果有能力的大佬愿意发电，请联系我。
+（8）/cat/js/config_open.json cat源，资源暂停更新，如果有能力的大佬愿意发电，请联系我。
 
 2. APP推荐:
 
-（1）FongMi版本  项目地址：https://github.com/FongMi/TV 支持直播多线路、自动换源、直播倍速，手机投屏；
+（1）FongMi版本 项目地址：https://github.com/FongMi/TV 支持直播多线路、自动换源、直播倍速，手机投屏；
 
-（2）q215613905版本  项目地址：https://github.com/q215613905/TVBoxOS 支持直播回放；
+（2）q215613905版本 项目地址：https://github.com/q215613905/TVBoxOS 支持直播回放；
 
-（3）takagen99版本  项目地址：https://github.com/takagen99/Box 支持直播回放，界面美观；
+（3）takagen99版本 项目地址：https://github.com/takagen99/Box 支持直播回放，界面美观；
 
-（4）猫影视   项目地址：https://github.com/catvod/CatVodOpen 界面简洁，支持多平台。
+（4）猫影视 项目地址：https://github.com/catvod/CatVodOpen 界面简洁，支持多平台。
 
 3. TVBox各路大佬配置（排名不分先后）：
 
@@ -69,7 +70,7 @@ FongMi影视、TVBox、猫影视配置文件。所有资源均来自于各路大
 
 （3）https://picsum.photos/1280/720/?blur=10
 
-（4）http://刚刚.live/图 
+（4）http://刚刚.live/图
 
 （5）http://饭.eu.org/深色壁纸/api.php,
 

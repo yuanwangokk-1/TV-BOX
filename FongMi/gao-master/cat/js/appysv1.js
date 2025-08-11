@@ -1,5 +1,3 @@
-import { Crypto, _ } from 'assets://js/lib/cat.js'
-
 let host = '';
 let header = {
     'User-Agent': 'okhttp/3.12.11'
@@ -33,7 +31,7 @@ async function init(cfg) {
         host = cfg.ext.host;
         siteJx = cfg.ext;
     }
-};
+}
 
 async function request(reqUrl, ua, timeout = 60000) {
     let res = await req(reqUrl, {
@@ -80,7 +78,7 @@ async function home(filter) {
             }
         }
 
-        const result = { class: [] };
+        const result = {class: []};
         if (jsonArray != null) {
             for (let i = 0; i < jsonArray.length; i++) {
                 const jObj = jsonArray[i];
@@ -122,7 +120,7 @@ async function home(filter) {
 
                             if (sp === -1) {
                                 if (isBan(kv)) continue;
-                                jOne.value.push({ n: kv, v: kv });
+                                jOne.value.push({n: kv, v: kv});
                             } else {
                                 const n = kv.substring(0, sp);
                                 if (isBan(n)) continue;
@@ -310,7 +308,7 @@ const parseUrlMap = new Map();
 function genPlayList(URL, object, json, vod, vid) {
     const playUrls = [];
     const playFlags = [];
-    
+
     if (URL.includes("lfytyl.com")) {
         const data = object.data;
         vod.vod_id = data.vod_id || vid;
@@ -323,7 +321,7 @@ function genPlayList(URL, object, json, vod, vid) {
         vod.vod_actor = data.vod_actor || "";
         vod.vod_director = data.vod_director || "";
         vod.vod_content = data.vod_content || "";
-        
+
         vod.vod_play_from = data.vod_play_from;
         vod.vod_play_url = data.vod_play_url;
         return;
@@ -349,14 +347,14 @@ function genPlayList(URL, object, json, vod, vid) {
             if (flag === "") flag = from.name.trim();
             playFlags.push(flag);
             playUrls.push(from.url);
-            
-            let purl = from.parse_api;           
+
+            let purl = from.parse_api;
             const parseUrls = parseUrlMap.get(flag) || [];
             if (purl && !parseUrls.includes(purl)) {
                 parseUrls.push(purl);
             }
-            parseUrlMap.set(flag, parseUrls); 
-            
+            parseUrlMap.set(flag, parseUrls);
+
         }
     } else if (URL.includes("xgapp")) {
         const data = object.data.vod_info;
@@ -532,14 +530,13 @@ async function search(key, quick) {
             }
         }
 
-        const result = { list: videos };
+        const result = {list: videos};
         return JSON.stringify(result);
     } catch (error) {
 
     }
     return "";
 }
-
 
 
 async function getFinalVideo(flag, parseUrls, url) {
@@ -553,7 +550,8 @@ async function getFinalVideo(flag, parseUrls, url) {
         let tryJson = null;
         try {
             tryJson = jsonParse(url, content);
-        } catch (error) { }
+        } catch (error) {
+        }
 
         if (tryJson !== null && tryJson.hasOwnProperty("url") && tryJson.hasOwnProperty("header")) {
             tryJson.header = JSON.stringify(tryJson.header);
@@ -576,10 +574,10 @@ async function getFinalVideo(flag, parseUrls, url) {
 
     if (htmlPlayUrl !== "") { // 不支持sniffer
         const result = {
-                parse: 0,
-                playUrl: "",
-                url: url
-            };
+            parse: 0,
+            playUrl: "",
+            url: url
+        };
         return JSON.stringify(result);
     }
 
@@ -709,9 +707,6 @@ function fixJsonVodHeader(headers, input, url) {
 }
 
 
-
-
-
 const snifferMatch = /http((?!http).){26,}?\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg)\?.*|http((?!http).){26,}\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg)|http((?!http).){26,}\/m3u8\?pt=m3u8.*|http((?!http).)*?default\.ixigua\.com\/.*|http((?!http).)*?cdn-tos[^\?]*|http((?!http).)*?\/obj\/tos[^\?]*|http.*?\/player\/m3u8play\.php\?url=.*|http.*?\/player\/.*?[pP]lay\.php\?url=.*|http.*?\/playlist\/m3u8\/\?vid=.*|http.*?\.php\?type=m3u8&.*|http.*?\/download.aspx\?.*|http.*?\/api\/up_api.php\?.*|https.*?\.66yk\.cn.*|http((?!http).)*?netease\.com\/file\/.*/;
 
 function isVideoFormat(url) {
@@ -719,7 +714,7 @@ function isVideoFormat(url) {
         return !url.includes("cdn-tos") || !url.includes(".js");
     }
     return false;
-    
+
 }
 
 function isVideo(url) {
@@ -728,8 +723,6 @@ function isVideo(url) {
     }
     return false;
 }
-
-
 
 
 function UA(url) {
@@ -777,7 +770,8 @@ function getFilterTypes(URL, typeExtend) {
                 try {
 
                     str += "筛选" + key + "+全部=+" + typeExtend[key].replace(/,/g, "+") + "\n";
-                } catch (e) { }
+                } catch (e) {
+                }
             }
         }
     }
@@ -876,8 +870,6 @@ function isJsonString(str) {
     }
     return true;
 }
-
-
 
 
 export function __jsEvalReturn() {

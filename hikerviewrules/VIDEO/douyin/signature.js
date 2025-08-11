@@ -195,7 +195,7 @@ XMLHttpRequest.prototype.open = function () {
         }
         return a
     }
-    ;
+
 
     function a() {
         for (var t = [], n = 0; n < arguments.length; n++)
@@ -207,7 +207,7 @@ XMLHttpRequest.prototype.open = function () {
             this._method = o && o.toLowerCase() || "",
             ee.apply(this, t)
     }
-    ;
+
     for (var e = [], t = 0; t < arguments.length; t++)
         e[t] = arguments[t];
     return a.apply(this, e)
@@ -220,7 +220,7 @@ XMLHttpRequest.prototype.setRequestHeader = function () {
         return this._requestHeaders = this._requestHeaders || [],
             this._requestHeaders.push(t)
     }
-    ;
+
     for (var e = [], t = 0; t < arguments.length; t++)
         e[t] = arguments[t];
     return a.apply(this, e)
@@ -235,7 +235,7 @@ XMLHttpRequest.prototype.send = function () {
             e[o] = t[n];
         return e
     }
-    ;
+
 
     function Vn(e, t) {
         var n = "function" == typeof Symbol && e[Symbol.iterator];
@@ -259,7 +259,7 @@ XMLHttpRequest.prototype.send = function () {
         }
         return a
     }
-    ;qr = function (e, t, n) {
+    qr = function (e, t, n) {
         return function () {
             for (var r = [], o = 0; o < arguments.length; o++)
                 r[o] = arguments[o];
@@ -289,7 +289,7 @@ XMLHttpRequest.prototype.send = function () {
     function Yn(e) {
         return "function" == typeof e
     }
-    ;Jr = function (e) {
+    Jr = function (e) {
         return qr(e, "onreadystatechange", (function (t, n, r, o, i) {
                 return function () {
                     for (var a = [], s = 0; s < arguments.length; s++)
@@ -317,7 +317,7 @@ XMLHttpRequest.prototype.send = function () {
             , o = n[0] || "GET"
             , i = new URL(n[1], window.location.href);
     }
-    ;
+
 
     function a() {
         for (var i = [], a = 0; a < arguments.length; a++)
@@ -327,7 +327,7 @@ XMLHttpRequest.prototype.send = function () {
             this._data = null == i ? void 0 : i[0],
             ew.apply(this, i)
     }
-    ;
+
     for (var e = [], t = 0; t < arguments.length; t++)
         e[t] = arguments[t];
     return a.apply(this, e)
@@ -501,7 +501,7 @@ function mu_() {
     for (var b = 0; b < 28; b++) {
         e[b] = a[Math.floor(Math.random() * a.length)]
     }
-    ;
+
     return e.join('')
 }
 

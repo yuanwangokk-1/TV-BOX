@@ -1,4 +1,5 @@
-import { load, _ } from './lib/cat.js';
+import {_, load} from './lib/cat.js';
+
 let key = '🐰兔小贝';
 let HOST = 'https://www.tuxiaobei.com';
 let siteKey = '';
@@ -21,7 +22,19 @@ async function init(cfg) {
 }
 
 async function home(filter) {
-    const classes = [{ type_id: '', type_name: '🐰全部' }, { type_id: 2, type_name: '🐰儿歌' }, { type_id: 3, type_name: '🐰故事' }, { type_id: 27, type_name: '🐰公益' }, { type_id: 9, type_name: '🐰十万个为什么' }, { type_id: 28, type_name: '🐰安全教育' }, { type_id: 29, type_name: '🐰动物奇缘' }, { type_id: 7, type_name: '🐰弟子规' }, { type_id: 5, type_name: '🐰古诗' }, { type_id: 6, type_name: '🐰三字经' }, { type_id: 8, type_name: '🐰千字文' }, { type_id: 11, type_name: '🐰数学' }, { type_id: 25, type_name: '🐰英语' }, { type_id: 24, type_name: '🐰折纸' }];
+    const classes = [{type_id: '', type_name: '🐰全部'}, {type_id: 2, type_name: '🐰儿歌'}, {
+        type_id: 3,
+        type_name: '🐰故事'
+    }, {type_id: 27, type_name: '🐰公益'}, {type_id: 9, type_name: '🐰十万个为什么'}, {
+        type_id: 28,
+        type_name: '🐰安全教育'
+    }, {type_id: 29, type_name: '🐰动物奇缘'}, {type_id: 7, type_name: '🐰弟子规'}, {
+        type_id: 5,
+        type_name: '🐰古诗'
+    }, {type_id: 6, type_name: '🐰三字经'}, {type_id: 8, type_name: '🐰千字文'}, {
+        type_id: 11,
+        type_name: '🐰数学'
+    }, {type_id: 25, type_name: '🐰英语'}, {type_id: 24, type_name: '🐰折纸'}];
     const filterObj = {};
     return JSON.stringify({
         class: _.map(classes, (cls) => {

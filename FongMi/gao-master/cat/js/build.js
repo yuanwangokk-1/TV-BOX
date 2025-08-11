@@ -36,12 +36,12 @@ function listAllFiles(dirPath, arrayOfFiles) {
 }
 
 function src2Out() {
-    if (fs.existsSync(out)) fs.rmSync(out, { recursive: true, force: true });
+    if (fs.existsSync(out)) fs.rmSync(out, {recursive: true, force: true});
 
-    fs.mkdirSync(out, { recursive: true });
+    fs.mkdirSync(out, {recursive: true});
     const libSrc = path.join(src, 'lib');
     const libOut = path.join(out, 'lib');
-    fs.mkdirSync(libOut, { recursive: true });
+    fs.mkdirSync(libOut, {recursive: true});
     const libs = listAllFiles(libSrc);
     for (let index = 0; index < libs.length; index++) {
         const element = libs[index];

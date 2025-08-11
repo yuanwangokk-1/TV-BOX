@@ -1,4 +1,4 @@
-import { Crypto, jinja2, _ } from 'assets://js/lib/cat.js';
+import {_, Crypto} from 'assets://js/lib/cat.js';
 
 let siteKey = '';
 let siteType = 0;
@@ -25,7 +25,7 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 async function request(reqUrl, ua, buffer) {
     let res = await req(reqUrl, {
         method: 'get',
-        headers: ua ? ua : { 'User-Agent': UA },
+        headers: ua ? ua : {'User-Agent': UA},
         timeout: 60000,
         buffer: buffer ? 1 : 0,
     });
@@ -35,7 +35,7 @@ async function request(reqUrl, ua, buffer) {
 async function post(reqUrl, postData, ua, posttype) {
     let res = await req(reqUrl, {
         method: 'post',
-        headers: ua ? ua : { 'User-Agent': UA },
+        headers: ua ? ua : {'User-Agent': UA},
         data: postData,
         timeout: 60000,
         postType: posttype,
@@ -56,7 +56,7 @@ function getHeaders() {
 async function getCookie() {
     let result = await req('https://www.bilibili.com', {
         method: 'get',
-        headers: { 'User-Agent': UA },
+        headers: {'User-Agent': UA},
         timeout: 60000,
     });
     const setCookieHeaders = result.headers['set-cookie'];
@@ -88,22 +88,22 @@ async function init(cfg) {
             key: 'order',
             name: '排序',
             value: [
-                { n: '综合排序', v: '0' },
-                { n: '最多点击', v: 'click' },
-                { n: '最新发布', v: 'pubdate' },
-                { n: '最多弹幕', v: 'dm' },
-                { n: '最多收藏', v: 'stow' },
+                {n: '综合排序', v: '0'},
+                {n: '最多点击', v: 'click'},
+                {n: '最新发布', v: 'pubdate'},
+                {n: '最多弹幕', v: 'dm'},
+                {n: '最多收藏', v: 'stow'},
             ],
         },
         {
             key: 'duration',
             name: '时长',
             value: [
-                { n: '全部时长', v: '0' },
-                { n: '60分钟以上', v: '4' },
-                { n: '30~60分钟', v: '3' },
-                { n: '10~30分钟', v: '2' },
-                { n: '10分钟以下', v: '1' },
+                {n: '全部时长', v: '0'},
+                {n: '60分钟以上', v: '4'},
+                {n: '30~60分钟', v: '3'},
+                {n: '10~30分钟', v: '2'},
+                {n: '10分钟以下', v: '1'},
             ],
         },
     ];
@@ -183,9 +183,10 @@ async function homeVod() {
                 list.push(vod);
         }
 
-        const result = { list: list };
+        const result = {list: list};
         return JSON.stringify(result);
-    } catch (e) { }
+    } catch (e) {
+    }
 }
 
 async function category(tid, page, filter, ext) {
@@ -252,7 +253,8 @@ async function category(tid, page, filter, ext) {
         };
 
         return JSON.stringify(result);
-    } catch (e) { }
+    } catch (e) {
+    }
     return null;
 }
 
@@ -337,15 +339,19 @@ async function detail(ids) {
         video.vod_play_url = Object.values(treeMap).join("$$$");
 
         const list = [video];
-        const result = { list };
+        const result = {list};
         return JSON.stringify(result);
-    } catch (e) { }
+    } catch (e) {
+    }
     return null;
 }
 
 async function play(flag, id, flags) {
     try {
-        const playHeaders = { Referer: 'https://www.bilibili.com', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' };
+        const playHeaders = {
+            Referer: 'https://www.bilibili.com',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
+        };
         const ids = id.split('+');
         const aid = ids[0];
         const cid = ids[1];
@@ -429,7 +435,8 @@ async function play(flag, id, flags) {
                 header: playHeaders,
             });
         }
-    } catch (e) { }
+    } catch (e) {
+    }
     return null;
 }
 
@@ -455,7 +462,8 @@ async function search(key, quick, pg) {
             list: videos,
         };
         return JSON.stringify(result);
-    } catch (e) { }
+    } catch (e) {
+    }
     return null;
 }
 
@@ -575,7 +583,6 @@ function base64Decode(text) {
 }
 
 
-
 function removeTags(input) {
     return input.replace(/<[^>]*>/g, '');
 }
@@ -585,8 +592,8 @@ function getFullTime(numberSec) {
     try {
         var timeParts = numberSec.split(":");
         var min = parseInt(timeParts[0]);
-        var sec = parseInt(timeParts[1]);  
-        totalSeconds = min * 60 + sec;        
+        var sec = parseInt(timeParts[1]);
+        totalSeconds = min * 60 + sec;
     } catch (e) {
         totalSeconds = parseInt(numberSec);
     }

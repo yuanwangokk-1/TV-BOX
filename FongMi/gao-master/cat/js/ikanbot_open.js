@@ -1,4 +1,4 @@
-import { Crypto, load, _ } from './lib/cat.js';
+import {_, Crypto, load} from './lib/cat.js';
 
 let key = 'ikanbot';
 let url = 'https://www.aikanbot.com';
@@ -30,12 +30,12 @@ function getClass($) {
         key: 'tag',
         name: '标签',
         value: _.map(nav, (n) => {
-            return { n: n.children[0].data, v: n.attribs.href };
+            return {n: n.children[0].data, v: n.attribs.href};
         }),
     };
     tags['init'] = tags.value[0].v;
     const title = $('title:first').text().split('-')[0].substring(2);
-    return { cls: { type_id: tags.value[0].v, type_name: title }, tags: [tags] };
+    return {cls: {type_id: tags.value[0].v, type_name: title}, tags: [tags]};
 }
 
 async function home(filter) {
@@ -44,7 +44,7 @@ async function home(filter) {
     for (const cate of ['/hot/index-movie-热门.html', '/hot/index-tv-热门.html']) {
         const html = await request(url + cate);
         const $ = load(html);
-        const { cls, tags } = getClass($);
+        const {cls, tags} = getClass($);
         classes.push(cls);
         filterObj[cls.type_id] = tags;
     }
@@ -101,86 +101,86 @@ async function category(tid, pg, filter, extend) {
 }
 
 async function detail(id) {
-	const html = await request(url + id);
-	const $ = load(html);
-	var jsBase = await js2Proxy(true, siteType, siteKey, 'img/', {});
-	const detail = $('div.detail');
-	const remarks = $('span#line-tips').text();
-	let vod = {
-		vod_id: id,
-		vod_pic: jsBase + base64Encode($('div.item-root > img')[0].attribs['data-src']),
-		vod_remarks: '',
+    const html = await request(url + id);
+    const $ = load(html);
+    var jsBase = await js2Proxy(true, siteType, siteKey, 'img/', {});
+    const detail = $('div.detail');
+    const remarks = $('span#line-tips').text();
+    let vod = {
+        vod_id: id,
+        vod_pic: jsBase + base64Encode($('div.item-root > img')[0].attribs['data-src']),
+        vod_remarks: '',
         vod_content: remarks || '',
-		vod_name: $(detail).find('h2').text().trim(),
-		vod_year: $(detail).find('h3:nth-child(3)').text(),
-		vod_area: $(detail).find('h3:nth-child(4)').text(),
-		vod_actor: $(detail).find('h3:nth-child(5)').text(),
-	};
+        vod_name: $(detail).find('h2').text().trim(),
+        vod_year: $(detail).find('h3:nth-child(3)').text(),
+        vod_area: $(detail).find('h3:nth-child(4)').text(),
+        vod_actor: $(detail).find('h3:nth-child(5)').text(),
+    };
     const token = getToken($);
-	const res = await req(url + '/api/getResN?videoId=' + id.substring(id.lastIndexOf('/') + 1) + '&mtype=2&token=' + token, {
-		headers: {
-			Referer: 'play',
-			'User-Agent': UA,
-		},
-	});
-	const list = JSON.parse(res.content).data.list;
-	let playlist = {};
-	let arr = []
-	for (const l of list) {
-		const flagData = JSON.parse(l.resData);
-		for (const f of flagData) {
-			const from = f.flag;
-			const urls = f.url;
-			if (!from || !urls) continue;
-			if (playlist[from]) continue;
-			playlist[from] = urls;
-		}
-	}
-	for (var key in playlist) {
-		if ('kuaikan' == key) {
-			arr.push({
-				flag: '快看',
-				url: playlist[key],
-				sort: 1
-			})
-		} else if ('bfzym3u8' == key) {
-			arr.push({
-				flag: '暴风',
-				url: playlist[key],
-				sort: 2
-			})
-		} else if ('ffm3u8' == key) {
-			arr.push({
-				flag: '非凡',
-				url: playlist[key],
-				sort: 3
-			})
-		} else if ('lzm3u8' == key) {
-			arr.push({
-				flag: '量子',
-				url: playlist[key],
-				sort: 4
-			})
-		} else {
-			arr.push({
-				flag: key,
-				url: playlist[key],
-				sort: 5
-			})
-		}
-	}
-	arr.sort((a, b) => a.sort - b.sort);
-	let playFrom = [];
-	let playList = [];
-	arr.map(val => {
-		playFrom.push(val.flag);
-		playList.push(val.url);
-	})
-	vod.vod_play_from = playFrom.join("$$$");
-	vod.vod_play_url = playList.join("$$$");
-	return JSON.stringify({
-		list: [vod],
-	});
+    const res = await req(url + '/api/getResN?videoId=' + id.substring(id.lastIndexOf('/') + 1) + '&mtype=2&token=' + token, {
+        headers: {
+            Referer: 'play',
+            'User-Agent': UA,
+        },
+    });
+    const list = JSON.parse(res.content).data.list;
+    let playlist = {};
+    let arr = []
+    for (const l of list) {
+        const flagData = JSON.parse(l.resData);
+        for (const f of flagData) {
+            const from = f.flag;
+            const urls = f.url;
+            if (!from || !urls) continue;
+            if (playlist[from]) continue;
+            playlist[from] = urls;
+        }
+    }
+    for (var key in playlist) {
+        if ('kuaikan' == key) {
+            arr.push({
+                flag: '快看',
+                url: playlist[key],
+                sort: 1
+            })
+        } else if ('bfzym3u8' == key) {
+            arr.push({
+                flag: '暴风',
+                url: playlist[key],
+                sort: 2
+            })
+        } else if ('ffm3u8' == key) {
+            arr.push({
+                flag: '非凡',
+                url: playlist[key],
+                sort: 3
+            })
+        } else if ('lzm3u8' == key) {
+            arr.push({
+                flag: '量子',
+                url: playlist[key],
+                sort: 4
+            })
+        } else {
+            arr.push({
+                flag: key,
+                url: playlist[key],
+                sort: 5
+            })
+        }
+    }
+    arr.sort((a, b) => a.sort - b.sort);
+    let playFrom = [];
+    let playList = [];
+    arr.map(val => {
+        playFrom.push(val.flag);
+        playList.push(val.url);
+    })
+    vod.vod_play_from = playFrom.join("$$$");
+    vod.vod_play_url = playList.join("$$$");
+    return JSON.stringify({
+        list: [vod],
+    });
 }
 
 function getToken($) {
@@ -239,7 +239,7 @@ async function play(flag, id, flags) {
 }
 
 async function search(wd, quick, pg) {
-    if (pg <= 0 || typeof(pg) == 'undefined') pg = 1;
+    if (pg <= 0 || typeof (pg) == 'undefined') pg = 1;
     const html = await request(url + '/search?q=' + wd + '&p=' + pg);
     const $ = load(html);
     const items = $('div.media');

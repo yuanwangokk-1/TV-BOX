@@ -1,5 +1,4 @@
-js:
-    let d = [];
+let d = [];
 const [url, page] = MY_URL.split('##')
 const list_json = fetch(url, {
     headers: {

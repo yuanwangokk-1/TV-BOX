@@ -1,5 +1,5 @@
 // 修正：分类改静态 (网站频繁变动分类)
-import { load, _ } from "assets://js/lib/cat.js";
+import {_, load} from "assets://js/lib/cat.js";
 
 let key = "酷奇MV";
 let HOST = "https://www.kuqimv.com";
@@ -27,7 +27,16 @@ async function init(cfg) {
 }
 
 async function home(filter) {
-    var classes = [{ "type_id": "1", "type_name": "华语高清" }, { "type_id": "2", "type_name": "日韩精选" }, { "type_id": "3", "type_name": "欧美MV" }, { "type_id": "4", "type_name": "高清现场" }, { "type_id": "5", "type_name": "影视MV" }, { "type_id": "6", "type_name": "夜店视频" }, { "type_id": "7", "type_name": "车模视频" }, { "type_id": "8", "type_name": "热舞视频" }, { "type_id": "9", "type_name": "美女写真" }, { "type_id": "10", "type_name": "美女打碟" }];
+    var classes = [{"type_id": "1", "type_name": "华语高清"}, {
+        "type_id": "2",
+        "type_name": "日韩精选"
+    }, {"type_id": "3", "type_name": "欧美MV"}, {"type_id": "4", "type_name": "高清现场"}, {
+        "type_id": "5",
+        "type_name": "影视MV"
+    }, {"type_id": "6", "type_name": "夜店视频"}, {"type_id": "7", "type_name": "车模视频"}, {
+        "type_id": "8",
+        "type_name": "热舞视频"
+    }, {"type_id": "9", "type_name": "美女写真"}, {"type_id": "10", "type_name": "美女打碟"}];
     // const html = await request(HOST);
     // const $ = load(html);
     // const class_parse = $(".lei_fl > a[href*=play]");
@@ -118,7 +127,7 @@ async function detail(id) {
 async function play(flag, id, flags) {
     const link = HOST + "/skin/kuqimv/play.php";
     const ref = HOST + "/play/" + id + ".html";
-    const pdata = { id: id };
+    const pdata = {id: id};
     const playUrl = JSON.parse(await request(link, ref, "post", pdata)).url;
     const headers = {
         Referer: HOST,

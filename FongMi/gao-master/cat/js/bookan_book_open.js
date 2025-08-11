@@ -1,4 +1,4 @@
-import { _ } from './lib/cat.js';
+import {_} from './lib/cat.js';
 
 let key = 'bookan';
 let url = 'https://api.bookan.com.cn';
@@ -21,17 +21,17 @@ async function init(cfg) {
 async function home(filter) {
     return JSON.stringify({
         class: [
-            { type_id: '1305', type_name: '少年读物' },
-            { type_id: '1304', type_name: '儿童文学' },
-            { type_id: '1320', type_name: '国学经典' },
-            { type_id: '1306', type_name: '文艺少年' },
-            { type_id: '1309', type_name: '育儿心经' },
-            { type_id: '1310', type_name: '心理哲学' },
-            { type_id: '1307', type_name: '青春励志' },
-            { type_id: '1312', type_name: '历史小说' },
-            { type_id: '1303', type_name: '故事会' },
-            { type_id: '1317', type_name: '音乐戏剧' },
-            { type_id: '1319', type_name: '相声评书' },
+            {type_id: '1305', type_name: '少年读物'},
+            {type_id: '1304', type_name: '儿童文学'},
+            {type_id: '1320', type_name: '国学经典'},
+            {type_id: '1306', type_name: '文艺少年'},
+            {type_id: '1309', type_name: '育儿心经'},
+            {type_id: '1310', type_name: '心理哲学'},
+            {type_id: '1307', type_name: '青春励志'},
+            {type_id: '1312', type_name: '历史小说'},
+            {type_id: '1303', type_name: '故事会'},
+            {type_id: '1317', type_name: '音乐戏剧'},
+            {type_id: '1319', type_name: '相声评书'},
         ],
     });
 }
@@ -64,7 +64,7 @@ async function detail(id) {
     let data = JSON.parse(content).data;
 
     let book = {
-		audio:1,
+        audio: 1,
         book_id: id,
         type_name: '',
         book_year: '',
@@ -93,7 +93,8 @@ function formatPlayUrl(name) {
         .trim();
 }
 
-async function proxy(segments, headers) {}
+async function proxy(segments, headers) {
+}
 
 async function play(flag, id, flags) {
     return JSON.stringify({

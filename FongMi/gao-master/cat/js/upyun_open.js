@@ -1,6 +1,6 @@
-import { Crypto, _ } from 'assets://js/lib/cat.js';
-import { log } from './lib/utils.js';
-import { initAli, detailContent, playContent } from './lib/ali.js';
+import {_, Crypto} from 'assets://js/lib/cat.js';
+import {log} from './lib/utils.js';
+import {detailContent, initAli, playContent} from './lib/ali.js';
 
 let siteKey = 'upyun';
 let siteType = 0;
@@ -32,7 +32,8 @@ async function home(filter) {
     return '{}';
 }
 
-async function homeVod() {}
+async function homeVod() {
+}
 
 async function category(tid, pg, filter, extend) {
     return '{}';
@@ -61,7 +62,7 @@ async function search(wd, quick, pg) {
     const data = decrypt(resp);
     const items = JSON.parse(data).result.items;
     const videos = [];
-    for(const item of items) {
+    for (const item of items) {
         const url = decrypt(item.page_url);
         const matches = url.match(patternAli);
         if (_.isEmpty(matches)) continue;

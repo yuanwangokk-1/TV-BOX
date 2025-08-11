@@ -1,10 +1,10 @@
-import { _ } from './lib/cat.js';
-import { findBestLCS } from './lib/similarity.js';
+import {_} from './lib/cat.js';
+import {findBestLCS} from './lib/similarity.js';
 
 const http = async function (url, options = {}) {
     if (options.method == 'POST' && options.data) {
         options.body = JSON.stringify(options.data);
-        options.headers = Object.assign({ 'content-type': 'application/json' }, options.headers);
+        options.headers = Object.assign({'content-type': 'application/json'}, options.headers);
     }
     const res = await req(url, options);
     res.json = () => (res.content ? JSON.parse(res.content) : null);
@@ -13,7 +13,7 @@ const http = async function (url, options = {}) {
 };
 ['get', 'post'].forEach((method) => {
     http[method] = function (url, options = {}) {
-        return http(url, Object.assign(options, { method: method.toUpperCase() }));
+        return http(url, Object.assign(options, {method: method.toUpperCase()}));
     };
 });
 
@@ -24,11 +24,11 @@ async function get_drives_path(tid) {
     const index = tid.indexOf('/', 1);
     const name = tid.substring(1, index);
     const path = tid.substring(index);
-    return { drives: await get_drives(name), path };
+    return {drives: await get_drives(name), path};
 }
 
 async function get_drives(name) {
-    const { settings, api, server } = __drives[name];
+    const {settings, api, server} = __drives[name];
     if (settings.v3 == null) {
         //获取 设置
         settings.v3 = false;
@@ -69,21 +69,21 @@ function init(cfg) {
                 params: item.params || {},
                 _path_param: item.params
                     ? _.sortBy(Object.keys(item.params), function (x) {
-                          return -x.length;
-                      })
+                        return -x.length;
+                    })
                     : [],
                 settings: {},
                 api: {},
                 getParams(path) {
                     const key = this._path_param.find((x) => path.startsWith(x));
-                    return Object.assign({}, this.params[key], { path });
+                    return Object.assign({}, this.params[key], {path});
                 },
                 async getPath(path) {
-                    const res = (await http.post(this.server + this.api.path, { data: this.getParams(path) })).json();
+                    const res = (await http.post(this.server + this.api.path, {data: this.getParams(path)})).json();
                     return this.settings.v3 ? res.data.content : res.data.files;
                 },
                 async getFile(path) {
-                    const res = (await http.post(this.server + this.api.file, { data: this.getParams(path) })).json();
+                    const res = (await http.post(this.server + this.api.file, {data: this.getParams(path)})).json();
                     const data = this.settings.v3 ? res.data : res.data.files[0];
                     if (!this.settings.v3) data.raw_url = data.url; //v2 的url和v3不一样
                     return data;
@@ -91,7 +91,7 @@ function init(cfg) {
                 async getOther(method, path) {
                     const data = this.getParams(path);
                     data.method = method;
-                    const res = (await http.post(this.server + this.api.other, { data: data })).json();
+                    const res = (await http.post(this.server + this.api.other, {data: data})).json();
                     return res;
                 },
                 isFolder(data) {
@@ -148,7 +148,7 @@ async function dir(dir, pg) {
     if (pg == 0) pg == 1;
     if (dir === '/' || dir === '') {
         const result = _.map(__drives, function (d) {
-            return { name: d.name, path: '/' + d.name + d.startPage, type: 0, thumb: '' };
+            return {name: d.name, path: '/' + d.name + d.startPage, type: 0, thumb: ''};
         });
         return JSON.stringify({
             parent: '',
@@ -158,7 +158,7 @@ async function dir(dir, pg) {
         });
     }
 
-    let { drives, path } = await get_drives_path(dir);
+    let {drives, path} = await get_drives_path(dir);
     const id = dir.endsWith('/') ? dir : dir + '/';
     const list = await drives.getPath(path);
     let subtList = [];
@@ -194,7 +194,7 @@ async function dir(dir, pg) {
 }
 
 async function file(file) {
-    let { drives, path } = await get_drives_path(file);
+    let {drives, path} = await get_drives_path(file);
     const item = await drives.getFile(path);
     const subs = [];
     if (__subtitle_cache[file]) {
@@ -203,7 +203,8 @@ async function file(file) {
                 let subP = await get_drives_path(sub);
                 const subItem = await drives.getFile(subP.path);
                 subs.push(subItem.raw_url);
-            } catch (error) {}
+            } catch (error) {
+            }
         }
     }
     if (item.provider === 'AliyundriveShare2Open' && drives.api.other) {
@@ -216,7 +217,8 @@ async function file(file) {
                     urls.push(live.url);
                 }
             }
-        } catch (error) {}
+        } catch (error) {
+        }
         const result = {
             name: item.name,
             url: urls,
@@ -232,7 +234,8 @@ async function file(file) {
         let url = item.raw_url;
         try {
             url = (await http.get(url)).json().data.redirect_url;
-        } catch (error) {}
+        } catch (error) {
+        }
         const result = {
             name: item.name,
             url: url,

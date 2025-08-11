@@ -1,4 +1,4 @@
-import { Crypto, load, _ } from 'assets://js/lib/cat.js';
+import {_, load} from 'assets://js/lib/cat.js';
 
 const key = 'ggys';
 const HOST = 'https://ggys.me';
@@ -34,10 +34,53 @@ async function init(cfg) {
 }
 
 async function home(filter) {
-    const classes = [{'type_id':'movies','type_name':'电影'},{'type_id':'tv-shows','type_name':'剧集'}];
+    const classes = [{'type_id': 'movies', 'type_name': '电影'}, {'type_id': 'tv-shows', 'type_name': '剧集'}];
     const filterObj = {
-        'movies':[{'key':'class','name':'类型','init':'','value':[{'n':'全部','v':''},{'n':'欧美电影','v':'tag/欧美电影'},{'n':'华语电影','v':'tag/华语电影'},{'n':'日韩电影','v':'tag/日韩电影'},{'n':'其他地区','v':'tag/其他地区'},{'n':'冒险','v':'genre/冒险'},{'n':'剧情','v':'genre/剧情'},{'n':'动作','v':'genre/动作'},{'n':'动画','v':'genre/动画'},{'n':'历史','v':'genre/历史'},{'n':'喜剧','v':'genre/喜剧'},{'n':'奇幻','v':'genre/奇幻'},{'n':'家庭','v':'genre/家庭'},{'n':'恐怖','v':'genre/恐怖'},{'n':'悬疑','v':'genre/悬疑'},{'n':'惊悚','v':'genre/惊悚'},{'n':'战争','v':'genre/战争'},{'n':'爱情','v':'genre/爱情'},{'n':'犯罪','v':'genre/犯罪'},{'n':'科幻','v':'genre/科幻'},{'n':'纪录','v':'genre/纪录'},{'n':'音乐','v':'genre/音乐'}]}],
-        'tv-shows':[{'key':'class','name':'类型','init':'','value':[{'n':'全部','v':''},{'n':'欧美剧','v':'tag/欧美剧'},{'n':'日韩剧','v':'tag/日韩剧'},{'n':'国产剧','v':'tag/国产剧'},{'n':'其他地区','v':'tag/其他地区'},{'n':'剧情','v':'genre/剧情'},{'n':'动作','v':'genre/动作'},{'n':'动画','v':'genre/动画'},{'n':'喜剧','v':'genre/喜剧'},{'n':'家庭','v':'genre/家庭'},{'n':'悬疑','v':'genre/悬疑'},{'n':'犯罪','v':'genre/犯罪'},{'n':'科幻','v':'genre/科幻'},{'n':'西部','v':'genre/西部'}]}],
+        'movies': [{
+            'key': 'class',
+            'name': '类型',
+            'init': '',
+            'value': [{'n': '全部', 'v': ''}, {'n': '欧美电影', 'v': 'tag/欧美电影'}, {
+                'n': '华语电影',
+                'v': 'tag/华语电影'
+            }, {'n': '日韩电影', 'v': 'tag/日韩电影'}, {'n': '其他地区', 'v': 'tag/其他地区'}, {
+                'n': '冒险',
+                'v': 'genre/冒险'
+            }, {'n': '剧情', 'v': 'genre/剧情'}, {'n': '动作', 'v': 'genre/动作'}, {
+                'n': '动画',
+                'v': 'genre/动画'
+            }, {'n': '历史', 'v': 'genre/历史'}, {'n': '喜剧', 'v': 'genre/喜剧'}, {
+                'n': '奇幻',
+                'v': 'genre/奇幻'
+            }, {'n': '家庭', 'v': 'genre/家庭'}, {'n': '恐怖', 'v': 'genre/恐怖'}, {
+                'n': '悬疑',
+                'v': 'genre/悬疑'
+            }, {'n': '惊悚', 'v': 'genre/惊悚'}, {'n': '战争', 'v': 'genre/战争'}, {
+                'n': '爱情',
+                'v': 'genre/爱情'
+            }, {'n': '犯罪', 'v': 'genre/犯罪'}, {'n': '科幻', 'v': 'genre/科幻'}, {
+                'n': '纪录',
+                'v': 'genre/纪录'
+            }, {'n': '音乐', 'v': 'genre/音乐'}]
+        }],
+        'tv-shows': [{
+            'key': 'class',
+            'name': '类型',
+            'init': '',
+            'value': [{'n': '全部', 'v': ''}, {'n': '欧美剧', 'v': 'tag/欧美剧'}, {
+                'n': '日韩剧',
+                'v': 'tag/日韩剧'
+            }, {'n': '国产剧', 'v': 'tag/国产剧'}, {'n': '其他地区', 'v': 'tag/其他地区'}, {
+                'n': '剧情',
+                'v': 'genre/剧情'
+            }, {'n': '动作', 'v': 'genre/动作'}, {'n': '动画', 'v': 'genre/动画'}, {
+                'n': '喜剧',
+                'v': 'genre/喜剧'
+            }, {'n': '家庭', 'v': 'genre/家庭'}, {'n': '悬疑', 'v': 'genre/悬疑'}, {
+                'n': '犯罪',
+                'v': 'genre/犯罪'
+            }, {'n': '科幻', 'v': 'genre/科幻'}, {'n': '西部', 'v': 'genre/西部'}]
+        }],
     };
     return JSON.stringify({
         class: classes,
@@ -45,7 +88,8 @@ async function home(filter) {
     });
 }
 
-async function homeVod() {}
+async function homeVod() {
+}
 
 async function category(tid, pg, filter, extend) {
     if (pg <= 0) pg = 1;
@@ -126,7 +170,7 @@ async function detail(id) {
     if (isMovieType) {
         const playId = $('.ggys-video-player').attr('data-source-id');
         const playCfg = playId + '@' + TYPE_MOVIE;
-        playMap[from] = [ '全$' + playCfg ];
+        playMap[from] = ['全$' + playCfg];
     } else {
         const tabs = $('.tv_show__season-tabs-wrap .nav-item');
         const episodes = $('.episodes');

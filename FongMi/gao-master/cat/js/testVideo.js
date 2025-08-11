@@ -1,4 +1,4 @@
-import { __jsEvalReturn } from './kunyu77_open.js';
+import {__jsEvalReturn} from './kunyu77_open.js';
 
 var spider = __jsEvalReturn();
 
@@ -15,7 +15,7 @@ async function test() {
     spType = '2';
     // spVid = '95873';
 
-    await spider.init({ skey: 'siteKey', ext: '' });
+    await spider.init({skey: 'siteKey', ext: ''});
     var classes = jsonParse(await spider.home(true));
     console.log(classes);
     var homeVod = jsonParse(await spider.homeVod());
@@ -55,4 +55,4 @@ async function test() {
     console.log(search);
 }
 
-export { test };
+export {test};

@@ -1,40 +1,40 @@
-globalThis.getTime = function(){
-let ts= Math.round(new Date().getTime()/1000).toString();
-log('获取时间戳:'+ts);
-return ts
+globalThis.getTime = function () {
+    let ts = Math.round(new Date().getTime() / 1000).toString();
+    log('获取时间戳:' + ts);
+    return ts
 }
 
-globalThis.signUrl=function(json){
+globalThis.signUrl = function (json) {
 // 获取所有节点的名称并按字母顺序排序
-let json1=JSON.parse(json);
-var sortedKeys = Object.keys(json1).sort();
+    let json1 = JSON.parse(json);
+    var sortedKeys = Object.keys(json1).sort();
 // 遍历排好序的节点名称列表，并打印相应的值
-let s='';
-for (let key in sortedKeys){
-	let value=json1[sortedKeys[key]];
-	if(value!=undefined){
-	s=s+value;
-	}
-}
+    let s = '';
+    for (let key in sortedKeys) {
+        let value = json1[sortedKeys[key]];
+        if (value != undefined) {
+            s = s + value;
+        }
+    }
 //log(s);
 //log(md5(s+"alskeuscli"));
-s=json.slice(0,-1)+",\"sign\":\""+md5(s+"alskeuscli")+"\"\}";
-log(s);
-return s;
+    s = json.slice(0, -1) + ",\"sign\":\"" + md5(s + "alskeuscli") + "\"\}";
+    log(s);
+    return s;
 }
 
-globalThis.posturl=function(url,json){
-	let html= fetch(url, {
-		body: JSON.parse(signUrl(json)),
-		headers: {"User-Agent": "okhttp/3.12.3"},
-		method: "POST"
-	}, true);
-	return JSON.parse(html);
+globalThis.posturl = function (url, json) {
+    let html = fetch(url, {
+        body: JSON.parse(signUrl(json)),
+        headers: {"User-Agent": "okhttp/3.12.3"},
+        method: "POST"
+    }, true);
+    return JSON.parse(html);
 }
 var rule = {
-	title: '喵次元[APP]',
-	host: 'https://cym.zhui.la/api.php',
-	hostJs:`
+    title: '喵次元[APP]',
+    host: 'https://cym.zhui.la/api.php',
+    hostJs: `
 	var json2 = '{"versionName":"5.6.9","uuid":"9cc01079c64e2495","version":"4835d0a2","versionCode":"35","ctime":"'+getTime()+'"}';
 	let url="https://cym.zhui.la/api.php/type/get_list";
 	let jo=posturl(url,json2).data.list;
@@ -76,21 +76,21 @@ var rule = {
 	log(rule.class_url);
 `,
 
-	homeUrl:'?hpindigo=**&page=fypage',
-	url:'?t=fyclass&page=fypage',
-	filter_url:'',
-	filter: {},
-	detailUrl:'?ids=',
-	searchUrl: '?hpindigo=**&page=fypage',
-	searchable: 2,
-	quickSearch: 0,
-	filterable:1,//是否启用分类筛选,
-	headers:{'User-Agent':'MOBILE_UA'},
-	timeout:10000,
-	class_name:'全部', // 分类筛选 /api.php/app/nav
-	class_url:'0',
-	play_parse:true,
-    lazy:`js:
+    homeUrl: '?hpindigo=**&page=fypage',
+    url: '?t=fyclass&page=fypage',
+    filter_url: '',
+    filter: {},
+    detailUrl: '?ids=',
+    searchUrl: '?hpindigo=**&page=fypage',
+    searchable: 2,
+    quickSearch: 0,
+    filterable: 1,//是否启用分类筛选,
+    headers: {'User-Agent': 'MOBILE_UA'},
+    timeout: 10000,
+    class_name: '全部', // 分类筛选 /api.php/app/nav
+    class_url: '0',
+    play_parse: true,
+    lazy: `js:
 	log("*************测试*************");
 	let dd=input.split("&");
 	let ju_id=dd[0];
@@ -113,10 +113,10 @@ var rule = {
 	log(input)
 	`,
     //lazy:'js:input=/m3u8|mp4|flv/.test(input)?{jx:0,url:input,parse:0}:{jx:1,url:input,parse:1}',
-	limit:6,
-	// 推荐:'json:items;*;*;*;*',
-	推荐:'json:data.sections[0].items;*;*;*;*',
-	推荐:`js:
+    limit: 6,
+    // 推荐:'json:items;*;*;*;*',
+    推荐: 'json:data.sections[0].items;*;*;*;*',
+    推荐: `js:
 	log(input);
 	let page=input.split("&")[1].split("=")[1];
 	log(page);
@@ -143,7 +143,7 @@ var rule = {
 	
 	VODS=videos;
 	`,
-	一级:`js:
+    一级: `js:
 	log(input);
 	let canshu=input.split("?")[1].split("&");
 	let dd={};
@@ -167,7 +167,7 @@ var rule = {
 	});
 	setResult(d);
     `,
-	二级:`js: 
+    二级: `js: 
 	log(orId);
 	var json2 = '{"vod_id":"'+orId+'","versionName":"5.6.9","uuid":"3899af59c0b12b98","version":"4835d0a2","versionCode":"35","ctime":"'+getTime()+'"}';
 	log(json2);
@@ -219,7 +219,7 @@ var rule = {
 	VOD["vod_play_from"] = vod_play_from;
 	VOD["vod_play_url"] = vod_play_url
 	`,
-	搜索:`js:
+    搜索: `js:
 	let page=input.split("&")[1].split("=")[1];
 	log(page);
 	var json2 = '{"vod_year":"","limit":"20","orderby":"up","vod_area":"","vod_class":"","page":"'+page+'","versionName":"5.6.9","uuid":"9cc01079c64e2495","version":"4835d0a2","vod_name":"'+KEY+'","versionCode":"35","ctime":"'+getTime()+'"}';

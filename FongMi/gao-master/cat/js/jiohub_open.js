@@ -1,4 +1,4 @@
-import { Crypto, load, _, dayjs } from 'assets://js/lib/cat.js';
+import {_, Crypto, dayjs, load} from 'assets://js/lib/cat.js';
 
 let key = 'jiohub';
 let url = 'https://jiohub.top';
@@ -127,7 +127,7 @@ async function detail(id) {
 
     const urls = html.match(/let urls = \"(.*)\";/)[1].replace(/_/g, '/').replace(/-/g, '+');
     var key = Crypto.enc.Utf8.parse("cf2d1a-6a4d-9ef8");
-    var playlist = Crypto.AES.decrypt(urls, key, { iv: key, padding: Crypto.pad.Pkcs7 });
+    var playlist = Crypto.AES.decrypt(urls, key, {iv: key, padding: Crypto.pad.Pkcs7});
     playlist = Crypto.enc.Utf8.stringify(playlist).split('\n');
     vod.vod_play_from = 'JOJO';
     vod.vod_play_url = playlist.join('#');
@@ -137,9 +137,9 @@ async function detail(id) {
 }
 
 function playPid() {
-    var key = Crypto.enc.Utf8.parse('VSmJTRRE'+dayjs().format('YYYYMMDD'));
+    var key = Crypto.enc.Utf8.parse('VSmJTRRE' + dayjs().format('YYYYMMDD'));
     var iv = Crypto.enc.Hex.parse("00000000000000000000000000000000");
-    var pid = Crypto.AES.encrypt(dayjs().format('YYYY-MM-DD HH:mm'), key, { iv: iv, padding: Crypto.pad.Pkcs7 });
+    var pid = Crypto.AES.encrypt(dayjs().format('YYYY-MM-DD HH:mm'), key, {iv: iv, padding: Crypto.pad.Pkcs7});
     pid = pid.toString().replace(/\+/g, '-');
     return pid;
 }

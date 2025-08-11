@@ -1,4 +1,4 @@
-import { Crypto, _, load } from './lib/cat.js';
+import {_, Crypto, load} from './lib/cat.js';
 
 let key = 'copymanga';
 let url = 'https://www.mangacopy.com';
@@ -34,10 +34,10 @@ async function home(filter) {
         init: '',
     };
     let regionValues = [];
-    regionValues.push({ n: '全部', v: '' });
-    regionValues.push({ n: '日漫', v: '0' });
-    regionValues.push({ n: '韓漫', v: '1' });
-    regionValues.push({ n: '美漫', v: '2' });
+    regionValues.push({n: '全部', v: ''});
+    regionValues.push({n: '日漫', v: '0'});
+    regionValues.push({n: '韓漫', v: '1'});
+    regionValues.push({n: '美漫', v: '2'});
     region['value'] = regionValues;
 
     let ordering = {
@@ -46,10 +46,10 @@ async function home(filter) {
         init: '-datetime_updated',
     };
     let orderingValues = [];
-    orderingValues.push({ n: '更新時間↓', v: '-datetime_updated' });
-    orderingValues.push({ n: '更新時間↑', v: 'datetime_updated' });
-    orderingValues.push({ n: '熱門↓', v: '-popular' });
-    orderingValues.push({ n: '熱門↑', v: 'popular' });
+    orderingValues.push({n: '更新時間↓', v: '-datetime_updated'});
+    orderingValues.push({n: '更新時間↑', v: 'datetime_updated'});
+    orderingValues.push({n: '熱門↓', v: '-popular'});
+    orderingValues.push({n: '熱門↑', v: 'popular'});
     ordering['value'] = orderingValues;
 
     let status = {
@@ -58,15 +58,15 @@ async function home(filter) {
         init: '',
     };
     let statusValues = [];
-    statusValues.push({ n: '全部', v: '' });
-    statusValues.push({ n: '連載中', v: '0' });
-    statusValues.push({ n: '已完結', v: '1' });
-    statusValues.push({ n: '短篇', v: '2' });
+    statusValues.push({n: '全部', v: ''});
+    statusValues.push({n: '連載中', v: '0'});
+    statusValues.push({n: '已完結', v: '1'});
+    statusValues.push({n: '短篇', v: '2'});
     status['value'] = statusValues;
 
     filterObj['c1'] = [];
 
-    let themeValues = [{ n: '全部', v: '' }];
+    let themeValues = [{n: '全部', v: ''}];
     for (const a of $('div.classify-right>a[href*="theme="]')) {
         themeValues.push({
             n: $(a).text().trim(),
@@ -89,7 +89,7 @@ async function home(filter) {
     filterObj['c1'].push(ordering);
 
     return {
-        class: [{ type_name: 'all', type_id: 'c1' }],
+        class: [{type_name: 'all', type_id: 'c1'}],
         filters: filterObj,
     };
 }
@@ -132,7 +132,7 @@ async function detail(id) {
     var key = Crypto.enc.Utf8.parse('xxxmanga.woo.key');
     var iv = Crypto.enc.Utf8.parse(data.substr(0, 16));
     var src = Crypto.enc.Hex.parse(data.substr(16));
-    var dst = Crypto.AES.decrypt({ ciphertext: src }, key, { iv: iv, padding: Crypto.pad.Pkcs7 });
+    var dst = Crypto.AES.decrypt({ciphertext: src}, key, {iv: iv, padding: Crypto.pad.Pkcs7});
     dst = Crypto.enc.Utf8.stringify(dst);
 
     const groups = JSON.parse(dst).groups;
@@ -157,7 +157,7 @@ async function play(flag, id, flags) {
         var key = Crypto.enc.Utf8.parse('xxxmanga.woo.key');
         var iv = Crypto.enc.Utf8.parse(data.substr(0, 16));
         var src = Crypto.enc.Hex.parse(data.substr(16));
-        var dst = Crypto.AES.decrypt({ ciphertext: src }, key, { iv: iv, padding: Crypto.pad.Pkcs7 });
+        var dst = Crypto.AES.decrypt({ciphertext: src}, key, {iv: iv, padding: Crypto.pad.Pkcs7});
         dst = Crypto.enc.Utf8.stringify(dst);
         const list = JSON.parse(dst);
         var content = [];

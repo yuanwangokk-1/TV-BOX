@@ -43,7 +43,8 @@
     </el-tabs>-->
     <van-tabs @click="tabClick" class="tab-box" v-model="currentTab">
         <van-tab :key="index" :title="`${item.name}：${chooseLabel[index]}`" v-for="(item, index) in category">
-            <van-tag :key="key" :plain="! tab.choose" @click="chooseTab(index, key, tab.choose)" class="tab" size="large"
+            <van-tag :key="key" :plain="! tab.choose" @click="chooseTab(index, key, tab.choose)" class="tab"
+                     size="large"
                      type="danger" v-for="(tab, key) in item.list">{{tab.name}}
             </van-tag>
         </van-tab>

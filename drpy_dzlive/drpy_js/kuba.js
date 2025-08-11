@@ -117,8 +117,7 @@ vodUrls.forEach(function (it) {
 `,
 
     },
-    搜索: `js:
-pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
+    搜索: `pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let cookie="";
 if (false){
 let new_html=request(HOST, {withHeaders:true});

@@ -1,4 +1,4 @@
-import { Crypto, load, _ } from 'assets://js/lib/cat.js';
+import {_, load} from 'assets://js/lib/cat.js';
 
 let key = 'star';
 let host = 'https://www.histar.tv';
@@ -11,7 +11,7 @@ let siteType = 0;
 const UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1';
 
 async function request(reqUrl, method, data) {
-    const headers =  {
+    const headers = {
         'User-Agent': UA,
     };
     if (method == 'post') {
@@ -52,7 +52,7 @@ async function init(cfg) {
 async function home(filter) {
     const typeList = _.keys(types);
     const classes = _.map(typeList, (item) => {
-        return { type_id: item, type_name: types[item] };
+        return {type_id: item, type_name: types[item]};
     });
     const filterConfig = {};
     const jsonData = JSON.stringify(typeList);
@@ -66,7 +66,8 @@ async function home(filter) {
         const time = convertTypeData(obj, 'time', '年份');
         const filterArray = [label, country, time];
         filterConfig[typeId] = filterArray;
-    };
+    }
+
     return JSON.stringify({
         class: classes,
         filters: filterConfig,
@@ -79,7 +80,9 @@ function convertTypeData(typeData, key, name) {
     }
     let valueList = typeData[key];
     if (key == 'time') {
-        valueList = valueList.sort((a, b) => { return b - a;});
+        valueList = valueList.sort((a, b) => {
+            return b - a;
+        });
         valueList.pop();
     }
     const values = _.map(valueList, (item) => {

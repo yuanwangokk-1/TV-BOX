@@ -1,9 +1,8 @@
-js:
-    addListener("onClose", $.toString(() => {
-        clearItem('cate_level_1_id')
-        clearItem('cate_level_2_id')
-        clearItem('cursor')
-    }))
+addListener("onClose", $.toString(() => {
+    clearItem('cate_level_1_id')
+    clearItem('cate_level_2_id')
+    clearItem('cursor')
+}))
 const d = []
 const EMPTY = 'hiker://empty'
 const CATE_URL = 'https://juejin.cn'

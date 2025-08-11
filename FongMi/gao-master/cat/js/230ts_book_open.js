@@ -1,5 +1,5 @@
 // 网站搜索异常
-import { load, _ } from './lib/cat.js';
+import {_, load} from './lib/cat.js';
 
 let key = '爱上你听书网';
 let HOST = 'https://wap.230ts.net';
@@ -60,7 +60,7 @@ async function homeVod() {
         const remarks = $($(item).find('p.module-slide-author')[0]).text().trim();
         return {
             vod_id: it.attribs.href.replace(/.*?\/tingshu\/(.*)/g, '$1'),
-            vod_name: it.attribs.title.replace('有声小说',''),
+            vod_name: it.attribs.title.replace('有声小说', ''),
             vod_pic: HOST + img.attribs['data-original'],
             vod_remarks: remarks || '',
         };
@@ -72,7 +72,7 @@ async function homeVod() {
 
 async function category(tid, pg, filter, extend) {
     if (pg <= 0) pg = 1;
-    const link = HOST + '/sort/' + tid +'/' + (`${pg}`) + '.html';
+    const link = HOST + '/sort/' + tid + '/' + (`${pg}`) + '.html';
     const html = await request(link);
     const $ = load(html);
     const items = $('ul.book-ol > li');
@@ -82,9 +82,9 @@ async function category(tid, pg, filter, extend) {
         const remarks = $($(item).find('div.book-meta')[0]).text().trim();
         return {
             book_id: it.attribs.href.replace(/.*?\/tingshu\/(.*)/g, '$1'),
-            book_name: it.attribs.title.replace('有声小说',''),
+            book_name: it.attribs.title.replace('有声小说', ''),
             book_pic: HOST + img.attribs['data-original'],
-            book_remarks: remarks.replace('佚名（著）','').replace('佚名（播）','').replace('未知（著）','').replace('未知（播）','') || '',
+            book_remarks: remarks.replace('佚名（著）', '').replace('佚名（播）', '').replace('未知（著）', '').replace('未知（播）', '') || '',
         };
     });
     const hasMore = $('div.paging > a:contains(下一页)').length > 0;
@@ -103,9 +103,9 @@ async function detail(id) {
     const $ = load(html);
     const detail = $('div.book-cell:first > div');
     let vod = {
-		audio:1,
+        audio: 1,
         book_id: id,
-        type_name: $('h1:first').text().trim().replace('有声小说',''),
+        type_name: $('h1:first').text().trim().replace('有声小说', ''),
         // vod_pic: HOST + $('div.myui-content__thumb img:first').attr('data-original'),
         // vod_content: $('div.ellipsis').text().trim(),
         book_year: '',
@@ -159,7 +159,7 @@ async function play(flag, id, flags) {
         })
     ).content;
     const playUrl = iframeHtml.match(/mp3:'(.*?)'/)[1];
-    if (playUrl.indexOf('m4a') >= 0 || playUrl.indexOf('mp3') >= 0 ) {
+    if (playUrl.indexOf('m4a') >= 0 || playUrl.indexOf('mp3') >= 0) {
         return JSON.stringify({
             parse: 0,
             url: playUrl,
@@ -203,7 +203,8 @@ async function play(flag, id, flags) {
                     });
                 }
             }
-        } catch (e) {}
+        } catch (e) {
+        }
         if (playUrl.indexOf('http') >= 0) {
             const playUrl = playUrl + '.m4a';
             return JSON.stringify({
@@ -229,7 +230,7 @@ async function play(flag, id, flags) {
 }
 
 async function search(wd, quick) {
-    const link = HOST + '/search.html?searchtype=name&searchword=' + wd +'&page=1';
+    const link = HOST + '/search.html?searchtype=name&searchword=' + wd + '&page=1';
     const html = await request(link);
     const $ = load(html);
     const items = $('ul.book-ol > li');
@@ -239,9 +240,9 @@ async function search(wd, quick) {
         const remarks = $($(item).find('div.book-meta')[0]).text().trim();
         return {
             book_id: it.attribs.href.replace(/.*?\/tingshu\/(.*)/g, '$1'),
-            book_name: it.attribs.title.replace('有声小说',''),
+            book_name: it.attribs.title.replace('有声小说', ''),
             book_pic: img.attribs['data-original'],
-            book_remarks: remarks.replace('佚名（著）','').replace('佚名（播）','').replace('未知（著）','').replace('未知（播）','') || '',
+            book_remarks: remarks.replace('佚名（著）', '').replace('佚名（播）', '').replace('未知（著）', '').replace('未知（播）', '') || '',
         };
     });
     return JSON.stringify({

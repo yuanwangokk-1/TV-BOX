@@ -1,4 +1,4 @@
-import { _, Uri, load } from 'assets://js/lib/cat.js';
+import {_, load, Uri} from 'assets://js/lib/cat.js';
 
 let key = 'fengche';
 let HOST = 'https://www.qyy158.com';
@@ -25,9 +25,64 @@ async function init(cfg) {
 }
 
 async function home(filter) {
-    const classes = [{'type_id':'all','type_name':'all'}];
+    const classes = [{'type_id': 'all', 'type_name': 'all'}];
     const filterObj = {
-        'all':[{'key':'area','name':'地域','init':'','value':[{'n':'全部','v':''},{'n':'大陆','v':'1'},{'n':'日本','v':'2'},{'n':'韩国','v':'3'},{'n':'欧美','v':'4'}]},{'key':'class','name':'类别','init':'','wrap':1,'value':[{'n':'全部','v':''},{'n':'霸总','v':'bazong'},{'n':'修真','v':'xiuzhen'},{'n':'恋爱','v':'lianai'},{'n':'校园','v':'xiaoyuan'},{'n':'冒险','v':'maoxian'},{'n':'搞笑','v':'gaoxiao'},{'n':'生活','v':'shenghuo'},{'n':'热血','v':'rexue'},{'n':'架空','v':'jiakong'},{'n':'后宫','v':'hougong'},{'n':'玄幻','v':'xuanhuan'},{'n':'悬疑','v':'xuanyi'},{'n':'恐怖','v':'kongbu'},{'n':'灵异','v':'lingyi'},{'n':'动作','v':'dongzuo'},{'n':'科幻','v':'kehuan'},{'n':'战争','v':'zhanzheng'},{'n':'古风','v':'gufeng'},{'n':'穿越','v':'chuanyue'},{'n':'竞技','v':'jingji'},{'n':'励志','v':'lizhi'},{'n':'同人','v':'tongren'},{'n':'真人','v':'zhenren'},{'n':'其他','v':'qita'},{'n':'总裁','v':'zongcai'},{'n':'异能','v':'yineng'},{'n':'韩漫','v':'hanman'},{'n':'剧情','v':'juqing'},{'n':'大女主','v':'danvzhu'},{'n':'都市','v':'dushi'},{'n':'格斗','v':'gedou'},{'n':'武侠','v':'wuxia'},{'n':'日常','v':'richang'},{'n':'纯爱','v':'chunai'},{'n':'国漫','v':'guoman'},{'n':'推理','v':'tuili'},{'n':'少年','v':'shaonain'},{'n':'奇幻','v':'qihuan'},{'n':'短篇','v':'duanpian'},{'n':'ABO','v':'abo'},{'n':'运动','v':'yundong'},{'n':'萌系','v':'mengxi'},{'n':'爆笑','v':'baoxiao'},{'n':'蔷薇','v':'qiangwei'},{'n':'百合','v':'baihe'},{'n':'BG','v':'bg'}]},{'key':'status','name':'状态','init':'','value':[{'n':'全部','v':''},{'n':'连载中','v':'1'},{'n':'已完结','v':'2'}]}],
+        'all': [{
+            'key': 'area',
+            'name': '地域',
+            'init': '',
+            'value': [{'n': '全部', 'v': ''}, {'n': '大陆', 'v': '1'}, {'n': '日本', 'v': '2'}, {
+                'n': '韩国',
+                'v': '3'
+            }, {'n': '欧美', 'v': '4'}]
+        }, {
+            'key': 'class',
+            'name': '类别',
+            'init': '',
+            'wrap': 1,
+            'value': [{'n': '全部', 'v': ''}, {'n': '霸总', 'v': 'bazong'}, {'n': '修真', 'v': 'xiuzhen'}, {
+                'n': '恋爱',
+                'v': 'lianai'
+            }, {'n': '校园', 'v': 'xiaoyuan'}, {'n': '冒险', 'v': 'maoxian'}, {
+                'n': '搞笑',
+                'v': 'gaoxiao'
+            }, {'n': '生活', 'v': 'shenghuo'}, {'n': '热血', 'v': 'rexue'}, {'n': '架空', 'v': 'jiakong'}, {
+                'n': '后宫',
+                'v': 'hougong'
+            }, {'n': '玄幻', 'v': 'xuanhuan'}, {'n': '悬疑', 'v': 'xuanyi'}, {'n': '恐怖', 'v': 'kongbu'}, {
+                'n': '灵异',
+                'v': 'lingyi'
+            }, {'n': '动作', 'v': 'dongzuo'}, {'n': '科幻', 'v': 'kehuan'}, {
+                'n': '战争',
+                'v': 'zhanzheng'
+            }, {'n': '古风', 'v': 'gufeng'}, {'n': '穿越', 'v': 'chuanyue'}, {'n': '竞技', 'v': 'jingji'}, {
+                'n': '励志',
+                'v': 'lizhi'
+            }, {'n': '同人', 'v': 'tongren'}, {'n': '真人', 'v': 'zhenren'}, {'n': '其他', 'v': 'qita'}, {
+                'n': '总裁',
+                'v': 'zongcai'
+            }, {'n': '异能', 'v': 'yineng'}, {'n': '韩漫', 'v': 'hanman'}, {'n': '剧情', 'v': 'juqing'}, {
+                'n': '大女主',
+                'v': 'danvzhu'
+            }, {'n': '都市', 'v': 'dushi'}, {'n': '格斗', 'v': 'gedou'}, {'n': '武侠', 'v': 'wuxia'}, {
+                'n': '日常',
+                'v': 'richang'
+            }, {'n': '纯爱', 'v': 'chunai'}, {'n': '国漫', 'v': 'guoman'}, {'n': '推理', 'v': 'tuili'}, {
+                'n': '少年',
+                'v': 'shaonain'
+            }, {'n': '奇幻', 'v': 'qihuan'}, {'n': '短篇', 'v': 'duanpian'}, {'n': 'ABO', 'v': 'abo'}, {
+                'n': '运动',
+                'v': 'yundong'
+            }, {'n': '萌系', 'v': 'mengxi'}, {'n': '爆笑', 'v': 'baoxiao'}, {
+                'n': '蔷薇',
+                'v': 'qiangwei'
+            }, {'n': '百合', 'v': 'baihe'}, {'n': 'BG', 'v': 'bg'}]
+        }, {
+            'key': 'status',
+            'name': '状态',
+            'init': '',
+            'value': [{'n': '全部', 'v': ''}, {'n': '连载中', 'v': '1'}, {'n': '已完结', 'v': '2'}]
+        }],
     };
     return {
         class: classes,

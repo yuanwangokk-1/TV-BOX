@@ -1,5 +1,5 @@
 // 搜索滑块验证
-import { load, _ } from './lib/cat.js';
+import {_, load} from './lib/cat.js';
 
 let key = '短视频';
 let HOST = 'http://www.sharenice.net';
@@ -34,6 +34,7 @@ function clsjoin(cls) {
 }
 
 let classes = [];
+
 async function home(filter) {
     let filterObj = {};
     let html = await request(HOST);
@@ -69,7 +70,7 @@ async function homeVod() {
 }
 
 async function category(tid, pg, filter, extend) {
-    if (pg <= 0 || typeof(pg) == 'undefined') pg = 1;
+    if (pg <= 0 || typeof (pg) == 'undefined') pg = 1;
     let link = HOST + '/' + tid + '?page=' + pg;
     let html = await request(link);
     let $ = load(html);

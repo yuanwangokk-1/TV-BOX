@@ -1,4 +1,4 @@
-import { load, _ } from './lib/cat.js';
+import {_, load} from './lib/cat.js';
 
 let key = '童趣';
 let HOST = 'https://www.boosj.com';
@@ -25,17 +25,35 @@ async function init(cfg) {
 }
 
 async function home(filter) {
-    const classes = [{ type_id: '', type_name: '全部' }, { type_id: 28, type_name: '辅食' }, { type_id: 582, type_name: '动画' }, { type_id: 3364, type_name: '儿童舞蹈' }, { type_id: 3366, type_name: '少儿英语' }, { type_id: 3367, type_name: '儿童歌曲' }, { type_id: 3622, type_name: '才艺' }, { type_id: 3782, type_name: '播视自制' }, { type_id: 3822, type_name: '故事' }, { type_id: 3842, type_name: '亲子教育' }, { type_id: 4402, type_name: '美术' }, { type_id: 4583, type_name: '其他' }, { type_id: 4762, type_name: '儿童游戏' }, { type_id: 4842, type_name: '识物' }, { type_id: 4843, type_name: '绘本' }, { type_id: 4844, type_name: '古诗' }, { type_id: 4845, type_name: '科普' }, { type_id: 5102, type_name: '儿童玩具' }, { type_id: 5142, type_name: '播视童趣儿童玩具' }];
+    const classes = [{type_id: '', type_name: '全部'}, {type_id: 28, type_name: '辅食'}, {
+        type_id: 582,
+        type_name: '动画'
+    }, {type_id: 3364, type_name: '儿童舞蹈'}, {type_id: 3366, type_name: '少儿英语'}, {
+        type_id: 3367,
+        type_name: '儿童歌曲'
+    }, {type_id: 3622, type_name: '才艺'}, {type_id: 3782, type_name: '播视自制'}, {
+        type_id: 3822,
+        type_name: '故事'
+    }, {type_id: 3842, type_name: '亲子教育'}, {type_id: 4402, type_name: '美术'}, {
+        type_id: 4583,
+        type_name: '其他'
+    }, {type_id: 4762, type_name: '儿童游戏'}, {type_id: 4842, type_name: '识物'}, {
+        type_id: 4843,
+        type_name: '绘本'
+    }, {type_id: 4844, type_name: '古诗'}, {type_id: 4845, type_name: '科普'}, {
+        type_id: 5102,
+        type_name: '儿童玩具'
+    }, {type_id: 5142, type_name: '播视童趣儿童玩具'}];
     const filterObj = {};
     const jsonData = [
         {
             key: 'age',
             name: '年龄段',
             value: [
-                { n: '全部', v: '' },
-                { n: '6岁以上', v: '?p367=370' },
-                { n: '3~6岁', v: '?p367=369' },
-                { n: '0~3岁', v: '?p367=368' },
+                {n: '全部', v: ''},
+                {n: '6岁以上', v: '?p367=370'},
+                {n: '3~6岁', v: '?p367=369'},
+                {n: '0~3岁', v: '?p367=368'},
             ],
             init: '',
         },
@@ -43,10 +61,10 @@ async function home(filter) {
             key: 'by',
             name: '排序',
             value: [
-                { n: '全部', v: '' },
-                { n: '最新发布', v: 'lately' },
-                { n: '最多播放', v: 'pop' },
-                { n: '最多评论', v: 'view' },
+                {n: '全部', v: ''},
+                {n: '最新发布', v: 'lately'},
+                {n: '最多播放', v: 'pop'},
+                {n: '最多评论', v: 'view'},
             ],
             init: '',
         },

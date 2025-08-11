@@ -1,6 +1,6 @@
-import { Crypto, load, _ } from 'assets://js/lib/cat.js';
-import { log } from './lib/utils.js';
-import { initAli, detailContentVodPlayFrom, detailContentVodPlayUrl, playContent } from './lib/ali.js';
+import {_, Crypto, load} from 'assets://js/lib/cat.js';
+import {log} from './lib/utils.js';
+import {detailContentVodPlayFrom, detailContentVodPlayUrl, initAli, playContent} from './lib/ali.js';
 
 let siteKey = 'pan99';
 let siteType = 0;
@@ -30,7 +30,10 @@ async function init(cfg) {
 }
 
 async function home(filter) {
-    const classes = [{'type_id':'dy','type_name':'电影'},{'type_id':'tv','type_name':'完结剧集'},{'type_id':'tv/geng','type_name':'追更剧集'},{'type_id':'tv/netflix','type_name':'Netflix'}];
+    const classes = [{'type_id': 'dy', 'type_name': '电影'}, {
+        'type_id': 'tv',
+        'type_name': '完结剧集'
+    }, {'type_id': 'tv/geng', 'type_name': '追更剧集'}, {'type_id': 'tv/netflix', 'type_name': 'Netflix'}];
     const filterObj = {};
     return JSON.stringify({
         class: classes,
@@ -38,7 +41,8 @@ async function home(filter) {
     });
 }
 
-async function homeVod() {}
+async function homeVod() {
+}
 
 async function category(tid, pg, filter, extend) {
     let page = '';

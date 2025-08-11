@@ -1,5 +1,4 @@
-js:
-    eval(getCryptoJS())
+eval(getCryptoJS())
 const baseParse = _ => {
     let d = [];
     let tasks = []

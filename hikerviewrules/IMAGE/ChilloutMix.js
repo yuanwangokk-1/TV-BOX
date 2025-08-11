@@ -1,7 +1,6 @@
-js:
-    addListener('onRefresh', $.toString(() => {
-        putMyVar('ChilloutMix.TG.cursor', '0')
-    }))
+addListener('onRefresh', $.toString(() => {
+    putMyVar('ChilloutMix.TG.cursor', '0')
+}))
 const d = []
 const empty = 'hiker://empty'
 const categoryIndex = getMyVar('ChilloutMix.TG.categoryIndex', 'all')

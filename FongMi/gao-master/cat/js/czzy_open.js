@@ -1,5 +1,5 @@
 // 自动从 地址发布页 获取&跳转url地址
-import { Crypto, load, _ } from 'assets://js/lib/cat.js';
+import {_, Crypto, load} from 'assets://js/lib/cat.js';
 
 let key = 'czzy';
 let host = 'https://cz01.vip/'; // 厂长地址发布页
@@ -74,7 +74,7 @@ async function checkValidUrl(ext) {
                     validUrl = rcmdUrl;
                     break;
                 }
-            } catch(e) {
+            } catch (e) {
             }
         }
     }
@@ -92,7 +92,7 @@ async function home(filter) {
         value: _.map(tags, (n) => {
             let v = n.attribs['cat-url'] || '';
             v = v.substring(v.lastIndexOf('/') + 1);
-            return { n: n.children[0].data, v: v };
+            return {n: n.children[0].data, v: v};
         }),
     };
     tag['init'] = tag.value[0].v;

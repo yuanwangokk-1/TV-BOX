@@ -1,4 +1,4 @@
-import { _, load } from './lib/cat.js';
+import {_, load} from './lib/cat.js';
 
 let key = '13bqg';
 let url = 'https://m.13bqg.cc';

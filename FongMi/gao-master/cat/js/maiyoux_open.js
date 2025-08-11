@@ -1,4 +1,5 @@
-import { Crypto, load, _ } from 'assets://js/lib/cat.js';
+import {_} from 'assets://js/lib/cat.js';
+
 /**
  * 直播源
  * author：Leospring
@@ -8,6 +9,7 @@ let siteUrl = 'http://api.maiyoux.com:81/mf/';
 let siteKey = '';
 let siteType = 0;
 let cateList = {};
+
 async function request(reqUrl, postData, post) {
 
     let res = await req(reqUrl, {
@@ -30,7 +32,7 @@ async function init(cfg) {
 
 async function home(filter) {
     let classes = [];
-    Object.keys(cateList).forEach(function(key) {
+    Object.keys(cateList).forEach(function (key) {
         classes.push({
             type_id: key,
             type_name: key,
@@ -38,7 +40,7 @@ async function home(filter) {
     });
     return JSON.stringify({
         class: classes,
-       // filters: filterObj
+        // filters: filterObj
     });
 }
 
@@ -71,10 +73,10 @@ async function detail(id) {
             vod_content: '作者：Leospring 公众号：蚂蚁科技杂谈',
         };
         const list = [video];
-        const result = { list };
+        const result = {list};
         return JSON.stringify(result);
     } catch (e) {
-    console.log('err', e);
+        console.log('err', e);
     }
     return null;
 }
