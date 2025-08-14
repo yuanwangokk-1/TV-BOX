@@ -135,4 +135,4 @@ const closest = (str, arr) => {
     }
     return arr[min_index];
 };
-export {closest, distance};
+export { closest, distance };

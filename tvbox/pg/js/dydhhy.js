@@ -75,7 +75,7 @@ tabsq.forEach(function(it){
 	tmpIndex = tmpIndex + 1;
 });
 log('xzys TABS >>>>>>>>>>>>>>>>>>' + TABS);`,
-        lists: `js: log(TABS);
+lists: `js: log(TABS);
 pdfh = jsp.pdfh;
 pdfa = jsp.pdfa;
 pd = jsp.pd;
@@ -138,5 +138,5 @@ listq.forEach(function(it){
 
 });`,
 
-    }, 搜索: 'div.clear:gt(0):has(img);img&&alt;img&&data-src;;a&&href',
+}, 搜索: 'div.clear:gt(0):has(img);img&&alt;img&&data-src;;a&&href',
 }

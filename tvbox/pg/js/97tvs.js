@@ -1,34 +1,35 @@
 var rule = {
-    title: '高清MP4吧',
-    host: 'https://www.97tvs.com',
-    homeUrl: '/',
-    url: '/fyclass/page/fypage?',
-    filter_url: '{{fl.class}}',
-    filter: {},
-    searchUrl: '/?s=**',
-    searchable: 2,
-    quickSearch: 0,
-    filterable: 0,
-    headers: {
-        'User-Agent': 'PC_UA',
-        'Cookie': '',
-        'Referer': 'http://www.97tvs.com/'
-    },
-    图片来源: '@Headers={"Accept":"*/*","Referer":"https://www.97tvs.com/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36"}',
-    timeout: 5000,
-    class_name: "动作片&科幻片&爱情片&喜剧片&剧情片&惊悚片&战争片&灾难片&罪案片&动画片&综艺&电视剧",
-    class_url: "action&science&love&comedy&story&thriller&war&disaster&crime&cartoon&variety&sitcoms",
-    play_parse: true,
-    play_json: [{
-        re: '*',
-        json: {
-            parse: 0,
-            jx: 0
-        }
-    }],
-    lazy: '',
-    limit: 6,
-    推荐: `js:
+	title:'高清MP4吧',
+	host:'https://www.97tvs.com',
+        homeUrl: '/',
+	url: '/fyclass/page/fypage?',
+	filter_url:'{{fl.class}}',
+	filter:{
+	},
+	searchUrl: '/?s=**',
+	searchable:2,
+	quickSearch:0,
+	filterable:0,
+	headers:{
+		'User-Agent': 'PC_UA',
+         	'Cookie':'',
+		'Referer': 'http://www.97tvs.com/'
+	},
+	图片来源:'@Headers={"Accept":"*/*","Referer":"https://www.97tvs.com/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36"}',
+	timeout:5000,
+  	class_name: "动作片&科幻片&爱情片&喜剧片&剧情片&惊悚片&战争片&灾难片&罪案片&动画片&综艺&电视剧",
+  	class_url: "action&science&love&comedy&story&thriller&war&disaster&crime&cartoon&variety&sitcoms",
+	play_parse:true,
+	play_json:[{
+		re:'*',
+		json:{
+			parse:0,
+			jx:0
+		}
+	}],
+	lazy:'',
+	limit:6,
+	推荐:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let d = [];
 let html = request(input);
@@ -43,7 +44,7 @@ list.forEach(it => {
 });
 setResult(d);
 	`,
-    一级: `js:
+	一级:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let d = [];
 let html = request(input);
@@ -58,12 +59,12 @@ list.forEach(it => {
 })
 setResult(d);
 `,
-    二级: {
-        title: "div.article_container h1&&Text",
-        img: "div#post_content img&&src",
-        desc: "div#post_content&&Text",
-        content: "div#post_content&&Text",
-        tabs: `js:
+	二级:{
+		title:"div.article_container h1&&Text",
+		img:"div#post_content img&&src",
+		desc:"div#post_content&&Text",
+		content:"div#post_content&&Text",
+		tabs:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 TABS=[]
 let d = pdfa(html, 'div#post_content p');
@@ -106,7 +107,7 @@ tabm3u8.forEach(function(it){
 });
 log('97tvs TABS >>>>>>>>>>>>>>>>>>' + TABS);
 `,
-        lists: `js:
+		lists:`js:
 log(TABS);
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 LISTS = [];
@@ -171,8 +172,8 @@ for ( const key in listm3u8 ){
 };
 `,
 
-    },
-    搜索: `js:
+	},
+	搜索:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let search_html = request(input)
 //log("97tvs search result>>>>>>>>>>>>>>>" + search_html);

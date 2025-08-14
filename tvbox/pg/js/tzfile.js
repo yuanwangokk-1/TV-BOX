@@ -1,35 +1,36 @@
 var rule = {
-    title: '团长资源',
-    host: 'https://t-rex.tzfile.com',
-    homeUrl: '/',
-    url: '/fyclass/page/fypage?',
-    filter_url: '{{fl.class}}',
-    filter: {},
-    searchUrl: '/?s=**&type=post',
-    searchable: 2,
-    quickSearch: 0,
-    filterable: 0,
-    headers: {
-        'User-Agent': 'PC_UA',
-        'Accept': '*/*',
-        'Referer': 'https://t-rex.tzfile.com/'
-    },
-    图片来源: '@Headers={"Accept":"*/*","Referer":"https://t-rex.tzfile.com/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36"}',
-    timeout: 5000,
-    class_name: '电影&电视剧&动画&纪录片演唱会&真人秀综艺',
-    class_url: 'movies&tvshow&animation&faction&show',
-    play_parse: true,
-    play_json: [{
-        re: '*',
-        json: {
-            parse: 0,
-            jx: 0
-        }
-    }],
-    lazy: '',
-    limit: 6,
-    推荐: '*',
-    一级: `js:
+	title:'团长资源',
+	host:'https://t-rex.tzfile.com',
+	homeUrl:'/',
+	url: '/fyclass/page/fypage?',
+	filter_url:'{{fl.class}}',
+	filter:{
+	},
+	searchUrl: '/?s=**&type=post',
+	searchable:2,
+	quickSearch:0,
+	filterable:0,
+	headers:{
+		'User-Agent': 'PC_UA',
+		'Accept': '*/*',
+		'Referer': 'https://t-rex.tzfile.com/'
+	},
+	图片来源:'@Headers={"Accept":"*/*","Referer":"https://t-rex.tzfile.com/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36"}',
+	timeout:5000,
+	class_name:'电影&电视剧&动画&纪录片演唱会&真人秀综艺',
+	class_url:'movies&tvshow&animation&faction&show',
+	play_parse:true,
+	play_json:[{
+		re:'*',
+		json:{
+			parse:0,
+			jx:0
+		}
+	}],
+	lazy:'',
+	limit:6,
+	推荐:'*',
+	一级:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let d = [];
 log("tzfiles input>>>>>>>>>>>>>>"+input);
@@ -46,12 +47,12 @@ list.forEach(function(it) {
 })
 setResult(d);
 `,
-    二级: {
-        title: "#primary-home h1&&Text",
-        img: "#primary-home article div.entry-content img&&src",
-        desc: "#primary-home .post-meta li.single-date&&Text",
-        content: "#primary-home article .entry-content&&Text",
-        tabs: `js:
+	二级:{
+		title:"#primary-home h1&&Text",
+		img:"#primary-home article div.entry-content img&&src",
+		desc:"#primary-home .post-meta li.single-date&&Text",
+		content:"#primary-home article .entry-content&&Text",
+		tabs:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 TABS=[];
 let d = pdfa(html, '#primary-home article div.entry-content p');
@@ -75,7 +76,7 @@ if (tabsq.length==1){
 }
 log('tzfile TABS >>>>>>>>>>>>>>>>>>' + TABS);
 `,
-        lists: `js:
+		lists:`js:
 log(TABS);
 LISTS=[];
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
@@ -98,8 +99,8 @@ d.forEach(function(it) {
 });
 `,
 
-    },
-    搜索: `js:
+	},
+	搜索:`js:
 //'#primary-home ul li:has(img);img&&alt;img&&src;div.post-info .post-list-cat&&Text;a&&href',
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let html = request(input);
