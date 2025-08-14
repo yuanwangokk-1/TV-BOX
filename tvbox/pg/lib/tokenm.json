@@ -64,7 +64,7 @@
 "libxl_url":"./libxlsdk.tar.xz",
 "youtube_proxy":"proxy",
 "singbox_url":"./sing-box.tar.xz",
-"singbox_subscribe_url":"https://sing-box-subscribe-doraemon.vercel.app/config/https:/url.v1.mk/sub?target=clash&url=vless%3A%2F%2F70ddd469-5248-4de3-ae15-a5eb2f66fad0%40aries.6670087.xyz%3A8080%3Fflow%3Dxtls-rprx-vision%26pbk%3D8KJEP-JW9aEJ9j2UUk0h4Ca517dhRL76y1drJTYoUzI%26security%3Dreality%26sid%3Dc04c66%26sni%3Dwww.fmprc.gov.cn%26type%3Dtcp%23vless-8080&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Frefs%2Fheads%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true",
+"singbox_subscribe_url":"",
 "singbox_clash2singbox_url":"./clash2singbox.tar.xz",
 "singbox_template_url":"./singbox.json",
 "singbox_wgcf_json_url":"./wgcf2singbox.json",
