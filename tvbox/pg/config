@@ -1,2 +1,2 @@
 proxies:
-  - {name: vless-8080, server: aries.6670087.xyz, port: 8080, reality-opts: {public-key: 8KJEP-JW9aEJ9j2UUk0h4Ca517dhRL76y1drJTYoUzI, short-id: "c04c66" }, client-fingerprint: chrome, type: vless, uuid: 70ddd469-5248-4de3-ae15-a5eb2f66fad0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: www.fmprc.gov.cn, network: tcp}
+  - {name: vless-8080, server: 6670087.xyz, port: 8080, reality-opts: {public-key: cokgTZV_e1bvGyJgs8KDwL2KsAKACO0EE0UUmRluQw4, short-id: "964769" }, client-fingerprint: chrome, type: vless, uuid: 361abe52-1441-4bc6-b303-346c535fd702, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: us.china-embassy.gov.cn, network: tcp}
