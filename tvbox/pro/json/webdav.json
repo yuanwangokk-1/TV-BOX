@@ -1,0 +1,14 @@
+[
+  {
+    "name": "七米藍",
+    "server": "https://al.chirmyram.com/dav",
+    "user": "alist",
+    "pass": "alist"
+  },
+  {
+    "name": "自定义",
+    "server": "自己的地址",
+    "user": "用户名",
+    "pass": "密码"
+  }
+]
