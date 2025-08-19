@@ -1,2 +1,2 @@
 proxies:
-  - {name: vless-8080, server: 6670087.xyz, port: 8080, reality-opts: {public-key: cokgTZV_e1bvGyJgs8KDwL2KsAKACO0EE0UUmRluQw4, short-id: "964769" }, client-fingerprint: chrome, type: vless, uuid: 361abe52-1441-4bc6-b303-346c535fd702, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: us.china-embassy.gov.cn, network: tcp}
+  - {name: proxy.6670087.xyz, server: www.visa.com.sg, port: 8443, client-fingerprint: random, type: vless, uuid: 61e1283c-fc1e-4768-8c0a-5156e697b69a, tls: true, tfo: false, skip-cert-verify: false, servername: proxy.6670087.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: proxy.6670087.xyz}}}
