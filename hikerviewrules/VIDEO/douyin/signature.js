@@ -259,6 +259,7 @@ XMLHttpRequest.prototype.send = function () {
         }
         return a
     }
+
     qr = function (e, t, n) {
         return function () {
             for (var r = [], o = 0; o < arguments.length; o++)
@@ -289,6 +290,7 @@ XMLHttpRequest.prototype.send = function () {
     function Yn(e) {
         return "function" == typeof e
     }
+
     Jr = function (e) {
         return qr(e, "onreadystatechange", (function (t, n, r, o, i) {
                 return function () {
