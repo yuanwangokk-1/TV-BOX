@@ -1,46 +1,47 @@
 var rule = {
-    title: '爱盘搜[夸]',
-    host: 'https://aipanso.com',
-    homeUrl: '/',
-    url: '/forum-fyclass-fypage.html?',
-    filter_url: '{{fl.class}}',
-    filter: {},
-    searchUrl: '/search?page=fypage&s=1&t=-1&k=**',
-    searchable: 2,
-    quickSearch: 0,
-    filterable: 0,
-    headers: {
-        'User-Agent': PC_UA,
-        'Accept': '*/*',
-        'Referer': 'https://aipanso.com/'
-    },
-    timeout: 5000,
-    class_name: '',
-    class_url: '',
-    play_parse: true,
-    play_json: [{
-        re: '*',
-        json: {
-            parse: 0,
-            jx: 0
-        }
-    }],
-    lazy: '',
-    limit: 6,
-    推荐: '',
-    一级: '',
-    二级: {
-        title: "van-row h3&&Text",
-        img: "",
-        desc: "van-row h3&&Text",
-        content: "van-row h3&&Text",
-        tabs: `js:
+	title:'爱盘搜[夸]',
+	host:'https://aipanso.com',
+	homeUrl:'/',
+	url: '/forum-fyclass-fypage.html?',
+	filter_url:'{{fl.class}}',
+	filter:{
+	},
+	searchUrl: '/search?page=fypage&s=1&t=-1&k=**',
+	searchable:2,
+	quickSearch:0,
+	filterable:0,
+	headers:{
+		'User-Agent': PC_UA,
+		'Accept': '*/*',
+		'Referer': 'https://aipanso.com/'
+	},
+	timeout:5000,
+	class_name:'',
+	class_url:'',
+	play_parse:true,
+	play_json:[{
+		re:'*',
+		json:{
+			parse:0,
+			jx:0
+		}
+	}],
+	lazy:'',
+	limit:6,
+	推荐:'',
+	一级:'',
+	二级:{
+		title:"van-row h3&&Text",
+		img:"",
+		desc:"van-row h3&&Text",
+		content:"van-row h3&&Text",
+		tabs:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 TABS=[]
 TABS.push("夸克網盤");
 log('meijumi TABS >>>>>>>>>>>>>>>>>>' + TABS);
 `,
-        lists: `js:
+		lists:`js:
 log(TABS);
 LISTS=[];
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
@@ -64,8 +65,8 @@ if (json.hasOwnProperty("Location")){
 let title = pdfh(html, 'van-row h3&&Text');
 LISTS.push([title + '$' + 'push://' + redirectUrl]);
 `,
-    },
-    搜索: `js:
+	},
+	搜索:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 
 log("aipanso enter search >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + KEY);

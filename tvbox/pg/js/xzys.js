@@ -1,39 +1,40 @@
 var rule = {
-    title: '校长影视[云盘]',
-    host: 'https://xzys.fun',
-    homeUrl: '/',
-    url: '/fyclass.html?page=fypage',
-    filter_url: '{{fl.class}}',
-    filter: {},
-    searchUrl: '/search.html?keyword=**',
-    searchable: 2,
-    quickSearch: 0,
-    filterable: 0,
-    headers: {
-        'User-Agent': 'PC_UA',
-        'Cookie': ''
-    },
-    timeout: 5000,
-    class_name: '电视剧&电影&动漫&纪录片&综艺',
-    class_url: 'dsj&dy&dm&jlp&zy',
-    play_parse: true,
-    play_json: [{
-        re: '*',
-        json: {
-            parse: 0,
-            jx: 0
-        }
-    }],
-    lazy: '',
-    limit: 6,
-    推荐: 'div.container div.row a:has(>img);img&&alt;img&&src;img&&alt;a&&href',
-    一级: 'div.container div.row div.list-boxes;img&&alt;img&&src;div.list-actions&&Text;a&&href',
-    二级: {
-        title: "div.container div.row h1&&Text",
-        img: "div.container div.row img&&src",
-        desc: 'div.container div.row div.article-infobox&&Text', //remark
-        content: 'div.container div.row div#info&&Text',
-        tabs: `js:
+	title:'校长影视[云盘]',
+	host:'https://xzys.fun',
+        homeUrl: '/',
+	url: '/fyclass.html?page=fypage',
+	filter_url:'{{fl.class}}',
+	filter:{
+	},
+	searchUrl: '/search.html?keyword=**',
+	searchable:2,
+	quickSearch:0,
+	filterable:0,
+	headers:{
+		'User-Agent': 'PC_UA',
+         	'Cookie':''
+	},
+	timeout:5000,
+	class_name: '电视剧&电影&动漫&纪录片&综艺',
+	class_url: 'dsj&dy&dm&jlp&zy',
+	play_parse:true,
+	play_json:[{
+		re:'*',
+		json:{
+			parse:0,
+			jx:0
+		}
+	}],
+	lazy:'',
+	limit:6,
+	推荐:'div.container div.row a:has(>img);img&&alt;img&&src;img&&alt;a&&href',
+	一级:'div.container div.row div.list-boxes;img&&alt;img&&src;div.list-actions&&Text;a&&href',
+	二级:{
+		title:"div.container div.row h1&&Text",
+		img:"div.container div.row img&&src",
+		desc:'div.container div.row div.article-infobox&&Text', //remark
+		content:'div.container div.row div#info&&Text',
+		tabs:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 TABS=[]
 let d = pdfa(html, 'div.container div.row a');
@@ -75,7 +76,7 @@ tabsq.forEach(function(it){
 });
 log('xzys TABS >>>>>>>>>>>>>>>>>>' + TABS);
 `,
-        lists: `js:
+		lists:`js:
 log(TABS);
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 LISTS = [];
@@ -137,8 +138,8 @@ listq.forEach(function(it){
 });
 `,
 
-    },
-    搜索: `js:
+	},
+	搜索:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 if (rule_fetch_params.headers.Cookie.startsWith("http")){
 	rule_fetch_params.headers.Cookie=fetch(rule_fetch_params.headers.Cookie);

@@ -1,43 +1,44 @@
 var rule = {
-    title: '人人影视[搜]',
-    host: 'http://127.0.0.1:10079',
-    homeUrl: '/p/0/socks5:%252F%252F192.168.101.1:1080/https://yyets.click/',
-    url: '*',
-    filter_url: '{{fl.class}}',
-    filter: {},
-    searchUrl: '*',
-    searchable: 2,
-    quickSearch: 0,
-    filterable: 0,
-    headers: {
-        'User-Agent': PC_UA,
-        'Accept': '*/*',
-        'Referer': 'https://yyets.click/',
-        'Cookie': 'http://127.0.0.1:9978/file:///tvbox/JS/lib/yyets.txt',
-    },
-    timeout: 5000,
-    class_name: '',
-    class_url: '',
-    play_parse: true,
-    play_json: [{
-        re: '*',
-        json: {
-            parse: 0,
-            jx: 0
-        }
-    }],
-    lazy: '',
-    limit: 6,
-    推荐: '',
-    一级: '',
-    二级: `js:
+	title:'人人影视[搜]',
+	host:'http://127.0.0.1:10079',
+	homeUrl:'/p/0/socks5:%252F%252F192.168.101.1:1080/https://yyets.click/',
+	url:'*',
+	filter_url:'{{fl.class}}',
+	filter:{
+	},
+	searchUrl: '*',
+	searchable:2,
+	quickSearch:0,
+	filterable:0,
+	headers:{
+		'User-Agent': PC_UA,
+		'Accept': '*/*',
+		'Referer': 'https://yyets.click/',
+         	'Cookie':'http://127.0.0.1:9978/file:///tvbox/JS/lib/yyets.txt',
+	},
+	timeout:5000,
+	class_name:'',
+	class_url:'',
+	play_parse:true,
+	play_json:[{
+		re:'*',
+		json:{
+			parse:0,
+			jx:0
+		}
+	}],
+	lazy:'',
+	limit:6,
+	推荐:'',
+	一级:'',
+	二级:`js:
 VOD.vod_play_from = "雲盤";
 VOD.vod_remarks = detailUrl;
 VOD.vod_actor = "沒有二級，只有一級鏈接直接推送播放";
 VOD.vod_content = MY_URL;
 VOD.vod_play_url = "雲盤$" + detailUrl;
 `,
-    搜索: `js:
+	搜索:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 if (rule_fetch_params.headers.Cookie.startsWith("http")){
 	rule_fetch_params.headers.Cookie=fetch(rule_fetch_params.headers.Cookie);

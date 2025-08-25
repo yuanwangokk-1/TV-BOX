@@ -1,37 +1,38 @@
 var rule = {
-    title: 'KK網盤[磁]',
-    host: 'https://www.kkpans.com',
-    homeUrl: '/',
-    url: '/forum-fyclass-fypage.html?',
-    //host:'http://192.168.101.1:10078',
-    //homeUrl:'/p/0/s/https://www.kkpans.com/',
-    //url: '/p/0/s/https://www.kkpans.com/forum-fyclass-fypage.html?',
-    filter_url: '{{fl.class}}',
-    filter: {},
-    searchUrl: '/search',
-    searchable: 2,
-    quickSearch: 0,
-    filterable: 0,
-    headers: {
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 10; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Mobile Safari/537.36',
-        'Accept': '*/*',
-        'Referer': 'https://www.kkpans.com/'
-    },
-    timeout: 5000,
-    class_name: '国外电影&国外电视剧&纪录片资源&综艺资源&动漫资源&音乐资源',
-    class_url: '39&40&41&42&46&43',
-    play_parse: true,
-    play_json: [{
-        re: '*',
-        json: {
-            parse: 0,
-            jx: 0
-        }
-    }],
-    lazy: '',
-    limit: 6,
-    推荐: '',
-    一级: `js:
+	title:'KK網盤[磁]',
+	host:'https://www.kkpans.com',
+	homeUrl:'/',
+	url: '/forum-fyclass-fypage.html?',
+	//host:'http://192.168.101.1:10078',
+	//homeUrl:'/p/0/s/https://www.kkpans.com/',
+	//url: '/p/0/s/https://www.kkpans.com/forum-fyclass-fypage.html?',
+	filter_url:'{{fl.class}}',
+	filter:{
+	},
+	searchUrl: '/search',
+	searchable:2,
+	quickSearch:0,
+	filterable:0,
+	headers:{
+		'User-Agent': 'Mozilla/5.0 (Linux; Android 10; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Mobile Safari/537.36',
+		'Accept': '*/*',
+		'Referer': 'https://www.kkpans.com/'
+	},
+	timeout:5000,
+	class_name:'国外电影&国外电视剧&纪录片资源&综艺资源&动漫资源&音乐资源',
+	class_url:'39&40&41&42&46&43',
+	play_parse:true,
+	play_json:[{
+		re:'*',
+		json:{
+			parse:0,
+			jx:0
+		}
+	}],
+	lazy:'',
+	limit:6,
+	推荐:'',
+	一级:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let d = [];
 log("kkpans input>>>>>>>>>>>>>>"+input);
@@ -48,12 +49,12 @@ list.forEach(function(it) {
 })
 setResult(d);
 	`,
-    二级: {
-        title: "div.viewthread&&div.view_tit&&Text",
-        img: "div.viewthread div.message&&img&&src",
-        desc: "div.viewthread div.message&&Text",
-        content: "div.viewthread div.message&&Text",
-        tabs: `js:
+	二级:{
+		title:"div.viewthread&&div.view_tit&&Text",
+		img:"div.viewthread div.message&&img&&src",
+		desc:"div.viewthread div.message&&Text",
+		content:"div.viewthread div.message&&Text",
+		tabs:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 TABS=[]
 let d = pdfa(html, 'div.viewthread div.message a[href^="https://pan.quark.cn/s/"]');
@@ -67,7 +68,7 @@ d.forEach(function(it) {
 });
 log('meijumi TABS >>>>>>>>>>>>>>>>>>' + TABS);
 `,
-        lists: `js:
+		lists:`js:
 log(TABS);
 LISTS=[];
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
@@ -92,8 +93,8 @@ d.forEach(function(it) {
 });
 `,
 
-    },
-    搜索: `js:
+	},
+	搜索:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 
 let withHeaders = {

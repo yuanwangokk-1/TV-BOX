@@ -117,35 +117,35 @@ if (/getvddr/.test(purl)) {
 
 // 网址发布页 https://ddys.site
 // 网址发布页 https://ddys.wiki
-var rule = {
-    title: 'ddys',
+var rule={
+    title:'ddys',
     // host:'https://ddys.wiki', 
     // hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":MOBILE_UA}});HOST = jsp.pdfh(html,"a:eq(1)&&href")',
-    host: 'https://ddys.pro',
+    host:'https://ddys.pro',
     // host:'https://ddys.mov',
-    url: '/fyclass/page/fypage/',
-    searchUrl: '/?s=**&post_type=post',
-    searchable: 2,
-    quickSearch: 0,
-    filterable: 0,
-    headers: {
-        'User-Agent': 'MOBILE_UA',
+    url:'/fyclass/page/fypage/',
+    searchUrl:'/?s=**&post_type=post',
+    searchable:2,
+    quickSearch:0,
+    filterable:0,
+    headers:{
+        'User-Agent':'MOBILE_UA',
     },
-    class_parse: '#primary-menu li.menu-item;a&&Text;a&&href;\.pro/(.*)',
-    cate_exclude: '站长|^其他$|关于|^电影$|^剧集$|^类型$',
-    play_parse: true,
+    class_parse:'#primary-menu li.menu-item;a&&Text;a&&href;\.pro/(.*)',
+    cate_exclude:'站长|^其他$|关于|^电影$|^剧集$|^类型$',
+    play_parse:true,
     // lazy:'js:let purl=input.split("|")[0];let referer=input.split("|")[1];let zm=input.split("|")[2];print("purl:"+purl);print("referer:"+referer);print("zm:"+zm);let myua="okhttp/3.15";if(/ddrkey/.test(purl)){let ret=request(purl,{Referer:referer,withHeaders:true,"User-Agent":myua});log(ret);input=purl}else{let html=request(purl,{headers:{Referer:referer,"User-Agent":myua}});print(html);try{input=JSON.parse(html).url||{}}catch(e){input=purl}}',
-    lazy: lazy,
-    limit: 6,
-    推荐: '*',
-    double: true, // 推荐内容是否双层定位
-    一级: '.post-box-list&&article;a:eq(-1)&&Text;.post-box-image&&style;a:eq(0)&&Text;a:eq(-1)&&href',
-    二级: {
-        "title": ".post-title&&Text;.cat-links&&Text",
-        "img": ".doulist-item&&img&&data-cfsrc",
-        "desc": ".published&&Text",
-        "content": ".abstract&&Text",
-        "tabs": `js:
+    lazy:lazy,
+    limit:6,
+    推荐:'*',
+    double:true, // 推荐内容是否双层定位
+    一级:'.post-box-list&&article;a:eq(-1)&&Text;.post-box-image&&style;a:eq(0)&&Text;a:eq(-1)&&href',
+    二级:{
+        "title":".post-title&&Text;.cat-links&&Text",
+        "img":".doulist-item&&img&&data-cfsrc",
+        "desc":".published&&Text",
+        "content":".abstract&&Text",
+        "tabs":`js:
 TABS=[];
 let d = pdfa(html, 'div.wp-playlist~a');
 let tabsq=[];
@@ -168,7 +168,7 @@ if (tabsq.length == 1){
 }
 TABS=TABS.concat(['国内(改Exo播放器)','国内2']);
 `,
-        "lists": lists
+        "lists":lists
     },
-    搜索: '#main&&article;.post-title&&Text;;.published&&Text;a&&href'
+    搜索:'#main&&article;.post-title&&Text;;.published&&Text;a&&href'
 }

@@ -1,18 +1,17 @@
 if (typeof Object.assign != 'function') {
     Object.assign = function () {
-        var target = arguments[0];
-        for (var i = 1; i < arguments.length; i++) {
-            var source = arguments[i];
-            for (var key in source) {
-                if (Object.prototype.hasOwnProperty.call(source, key)) {
-                    target[key] = source[key];
-                }
+	var target = arguments[0];
+    for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+        for (var key in source) {
+            if (Object.prototype.hasOwnProperty.call(source, key)) {
+                target[key] = source[key];
             }
         }
-        return target;
-    };
+    }
+    return target;
+};
 }
-
 function getMubans() {
     var mubanDict = { // 模板字典
         mxpro: {
@@ -266,38 +265,37 @@ function getMubans() {
             },
             搜索: '.sr_lists&&ul&&li;h3&&Text;img&&data-src;.int&&p:eq(0)&&Text;a&&href',
         },
-        短视2: {
+        短视2:{
             title: '',
             host: '',
-            class_name: '电影&电视剧&综艺&动漫',
-            class_url: '1&2&3&4',
+            class_name:'电影&电视剧&综艺&动漫',
+            class_url:'1&2&3&4',
             searchUrl: '/index.php/ajax/suggest?mid=1&wd=**',
             searchable: 2,
             quickSearch: 0,
-            headers: {'User-Agent': 'MOBILE_UA'},
+            headers:{'User-Agent':'MOBILE_UA'},
             url: '/index.php/api/vod#type=fyclass&page=fypage',
-            filterable: 0,//是否启用分类筛选,
-            filter_url: '',
+            filterable:0,//是否启用分类筛选,
+            filter_url:'',
             filter: {},
-            filter_def: {},
-            detailUrl: '/index.php/vod/detail/id/fyid.html',
-            推荐: '.list-vod.flex .public-list-box;a&&title;.lazy&&data-original;.public-list-prb&&Text;a&&href',
-            一级: 'js:let body=input.split("#")[1];let t=Math.round(new Date/1e3).toString();let key=md5("DS"+t+"DCC147D11943AF75");let url=input.split("#")[0];body=body+"&time="+t+"&key="+key;print(body);fetch_params.body=body;let html=post(url,fetch_params);let data=JSON.parse(html);VODS=data.list.map(function(it){it.vod_pic=urljoin2(input.split("/i")[0],it.vod_pic);return it});',
-            二级: {
-                "title": ".slide-info-title&&Text;.slide-info:eq(3)--strong&&Text",
-                "img": ".detail-pic&&data-original",
-                "desc": ".fraction&&Text;.slide-info-remarks:eq(1)&&Text;.slide-info-remarks:eq(2)&&Text;.slide-info:eq(2)--strong&&Text;.slide-info:eq(1)--strong&&Text",
-                "content": "#height_limit&&Text",
-                "tabs": ".anthology.wow.fadeInUp.animated&&.swiper-wrapper&&a",
-                "tab_text": ".swiper-slide&&Text",
-                "lists": ".anthology-list-box:eq(#id) li"
+            filter_def:{},
+            detailUrl:'/index.php/vod/detail/id/fyid.html',
+            推荐:'.list-vod.flex .public-list-box;a&&title;.lazy&&data-original;.public-list-prb&&Text;a&&href',
+            一级:'js:let body=input.split("#")[1];let t=Math.round(new Date/1e3).toString();let key=md5("DS"+t+"DCC147D11943AF75");let url=input.split("#")[0];body=body+"&time="+t+"&key="+key;print(body);fetch_params.body=body;let html=post(url,fetch_params);let data=JSON.parse(html);VODS=data.list.map(function(it){it.vod_pic=urljoin2(input.split("/i")[0],it.vod_pic);return it});',
+            二级:{
+                "title":".slide-info-title&&Text;.slide-info:eq(3)--strong&&Text",
+                "img":".detail-pic&&data-original",
+                "desc":".fraction&&Text;.slide-info-remarks:eq(1)&&Text;.slide-info-remarks:eq(2)&&Text;.slide-info:eq(2)--strong&&Text;.slide-info:eq(1)--strong&&Text",
+                "content":"#height_limit&&Text",
+                "tabs":".anthology.wow.fadeInUp.animated&&.swiper-wrapper&&a",
+                "tab_text":".swiper-slide&&Text",
+                "lists":".anthology-list-box:eq(#id) li"
             },
-            搜索: 'json:list;name;pic;;id',
+            搜索:'json:list;name;pic;;id',
         }
     };
     return JSON.parse(JSON.stringify(mubanDict));
 }
-
 var mubanDict = getMubans();
 var muban = getMubans();
-export default {muban, getMubans};
+export default {muban,getMubans};
