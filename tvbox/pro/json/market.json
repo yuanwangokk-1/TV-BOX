@@ -1,38 +1,38 @@
 [
-  {
-    "name": "推荐",
-    "list": [
-      {
-        "name": "ok影视手机版",
-        "url": "http://pan.isxzg.cn:5244/d/tools2/apk/ok%E5%BD%B1%E8%A7%86.apk",
-        "icon": "https://ricolj.github.io/tp/ok.png",
-        "version": "py-v8a"
-      },
-      {
-        "name": "OK影视电视版",
-        "url": "http://pan.isxzg.cn:5244/d/tools2/apk/Youtube.apk",
-        "icon": "https://ricolj.github.io/tp/ok.png",
-        "version": "py-v7a"
-      }
-    ]
-  },
-  {
-    "name": "本地包",
-    "list": [
-      {
-        "name": "暂无",
-        "url": "",
-        "icon": "https://ricolj.github.io/tp/s2.png",
-        "copy": "",
-        "version": "占位"
-      },
-      {
-        "name": "暂无",
-        "url": "",
-        "icon": "https://ricolj.github.io/tp/s2.png",
-        "copy": "",
-        "version": "占位"
-      }
-    ]
-  }
+    {
+        "name": "推荐",
+        "list": [
+            {
+                "name": "ok影视手机版",
+                "url": "http://pan.isxzg.cn:5244/d/tools2/apk/ok%E5%BD%B1%E8%A7%86.apk",
+                "icon": "https://ricolj.github.io/tp/ok.png",
+                "version": "py-v8a"
+            },
+            {
+                "name": "OK影视电视版",
+                "url": "http://pan.isxzg.cn:5244/d/tools2/apk/Youtube.apk",
+                "icon": "https://ricolj.github.io/tp/ok.png",
+                "version": "py-v7a"
+            }
+        ]
+    },
+    {
+        "name": "本地包",
+        "list": [
+            {
+                "name": "暂无",
+                "url": "",
+                "icon": "https://ricolj.github.io/tp/s2.png",
+                "copy": "",
+                "version": "占位"
+            },
+            {
+                "name": "暂无",
+                "url": "",
+                "icon": "https://ricolj.github.io/tp/s2.png",
+                "copy": "",
+                "version": "占位"
+            }
+        ]
+    }
 ]
