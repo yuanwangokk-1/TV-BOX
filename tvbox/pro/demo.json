@@ -80,7 +80,7 @@
             "searchable": 1,
             "changeable": 1,
             "ext": {
-                "filters": "./lib/douban.json",
+                "filters": "./json/douban.json",
                 "sites": "https://tg.252035.xyz",
                 "channel": "PanjClub,guoman4K,alyp_1"
             }
@@ -93,7 +93,7 @@
             "searchable": 1,
             "changeable": 1,
             "ext": {
-                "filters": "./lib/douban.json",
+                "filters": "./json/douban.json",
                 "sites": "https://tg.252035.xyz",
                 "channel": "yunpanuc"
             }
@@ -106,7 +106,7 @@
             "searchable": 1,
             "changeable": 1,
             "ext": {
-                "filters": "./lib/douban.json",
+                "filters": "./json/douban.json",
                 "sites": "https://tg.252035.xyz",
                 "channel": "BaiduCloudDisk,Baidu_Netdisk,bdwpzhpd"
             }
@@ -119,7 +119,7 @@
             "searchable": 1,
             "changeable": 1,
             "ext": {
-                "filters": "./lib/douban.json",
+                "filters": "./json/douban.json",
                 "sites": "https://tg.252035.xyz",
                 "channel": "zyfb123,xx123pan,zyzhpd123,yp123pan"
             }
@@ -132,7 +132,7 @@
             "searchable": 1,
             "changeable": 1,
             "ext": {
-                "filters": "./lib/douban.json",
+                "filters": "./json/douban.json",
                 "sites": "https://tg.252035.xyz",
                 "channel": "cloudtianyi,txtyzy,peccxinpd,yunpan189,tianyirigeng,tyypzhpd"
             }
@@ -145,7 +145,7 @@
             "searchable": 1,
             "changeable": 1,
             "ext": {
-                "filters": "./lib/douban.json",
+                "filters": "./json/douban.json",
                 "sites": "https://tg.252035.xyz",
                 "channel": "shareAliyun,zaihuayun"
             }
@@ -158,7 +158,7 @@
             "searchable": 1,
             "changeable": 1,
             "ext": {
-                "filters": "./lib/douban.json",
+                "filters": "./json/douban.json",
                 "sites": "https://tg.252035.xyz",
                 "channel": "yunpan139,ydypzyfx"
             }
