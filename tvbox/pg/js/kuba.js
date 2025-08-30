@@ -1,32 +1,33 @@
 var rule = {
-    title: '酷吧[磁]',
-    host: 'https://www.kuba222.com',
-    homeUrl: '/',
-    url: '/vodtypehtml/fyclass.html?',
-    filter_url: '{{fl.class}}',
-    filter: {},
-    searchUrl: '/search/**-1.html',
-    searchable: 2,
-    quickSearch: 0,
-    filterable: 0,
-    headers: {
-        'User-Agent': 'PC_UA',
-        'Referer': 'https://www.kuba222.com/'
-    },
-    timeout: 5000,
-    class_name: '最新&4K&电影&动作片&喜剧片&爱情片&科幻片&恐怖片&剧情片&战争片&微电影&电视剧&动漫&纪录片',
-    class_url: 'new&4K&1&5&6&7&8&9&10&11&21&31&4&16',
-    play_parse: true,
-    play_json: [{
-        re: '*',
-        json: {
-            parse: 0,
-            jx: 0
-        }
-    }],
-    lazy: '',
-    limit: 6,
-    推荐: `js:
+	title:'酷吧[磁]',
+	host:'https://www.kuba222.com',
+        homeUrl: '/',
+	url: '/vodtypehtml/fyclass.html?',
+	filter_url:'{{fl.class}}',
+	filter:{
+	},
+	searchUrl: '/search/**-1.html',
+	searchable:2,
+	quickSearch:0,
+	filterable:0,
+	headers:{
+		'User-Agent': 'PC_UA',
+		'Referer': 'https://www.kuba222.com/'
+	},
+	timeout:5000,
+	class_name: '最新&4K&电影&动作片&喜剧片&爱情片&科幻片&恐怖片&剧情片&战争片&微电影&电视剧&动漫&纪录片',
+	class_url: 'new&4K&1&5&6&7&8&9&10&11&21&31&4&16',
+	play_parse:true,
+	play_json:[{
+		re:'*',
+		json:{
+			parse:0,
+			jx:0
+		}
+	}],
+	lazy:'',
+	limit:6,
+	推荐:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let d = [];
 let html = request(input);
@@ -41,7 +42,7 @@ list.forEach(function (it){
 });
 setResult(d);
 `,
-    一级: `js:
+	一级:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let d = [];
 if (MY_CATE === '4K'){
@@ -65,12 +66,12 @@ list.forEach(function (it){
 });
 setResult(d);
 `,
-    二级: {
-        title: "div.stui-content h3&&Text",
-        img: "div.stui-content a.lazyload img&&src",
-        desc: 'div.stui-content a span&&Text',
-        content: 'div.stui-content p.data&&Text',
-        tabs: `js:
+	二级:{
+		title:"div.stui-content h3&&Text",
+		img:"div.stui-content a.lazyload img&&src",
+		desc:'div.stui-content a span&&Text',
+		content:'div.stui-content p.data&&Text',
+		tabs:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 TABS=[]
 let vodUrls=[];
@@ -89,7 +90,7 @@ vodUrls.forEach(function (it) {
 });
 log('kuba TABS >>>>>>>>>>>>>>>>>>' + TABS);
 `,
-        lists: `js:
+		lists:`js:
 log(TABS);
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 LISTS = [];
@@ -116,8 +117,8 @@ vodUrls.forEach(function (it) {
 });
 `,
 
-    },
-    搜索: `js:
+	},
+	搜索:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let cookie="";
 if (false){

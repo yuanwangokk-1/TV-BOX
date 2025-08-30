@@ -1,42 +1,43 @@
 var rule = {
-    title: '趣盘搜[夸]',
-    host: 'https://v.funletu.com',
-    homeUrl: '/',
-    url: '/forum-fyclass-fypage.html?',
-    filter_url: '{{fl.class}}',
-    filter: {},
-    searchUrl: 'json:/search#{"style":"get","datasrc":"search","query":{"id":"","datetime":"","commonid":1,"parmid":"","fileid":"","reportid":"","validid":"","searchtext":"**"},"page":{"pageSize":10,"pageIndex":1},"order":{"prop":"id","order":"desc"},"message":"请求资源列表数据"};postjson',
-    searchable: 2,
-    quickSearch: 0,
-    filterable: 0,
-    headers: {
-        'User-Agent': PC_UA,
-        'Accept': '*/*',
-        'Referer': 'https://pan.funletu.com/'
-    },
-    timeout: 5000,
-    class_name: '',
-    class_url: '',
-    play_parse: true,
-    play_json: [{
-        re: '*',
-        json: {
-            parse: 0,
-            jx: 0
-        }
-    }],
-    lazy: '',
-    limit: 6,
-    推荐: '',
-    一级: '',
-    二级: `js:
+	title:'趣盘搜[夸]',
+	host:'https://v.funletu.com',
+	homeUrl:'/',
+	url: '/forum-fyclass-fypage.html?',
+	filter_url:'{{fl.class}}',
+	filter:{
+	},
+	searchUrl: 'json:/search#{"style":"get","datasrc":"search","query":{"id":"","datetime":"","commonid":1,"parmid":"","fileid":"","reportid":"","validid":"","searchtext":"**"},"page":{"pageSize":10,"pageIndex":1},"order":{"prop":"id","order":"desc"},"message":"请求资源列表数据"};postjson',
+	searchable:2,
+	quickSearch:0,
+	filterable:0,
+	headers:{
+		'User-Agent': PC_UA,
+		'Accept': '*/*',
+		'Referer': 'https://pan.funletu.com/'
+	},
+	timeout:5000,
+	class_name:'',
+	class_url:'',
+	play_parse:true,
+	play_json:[{
+		re:'*',
+		json:{
+			parse:0,
+			jx:0
+		}
+	}],
+	lazy:'',
+	limit:6,
+	推荐:'',
+	一级:'',
+	二级:`js:
 VOD.vod_play_from = "夸克網盤";
 VOD.vod_remarks = detailUrl;
 VOD.vod_actor = "沒有二級，只有一級鏈接直接推送播放";
 VOD.vod_content = MY_URL;
 VOD.vod_play_url = "夸克網盤$" + detailUrl;
 `,
-    搜索: `js:
+	搜索:`js:
 let postJson = {
 	style:"get",
 	datasrc:"search",

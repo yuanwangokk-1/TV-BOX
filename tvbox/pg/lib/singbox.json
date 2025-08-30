@@ -8,13 +8,13 @@
       {
         "tag": "remote",
         "address": "https://8.8.8.8/dns-query",
-        "strategy": "prefer_ipv4",
+	"strategy": "prefer_ipv4",
         "detour": "select"
       },
       {
         "tag": "local",
         "address": "https://223.5.5.5/dns-query",
-        "strategy": "prefer_ipv4",
+	"strategy": "prefer_ipv4",
         "detour": "direct"
       },
       {
@@ -28,9 +28,7 @@
     ],
     "rules": [
       {
-        "outbound": [
-          "any"
-        ],
+        "outbound": ["any"],
         "server": "local"
       },
       {
@@ -57,7 +55,7 @@
       "tag": "mixed-in",
       "listen": "0.0.0.0",
       "listen_port": 10172,
-      "tcp_fast_open": true,
+      "tcp_fast_open":true,
       "sniff": false,
       "sniff_override_destination": false,
       "domain_strategy": "prefer_ipv4",
@@ -68,7 +66,7 @@
       "tag": "socks-in",
       "listen": "0.0.0.0",
       "listen_port": 10173,
-      "tcp_fast_open": true,
+      "tcp_fast_open":true,
       "sniff": false,
       "sniff_override_destination": false,
       "domain_strategy": "prefer_ipv4"
@@ -78,7 +76,7 @@
       "tag": "mixed-in2",
       "listen": "0.0.0.0",
       "listen_port": 10174,
-      "tcp_fast_open": true,
+      "tcp_fast_open":true,
       "sniff": false,
       "sniff_override_destination": false,
       "domain_strategy": "prefer_ipv4",
@@ -89,7 +87,7 @@
       "tag": "mixed-in3",
       "listen": "0.0.0.0",
       "listen_port": 10175,
-      "tcp_fast_open": true,
+      "tcp_fast_open":true,
       "sniff": false,
       "sniff_override_destination": false,
       "domain_strategy": "prefer_ipv4",
@@ -146,16 +144,16 @@
         "outbound": "direct"
       },
       {
-        "inbound": [
-          "mixed-in2"
-        ],
-        "outbound": "select2"
+	      "inbound":[
+		      "mixed-in2"
+	      ],
+	      "outbound":"select2"
       },
       {
-        "inbound": [
-          "mixed-in3"
-        ],
-        "outbound": "select3"
+	      "inbound":[
+		      "mixed-in3"
+	      ],
+	      "outbound":"select3"
       },
       {
         "clash_mode": "Direct",

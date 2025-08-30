@@ -1,7 +1,7 @@
 var rule = {
-    title: '88看球',
+    title:'88看球',
     // host:'http://www.88kanqiu.cc',
-    host: 'http://www.88kanqiu.bar/',
+    host:'http://www.88kanqiu.bar/',
     url: "/match/fyclass/live",
     searchUrl: "",
     searchable: 0,
@@ -12,30 +12,7 @@ var rule = {
     },
     timeout: 5000,
     play_parse: true,
-    pagecount: {
-        "1": 1,
-        "2": 1,
-        "4": 1,
-        "22": 1,
-        "8": 1,
-        "9": 1,
-        "10": 1,
-        "14": 1,
-        "15": 1,
-        "12": 1,
-        "13": 1,
-        "16": 1,
-        "28": 1,
-        "7": 1,
-        "11": 1,
-        "33": 1,
-        "27": 1,
-        "23": 1,
-        "26": 1,
-        "3": 1,
-        "21": 1,
-        "18": 1
-    },
+    pagecount:{"1":1,"2":1,"4":1,"22":1,"8":1,"9":1,"10":1,"14":1,"15":1,"12":1,"13":1,"16":1,"28":1,"7":1,"11":1,"33":1,"27":1,"23":1,"26":1,"3":1,"21":1,"18":1},
     lazy: `js:
         if(/embed=/.test(input)) {
             let url = input.match(/embed=(.*?)&/)[1];

@@ -1,37 +1,38 @@
 var rule = {
-    title: '美剧迷[磁]',
-    //host:'https://www.meijumi.net',
-    //homeUrl:'/',
-    //url: '/fyclass/page/fypage/?',
-    host: 'http://127.0.0.1:10078',
-    homeUrl: '/p/0/s/https://www.meijumi.net/',
-    url: '/p/0/s/https://www.meijumi.net/fyclass/page/fypage/?',
-    filter_url: '{{fl.class}}',
-    filter: {},
-    searchUrl: '/p/0/s/https://www.meijumi.net/?s=**',
-    searchable: 2,
-    quickSearch: 0,
-    filterable: 0,
-    headers: {
-        'User-Agent': 'PC_UA',
-        'Accept': '*/*',
-        'Referer': 'https://www.meijumi.net/'
-    },
-    timeout: 5000,
-    class_name: '最近更新&美剧&灵异/惊悚&魔幻/科幻&罪案/动作谍战&剧情/历史&喜剧&律政/医务&动漫/动画&纪录片&综艺/真人秀&英剧&韩剧',
-    class_url: 'news&usa&usa/xuanyi&usa/mohuan&usa/zuian&usa/qinggan&usa/xiju&usa/yiwu&usa/katong&usa/jilu&usa/zongyi&en&hanju',
-    play_parse: true,
-    play_json: [{
-        re: '*',
-        json: {
-            parse: 0,
-            jx: 0
-        }
-    }],
-    lazy: '',
-    limit: 6,
-    推荐: '',
-    推荐: `js:
+	title:'美剧迷[磁]',
+	//host:'https://www.meijumi.net',
+	//homeUrl:'/',
+	//url: '/fyclass/page/fypage/?',
+	host:'http://127.0.0.1:10078',
+	homeUrl:'/p/0/s/https://www.meijumi.net/',
+	url: '/p/0/s/https://www.meijumi.net/fyclass/page/fypage/?',
+	filter_url:'{{fl.class}}',
+	filter:{
+	},
+	searchUrl: '/p/0/s/https://www.meijumi.net/?s=**',
+	searchable:2,
+	quickSearch:0,
+	filterable:0,
+	headers:{
+		'User-Agent': 'PC_UA',
+		'Accept': '*/*',
+		'Referer': 'https://www.meijumi.net/'
+	},
+	timeout:5000,
+	class_name:'最近更新&美剧&灵异/惊悚&魔幻/科幻&罪案/动作谍战&剧情/历史&喜剧&律政/医务&动漫/动画&纪录片&综艺/真人秀&英剧&韩剧',
+	class_url:'news&usa&usa/xuanyi&usa/mohuan&usa/zuian&usa/qinggan&usa/xiju&usa/yiwu&usa/katong&usa/jilu&usa/zongyi&en&hanju',
+	play_parse:true,
+	play_json:[{
+		re:'*',
+		json:{
+			parse:0,
+			jx:0
+		}
+	}],
+	lazy:'',
+	limit:6,
+	推荐:'',
+	推荐:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let d = [];
 let html = request(input);
@@ -84,8 +85,8 @@ if (typeof items !== "undefined") {
 }
 setResult(d);
 `,
-    一级: '',
-    一级: `js:
+	一级:'',
+	一级:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let d = [];
 if (MY_CATE !== "news" ){
@@ -116,12 +117,12 @@ if (MY_CATE !== "news" ){
 }
 setResult(d);
 	`,
-    二级: {
-        title: "article&&header&&h1&&Text",
-        img: "article div.single-content img&&src",
-        desc: "article div.single-content blockquote&&Text",
-        content: "article div.single-content table&&Text",
-        tabs: `js:
+	二级:{
+		title:"article&&header&&h1&&Text",
+		img:"article div.single-content img&&src",
+		desc:"article div.single-content blockquote&&Text",
+		content:"article div.single-content table&&Text",
+		tabs:`js:
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 TABS=[]
 let playGroups = [];
@@ -195,7 +196,7 @@ playGroups.forEach(function (it) {
 });
 log('meijumi TABS >>>>>>>>>>>>>>>>>>' + TABS);
 `,
-        lists: `js:
+		lists:`js:
 log(TABS);
 pdfh=jsp.pdfh;pdfa=jsp.pdfa;pd=jsp.pd;
 let playGroups = [];
@@ -301,6 +302,6 @@ playGroups.forEach(function(it){
 });
 `,
 
-    },
-    搜索: 'ul.search-page article;h2&&Text;a img&&src;div.entry-content span:eq(1)&&Text;a&&href;div.entry-content div.archive-content&&Text',
+	},
+	搜索:'ul.search-page article;h2&&Text;a img&&src;div.entry-content span:eq(1)&&Text;a&&href;div.entry-content div.archive-content&&Text',
 }
