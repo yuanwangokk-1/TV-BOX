@@ -1,2 +1,2 @@
 proxies:
-  - {name: workers.arises.dynv6.net, server: workers.arises.dynv6.net, port: 8443, client-fingerprint: random, type: vless, uuid: 61e1283c-fc1e-4768-8c0a-5156e697b69a, tls: true, tfo: false, skip-cert-verify: false, servername: workers.arises.dynv6.net, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: workers.arises.dynv6.net}}}
+  - {name: ws, server: cf.0sm.com, port: 8443, client-fingerprint: random, type: vless, uuid: c1d4c368-d3f4-4086-8628-4ddbd4029975, tls: true, tfo: false, skip-cert-verify: false, servername: ws.6670088.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ws.6670088.xyz}}}

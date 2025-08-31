@@ -550,7 +550,7 @@
             "changeable": 1,
             "filterable": 1,
             "timeout": 120,
-            "ext": "./lib/tokenm.json$$$https://hdhive.online$$$noproxy$$$1$$$./lib/hdhive.txt"
+            "ext": "./lib/tokenm.json$$$https://hdhive.com$$$noproxy$$$1$$$./lib/hdhive.txt"
         },
         {
             "key": "TianYiSou",
@@ -981,15 +981,7 @@
             "type": 0,
             "url": "https://tv-1.iill.top/m3u/Gather",
             "ua": "okhttp/3.15",
-            "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
-        },
-        {
-            "name": "Gather.体育直播",
-            "type": 0,
-            "url": "https://tv-1.iill.top/m3u/Sport",
-            "ua": "okhttp/3.15",
-            "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
             "logo": "https://epg.112114.xyz/logo/{name}.png"
         },
         {
@@ -997,7 +989,15 @@
             "type": 0,
             "url": "https://tv-1.iill.top/m3u/Live",
             "ua": "okhttp/3.15",
-            "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png"
+        },
+        {
+            "name": "zouming.ipv6",
+            "type": 0,
+            "url": "http://ww.zouming.com/ipv6.txt",
+            "ua": "okhttp/3.15",
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
             "logo": "https://epg.112114.xyz/logo/{name}.png"
         }
     ],
