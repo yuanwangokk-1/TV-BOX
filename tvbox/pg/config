@@ -1,2 +1,2 @@
 proxies:
-  - {name: snippets, server: registry.cyou, port: 443, client-fingerprint: chrome, type: vless, uuid: 019914f7-f4cb-4e3a-733c-f139e1f2ad75, tls: true, tfo: false, skip-cert-verify: false, servername: www.flashspeed.cloud-ip.cc, network: ws, ws-opts: {path: "/snippets?ip=proxyip:port(443)&nat64=6to4", headers: {Host: www.flashspeed.cloud-ip.cc}}}
+  - {name: proxyip.6670088.xyz, server: www.visa.com.sg, port: 8443, client-fingerprint: random, type: vless, uuid: ba55ef37-c33c-4a8f-aafa-2abc85312863, tls: true, tfo: false, skip-cert-verify: false, servername: proxyip.6670088.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: proxyip.6670088.xyz}}}
