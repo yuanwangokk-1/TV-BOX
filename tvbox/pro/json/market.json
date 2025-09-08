@@ -4,15 +4,21 @@
         "list": [
             {
                 "name": "ok影视手机版",
-                "url": "http://pan.isxzg.cn:5244/d/tools2/apk/ok%E5%BD%B1%E8%A7%86.apk",
+                "url": "http://xw.123234567.xyz:60255/jiduo/OKSJ64.apk",
                 "icon": "https://ricolj.github.io/tp/ok.png",
                 "version": "py-v8a"
             },
             {
                 "name": "OK影视电视版",
-                "url": "http://pan.isxzg.cn:5244/d/tools2/apk/Youtube.apk",
+                "url": "http://xw.123234567.xyz:60255/jiduo/OKTV32.apk",
                 "icon": "https://ricolj.github.io/tp/ok.png",
                 "version": "py-v7a"
+            },
+            {
+                "name": "OK影视电视版",
+                "url": "http://xw.123234567.xyz:60255/jiduo/OKTV64.apk",
+                "icon": "https://ricolj.github.io/tp/ok.png",
+                "version": "py-v8a"
             }
         ]
     },
