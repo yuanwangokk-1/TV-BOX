@@ -11,33 +11,7 @@
       "indexs": 1,
       "ext": "./lib/tokenm.json$$$./lib/douban.json"
     },
-    {
-      "key": "网盘配置",
-      "name": "网盘及彈幕配置",
-      "type": 3,
-      "api": "csp_Config",
-      "searchable": 0,
-      "changeable": 0,
-      "ext": "./lib/tokenm.json",
-      "style": {
-        "type": "rect",
-        "ratio": 1.5
-      }
-    },
     { "key": "Local", "name": "本地", "type": 3, "api": "csp_Local" },
-    {
-      "key": "FirstAid",
-      "name": "🚑 急救知识 ",
-      "type": 3,
-      "api": "csp_FirstAid",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 3.8
-      }
-    },
     {
       "key": "bili",
       "name": "B站 | Bili[jar]",
@@ -51,48 +25,6 @@
       "ext": {
         "type": "演唱会#电影#电视剧#帕梅拉#广场舞#纪录片#综艺#鬼畜#音乐#舞蹈#影视#知识#美食#风光#田园#户外#8K#徐云",
         "cookie": ""
-      }
-    },
-    {
-      "key": "TGYunPanLocal",
-      "name": "TG频道搜索",
-      "type": 3,
-      "api": "csp_TGYunPanLocal",
-      "timeout": 120,
-      "ext": {
-        "token": "./lib/tokenm.json",
-        "json": "./lib/tgsearch.json",
-        "keywords": "名称,片名,推荐",
-        "tgsearch_url": "http://127.0.0.1:10199",
-        "tgsearch_media_url": "http://127.0.0.1:10199",
-        "channellist": "tgsearchers3,leoziyuan,peccxinpd,yydf_hzl,vip115hot,clouddriveresources,q66share,yggpan,xiangxiunbb,oscardianying,dianying4k,wfysfx02,quarkfree,ucwpzy,ucquark,mcph860,mcph608,xunleibl,taoxgzy,yunpanx,kkxlzy,mcph086,dianyingshare,quark_movies,zyfx2022,alyp_1,quanziyuanshe,hdhhd21,guoman4k,duan_ju,q_dianying,q_dianshiju,sharepanfilms,mcph01,jdjdn1111,panjclub,baicaozy,yunpan189,tianyirigeng,cloudtianyi,tyysypzypd,txtyzy,kuakeclound,tyypzhpd,zyfb123,xx123pan,zyzhpd123,yingshifenxiang123,yp123pan,wp123zy115:oneonefivewpfx,lsp115,qukanmovie,channel_shares_115,share4115,ysxb48,aliyun:zaihuayun,sharealiyun,aliyun_4k_movies,aliyunys,qixingzhenren,yunpanuc,ucshare,ucwangpan",
-        "proxy": "",
-        "danmu": true
-      },
-      "style": {
-        "type": "rect",
-        "ratio": 1.77
-      }
-    },
-    {
-      "key": "TGYunPan",
-      "name": "TG群组搜索",
-      "type": 3,
-      "api": "csp_TGYunPan",
-      "timeout": 120,
-      "ext": {
-        "token": "./lib/tokenm.json",
-        "json": "./lib/tgsearch.json",
-        "keywords": "名称,片名,推荐",
-        "tgsearch_url": "http://127.0.0.1:10199",
-        "tgsearch_media_url": "http://127.0.0.1:10199",
-        "channellist": "tgsearchers3,KFCYeah,tianyifc,BaiduCloudDisk,txtyzy,peccxinpd,gotopan,PanjClub,kkxlzy,baicaoZY,yggpan,zaihuayun,Q66Share,Oscar_4Kmovies,shareAliyun,alyp_1,Quark_Movies,XiangxiuNBB,ydypzyfx,ucquark,xx123pan,zyfb123,tyypzhpd,tianyirigeng,cloudtianyi,hdhhd21,Lsp115,qixingzhenren,tyysypzypd,vip115hot,wp123zy,yunpan189,yydf_hzl,leoziyuan",
-        "proxy": "",
-        "danmu": true
-      },
-      "style": {
-        "type": "rect",
-        "ratio": 1.77
       }
     },
     {
@@ -989,7 +921,7 @@
       "name": "FeiYang牧场",
       "type": 0,
       "url": "http://sub.ottiptv.cc/iptv.m3u",
-      "ua": "okHttp/Mod-1.2.0.1",
+      "ua": "okHttp/Mod-1.3.0.0",
       "epg": "https://epg.112114.xyz/?ch={name}&date=DATE1SUB",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
       "catchup": {
@@ -1064,7 +996,7 @@
     {
       "name": "FMM.m3u",
       "type": 0,
-      "url": "http://127.0.0.1:10079/c/3600/proxy/https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/ipv6.m3u",
+      "url": "https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/ipv6.m3u",
 
       "ua": "okhttp/3.15",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
@@ -1176,6 +1108,14 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
+      "name": "Gather.体育直播",
+      "type": 0,
+      "url": "https://tv-1.iill.top/m3u/Sport",
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
       "name": "Gather.网络直播",
       "type": 0,
       "url": "https://tv-1.iill.top/m3u/Live",
@@ -1186,7 +1126,7 @@
     {
       "name": "FMM.txt",
       "type": 0,
-      "url": "http://127.0.0.1:10079/c/3600/proxy/https://fanmingming.com/txt?url=https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
+      "url": "https://fanmingming.com/txt?url=https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
 
       "ua": "okhttp/3.15",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
@@ -1195,7 +1135,7 @@
     {
       "name": "zouming.ipv6",
       "type": 0,
-      "url": "http://127.0.0.1:10079/c/3600/proxy/http://ww.zouming.com/ipv6.txt",
+      "url": "http://ww.zouming.com/ipv6.txt",
       "ua": "okhttp/3.15",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"

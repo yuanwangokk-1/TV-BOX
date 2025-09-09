@@ -1,2 +1,14 @@
 proxies:
-  - {name: proxyip.6670088.xyz, server: www.visa.com.sg, port: 8443, client-fingerprint: random, type: vless, uuid: ba55ef37-c33c-4a8f-aafa-2abc85312863, tls: true, tfo: false, skip-cert-verify: false, servername: proxyip.6670088.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: proxyip.6670088.xyz}}}
+  - {
+      name: "[Vless] proxyip.6670088.xyz",
+      server: proxyip.6670088.xyz,
+      port: 8443,
+      type: vless,
+      uuid: ba55ef37-c33c-4a8f-aafa-2abc85312863,
+      tls: true,
+      skip-cert-verify: false,
+      servername: proxyip.6670088.xyz,
+      client-fingerprint: random,
+      network: ws,
+      ws-opts: { path: "/?ed=2560", headers: { Host: proxyip.6670088.xyz } },
+    }
