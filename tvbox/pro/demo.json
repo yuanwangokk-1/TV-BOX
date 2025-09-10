@@ -1,12 +1,24 @@
 {
   "spider": "./jar/vox.jar",
   "warningText": "禁止任何商业用途，仅限个人学习爬虫原理使用。",
-  "logo": "./1.gif",
+  "logo": "./learning.gif",
   "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
   "lives": [
     {
-      "name": "直播名字自定义",
-      "url": "直播链接自定义"
+      "name": "Gather.电视直播",
+      "type": 0,
+      "url": "https://tv.iill.top/m3u/Gather",
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "Gather.网络直播",
+      "type": 0,
+      "url": "https://tv.iill.top/m3u/Live",
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
   ],
   "sites": [
@@ -162,6 +174,19 @@
         "cookie": "",
         "filters": "./json/guanying.json",
         "sites": "https://www.gyg.la,https://www.gyg.si,https://www.gying.net,https://www.gying.org,https://www.gying.si,https://www.gying.in"
+      }
+    },
+    {
+      "key": "csp_Wofox",
+      "name": "🐱玩偶┃fox",
+      "type": 3,
+      "api": "csp_Wofox",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "sites": "",
+        "proxy": "noproxy"
       }
     },
     {
@@ -450,6 +475,15 @@
       "ext": "./js/稀饭动漫.js"
     },
     {
+      "key": "py_4K影院",
+      "name": "🥭4K┃影院",
+      "api": "./py/4K影院.py",
+      "filterable": 1,
+      "quickSearch": 1,
+      "searchable": 1,
+      "type": 3
+    },
+    {
       "key": "py_饭团PY",
       "name": "😢饭团┃PY",
       "api": "./py/饭团影视.py",
@@ -597,7 +631,7 @@
     },
     {
       "key": "商店",
-      "name": "🤡商店┃占位",
+      "name": "🤡商店┃更新",
       "type": 3,
       "api": "csp_Market",
       "searchable": 0,
