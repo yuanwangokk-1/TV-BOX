@@ -8,6 +8,7 @@ var rule = {
   filterable: 0,
   class_parse: '.top-bar-menu&&li;a&&Text;a&&href;.*/(.*?).html',
   tab_rename: {'KUAKE1': '夸克1', 'KUAKE11': '夸克2', 'YOUSEE1': 'UC1', 'YOUSEE11': 'UC2',},
+  图片来源: '@Referer=https://aikanzy.com@User-Agent=Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36',
   play_parse: true,
   lazy: $js.toString(() => {
         //推送阿里播放  支持影视壳

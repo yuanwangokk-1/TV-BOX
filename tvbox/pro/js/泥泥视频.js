@@ -57,7 +57,7 @@ var rule = {
         
     },
     //推荐列表可以单独写也是几个参数，和一级列表部分参数一样的可以用*代替，不一样写不一样的，全和一级一样，可以用一个*代替
-    推荐: '*',
+    推荐: 'a:has(.lazyload);a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
     //推荐页的json模式
     //推荐: 'json:list;vod_name;vod_pic;vod_remarks;vod_id',
     //数组、标题、图片、副标题、链接，分类页找参数
