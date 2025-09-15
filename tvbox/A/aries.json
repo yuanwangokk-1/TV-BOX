@@ -22,6 +22,17 @@
     }
   ],
   "sites": [
+     {
+      "key": "咪咪女孩",
+      "name": "✨咪咪女孩✨",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "api": "csp_XBPQ",
+      "ext": "./json/咪咪女孩.json"
+    },
     {
       "key": "一茎深",
       "name": "✨一茎深✨",
