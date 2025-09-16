@@ -1,5 +1,5 @@
 {
-  "spider": "./jar/xbpq.jar",
+  "spider": "./jar/xyqxbpq.jar",
   "warningText": "Any commercial use is prohibited, and it is only for personal learning of crawler principles.",
   "logo": "./2.gif",
   "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
@@ -22,9 +22,31 @@
     }
   ],
   "sites": [
-     {
+    {
+      "key": "一个区.py",
+      "name": "✨Aries|一个区(py)✨",
+      "type": 3,
+      "api": "./PY/一个区.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": ""
+    },
+    {
+      "key": "色岛",
+      "name": "✨Aries|色岛✨",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "api": "csp_XBPQ",
+      "ext": "./json/色岛.json"
+    },
+    {
       "key": "咪咪女孩",
-      "name": "✨咪咪女孩✨",
+      "name": "✨Aries|咪咪女孩✨",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -35,7 +57,7 @@
     },
     {
       "key": "一茎深",
-      "name": "✨一茎深✨",
+      "name": "✨Aries|一茎深✨",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -46,7 +68,7 @@
     },
     {
       "key": "色优酷AV",
-      "name": "✨色优酷AV✨",
+      "name": "✨Aries|色优酷AV✨",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -57,7 +79,7 @@
     },
     {
       "key": "五马抖音",
-      "name": "✨五马抖音✨",
+      "name": "✨Aries|五马抖音✨",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
@@ -68,7 +90,7 @@
     },
     {
       "key": "YY色播",
-      "name": "✨YY色播✨",
+      "name": "✨Aries|YY色播✨",
       "type": 3,
       "searchable": 1,
       "quickSearch": 1,
