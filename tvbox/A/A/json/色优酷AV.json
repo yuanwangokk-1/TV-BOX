@@ -7,7 +7,7 @@
   "主页url": "https://youku.syk8.top/youku/",
   "首页": "120",
   "起始页": "1",
-  "分类url": "https://youku.syk8.top/youku/vod/type/id/{cateId}/page/{catePg}.html",
+  "分类url": "https://youku.syk8.top/youku/vod/type/id/{cateId}/page/{catePg}.html;;z",
   "分类": "国产视频$1#网曝泄密$2#日本无码$3#日本有码$4#无码中字$5#有码中字$6#欧美视频$7#色情动漫$8",
   "二次截取": "",
   "数组": "class=\"thumbnail\"&&</h5>",
