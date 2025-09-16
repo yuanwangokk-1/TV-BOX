@@ -1,247 +1,258 @@
 {
-  "spider": "./jar/xyqxbpq.jar",
-  "warningText": "Any commercial use is prohibited, and it is only for personal learning of crawler principles.",
-  "logo": "./2.gif",
-  "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
-  "lives": [
-    {
-      "name": "Gather.电视直播",
-      "type": 0,
-      "url": "https://tv.iill.top/m3u/Gather",
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "Gather.网络直播",
-      "type": 0,
-      "url": "https://m.iill.top/Live.m3u",
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    }
-  ],
-  "sites": [
-    {
-      "key": "py_BadNews",
-      "name": "✨🔞BadNews(T4)✨",
-      "type": 4,
-      "api": "https://py.doube.eu.org/spider?site=BadNews",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": { "type": "rect", "ratio": 1.5 }
-    },
-    {
-      "key": "py_Miss",
-      "name": "✨🔞MissAV(T4)✨",
-      "type": 4,
-      "api": "https://py.doube.eu.org/spider?site=Miss",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "py_AiDou",
-      "name": "✨🔞AiDou(T4)✨",
-      "type": 4,
-      "api": "https://py.doube.eu.org/spider?site=AiDou",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": { "type": "rect", "ratio": 1.5 }
-    },
-    {
-      "key": "py_MrJav",
-      "name": "✨🔞MRJav(T4)✨",
-      "type": 4,
-      "api": "https://py.doube.eu.org/spider?site=MrJav",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": { "type": "rect", "ratio": 1.5 }
-    },
-    {
-      "key": "py_madou",
-      "name": "✨🔞麻豆(T4)✨",
-      "type": 4,
-      "api": "https://py.doube.eu.org/spider?site=MaDou",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": { "type": "rect", "ratio": 1.5 }
-    },
-    {
-      "key": "NTR淫妻录",
-      "name": "✨Aries|NTR淫妻录✨",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "api": "csp_XBPQ",
-      "ext": "./json/NTR淫妻录.json"
-    },
-    {
-      "key": "痴迷AV",
-      "name": "✨Aries|痴迷AV✨",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "api": "csp_XBPQ",
-      "ext": "./json/痴迷AV.json"
-    },
-    {
-      "key": "一个区.py",
-      "name": "✨Aries|一个区(py)✨",
-      "type": 3,
-      "api": "./PY/一个区.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "order_num": 0,
-      "ext": ""
-    },
-    {
-      "key": "色岛",
-      "name": "✨Aries|色岛✨",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "api": "csp_XBPQ",
-      "ext": "./json/色岛.json"
-    },
-    {
-      "key": "咪咪女孩",
-      "name": "✨Aries|咪咪女孩✨",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "api": "csp_XBPQ",
-      "ext": "./json/咪咪女孩.json"
-    },
-    {
-      "key": "一茎深",
-      "name": "✨Aries|一茎深✨",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "api": "csp_XBPQ",
-      "ext": "./json/一茎深.json"
-    },
-    {
-      "key": "色优酷AV",
-      "name": "✨Aries|色优酷AV✨",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "api": "csp_XBPQ",
-      "ext": "./json/色优酷AV.json"
-    },
-    {
-      "key": "五马抖音",
-      "name": "✨Aries|五马抖音✨",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "api": "csp_XBPQ",
-      "ext": "./json/无码抖音.json"
-    },
-    {
-      "key": "YY色播",
-      "name": "✨Aries|YY色播✨",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "api": "csp_XBPQ",
-      "ext": "./json/YY色播.json"
-    }
-  ],
-  "doh": [
-    {
-      "name": "DNSPod",
-      "url": "https://doh.pub/dns-query",
-      "ips": [
-        "119.29.29.29",
-        "119.28.28.28",
-        "2400:da00::6666",
-        "2400:da00:1::6666"
-      ]
-    },
-    {
-      "name": "Alidns",
-      "url": "https://dns.alidns.com/dns-query",
-      "ips": ["223.5.5.5", "223.6.6.6", "2400:3200::1", "2400:3200:baba::1"]
-    },
-    {
-      "name": "Google",
-      "url": "https://dns.google/dns-query",
-      "ips": [
-        "8.8.4.4",
-        "8.8.8.8",
-        "2001:4860:4860::8888",
-        "2001:4860:4860::8844"
-      ]
-    },
-    {
-      "name": "Cloudflare",
-      "url": "https://cloudflare-dns.com/dns-query",
-      "ips": [
-        "1.1.1.1",
-        "1.0.0.1",
-        "2606:4700:4700::1111",
-        "2606:4700:4700::1001"
-      ]
-    },
-    {
-      "name": "AdGuard",
-      "url": "https://dns.adguard.com/dns-query",
-      "ips": [
-        "94.140.14.140",
-        "94.140.14.141",
-        "2a10:50c0::ad1:ff",
-        "2a10:50c0::ad2:ff"
-      ]
-    },
-    {
-      "name": "DNSWatch",
-      "url": "https://dns.watch/dns-query",
-      "ips": [
-        "84.200.69.80",
-        "84.200.70.40",
-        "2001:67c:2354:2::64",
-        "2001:67c:2354:3::64"
-      ]
-    },
-    {
-      "name": "Quad9",
-      "url": "https://dns.quad9.net/dns-query",
-      "ips": ["9.9.9.9", "149.112.112.112", "2620:fe::fe", "2620:fe::9"]
-    }
-  ],
-  "proxy": [],
-  "rules": [],
-  "parses": [],
-  "headers": [],
-  "hosts": [],
-  "ads": []
+    "spider": "./jar/xyqxbpq.jar",
+    "warningText": "Any commercial use is prohibited, and it is only for personal learning of crawler principles.",
+    "logo": "./2.gif",
+    "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
+    "lives": [
+        {
+            "name": "Gather.韩国女团",
+            "type": 0,
+            "url": "https://gist.githubusercontent.com/yuanwangokk-1/a661dd0e88466aa22f2a7c1fb375635e/raw/8708d9947be1c64c52bb1610a30aaa1b595848c9/%E9%9F%A9%E5%9B%BD%E5%A5%B3%E5%9B%A2%E7%9B%B4%E6%92%AD.m3u",
+            "ua": "okhttp/3.15",
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png"
+        },
+        {
+            "name": "Gather.电视直播",
+            "type": 0,
+            "url": "https://tv.iill.top/m3u/Gather",
+            "ua": "okhttp/3.15",
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png"
+        },
+        {
+            "name": "Gather.网络直播",
+            "type": 0,
+            "url": "https://m.iill.top/Live.m3u",
+            "ua": "okhttp/3.15",
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png"
+        }
+    ],
+    "sites": [
+        {
+            "key": "py_Miss",
+            "name": "🔞MissAV(T4)",
+            "type": 4,
+            "api": "https://py.doube.eu.org/spider?site=Miss",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
+        },
+        {
+            "key": "楚门影视",
+            "name": "✨Aries|楚门影视✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/楚门影视.json"
+        },
+        {
+            "key": "JAV目錄大全",
+            "name": "✨Aries|JAV目錄大全✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/JAV目錄大全.json"
+        },
+        {
+            "key": "鉴黄师",
+            "name": "✨Aries|鉴黄师✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/鉴黄师.json"
+        },
+        {
+            "key": "NTR淫妻录",
+            "name": "✨Aries|NTR淫妻录✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/NTR淫妻录.json"
+        },
+        {
+            "key": "痴迷AV",
+            "name": "✨Aries|痴迷AV✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/痴迷AV.json"
+        },
+        {
+            "key": "一个区.py",
+            "name": "✨Aries|一个区(py)✨",
+            "type": 3,
+            "api": "./py/一个区.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "order_num": 0,
+            "ext": ""
+        },
+        {
+            "key": "色岛",
+            "name": "✨Aries|色岛✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/色岛.json"
+        },
+        {
+            "key": "咪咪女孩",
+            "name": "✨Aries|咪咪女孩✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/咪咪女孩.json"
+        },
+        {
+            "key": "一茎深",
+            "name": "✨Aries|一茎深✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/一茎深.json"
+        },
+        {
+            "key": "色优酷AV",
+            "name": "✨Aries|色优酷AV✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/色优酷AV.json"
+        },
+        {
+            "key": "五马抖音",
+            "name": "✨Aries|五马抖音✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/无码抖音.json"
+        },
+        {
+            "key": "YY色播",
+            "name": "✨Aries|YY色播✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/YY色播.json"
+        }
+    ],
+    "doh": [
+        {
+            "name": "DNSPod",
+            "url": "https://doh.pub/dns-query",
+            "ips": [
+                "119.29.29.29",
+                "119.28.28.28",
+                "2400:da00::6666",
+                "2400:da00:1::6666"
+            ]
+        },
+        {
+            "name": "Alidns",
+            "url": "https://dns.alidns.com/dns-query",
+            "ips": [
+                "223.5.5.5",
+                "223.6.6.6",
+                "2400:3200::1",
+                "2400:3200:baba::1"
+            ]
+        },
+        {
+            "name": "Google",
+            "url": "https://dns.google/dns-query",
+            "ips": [
+                "8.8.4.4",
+                "8.8.8.8",
+                "2001:4860:4860::8888",
+                "2001:4860:4860::8844"
+            ]
+        },
+        {
+            "name": "Cloudflare",
+            "url": "https://cloudflare-dns.com/dns-query",
+            "ips": [
+                "1.1.1.1",
+                "1.0.0.1",
+                "2606:4700:4700::1111",
+                "2606:4700:4700::1001"
+            ]
+        },
+        {
+            "name": "AdGuard",
+            "url": "https://dns.adguard.com/dns-query",
+            "ips": [
+                "94.140.14.140",
+                "94.140.14.141",
+                "2a10:50c0::ad1:ff",
+                "2a10:50c0::ad2:ff"
+            ]
+        },
+        {
+            "name": "DNSWatch",
+            "url": "https://dns.watch/dns-query",
+            "ips": [
+                "84.200.69.80",
+                "84.200.70.40",
+                "2001:67c:2354:2::64",
+                "2001:67c:2354:3::64"
+            ]
+        },
+        {
+            "name": "Quad9",
+            "url": "https://dns.quad9.net/dns-query",
+            "ips": [
+                "9.9.9.9",
+                "149.112.112.112",
+                "2620:fe::fe",
+                "2620:fe::9"
+            ]
+        }
+    ],
+    "proxy": [],
+    "rules": [],
+    "parses": [],
+    "headers": [
+        {
+            "User-Agent": "okhttp/3.12.11"
+        }
+    ],
+    "hosts": [],
+    "ads": []
 }
