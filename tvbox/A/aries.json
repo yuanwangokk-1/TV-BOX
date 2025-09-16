@@ -23,6 +23,28 @@
   ],
   "sites": [
     {
+      "key": "NTR淫妻录",
+      "name": "✨Aries|NTR淫妻录✨",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "api": "csp_XBPQ",
+      "ext": "./json/NTR淫妻录.json"
+    },
+    {
+      "key": "痴迷AV",
+      "name": "✨Aries|痴迷AV✨",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "api": "csp_XBPQ",
+      "ext": "./json/痴迷AV.json"
+    },
+    {
       "key": "一个区.py",
       "name": "✨Aries|一个区(py)✨",
       "type": 3,

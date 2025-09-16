@@ -1,0 +1,20 @@
+{
+  "请求头": "User-Agent$MOBILE_UA",
+  "编码": "UTF-8",
+  "图片代理": "0",
+  "主页url": "https://chimiav.com/",
+  "首页": "120",
+  "起始页": "1",
+  "分类url": "https://chimiav.com/index.php/vod/type/id/{cateId}/page/{catePg}.html;;mrcd0",
+  "分类": "有码中文字幕$34#日本无码$32#无码中文字幕$29#国产视频$38#欧美高清$31#动漫剧情$30",
+  "二次截取": "list_box\">&&class=\"pages pagebar",
+  "数组": "<ul>&&</ul>",
+  "标题": "title=\"&&\"",
+  "图片": "img=\"&&\"",
+  "副标题": "icon icon-time\"></i>&&</span>",
+  "链接": "href=\"&&\"",
+  "直接播放": "1",
+  "跳转播放链接": "var player_*url\":\"&&\"",
+  "搜索url": "https://chimiav.com/index.php/vod/search/page/{pg}/wd/{wd}.html",
+  "搜索模式": "1"
+}
