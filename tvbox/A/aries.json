@@ -23,6 +23,60 @@
   ],
   "sites": [
     {
+      "key": "py_BadNews",
+      "name": "✨🔞BadNews(T4)✨",
+      "type": 4,
+      "api": "https://py.doube.eu.org/spider?site=BadNews",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": { "type": "rect", "ratio": 1.5 }
+    },
+    {
+      "key": "py_Miss",
+      "name": "✨🔞MissAV(T4)✨",
+      "type": 4,
+      "api": "https://py.doube.eu.org/spider?site=Miss",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "py_AiDou",
+      "name": "✨🔞AiDou(T4)✨",
+      "type": 4,
+      "api": "https://py.doube.eu.org/spider?site=AiDou",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": { "type": "rect", "ratio": 1.5 }
+    },
+    {
+      "key": "py_MrJav",
+      "name": "✨🔞MRJav(T4)✨",
+      "type": 4,
+      "api": "https://py.doube.eu.org/spider?site=MrJav",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": { "type": "rect", "ratio": 1.5 }
+    },
+    {
+      "key": "py_madou",
+      "name": "✨🔞麻豆(T4)✨",
+      "type": 4,
+      "api": "https://py.doube.eu.org/spider?site=MaDou",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": { "type": "rect", "ratio": 1.5 }
+    },
+    {
       "key": "NTR淫妻录",
       "name": "✨Aries|NTR淫妻录✨",
       "type": 3,
