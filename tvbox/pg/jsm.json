@@ -24,7 +24,7 @@
         "tgsearch_url": "http://127.0.0.1:10199",
         "tgsearch_media_url": "http://127.0.0.1:10199",
         "channellist": "tgsearchers3,leoziyuan,peccxinpd,yydf_hzl,vip115hot,clouddriveresources,q66share,yggpan,xiangxiunbb,oscardianying,dianying4k,wfysfx02,quarkfree,ucwpzy,ucquark,mcph860,mcph608,xunleibl,taoxgzy,yunpanx,kkxlzy,mcph086,dianyingshare,quark_movies,zyfx2022,alyp_1,quanziyuanshe,hdhhd21,guoman4k,duan_ju,q_dianying,q_dianshiju,sharepanfilms,mcph01,jdjdn1111,panjclub,baicaozy,yunpan189,tianyirigeng,cloudtianyi,tyysypzypd,txtyzy,kuakeclound,tyypzhpd,zyfb123,xx123pan,zyzhpd123,yingshifenxiang123,yp123pan,wp123zy115:oneonefivewpfx,lsp115,qukanmovie,channel_shares_115,share4115,ysxb48,aliyun:zaihuayun,sharealiyun,aliyun_4k_movies,aliyunys,qixingzhenren,yunpanuc,ucshare,ucwangpan",
-        "proxy": "",
+        "proxy": "proxy",
         "douban": "./lib/douban.json",
         "danmu": true
       },
@@ -88,7 +88,7 @@
         "tgsearch_url": "http://127.0.0.1:10199",
         "tgsearch_media_url": "http://127.0.0.1:10199",
         "channellist": "tgsearchers3,leoziyuan,peccxinpd,yydf_hzl,vip115hot,clouddriveresources,q66share,yggpan,xiangxiunbb,oscardianying,dianying4k,wfysfx02,quarkfree,ucwpzy,ucquark,mcph860,mcph608,xunleibl,taoxgzy,yunpanx,kkxlzy,mcph086,dianyingshare,quark_movies,zyfx2022,alyp_1,quanziyuanshe,hdhhd21,guoman4k,duan_ju,q_dianying,q_dianshiju,sharepanfilms,mcph01,jdjdn1111,panjclub,baicaozy,yunpan189,tianyirigeng,cloudtianyi,tyysypzypd,txtyzy,kuakeclound,tyypzhpd,zyfb123,xx123pan,zyzhpd123,yingshifenxiang123,yp123pan,wp123zy115:oneonefivewpfx,lsp115,qukanmovie,channel_shares_115,share4115,ysxb48,aliyun:zaihuayun,sharealiyun,aliyun_4k_movies,aliyunys,qixingzhenren,yunpanuc,ucshare,ucwangpan",
-        "proxy": "",
+        "proxy": "proxy",
         "danmu": true
       },
       "style": {
@@ -109,7 +109,7 @@
         "tgsearch_url": "http://127.0.0.1:10199",
         "tgsearch_media_url": "http://127.0.0.1:10199",
         "channellist": "tgsearchers3,KFCYeah,tianyifc,BaiduCloudDisk,txtyzy,peccxinpd,gotopan,PanjClub,kkxlzy,baicaoZY,yggpan,zaihuayun,Q66Share,Oscar_4Kmovies,shareAliyun,alyp_1,Quark_Movies,XiangxiuNBB,ydypzyfx,ucquark,xx123pan,zyfb123,tyypzhpd,tianyirigeng,cloudtianyi,hdhhd21,Lsp115,qixingzhenren,tyysypzypd,vip115hot,wp123zy,yunpan189,yydf_hzl,leoziyuan",
-        "proxy": "",
+        "proxy": "noproxy",
         "danmu": true
       },
       "style": {
@@ -272,7 +272,7 @@
         "type": "直播#新闻#剧集#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc documentary#national geographic documentary",
         "keywords": "排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",
         "codecs": "",
-        "proxy": "",
+        "proxy": "proxy",
         "danmu": true
       },
       "style": {
@@ -972,14 +972,6 @@
   ],
   "lives": [
     {
-      "name": "Gather.体育直播",
-      "type": 0,
-      "url": "https://tv.iill.top/m3u/Sport",
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
       "name": "最强国内直播(合并版)",
       "type": 0,
       "url": "http://127.0.0.1:35456/all.m3u",
@@ -1103,7 +1095,7 @@
     {
       "name": "FMM.m3u.音质增强",
       "type": 0,
-      "url": "http://127.0.0.1:10079/mp4/3600/proxy/https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/ipv6.m3u",
+      "url": "https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/ipv6.m3u",
 
       "ua": "okhttp/3.15",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
@@ -1208,7 +1200,7 @@
     {
       "name": "Gather.网络直播",
       "type": 0,
-      "url": "https://m.iill.top/Live.m3u",
+      "url": "https://tv.iill.top/m3u/Live",
       "ua": "okhttp/3.15",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
@@ -1251,8 +1243,8 @@
       "name": "Google",
       "url": "https://dns.google/dns-query",
       "ips": [
-        "8.8.4.4",
         "8.8.8.8",
+        "8.8.4.4",
         "2001:4860:4860::8888",
         "2001:4860:4860::8844"
       ]
@@ -1273,8 +1265,8 @@
       "ips": [
         "94.140.14.140",
         "94.140.14.141",
-        "2a10:50c0::ad1:ff",
-        "2a10:50c0::ad2:ff"
+        "2a00:5a60::ad1:0ff",
+        "2a00:5a60::ad2:0ff"
       ]
     },
     {
@@ -1285,7 +1277,7 @@
     {
       "name": "Quad9",
       "url": "https://dns.quad9.net/dns-quer",
-      "ips": ["9.9.9.9", "149.112.112.112", "2620:fe::fe", "2620:fe::9"]
+      "ips": ["9.9.9.9", "149.112.112.112"]
     }
   ],
   "proxy": [

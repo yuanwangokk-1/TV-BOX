@@ -1,0 +1,23 @@
+{
+    "作者": "Aries",
+    "站名": "",
+    "请求头": "User-Agent$MOBILE_UA",
+    "编码": "UTF-8",
+    "主页url": "https://xt4dk4.japp8.com/",
+    "首页": "120",
+    "起始页": "1",
+    "分类url": "https://xt4dk4.japp8.com/video/category/{cateId}/{catePg}.html;;z",
+    "分类": "最近更新$latest#高清视频$hd#最近加精$recent-favorite#最近得分$recent-rating#非付费$nonpaid#原创$ori91#10分钟以上$long-list#20分钟以上$longer-list#本月讨论$month-discuss#本月收藏$top-favorite#收藏最多$most-favorite#本月最热$top-list#上月最热$top-last",
+    "数组": "scale\"&&</div></div>",
+    "标题": ">&&</a",
+    "图片": "style=\"background-image: url('&&')\"",
+    "副标题": "🌹+>&&</a",
+    "链接": "href=\"&&\"",
+    "播放二次截取": "",
+    "播放数组": "nav justify-content-center shadow-sm bg-light rounded\"&&</ul>",
+    "倒序": "0",
+    "播放列表": "<a&&/a>",
+    "播放标题": "🌹+>&&</a",
+    "播放链接": "href=\"&&\"",
+    "跳转播放链接": "var player_*\"url\":\"&&\""
+}
