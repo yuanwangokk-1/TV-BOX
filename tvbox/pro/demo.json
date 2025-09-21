@@ -31,10 +31,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.5
-      }
+      "style": { "type": "rect", "ratio": 1.5 }
     },
     {
       "key": "py_Miss",
@@ -55,10 +52,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.5
-      }
+      "style": { "type": "rect", "ratio": 1.5 }
     },
     {
       "key": "py_MrJav",
@@ -69,10 +63,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.5
-      }
+      "style": { "type": "rect", "ratio": 1.5 }
     },
     {
       "key": "py_madou",
@@ -83,10 +74,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.5
-      }
+      "style": { "type": "rect", "ratio": 1.5 }
     },
     {
       "key": "csp_Config",
@@ -219,6 +207,42 @@
         "filters": "./json/douban.json",
         "channel": "yunpan139,ydypzyfx"
       }
+    },
+    {
+      "key": "夸克推送",
+      "name": "👊夸克┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=quark"
+    },
+    {
+      "key": "百度推送",
+      "name": "✊百度┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=baidu"
+    },
+    {
+      "key": "UC推送",
+      "name": "☝️优熙┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=uc"
+    },
+    {
+      "key": "天翼推送",
+      "name": "✋天翼┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=tianyi"
+    },
+    {
+      "key": "123推送",
+      "name": "✌️123┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=123"
+    },
+    {
+      "key": "移动推送",
+      "name": "👍移动┃推送",
+      "type": 4,
+      "api": "https://so.yinpai.xyz/api.php?type=mobile"
     },
     {
       "key": "csp_Douban",
@@ -481,6 +505,19 @@
       "ext": {
         "host": "https://miget-1313189639.cos.ap-guangzhou.myqcloud.com/mifun.txt",
         "datakey": "GETMIFUNGEIMIFUN"
+      }
+    },
+    {
+      "key": "云云",
+      "name": "☁️云云┃影视",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "api": "csp_AppGet",
+      "ext": {
+        "host": "https://staraugust123456.oss-cn-hangzhou.aliyuncs.com/2.txt",
+        "datakey": "staraugust123456",
+        "api": 2
       }
     },
     {
@@ -780,9 +817,29 @@
   ],
   "doh": [
     {
+      "name": "DNSPod",
+      "url": "https://doh.pub/dns-query",
+      "ips": [
+        "119.29.29.29",
+        "119.28.28.28",
+        "2400:da00::6666",
+        "2400:da00:1::6666"
+      ]
+    },
+    {
+      "name": "Alidns",
+      "url": "https://dns.alidns.com/dns-query",
+      "ips": ["223.5.5.5", "223.6.6.6", "2400:3200::1", "2400:3200:baba::1"]
+    },
+    {
       "name": "Google",
       "url": "https://dns.google/dns-query",
-      "ips": ["8.8.4.4", "8.8.8.8"]
+      "ips": [
+        "8.8.4.4",
+        "8.8.8.8",
+        "2001:4860:4860::8888",
+        "2001:4860:4860::8844"
+      ]
     },
     {
       "name": "Cloudflare",
@@ -797,17 +854,27 @@
     {
       "name": "AdGuard",
       "url": "https://dns.adguard.com/dns-query",
-      "ips": ["94.140.14.140", "94.140.14.141"]
+      "ips": [
+        "94.140.14.140",
+        "94.140.14.141",
+        "2a10:50c0::ad1:ff",
+        "2a10:50c0::ad2:ff"
+      ]
     },
     {
       "name": "DNSWatch",
-      "url": "https://resolver2.dns.watch/dns-query",
-      "ips": ["84.200.69.80", "84.200.70.40"]
+      "url": "https://dns.watch/dns-query",
+      "ips": [
+        "84.200.69.80",
+        "84.200.70.40",
+        "2001:67c:2354:2::64",
+        "2001:67c:2354:3::64"
+      ]
     },
     {
       "name": "Quad9",
-      "url": "https://dns.quad9.net/dns-quer",
-      "ips": ["9.9.9.9", "149.112.112.112"]
+      "url": "https://dns.quad9.net/dns-query",
+      "ips": ["9.9.9.9", "149.112.112.112", "2620:fe::fe", "2620:fe::9"]
     }
   ],
   "proxy": [

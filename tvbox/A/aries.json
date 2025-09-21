@@ -31,6 +31,115 @@
     ],
     "sites": [
         {
+            "key": "路漫漫动漫",
+            "name": "✨Aries|路漫漫动漫✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/路漫漫动漫.json"
+        },
+        {
+            "key": "集多花都",
+            "name": "✨Aries|集多花都✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "./py/集多花都.py"
+        },
+        {
+            "key": "醉奶吧",
+            "name": "✨Aries|醉奶吧✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/醉奶吧.json"
+        },
+        {
+            "key": "自由鸟",
+            "name": "✨Aries|自由鸟✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/自由鸟.json"
+        },
+        {
+            "key": "桃花",
+            "name": "✨Aries|桃花✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/桃花.json"
+        },
+        {
+            "key": "免费影院",
+            "name": "✨Aries|免费影院✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/免费影院.json"
+        },
+        {
+            "key": "金陵撸铁汉",
+            "name": "✨Aries|金陵撸铁汉✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/金陵撸铁汉.json"
+        },
+        {
+            "key": "91黑料",
+            "name": "✨Aries|91黑料✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/91黑料.json"
+        },
+        {
+            "key": "18j",
+            "name": "✨Aries|18j✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/18j.json"
+        },
+        {
+            "key": "七色谷",
+            "name": "✨Aries|七色谷✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/七色谷.json"
+        },
+        {
             "key": "dragon",
             "name": "✨Aries|dragon✨",
             "type": 3,
@@ -97,17 +206,6 @@
             "ext": "./json/奶妃Online.json"
         },
         {
-            "key": "javsb",
-            "name": "✨Aries|javsb✨",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "api": "csp_XBPQ",
-            "ext": "./json/javsb.json"
-        },
-        {
             "key": "花都影院",
             "name": "✨Aries|花都影院✨",
             "type": 3,
@@ -163,7 +261,7 @@
         },
         {
             "name": "Cloudflare",
-            "url": "https://cloudflare-dns.com/dns-query",
+            "url": "https://1.1.1.1/dns-query",
             "ips": [
                 "1.1.1.1",
                 "1.0.0.1",
