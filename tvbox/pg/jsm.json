@@ -972,6 +972,31 @@
   ],
   "lives": [
     {
+      "name": "Gather.运动直播",
+      "type": 0,
+      "url": "https://tv.iill.top/m3u/Sport",
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+
+    {
+      "name": "Gather.电视直播",
+      "type": 0,
+      "url": "https://tv.iill.top/m3u/Gather",
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "Gather.网络直播",
+      "type": 0,
+      "url": "https://tv.iill.top/m3u/Live",
+      "ua": "okhttp/3.15",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
       "name": "最强国内直播(合并版)",
       "type": 0,
       "url": "http://127.0.0.1:35456/all.m3u",
@@ -1095,7 +1120,7 @@
     {
       "name": "FMM.m3u.音质增强",
       "type": 0,
-      "url": "https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/ipv6.m3u",
+      "url": "http://127.0.0.1:10079/mp4/3600/proxy/https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/ipv6.m3u",
 
       "ua": "okhttp/3.15",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
@@ -1189,22 +1214,7 @@
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
-    {
-      "name": "Gather.电视直播",
-      "type": 0,
-      "url": "https://tv.iill.top/m3u/Gather",
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "Gather.网络直播",
-      "type": 0,
-      "url": "https://tv.iill.top/m3u/Live",
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
+
     {
       "name": "FMM.txt",
       "type": 0,
@@ -1242,12 +1252,7 @@
     {
       "name": "Google",
       "url": "https://dns.google/dns-query",
-      "ips": [
-        "8.8.8.8",
-        "8.8.4.4",
-        "2001:4860:4860::8888",
-        "2001:4860:4860::8844"
-      ]
+      "ips": ["8.8.4.4", "8.8.8.8"]
     },
     {
       "name": "Cloudflare",
@@ -1262,12 +1267,7 @@
     {
       "name": "AdGuard",
       "url": "https://dns.adguard.com/dns-query",
-      "ips": [
-        "94.140.14.140",
-        "94.140.14.141",
-        "2a00:5a60::ad1:0ff",
-        "2a00:5a60::ad2:0ff"
-      ]
+      "ips": ["94.140.14.140", "94.140.14.141"]
     },
     {
       "name": "DNSWatch",

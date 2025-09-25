@@ -42,6 +42,28 @@
             "ext": "./json/路漫漫动漫.json"
         },
         {
+            "key": "超级精品",
+            "name": "✨Aries|超级精品✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/超级精品.json"
+        },
+        {
+            "key": "淫岛专场",
+            "name": "✨Aries|淫岛专场✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/淫岛专场.json"
+        },
+        {
             "key": "集多花都",
             "name": "✨Aries|集多花都✨",
             "type": 3,
@@ -50,6 +72,61 @@
             "filterable": 1,
             "changeable": 1,
             "api": "./py/集多花都.py"
+        },
+        {
+            "key": "麦田",
+            "name": "✨Aries|麦田✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/麦田.json"
+        },
+        {
+            "key": "69超级影院",
+            "name": "✨Aries|69超级影院✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/69超级影院.json"
+        },
+        {
+            "key": "淘精岁月",
+            "name": "✨Aries|淘精岁月✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/淘精岁月.json"
+        },
+        {
+            "key": "83视频",
+            "name": "✨Aries|83视频✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/83视频.json"
+        },
+        {
+            "key": "公子别走",
+            "name": "✨Aries|公子别走✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "csp_XBPQ",
+            "ext": "./json/公子别走.json"
         },
         {
             "key": "醉奶吧",
