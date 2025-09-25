@@ -1,0 +1,2 @@
+proxies:
+  - {name: snippets, server: lucy.arises.dynv6.net, port: 8443, client-fingerprint: chrome, type: vless, uuid: cd6bf165-4196-4f64-a7d9-ef2641d1baf4, tls: true, tfo: false, skip-cert-verify: false, servername: lucy.arises.dynv6.net, network: ws, ws-opts: {path: "/snippets?ip=proxyip:port(443)&nat64=6to4", headers: {Host: lucy.arises.dynv6.net}}}
