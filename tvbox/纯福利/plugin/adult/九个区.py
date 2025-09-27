@@ -58,7 +58,6 @@ class Spider(Spider):
         # 只保留指定的分类
         classes = [
             {'type_id': '618013.xyz_1', 'type_name': '全部视频'},
-            {'type_id': '618013.xyz_13', 'type_name': '香蕉精品'},
             {'type_id': '618013.xyz_22', 'type_name': '制服诱惑'},
             {'type_id': '618013.xyz_6', 'type_name': '国产视频'},
             {'type_id': '618013.xyz_8', 'type_name': '清纯少女'},
