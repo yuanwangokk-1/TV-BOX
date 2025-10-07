@@ -64,7 +64,7 @@
 "libxl_url":"./libxlsdk.tar.xz",
 "youtube_proxy":"proxy",
 "singbox_url":"./sing-box.tar.xz",
-"singbox_subscribe_url":"https://down.nigx.cn/raw.githubusercontent.com/yuanwangokk-1/TV-BOX/refs/heads/main/tvbox/pg/config.json",
+"singbox_subscribe_url":"",
 "singbox_clash2singbox_url":"./clash2singbox.tar.xz",
 "singbox_template_url":"./singbox.json",
 "singbox_wgcf_json_url":"./wgcf2singbox.json",
