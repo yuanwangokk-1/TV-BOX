@@ -10,7 +10,3 @@ https://down.nigx.cn/raw.githubusercontent.com/yuanwangokk-1/TV-BOX/refs/heads/m
 ```https
 https://down.nigx.cn/raw.githubusercontent.com/yuanwangokk-1/TV-BOX/refs/heads/main/tvbox/pro/demo.json
 ```
-
-```https
-https://down.nigx.cn/raw.githubusercontent.com/yuanwangokk-1/TV-BOX/refs/heads/main/tvbox/%E7%91%9F%E7%91%9F/18.txt
-```
