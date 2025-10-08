@@ -1,2 +1,0 @@
-proxies:
-  - {name: apk.arises.dynv6.net, server: apk.arises.dynv6.net, port: 443, client-fingerprint: chrome, type: vless, uuid: 337b0eb4-2f7c-479d-9727-f686b5897c6b, tls: true, tfo: false, skip-cert-verify: false, servername: apk.arises.dynv6.net, network: ws, ws-opts: {path: "/snippets/ip=ProxyIP.Vultr.CMLiussss.net?ed=2560", headers: {Host: apk.arises.dynv6.net}}}

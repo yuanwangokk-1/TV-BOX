@@ -1,0 +1,16 @@
+{
+    "主页url": "https://www.gdwx01.top/",
+    "二次截取": "class=\"panel-body panel-padding\">&&</ul",
+    "数组": "li>&&</li",
+    "图片": "img src=\"&&\"",
+    "标题": "title=\"&&\"",
+    "副标题": "<span>&&</span>",
+    "链接": "href=\"&&\"[替换:detail>>play#.html>>/sid/1/nid/1.html];;z",
+    "简介": "description\"content=\"&&\"",
+    "搜索url": "https://www.gdwx01.top/index.php/vod/search/page/{pg}/wd/{wd}.html",
+    "分类url": "https://www.gdwx01.top/index.php/vod/type/id/{cateId}/page/{catePg}.html",
+    "分类二次截取": "class=\"VIP&&</div",
+    "分类数组": "<a&&</a >",
+    "分类标题": ">&&<img",
+    "分类ID": "href=\"/index.php/vod/type/id/&&.html\""
+}

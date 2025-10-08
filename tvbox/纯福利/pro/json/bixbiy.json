@@ -1,0 +1,25 @@
+[
+    {
+        "type_id": "mv",
+        "type_name": "影视"
+    },
+    {
+        "type_id": "film",
+        "type_name": "电影"
+    },
+    {
+        "type_id": "cartoon",
+        "type_name": "动漫"
+    },
+    {
+        "type_id": "skits",
+        "type_name": "短剧"
+    }
+]
+
+
+
+
+
+
+

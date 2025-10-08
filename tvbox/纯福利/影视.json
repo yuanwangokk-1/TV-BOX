@@ -1,0 +1,13 @@
+{
+    "sites": [
+        {
+            "key": "荐片",
+            "name": "👖荐片✈️TG频道@stymei1",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net/jianpian.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        }
+    ]
+}
