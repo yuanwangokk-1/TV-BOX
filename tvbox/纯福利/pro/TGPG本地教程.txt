@@ -1,6 +1,0 @@
-如果不用本地可以忽略此教程，下面提到的拉取文件都需要等待时间。
-
-1.配置中心，Tg盘搜和Tgsearch自定义，Tg盘搜数据来源改成全部，本地模式打开，原来的网络模式忽略，因为一旦打开，会动强制态变成本地模式。
-2.SingBox配置，自动启动打开，重载SingBox（等待）拉取配置文件，订阅配置输入可用clash订阅，再点重启Tgsearch，下面72.74.75节点选择配置好需要用到的节点线路，（这里多说一句逻辑，proxy=127.0.0.1:20172|proxy2=socks5://127.0.0.1:20173|proxy3=127.0.0.1:20174|proxy4=127.0.0.1:20175，是对应的，在盘搜和Tgsearch配置里面的代理标签，切换不同节点用的，普通用户不需要特殊设置，默认proxy就可以，这里主要为以后更新做铺垫。）最后可以检查服务是否运行。
-3.盘搜配置，自启动打开，重载盘搜（等待）拉取配置文件，提示成功，重启盘搜，自定义频道添加频道，也可以看我括号内提供的列表：（tgsearchers3,yunpanxunlei,tianyifc,BaiduCloudDisk,txtyzy,peccxinpd,gotopan,xingqiump4,yunpanqk,PanjClub,kkxlzy,baicaoZY,MCPH01,share_aliyun,bdwpzhpd,ysxb48,jdjdn1111,yggpan,MCPH086,zaihuayun,Q66Share,NewAliPan,ypquark,Oscar_4Kmovies,ucwpzy,alyp_TV,alyp_4K_Movies,shareAliyun,alyp_1,dianyingshare,Quark_Movies,XiangxiuNBB,NewQuark,ydypzyfx,kuakeyun,ucquark,xx123pan,yingshifenxiang123,zyfb123,tyypzhpd,tianyirigeng,cloudtianyi,hdhhd21,Lsp115,oneonefivewpfx,Maidanglaocom,qixingzhenren,taoxgzy,tgsearchers115,Channel_Shares_115,tyysypzypd,vip115hot,wp123zy,yunpan139,yunpan189,yunpanuc,yydf_hzl,alyp_Animation,alyp_JLP,leoziyuan）,115暂时没什么用，按需取舍，一般来说这里就设置完成了，这里有一个检测，但是有一点小bug，就是有时候卡死，这里后面在优化，检测就能看到是否设置成功。
-4.Tgsearch配置，自动启动打开，重载Tgsearch（等待）拉取配置文件，重启Tgsearch，服务状态检查可以看到是否配置成功，下面的ID，HASH，v2,v1有就填，没有就不填，他会影响到搜索群组，图片之类的，这个懂就懂了，不多说了不填写也不影响使用。，

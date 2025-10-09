@@ -15,6 +15,102 @@
       "ext": "./lib/douban.json"
     },
     {
+      "key": "精工厂",
+      "name": "✨Aries|精工厂✨",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/精工厂.json"
+    },
+    {
+      "key": "国产麻豆",
+      "name": "✨Aries|国产麻豆✨",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/国产麻豆.json"
+    },
+    {
+      "key": "文件夹",
+      "name": "✨Aries|文件夹✨",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/文件夹.json"
+    },
+    {
+      "key": "四区",
+      "name": "✨Aries|四区✨",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/四区.json"
+    },
+    {
+      "key": "三区",
+      "name": "✨Aries|三区✨",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/三区.json"
+    },
+    {
+      "key": "一区",
+      "name": "✨Aries|一区✨",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/一区.json"
+    },
+    {
+      "key": "自排偷拍",
+      "name": "✨Aries|自排偷拍✨",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/自排偷拍.json"
+    },
+    {
+      "key": "一个纯粹的x站",
+      "name": "✨Aries|一个纯粹的x站✨",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_XBPQ",
+      "jar": "./jar/xyqxbpq.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/一个纯粹的x站.json"
+    },
+    {
       "key": "lf_js_lf_live",
       "name": "💋娱乐｜直播",
       "type": 3,
@@ -1859,7 +1955,7 @@
       "name": "肉视频",
       "type": 3,
       "api": "csp_XBPQ",
-      "jar": "./lib/xyqxbpq.jar",
+      "jar": "./jar/xyqxbpq.jar",
       "searchable": 1,
       "style": {
         "ratio": 1.43

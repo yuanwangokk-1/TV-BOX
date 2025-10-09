@@ -23,5 +23,3 @@
 
 ### [影视版源码地址](https://github.com/FongMi/TV/tree/release/chaquo)
 
-
-学习交流群：365113012 ，有问题可反馈，看时间和心情决定是否修复
