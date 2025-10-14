@@ -1,11 +1,11 @@
 [
     {
-        "name": "直播名字",
-        "url": "直播地址"
+        "name": "虎牙直播",
+        "url": "http://rihou.cc:88/json/虎牙.txt&&&https://v2.api-m.com/api/meinvpic?return=302"
     },
     {
-        "name": "直播名字",
-        "url": "直播地址"
+        "name": "歪歪直播",
+        "url": "http://rihou.cc:88/json/歪歪.txt&&&https://v2.api-m.com/api/meinvpic?return=302"
     },
     {
         "name": "直播名字",

@@ -1,0 +1,261 @@
+#EXTM3U
+
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Barely 18
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20507
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Brazzers TV 1
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20512
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Classic Sex Channel 1
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20474
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Dorcel TV
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20511
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20497
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub 7
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20502
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub 8
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20503
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub 9
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20504
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub Anal
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20475
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub Black
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20496
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub Blowjob Extreme
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20498
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub Femdom
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20499
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub Gone Wild
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20476
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub GroupSex
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20500
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult HotClub Mixed Girls
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20501
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Gangbang Gone Wild
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20473
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Outdoor Club
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20472
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Passionate 1
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20494
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Passionate 2
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20495
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Penthouse 1
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20492
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Penthouse 2
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20493
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Pinko 2
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20485
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Playboy TV USA
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/38040
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Red Erotic 1
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20486
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Red Erotic 2
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20487
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Red Erotic 3
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20488
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Red Erotic 4
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20489
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Red Erotic 5
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20490
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Red Erotic 6
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20491
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Redlight District 1
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20478
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Redlight District 2
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20479
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult SexTream
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20506
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Venus 1
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20481
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Venus 2
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/20482
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Brazzers TV 2
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/76423
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Brazzers TV 3
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/76424
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Brazzers TV 4
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/76425
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Brazzers TV 5
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/76426
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Sensation 1
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/76427
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Sensation 2
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/76428
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Sensation 3
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/76429
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Sensation 4
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/76430
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Sensation 5
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/76431
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Amateur
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470082
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult BDSM 2
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470086
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Black 2
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470087
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Blonde
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470088
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Blowjob
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470089
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Brunette
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470090
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Mofos
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470091
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Young Girls 18
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470092
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Amateur
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470639
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Anal Sex
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470640
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Asian Sex
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470641
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult BBW
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470642
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult BDSM
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470643
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Black
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470644
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Blowjob
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470646
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Brunette
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470647
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Creampie
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470648
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Cumshot
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470649
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult DP
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470650
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Femdom
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470652
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Fetish
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470653
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Gangbang
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470654
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Gilf
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470655
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Gonzo
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470656
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Groupsex
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470657
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Handjob
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470658
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Interracial
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470659
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Japanese
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470660
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult JennyBlighe
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470661
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Latinas
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470662
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Lesbian
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470663
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Masturbation
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470664
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Milf
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470665
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Mofos
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470666
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Outdoor Sex
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470667
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult POV
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470668
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Public Invasion
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470669
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Redhead
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470670
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Sex Toys
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470671
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Squirting
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470672
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Sunny Leone
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470673
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Transsexual
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470675
+
+#EXTINF:-1 tvg-logo="http://127.0.0.1/" group-title="ADULT TV", Adult Young Girls 18
+https://s.rocketdns.info:443/ADULT/OtB3ATFhX4/470676
+

@@ -244,7 +244,7 @@
             "changeable": 1,
             "ext": {
                 "sites": "",
-                "proxy": "noproxy"
+                "proxy": "proxy"
             }
         },
         {
@@ -327,6 +327,18 @@
             "changeable": 1
         },
         {
+            "key": "短剧AI",
+            "name": "🤔短剧┃AI",
+            "type": 3,
+            "api": "csp_DuanJuCen",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1,
+            "ext": {
+                "classes": "./json/duanjucen.json"
+            }
+        },
+        {
             "key": "csp_PanSou",
             "name": "🥺盘搜┃搜索",
             "type": 3,
@@ -360,7 +372,7 @@
             "filterable": 1,
             "changeable": 1,
             "ext": {
-                "sites": "http://feimaoai.site",
+                "sites": "https://feimao666.fun",
                 "proxy": "noproxy"
             }
         },
@@ -400,19 +412,6 @@
             "changeable": 1,
             "ext": {
                 "sites": "https://mihdr.top",
-                "proxy": "noproxy"
-            }
-        },
-        {
-            "key": "闪电网盘",
-            "name": "😡闪电┃网盘",
-            "type": 3,
-            "api": "csp_Wobg",
-            "searchable": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "sites": "http://1.95.79.193/",
                 "proxy": "noproxy"
             }
         },
@@ -469,8 +468,21 @@
             }
         },
         {
+            "key": "森林视频",
+            "name": "🌲森林┃App",
+            "type": 3,
+            "api": "csp_Hmys",
+            "ext": {
+                "host": "https://dy.hengshengmy.com",
+                "app_id": "senlin",
+                "deviceid": "ce8bd1f9cd8cf302",
+                "versionCode": "10000",
+                "UMENG_CHANNEL": "semd10"
+            }
+        },
+        {
             "key": "海狗视频",
-            "name": "🐶海狗┃视频",
+            "name": "🐶海狗┃APP",
             "type": 3,
             "api": "csp_Hmys",
             "changeable": 0,
@@ -483,11 +495,130 @@
             }
         },
         {
+            "key": "白云视频",
+            "name": "☁️白云｜APP",
+            "type": 3,
+            "api": "csp_Hmys",
+            "changeable": 0,
+            "ext": {
+                "host": "https://dy.oogsy.com",
+                "app_id": "baiyun",
+                "deviceid": "9904b2c2cec97ac1",
+                "versionCode": "30000",
+                "UMENG_CHANNEL": "semc07"
+            }
+        },
+        {
+            "key": "溏心视频",
+            "name": "🥝溏心｜APP",
+            "type": 3,
+            "api": "csp_Hmys",
+            "changeable": 0,
+            "ext": {
+                "host": "https://dy.jszdzs.com",
+                "app_id": "xuebao",
+                "deviceid": "9904b2c2cec97ac1",
+                "versionCode": "23000",
+                "UMENG_CHANNEL": "zhuan"
+            }
+        },
+        {
+            "key": "呱呱视频",
+            "name": "👺呱呱｜APP",
+            "type": 3,
+            "api": "csp_Hmys",
+            "changeable": 0,
+            "ext": {
+                "host": "https://dy.zhiquw.com",
+                "app_id": "guagua",
+                "deviceid": "b0ea326d7a14820f",
+                "versionCode": "10000",
+                "UMENG_CHANNEL": "changfeng"
+            }
+        },
+        {
+            "key": "云野视频",
+            "name": "🌿云野｜APP",
+            "type": 3,
+            "api": "csp_Hmys",
+            "changeable": 0,
+            "ext": {
+                "host": "https://dy.zhiquw.com",
+                "app_id": "yunye",
+                "deviceid": "9904b2c2cec97ac1",
+                "versionCode": "10000",
+                "UMENG_CHANNEL": "zhuan"
+            }
+        },
+        {
+            "key": "拾光视频",
+            "name": "🌺拾光｜APP",
+            "type": 3,
+            "api": "csp_Hmys",
+            "changeable": 0,
+            "ext": {
+                "host": "https://dy.zhiquw.com",
+                "app_id": "shiguang",
+                "deviceid": "2712cc11e4f294b5",
+                "versionCode": "10000",
+                "UMENG_CHANNEL": "semc07"
+            }
+        },
+        {
+            "key": "动漫屋App",
+            "name": "🐸漫屋┃APP",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "host": "https://www.yunwuee.icu",
+                "datakey": "ygcnb9bdcmb8aeiw"
+            }
+        },
+        {
+            "key": "囧次元动漫",
+            "name": "🐷囧囧｜次元",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "host": "http://ys.xiaos12.cn",
+                "datakey": "chfgjfrhhf628vw1"
+            }
+        },
+
+        {
             "key": "狐狸磁力",
             "name": "🧲狐狸┃磁力",
             "type": 3,
             "api": "csp_XBPQ",
             "ext": "./xb/狐狸磁力.json",
+            "jar": "./jar/xbpq.jar"
+        },
+        {
+            "key": "夸克短剧",
+            "name": "🌽夸克┃短剧",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "ext": "./xb/夸克短剧.json",
+            "jar": "./jar/xbpq.jar"
+        },
+        {
+            "key": "夸克资源站",
+            "name": "🎁夸克┃资源",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "ext": "./xb/夸克资源站.json",
+            "jar": "./jar/xbpq.jar"
+        },
+        {
+            "key": "啊哈DJ网",
+            "name": "🎵啊哈┃DJ",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "ext": "./xb/啊哈DJ网.json",
             "jar": "./jar/xbpq.jar"
         },
         {
@@ -504,14 +635,6 @@
             "type": 3,
             "api": "csp_XBPQ",
             "ext": "./xb/秀儿影视.json",
-            "jar": "./jar/xbpq.jar"
-        },
-        {
-            "key": "80S电影",
-            "name": "😛80┃电影",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "ext": "./xb/80S电影.json",
             "jar": "./jar/xbpq.jar"
         },
         {
@@ -545,11 +668,18 @@
             "ext": "./js/夸克影视.js"
         },
         {
-            "key": "爱看资源网",
-            "name": "🐸爱看┃网盘",
+            "key": "努努影视",
+            "name": "💋努努┃影视",
             "type": 3,
             "api": "./js/drpy2.min.js",
-            "ext": "./js/爱看资源网.js"
+            "ext": "./js/努努影视.js"
+        },
+        {
+            "key": "人人电影",
+            "name": "👰人人┃电影",
+            "type": 3,
+            "api": "./js/drpy2.min.js",
+            "ext": "./js/人人电影.js"
         },
         {
             "key": "泥泥视频",
@@ -656,21 +786,27 @@
             }
         },
         {
+            "key": "csp_bilirt",
+            "name": "🅱️儿童┃最爱",
+            "type": 3,
+            "api": "csp_Bili",
+            "playerType": 2,
+            "ext": {
+                "json": "./json/bilirt.json",
+                "cookie": ""
+            },
+            "style": {
+                "type": "rect",
+                "ratio": 1.333
+            }
+        },
+        {
             "key": "爱上听书",
             "name": "☔爱上┃听书",
             "type": 3,
             "api": "./js/drpy2.min.js",
             "ext": "./js/爱上听书.js",
             "playerType": "2"
-        },
-        {
-            "api": "./py/YYMP3音乐网.py",
-            "filterable": 1,
-            "key": "py_YYMP3音乐网",
-            "name": "🤗音乐┃PY",
-            "quickSearch": 1,
-            "searchable": 1,
-            "type": 3
         },
         {
             "key": "csp_Jzb",

@@ -1,0 +1,84 @@
+{
+//回家的路https://github.com/hlbkw
+//永久域名：https://heiliaocg.com/
+//  黑料百科最新入口： https://kgfr.nsqgbzx.cc
+
+//牢记永久入口：https://heiliaocg.com
+
+//最新官网地址：https://gbzx01.com
+
+
+//官方邮箱：heiliaobaike@gmail.com (发任意内容到此邮箱可收到最新地址)
+
+//吃瓜瓜友群点击扫码加入：http://c.j4h.cn/2Bohhe
+"规则名": "黑料百科-xyqh",
+"规则作者": "飞鱼",
+"请求头参数": "手机",
+"网页编码格式": "UTF-8",
+"图片是否需要代理": "0",
+"是否开启获取首页数据": "0",
+"首页推荐链接": "https://jyfru.1fchlbk.com",
+"首页列表数组规则": ".stui-vodlist.clearfix",
+"首页片单列表数组规则": "li:not(:contains(全国约炮)):not(:contains(注册即送)):not(:contains(澳门威尼斯人官网)):not(:contains(24小时在线匹配首次免费)):not(:contains(正宗莞式服务一条龙)):not(:contains(少女直播破处.高潮抽搐)):not(:contains(17吃瓜同城约炮)):not(:contains(17吃瓜春药商城)):not(:contains(威尼斯信誉)):not(:contains(开云体育)):not(:contains(新葡京体育))",
+"首页片单是否Jsoup写法": "1",
+"首页片单标题": ".post-card-title&&Text",
+"首页片单链接": "a&&href",
+"首页片单图片": "a&&data-original",
+"首页片单副标题": ".pic-text.text-right&&Text",
+"首页片单链接加前缀": "https://jyfru.1fchlbk.com",
+"首页片单链接加后缀": "",
+"分类起始页码": "1",
+//"分类链接": "https://rouv98.xyz/vodtype/{cateId}-{catePg}/",
+"分类链接": "https://jyfru.1fchlbk.com{cateId}?page={catePg}",
+"分类名称": "首页&今日爆瓜&校园热瓜&抖阴网红&反差母狗&妙龄少女&淫妻绿奴&合集臻选&瓜爆头条&重口猎奇&海角精品&政坛风云&成人短剧&性爱讲堂&搞笑趣闻&深夜影院&禁漫天堂",
+"分类名称替换词": "/&/category/1&/category/7&/category/3&/category/4&/category/18322&/category/2&/category/9&/category/5&/category/12&/category/11&/category/10&/category/13&/category/15&/category/8&/category/16&/category/17",
+"分类截取模式": "1",
+"分类列表数组规则": ".main&&a:has(.item_item-subtitle__y5ZST):not(:matches(黑料百科火热招聘)):not(:matches(热点黑料一口气看完)):not(:matches(万千选择只为您心动 黑料百科与瓜友们共创心仪专栏))",
+"分类片单是否Jsoup写法": "1",
+"分类片单标题": "img&&alt",
+"分类片单链接": "a&&href",
+"分类片单图片": "img&&src",
+//"分类片单副标题": "+08:00\">\n&&\n",
+"分类片单副标题": "p,2&&Text",
+"分类片单链接加前缀": "https://jyfru.1fchlbk.com",
+"分类片单链接加后缀": "",
+"搜索请求头参数": "User-Agent$手机",
+"搜索链接": "https://jyfru.1fchlbk.com/search/{wd}",
+"POST请求数据": "",
+"搜索截取模式": "1",
+"搜索列表数组规则": ".main&&a",
+"搜索片单是否Jsoup写法": "1",
+"搜索片单图片": "img&&src",
+"搜索片单标题": "img&&alt",
+"搜索片单链接": "a&&href",
+"搜索片单副标题": "p,2&&Text",
+"搜索片单链接加前缀": "https://jyfru.1fchlbk.com",
+"搜索片单链接加后缀": "",
+"链接是否直接播放": "0",
+"直接播放链接加前缀": "",
+"直接播放链接加后缀": "",
+"直接播放直链视频请求头": "",
+//-------
+    "详情是否Jsoup写法":"0",
+    "类型详情": "tags\":[&&],",
+    "年代详情": "",
+    "地区详情": "",
+    "演员详情": "",
+    "简介详情": "content\":\"&&\",\"share",
+    "线路列表数组规则": "",
+    "线路标题": "",
+    "播放列表数组规则": ".post-content",
+    "选集列表数组规则": "dp",
+    "选集标题链接是否Jsoup写法":"1",
+    "选集标题": "",
+    "选集链接": "dp&&src",
+    "是否反转选集序列": "0",
+    "选集链接加前缀": "",
+    "选集链接加后缀": "",
+
+
+"分析MacPlayer": "0",
+"是否开启手动嗅探": "1",
+"手动嗅探视频链接关键词": ".m3u8",
+"手动嗅探视频链接过滤词": "baidu.com"
+}

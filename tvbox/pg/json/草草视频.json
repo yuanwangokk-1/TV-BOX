@@ -1,0 +1,11 @@
+{
+    "分类url": "https://caocao.caocao09.xyz/caocao/index.php/vod/type/id/{cateId}/page/{catePg}.html;;z",
+    "数组": "thumbnail\"&&</li>",
+    "标题": "alt=\"&&\"",
+    "图片": "<img src=\"&&\"",
+    "副标题": "<p>&&</p>",
+    "链接": "href=\"&&\"",
+    "分类数组": "<dd>&&</dd>",
+    "分类标题": ">&&</a>",
+    "分类ID": "/caocao/index.php/vod/type/id/&&.html"
+}

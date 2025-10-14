@@ -1,0 +1,76 @@
+// 分类 ++
+// 修复所有分类的第一个 detail内容为空
+{
+  "name": "netflytv",
+  //"url": "https://nfgou.top",
+  "url": "https://netflixdog.club",
+  "tihuan": "cnzz.com",
+  "User": "空",
+  "shouye": "1",
+
+  //"fenlei": "电视剧$/show/2-#电影$/show/1-#综艺$/show/3-#动漫$/show/4-#动作片$/show/1---动作-----#喜剧片$/show/1---喜剧-----#爱情片$/show/1---爱情-----#科幻片$/show/1---科幻-----#奇幻片$/show/1---奇幻-----#恐怖片$/show/1---恐怖-----#剧情片$/show/1---剧情-----#战争片$/show/1---战争-----#冒险片$/show/1---冒险-----#国产剧$/show/2-中国大陆-------#台剧$/show/2-中国台湾-------#港剧$/show/2-中国香港-------#韩剧$/show/2-韩国-------#日剧$/show/2-日本-------#美剧$/show/2-美国-------#英剧$/show/2-英国-------",
+  "fenlei": "电影$/index.php/vod/show/id/2/page/#电视剧$/index.php/vod/show/id/1/page/#动漫$/index.php/vod/show/id/3/page/#特殊资源$/index.php/vod/show/id/24/page/",
+  "houzhui": ".html",
+
+  "shifouercijiequ": "1",
+  "jiequqian": "class=\"module-list",
+  "jiequhou": "class=\"module-footer",
+  "jiequshuzuqian": "class=\"module-item\">",
+  "jiequshuzuhou": "class=\"module-item-text",
+  "tupianqian": "data-src=\"",
+  "tupianhou": "\"",
+  "biaotiqian": "alt=\"",
+  "biaotihou": "\"",
+  "lianjieqian": "href=\"",
+  "lianjiehou": "\"",
+
+  //新版Biubiu参数：副标题 (不需要的话，就不填写或者删除副标题2个字段也可以。)
+  "fubiaotiqian": "<span>",
+  "fubiaotihou": "</span>",
+
+
+  "sousuoqian": "/index.php/vod/search.html?wd=",
+  "sousuohou": "空",
+  "sousuohouzhui": "空",
+  "ssmoshi": "0",
+  "sousuoshifouercijiequ": "0",
+  "jspic": "空",
+  "jsname": "空",
+  "jsid": "空",
+  //"jsurl":"url",
+  "ssjiequqian": "空",
+  "ssjiequhou": "空",
+  "ssjiequshuzuqian": "class=\"module-search-item",
+  "ssjiequshuzuhou": "</strong></a>",
+  "sstupianqian": "data-src=\"",
+  "sstupianhou": "\"",
+  "ssbiaotiqian": "title=\"",
+  "ssbiaotihou": "\"",
+  "sslianjieqian": "<h3><a href=\"",
+  "sslianjiehou": "\"",
+
+  "bfshifouercijiequ": "0",
+  "bfjiequqian": "空",
+  "bfjiequhou": "空",
+  "bfjiequshuzuqian": "class=\"scroll-content",
+  "bfjiequshuzuhou": "</div>",
+
+  "zhuangtaiqian": "更新：</span>",
+  "zhuangtaihou": "</div>",
+  "daoyanqian": "导演：</span>",
+  "daoyanhou": "</div>",
+  "zhuyanqian": "主演：</span>",
+  "zhuyanhou": "</div>",
+  "juqingqian": "剧情：</span>",
+  "juqinghou": "</span>",
+
+  "bfyshifouercijiequ": "0",
+  "bfyjiequqian": "空",
+  "bfyjiequhou": "空",
+  "bfyjiequshuzuqian": "<a",
+  "bfyjiequshuzuhou": "/a>",
+  "bfbiaotiqian": "<span>",
+  "bfbiaotihou": "<",
+  "bflianjieqian": "href=\"",
+  "bflianjiehou": "\""
+}
