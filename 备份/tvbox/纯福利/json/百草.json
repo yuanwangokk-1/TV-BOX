@@ -1,0 +1,16 @@
+{
+    "请求头": "User-Agent$MOBILE_UA",
+    "主页url": "https://kcd.bxc7.one/cn/home/web/",
+    "数组": "lazyload\"&&/a>",
+    "标题": "title=\"&&\"",
+    "图片": "data-original=\"&&\"",
+    "链接": "href=\"&&\"",
+    "跳转播放链接": "vod_play_url = '&&'",
+    "简介": "description\" content=\"&&\"",
+    "搜索url": "https://kcd.bxc7.one/s/{wd}/page/{pg}.html",
+    "分类url": "https://kcd.bxc7.one/vodtype/{cateId}-{catePg}.html;;z",
+    "分类二次截取": "<ul&&ul>",
+    "分类数组": "<a&&a>",
+    "分类标题": ">&&<",
+    "分类ID": "/vodtype/&&.html"
+}

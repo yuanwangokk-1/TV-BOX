@@ -1,0 +1,143 @@
+{
+"作者":"凯哥",
+"站名":"xvideos",
+"主页url":"https://www.xvideos67.com/",
+"请求头":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+"cookie":"",
+"起始页":"",
+"热门推荐":"1",
+"直接播放":"1",
+"二次截取":"<div id=\"content\">&&<div id=\"footer\">",
+"数组":"<div class=\"thumb\"&&<p class=\"metadata\"",
+"图片":"data-src=\"&&\"",
+"标题":"title=\"&&\"",
+"链接":"href=\"&&\"",
+"副标题":"xh-icon beta-thumb-hd thumb-image-container__icon thumb-image-container__icon--&&</span>[替换:  \"></i>>>空#<span data-role=\"video-duration\">>>空]",
+"搜索url":"/?k={wd}&p={pg}",
+"搜索模式": "1",
+"搜索二次截取": "移除广告&&<div class=\"pager-section\">",
+"搜索数组": "role-pop thumb-image-container\"&&</a>",
+"搜索图片": "src=\"&&\"",
+"搜索标题": "alt=\"&&\"",
+"搜索链接": "href=\"&&\"",
+"搜索后缀":"",
+"线路二次截取":"",
+"线路数组":"",
+"线路标题":"",
+"播放数组":"<script type=\"application/ld+json\">&&</script>",
+"播放列表":"{&&}",
+"播放标题":"name\": \"&&\"",
+"播放链接":"contentUrl\": \"&&\"",
+"播放链接前缀":"",
+"嗅探词":".mp4.m3u8#.m3u8#.mp4#.flv#.mp3#.m4a",
+"过滤词":"144p.av1#thumb-l3.flixcdn.com#vlcdn.tsyndicate.com#lcdn.tsyndicate.com#edge-hls.doppiocdn.org#cnzz.com#baidu.com#bilibili.com",
+"播放请求头":"",
+"免嗅":"0",
+"分类":"jav$jav+anal#wife$wife+dildo#亚洲$asian#国产$chinese#复古$retro#钢棒$gangbang",
+//"类型":"big+dick+anal--無修正流出$chinese+milf#日本無碼$japanese+日本+無修正+高画質#亚洲$asina+anal#极限$japanese+extreme+bdsm#无修正$extreme+japanese+anal+日本+無修正+高画質#真实摄像头$hidden+camera#摄像头手瘾$hidden+camera+masturbation#隐藏摄像头按摩$hidden+camera+massage#港台剧$gangtaiju#日韩剧$rihanju#欧美剧$oumeiju",
+//"分类url":"https://zh.xhamster3.com/categories/{cateId}/{catePg}",
+"分类url":"https://www.xvideos67.com/?k={cateId}&quality=hd&p={catePg}",
+"筛选":{
+"asian":[
+{
+"key":"cateId",
+"name":"类型",
+"value":[
+{"n":"全部","v":"1"},
+{"n":"偷窥","v":"voyeur"},
+{"n":"复古","v":"retro"},
+{"n":"摄像头","v":"webcam"},
+{"n":"隐秘的相机","v":"hidden-camera"},
+{"n":"双洞","v":"double-penetration"},
+{"n":"张开","v":"gaping"},
+{"n":"粗暴肛交","v":"rough-anal"},
+{"n":"肛交","v":"anal"},
+{"n":"极限","v":"extreme-insertion"},
+{"n":"性虐","v":"bdsm"}
+]
+},
+{
+"key":"by",
+"name":"排序",
+"value":[
+{"n":"时间","v":"time"},
+{"n":"人气","v":"hits"},
+{"n":"评分","v":"score"}
+]
+}
+],
+"chinese":[
+{
+"key":"cateId",
+"name":"类型",
+"value":[
+{"n":"假鸡吧","v":"dildo"},
+{"n":"拳交","v":"fisting"},
+{"n":"大公鸡","v":"big-cock"},
+{"n":"钢棒","v":"gangbang"},
+{"n":"公共裸露","v":"public-nudity"},
+{"n":"瑜伽","v":"yoga"},
+{"n":"肛门自卫","v":"big+dildo+anal"},
+{"n":"中国自拍","v":"chinese+milf"},
+{"n":"日本五码","v":"japanese+日本+無修正+高画質"},
+{"n":"亚洲肛交","v":"asina+anal"},
+{"n":"日本肛交","v":"extreme+japanese+anal+日本+無修正+高画質"},
+{"n":"夫妻道具","v":"wife+dildo"},
+{"n":"异族","v":"interracial"}
+]
+},
+{
+"key":"by",
+"name":"排序",
+"value":[
+{"n":"时间","v":"time"},
+{"n":"人气","v":"hits"},
+{"n":"评分","v":"score"}
+]
+}
+],
+"3":[
+{
+"key":"cateId",
+"name":"类型",
+"value":[
+{"n":"全部","v":"3"},
+{"n":"大陆综艺","v":"28"},
+{"n":"港台综艺","v":"29"},
+{"n":"日韩综艺","v":"30"},
+{"n":"欧美综艺","v":"31"}
+]
+},
+{
+"key":"by",
+"name":"排序",
+"value":[
+{"n":"时间","v":"time"},
+{"n":"人气","v":"hits"},
+{"n":"评分","v":"score"}
+]
+}
+],
+"4":[
+{
+"key":"cateId",
+"name":"类型",
+"value":[
+{"n":"全部","v":"4"},
+{"n":"国产动漫","v":"32"},
+{"n":"日本动漫","v":"33"},
+{"n":"其他动漫","v":"35"}
+]
+},
+{
+"key":"by",
+"name":"排序",
+"value":[
+{"n":"时间","v":"time"},
+{"n":"人气","v":"hits"},
+{"n":"评分","v":"score"}
+]
+}
+]
+}
+}
