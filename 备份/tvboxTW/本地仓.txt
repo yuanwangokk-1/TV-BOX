@@ -1,0 +1,35 @@
+{ "urls": [{ "url": "clan://localhost/tvboxTW/本地【天微VIP线】/api.json", "name": "本地【天微VIP线】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【七星影视】/api.json", "name": "本地【七星影视】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【饭太硬线】/api.json", "name": "本地【饭太硬线】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【小虎斑线】/api.json", "name": "本地【小虎斑线】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【喵影视线】/api.json", "name": "本地【喵影视线】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【宫殿线路】/api.json", "name": "本地【宫殿线路】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【D佬线路】/api.json", "name": "本地【D佬线路】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【拾光线路】/api.json", "name": "本地【拾光线路】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【香雅情线】/api.json", "name": "本地【香雅情线】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【王二小线】/api.json", "name": "本地【王二小线】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【肥猫线路】/api.json", "name": "本地【肥猫线路】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【摸鱼线路】/api.json", "name": "本地【摸鱼线路】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【讴歌线路】/api.json", "name": "本地【讴歌线路】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【南风线路】/api.json", "name": "本地【南风线路】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【小米线路】/api.json", "name": "本地【小米线路】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【潇洒线路】/api.json", "name": "本地【潇洒线路】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【白嫖线路】/api.json", "name": "本地【白嫖线路】" },
+
+{ "url":"clan://localhost/tvboxTW/本地【戏曲音乐】/api.json", "name": "本地【戏曲音乐】" }]}

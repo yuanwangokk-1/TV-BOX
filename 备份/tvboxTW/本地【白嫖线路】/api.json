@@ -1,0 +1,216 @@
+{
+    "logo": "https://6474.kstore.space/tvbox/img/logo.png",
+    "spider": "./spider.jar",
+    "lives": [],
+    "sites": [
+        {
+            "key": "douban",
+            "name": "📁┃白嫖本地",
+            "type": 3,
+            "api": "csp_DouBan",
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
+        },
+        {
+            "key": "nangua",
+            "name": "APP|南瓜",
+            "type": 3,
+            "api": "csp_AppYSDQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0,
+            "ext": "公众号:影视资源站"
+        },
+        {
+            "key": "jp",
+            "name": "APP|荐片",
+            "type": 3,
+            "api": "csp_Jianpian",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+        {
+            "key": "tvyb",
+            "name": "影视|云播",
+            "type": 3,
+            "api": "csp_WebTVB",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "ext": "http://www.tvyb03.com"
+        },
+        {
+            "key": "xsj",
+            "name": "影视|视觉",
+            "type": 3,
+            "api": "csp_Web608",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "ext": "https://www.6080yy4.com"
+        },
+        {
+            "key": "yj",
+            "name": "影视|哔嘀",
+            "type": 3,
+            "api": "csp_WebYJ",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 0,
+            "playerType": 2,
+            "ext": "https://www.yjys01.com"
+        },
+        {
+            "key": "eight",
+            "name": "影视|八八",
+            "type": 3,
+            "api": "csp_AppEight",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "playerType": 2,
+            "ext": "https://api.kpyun6.cn"
+        },
+        {
+            "key": "AList",
+            "name": "阿里|雅雅",
+            "type": 3,
+            "api": "csp_AListBox",
+            "searchable": 1,
+            "changeable": 0,
+            "ext": "https://d.kstore.space/download/6474/tvbox/json/p.json#公众号:影视资源站",
+            "style": {
+                "type": "list"
+            }
+        },
+        {
+            "key": "xifan",
+            "name": "动漫|稀饭",
+            "type": 3,
+            "api": "csp_Xifan",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0,
+            "ext": "公众号:影视资源站"
+        },
+        {
+            "key": "bili",
+            "name": "休闲|B站",
+            "type": 3,
+            "api": "csp_Bili",
+            "searchable": 1,
+            "filterable": 0,
+            "changeable": 0,
+            "style": {
+                "type": "rect",
+                "ratio": 1.433
+            },
+            "ext": "./json/bili.json"
+        },
+        {
+            "key": "ting",
+            "name": "休闲|听书",
+            "type": 3,
+            "api": "csp_BookTing",
+            "searchable": 1,
+            "changeable": 0,
+            "ext": "https://m.365ting.com#公众号#影视资源站"
+        },
+        {
+            "key": "music",
+            "name": "休闲|音乐",
+            "type": 3,
+            "api": "csp_Music",
+            "searchable": 0,
+            "changeable": 0,
+            "style": {
+                "type": "rect",
+                "ratio": 1.433
+            }
+        },
+        {
+            "key": "push_agent",
+            "name": "辅助|推送",
+            "type": 3,
+            "style": {
+                "type": "rect",
+                "ratio": 1.433
+            },
+            "api": "csp_Push"
+        }
+    ],
+    "parses": [],
+    "flags": [],
+    "rules": [
+        {
+            "name": "LZ",
+            "hosts": [
+                "lz"
+            ],
+            "regex": [
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.433333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+",
+                "18.5333",
+                "19.520000",
+                "18.666667",
+                "17.2",
+                "19.84"
+            ]
+        },
+        {
+            "name": "FF",
+            "hosts": [
+                "ffzy"
+            ],
+            "regex": [
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+",
+                "25.1",
+                "18"
+            ]
+        },
+        {
+            "name": "yqk",
+            "hosts": [
+                "yqk88"
+            ],
+            "regex": [
+                "#EXT-X-DISCONTINUITY\\r*\\n*[\\s\\S]*?#EXT-X-CUE-IN"
+            ]
+        },
+        {
+            "name": "KK",
+            "hosts": [
+                "kuaikan"
+            ],
+            "regex": [
+                "#EXT-X-DISCONTINUITY\\r*\\n*[\\s\\S]*?#EXT-X-DISCONTINUITY"
+            ]
+        },
+        {
+            "name": "SN",
+            "hosts": [
+                "suonizy"
+            ],
+            "regex": [
+                "#EXTINF.*?\\s+.*?original.*?\\.ts\\s+",
+                "15.1666",
+                "15.2666",
+                "16.333333",
+                "15.266667"
+            ]
+        },
+        {
+            "name": "BF",
+            "hosts": [
+                "bfzy"
+            ],
+            "regex": [
+                "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+",
+                "_cef"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+#EXTM3U x-tvg-url="https://gh.qninq.cn/https://raw.githubusercontent.com/fanmingming/live/main/e.xml"
+#EXTINF:-1 group-title="🐲装歌分享" tvg-name="装歌免费分享" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/%E8%A3%85%E6%AD%8C%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB.png",装歌免费分享
+https://xn--vusr00g.v.nxog.top/m/tv/xjj.php?id=0
+#EXTINF:-1 group-title="🐲装歌分享" tvg-name="接口软件永远免费" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/%E6%8E%A5%E5%8F%A3%E8%BD%AF%E4%BB%B6%E6%B0%B8%E8%BF%9C%E5%85%8D%E8%B4%B9.png",接口软件永远免费
+https://xn--vusr00g.v.nxog.top/m/tv/xjj.php?id=0&2
+#EXTINF:-1 group-title="🐲装歌分享" tvg-name="长期维护切勿贩卖" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/%E9%95%BF%E6%9C%9F%E7%BB%B4%E6%8A%A4%E5%88%87%E5%8B%BF%E8%B4%A9%E5%8D%96.png",长期维护切勿贩卖
+https://xn--vusr00g.v.nxog.top/m/tv/xjj.php?id=0&3
+#EXTINF:-1 group-title="🐲装歌分享" tvg-name="卡左右可换源" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/%E5%8D%A1%E5%B7%A6%E5%8F%B3%E5%8F%AF%E6%8D%A2%E6%BA%90.png",卡左右可换源
+http://wb.xn--dkw.xn--6qq986b3xl:5244/d/%E5%A4%A9/og1.mp4
+#EXTINF:-1 group-title="🐲装歌分享" tvg-name="网络收集随时失效" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/%E7%BD%91%E7%BB%9C%E6%94%B6%E9%9B%86%E9%9A%8F%E6%97%B6%E5%A4%B1%E6%95%88.png",网络收集随时失效
+http://wb.xn--dkw.xn--6qq986b3xl:5244/d/%E5%A4%A9/og.mp4

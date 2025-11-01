@@ -1,0 +1,21 @@
+ {
+                "请求头": "User-Agent$MOBILE_UA",
+                "编码": "UTF-8",
+                "图片": "data-src=\"&&\"",
+                "线路二次截取": "b-b br&&</div>",
+                "线路数组": "<a&&</a>",
+                "线路标题": "✨推荐✨+</i>&&<+【共+badge\">&&</+集】",
+                "播放数组": "play size&&</ul>",
+                "播放列表": "<a&&a>",
+                "播放链接": "href=\"&&\"",
+                "播放标题": "✨+>&&</",
+                "简介": "✨介绍剧情👉请不要相信视频中的广告，以免上当受骗！+text cor3\">&&</div>",
+                "搜索模式": "1",
+                "搜索url": "https://brovod.com/ss/{wd}----------{pg}---/",
+                "搜索数组": "list-exp&&</a",
+                "搜索标题": "alt=\"&&封面图",
+                "搜索图片": "data-src=\"&&\"",
+                "分类url": "https://brovod.com/show/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
+                "分类": "电影$movie#电视剧$tv#综艺$show#动漫$cartoon#纪录片$documentary"
+            }
+        },

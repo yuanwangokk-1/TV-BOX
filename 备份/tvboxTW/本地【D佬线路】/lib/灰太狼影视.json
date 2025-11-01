@@ -1,0 +1,34 @@
+    {
+    "站名":"灰太狼影视",
+    
+    "主页url":"https://www.huitailang.tv/",
+    
+    "简介":"剧情：</span>&&</span>",
+    
+    "影片状态":"集数：&&</div>",
+    
+    "影片类型":"icon-cate-ds\">&&立即播放",
+    
+    "数组":"module-item-pic\">&&module-item\">",
+    
+    "副标题":"module-item-text\">&&</div>",
+    
+    "搜索url":"/index.php/vod/search.html?wd={wd}",
+    
+    "搜索数组":"lazy lazyload\"&&<h3>",
+    
+    "搜索标题":"alt=\"&&\"",
+    
+    "搜索副标题":"title=*>&&</a>",
+    
+    "搜索图片":"data-src=\"&&\"",
+    
+    "搜索链接":"href=\"&&\"",
+    
+    "线路数组":"data-dropdown-value=&&</div>[不包含:金鹰资源#速播资源]",
+    
+    "线路标题":"<span>&&</small>[替换:灰太狼资源>>灰狼资源#</span><small>>>共]+集",
+    
+    "分类url":"https://www.huitailang.tv/index.php/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/lang/{lang}/page/{catePg}/year/{year}.html;;ak",
+    
+    "分类":"电影$1#电视剧$2#综艺$3#动漫$4"}

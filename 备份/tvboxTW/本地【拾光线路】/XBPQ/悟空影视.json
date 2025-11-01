@@ -1,0 +1,12 @@
+{
+                "请求头": "user-Agent$Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36",
+                "编码": "UTF-8",
+               
+                "标题": "title=\"&&\"",
+                "副标题": "pic-text text-right\"&&</span>",
+                "图片": "data-original=\"&&\"",
+                "播放数组": "ul class=\"stui-content__playlist clearfix\"&&</ul>",
+                "分类url": "https://www.wkvod.cc/vodshow/area/{area}/id/{cateId}/page/{catePg}/year/{year}.html",
+                "分类": "电影$dianying#剧集$juji#动漫$dongman#综艺$zongyi#短剧$duanju"
+            }
+        },
