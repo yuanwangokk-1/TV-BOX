@@ -203,6 +203,18 @@
     ],
     "lives": [
         {
+            "name": "✨🈲黄色仓库🈲✨",
+            "type": 0,
+            "url": "https://down.nigx.cn/raw.githubusercontent.com/fuxkjd/hsck/refs/heads/main/dist/all.m3u",
+            "ua": "okhttp/4.15",
+            "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+            "logo": "https://epg.112114.xyz/logo/{name}.png",
+            "catchup": {
+                "type": "append",
+                "source": "?livemode=4&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+            }
+        },
+        {
             "name": "✨🈲日本AV🈲✨",
             "type": 0,
             "url": "https://down.nigx.cn/gist.githubusercontent.com/yuanwangokk-1/b48e4fd7edad33594c4f3f1972684d0d/raw/be7f76552c480817d1ea8726a3df9a205fe03f43/jp.m3u",
