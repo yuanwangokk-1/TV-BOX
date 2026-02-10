@@ -4,5 +4,5 @@
 TV-BOX 在线订阅地址：
 
 ```https
-https://gh-proxy.com/raw.githubusercontent.com/yuanwangokk-1/TV-BOX/refs/heads/main/Aries/jsm.json
+https://gh-proxy.com/~~~
 ```
